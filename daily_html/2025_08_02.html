@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - July 27, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 02, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>July 27, 2025</p>
+            <p>August 02, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,35 +215,36 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">ChoreoMuse: Robust Music-to-Dance Video Generation with Style Transfer and Beat-Adherent Motion</h2>
+            <h2 class="paper-title">SpA2V: Harnessing Spatial Auditory Cues for Audio-driven Spatially-aware Video Generation</h2>
             
-            <p class="paper-summary">Modern artistic productions increasingly demand automated choreography
-generation that adapts to diverse musical styles and individual dancer
-characteristics. Existing approaches often fail to produce high-quality dance
-videos that harmonize with both musical rhythm and user-defined choreography
-styles, limiting their applicability in real-world creative contexts. To
-address this gap, we introduce ChoreoMuse, a diffusion-based framework that
-uses SMPL format parameters and their variation version as intermediaries
-between music and video generation, thereby overcoming the usual constraints
-imposed by video resolution. Critically, ChoreoMuse supports
-style-controllable, high-fidelity dance video generation across diverse musical
-genres and individual dancer characteristics, including the flexibility to
-handle any reference individual at any resolution. Our method employs a novel
-music encoder MotionTune to capture motion cues from audio, ensuring that the
-generated choreography closely follows the beat and expressive qualities of the
-input music. To quantitatively evaluate how well the generated dances match
-both musical and choreographic styles, we introduce two new metrics that
-measure alignment with the intended stylistic cues. Extensive experiments
-confirm that ChoreoMuse achieves state-of-the-art performance across multiple
-dimensions, including video quality, beat alignment, dance diversity, and style
-adherence, demonstrating its potential as a robust solution for a wide range of
-creative applications. Video results can be found on our project page:
-https://choreomuse.github.io.</p>
+            <p class="paper-summary">Audio-driven video generation aims to synthesize realistic videos that align
+with input audio recordings, akin to the human ability to visualize scenes from
+auditory input. However, existing approaches predominantly focus on exploring
+semantic information, such as the classes of sounding sources present in the
+audio, limiting their ability to generate videos with accurate content and
+spatial composition. In contrast, we humans can not only naturally identify the
+semantic categories of sounding sources but also determine their deeply encoded
+spatial attributes, including locations and movement directions. This useful
+information can be elucidated by considering specific spatial indicators
+derived from the inherent physical properties of sound, such as loudness or
+frequency. As prior methods largely ignore this factor, we present SpA2V, the
+first framework explicitly exploits these spatial auditory cues from audios to
+generate videos with high semantic and spatial correspondence. SpA2V decomposes
+the generation process into two stages: 1) Audio-guided Video Planning: We
+meticulously adapt a state-of-the-art MLLM for a novel task of harnessing
+spatial and semantic cues from input audio to construct Video Scene Layouts
+(VSLs). This serves as an intermediate representation to bridge the gap between
+the audio and video modalities. 2) Layout-grounded Video Generation: We develop
+an efficient and effective approach to seamlessly integrate VSLs as conditional
+guidance into pre-trained diffusion models, enabling VSL-grounded video
+generation in a training-free manner. Extensive experiments demonstrate that
+SpA2V excels in generating realistic videos with semantic and spatial alignment
+to the input audios.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: ChoreoMuse is a diffusion-based framework for generating high-fidelity, style-controllable dance videos from music using SMPL parameters, achieving state-of-the-art performance in video quality, beat alignment, and style adherence.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces SpA2V, a framework that leverages spatial auditory cues to generate videos with better semantic and spatial alignment to input audio, using a MLLM to create Video Scene Layouts and a diffusion model for video generation.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: ChoreoMuse是一个基于扩散模型的框架，利用SMPL参数从音乐生成高质量、风格可控的舞蹈视频，并在视频质量、节拍对齐和风格一致性方面实现了最先进的性能。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了SpA2V，一个利用空间听觉线索生成视频的框架，该框架能更好地将视频的语义和空间与输入音频对齐。它使用 MLLM 创建视频场景布局，并使用扩散模型生成视频。</p>
             
 
             
@@ -314,18 +315,131 @@ https://choreomuse.github.io.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2507.19836v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.00782v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Xuanchen Wang, Heng Wang, Weidong Cai</p>
+            <p class="paper-authors">Authors: Kien T. Pham, Yingqing He, Yazhou Xing, Qifeng Chen, Long Chen</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.05, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">TITAN-Guide: Taming Inference-Time AligNment for Guided Text-to-Video Diffusion Models</h2>
+            
+            <p class="paper-summary">In the recent development of conditional diffusion models still require heavy
+supervised fine-tuning for performing control on a category of tasks.
+Training-free conditioning via guidance with off-the-shelf models is a
+favorable alternative to avoid further fine-tuning on the base model. However,
+the existing training-free guidance frameworks either have heavy memory
+requirements or offer sub-optimal control due to rough estimation. These
+shortcomings limit the applicability to control diffusion models that require
+intense computation, such as Text-to-Video (T2V) diffusion models. In this
+work, we propose Taming Inference Time Alignment for Guided Text-to-Video
+Diffusion Model, so-called TITAN-Guide, which overcomes memory space issues,
+and provides more optimal control in the guidance process compared to the
+counterparts. In particular, we develop an efficient method for optimizing
+diffusion latents without backpropagation from a discriminative guiding model.
+In particular, we study forward gradient descents for guided diffusion tasks
+with various options on directional directives. In our experiments, we
+demonstrate the effectiveness of our approach in efficiently managing memory
+during latent optimization, while previous methods fall short. Our proposed
+approach not only minimizes memory requirements but also significantly enhances
+T2V performance across a range of diffusion guidance benchmarks. Code, models,
+and demo are available at https://titanguide.github.io.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces TITAN-Guide, a memory-efficient and control-optimized method for training-free text-to-video diffusion model guidance that optimizes diffusion latents without backpropagation, enhancing T2V performance.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了TITAN-Guide，一种内存高效且控制优化的文本到视频扩散模型无训练引导方法，该方法无需反向传播即可优化扩散潜在变量，从而提高T2V性能。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star-half-alt"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2508.00289v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Christian Simon, Masato Ishii, Akio Hayakawa, Zhi Zhong, Shusuke Takahashi, Takashi Shibuya, Yuki Mitsufuji</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-08-04 05:00:54 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-08-04 05:03:26 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
