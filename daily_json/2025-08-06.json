@@ -1,0 +1,83 @@
+[
+    {
+        "title": "LongVie: Multimodal-Guided Controllable Ultra-Long Video Generation",
+        "summary": "Controllable ultra-long video generation is a fundamental yet challenging\ntask. Although existing methods are effective for short clips, they struggle to\nscale due to issues such as temporal inconsistency and visual degradation. In\nthis paper, we initially investigate and identify three key factors: separate\nnoise initialization, independent control signal normalization, and the\nlimitations of single-modality guidance. To address these issues, we propose\nLongVie, an end-to-end autoregressive framework for controllable long video\ngeneration. LongVie introduces two core designs to ensure temporal consistency:\n1) a unified noise initialization strategy that maintains consistent generation\nacross clips, and 2) global control signal normalization that enforces\nalignment in the control space throughout the entire video. To mitigate visual\ndegradation, LongVie employs 3) a multi-modal control framework that integrates\nboth dense (e.g., depth maps) and sparse (e.g., keypoints) control signals,\ncomplemented by 4) a degradation-aware training strategy that adaptively\nbalances modality contributions over time to preserve visual quality. We also\nintroduce LongVGenBench, a comprehensive benchmark consisting of 100\nhigh-resolution videos spanning diverse real-world and synthetic environments,\neach lasting over one minute. Extensive experiments show that LongVie achieves\nstate-of-the-art performance in long-range controllability, consistency, and\nquality.",
+        "url": "http://arxiv.org/abs/2508.03694v1",
+        "published_date": "2025-08-05T17:59:58+00:00",
+        "updated_date": "2025-08-05T17:59:58+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Jianxiong Gao",
+            "Zhaoxi Chen",
+            "Xian Liu",
+            "Jianfeng Feng",
+            "Chenyang Si",
+            "Yanwei Fu",
+            "Yu Qiao",
+            "Ziwei Liu"
+        ],
+        "tldr": "The paper introduces LongVie, a novel autoregressive framework for controllable ultra-long video generation, addressing temporal inconsistency and visual degradation issues using unified noise initialization, global control normalization, and a multi-modal control framework with degradation-aware training. It also introduces a new benchmark dataset, LongVGenBench.",
+        "tldr_zh": "该论文介绍了LongVie，一种用于可控超长视频生成的新型自回归框架，通过统一的噪声初始化、全局控制归一化以及具有降级感知训练的多模态控制框架，解决了时间不一致和视觉退化问题。该论文还引入了一个新的基准数据集LongVGenBench。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "Macro-from-Micro Planning for High-Quality and Parallelized Autoregressive Long Video Generation",
+        "summary": "Current autoregressive diffusion models excel at video generation but are\ngenerally limited to short temporal durations. Our theoretical analysis\nindicates that the autoregressive modeling typically suffers from temporal\ndrift caused by error accumulation and hinders parallelization in long video\nsynthesis. To address these limitations, we propose a novel\nplanning-then-populating framework centered on Macro-from-Micro Planning (MMPL)\nfor long video generation. MMPL sketches a global storyline for the entire\nvideo through two hierarchical stages: Micro Planning and Macro Planning.\nSpecifically, Micro Planning predicts a sparse set of future keyframes within\neach short video segment, offering motion and appearance priors to guide\nhigh-quality video segment generation. Macro Planning extends the in-segment\nkeyframes planning across the entire video through an autoregressive chain of\nmicro plans, ensuring long-term consistency across video segments.\nSubsequently, MMPL-based Content Populating generates all intermediate frames\nin parallel across segments, enabling efficient parallelization of\nautoregressive generation. The parallelization is further optimized by Adaptive\nWorkload Scheduling for balanced GPU execution and accelerated autoregressive\nvideo generation. Extensive experiments confirm that our method outperforms\nexisting long video generation models in quality and stability. Generated\nvideos and comparison results are in our project page.",
+        "url": "http://arxiv.org/abs/2508.03334v1",
+        "published_date": "2025-08-05T11:21:54+00:00",
+        "updated_date": "2025-08-05T11:21:54+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Xunzhi Xiang",
+            "Yabo Chen",
+            "Guiyu Zhang",
+            "Zhongyu Wang",
+            "Zhe Gao",
+            "Quanming Xiang",
+            "Gonghu Shang",
+            "Junqi Liu",
+            "Haibin Huang",
+            "Yang Gao",
+            "Chi Zhang",
+            "Qi Fan",
+            "Xuelong Li"
+        ],
+        "tldr": "This paper introduces Macro-from-Micro Planning (MMPL), a novel framework for high-quality, parallelized long video generation that addresses temporal drift and parallelization limitations of autoregressive diffusion models by sketching a global storyline through hierarchical planning and parallel content populating.",
+        "tldr_zh": "本文介绍了一种名为Macro-from-Micro Planning (MMPL)的新框架，用于高质量、并行化的长视频生成。该框架通过分层规划勾勒全局故事情节，并行填充内容，从而解决了自回归扩散模型在长视频生成中的时间漂移和并行化限制。",
+        "relevance_score": 10,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "Multi-human Interactive Talking Dataset",
+        "summary": "Existing studies on talking video generation have predominantly focused on\nsingle-person monologues or isolated facial animations, limiting their\napplicability to realistic multi-human interactions. To bridge this gap, we\nintroduce MIT, a large-scale dataset specifically designed for multi-human\ntalking video generation. To this end, we develop an automatic pipeline that\ncollects and annotates multi-person conversational videos. The resulting\ndataset comprises 12 hours of high-resolution footage, each featuring two to\nfour speakers, with fine-grained annotations of body poses and speech\ninteractions. It captures natural conversational dynamics in multi-speaker\nscenario, offering a rich resource for studying interactive visual behaviors.\nTo demonstrate the potential of MIT, we furthur propose CovOG, a baseline model\nfor this novel task. It integrates a Multi-Human Pose Encoder (MPE) to handle\nvarying numbers of speakers by aggregating individual pose embeddings, and an\nInteractive Audio Driver (IAD) to modulate head dynamics based on\nspeaker-specific audio features. Together, these components showcase the\nfeasibility and challenges of generating realistic multi-human talking videos,\nestablishing MIT as a valuable benchmark for future research. The code is\navalibale at: https://github.com/showlab/Multi-human-Talking-Video-Dataset.",
+        "url": "http://arxiv.org/abs/2508.03050v1",
+        "published_date": "2025-08-05T03:54:18+00:00",
+        "updated_date": "2025-08-05T03:54:18+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Zeyu Zhu",
+            "Weijia Wu",
+            "Mike Zheng Shou"
+        ],
+        "tldr": "The paper introduces MIT, a new large-scale dataset for multi-human talking video generation, and proposes a baseline model, CovOG, to demonstrate its potential.",
+        "tldr_zh": "该论文介绍了一个新的大规模多人对话视频生成数据集MIT，并提出了一个基线模型CovOG来展示其潜力。",
+        "relevance_score": 6,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]

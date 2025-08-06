@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - July 26, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 06, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>July 26, 2025</p>
+            <p>August 06, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,24 +215,33 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Back to the Features: DINO as a Foundation for Video World Models</h2>
+            <h2 class="paper-title">LongVie: Multimodal-Guided Controllable Ultra-Long Video Generation</h2>
             
-            <p class="paper-summary">We present DINO-world, a powerful generalist video world model trained to
-predict future frames in the latent space of DINOv2. By leveraging a
-pre-trained image encoder and training a future predictor on a large-scale
-uncurated video dataset, DINO-world learns the temporal dynamics of diverse
-scenes, from driving and indoor scenes to simulated environments. We show that
-DINO-world outperforms previous models on a variety of video prediction
-benchmarks, e.g. segmentation and depth forecasting, and demonstrates strong
-understanding of intuitive physics. Furthermore, we show that it is possible to
-fine-tune the predictor on observation-action trajectories. The resulting
-action-conditioned world model can be used for planning by simulating candidate
-trajectories in latent space.</p>
+            <p class="paper-summary">Controllable ultra-long video generation is a fundamental yet challenging
+task. Although existing methods are effective for short clips, they struggle to
+scale due to issues such as temporal inconsistency and visual degradation. In
+this paper, we initially investigate and identify three key factors: separate
+noise initialization, independent control signal normalization, and the
+limitations of single-modality guidance. To address these issues, we propose
+LongVie, an end-to-end autoregressive framework for controllable long video
+generation. LongVie introduces two core designs to ensure temporal consistency:
+1) a unified noise initialization strategy that maintains consistent generation
+across clips, and 2) global control signal normalization that enforces
+alignment in the control space throughout the entire video. To mitigate visual
+degradation, LongVie employs 3) a multi-modal control framework that integrates
+both dense (e.g., depth maps) and sparse (e.g., keypoints) control signals,
+complemented by 4) a degradation-aware training strategy that adaptively
+balances modality contributions over time to preserve visual quality. We also
+introduce LongVGenBench, a comprehensive benchmark consisting of 100
+high-resolution videos spanning diverse real-world and synthetic environments,
+each lasting over one minute. Extensive experiments show that LongVie achieves
+state-of-the-art performance in long-range controllability, consistency, and
+quality.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: DINO-world is a video world model trained on DINOv2's latent space, demonstrating superior performance in video prediction benchmarks and enabling action-conditioned planning through fine-tuning.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces LongVie, a novel autoregressive framework for controllable ultra-long video generation, addressing temporal inconsistency and visual degradation issues using unified noise initialization, global control normalization, and a multi-modal control framework with degradation-aware training. It also introduces a new benchmark dataset, LongVGenBench.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: DINO-world是一个在DINOv2的潜在空间中训练的视频世界模型，它在视频预测基准测试中表现出色，并通过微调实现动作条件下的规划。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了LongVie，一种用于可控超长视频生成的新型自回归框架，通过统一的噪声初始化、全局控制归一化以及具有降级感知训练的多模态控制框架，解决了时间不一致和视觉退化问题。该论文还引入了一个新的基准数据集LongVGenBench。</p>
             
 
             
@@ -303,11 +312,11 @@ trajectories in latent space.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2507.19468v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.03694v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Federico Baldassarre, Marc Szafraniec, Basile Terver, Vasil Khalidov, Francisco Massa, Yann LeCun, Patrick Labatut, Maximilian Seitzer, Piotr Bojanowski</p>
+            <p class="paper-authors">Authors: Jianxiong Gao, Zhaoxi Chen, Xian Liu, Jianfeng Feng, Chenyang Si, Yanwei Fu, Yu Qiao, Ziwei Liu</p>
             
         </motion.div>
         
@@ -319,30 +328,144 @@ trajectories in latent space.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">PINO: Person-Interaction Noise Optimization for Long-Duration and Customizable Motion Generation of Arbitrary-Sized Groups</h2>
+            <h2 class="paper-title">Macro-from-Micro Planning for High-Quality and Parallelized Autoregressive Long Video Generation</h2>
             
-            <p class="paper-summary">Generating realistic group interactions involving multiple characters remains
-challenging due to increasing complexity as group size expands. While existing
-conditional diffusion models incrementally generate motions by conditioning on
-previously generated characters, they rely on single shared prompts, limiting
-nuanced control and leading to overly simplified interactions. In this paper,
-we introduce Person-Interaction Noise Optimization (PINO), a novel,
-training-free framework designed for generating realistic and customizable
-interactions among groups of arbitrary size. PINO decomposes complex group
-interactions into semantically relevant pairwise interactions, and leverages
-pretrained two-person interaction diffusion models to incrementally compose
-group interactions. To ensure physical plausibility and avoid common artifacts
-such as overlapping or penetration between characters, PINO employs
-physics-based penalties during noise optimization. This approach allows precise
-user control over character orientation, speed, and spatial relationships
-without additional training. Comprehensive evaluations demonstrate that PINO
-generates visually realistic, physically coherent, and adaptable multi-person
-interactions suitable for diverse animation, gaming, and robotics applications.</p>
+            <p class="paper-summary">Current autoregressive diffusion models excel at video generation but are
+generally limited to short temporal durations. Our theoretical analysis
+indicates that the autoregressive modeling typically suffers from temporal
+drift caused by error accumulation and hinders parallelization in long video
+synthesis. To address these limitations, we propose a novel
+planning-then-populating framework centered on Macro-from-Micro Planning (MMPL)
+for long video generation. MMPL sketches a global storyline for the entire
+video through two hierarchical stages: Micro Planning and Macro Planning.
+Specifically, Micro Planning predicts a sparse set of future keyframes within
+each short video segment, offering motion and appearance priors to guide
+high-quality video segment generation. Macro Planning extends the in-segment
+keyframes planning across the entire video through an autoregressive chain of
+micro plans, ensuring long-term consistency across video segments.
+Subsequently, MMPL-based Content Populating generates all intermediate frames
+in parallel across segments, enabling efficient parallelization of
+autoregressive generation. The parallelization is further optimized by Adaptive
+Workload Scheduling for balanced GPU execution and accelerated autoregressive
+video generation. Extensive experiments confirm that our method outperforms
+existing long video generation models in quality and stability. Generated
+videos and comparison results are in our project page.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: PINO is a training-free framework for generating realistic and customizable interactions among groups of arbitrary size by decomposing complex group interactions into pairwise interactions and using physics-based penalties during noise optimization.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces Macro-from-Micro Planning (MMPL), a novel framework for high-quality, parallelized long video generation that addresses temporal drift and parallelization limitations of autoregressive diffusion models by sketching a global storyline through hierarchical planning and parallel content populating.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: PINO是一个无需训练的框架，通过将复杂的群体互动分解为成对互动，并在噪声优化过程中采用基于物理的惩罚，来生成任意大小的群体中逼真且可定制的互动。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种名为Macro-from-Micro Planning (MMPL)的新框架，用于高质量、并行化的长视频生成。该框架通过分层规划勾勒全局故事情节，并行填充内容，从而解决了自回归扩散模型在长视频生成中的时间漂移和并行化限制。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(10/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star-half-alt"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2508.03334v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Xunzhi Xiang, Yabo Chen, Guiyu Zhang, Zhongyu Wang, Zhe Gao, Quanming Xiang, Gonghu Shang, Junqi Liu, Haibin Huang, Yang Gao, Chi Zhang, Qi Fan, Xuelong Li</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.1, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">Multi-human Interactive Talking Dataset</h2>
+            
+            <p class="paper-summary">Existing studies on talking video generation have predominantly focused on
+single-person monologues or isolated facial animations, limiting their
+applicability to realistic multi-human interactions. To bridge this gap, we
+introduce MIT, a large-scale dataset specifically designed for multi-human
+talking video generation. To this end, we develop an automatic pipeline that
+collects and annotates multi-person conversational videos. The resulting
+dataset comprises 12 hours of high-resolution footage, each featuring two to
+four speakers, with fine-grained annotations of body poses and speech
+interactions. It captures natural conversational dynamics in multi-speaker
+scenario, offering a rich resource for studying interactive visual behaviors.
+To demonstrate the potential of MIT, we furthur propose CovOG, a baseline model
+for this novel task. It integrates a Multi-Human Pose Encoder (MPE) to handle
+varying numbers of speakers by aggregating individual pose embeddings, and an
+Interactive Audio Driver (IAD) to modulate head dynamics based on
+speaker-specific audio features. Together, these components showcase the
+feasibility and challenges of generating realistic multi-human talking videos,
+establishing MIT as a valuable benchmark for future research. The code is
+avalibale at: https://github.com/showlab/Multi-human-Talking-Video-Dataset.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces MIT, a new large-scale dataset for multi-human talking video generation, and proposes a baseline model, CovOG, to demonstrate its potential.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了一个新的大规模多人对话视频生成数据集MIT，并提出了一个基线模型CovOG来展示其潜力。</p>
             
 
             
@@ -413,18 +536,18 @@ interactions suitable for diverse animation, gaming, and robotics applications.<
             </div>
             
 
-            <a href="http://arxiv.org/abs/2507.19292v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.03050v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Sakuya Ota, Qing Yu, Kent Fujiwara, Satoshi Ikehata, Ikuro Sato</p>
+            <p class="paper-authors">Authors: Zeyu Zhu, Weijia Wu, Mike Zheng Shou</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-08-06 03:05:37 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-08-06 03:09:01 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
