@@ -1,0 +1,78 @@
+[
+    {
+        "title": "LayerT2V: Interactive Multi-Object Trajectory Layering for Video Generation",
+        "summary": "Controlling object motion trajectories in Text-to-Video (T2V) generation is a\nchallenging and relatively under-explored area, particularly in scenarios\ninvolving multiple moving objects. Most community models and datasets in the\nT2V domain are designed for single-object motion, limiting the performance of\ncurrent generative models in multi-object tasks. Additionally, existing motion\ncontrol methods in T2V either lack support for multi-object motion scenes or\nexperience severe performance degradation when object trajectories intersect,\nprimarily due to the semantic conflicts in colliding regions. To address these\nlimitations, we introduce LayerT2V, the first approach for generating video by\ncompositing background and foreground objects layer by layer. This layered\ngeneration enables flexible integration of multiple independent elements within\na video, positioning each element on a distinct \"layer\" and thus facilitating\ncoherent multi-object synthesis while enhancing control over the generation\nprocess. Extensive experiments demonstrate the superiority of LayerT2V in\ngenerating complex multi-object scenarios, showcasing 1.4x and 4.5x\nimprovements in mIoU and AP50 metrics over state-of-the-art (SOTA) methods.\nProject page and code are available at https://kr-panghu.github.io/LayerT2V/ .",
+        "url": "http://arxiv.org/abs/2508.04228v1",
+        "published_date": "2025-08-06T09:03:16+00:00",
+        "updated_date": "2025-08-06T09:03:16+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.LG",
+            "cs.MM"
+        ],
+        "authors": [
+            "Kangrui Cen",
+            "Baixuan Zhao",
+            "Yi Xin",
+            "Siqi Luo",
+            "Guangtao Zhai",
+            "Xiaohong Liu"
+        ],
+        "tldr": "LayerT2V introduces a layered video generation approach to improve multi-object motion control in Text-to-Video generation, showing significant improvements in object detection metrics.",
+        "tldr_zh": "LayerT2V 提出了一种分层视频生成方法，以改进文本到视频生成中的多对象运动控制，并在对象检测指标方面显示出显著改进。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "IDCNet: Guided Video Diffusion for Metric-Consistent RGBD Scene Generation with Precise Camera Control",
+        "summary": "We present IDC-Net (Image-Depth Consistency Network), a novel framework\ndesigned to generate RGB-D video sequences under explicit camera trajectory\ncontrol. Unlike approaches that treat RGB and depth generation separately,\nIDC-Net jointly synthesizes both RGB images and corresponding depth maps within\na unified geometry-aware diffusion model. The joint learning framework\nstrengthens spatial and geometric alignment across frames, enabling more\nprecise camera control in the generated sequences. To support the training of\nthis camera-conditioned model and ensure high geometric fidelity, we construct\na camera-image-depth consistent dataset with metric-aligned RGB videos, depth\nmaps, and accurate camera poses, which provides precise geometric supervision\nwith notably improved inter-frame geometric consistency. Moreover, we introduce\na geometry-aware transformer block that enables fine-grained camera control,\nenhancing control over the generated sequences. Extensive experiments show that\nIDC-Net achieves improvements over state-of-the-art approaches in both visual\nquality and geometric consistency of generated scene sequences. Notably, the\ngenerated RGB-D sequences can be directly feed for downstream 3D Scene\nreconstruction tasks without extra post-processing steps, showcasing the\npractical benefits of our joint learning framework. See more at\nhttps://idcnet-scene.github.io.",
+        "url": "http://arxiv.org/abs/2508.04147v1",
+        "published_date": "2025-08-06T07:19:16+00:00",
+        "updated_date": "2025-08-06T07:19:16+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Lijuan Liu",
+            "Wenfa Li",
+            "Dongbo Zhang",
+            "Shuo Wang",
+            "Shaohui Jiao"
+        ],
+        "tldr": "IDC-Net introduces a novel diffusion model for generating metric-consistent RGB-D video sequences with precise camera control by jointly synthesizing RGB images and depth maps, enabling direct use in 3D scene reconstruction.",
+        "tldr_zh": "IDC-Net 提出了一种新的扩散模型，用于生成具有精确相机控制的度量一致的 RGB-D 视频序列，通过联合合成 RGB 图像和深度图，能够直接用于 3D 场景重建。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "4DVD: Cascaded Dense-view Video Diffusion Model for High-quality 4D Content Generation",
+        "summary": "Given the high complexity of directly generating high-dimensional data such\nas 4D, we present 4DVD, a cascaded video diffusion model that generates 4D\ncontent in a decoupled manner. Unlike previous multi-view video methods that\ndirectly model 3D space and temporal features simultaneously with stacked cross\nview/temporal attention modules, 4DVD decouples this into two subtasks: coarse\nmulti-view layout generation and structure-aware conditional generation, and\neffectively unifies them. Specifically, given a monocular video, 4DVD first\npredicts the dense view content of its layout with superior cross-view and\ntemporal consistency. Based on the produced layout priors, a structure-aware\nspatio-temporal generation branch is developed, combining these coarse\nstructural priors with the exquisite appearance content of input monocular\nvideo to generate final high-quality dense-view videos. Benefit from this,\nexplicit 4D representation~(such as 4D Gaussian) can be optimized accurately,\nenabling wider practical application. To train 4DVD, we collect a dynamic 3D\nobject dataset, called D-Objaverse, from the Objaverse benchmark and render 16\nvideos with 21 frames for each object. Extensive experiments demonstrate our\nstate-of-the-art performance on both novel view synthesis and 4D generation.\nOur project page is https://4dvd.github.io/",
+        "url": "http://arxiv.org/abs/2508.04467v1",
+        "published_date": "2025-08-06T14:08:36+00:00",
+        "updated_date": "2025-08-06T14:08:36+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Shuzhou Yang",
+            "Xiaodong Cun",
+            "Xiaoyu Li",
+            "Yaowei Li",
+            "Jian Zhang"
+        ],
+        "tldr": "The paper introduces 4DVD, a cascaded video diffusion model that generates high-quality 4D content from monocular videos by decoupling the process into coarse multi-view layout generation and structure-aware conditional generation.",
+        "tldr_zh": "该论文介绍了一种名为4DVD的级联视频扩散模型，它通过将过程解耦为粗糙的多视角布局生成和结构感知条件生成，从单目视频生成高质量的4D内容。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]
