@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 07, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 08, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>August 07, 2025</p>
+            <p>August 08, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,30 +215,29 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">LayerT2V: Interactive Multi-Object Trajectory Layering for Video Generation</h2>
+            <h2 class="paper-title">Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation</h2>
             
-            <p class="paper-summary">Controlling object motion trajectories in Text-to-Video (T2V) generation is a
-challenging and relatively under-explored area, particularly in scenarios
-involving multiple moving objects. Most community models and datasets in the
-T2V domain are designed for single-object motion, limiting the performance of
-current generative models in multi-object tasks. Additionally, existing motion
-control methods in T2V either lack support for multi-object motion scenes or
-experience severe performance degradation when object trajectories intersect,
-primarily due to the semantic conflicts in colliding regions. To address these
-limitations, we introduce LayerT2V, the first approach for generating video by
-compositing background and foreground objects layer by layer. This layered
-generation enables flexible integration of multiple independent elements within
-a video, positioning each element on a distinct "layer" and thus facilitating
-coherent multi-object synthesis while enhancing control over the generation
-process. Extensive experiments demonstrate the superiority of LayerT2V in
-generating complex multi-object scenarios, showcasing 1.4x and 4.5x
-improvements in mIoU and AP50 metrics over state-of-the-art (SOTA) methods.
-Project page and code are available at https://kr-panghu.github.io/LayerT2V/ .</p>
+            <p class="paper-summary">We introduce Genie Envisioner (GE), a unified world foundation platform for
+robotic manipulation that integrates policy learning, evaluation, and
+simulation within a single video-generative framework. At its core, GE-Base is
+a large-scale, instruction-conditioned video diffusion model that captures the
+spatial, temporal, and semantic dynamics of real-world robotic interactions in
+a structured latent space. Built upon this foundation, GE-Act maps latent
+representations to executable action trajectories through a lightweight,
+flow-matching decoder, enabling precise and generalizable policy inference
+across diverse embodiments with minimal supervision. To support scalable
+evaluation and training, GE-Sim serves as an action-conditioned neural
+simulator, producing high-fidelity rollouts for closed-loop policy development.
+The platform is further equipped with EWMBench, a standardized benchmark suite
+measuring visual fidelity, physical consistency, and instruction-action
+alignment. Together, these components establish Genie Envisioner as a scalable
+and practical foundation for instruction-driven, general-purpose embodied
+intelligence. All code, models, and benchmarks will be released publicly.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: LayerT2V introduces a layered video generation approach to improve multi-object motion control in Text-to-Video generation, showing significant improvements in object detection metrics.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: Genie Envisioner is introduced as a unified platform for robotic manipulation, utilizing a video diffusion model (GE-Base) for policy learning, evaluation, and simulation. It includes action mapping (GE-Act), a neural simulator (GE-Sim), and a benchmark suite (EWMBench) for embodied intelligence.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: LayerT2V 提出了一种分层视频生成方法，以改进文本到视频生成中的多对象运动控制，并在对象检测指标方面显示出显著改进。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: Genie Envisioner是一个统一的机器人操作平台，利用视频扩散模型（GE-Base）进行策略学习、评估和模拟。它包括动作映射（GE-Act）、神经模拟器（GE-Sim）和一个用于具身智能的基准套件（EWMBench）。</p>
             
 
             
@@ -309,11 +308,11 @@ Project page and code are available at https://kr-panghu.github.io/LayerT2V/ .</
             </div>
             
 
-            <a href="http://arxiv.org/abs/2508.04228v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.05635v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Kangrui Cen, Baixuan Zhao, Yi Xin, Siqi Luo, Guangtao Zhai, Xiaohong Liu</p>
+            <p class="paper-authors">Authors: Yue Liao, Pengfei Zhou, Siyuan Huang, Donglin Yang, Shengcong Chen, Yuxin Jiang, Yue Hu, Jingbin Cai, Si Liu, Jianlan Luo, Liliang Chen, Shuicheng Yan, Maoqing Yao, Guanghui Ren</p>
             
         </motion.div>
         
@@ -325,32 +324,29 @@ Project page and code are available at https://kr-panghu.github.io/LayerT2V/ .</
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">IDCNet: Guided Video Diffusion for Metric-Consistent RGBD Scene Generation with Precise Camera Control</h2>
+            <h2 class="paper-title">PoseGen: In-Context LoRA Finetuning for Pose-Controllable Long Human Video Generation</h2>
             
-            <p class="paper-summary">We present IDC-Net (Image-Depth Consistency Network), a novel framework
-designed to generate RGB-D video sequences under explicit camera trajectory
-control. Unlike approaches that treat RGB and depth generation separately,
-IDC-Net jointly synthesizes both RGB images and corresponding depth maps within
-a unified geometry-aware diffusion model. The joint learning framework
-strengthens spatial and geometric alignment across frames, enabling more
-precise camera control in the generated sequences. To support the training of
-this camera-conditioned model and ensure high geometric fidelity, we construct
-a camera-image-depth consistent dataset with metric-aligned RGB videos, depth
-maps, and accurate camera poses, which provides precise geometric supervision
-with notably improved inter-frame geometric consistency. Moreover, we introduce
-a geometry-aware transformer block that enables fine-grained camera control,
-enhancing control over the generated sequences. Extensive experiments show that
-IDC-Net achieves improvements over state-of-the-art approaches in both visual
-quality and geometric consistency of generated scene sequences. Notably, the
-generated RGB-D sequences can be directly feed for downstream 3D Scene
-reconstruction tasks without extra post-processing steps, showcasing the
-practical benefits of our joint learning framework. See more at
-https://idcnet-scene.github.io.</p>
+            <p class="paper-summary">Generating long, temporally coherent videos with precise control over subject
+identity and motion is a formidable challenge for current diffusion models,
+which often suffer from identity drift and are limited to short clips. We
+introduce PoseGen, a novel framework that generates arbitrarily long videos of
+a specific subject from a single reference image and a driving pose sequence.
+Our core innovation is an in-context LoRA finetuning strategy that injects
+subject appearance at the token level for identity preservation, while
+simultaneously conditioning on pose information at the channel level for
+fine-grained motion control. To overcome duration limits, PoseGen pioneers an
+interleaved segment generation method that seamlessly stitches video clips
+together, using a shared KV cache mechanism and a specialized transition
+process to ensure background consistency and temporal smoothness. Trained on a
+remarkably small 33-hour video dataset, extensive experiments show that PoseGen
+significantly outperforms state-of-the-art methods in identity fidelity, pose
+accuracy, and its unique ability to produce coherent, artifact-free videos of
+unlimited duration.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: IDC-Net introduces a novel diffusion model for generating metric-consistent RGB-D video sequences with precise camera control by jointly synthesizing RGB images and depth maps, enabling direct use in 3D scene reconstruction.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: PoseGen introduces an in-context LoRA finetuning strategy and interleaved segment generation to generate long, pose-controllable human videos from a reference image and pose sequence, overcoming identity drift and duration limitations.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: IDC-Net 提出了一种新的扩散模型，用于生成具有精确相机控制的度量一致的 RGB-D 视频序列，通过联合合成 RGB 图像和深度图，能够直接用于 3D 场景重建。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: PoseGen 引入了一种上下文 LoRA 微调策略和交错分段生成方法，通过参考图像和姿势序列生成可控制姿势的长时间人物视频，克服了身份漂移和时长限制。</p>
             
 
             
@@ -421,129 +417,18 @@ https://idcnet-scene.github.io.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2508.04147v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.05091v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Lijuan Liu, Wenfa Li, Dongbo Zhang, Shuo Wang, Shaohui Jiao</p>
-            
-        </motion.div>
-        
-        <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.1, ease: 'easeOut' }"  
-            class="bento-item"
-            data-motion-element
-        >
-            <h2 class="paper-title">4DVD: Cascaded Dense-view Video Diffusion Model for High-quality 4D Content Generation</h2>
-            
-            <p class="paper-summary">Given the high complexity of directly generating high-dimensional data such
-as 4D, we present 4DVD, a cascaded video diffusion model that generates 4D
-content in a decoupled manner. Unlike previous multi-view video methods that
-directly model 3D space and temporal features simultaneously with stacked cross
-view/temporal attention modules, 4DVD decouples this into two subtasks: coarse
-multi-view layout generation and structure-aware conditional generation, and
-effectively unifies them. Specifically, given a monocular video, 4DVD first
-predicts the dense view content of its layout with superior cross-view and
-temporal consistency. Based on the produced layout priors, a structure-aware
-spatio-temporal generation branch is developed, combining these coarse
-structural priors with the exquisite appearance content of input monocular
-video to generate final high-quality dense-view videos. Benefit from this,
-explicit 4D representation~(such as 4D Gaussian) can be optimized accurately,
-enabling wider practical application. To train 4DVD, we collect a dynamic 3D
-object dataset, called D-Objaverse, from the Objaverse benchmark and render 16
-videos with 21 frames for each object. Extensive experiments demonstrate our
-state-of-the-art performance on both novel view synthesis and 4D generation.
-Our project page is https://4dvd.github.io/</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces 4DVD, a cascaded video diffusion model that generates high-quality 4D content from monocular videos by decoupling the process into coarse multi-view layout generation and structure-aware conditional generation.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了一种名为4DVD的级联视频扩散模型，它通过将过程解耦为粗糙的多视角布局生成和结构感知条件生成，从单目视频生成高质量的4D内容。</p>
-            
-
-            
-            
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
-                </div>
-                
-            </div>
-            
-            
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star-half-alt"></i>
-                    
-                
-                    
-                        <i class="far fa-star"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2508.04467v1" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Shuzhou Yang, Xiaodong Cun, Xiaoyu Li, Yaowei Li, Jian Zhang</p>
+            <p class="paper-authors">Authors: Jingxuan He, Busheng Su, Finn Wong</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-08-08 03:05:13 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-08-08 03:07:57 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

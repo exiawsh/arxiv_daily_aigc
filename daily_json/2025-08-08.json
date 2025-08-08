@@ -1,0 +1,58 @@
+[
+    {
+        "title": "Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation",
+        "summary": "We introduce Genie Envisioner (GE), a unified world foundation platform for\nrobotic manipulation that integrates policy learning, evaluation, and\nsimulation within a single video-generative framework. At its core, GE-Base is\na large-scale, instruction-conditioned video diffusion model that captures the\nspatial, temporal, and semantic dynamics of real-world robotic interactions in\na structured latent space. Built upon this foundation, GE-Act maps latent\nrepresentations to executable action trajectories through a lightweight,\nflow-matching decoder, enabling precise and generalizable policy inference\nacross diverse embodiments with minimal supervision. To support scalable\nevaluation and training, GE-Sim serves as an action-conditioned neural\nsimulator, producing high-fidelity rollouts for closed-loop policy development.\nThe platform is further equipped with EWMBench, a standardized benchmark suite\nmeasuring visual fidelity, physical consistency, and instruction-action\nalignment. Together, these components establish Genie Envisioner as a scalable\nand practical foundation for instruction-driven, general-purpose embodied\nintelligence. All code, models, and benchmarks will be released publicly.",
+        "url": "http://arxiv.org/abs/2508.05635v1",
+        "published_date": "2025-08-07T17:59:44+00:00",
+        "updated_date": "2025-08-07T17:59:44+00:00",
+        "categories": [
+            "cs.RO",
+            "cs.CV"
+        ],
+        "authors": [
+            "Yue Liao",
+            "Pengfei Zhou",
+            "Siyuan Huang",
+            "Donglin Yang",
+            "Shengcong Chen",
+            "Yuxin Jiang",
+            "Yue Hu",
+            "Jingbin Cai",
+            "Si Liu",
+            "Jianlan Luo",
+            "Liliang Chen",
+            "Shuicheng Yan",
+            "Maoqing Yao",
+            "Guanghui Ren"
+        ],
+        "tldr": "Genie Envisioner is introduced as a unified platform for robotic manipulation, utilizing a video diffusion model (GE-Base) for policy learning, evaluation, and simulation. It includes action mapping (GE-Act), a neural simulator (GE-Sim), and a benchmark suite (EWMBench) for embodied intelligence.",
+        "tldr_zh": "Genie Envisioner是一个统一的机器人操作平台，利用视频扩散模型（GE-Base）进行策略学习、评估和模拟。它包括动作映射（GE-Act）、神经模拟器（GE-Sim）和一个用于具身智能的基准套件（EWMBench）。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "PoseGen: In-Context LoRA Finetuning for Pose-Controllable Long Human Video Generation",
+        "summary": "Generating long, temporally coherent videos with precise control over subject\nidentity and motion is a formidable challenge for current diffusion models,\nwhich often suffer from identity drift and are limited to short clips. We\nintroduce PoseGen, a novel framework that generates arbitrarily long videos of\na specific subject from a single reference image and a driving pose sequence.\nOur core innovation is an in-context LoRA finetuning strategy that injects\nsubject appearance at the token level for identity preservation, while\nsimultaneously conditioning on pose information at the channel level for\nfine-grained motion control. To overcome duration limits, PoseGen pioneers an\ninterleaved segment generation method that seamlessly stitches video clips\ntogether, using a shared KV cache mechanism and a specialized transition\nprocess to ensure background consistency and temporal smoothness. Trained on a\nremarkably small 33-hour video dataset, extensive experiments show that PoseGen\nsignificantly outperforms state-of-the-art methods in identity fidelity, pose\naccuracy, and its unique ability to produce coherent, artifact-free videos of\nunlimited duration.",
+        "url": "http://arxiv.org/abs/2508.05091v1",
+        "published_date": "2025-08-07T07:19:02+00:00",
+        "updated_date": "2025-08-07T07:19:02+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Jingxuan He",
+            "Busheng Su",
+            "Finn Wong"
+        ],
+        "tldr": "PoseGen introduces an in-context LoRA finetuning strategy and interleaved segment generation to generate long, pose-controllable human videos from a reference image and pose sequence, overcoming identity drift and duration limitations.",
+        "tldr_zh": "PoseGen 引入了一种上下文 LoRA 微调策略和交错分段生成方法，通过参考图像和姿势序列生成可控制姿势的长时间人物视频，克服了身份漂移和时长限制。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
