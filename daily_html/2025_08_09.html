@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 05, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 09, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>August 05, 2025</p>
+            <p>August 09, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,38 +215,25 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">QuaDreamer: Controllable Panoramic Video Generation for Quadruped Robots</h2>
+            <h2 class="paper-title">ViPro-2: Unsupervised State Estimation via Integrated Dynamics for Guiding Video Prediction</h2>
             
-            <p class="paper-summary">Panoramic cameras, capturing comprehensive 360-degree environmental data, are
-suitable for quadruped robots in surrounding perception and interaction with
-complex environments. However, the scarcity of high-quality panoramic training
-data-caused by inherent kinematic constraints and complex sensor calibration
-challenges-fundamentally limits the development of robust perception systems
-tailored to these embodied platforms. To address this issue, we propose
-QuaDreamer-the first panoramic data generation engine specifically designed for
-quadruped robots. QuaDreamer focuses on mimicking the motion paradigm of
-quadruped robots to generate highly controllable, realistic panoramic videos,
-providing a data source for downstream tasks. Specifically, to effectively
-capture the unique vertical vibration characteristics exhibited during
-quadruped locomotion, we introduce Vertical Jitter Encoding (VJE). VJE extracts
-controllable vertical signals through frequency-domain feature filtering and
-provides high-quality prompts. To facilitate high-quality panoramic video
-generation under jitter signal control, we propose a Scene-Object Controller
-(SOC) that effectively manages object motion and boosts background jitter
-control through the attention mechanism. To address panoramic distortions in
-wide-FoV video generation, we propose the Panoramic Enhancer (PE)-a dual-stream
-architecture that synergizes frequency-texture refinement for local detail
-enhancement with spatial-structure correction for global geometric consistency.
-We further demonstrate that the generated video sequences can serve as training
-data for the quadruped robot's panoramic visual perception model, enhancing the
-performance of multi-object tracking in 360-degree scenes. The source code and
-model weights will be publicly available at
-https://github.com/losehu/QuaDreamer.</p>
+            <p class="paper-summary">Predicting future video frames is a challenging task with many downstream
+applications. Previous work has shown that procedural knowledge enables deep
+models for complex dynamical settings, however their model ViPro assumed a
+given ground truth initial symbolic state. We show that this approach led to
+the model learning a shortcut that does not actually connect the observed
+environment with the predicted symbolic state, resulting in the inability to
+estimate states given an observation if previous states are noisy. In this
+work, we add several improvements to ViPro that enables the model to correctly
+infer states from observations without providing a full ground truth state in
+the beginning. We show that this is possible in an unsupervised manner, and
+extend the original Orbits dataset with a 3D variant to close the gap to real
+world scenarios.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: QuaDreamer is a panoramic video generation engine designed for quadruped robots, addressing the scarcity of training data by generating controllable, realistic videos using techniques like Vertical Jitter Encoding, Scene-Object Controller, and Panoramic Enhancer.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper presents ViPro-2, an improved unsupervised video prediction model that can infer states from observations even with noisy initial states, addressing limitations of its predecessor, ViPro, by integrating dynamics modeling.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: QuaDreamer是一个专为四足机器人设计的全景视频生成引擎，通过垂直抖动编码、场景-对象控制器和全景增强器等技术生成可控的、逼真的视频，从而解决训练数据稀缺的问题。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了ViPro-2，一种改进的无监督视频预测模型，即使在初始状态嘈杂的情况下也能从观察中推断状态。它通过集成动力学建模解决了其前身ViPro的局限性。</p>
             
 
             
@@ -264,8 +251,8 @@ https://github.com/losehu/QuaDreamer.</p>
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
@@ -317,18 +304,128 @@ https://github.com/losehu/QuaDreamer.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2508.02512v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.06335v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Sheng Wu, Fei Teng, Hao Shi, Qi Jiang, Kai Luo, Kaiwei Wang, Kailun Yang</p>
+            <p class="paper-authors">Authors: Patrick Takenaka, Johannes Maucher, Marco F. Huber</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.05, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">SwiftVideo: A Unified Framework for Few-Step Video Generation through Trajectory-Distribution Alignment</h2>
+            
+            <p class="paper-summary">Diffusion-based or flow-based models have achieved significant progress in
+video synthesis but require multiple iterative sampling steps, which incurs
+substantial computational overhead. While many distillation methods that are
+solely based on trajectory-preserving or distribution-matching have been
+developed to accelerate video generation models, these approaches often suffer
+from performance breakdown or increased artifacts under few-step settings. To
+address these limitations, we propose \textbf{\emph{SwiftVideo}}, a unified and
+stable distillation framework that combines the advantages of
+trajectory-preserving and distribution-matching strategies. Our approach
+introduces continuous-time consistency distillation to ensure precise
+preservation of ODE trajectories. Subsequently, we propose a dual-perspective
+alignment that includes distribution alignment between synthetic and real data
+along with trajectory alignment across different inference steps. Our method
+maintains high-quality video generation while substantially reducing the number
+of inference steps. Quantitative evaluations on the OpenVid-1M benchmark
+demonstrate that our method significantly outperforms existing approaches in
+few-step video generation.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: SwiftVideo proposes a unified distillation framework for few-step video generation that combines trajectory-preserving and distribution-matching strategies to improve performance and reduce artifacts compared to existing methods, demonstrating strong results on OpenVid-1M.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: SwiftVideo 提出了一个统一的用于少步视频生成的蒸馏框架，它结合了轨迹保持和分布匹配策略，以提高性能并减少伪影，与现有方法相比，并在 OpenVid-1M 上展示了强大的结果。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2508.06082v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Yanxiao Sun, Jiafu Wu, Yun Cao, Chengming Xu, Yabiao Wang, Weijian Cao, Donghao Luo, Chengjie Wang, Yanwei Fu</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-08-11 03:04:57 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-08-11 03:09:53 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

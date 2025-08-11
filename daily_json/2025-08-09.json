@@ -1,0 +1,52 @@
+[
+    {
+        "title": "ViPro-2: Unsupervised State Estimation via Integrated Dynamics for Guiding Video Prediction",
+        "summary": "Predicting future video frames is a challenging task with many downstream\napplications. Previous work has shown that procedural knowledge enables deep\nmodels for complex dynamical settings, however their model ViPro assumed a\ngiven ground truth initial symbolic state. We show that this approach led to\nthe model learning a shortcut that does not actually connect the observed\nenvironment with the predicted symbolic state, resulting in the inability to\nestimate states given an observation if previous states are noisy. In this\nwork, we add several improvements to ViPro that enables the model to correctly\ninfer states from observations without providing a full ground truth state in\nthe beginning. We show that this is possible in an unsupervised manner, and\nextend the original Orbits dataset with a 3D variant to close the gap to real\nworld scenarios.",
+        "url": "http://arxiv.org/abs/2508.06335v1",
+        "published_date": "2025-08-08T14:10:26+00:00",
+        "updated_date": "2025-08-08T14:10:26+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Patrick Takenaka",
+            "Johannes Maucher",
+            "Marco F. Huber"
+        ],
+        "tldr": "This paper presents ViPro-2, an improved unsupervised video prediction model that can infer states from observations even with noisy initial states, addressing limitations of its predecessor, ViPro, by integrating dynamics modeling.",
+        "tldr_zh": "该论文介绍了ViPro-2，一种改进的无监督视频预测模型，即使在初始状态嘈杂的情况下也能从观察中推断状态。它通过集成动力学建模解决了其前身ViPro的局限性。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "SwiftVideo: A Unified Framework for Few-Step Video Generation through Trajectory-Distribution Alignment",
+        "summary": "Diffusion-based or flow-based models have achieved significant progress in\nvideo synthesis but require multiple iterative sampling steps, which incurs\nsubstantial computational overhead. While many distillation methods that are\nsolely based on trajectory-preserving or distribution-matching have been\ndeveloped to accelerate video generation models, these approaches often suffer\nfrom performance breakdown or increased artifacts under few-step settings. To\naddress these limitations, we propose \\textbf{\\emph{SwiftVideo}}, a unified and\nstable distillation framework that combines the advantages of\ntrajectory-preserving and distribution-matching strategies. Our approach\nintroduces continuous-time consistency distillation to ensure precise\npreservation of ODE trajectories. Subsequently, we propose a dual-perspective\nalignment that includes distribution alignment between synthetic and real data\nalong with trajectory alignment across different inference steps. Our method\nmaintains high-quality video generation while substantially reducing the number\nof inference steps. Quantitative evaluations on the OpenVid-1M benchmark\ndemonstrate that our method significantly outperforms existing approaches in\nfew-step video generation.",
+        "url": "http://arxiv.org/abs/2508.06082v1",
+        "published_date": "2025-08-08T07:26:34+00:00",
+        "updated_date": "2025-08-08T07:26:34+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yanxiao Sun",
+            "Jiafu Wu",
+            "Yun Cao",
+            "Chengming Xu",
+            "Yabiao Wang",
+            "Weijian Cao",
+            "Donghao Luo",
+            "Chengjie Wang",
+            "Yanwei Fu"
+        ],
+        "tldr": "SwiftVideo proposes a unified distillation framework for few-step video generation that combines trajectory-preserving and distribution-matching strategies to improve performance and reduce artifacts compared to existing methods, demonstrating strong results on OpenVid-1M.",
+        "tldr_zh": "SwiftVideo 提出了一个统一的用于少步视频生成的蒸馏框架，它结合了轨迹保持和分布匹配策略，以提高性能并减少伪影，与现有方法相比，并在 OpenVid-1M 上展示了强大的结果。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    }
+]
