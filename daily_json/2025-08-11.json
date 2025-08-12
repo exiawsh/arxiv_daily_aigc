@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Consistent and Controllable Image Animation with Motion Linear Diffusion Transformers",
+        "summary": "Image animation has seen significant progress, driven by the powerful\ngenerative capabilities of diffusion models. However, maintaining appearance\nconsistency with static input images and mitigating abrupt motion transitions\nin generated animations remain persistent challenges. While text-to-video (T2V)\ngeneration has demonstrated impressive performance with diffusion transformer\nmodels, the image animation field still largely relies on U-Net-based diffusion\nmodels, which lag behind the latest T2V approaches. Moreover, the quadratic\ncomplexity of vanilla self-attention mechanisms in Transformers imposes heavy\ncomputational demands, making image animation particularly resource-intensive.\nTo address these issues, we propose MiraMo, a framework designed to enhance\nefficiency, appearance consistency, and motion smoothness in image animation.\nSpecifically, MiraMo introduces three key elements: (1) A foundational\ntext-to-video architecture replacing vanilla self-attention with efficient\nlinear attention to reduce computational overhead while preserving generation\nquality; (2) A novel motion residual learning paradigm that focuses on modeling\nmotion dynamics rather than directly predicting frames, improving temporal\nconsistency; and (3) A DCT-based noise refinement strategy during inference to\nsuppress sudden motion artifacts, complemented by a dynamics control module to\nbalance motion smoothness and expressiveness. Extensive experiments against\nstate-of-the-art methods validate the superiority of MiraMo in generating\nconsistent, smooth, and controllable animations with accelerated inference\nspeed. Additionally, we demonstrate the versatility of MiraMo through\napplications in motion transfer and video editing tasks.",
+        "url": "http://arxiv.org/abs/2508.07246v1",
+        "published_date": "2025-08-10T08:59:32+00:00",
+        "updated_date": "2025-08-10T08:59:32+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Xin Ma",
+            "Yaohui Wang",
+            "Genyun Jia",
+            "Xinyuan Chen",
+            "Tien-Tsin Wong",
+            "Cunjian Chen"
+        ],
+        "tldr": "This paper introduces MiraMo, a framework for consistent and controllable image animation using a linear diffusion transformer, motion residual learning, and DCT-based noise refinement for improved efficiency, appearance consistency, and motion smoothness.",
+        "tldr_zh": "本文介绍了MiraMo，一个用于一致且可控图像动画的框架，它使用线性扩散transformer、运动残差学习和基于DCT的噪声细化，以提高效率、外观一致性和运动平滑度。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]

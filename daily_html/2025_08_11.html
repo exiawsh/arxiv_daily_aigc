@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 03, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 11, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>August 03, 2025</p>
+            <p>August 11, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -208,19 +208,125 @@
     <div class="bento-grid" id="paper-grid">
         
         <motion.div
-            initial="{ opacity: 0 }"
-            animate="{ opacity: 1 }"
-            transition="{ duration: 0.5 }"
-            class="bento-item col-span-full text-center text-gray-500"
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.0, ease: 'easeOut' }"  
+            class="bento-item"
             data-motion-element
         >
-            <p>No relevant papers found for today.</p>
+            <h2 class="paper-title">Consistent and Controllable Image Animation with Motion Linear Diffusion Transformers</h2>
+            
+            <p class="paper-summary">Image animation has seen significant progress, driven by the powerful
+generative capabilities of diffusion models. However, maintaining appearance
+consistency with static input images and mitigating abrupt motion transitions
+in generated animations remain persistent challenges. While text-to-video (T2V)
+generation has demonstrated impressive performance with diffusion transformer
+models, the image animation field still largely relies on U-Net-based diffusion
+models, which lag behind the latest T2V approaches. Moreover, the quadratic
+complexity of vanilla self-attention mechanisms in Transformers imposes heavy
+computational demands, making image animation particularly resource-intensive.
+To address these issues, we propose MiraMo, a framework designed to enhance
+efficiency, appearance consistency, and motion smoothness in image animation.
+Specifically, MiraMo introduces three key elements: (1) A foundational
+text-to-video architecture replacing vanilla self-attention with efficient
+linear attention to reduce computational overhead while preserving generation
+quality; (2) A novel motion residual learning paradigm that focuses on modeling
+motion dynamics rather than directly predicting frames, improving temporal
+consistency; and (3) A DCT-based noise refinement strategy during inference to
+suppress sudden motion artifacts, complemented by a dynamics control module to
+balance motion smoothness and expressiveness. Extensive experiments against
+state-of-the-art methods validate the superiority of MiraMo in generating
+consistent, smooth, and controllable animations with accelerated inference
+speed. Additionally, we demonstrate the versatility of MiraMo through
+applications in motion transfer and video editing tasks.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces MiraMo, a framework for consistent and controllable image animation using a linear diffusion transformer, motion residual learning, and DCT-based noise refinement for improved efficiency, appearance consistency, and motion smoothness.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了MiraMo，一个用于一致且可控图像动画的框架，它使用线性扩散transformer、运动残差学习和基于DCT的噪声细化，以提高效率、外观一致性和运动平滑度。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2508.07246v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Xin Ma, Yaohui Wang, Genyun Jia, Xinyuan Chen, Tien-Tsin Wong, Cunjian Chen</p>
+            
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-08-12 03:51:46 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-08-12 04:11:33 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
