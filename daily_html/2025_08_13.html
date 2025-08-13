@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 08, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 13, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>August 08, 2025</p>
+            <p>August 13, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,29 +215,33 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation</h2>
+            <h2 class="paper-title">Yan: Foundational Interactive Video Generation</h2>
             
-            <p class="paper-summary">We introduce Genie Envisioner (GE), a unified world foundation platform for
-robotic manipulation that integrates policy learning, evaluation, and
-simulation within a single video-generative framework. At its core, GE-Base is
-a large-scale, instruction-conditioned video diffusion model that captures the
-spatial, temporal, and semantic dynamics of real-world robotic interactions in
-a structured latent space. Built upon this foundation, GE-Act maps latent
-representations to executable action trajectories through a lightweight,
-flow-matching decoder, enabling precise and generalizable policy inference
-across diverse embodiments with minimal supervision. To support scalable
-evaluation and training, GE-Sim serves as an action-conditioned neural
-simulator, producing high-fidelity rollouts for closed-loop policy development.
-The platform is further equipped with EWMBench, a standardized benchmark suite
-measuring visual fidelity, physical consistency, and instruction-action
-alignment. Together, these components establish Genie Envisioner as a scalable
-and practical foundation for instruction-driven, general-purpose embodied
-intelligence. All code, models, and benchmarks will be released publicly.</p>
+            <p class="paper-summary">We present Yan, a foundational framework for interactive video generation,
+covering the entire pipeline from simulation and generation to editing.
+Specifically, Yan comprises three core modules. AAA-level Simulation: We design
+a highly-compressed, low-latency 3D-VAE coupled with a KV-cache-based
+shift-window denoising inference process, achieving real-time 1080P/60FPS
+interactive simulation. Multi-Modal Generation: We introduce a hierarchical
+autoregressive caption method that injects game-specific knowledge into
+open-domain multi-modal video diffusion models (VDMs), then transforming the
+VDM into a frame-wise, action-controllable, real-time infinite interactive
+video generator. Notably, when the textual and visual prompts are sourced from
+different domains, the model demonstrates strong generalization, allowing it to
+blend and compose the style and mechanics across domains flexibly according to
+user prompts. Multi-Granularity Editing: We propose a hybrid model that
+explicitly disentangles interactive mechanics simulation from visual rendering,
+enabling multi-granularity video content editing during interaction through
+text. Collectively, Yan offers an integration of these modules, pushing
+interactive video generation beyond isolated capabilities toward a
+comprehensive AI-driven interactive creation paradigm, paving the way for the
+next generation of creative tools, media, and entertainment. The project page
+is: https://greatx3.github.io/Yan/.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: Genie Envisioner is introduced as a unified platform for robotic manipulation, utilizing a video diffusion model (GE-Base) for policy learning, evaluation, and simulation. It includes action mapping (GE-Act), a neural simulator (GE-Sim), and a benchmark suite (EWMBench) for embodied intelligence.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Yan, a comprehensive framework for interactive video generation, encompassing simulation, generation, and editing through three core modules: AAA-level simulation, multi-modal generation, and multi-granularity editing.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: Genie Envisioner是一个统一的机器人操作平台，利用视频扩散模型（GE-Base）进行策略学习、评估和模拟。它包括动作映射（GE-Act）、神经模拟器（GE-Sim）和一个用于具身智能的基准套件（EWMBench）。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了Yan，一个用于交互式视频生成的综合框架，通过三个核心模块：AAA级模拟、多模态生成和多粒度编辑，涵盖了模拟、生成和编辑。</p>
             
 
             
@@ -247,32 +251,32 @@ intelligence. All code, models, and benchmarks will be released publicly.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                     <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
+                    <span class="rating-label">Clarity:</span>
                     
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                     <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
             </div>
@@ -301,18 +305,18 @@ intelligence. All code, models, and benchmarks will be released publicly.</p>
                     
                 
                     
-                        <i class="far fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2508.05635v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.08601v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Yue Liao, Pengfei Zhou, Siyuan Huang, Donglin Yang, Shengcong Chen, Yuxin Jiang, Yue Hu, Jingbin Cai, Si Liu, Jianlan Luo, Liliang Chen, Shuicheng Yan, Maoqing Yao, Guanghui Ren</p>
+            <p class="paper-authors">Authors: Yan Team</p>
             
         </motion.div>
         
@@ -324,29 +328,33 @@ intelligence. All code, models, and benchmarks will be released publicly.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">PoseGen: In-Context LoRA Finetuning for Pose-Controllable Long Human Video Generation</h2>
+            <h2 class="paper-title">RealisMotion: Decomposed Human Motion Control and Video Generation in the World Space</h2>
             
-            <p class="paper-summary">Generating long, temporally coherent videos with precise control over subject
-identity and motion is a formidable challenge for current diffusion models,
-which often suffer from identity drift and are limited to short clips. We
-introduce PoseGen, a novel framework that generates arbitrarily long videos of
-a specific subject from a single reference image and a driving pose sequence.
-Our core innovation is an in-context LoRA finetuning strategy that injects
-subject appearance at the token level for identity preservation, while
-simultaneously conditioning on pose information at the channel level for
-fine-grained motion control. To overcome duration limits, PoseGen pioneers an
-interleaved segment generation method that seamlessly stitches video clips
-together, using a shared KV cache mechanism and a specialized transition
-process to ensure background consistency and temporal smoothness. Trained on a
-remarkably small 33-hour video dataset, extensive experiments show that PoseGen
-significantly outperforms state-of-the-art methods in identity fidelity, pose
-accuracy, and its unique ability to produce coherent, artifact-free videos of
-unlimited duration.</p>
+            <p class="paper-summary">Generating human videos with realistic and controllable motions is a
+challenging task. While existing methods can generate visually compelling
+videos, they lack separate control over four key video elements: foreground
+subject, background video, human trajectory and action patterns. In this paper,
+we propose a decomposed human motion control and video generation framework
+that explicitly decouples motion from appearance, subject from background, and
+action from trajectory, enabling flexible mix-and-match composition of these
+elements. Concretely, we first build a ground-aware 3D world coordinate system
+and perform motion editing directly in the 3D space. Trajectory control is
+implemented by unprojecting edited 2D trajectories into 3D with focal-length
+calibration and coordinate transformation, followed by speed alignment and
+orientation adjustment; actions are supplied by a motion bank or generated via
+text-to-motion methods. Then, based on modern text-to-video diffusion
+transformer models, we inject the subject as tokens for full attention,
+concatenate the background along the channel dimension, and add motion
+(trajectory and action) control signals by addition. Such a design opens up the
+possibility for us to generate realistic videos of anyone doing anything
+anywhere. Extensive experiments on benchmark datasets and real-world cases
+demonstrate that our method achieves state-of-the-art performance on both
+element-wise controllability and overall video quality.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: PoseGen introduces an in-context LoRA finetuning strategy and interleaved segment generation to generate long, pose-controllable human videos from a reference image and pose sequence, overcoming identity drift and duration limitations.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper proposes a decomposed video generation framework, RealisMotion, that allows for separate control over foreground subject, background video, human trajectory, and action patterns by operating in a ground-aware 3D world space.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: PoseGen 引入了一种上下文 LoRA 微调策略和交错分段生成方法，通过参考图像和姿势序列生成可控制姿势的长时间人物视频，克服了身份漂移和时长限制。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文提出了一个分解的视频生成框架RealisMotion，通过在感知地面的3D世界空间中操作，可以分别控制前景主体、背景视频、人体轨迹和动作模式。</p>
             
 
             
@@ -417,18 +425,130 @@ unlimited duration.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2508.05091v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.08588v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Jingxuan He, Busheng Su, Finn Wong</p>
+            <p class="paper-authors">Authors: Jingyun Liang, Jingkai Zhou, Shikai Li, Chenjie Cao, Lei Sun, Yichen Qian, Weihua Chen, Fan Wang</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.1, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">MAViS: A Multi-Agent Framework for Long-Sequence Video Storytelling</h2>
+            
+            <p class="paper-summary">Despite recent advances, long-sequence video generation frameworks still
+suffer from significant limitations: poor assistive capability, suboptimal
+visual quality, and limited expressiveness. To mitigate these limitations, we
+propose MAViS, an end-to-end multi-agent collaborative framework for
+long-sequence video storytelling. MAViS orchestrates specialized agents across
+multiple stages, including script writing, shot designing, character modeling,
+keyframe generation, video animation, and audio generation. In each stage,
+agents operate under the 3E Principle -- Explore, Examine, and Enhance -- to
+ensure the completeness of intermediate outputs. Considering the capability
+limitations of current generative models, we propose the Script Writing
+Guidelines to optimize compatibility between scripts and generative tools.
+Experimental results demonstrate that MAViS achieves state-of-the-art
+performance in assistive capability, visual quality, and video expressiveness.
+Its modular framework further enables scalability with diverse generative
+models and tools. With just a brief user prompt, MAViS is capable of producing
+high-quality, expressive long-sequence video storytelling, enriching
+inspirations and creativity for users. To the best of our knowledge, MAViS is
+the only framework that provides multimodal design output -- videos with
+narratives and background music.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces MAViS, a multi-agent framework for generating long-sequence videos with improved assistive capability, visual quality, and expressiveness through a collaborative, modular approach.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了一种名为 MAViS 的多智能体框架，用于生成长序列视频，通过协作和模块化的方法，提高了辅助能力、视觉质量和表现力。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2508.08487v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Qian Wang, Ziqi Huang, Ruoxi Jia, Paul Debevec, Ning Yu</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-08-13 02:51:16 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-08-13 02:53:50 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
