@@ -1,0 +1,80 @@
+[
+    {
+        "title": "Physical Autoregressive Model for Robotic Manipulation without Action Pretraining",
+        "summary": "The scarcity of manipulation data has motivated the use of pretrained large\nmodels from other modalities in robotics. In this work, we build upon\nautoregressive video generation models to propose a Physical Autoregressive\nModel (PAR), where physical tokens combine frames and actions to represent the\njoint evolution of the robot and its environment. PAR leverages the world\nknowledge embedded in video pretraining to understand physical dynamics without\nrequiring action pretraining, enabling accurate video prediction and consistent\naction trajectories. It also adopts a DiT-based de-tokenizer to model frames\nand actions as continuous tokens, mitigating quantization errors and\nfacilitating mutual enhancement. Furthermore, we incorporate a causal mask with\ninverse kinematics, parallel training, and the KV-cache mechanism to further\nimprove performance and efficiency. Experiments on the ManiSkill benchmark show\nthat PAR achieves a 100\\% success rate on the PushCube task, matches the\nperformance of action-pretrained baselines on other tasks, and accurately\npredicts future videos with tightly aligned action trajectories. These findings\nunderscore a promising direction for robotic manipulation by transferring world\nknowledge from autoregressive video pretraining.",
+        "url": "http://arxiv.org/abs/2508.09822v1",
+        "published_date": "2025-08-13T13:54:51+00:00",
+        "updated_date": "2025-08-13T13:54:51+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Zijian Song",
+            "Sihan Qin",
+            "Tianshui Chen",
+            "Liang Lin",
+            "Guangrun Wang"
+        ],
+        "tldr": "This paper introduces a Physical Autoregressive Model (PAR) that leverages video pretraining to enable robotic manipulation without action pretraining, achieving high success rates on manipulation tasks by predicting future videos with aligned action trajectories.",
+        "tldr_zh": "该论文介绍了一种物理自回归模型（PAR），该模型利用视频预训练来实现机器人操作，而无需动作预训练，通过预测具有对齐动作轨迹的未来视频，在操作任务上实现了高成功率。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Preacher: Paper-to-Video Agentic System",
+        "summary": "The paper-to-video task converts a research paper into a structured video\nabstract, distilling key concepts, methods, and conclusions into an accessible,\nwell-organized format. While state-of-the-art video generation models\ndemonstrate potential, they are constrained by limited context windows, rigid\nvideo duration constraints, limited stylistic diversity, and an inability to\nrepresent domain-specific knowledge. To address these limitations, we introduce\nPreacher, the first paper-to-video agentic system. Preacher employs a top-down\napproach to decompose, summarize, and reformulate the paper, followed by\nbottom-up video generation, synthesizing diverse video segments into a coherent\nabstract. To align cross-modal representations, we define key scenes and\nintroduce a Progressive Chain of Thought (P-CoT) for granular, iterative\nplanning. Preacher successfully generates high-quality video abstracts across\nfive research fields, demonstrating expertise beyond current video generation\nmodels. Code will be released at: https://github.com/GenVerse/Paper2Video",
+        "url": "http://arxiv.org/abs/2508.09632v1",
+        "published_date": "2025-08-13T09:08:51+00:00",
+        "updated_date": "2025-08-13T09:08:51+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Jingwei Liu",
+            "Ling Yang",
+            "Hao Luo",
+            "Fan Wang Hongyan Li",
+            "Mengdi Wang"
+        ],
+        "tldr": "The paper introduces Preacher, a paper-to-video agentic system that decomposes, summarizes, and generates video abstracts of research papers, overcoming limitations of existing video generation models using a top-down and bottom-up approach with Progressive Chain of Thought planning.",
+        "tldr_zh": "该论文介绍了Preacher，一个论文到视频的代理系统，它分解、总结并生成研究论文的视频摘要，通过自上而下和自下而上的方法以及渐进式思维链规划，克服了现有视频生成模型的局限性。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "From Large Angles to Consistent Faces: Identity-Preserving Video Generation via Mixture of Facial Experts",
+        "summary": "Current video generation models struggle with identity preservation under\nlarge facial angles, primarily facing two challenges: the difficulty in\nexploring an effective mechanism to integrate identity features into DiT\nstructure, and the lack of targeted coverage of large facial angles in existing\nopen-source video datasets. To address these, we present two key innovations.\nFirst, we introduce a Mixture of Facial Experts (MoFE) that dynamically\ncombines complementary cues from three specialized experts, each designed to\ncapture distinct but mutually reinforcing aspects of facial attributes. The\nidentity expert captures cross-pose identity-sensitive features, the semantic\nexpert extracts high-level visual semantxics, and the detail expert preserves\npixel-level features (e.g., skin texture, color gradients). Furthermore, to\nmitigate dataset limitations, we have tailored a data processing pipeline\ncentered on two key aspects: Face Constraints and Identity Consistency. Face\nConstraints ensure facial angle diversity and a high proportion of facial\nregions, while Identity Consistency preserves coherent person-specific features\nacross temporal sequences, collectively addressing the scarcity of large facial\nangles and identity-stable training data in existing datasets. Leveraging this\npipeline, we have curated and refined a Large Face Angles (LFA) Dataset from\nexisting open-source human video datasets, comprising 460K video clips with\nannotated facial angles. Experimental results on the LFA benchmark demonstrate\nthat our method, empowered by the LFA dataset, significantly outperforms prior\nSOTA methods in face similarity, face FID, and CLIP semantic alignment. The\ncode and dataset will be made publicly available at\nhttps://github.com/rain152/LFA-Video-Generation.",
+        "url": "http://arxiv.org/abs/2508.09476v1",
+        "published_date": "2025-08-13T04:10:16+00:00",
+        "updated_date": "2025-08-13T04:10:16+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yuji Wang",
+            "Moran Li",
+            "Xiaobin Hu",
+            "Ran Yi",
+            "Jiangning Zhang",
+            "Chengming Xu",
+            "Weijian Cao",
+            "Yabiao Wang",
+            "Chengjie Wang",
+            "Lizhuang Ma"
+        ],
+        "tldr": "This paper introduces a Mixture of Facial Experts (MoFE) architecture and a Large Face Angles (LFA) dataset to improve identity preservation in video generation, especially under large facial angles.",
+        "tldr_zh": "该论文介绍了一种混合面部专家（MoFE）架构和一个大面部角度（LFA）数据集，以提高视频生成中的身份保持能力，尤其是在大面部角度下。",
+        "relevance_score": 6,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]
