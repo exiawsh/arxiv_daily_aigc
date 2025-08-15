@@ -1,0 +1,51 @@
+[
+    {
+        "title": "Video-BLADE: Block-Sparse Attention Meets Step Distillation for Efficient Video Generation",
+        "summary": "Diffusion transformers currently lead the field in high-quality video\ngeneration, but their slow iterative denoising process and prohibitive\nquadratic attention costs for long sequences create significant inference\nbottlenecks. While both step distillation and sparse attention mechanisms have\nshown promise as independent acceleration strategies, effectively combining\nthese approaches presents critical challenges -- training-free integration\nyields suboptimal results, while separately training sparse attention after\nstep distillation requires prohibitively expensive high-quality video data. To\novercome these limitations, we propose BLADE, an innovative data-free joint\ntraining framework that introduces: (1) an Adaptive Block-Sparse Attention\n(ASA) mechanism for dynamically generating content-aware sparsity masks to\nfocus computation on salient spatiotemporal features, and (2) a sparsity-aware\nstep distillation paradigm built upon Trajectory Distribution Matching (TDM)\nthat directly incorporates sparsity into the distillation process rather than\ntreating it as a separate compression step, with fast convergence. We validate\nBLADE on text-to-video models like CogVideoX-5B and Wan2.1-1.3B. Our framework\ndemonstrates remarkable efficiency gains across different scales. On\nWan2.1-1.3B, BLADE achieves a 14.10x end-to-end inference acceleration over a\n50-step baseline. Moreover, on models such as CogVideoX-5B with short video\nsequence lengths, our framework delivers a robust 8.89x speedup. Crucially, the\nacceleration is accompanied by a consistent quality improvement. On the\nVBench-2.0 benchmark, BLADE boosts the score of CogVideoX-5B to 0.569 (from\n0.534) and Wan2.1-1.3B to 0.570 (from 0.563), results that are further\ncorroborated by superior ratings in human evaluations. Our code and model\nweights are publicly available at: http://ziplab.co/BLADE-Homepage/.",
+        "url": "http://arxiv.org/abs/2508.10774v1",
+        "published_date": "2025-08-14T15:58:59+00:00",
+        "updated_date": "2025-08-14T15:58:59+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.LG"
+        ],
+        "authors": [
+            "Youping Gu",
+            "Xiaolong Li",
+            "Yuhao Hu",
+            "Bohan Zhuang"
+        ],
+        "tldr": "This paper introduces Video-BLADE, a framework that combines block-sparse attention and step distillation with joint training to accelerate video generation while improving quality, achieving significant speedups on text-to-video models.",
+        "tldr_zh": "该论文介绍了Video-BLADE，一个结合块稀疏注意力机制和步进蒸馏的框架，通过联合训练来加速视频生成并提升质量，在文本到视频模型上实现了显著的加速。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "Hierarchical Fine-grained Preference Optimization for Physically Plausible Video Generation",
+        "summary": "Recent advancements in video generation have enabled the creation of\nhigh-quality, visually compelling videos. However, generating videos that\nadhere to the laws of physics remains a critical challenge for applications\nrequiring realism and accuracy. In this work, we propose PhysHPO, a novel\nframework for Hierarchical Cross-Modal Direct Preference Optimization, to\ntackle this challenge by enabling fine-grained preference alignment for\nphysically plausible video generation. PhysHPO optimizes video alignment across\nfour hierarchical granularities: a) Instance Level, aligning the overall video\ncontent with the input prompt; b) State Level, ensuring temporal consistency\nusing boundary frames as anchors; c) Motion Level, modeling motion trajectories\nfor realistic dynamics; and d) Semantic Level, maintaining logical consistency\nbetween narrative and visuals. Recognizing that real-world videos are the best\nreflections of physical phenomena, we further introduce an automated data\nselection pipeline to efficiently identify and utilize \"good data\" from\nexisting large-scale text-video datasets, thereby eliminating the need for\ncostly and time-intensive dataset construction. Extensive experiments on both\nphysics-focused and general capability benchmarks demonstrate that PhysHPO\nsignificantly improves physical plausibility and overall video generation\nquality of advanced models. To the best of our knowledge, this is the first\nwork to explore fine-grained preference alignment and data selection for video\ngeneration, paving the way for more realistic and human-preferred video\ngeneration paradigms.",
+        "url": "http://arxiv.org/abs/2508.10858v1",
+        "published_date": "2025-08-14T17:30:37+00:00",
+        "updated_date": "2025-08-14T17:30:37+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Harold Haodong Chen",
+            "Haojian Huang",
+            "Qifeng Chen",
+            "Harry Yang",
+            "Ser-Nam Lim"
+        ],
+        "tldr": "The paper introduces PhysHPO, a novel framework for physically plausible video generation using hierarchical fine-grained preference optimization and automated data selection from existing datasets.",
+        "tldr_zh": "该论文介绍了PhysHPO，一种用于生成物理上合理的视频的新框架，它使用分层细粒度偏好优化和从现有数据集中自动选择数据。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
