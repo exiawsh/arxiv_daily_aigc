@@ -1,0 +1,26 @@
+[
+    {
+        "title": "CineTrans: Learning to Generate Videos with Cinematic Transitions via Masked Diffusion Models",
+        "summary": "Despite significant advances in video synthesis, research into multi-shot\nvideo generation remains in its infancy. Even with scaled-up models and massive\ndatasets, the shot transition capabilities remain rudimentary and unstable,\nlargely confining generated videos to single-shot sequences. In this work, we\nintroduce CineTrans, a novel framework for generating coherent multi-shot\nvideos with cinematic, film-style transitions. To facilitate insights into the\nfilm editing style, we construct a multi-shot video-text dataset Cine250K with\ndetailed shot annotations. Furthermore, our analysis of existing video\ndiffusion models uncovers a correspondence between attention maps in the\ndiffusion model and shot boundaries, which we leverage to design a mask-based\ncontrol mechanism that enables transitions at arbitrary positions and transfers\neffectively in a training-free setting. After fine-tuning on our dataset with\nthe mask mechanism, CineTrans produces cinematic multi-shot sequences while\nadhering to the film editing style, avoiding unstable transitions or naive\nconcatenations. Finally, we propose specialized evaluation metrics for\ntransition control, temporal consistency and overall quality, and demonstrate\nthrough extensive experiments that CineTrans significantly outperforms existing\nbaselines across all criteria.",
+        "url": "http://arxiv.org/abs/2508.11484v1",
+        "published_date": "2025-08-15T13:58:22+00:00",
+        "updated_date": "2025-08-15T13:58:22+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Xiaoxue Wu",
+            "Bingjie Gao",
+            "Yu Qiao",
+            "Yaohui Wang",
+            "Xinyuan Chen"
+        ],
+        "tldr": "CineTrans introduces a masked diffusion model for generating multi-shot videos with cinematic transitions, leveraging a newly created dataset and a novel attention-based control mechanism to outperform existing baselines.",
+        "tldr_zh": "CineTrans 提出了一种基于掩码扩散模型的方法，用于生成具有电影过渡效果的多镜头视频。该方法利用新创建的数据集和基于注意力机制的控制方法，性能优于现有基线。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 15, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 16, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>August 15, 2025</p>
+            <p>August 16, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,38 +215,31 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Video-BLADE: Block-Sparse Attention Meets Step Distillation for Efficient Video Generation</h2>
+            <h2 class="paper-title">CineTrans: Learning to Generate Videos with Cinematic Transitions via Masked Diffusion Models</h2>
             
-            <p class="paper-summary">Diffusion transformers currently lead the field in high-quality video
-generation, but their slow iterative denoising process and prohibitive
-quadratic attention costs for long sequences create significant inference
-bottlenecks. While both step distillation and sparse attention mechanisms have
-shown promise as independent acceleration strategies, effectively combining
-these approaches presents critical challenges -- training-free integration
-yields suboptimal results, while separately training sparse attention after
-step distillation requires prohibitively expensive high-quality video data. To
-overcome these limitations, we propose BLADE, an innovative data-free joint
-training framework that introduces: (1) an Adaptive Block-Sparse Attention
-(ASA) mechanism for dynamically generating content-aware sparsity masks to
-focus computation on salient spatiotemporal features, and (2) a sparsity-aware
-step distillation paradigm built upon Trajectory Distribution Matching (TDM)
-that directly incorporates sparsity into the distillation process rather than
-treating it as a separate compression step, with fast convergence. We validate
-BLADE on text-to-video models like CogVideoX-5B and Wan2.1-1.3B. Our framework
-demonstrates remarkable efficiency gains across different scales. On
-Wan2.1-1.3B, BLADE achieves a 14.10x end-to-end inference acceleration over a
-50-step baseline. Moreover, on models such as CogVideoX-5B with short video
-sequence lengths, our framework delivers a robust 8.89x speedup. Crucially, the
-acceleration is accompanied by a consistent quality improvement. On the
-VBench-2.0 benchmark, BLADE boosts the score of CogVideoX-5B to 0.569 (from
-0.534) and Wan2.1-1.3B to 0.570 (from 0.563), results that are further
-corroborated by superior ratings in human evaluations. Our code and model
-weights are publicly available at: http://ziplab.co/BLADE-Homepage/.</p>
+            <p class="paper-summary">Despite significant advances in video synthesis, research into multi-shot
+video generation remains in its infancy. Even with scaled-up models and massive
+datasets, the shot transition capabilities remain rudimentary and unstable,
+largely confining generated videos to single-shot sequences. In this work, we
+introduce CineTrans, a novel framework for generating coherent multi-shot
+videos with cinematic, film-style transitions. To facilitate insights into the
+film editing style, we construct a multi-shot video-text dataset Cine250K with
+detailed shot annotations. Furthermore, our analysis of existing video
+diffusion models uncovers a correspondence between attention maps in the
+diffusion model and shot boundaries, which we leverage to design a mask-based
+control mechanism that enables transitions at arbitrary positions and transfers
+effectively in a training-free setting. After fine-tuning on our dataset with
+the mask mechanism, CineTrans produces cinematic multi-shot sequences while
+adhering to the film editing style, avoiding unstable transitions or naive
+concatenations. Finally, we propose specialized evaluation metrics for
+transition control, temporal consistency and overall quality, and demonstrate
+through extensive experiments that CineTrans significantly outperforms existing
+baselines across all criteria.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces Video-BLADE, a framework that combines block-sparse attention and step distillation with joint training to accelerate video generation while improving quality, achieving significant speedups on text-to-video models.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: CineTrans introduces a masked diffusion model for generating multi-shot videos with cinematic transitions, leveraging a newly created dataset and a novel attention-based control mechanism to outperform existing baselines.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了Video-BLADE，一个结合块稀疏注意力机制和步进蒸馏的框架，通过联合训练来加速视频生成并提升质量，在文本到视频模型上实现了显著的加速。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: CineTrans 提出了一种基于掩码扩散模型的方法，用于生成具有电影过渡效果的多镜头视频。该方法利用新创建的数据集和基于注意力机制的控制方法，性能优于现有基线。</p>
             
 
             
@@ -272,123 +265,8 @@ weights are publicly available at: http://ziplab.co/BLADE-Homepage/.</p>
                 <div class="rating-item">
                     <span class="rating-label">Clarity:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                     <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-            </div>
-            
-            
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star-half-alt"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2508.10774v1" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Youping Gu, Xiaolong Li, Yuhao Hu, Bohan Zhuang</p>
-            
-        </motion.div>
-        
-        <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.05, ease: 'easeOut' }"  
-            class="bento-item"
-            data-motion-element
-        >
-            <h2 class="paper-title">Hierarchical Fine-grained Preference Optimization for Physically Plausible Video Generation</h2>
-            
-            <p class="paper-summary">Recent advancements in video generation have enabled the creation of
-high-quality, visually compelling videos. However, generating videos that
-adhere to the laws of physics remains a critical challenge for applications
-requiring realism and accuracy. In this work, we propose PhysHPO, a novel
-framework for Hierarchical Cross-Modal Direct Preference Optimization, to
-tackle this challenge by enabling fine-grained preference alignment for
-physically plausible video generation. PhysHPO optimizes video alignment across
-four hierarchical granularities: a) Instance Level, aligning the overall video
-content with the input prompt; b) State Level, ensuring temporal consistency
-using boundary frames as anchors; c) Motion Level, modeling motion trajectories
-for realistic dynamics; and d) Semantic Level, maintaining logical consistency
-between narrative and visuals. Recognizing that real-world videos are the best
-reflections of physical phenomena, we further introduce an automated data
-selection pipeline to efficiently identify and utilize "good data" from
-existing large-scale text-video datasets, thereby eliminating the need for
-costly and time-intensive dataset construction. Extensive experiments on both
-physics-focused and general capability benchmarks demonstrate that PhysHPO
-significantly improves physical plausibility and overall video generation
-quality of advanced models. To the best of our knowledge, this is the first
-work to explore fine-grained preference alignment and data selection for video
-generation, paving the way for more realistic and human-preferred video
-generation paradigms.</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces PhysHPO, a novel framework for physically plausible video generation using hierarchical fine-grained preference optimization and automated data selection from existing datasets.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了PhysHPO，一种用于生成物理上合理的视频的新框架，它使用分层细粒度偏好优化和从现有数据集中自动选择数据。</p>
-            
-
-            
-            
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -432,18 +310,18 @@ generation paradigms.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2508.10858v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.11484v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Harold Haodong Chen, Haojian Huang, Qifeng Chen, Harry Yang, Ser-Nam Lim</p>
+            <p class="paper-authors">Authors: Xiaoxue Wu, Bingjie Gao, Yu Qiao, Yaohui Wang, Xinyuan Chen</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-08-18 04:43:02 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-08-18 04:52:13 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
