@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 08, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 17, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>August 08, 2025</p>
+            <p>August 17, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,29 +215,26 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation</h2>
+            <h2 class="paper-title">VimoRAG: Video-based Retrieval-augmented 3D Motion Generation for Motion Language Models</h2>
             
-            <p class="paper-summary">We introduce Genie Envisioner (GE), a unified world foundation platform for
-robotic manipulation that integrates policy learning, evaluation, and
-simulation within a single video-generative framework. At its core, GE-Base is
-a large-scale, instruction-conditioned video diffusion model that captures the
-spatial, temporal, and semantic dynamics of real-world robotic interactions in
-a structured latent space. Built upon this foundation, GE-Act maps latent
-representations to executable action trajectories through a lightweight,
-flow-matching decoder, enabling precise and generalizable policy inference
-across diverse embodiments with minimal supervision. To support scalable
-evaluation and training, GE-Sim serves as an action-conditioned neural
-simulator, producing high-fidelity rollouts for closed-loop policy development.
-The platform is further equipped with EWMBench, a standardized benchmark suite
-measuring visual fidelity, physical consistency, and instruction-action
-alignment. Together, these components establish Genie Envisioner as a scalable
-and practical foundation for instruction-driven, general-purpose embodied
-intelligence. All code, models, and benchmarks will be released publicly.</p>
+            <p class="paper-summary">This paper introduces VimoRAG, a novel video-based retrieval-augmented motion
+generation framework for motion large language models (LLMs). As motion LLMs
+face severe out-of-domain/out-of-vocabulary issues due to limited annotated
+data, VimoRAG leverages large-scale in-the-wild video databases to enhance 3D
+motion generation by retrieving relevant 2D human motion signals. While
+video-based motion RAG is nontrivial, we address two key bottlenecks: (1)
+developing an effective motion-centered video retrieval model that
+distinguishes human poses and actions, and (2) mitigating the issue of error
+propagation caused by suboptimal retrieval results. We design the Gemini Motion
+Video Retriever mechanism and the Motion-centric Dual-alignment DPO Trainer,
+enabling effective retrieval and generation processes. Experimental results
+show that VimoRAG significantly boosts the performance of motion LLMs
+constrained to text-only input.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: Genie Envisioner is introduced as a unified platform for robotic manipulation, utilizing a video diffusion model (GE-Base) for policy learning, evaluation, and simulation. It includes action mapping (GE-Act), a neural simulator (GE-Sim), and a benchmark suite (EWMBench) for embodied intelligence.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces VimoRAG, a video-based retrieval-augmented framework that enhances motion LLMs by retrieving relevant 2D human motion from large-scale video databases, addressing out-of-domain issues and error propagation through specialized mechanisms.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: Genie Envisioner是一个统一的机器人操作平台，利用视频扩散模型（GE-Base）进行策略学习、评估和模拟。它包括动作映射（GE-Act）、神经模拟器（GE-Sim）和一个用于具身智能的基准套件（EWMBench）。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了VimoRAG，一个基于视频检索增强的框架，通过从大规模视频数据库中检索相关的2D人体运动来增强运动LLM，解决了领域外问题和误差传播，并通过专门的机制实现。</p>
             
 
             
@@ -247,8 +244,8 @@ intelligence. All code, models, and benchmarks will be released publicly.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
@@ -271,8 +268,8 @@ intelligence. All code, models, and benchmarks will be released publicly.</p>
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
             </div>
@@ -297,138 +294,29 @@ intelligence. All code, models, and benchmarks will be released publicly.</p>
                     
                 
                     
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
                     
                         <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2508.05635v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.12081v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Yue Liao, Pengfei Zhou, Siyuan Huang, Donglin Yang, Shengcong Chen, Yuxin Jiang, Yue Hu, Jingbin Cai, Si Liu, Jianlan Luo, Liliang Chen, Shuicheng Yan, Maoqing Yao, Guanghui Ren</p>
-            
-        </motion.div>
-        
-        <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.05, ease: 'easeOut' }"  
-            class="bento-item"
-            data-motion-element
-        >
-            <h2 class="paper-title">PoseGen: In-Context LoRA Finetuning for Pose-Controllable Long Human Video Generation</h2>
-            
-            <p class="paper-summary">Generating long, temporally coherent videos with precise control over subject
-identity and motion is a formidable challenge for current diffusion models,
-which often suffer from identity drift and are limited to short clips. We
-introduce PoseGen, a novel framework that generates arbitrarily long videos of
-a specific subject from a single reference image and a driving pose sequence.
-Our core innovation is an in-context LoRA finetuning strategy that injects
-subject appearance at the token level for identity preservation, while
-simultaneously conditioning on pose information at the channel level for
-fine-grained motion control. To overcome duration limits, PoseGen pioneers an
-interleaved segment generation method that seamlessly stitches video clips
-together, using a shared KV cache mechanism and a specialized transition
-process to ensure background consistency and temporal smoothness. Trained on a
-remarkably small 33-hour video dataset, extensive experiments show that PoseGen
-significantly outperforms state-of-the-art methods in identity fidelity, pose
-accuracy, and its unique ability to produce coherent, artifact-free videos of
-unlimited duration.</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: PoseGen introduces an in-context LoRA finetuning strategy and interleaved segment generation to generate long, pose-controllable human videos from a reference image and pose sequence, overcoming identity drift and duration limitations.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: PoseGen 引入了一种上下文 LoRA 微调策略和交错分段生成方法，通过参考图像和姿势序列生成可控制姿势的长时间人物视频，克服了身份漂移和时长限制。</p>
-            
-
-            
-            
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-            </div>
-            
-            
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="far fa-star"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2508.05091v1" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Jingxuan He, Busheng Su, Finn Wong</p>
+            <p class="paper-authors">Authors: Haidong Xu, Guangwei Xu, Zhedong Zheng, Xiatian Zhu, Wei Ji, Xiangtai Li, Ruijie Guo, Meishan Zhang, Min zhang, Hao Fei</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-08-19 02:43:04 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-08-19 02:48:14 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

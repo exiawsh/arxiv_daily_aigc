@@ -1,0 +1,33 @@
+[
+    {
+        "title": "VimoRAG: Video-based Retrieval-augmented 3D Motion Generation for Motion Language Models",
+        "summary": "This paper introduces VimoRAG, a novel video-based retrieval-augmented motion\ngeneration framework for motion large language models (LLMs). As motion LLMs\nface severe out-of-domain/out-of-vocabulary issues due to limited annotated\ndata, VimoRAG leverages large-scale in-the-wild video databases to enhance 3D\nmotion generation by retrieving relevant 2D human motion signals. While\nvideo-based motion RAG is nontrivial, we address two key bottlenecks: (1)\ndeveloping an effective motion-centered video retrieval model that\ndistinguishes human poses and actions, and (2) mitigating the issue of error\npropagation caused by suboptimal retrieval results. We design the Gemini Motion\nVideo Retriever mechanism and the Motion-centric Dual-alignment DPO Trainer,\nenabling effective retrieval and generation processes. Experimental results\nshow that VimoRAG significantly boosts the performance of motion LLMs\nconstrained to text-only input.",
+        "url": "http://arxiv.org/abs/2508.12081v1",
+        "published_date": "2025-08-16T15:31:14+00:00",
+        "updated_date": "2025-08-16T15:31:14+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.CL"
+        ],
+        "authors": [
+            "Haidong Xu",
+            "Guangwei Xu",
+            "Zhedong Zheng",
+            "Xiatian Zhu",
+            "Wei Ji",
+            "Xiangtai Li",
+            "Ruijie Guo",
+            "Meishan Zhang",
+            "Min zhang",
+            "Hao Fei"
+        ],
+        "tldr": "The paper introduces VimoRAG, a video-based retrieval-augmented framework that enhances motion LLMs by retrieving relevant 2D human motion from large-scale video databases, addressing out-of-domain issues and error propagation through specialized mechanisms.",
+        "tldr_zh": "该论文介绍了VimoRAG，一个基于视频检索增强的框架，通过从大规模视频数据库中检索相关的2D人体运动来增强运动LLM，解决了领域外问题和误差传播，并通过专门的机制实现。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]

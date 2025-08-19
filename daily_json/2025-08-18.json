@@ -1,0 +1,28 @@
+[
+    {
+        "title": "TiP4GEN: Text to Immersive Panorama 4D Scene Generation",
+        "summary": "With the rapid advancement and widespread adoption of VR/AR technologies,\nthere is a growing demand for the creation of high-quality, immersive dynamic\nscenes. However, existing generation works predominantly concentrate on the\ncreation of static scenes or narrow perspective-view dynamic scenes, falling\nshort of delivering a truly 360-degree immersive experience from any viewpoint.\nIn this paper, we introduce \\textbf{TiP4GEN}, an advanced text-to-dynamic\npanorama scene generation framework that enables fine-grained content control\nand synthesizes motion-rich, geometry-consistent panoramic 4D scenes. TiP4GEN\nintegrates panorama video generation and dynamic scene reconstruction to create\n360-degree immersive virtual environments. For video generation, we introduce a\n\\textbf{Dual-branch Generation Model} consisting of a panorama branch and a\nperspective branch, responsible for global and local view generation,\nrespectively. A bidirectional cross-attention mechanism facilitates\ncomprehensive information exchange between the branches. For scene\nreconstruction, we propose a \\textbf{Geometry-aligned Reconstruction Model}\nbased on 3D Gaussian Splatting. By aligning spatial-temporal point clouds using\nmetric depth maps and initializing scene cameras with estimated poses, our\nmethod ensures geometric consistency and temporal coherence for the\nreconstructed scenes. Extensive experiments demonstrate the effectiveness of\nour proposed designs and the superiority of TiP4GEN in generating visually\ncompelling and motion-coherent dynamic panoramic scenes. Our project page is at\nhttps://ke-xing.github.io/TiP4GEN/.",
+        "url": "http://arxiv.org/abs/2508.12415v1",
+        "published_date": "2025-08-17T16:02:24+00:00",
+        "updated_date": "2025-08-17T16:02:24+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Ke Xing",
+            "Hanwen Liang",
+            "Dejia Xu",
+            "Yuyang Yin",
+            "Konstantinos N. Plataniotis",
+            "Yao Zhao",
+            "Yunchao Wei"
+        ],
+        "tldr": "TiP4GEN is a text-to-dynamic panorama scene generation framework that creates immersive 360-degree virtual environments using a dual-branch generation model and a geometry-aligned reconstruction model. It generates motion-rich, geometry-consistent panoramic 4D scenes from text prompts.",
+        "tldr_zh": "TiP4GEN是一个文本到动态全景场景生成框架，它使用双分支生成模型和几何对齐的重建模型来创建沉浸式360度虚拟环境。它可以从文本提示生成具有丰富运动和几何一致性的全景4D场景。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    }
+]

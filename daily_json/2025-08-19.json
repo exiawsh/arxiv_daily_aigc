@@ -1,0 +1,111 @@
+[
+    {
+        "title": "4DNeX: Feed-Forward 4D Generative Modeling Made Easy",
+        "summary": "We present 4DNeX, the first feed-forward framework for generating 4D (i.e.,\ndynamic 3D) scene representations from a single image. In contrast to existing\nmethods that rely on computationally intensive optimization or require\nmulti-frame video inputs, 4DNeX enables efficient, end-to-end image-to-4D\ngeneration by fine-tuning a pretrained video diffusion model. Specifically, 1)\nto alleviate the scarcity of 4D data, we construct 4DNeX-10M, a large-scale\ndataset with high-quality 4D annotations generated using advanced\nreconstruction approaches. 2) we introduce a unified 6D video representation\nthat jointly models RGB and XYZ sequences, facilitating structured learning of\nboth appearance and geometry. 3) we propose a set of simple yet effective\nadaptation strategies to repurpose pretrained video diffusion models for 4D\nmodeling. 4DNeX produces high-quality dynamic point clouds that enable\nnovel-view video synthesis. Extensive experiments demonstrate that 4DNeX\noutperforms existing 4D generation methods in efficiency and generalizability,\noffering a scalable solution for image-to-4D modeling and laying the foundation\nfor generative 4D world models that simulate dynamic scene evolution.",
+        "url": "http://arxiv.org/abs/2508.13154v1",
+        "published_date": "2025-08-18T17:59:55+00:00",
+        "updated_date": "2025-08-18T17:59:55+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Zhaoxi Chen",
+            "Tianqi Liu",
+            "Long Zhuo",
+            "Jiawei Ren",
+            "Zeng Tao",
+            "He Zhu",
+            "Fangzhou Hong",
+            "Liang Pan",
+            "Ziwei Liu"
+        ],
+        "tldr": "4DNeX is a feed-forward framework for generating dynamic 3D scenes from a single image by fine-tuning a pretrained video diffusion model, using a novel 4D dataset and a unified 6D video representation.",
+        "tldr_zh": "4DNeX是一个前馈框架，通过微调预训练的视频扩散模型，从单张图像生成动态3D场景。该方法利用了一个新的4D数据集和一个统一的6D视频表示。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Precise Action-to-Video Generation Through Visual Action Prompts",
+        "summary": "We present visual action prompts, a unified action representation for\naction-to-video generation of complex high-DoF interactions while maintaining\ntransferable visual dynamics across domains. Action-driven video generation\nfaces a precision-generality trade-off: existing methods using text, primitive\nactions, or coarse masks offer generality but lack precision, while\nagent-centric action signals provide precision at the cost of cross-domain\ntransferability. To balance action precision and dynamic transferability, we\npropose to \"render\" actions into precise visual prompts as domain-agnostic\nrepresentations that preserve both geometric precision and cross-domain\nadaptability for complex actions; specifically, we choose visual skeletons for\ntheir generality and accessibility. We propose robust pipelines to construct\nskeletons from two interaction-rich data sources - human-object interactions\n(HOI) and dexterous robotic manipulation - enabling cross-domain training of\naction-driven generative models. By integrating visual skeletons into\npretrained video generation models via lightweight fine-tuning, we enable\nprecise action control of complex interaction while preserving the learning of\ncross-domain dynamics. Experiments on EgoVid, RT-1 and DROID demonstrate the\neffectiveness of our proposed approach. Project page:\nhttps://zju3dv.github.io/VAP/.",
+        "url": "http://arxiv.org/abs/2508.13104v1",
+        "published_date": "2025-08-18T17:12:28+00:00",
+        "updated_date": "2025-08-18T17:12:28+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.RO"
+        ],
+        "authors": [
+            "Yuang Wang",
+            "Chao Wen",
+            "Haoyu Guo",
+            "Sida Peng",
+            "Minghan Qin",
+            "Hujun Bao",
+            "Xiaowei Zhou",
+            "Ruizhen Hu"
+        ],
+        "tldr": "This paper introduces visual action prompts, specifically visual skeletons, as a domain-agnostic representation for precise action-to-video generation of complex interactions, achieving cross-domain transferability.",
+        "tldr_zh": "本文提出了一种视觉动作提示（visual action prompts），特别是视觉骨架，作为一种领域无关的表示，用于精确生成复杂交互的动作到视频，实现了跨领域的可迁移性。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "EgoTwin: Dreaming Body and View in First Person",
+        "summary": "While exocentric video synthesis has achieved great progress, egocentric\nvideo generation remains largely underexplored, which requires modeling\nfirst-person view content along with camera motion patterns induced by the\nwearer's body movements. To bridge this gap, we introduce a novel task of joint\negocentric video and human motion generation, characterized by two key\nchallenges: 1) Viewpoint Alignment: the camera trajectory in the generated\nvideo must accurately align with the head trajectory derived from human motion;\n2) Causal Interplay: the synthesized human motion must causally align with the\nobserved visual dynamics across adjacent video frames. To address these\nchallenges, we propose EgoTwin, a joint video-motion generation framework built\non the diffusion transformer architecture. Specifically, EgoTwin introduces a\nhead-centric motion representation that anchors the human motion to the head\njoint and incorporates a cybernetics-inspired interaction mechanism that\nexplicitly captures the causal interplay between video and motion within\nattention operations. For comprehensive evaluation, we curate a large-scale\nreal-world dataset of synchronized text-video-motion triplets and design novel\nmetrics to assess video-motion consistency. Extensive experiments demonstrate\nthe effectiveness of the EgoTwin framework.",
+        "url": "http://arxiv.org/abs/2508.13013v1",
+        "published_date": "2025-08-18T15:33:09+00:00",
+        "updated_date": "2025-08-18T15:33:09+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Jingqiao Xiu",
+            "Fangzhou Hong",
+            "Yicong Li",
+            "Mengze Li",
+            "Wentao Wang",
+            "Sirui Han",
+            "Liang Pan",
+            "Ziwei Liu"
+        ],
+        "tldr": "EgoTwin introduces a diffusion transformer framework for joint egocentric video and human motion generation, addressing viewpoint alignment and causal interplay between video and motion, and validated on a new large-scale dataset.",
+        "tldr_zh": "EgoTwin 提出了一个基于扩散 Transformer 的框架，用于联合生成以自我为中心的视频和人体运动，解决了视点对齐以及视频和运动之间的因果关系，并在一个新的大规模数据集上进行了验证。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Compact Attention: Exploiting Structured Spatio-Temporal Sparsity for Fast Video Generation",
+        "summary": "The computational demands of self-attention mechanisms pose a critical\nchallenge for transformer-based video generation, particularly in synthesizing\nultra-long sequences. Current approaches, such as factorized attention and\nfixed sparse patterns, fail to fully exploit the inherent spatio-temporal\nredundancies in video data. Through systematic analysis of video diffusion\ntransformers (DiT), we uncover a key insight: Attention matrices exhibit\nstructured, yet heterogeneous sparsity patterns, where specialized heads\ndynamically attend to distinct spatiotemporal regions (e.g., local pattern,\ncross-shaped pattern, or global pattern). Existing sparse attention methods\neither impose rigid constraints or introduce significant overhead, limiting\ntheir effectiveness. To address this, we propose Compact Attention, a\nhardware-aware acceleration framework featuring three innovations: 1) Adaptive\ntiling strategies that approximate diverse spatial interaction patterns via\ndynamic tile grouping, 2) Temporally varying windows that adjust sparsity\nlevels based on frame proximity, and 3) An automated configuration search\nalgorithm that optimizes sparse patterns while preserving critical attention\npathways. Our method achieves 1.6~2.5x acceleration in attention computation on\nsingle-GPU setups while maintaining comparable visual quality with\nfull-attention baselines. This work provides a principled approach to unlocking\nefficient long-form video generation through structured sparsity exploitation.\nProject Page: https://yo-ava.github.io/Compact-Attention.github.io/",
+        "url": "http://arxiv.org/abs/2508.12969v1",
+        "published_date": "2025-08-18T14:45:42+00:00",
+        "updated_date": "2025-08-18T14:45:42+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Qirui Li",
+            "Guangcong Zheng",
+            "Qi Zhao",
+            "Jie Li",
+            "Bin Dong",
+            "Yiwu Yao",
+            "Xi Li"
+        ],
+        "tldr": "This paper introduces Compact Attention, a hardware-aware framework that exploits structured spatio-temporal sparsity in attention matrices to accelerate video generation while maintaining visual quality, achieving 1.6-2.5x speedup on a single GPU.",
+        "tldr_zh": "该论文介绍了Compact Attention，一个硬件感知的框架，它利用注意力矩阵中结构化的时空稀疏性来加速视频生成，同时保持视觉质量，在单个GPU上实现了1.6-2.5倍的加速。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 06, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 19, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>August 06, 2025</p>
+            <p>August 19, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,33 +215,29 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">LongVie: Multimodal-Guided Controllable Ultra-Long Video Generation</h2>
+            <h2 class="paper-title">4DNeX: Feed-Forward 4D Generative Modeling Made Easy</h2>
             
-            <p class="paper-summary">Controllable ultra-long video generation is a fundamental yet challenging
-task. Although existing methods are effective for short clips, they struggle to
-scale due to issues such as temporal inconsistency and visual degradation. In
-this paper, we initially investigate and identify three key factors: separate
-noise initialization, independent control signal normalization, and the
-limitations of single-modality guidance. To address these issues, we propose
-LongVie, an end-to-end autoregressive framework for controllable long video
-generation. LongVie introduces two core designs to ensure temporal consistency:
-1) a unified noise initialization strategy that maintains consistent generation
-across clips, and 2) global control signal normalization that enforces
-alignment in the control space throughout the entire video. To mitigate visual
-degradation, LongVie employs 3) a multi-modal control framework that integrates
-both dense (e.g., depth maps) and sparse (e.g., keypoints) control signals,
-complemented by 4) a degradation-aware training strategy that adaptively
-balances modality contributions over time to preserve visual quality. We also
-introduce LongVGenBench, a comprehensive benchmark consisting of 100
-high-resolution videos spanning diverse real-world and synthetic environments,
-each lasting over one minute. Extensive experiments show that LongVie achieves
-state-of-the-art performance in long-range controllability, consistency, and
-quality.</p>
+            <p class="paper-summary">We present 4DNeX, the first feed-forward framework for generating 4D (i.e.,
+dynamic 3D) scene representations from a single image. In contrast to existing
+methods that rely on computationally intensive optimization or require
+multi-frame video inputs, 4DNeX enables efficient, end-to-end image-to-4D
+generation by fine-tuning a pretrained video diffusion model. Specifically, 1)
+to alleviate the scarcity of 4D data, we construct 4DNeX-10M, a large-scale
+dataset with high-quality 4D annotations generated using advanced
+reconstruction approaches. 2) we introduce a unified 6D video representation
+that jointly models RGB and XYZ sequences, facilitating structured learning of
+both appearance and geometry. 3) we propose a set of simple yet effective
+adaptation strategies to repurpose pretrained video diffusion models for 4D
+modeling. 4DNeX produces high-quality dynamic point clouds that enable
+novel-view video synthesis. Extensive experiments demonstrate that 4DNeX
+outperforms existing 4D generation methods in efficiency and generalizability,
+offering a scalable solution for image-to-4D modeling and laying the foundation
+for generative 4D world models that simulate dynamic scene evolution.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces LongVie, a novel autoregressive framework for controllable ultra-long video generation, addressing temporal inconsistency and visual degradation issues using unified noise initialization, global control normalization, and a multi-modal control framework with degradation-aware training. It also introduces a new benchmark dataset, LongVGenBench.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 4DNeX is a feed-forward framework for generating dynamic 3D scenes from a single image by fine-tuning a pretrained video diffusion model, using a novel 4D dataset and a unified 6D video representation.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了LongVie，一种用于可控超长视频生成的新型自回归框架，通过统一的噪声初始化、全局控制归一化以及具有降级感知训练的多模态控制框架，解决了时间不一致和视觉退化问题。该论文还引入了一个新的基准数据集LongVGenBench。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 4DNeX是一个前馈框架，通过微调预训练的视频扩散模型，从单张图像生成动态3D场景。该方法利用了一个新的4D数据集和一个统一的6D视频表示。</p>
             
 
             
@@ -251,24 +247,24 @@ quality.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                     <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
+                    <span class="rating-label">Novelty:</span>
                     
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                     <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -305,18 +301,18 @@ quality.</p>
                     
                 
                     
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2508.03694v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.13154v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Jianxiong Gao, Zhaoxi Chen, Xian Liu, Jianfeng Feng, Chenyang Si, Yanwei Fu, Yu Qiao, Ziwei Liu</p>
+            <p class="paper-authors">Authors: Zhaoxi Chen, Tianqi Liu, Long Zhuo, Jiawei Ren, Zeng Tao, He Zhu, Fangzhou Hong, Liang Pan, Ziwei Liu</p>
             
         </motion.div>
         
@@ -328,33 +324,32 @@ quality.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Macro-from-Micro Planning for High-Quality and Parallelized Autoregressive Long Video Generation</h2>
+            <h2 class="paper-title">Precise Action-to-Video Generation Through Visual Action Prompts</h2>
             
-            <p class="paper-summary">Current autoregressive diffusion models excel at video generation but are
-generally limited to short temporal durations. Our theoretical analysis
-indicates that the autoregressive modeling typically suffers from temporal
-drift caused by error accumulation and hinders parallelization in long video
-synthesis. To address these limitations, we propose a novel
-planning-then-populating framework centered on Macro-from-Micro Planning (MMPL)
-for long video generation. MMPL sketches a global storyline for the entire
-video through two hierarchical stages: Micro Planning and Macro Planning.
-Specifically, Micro Planning predicts a sparse set of future keyframes within
-each short video segment, offering motion and appearance priors to guide
-high-quality video segment generation. Macro Planning extends the in-segment
-keyframes planning across the entire video through an autoregressive chain of
-micro plans, ensuring long-term consistency across video segments.
-Subsequently, MMPL-based Content Populating generates all intermediate frames
-in parallel across segments, enabling efficient parallelization of
-autoregressive generation. The parallelization is further optimized by Adaptive
-Workload Scheduling for balanced GPU execution and accelerated autoregressive
-video generation. Extensive experiments confirm that our method outperforms
-existing long video generation models in quality and stability. Generated
-videos and comparison results are in our project page.</p>
+            <p class="paper-summary">We present visual action prompts, a unified action representation for
+action-to-video generation of complex high-DoF interactions while maintaining
+transferable visual dynamics across domains. Action-driven video generation
+faces a precision-generality trade-off: existing methods using text, primitive
+actions, or coarse masks offer generality but lack precision, while
+agent-centric action signals provide precision at the cost of cross-domain
+transferability. To balance action precision and dynamic transferability, we
+propose to "render" actions into precise visual prompts as domain-agnostic
+representations that preserve both geometric precision and cross-domain
+adaptability for complex actions; specifically, we choose visual skeletons for
+their generality and accessibility. We propose robust pipelines to construct
+skeletons from two interaction-rich data sources - human-object interactions
+(HOI) and dexterous robotic manipulation - enabling cross-domain training of
+action-driven generative models. By integrating visual skeletons into
+pretrained video generation models via lightweight fine-tuning, we enable
+precise action control of complex interaction while preserving the learning of
+cross-domain dynamics. Experiments on EgoVid, RT-1 and DROID demonstrate the
+effectiveness of our proposed approach. Project page:
+https://zju3dv.github.io/VAP/.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces Macro-from-Micro Planning (MMPL), a novel framework for high-quality, parallelized long video generation that addresses temporal drift and parallelization limitations of autoregressive diffusion models by sketching a global storyline through hierarchical planning and parallel content populating.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces visual action prompts, specifically visual skeletons, as a domain-agnostic representation for precise action-to-video generation of complex interactions, achieving cross-domain transferability.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种名为Macro-from-Micro Planning (MMPL)的新框架，用于高质量、并行化的长视频生成。该框架通过分层规划勾勒全局故事情节，并行填充内容，从而解决了自回归扩散模型在长视频生成中的时间漂移和并行化限制。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文提出了一种视觉动作提示（visual action prompts），特别是视觉骨架，作为一种领域无关的表示，用于精确生成复杂交互的动作到视频，实现了跨领域的可迁移性。</p>
             
 
             
@@ -363,120 +358,9 @@ videos and comparison results are in our project page.</p>
                 
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(10/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
                     
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                     <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-            </div>
-            
-            
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star-half-alt"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2508.03334v1" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Xunzhi Xiang, Yabo Chen, Guiyu Zhang, Zhongyu Wang, Zhe Gao, Quanming Xiang, Gonghu Shang, Junqi Liu, Haibin Huang, Yang Gao, Chi Zhang, Qi Fan, Xuelong Li</p>
-            
-        </motion.div>
-        
-        <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.1, ease: 'easeOut' }"  
-            class="bento-item"
-            data-motion-element
-        >
-            <h2 class="paper-title">Multi-human Interactive Talking Dataset</h2>
-            
-            <p class="paper-summary">Existing studies on talking video generation have predominantly focused on
-single-person monologues or isolated facial animations, limiting their
-applicability to realistic multi-human interactions. To bridge this gap, we
-introduce MIT, a large-scale dataset specifically designed for multi-human
-talking video generation. To this end, we develop an automatic pipeline that
-collects and annotates multi-person conversational videos. The resulting
-dataset comprises 12 hours of high-resolution footage, each featuring two to
-four speakers, with fine-grained annotations of body poses and speech
-interactions. It captures natural conversational dynamics in multi-speaker
-scenario, offering a rich resource for studying interactive visual behaviors.
-To demonstrate the potential of MIT, we furthur propose CovOG, a baseline model
-for this novel task. It integrates a Multi-Human Pose Encoder (MPE) to handle
-varying numbers of speakers by aggregating individual pose embeddings, and an
-Interactive Audio Driver (IAD) to modulate head dynamics based on
-speaker-specific audio features. Together, these components showcase the
-feasibility and challenges of generating realistic multi-human talking videos,
-establishing MIT as a valuable benchmark for future research. The code is
-avalibale at: https://github.com/showlab/Multi-human-Talking-Video-Dataset.</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces MIT, a new large-scale dataset for multi-human talking video generation, and proposes a baseline model, CovOG, to demonstrate its potential.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了一个新的大规模多人对话视频生成数据集MIT，并提出了一个基线模型CovOG来展示其潜力。</p>
-            
-
-            
-            
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(6/10)</span>
                 </div>
                 
                 
@@ -525,29 +409,254 @@ avalibale at: https://github.com/showlab/Multi-human-Talking-Video-Dataset.</p>
                     
                 
                     
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="fas fa-star"></i>
                     
                 
                     
                         <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2508.03050v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.13104v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Zeyu Zhu, Weijia Wu, Mike Zheng Shou</p>
+            <p class="paper-authors">Authors: Yuang Wang, Chao Wen, Haoyu Guo, Sida Peng, Minghan Qin, Hujun Bao, Xiaowei Zhou, Ruizhen Hu</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.1, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">EgoTwin: Dreaming Body and View in First Person</h2>
+            
+            <p class="paper-summary">While exocentric video synthesis has achieved great progress, egocentric
+video generation remains largely underexplored, which requires modeling
+first-person view content along with camera motion patterns induced by the
+wearer's body movements. To bridge this gap, we introduce a novel task of joint
+egocentric video and human motion generation, characterized by two key
+challenges: 1) Viewpoint Alignment: the camera trajectory in the generated
+video must accurately align with the head trajectory derived from human motion;
+2) Causal Interplay: the synthesized human motion must causally align with the
+observed visual dynamics across adjacent video frames. To address these
+challenges, we propose EgoTwin, a joint video-motion generation framework built
+on the diffusion transformer architecture. Specifically, EgoTwin introduces a
+head-centric motion representation that anchors the human motion to the head
+joint and incorporates a cybernetics-inspired interaction mechanism that
+explicitly captures the causal interplay between video and motion within
+attention operations. For comprehensive evaluation, we curate a large-scale
+real-world dataset of synchronized text-video-motion triplets and design novel
+metrics to assess video-motion consistency. Extensive experiments demonstrate
+the effectiveness of the EgoTwin framework.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: EgoTwin introduces a diffusion transformer framework for joint egocentric video and human motion generation, addressing viewpoint alignment and causal interplay between video and motion, and validated on a new large-scale dataset.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: EgoTwin 提出了一个基于扩散 Transformer 的框架，用于联合生成以自我为中心的视频和人体运动，解决了视点对齐以及视频和运动之间的因果关系，并在一个新的大规模数据集上进行了验证。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2508.13013v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Jingqiao Xiu, Fangzhou Hong, Yicong Li, Mengze Li, Wentao Wang, Sirui Han, Liang Pan, Ziwei Liu</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.15000000000000002, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">Compact Attention: Exploiting Structured Spatio-Temporal Sparsity for Fast Video Generation</h2>
+            
+            <p class="paper-summary">The computational demands of self-attention mechanisms pose a critical
+challenge for transformer-based video generation, particularly in synthesizing
+ultra-long sequences. Current approaches, such as factorized attention and
+fixed sparse patterns, fail to fully exploit the inherent spatio-temporal
+redundancies in video data. Through systematic analysis of video diffusion
+transformers (DiT), we uncover a key insight: Attention matrices exhibit
+structured, yet heterogeneous sparsity patterns, where specialized heads
+dynamically attend to distinct spatiotemporal regions (e.g., local pattern,
+cross-shaped pattern, or global pattern). Existing sparse attention methods
+either impose rigid constraints or introduce significant overhead, limiting
+their effectiveness. To address this, we propose Compact Attention, a
+hardware-aware acceleration framework featuring three innovations: 1) Adaptive
+tiling strategies that approximate diverse spatial interaction patterns via
+dynamic tile grouping, 2) Temporally varying windows that adjust sparsity
+levels based on frame proximity, and 3) An automated configuration search
+algorithm that optimizes sparse patterns while preserving critical attention
+pathways. Our method achieves 1.6~2.5x acceleration in attention computation on
+single-GPU setups while maintaining comparable visual quality with
+full-attention baselines. This work provides a principled approach to unlocking
+efficient long-form video generation through structured sparsity exploitation.
+Project Page: https://yo-ava.github.io/Compact-Attention.github.io/</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces Compact Attention, a hardware-aware framework that exploits structured spatio-temporal sparsity in attention matrices to accelerate video generation while maintaining visual quality, achieving 1.6-2.5x speedup on a single GPU.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了Compact Attention，一个硬件感知的框架，它利用注意力矩阵中结构化的时空稀疏性来加速视频生成，同时保持视觉质量，在单个GPU上实现了1.6-2.5倍的加速。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2508.12969v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Qirui Li, Guangcong Zheng, Qi Zhao, Jie Li, Bin Dong, Yiwu Yao, Xi Li</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-08-19 02:43:04 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-08-19 03:08:55 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
