@@ -1,0 +1,32 @@
+[
+    {
+        "title": "InfiniteTalk: Audio-driven Video Generation for Sparse-Frame Video Dubbing",
+        "summary": "Recent breakthroughs in video AIGC have ushered in a transformative era for\naudio-driven human animation. However, conventional video dubbing techniques\nremain constrained to mouth region editing, resulting in discordant facial\nexpressions and body gestures that compromise viewer immersion. To overcome\nthis limitation, we introduce sparse-frame video dubbing, a novel paradigm that\nstrategically preserves reference keyframes to maintain identity, iconic\ngestures, and camera trajectories while enabling holistic, audio-synchronized\nfull-body motion editing. Through critical analysis, we identify why naive\nimage-to-video models fail in this task, particularly their inability to\nachieve adaptive conditioning. Addressing this, we propose InfiniteTalk, a\nstreaming audio-driven generator designed for infinite-length long sequence\ndubbing. This architecture leverages temporal context frames for seamless\ninter-chunk transitions and incorporates a simple yet effective sampling\nstrategy that optimizes control strength via fine-grained reference frame\npositioning. Comprehensive evaluations on HDTF, CelebV-HQ, and EMTD datasets\ndemonstrate state-of-the-art performance. Quantitative metrics confirm superior\nvisual realism, emotional coherence, and full-body motion synchronization.",
+        "url": "http://arxiv.org/abs/2508.14033v1",
+        "published_date": "2025-08-19T17:55:23+00:00",
+        "updated_date": "2025-08-19T17:55:23+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Shaoshu Yang",
+            "Zhe Kong",
+            "Feng Gao",
+            "Meng Cheng",
+            "Xiangyu Liu",
+            "Yong Zhang",
+            "Zhuoliang Kang",
+            "Wenhan Luo",
+            "Xunliang Cai",
+            "Ran He",
+            "Xiaoming Wei"
+        ],
+        "tldr": "The paper introduces InfiniteTalk, a streaming audio-driven video generator for sparse-frame video dubbing, which uses temporal context frames and a sampling strategy to achieve seamless transitions and control over reference frame positioning for improved realism and motion synchronization.",
+        "tldr_zh": "该论文介绍了InfiniteTalk，一种用于稀疏帧视频配音的流式音频驱动视频生成器，它使用时间上下文帧和一个采样策略来实现无缝过渡，并控制参考帧定位，从而提高真实感和运动同步。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    }
+]

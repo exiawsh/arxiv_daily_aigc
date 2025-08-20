@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 17, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 20, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>August 17, 2025</p>
+            <p>August 20, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,26 +215,30 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">VimoRAG: Video-based Retrieval-augmented 3D Motion Generation for Motion Language Models</h2>
+            <h2 class="paper-title">InfiniteTalk: Audio-driven Video Generation for Sparse-Frame Video Dubbing</h2>
             
-            <p class="paper-summary">This paper introduces VimoRAG, a novel video-based retrieval-augmented motion
-generation framework for motion large language models (LLMs). As motion LLMs
-face severe out-of-domain/out-of-vocabulary issues due to limited annotated
-data, VimoRAG leverages large-scale in-the-wild video databases to enhance 3D
-motion generation by retrieving relevant 2D human motion signals. While
-video-based motion RAG is nontrivial, we address two key bottlenecks: (1)
-developing an effective motion-centered video retrieval model that
-distinguishes human poses and actions, and (2) mitigating the issue of error
-propagation caused by suboptimal retrieval results. We design the Gemini Motion
-Video Retriever mechanism and the Motion-centric Dual-alignment DPO Trainer,
-enabling effective retrieval and generation processes. Experimental results
-show that VimoRAG significantly boosts the performance of motion LLMs
-constrained to text-only input.</p>
+            <p class="paper-summary">Recent breakthroughs in video AIGC have ushered in a transformative era for
+audio-driven human animation. However, conventional video dubbing techniques
+remain constrained to mouth region editing, resulting in discordant facial
+expressions and body gestures that compromise viewer immersion. To overcome
+this limitation, we introduce sparse-frame video dubbing, a novel paradigm that
+strategically preserves reference keyframes to maintain identity, iconic
+gestures, and camera trajectories while enabling holistic, audio-synchronized
+full-body motion editing. Through critical analysis, we identify why naive
+image-to-video models fail in this task, particularly their inability to
+achieve adaptive conditioning. Addressing this, we propose InfiniteTalk, a
+streaming audio-driven generator designed for infinite-length long sequence
+dubbing. This architecture leverages temporal context frames for seamless
+inter-chunk transitions and incorporates a simple yet effective sampling
+strategy that optimizes control strength via fine-grained reference frame
+positioning. Comprehensive evaluations on HDTF, CelebV-HQ, and EMTD datasets
+demonstrate state-of-the-art performance. Quantitative metrics confirm superior
+visual realism, emotional coherence, and full-body motion synchronization.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces VimoRAG, a video-based retrieval-augmented framework that enhances motion LLMs by retrieving relevant 2D human motion from large-scale video databases, addressing out-of-domain issues and error propagation through specialized mechanisms.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces InfiniteTalk, a streaming audio-driven video generator for sparse-frame video dubbing, which uses temporal context frames and a sampling strategy to achieve seamless transitions and control over reference frame positioning for improved realism and motion synchronization.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了VimoRAG，一个基于视频检索增强的框架，通过从大规模视频数据库中检索相关的2D人体运动来增强运动LLM，解决了领域外问题和误差传播，并通过专门的机制实现。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了InfiniteTalk，一种用于稀疏帧视频配音的流式音频驱动视频生成器，它使用时间上下文帧和一个采样策略来实现无缝过渡，并控制参考帧定位，从而提高真实感和运动同步。</p>
             
 
             
@@ -244,8 +248,8 @@ constrained to text-only input.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -294,29 +298,29 @@ constrained to text-only input.</p>
                     
                 
                     
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="fas fa-star"></i>
                     
                 
                     
                         <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2508.12081v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.14033v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Haidong Xu, Guangwei Xu, Zhedong Zheng, Xiatian Zhu, Wei Ji, Xiangtai Li, Ruijie Guo, Meishan Zhang, Min zhang, Hao Fei</p>
+            <p class="paper-authors">Authors: Shaoshu Yang, Zhe Kong, Feng Gao, Meng Cheng, Xiangyu Liu, Yong Zhang, Zhuoliang Kang, Wenhan Luo, Xunliang Cai, Ran He, Xiaoming Wei</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-08-20 03:42:21 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-08-20 03:52:10 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
