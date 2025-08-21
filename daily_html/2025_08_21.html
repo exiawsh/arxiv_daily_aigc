@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 16, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 21, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>August 16, 2025</p>
+            <p>August 21, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,31 +215,32 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">CineTrans: Learning to Generate Videos with Cinematic Transitions via Masked Diffusion Models</h2>
+            <h2 class="paper-title">MoVieDrive: Multi-Modal Multi-View Urban Scene Video Generation</h2>
             
-            <p class="paper-summary">Despite significant advances in video synthesis, research into multi-shot
-video generation remains in its infancy. Even with scaled-up models and massive
-datasets, the shot transition capabilities remain rudimentary and unstable,
-largely confining generated videos to single-shot sequences. In this work, we
-introduce CineTrans, a novel framework for generating coherent multi-shot
-videos with cinematic, film-style transitions. To facilitate insights into the
-film editing style, we construct a multi-shot video-text dataset Cine250K with
-detailed shot annotations. Furthermore, our analysis of existing video
-diffusion models uncovers a correspondence between attention maps in the
-diffusion model and shot boundaries, which we leverage to design a mask-based
-control mechanism that enables transitions at arbitrary positions and transfers
-effectively in a training-free setting. After fine-tuning on our dataset with
-the mask mechanism, CineTrans produces cinematic multi-shot sequences while
-adhering to the film editing style, avoiding unstable transitions or naive
-concatenations. Finally, we propose specialized evaluation metrics for
-transition control, temporal consistency and overall quality, and demonstrate
-through extensive experiments that CineTrans significantly outperforms existing
-baselines across all criteria.</p>
+            <p class="paper-summary">Video generation has recently shown superiority in urban scene synthesis for
+autonomous driving. Existing video generation approaches to autonomous driving
+primarily focus on RGB video generation and lack the ability to support
+multi-modal video generation. However, multi-modal data, such as depth maps and
+semantic maps, are crucial for holistic urban scene understanding in autonomous
+driving. Although it is feasible to use multiple models to generate different
+modalities, this increases the difficulty of model deployment and does not
+leverage complementary cues for multi-modal data generation. To address this
+problem, in this work, we propose a novel multi-modal multi-view video
+generation approach to autonomous driving. Specifically, we construct a unified
+diffusion transformer model composed of modal-shared components and
+modal-specific components. Then, we leverage diverse conditioning inputs to
+encode controllable scene structure and content cues into the unified diffusion
+model for multi-modal multi-view video generation. In this way, our approach is
+capable of generating multi-modal multi-view driving scene videos in a unified
+framework. Our experiments on the challenging real-world autonomous driving
+dataset, nuScenes, show that our approach can generate multi-modal multi-view
+urban scene videos with high fidelity and controllability, surpassing the
+state-of-the-art methods.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: CineTrans introduces a masked diffusion model for generating multi-shot videos with cinematic transitions, leveraging a newly created dataset and a novel attention-based control mechanism to outperform existing baselines.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces MoVieDrive, a novel multi-modal multi-view video generation approach for autonomous driving using a unified diffusion transformer model, demonstrating improved fidelity and controllability on the nuScenes dataset.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: CineTrans 提出了一种基于掩码扩散模型的方法，用于生成具有电影过渡效果的多镜头视频。该方法利用新创建的数据集和基于注意力机制的控制方法，性能优于现有基线。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了MoVieDrive，一种新颖的多模态多视角视频生成方法，用于自动驾驶，它使用统一的扩散Transformer模型，并在nuScenes数据集上展示了改进的逼真度和可控性。</p>
             
 
             
@@ -257,8 +258,8 @@ baselines across all criteria.</p>
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
@@ -310,18 +311,18 @@ baselines across all criteria.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2508.11484v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.14327v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Xiaoxue Wu, Bingjie Gao, Yu Qiao, Yaohui Wang, Xinyuan Chen</p>
+            <p class="paper-authors">Authors: Guile Wu, David Huang, Dongfeng Bai, Bingbing Liu</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-08-21 03:41:52 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-08-21 03:44:16 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
