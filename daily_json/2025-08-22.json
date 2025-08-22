@@ -1,0 +1,84 @@
+[
+    {
+        "title": "Waver: Wave Your Way to Lifelike Video Generation",
+        "summary": "We present Waver, a high-performance foundation model for unified image and\nvideo generation. Waver can directly generate videos with durations ranging\nfrom 5 to 10 seconds at a native resolution of 720p, which are subsequently\nupscaled to 1080p. The model simultaneously supports text-to-video (T2V),\nimage-to-video (I2V), and text-to-image (T2I) generation within a single,\nintegrated framework. We introduce a Hybrid Stream DiT architecture to enhance\nmodality alignment and accelerate training convergence. To ensure training data\nquality, we establish a comprehensive data curation pipeline and manually\nannotate and train an MLLM-based video quality model to filter for the\nhighest-quality samples. Furthermore, we provide detailed training and\ninference recipes to facilitate the generation of high-quality videos. Building\non these contributions, Waver excels at capturing complex motion, achieving\nsuperior motion amplitude and temporal consistency in video synthesis. Notably,\nit ranks among the Top 3 on both the T2V and I2V leaderboards at Artificial\nAnalysis (data as of 2025-07-30 10:00 GMT+8), consistently outperforming\nexisting open-source models and matching or surpassing state-of-the-art\ncommercial solutions. We hope this technical report will help the community\nmore efficiently train high-quality video generation models and accelerate\nprogress in video generation technologies. Official page:\nhttps://github.com/FoundationVision/Waver.",
+        "url": "http://arxiv.org/abs/2508.15761v1",
+        "published_date": "2025-08-21T17:56:10+00:00",
+        "updated_date": "2025-08-21T17:56:10+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yifu Zhang",
+            "Hao Yang",
+            "Yuqi Zhang",
+            "Yifei Hu",
+            "Fengda Zhu",
+            "Chuang Lin",
+            "Xiaofeng Mei",
+            "Yi Jiang",
+            "Zehuan Yuan",
+            "Bingyue Peng"
+        ],
+        "tldr": "Waver is a new foundation model for unified image and video generation (T2V, I2V, T2I) that achieves state-of-the-art results with a novel Hybrid Stream DiT architecture and a high-quality data curation pipeline, excelling in complex motion and temporal consistency.",
+        "tldr_zh": "Waver 是一个新的统一图像和视频生成的基础模型（T2V, I2V, T2I），它采用新颖的混合流 DiT 架构和高质量的数据管理流程，达到了最先进的结果，擅长捕捉复杂的运动和时间一致性。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "WorldWeaver: Generating Long-Horizon Video Worlds via Rich Perception",
+        "summary": "Generative video modeling has made significant strides, yet ensuring\nstructural and temporal consistency over long sequences remains a challenge.\nCurrent methods predominantly rely on RGB signals, leading to accumulated\nerrors in object structure and motion over extended durations. To address these\nissues, we introduce WorldWeaver, a robust framework for long video generation\nthat jointly models RGB frames and perceptual conditions within a unified\nlong-horizon modeling scheme. Our training framework offers three key\nadvantages. First, by jointly predicting perceptual conditions and color\ninformation from a unified representation, it significantly enhances temporal\nconsistency and motion dynamics. Second, by leveraging depth cues, which we\nobserve to be more resistant to drift than RGB, we construct a memory bank that\npreserves clearer contextual information, improving quality in long-horizon\nvideo generation. Third, we employ segmented noise scheduling for training\nprediction groups, which further mitigates drift and reduces computational\ncost. Extensive experiments on both diffusion- and rectified flow-based models\ndemonstrate the effectiveness of WorldWeaver in reducing temporal drift and\nimproving the fidelity of generated videos.",
+        "url": "http://arxiv.org/abs/2508.15720v1",
+        "published_date": "2025-08-21T16:57:33+00:00",
+        "updated_date": "2025-08-21T16:57:33+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Zhiheng Liu",
+            "Xueqing Deng",
+            "Shoufa Chen",
+            "Angtian Wang",
+            "Qiushan Guo",
+            "Mingfei Han",
+            "Zeyue Xue",
+            "Mengzhao Chen",
+            "Ping Luo",
+            "Linjie Yang"
+        ],
+        "tldr": "WorldWeaver is a framework for long video generation that jointly models RGB frames and perceptual conditions, leveraging depth cues and segmented noise scheduling to improve temporal consistency and fidelity.",
+        "tldr_zh": "WorldWeaver是一个用于长视频生成的框架，它联合建模RGB帧和感知条件，利用深度线索和分段噪声调度来提高时间一致性和保真度。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "CineScale: Free Lunch in High-Resolution Cinematic Visual Generation",
+        "summary": "Visual diffusion models achieve remarkable progress, yet they are typically\ntrained at limited resolutions due to the lack of high-resolution data and\nconstrained computation resources, hampering their ability to generate\nhigh-fidelity images or videos at higher resolutions. Recent efforts have\nexplored tuning-free strategies to exhibit the untapped potential\nhigher-resolution visual generation of pre-trained models. However, these\nmethods are still prone to producing low-quality visual content with repetitive\npatterns. The key obstacle lies in the inevitable increase in high-frequency\ninformation when the model generates visual content exceeding its training\nresolution, leading to undesirable repetitive patterns deriving from the\naccumulated errors. In this work, we propose CineScale, a novel inference\nparadigm to enable higher-resolution visual generation. To tackle the various\nissues introduced by the two types of video generation architectures, we\npropose dedicated variants tailored to each. Unlike existing baseline methods\nthat are confined to high-resolution T2I and T2V generation, CineScale broadens\nthe scope by enabling high-resolution I2V and V2V synthesis, built atop\nstate-of-the-art open-source video generation frameworks. Extensive experiments\nvalidate the superiority of our paradigm in extending the capabilities of\nhigher-resolution visual generation for both image and video models.\nRemarkably, our approach enables 8k image generation without any fine-tuning,\nand achieves 4k video generation with only minimal LoRA fine-tuning. Generated\nvideo samples are available at our website:\nhttps://eyeline-labs.github.io/CineScale/.",
+        "url": "http://arxiv.org/abs/2508.15774v1",
+        "published_date": "2025-08-21T17:59:57+00:00",
+        "updated_date": "2025-08-21T17:59:57+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Haonan Qiu",
+            "Ning Yu",
+            "Ziqi Huang",
+            "Paul Debevec",
+            "Ziwei Liu"
+        ],
+        "tldr": "CineScale is a novel inference paradigm enabling higher-resolution (8k image, 4k video) visual generation from existing pre-trained diffusion models, mitigating repetitive artifacts without extensive fine-tuning, even expanding to I2V and V2V tasks.",
+        "tldr_zh": "CineScale是一种新颖的推理范式，能够从现有的预训练扩散模型生成更高分辨率（8k图像，4k视频）的视觉效果，缓解重复的伪影，而无需进行广泛的微调，甚至扩展到I2V和V2V任务。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]

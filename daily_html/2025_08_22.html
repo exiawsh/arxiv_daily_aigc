@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 09, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 22, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>August 09, 2025</p>
+            <p>August 22, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,25 +215,33 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">ViPro-2: Unsupervised State Estimation via Integrated Dynamics for Guiding Video Prediction</h2>
+            <h2 class="paper-title">Waver: Wave Your Way to Lifelike Video Generation</h2>
             
-            <p class="paper-summary">Predicting future video frames is a challenging task with many downstream
-applications. Previous work has shown that procedural knowledge enables deep
-models for complex dynamical settings, however their model ViPro assumed a
-given ground truth initial symbolic state. We show that this approach led to
-the model learning a shortcut that does not actually connect the observed
-environment with the predicted symbolic state, resulting in the inability to
-estimate states given an observation if previous states are noisy. In this
-work, we add several improvements to ViPro that enables the model to correctly
-infer states from observations without providing a full ground truth state in
-the beginning. We show that this is possible in an unsupervised manner, and
-extend the original Orbits dataset with a 3D variant to close the gap to real
-world scenarios.</p>
+            <p class="paper-summary">We present Waver, a high-performance foundation model for unified image and
+video generation. Waver can directly generate videos with durations ranging
+from 5 to 10 seconds at a native resolution of 720p, which are subsequently
+upscaled to 1080p. The model simultaneously supports text-to-video (T2V),
+image-to-video (I2V), and text-to-image (T2I) generation within a single,
+integrated framework. We introduce a Hybrid Stream DiT architecture to enhance
+modality alignment and accelerate training convergence. To ensure training data
+quality, we establish a comprehensive data curation pipeline and manually
+annotate and train an MLLM-based video quality model to filter for the
+highest-quality samples. Furthermore, we provide detailed training and
+inference recipes to facilitate the generation of high-quality videos. Building
+on these contributions, Waver excels at capturing complex motion, achieving
+superior motion amplitude and temporal consistency in video synthesis. Notably,
+it ranks among the Top 3 on both the T2V and I2V leaderboards at Artificial
+Analysis (data as of 2025-07-30 10:00 GMT+8), consistently outperforming
+existing open-source models and matching or surpassing state-of-the-art
+commercial solutions. We hope this technical report will help the community
+more efficiently train high-quality video generation models and accelerate
+progress in video generation technologies. Official page:
+https://github.com/FoundationVision/Waver.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper presents ViPro-2, an improved unsupervised video prediction model that can infer states from observations even with noisy initial states, addressing limitations of its predecessor, ViPro, by integrating dynamics modeling.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: Waver is a new foundation model for unified image and video generation (T2V, I2V, T2I) that achieves state-of-the-art results with a novel Hybrid Stream DiT architecture and a high-quality data curation pipeline, excelling in complex motion and temporal consistency.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了ViPro-2，一种改进的无监督视频预测模型，即使在初始状态嘈杂的情况下也能从观察中推断状态。它通过集成动力学建模解决了其前身ViPro的局限性。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: Waver 是一个新的统一图像和视频生成的基础模型（T2V, I2V, T2I），它采用新颖的混合流 DiT 架构和高质量的数据管理流程，达到了最先进的结果，擅长捕捉复杂的运动和时间一致性。</p>
             
 
             
@@ -243,16 +251,16 @@ world scenarios.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -267,8 +275,8 @@ world scenarios.</p>
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
             </div>
@@ -297,18 +305,18 @@ world scenarios.</p>
                     
                 
                     
-                        <i class="far fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2508.06335v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.15761v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Patrick Takenaka, Johannes Maucher, Marco F. Huber</p>
+            <p class="paper-authors">Authors: Yifu Zhang, Hao Yang, Yuqi Zhang, Yifei Hu, Fengda Zhu, Chuang Lin, Xiaofeng Mei, Yi Jiang, Zehuan Yuan, Bingyue Peng</p>
             
         </motion.div>
         
@@ -320,30 +328,30 @@ world scenarios.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">SwiftVideo: A Unified Framework for Few-Step Video Generation through Trajectory-Distribution Alignment</h2>
+            <h2 class="paper-title">WorldWeaver: Generating Long-Horizon Video Worlds via Rich Perception</h2>
             
-            <p class="paper-summary">Diffusion-based or flow-based models have achieved significant progress in
-video synthesis but require multiple iterative sampling steps, which incurs
-substantial computational overhead. While many distillation methods that are
-solely based on trajectory-preserving or distribution-matching have been
-developed to accelerate video generation models, these approaches often suffer
-from performance breakdown or increased artifacts under few-step settings. To
-address these limitations, we propose \textbf{\emph{SwiftVideo}}, a unified and
-stable distillation framework that combines the advantages of
-trajectory-preserving and distribution-matching strategies. Our approach
-introduces continuous-time consistency distillation to ensure precise
-preservation of ODE trajectories. Subsequently, we propose a dual-perspective
-alignment that includes distribution alignment between synthetic and real data
-along with trajectory alignment across different inference steps. Our method
-maintains high-quality video generation while substantially reducing the number
-of inference steps. Quantitative evaluations on the OpenVid-1M benchmark
-demonstrate that our method significantly outperforms existing approaches in
-few-step video generation.</p>
+            <p class="paper-summary">Generative video modeling has made significant strides, yet ensuring
+structural and temporal consistency over long sequences remains a challenge.
+Current methods predominantly rely on RGB signals, leading to accumulated
+errors in object structure and motion over extended durations. To address these
+issues, we introduce WorldWeaver, a robust framework for long video generation
+that jointly models RGB frames and perceptual conditions within a unified
+long-horizon modeling scheme. Our training framework offers three key
+advantages. First, by jointly predicting perceptual conditions and color
+information from a unified representation, it significantly enhances temporal
+consistency and motion dynamics. Second, by leveraging depth cues, which we
+observe to be more resistant to drift than RGB, we construct a memory bank that
+preserves clearer contextual information, improving quality in long-horizon
+video generation. Third, we employ segmented noise scheduling for training
+prediction groups, which further mitigates drift and reduces computational
+cost. Extensive experiments on both diffusion- and rectified flow-based models
+demonstrate the effectiveness of WorldWeaver in reducing temporal drift and
+improving the fidelity of generated videos.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: SwiftVideo proposes a unified distillation framework for few-step video generation that combines trajectory-preserving and distribution-matching strategies to improve performance and reduce artifacts compared to existing methods, demonstrating strong results on OpenVid-1M.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: WorldWeaver is a framework for long video generation that jointly models RGB frames and perceptual conditions, leveraging depth cues and segmented noise scheduling to improve temporal consistency and fidelity.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: SwiftVideo 提出了一个统一的用于少步视频生成的蒸馏框架，它结合了轨迹保持和分布匹配策略，以提高性能并减少伪影，与现有方法相比，并在 OpenVid-1M 上展示了强大的结果。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: WorldWeaver是一个用于长视频生成的框架，它联合建模RGB帧和感知条件，利用深度线索和分段噪声调度来提高时间一致性和保真度。</p>
             
 
             
@@ -353,16 +361,132 @@ few-step video generation.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2508.15720v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Zhiheng Liu, Xueqing Deng, Shoufa Chen, Angtian Wang, Qiushan Guo, Mingfei Han, Zeyue Xue, Mengzhao Chen, Ping Luo, Linjie Yang</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.1, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">CineScale: Free Lunch in High-Resolution Cinematic Visual Generation</h2>
+            
+            <p class="paper-summary">Visual diffusion models achieve remarkable progress, yet they are typically
+trained at limited resolutions due to the lack of high-resolution data and
+constrained computation resources, hampering their ability to generate
+high-fidelity images or videos at higher resolutions. Recent efforts have
+explored tuning-free strategies to exhibit the untapped potential
+higher-resolution visual generation of pre-trained models. However, these
+methods are still prone to producing low-quality visual content with repetitive
+patterns. The key obstacle lies in the inevitable increase in high-frequency
+information when the model generates visual content exceeding its training
+resolution, leading to undesirable repetitive patterns deriving from the
+accumulated errors. In this work, we propose CineScale, a novel inference
+paradigm to enable higher-resolution visual generation. To tackle the various
+issues introduced by the two types of video generation architectures, we
+propose dedicated variants tailored to each. Unlike existing baseline methods
+that are confined to high-resolution T2I and T2V generation, CineScale broadens
+the scope by enabling high-resolution I2V and V2V synthesis, built atop
+state-of-the-art open-source video generation frameworks. Extensive experiments
+validate the superiority of our paradigm in extending the capabilities of
+higher-resolution visual generation for both image and video models.
+Remarkably, our approach enables 8k image generation without any fine-tuning,
+and achieves 4k video generation with only minimal LoRA fine-tuning. Generated
+video samples are available at our website:
+https://eyeline-labs.github.io/CineScale/.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: CineScale is a novel inference paradigm enabling higher-resolution (8k image, 4k video) visual generation from existing pre-trained diffusion models, mitigating repetitive artifacts without extensive fine-tuning, even expanding to I2V and V2V tasks.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: CineScale是一种新颖的推理范式，能够从现有的预训练扩散模型生成更高分辨率（8k图像，4k视频）的视觉效果，缓解重复的伪影，而无需进行广泛的微调，甚至扩展到I2V和V2V任务。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
                     <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -403,29 +527,29 @@ few-step video generation.</p>
                     
                 
                     
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
                     
                         <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2508.06082v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.15774v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Yanxiao Sun, Jiafu Wu, Yun Cao, Chengming Xu, Yabiao Wang, Weijian Cao, Donghao Luo, Chengjie Wang, Yanwei Fu</p>
+            <p class="paper-authors">Authors: Haonan Qiu, Ning Yu, Ziqi Huang, Paul Debevec, Ziwei Liu</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-08-22 03:41:56 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-08-22 03:56:05 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
