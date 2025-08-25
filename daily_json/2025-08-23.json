@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Seeing Clearly, Forgetting Deeply: Revisiting Fine-Tuned Video Generators for Driving Simulation",
+        "summary": "Recent advancements in video generation have substantially improved visual\nquality and temporal coherence, making these models increasingly appealing for\napplications such as autonomous driving, particularly in the context of driving\nsimulation and so-called \"world models\". In this work, we investigate the\neffects of existing fine-tuning video generation approaches on structured\ndriving datasets and uncover a potential trade-off: although visual fidelity\nimproves, spatial accuracy in modeling dynamic elements may degrade. We\nattribute this degradation to a shift in the alignment between visual quality\nand dynamic understanding objectives. In datasets with diverse scene structures\nwithin temporal space, where objects or perspective shift in varied ways, these\nobjectives tend to highly correlated. However, the very regular and repetitive\nnature of driving scenes allows visual quality to improve by modeling dominant\nscene motion patterns, without necessarily preserving fine-grained dynamic\nbehavior. As a result, fine-tuning encourages the model to prioritize\nsurface-level realism over dynamic accuracy. To further examine this\nphenomenon, we show that simple continual learning strategies, such as replay\nfrom diverse domains, can offer a balanced alternative by preserving spatial\naccuracy while maintaining strong visual quality.",
+        "url": "http://arxiv.org/abs/2508.16512v1",
+        "published_date": "2025-08-22T16:35:19+00:00",
+        "updated_date": "2025-08-22T16:35:19+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Chun-Peng Chang",
+            "Chen-Yu Wang",
+            "Julian Schmidt",
+            "Holger Caesar",
+            "Alain Pagani"
+        ],
+        "tldr": "This paper investigates the trade-off between visual fidelity and spatial accuracy when fine-tuning video generation models on driving datasets, finding that fine-tuning can prioritize realism over dynamic accuracy, and proposes continual learning as a balancing strategy.",
+        "tldr_zh": "该论文研究了在驾驶数据集上微调视频生成模型时，视觉保真度和空间准确性之间的权衡。研究发现，微调可能会优先考虑真实感而非动态准确性，并提出持续学习作为一种平衡策略。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Forecast then Calibrate: Feature Caching as ODE for Efficient Diffusion Transformers",
+        "summary": "Diffusion Transformers (DiTs) have demonstrated exceptional performance in\nhigh-fidelity image and video generation. To reduce their substantial\ncomputational costs, feature caching techniques have been proposed to\naccelerate inference by reusing hidden representations from previous timesteps.\nHowever, current methods often struggle to maintain generation quality at high\nacceleration ratios, where prediction errors increase sharply due to the\ninherent instability of long-step forecasting. In this work, we adopt an\nordinary differential equation (ODE) perspective on the hidden-feature\nsequence, modeling layer representations along the trajectory as a feature-ODE.\nWe attribute the degradation of existing caching strategies to their inability\nto robustly integrate historical features under large skipping intervals. To\naddress this, we propose FoCa (Forecast-then-Calibrate), which treats feature\ncaching as a feature-ODE solving problem. Extensive experiments on image\nsynthesis, video generation, and super-resolution tasks demonstrate the\neffectiveness of FoCa, especially under aggressive acceleration. Without\nadditional training, FoCa achieves near-lossless speedups of 5.50 times on\nFLUX, 6.45 times on HunyuanVideo, 3.17 times on Inf-DiT, and maintains high\nquality with a 4.53 times speedup on DiT.",
+        "url": "http://arxiv.org/abs/2508.16211v1",
+        "published_date": "2025-08-22T08:34:03+00:00",
+        "updated_date": "2025-08-22T08:34:03+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Shikang Zheng",
+            "Liang Feng",
+            "Xinyu Wang",
+            "Qinming Zhou",
+            "Peiliang Cai",
+            "Chang Zou",
+            "Jiacheng Liu",
+            "Yuqi Lin",
+            "Junjie Chen",
+            "Yue Ma",
+            "Linfeng Zhang"
+        ],
+        "tldr": "The paper introduces FoCa, a novel feature caching technique for Diffusion Transformers (DiTs) that treats feature caching as a feature-ODE solving problem, achieving significant speedups in image and video generation without compromising quality.",
+        "tldr_zh": "该论文介绍了一种名为FoCa的新型特征缓存技术，用于扩散Transformer（DiT）。该技术将特征缓存视为特征ODE求解问题，从而在不影响质量的前提下，显著加速图像和视频生成。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]
