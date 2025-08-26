@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 23, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 25, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>August 23, 2025</p>
+            <p>August 25, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,31 +215,32 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Seeing Clearly, Forgetting Deeply: Revisiting Fine-Tuned Video Generators for Driving Simulation</h2>
+            <h2 class="paper-title">MoCo: Motion-Consistent Human Video Generation via Structure-Appearance Decoupling</h2>
             
-            <p class="paper-summary">Recent advancements in video generation have substantially improved visual
-quality and temporal coherence, making these models increasingly appealing for
-applications such as autonomous driving, particularly in the context of driving
-simulation and so-called "world models". In this work, we investigate the
-effects of existing fine-tuning video generation approaches on structured
-driving datasets and uncover a potential trade-off: although visual fidelity
-improves, spatial accuracy in modeling dynamic elements may degrade. We
-attribute this degradation to a shift in the alignment between visual quality
-and dynamic understanding objectives. In datasets with diverse scene structures
-within temporal space, where objects or perspective shift in varied ways, these
-objectives tend to highly correlated. However, the very regular and repetitive
-nature of driving scenes allows visual quality to improve by modeling dominant
-scene motion patterns, without necessarily preserving fine-grained dynamic
-behavior. As a result, fine-tuning encourages the model to prioritize
-surface-level realism over dynamic accuracy. To further examine this
-phenomenon, we show that simple continual learning strategies, such as replay
-from diverse domains, can offer a balanced alternative by preserving spatial
-accuracy while maintaining strong visual quality.</p>
+            <p class="paper-summary">Generating human videos with consistent motion from text prompts remains a
+significant challenge, particularly for whole-body or long-range motion.
+Existing video generation models prioritize appearance fidelity, resulting in
+unrealistic or physically implausible human movements with poor structural
+coherence. Additionally, most existing human video datasets primarily focus on
+facial or upper-body motions, or consist of vertically oriented dance videos,
+limiting the scope of corresponding generation methods to simple movements. To
+overcome these challenges, we propose MoCo, which decouples the process of
+human video generation into two components: structure generation and appearance
+generation. Specifically, our method first employs an efficient 3D structure
+generator to produce a human motion sequence from a text prompt. The remaining
+video appearance is then synthesized under the guidance of the generated
+structural sequence. To improve fine-grained control over sparse human
+structures, we introduce Human-Aware Dynamic Control modules and integrate
+dense tracking constraints during training. Furthermore, recognizing the
+limitations of existing datasets, we construct a large-scale whole-body human
+video dataset featuring complex and diverse motions. Extensive experiments
+demonstrate that MoCo outperforms existing approaches in generating realistic
+and structurally coherent human videos.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper investigates the trade-off between visual fidelity and spatial accuracy when fine-tuning video generation models on driving datasets, finding that fine-tuning can prioritize realism over dynamic accuracy, and proposes continual learning as a balancing strategy.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces MoCo, a framework for generating realistic and structurally coherent human videos from text prompts by decoupling structure and appearance generation, and it introduces a new large-scale whole-body human video dataset.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文研究了在驾驶数据集上微调视频生成模型时，视觉保真度和空间准确性之间的权衡。研究发现，微调可能会优先考虑真实感而非动态准确性，并提出持续学习作为一种平衡策略。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了 MoCo，一个通过解耦结构和外观生成，从文本提示生成逼真且结构连贯的人体视频的框架。同时，它引入了一个新的大规模全身人体视频数据集。</p>
             
 
             
@@ -273,8 +274,8 @@ accuracy while maintaining strong visual quality.</p>
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
             </div>
@@ -310,129 +311,18 @@ accuracy while maintaining strong visual quality.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2508.16512v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.17404v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Chun-Peng Chang, Chen-Yu Wang, Julian Schmidt, Holger Caesar, Alain Pagani</p>
-            
-        </motion.div>
-        
-        <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.05, ease: 'easeOut' }"  
-            class="bento-item"
-            data-motion-element
-        >
-            <h2 class="paper-title">Forecast then Calibrate: Feature Caching as ODE for Efficient Diffusion Transformers</h2>
-            
-            <p class="paper-summary">Diffusion Transformers (DiTs) have demonstrated exceptional performance in
-high-fidelity image and video generation. To reduce their substantial
-computational costs, feature caching techniques have been proposed to
-accelerate inference by reusing hidden representations from previous timesteps.
-However, current methods often struggle to maintain generation quality at high
-acceleration ratios, where prediction errors increase sharply due to the
-inherent instability of long-step forecasting. In this work, we adopt an
-ordinary differential equation (ODE) perspective on the hidden-feature
-sequence, modeling layer representations along the trajectory as a feature-ODE.
-We attribute the degradation of existing caching strategies to their inability
-to robustly integrate historical features under large skipping intervals. To
-address this, we propose FoCa (Forecast-then-Calibrate), which treats feature
-caching as a feature-ODE solving problem. Extensive experiments on image
-synthesis, video generation, and super-resolution tasks demonstrate the
-effectiveness of FoCa, especially under aggressive acceleration. Without
-additional training, FoCa achieves near-lossless speedups of 5.50 times on
-FLUX, 6.45 times on HunyuanVideo, 3.17 times on Inf-DiT, and maintains high
-quality with a 4.53 times speedup on DiT.</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces FoCa, a novel feature caching technique for Diffusion Transformers (DiTs) that treats feature caching as a feature-ODE solving problem, achieving significant speedups in image and video generation without compromising quality.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了一种名为FoCa的新型特征缓存技术，用于扩散Transformer（DiT）。该技术将特征缓存视为特征ODE求解问题，从而在不影响质量的前提下，显著加速图像和视频生成。</p>
-            
-
-            
-            
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
-                </div>
-                
-            </div>
-            
-            
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star-half-alt"></i>
-                    
-                
-                    
-                        <i class="far fa-star"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2508.16211v1" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Shikang Zheng, Liang Feng, Xinyu Wang, Qinming Zhou, Peiliang Cai, Chang Zou, Jiacheng Liu, Yuqi Lin, Junjie Chen, Yue Ma, Linfeng Zhang</p>
+            <p class="paper-authors">Authors: Haoyu Wang, Hao Tang, Donglin Di, Zhilu Zhang, Wangmeng Zuo, Feng Gao, Siwei Ma, Shiliang Zhang</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-08-26 02:42:19 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-08-26 02:45:39 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

@@ -1,0 +1,29 @@
+[
+    {
+        "title": "MoCo: Motion-Consistent Human Video Generation via Structure-Appearance Decoupling",
+        "summary": "Generating human videos with consistent motion from text prompts remains a\nsignificant challenge, particularly for whole-body or long-range motion.\nExisting video generation models prioritize appearance fidelity, resulting in\nunrealistic or physically implausible human movements with poor structural\ncoherence. Additionally, most existing human video datasets primarily focus on\nfacial or upper-body motions, or consist of vertically oriented dance videos,\nlimiting the scope of corresponding generation methods to simple movements. To\novercome these challenges, we propose MoCo, which decouples the process of\nhuman video generation into two components: structure generation and appearance\ngeneration. Specifically, our method first employs an efficient 3D structure\ngenerator to produce a human motion sequence from a text prompt. The remaining\nvideo appearance is then synthesized under the guidance of the generated\nstructural sequence. To improve fine-grained control over sparse human\nstructures, we introduce Human-Aware Dynamic Control modules and integrate\ndense tracking constraints during training. Furthermore, recognizing the\nlimitations of existing datasets, we construct a large-scale whole-body human\nvideo dataset featuring complex and diverse motions. Extensive experiments\ndemonstrate that MoCo outperforms existing approaches in generating realistic\nand structurally coherent human videos.",
+        "url": "http://arxiv.org/abs/2508.17404v1",
+        "published_date": "2025-08-24T15:20:24+00:00",
+        "updated_date": "2025-08-24T15:20:24+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Haoyu Wang",
+            "Hao Tang",
+            "Donglin Di",
+            "Zhilu Zhang",
+            "Wangmeng Zuo",
+            "Feng Gao",
+            "Siwei Ma",
+            "Shiliang Zhang"
+        ],
+        "tldr": "The paper introduces MoCo, a framework for generating realistic and structurally coherent human videos from text prompts by decoupling structure and appearance generation, and it introduces a new large-scale whole-body human video dataset.",
+        "tldr_zh": "该论文介绍了 MoCo，一个通过解耦结构和外观生成，从文本提示生成逼真且结构连贯的人体视频的框架。同时，它引入了一个新的大规模全身人体视频数据集。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]

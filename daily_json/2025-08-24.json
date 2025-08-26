@@ -1,0 +1,26 @@
+[
+    {
+        "title": "SSG-Dit: A Spatial Signal Guided Framework for Controllable Video Generation",
+        "summary": "Controllable video generation aims to synthesize video content that aligns\nprecisely with user-provided conditions, such as text descriptions and initial\nimages. However, a significant challenge persists in this domain: existing\nmodels often struggle to maintain strong semantic consistency, frequently\ngenerating videos that deviate from the nuanced details specified in the\nprompts. To address this issue, we propose SSG-DiT (Spatial Signal Guided\nDiffusion Transformer), a novel and efficient framework for high-fidelity\ncontrollable video generation. Our approach introduces a decoupled two-stage\nprocess. The first stage, Spatial Signal Prompting, generates a spatially aware\nvisual prompt by leveraging the rich internal representations of a pre-trained\nmulti-modal model. This prompt, combined with the original text, forms a joint\ncondition that is then injected into a frozen video DiT backbone via our\nlightweight and parameter-efficient SSG-Adapter. This unique design, featuring\na dual-branch attention mechanism, allows the model to simultaneously harness\nits powerful generative priors while being precisely steered by external\nspatial signals. Extensive experiments demonstrate that SSG-DiT achieves\nstate-of-the-art performance, outperforming existing models on multiple key\nmetrics in the VBench benchmark, particularly in spatial relationship control\nand overall consistency.",
+        "url": "http://arxiv.org/abs/2508.17062v1",
+        "published_date": "2025-08-23T15:30:17+00:00",
+        "updated_date": "2025-08-23T15:30:17+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Peng Hu",
+            "Yu Gu",
+            "Liang Luo",
+            "Fuji Ren"
+        ],
+        "tldr": "The paper introduces SSG-DiT, a novel framework for controllable video generation that uses spatial signal prompting and a lightweight adapter to improve semantic consistency and control, achieving state-of-the-art performance on VBench.",
+        "tldr_zh": "该论文介绍了SSG-DiT，一种用于可控视频生成的新框架，它使用空间信号提示和一个轻量级适配器来提高语义一致性和控制，并在VBench上实现了最先进的性能。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    }
+]

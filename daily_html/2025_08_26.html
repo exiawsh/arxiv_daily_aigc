@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 14, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 26, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>August 14, 2025</p>
+            <p>August 26, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,30 +215,31 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Physical Autoregressive Model for Robotic Manipulation without Action Pretraining</h2>
+            <h2 class="paper-title">HERO: Hierarchical Extrapolation and Refresh for Efficient World Models</h2>
             
-            <p class="paper-summary">The scarcity of manipulation data has motivated the use of pretrained large
-models from other modalities in robotics. In this work, we build upon
-autoregressive video generation models to propose a Physical Autoregressive
-Model (PAR), where physical tokens combine frames and actions to represent the
-joint evolution of the robot and its environment. PAR leverages the world
-knowledge embedded in video pretraining to understand physical dynamics without
-requiring action pretraining, enabling accurate video prediction and consistent
-action trajectories. It also adopts a DiT-based de-tokenizer to model frames
-and actions as continuous tokens, mitigating quantization errors and
-facilitating mutual enhancement. Furthermore, we incorporate a causal mask with
-inverse kinematics, parallel training, and the KV-cache mechanism to further
-improve performance and efficiency. Experiments on the ManiSkill benchmark show
-that PAR achieves a 100\% success rate on the PushCube task, matches the
-performance of action-pretrained baselines on other tasks, and accurately
-predicts future videos with tightly aligned action trajectories. These findings
-underscore a promising direction for robotic manipulation by transferring world
-knowledge from autoregressive video pretraining.</p>
+            <p class="paper-summary">Generation-driven world models create immersive virtual environments but
+suffer slow inference due to the iterative nature of diffusion models. While
+recent advances have improved diffusion model efficiency, directly applying
+these techniques to world models introduces limitations such as quality
+degradation. In this paper, we present HERO, a training-free hierarchical
+acceleration framework tailored for efficient world models. Owing to the
+multi-modal nature of world models, we identify a feature coupling phenomenon,
+wherein shallow layers exhibit high temporal variability, while deeper layers
+yield more stable feature representations. Motivated by this, HERO adopts
+hierarchical strategies to accelerate inference: (i) In shallow layers, a
+patch-wise refresh mechanism efficiently selects tokens for recomputation. With
+patch-wise sampling and frequency-aware tracking, it avoids extra metric
+computation and remain compatible with FlashAttention. (ii) In deeper layers, a
+linear extrapolation scheme directly estimates intermediate features. This
+completely bypasses the computations in attention modules and feed-forward
+networks. Our experiments show that HERO achieves a 1.73$\times$ speedup with
+minimal quality degradation, significantly outperforming existing diffusion
+acceleration methods.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces a Physical Autoregressive Model (PAR) that leverages video pretraining to enable robotic manipulation without action pretraining, achieving high success rates on manipulation tasks by predicting future videos with aligned action trajectories.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces HERO, a training-free hierarchical acceleration framework for world models that improves inference speed by using patch-wise refresh in shallow layers and linear extrapolation in deeper layers, achieving a 1.73x speedup with minimal quality degradation.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了一种物理自回归模型（PAR），该模型利用视频预训练来实现机器人操作，而无需动作预训练，通过预测具有对齐动作轨迹的未来视频，在操作任务上实现了高成功率。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文提出了HERO，一种用于世界模型的免训练分层加速框架，通过在浅层中使用分块刷新，在深层中使用线性外推来提高推理速度，实现了1.73倍的加速，且质量损失极小。</p>
             
 
             
@@ -272,8 +273,8 @@ knowledge from autoregressive video pretraining.</p>
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
             </div>
@@ -309,11 +310,11 @@ knowledge from autoregressive video pretraining.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2508.09822v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.17588v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Zijian Song, Sihan Qin, Tianshui Chen, Liang Lin, Guangrun Wang</p>
+            <p class="paper-authors">Authors: Quanjian Song, Xinyu Wang, Donghao Zhou, Jingyu Lin, Cunjian Chen, Yue Ma, Xiu Li</p>
             
         </motion.div>
         
@@ -325,27 +326,25 @@ knowledge from autoregressive video pretraining.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Preacher: Paper-to-Video Agentic System</h2>
+            <h2 class="paper-title">Language-Guided Temporal Token Pruning for Efficient VideoLLM Processing</h2>
             
-            <p class="paper-summary">The paper-to-video task converts a research paper into a structured video
-abstract, distilling key concepts, methods, and conclusions into an accessible,
-well-organized format. While state-of-the-art video generation models
-demonstrate potential, they are constrained by limited context windows, rigid
-video duration constraints, limited stylistic diversity, and an inability to
-represent domain-specific knowledge. To address these limitations, we introduce
-Preacher, the first paper-to-video agentic system. Preacher employs a top-down
-approach to decompose, summarize, and reformulate the paper, followed by
-bottom-up video generation, synthesizing diverse video segments into a coherent
-abstract. To align cross-modal representations, we define key scenes and
-introduce a Progressive Chain of Thought (P-CoT) for granular, iterative
-planning. Preacher successfully generates high-quality video abstracts across
-five research fields, demonstrating expertise beyond current video generation
-models. Code will be released at: https://github.com/GenVerse/Paper2Video</p>
+            <p class="paper-summary">Vision Language Models (VLMs) struggle with long-form videos due to the
+quadratic complexity of attention mechanisms. We propose Language-Guided
+Temporal Token Pruning (LGTTP), which leverages temporal cues from queries to
+adaptively prune video tokens, preserving contextual continuity while reducing
+computational overhead. Unlike uniform pruning or keyframe selection, LGTTP
+retains higher token density in temporally relevant segments. Our
+model-agnostic framework integrates with TimeChat and LLaVA-Video, achieving a
+65% reduction in computation while preserving 97-99% of the original
+performance. On QVHighlights, LGTTP improves HIT@1 by +9.5%, and on
+Charades-STA, it retains 99.6% of R@1. It excels on queries with explicit
+temporal markers and remains effective across general video understanding
+tasks.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Preacher, a paper-to-video agentic system that decomposes, summarizes, and generates video abstracts of research papers, overcoming limitations of existing video generation models using a top-down and bottom-up approach with Progressive Chain of Thought planning.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Language-Guided Temporal Token Pruning (LGTTP) to efficiently process long videos in VideoLLMs by adaptively pruning video tokens based on temporal cues from language queries, achieving significant computational reduction with minimal performance loss.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了Preacher，一个论文到视频的代理系统，它分解、总结并生成研究论文的视频摘要，通过自上而下和自下而上的方法以及渐进式思维链规划，克服了现有视频生成模型的局限性。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了语言引导的时间令牌剪枝（LGTTP），通过基于语言查询的时间线索自适应地剪枝视频令牌，从而高效地处理VideoLLM中的长视频，在计算量大幅减少的同时，性能损失极小。</p>
             
 
             
@@ -355,125 +354,8 @@ models. Code will be released at: https://github.com/GenVerse/Paper2Video</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
-                </div>
-                
-            </div>
-            
-            
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="far fa-star"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2508.09632v1" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Jingwei Liu, Ling Yang, Hao Luo, Fan Wang Hongyan Li, Mengdi Wang</p>
-            
-        </motion.div>
-        
-        <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.1, ease: 'easeOut' }"  
-            class="bento-item"
-            data-motion-element
-        >
-            <h2 class="paper-title">From Large Angles to Consistent Faces: Identity-Preserving Video Generation via Mixture of Facial Experts</h2>
-            
-            <p class="paper-summary">Current video generation models struggle with identity preservation under
-large facial angles, primarily facing two challenges: the difficulty in
-exploring an effective mechanism to integrate identity features into DiT
-structure, and the lack of targeted coverage of large facial angles in existing
-open-source video datasets. To address these, we present two key innovations.
-First, we introduce a Mixture of Facial Experts (MoFE) that dynamically
-combines complementary cues from three specialized experts, each designed to
-capture distinct but mutually reinforcing aspects of facial attributes. The
-identity expert captures cross-pose identity-sensitive features, the semantic
-expert extracts high-level visual semantxics, and the detail expert preserves
-pixel-level features (e.g., skin texture, color gradients). Furthermore, to
-mitigate dataset limitations, we have tailored a data processing pipeline
-centered on two key aspects: Face Constraints and Identity Consistency. Face
-Constraints ensure facial angle diversity and a high proportion of facial
-regions, while Identity Consistency preserves coherent person-specific features
-across temporal sequences, collectively addressing the scarcity of large facial
-angles and identity-stable training data in existing datasets. Leveraging this
-pipeline, we have curated and refined a Large Face Angles (LFA) Dataset from
-existing open-source human video datasets, comprising 460K video clips with
-annotated facial angles. Experimental results on the LFA benchmark demonstrate
-that our method, empowered by the LFA dataset, significantly outperforms prior
-SOTA methods in face similarity, face FID, and CLIP semantic alignment. The
-code and dataset will be made publicly available at
-https://github.com/rain152/LFA-Video-Generation.</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces a Mixture of Facial Experts (MoFE) architecture and a Large Face Angles (LFA) dataset to improve identity preservation in video generation, especially under large facial angles.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了一种混合面部专家（MoFE）架构和一个大面部角度（LFA）数据集，以提高视频生成中的身份保持能力，尤其是在大面部角度下。</p>
-            
-
-            
-            
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(6/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(3/10)</span>
                 </div>
                 
                 
@@ -508,10 +390,6 @@ https://github.com/rain152/LFA-Video-Generation.</p>
             <div class="paper-rating">
                 <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
                 
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
                 
                     
                         <i class="fas fa-star"></i>
@@ -529,22 +407,26 @@ https://github.com/rain152/LFA-Video-Generation.</p>
                         <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(5/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2508.09476v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.17686v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Yuji Wang, Moran Li, Xiaobin Hu, Ran Yi, Jiangning Zhang, Chengming Xu, Weijian Cao, Yabiao Wang, Chengjie Wang, Lizhuang Ma</p>
+            <p class="paper-authors">Authors: Yogesh Kumar</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-08-26 02:42:19 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-08-26 02:48:31 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
