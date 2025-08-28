@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 17, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 28, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>August 17, 2025</p>
+            <p>August 28, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,26 +215,145 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">VimoRAG: Video-based Retrieval-augmented 3D Motion Generation for Motion Language Models</h2>
+            <h2 class="paper-title">Ego-centric Predictive Model Conditioned on Hand Trajectories</h2>
             
-            <p class="paper-summary">This paper introduces VimoRAG, a novel video-based retrieval-augmented motion
-generation framework for motion large language models (LLMs). As motion LLMs
-face severe out-of-domain/out-of-vocabulary issues due to limited annotated
-data, VimoRAG leverages large-scale in-the-wild video databases to enhance 3D
-motion generation by retrieving relevant 2D human motion signals. While
-video-based motion RAG is nontrivial, we address two key bottlenecks: (1)
-developing an effective motion-centered video retrieval model that
-distinguishes human poses and actions, and (2) mitigating the issue of error
-propagation caused by suboptimal retrieval results. We design the Gemini Motion
-Video Retriever mechanism and the Motion-centric Dual-alignment DPO Trainer,
-enabling effective retrieval and generation processes. Experimental results
-show that VimoRAG significantly boosts the performance of motion LLMs
-constrained to text-only input.</p>
+            <p class="paper-summary">In egocentric scenarios, anticipating both the next action and its visual
+outcome is essential for understanding human-object interactions and for
+enabling robotic planning. However, existing paradigms fall short of jointly
+modeling these aspects. Vision-Language-Action (VLA) models focus on action
+prediction but lack explicit modeling of how actions influence the visual
+scene, while video prediction models generate future frames without
+conditioning on specific actions, often resulting in implausible or
+contextually inconsistent outcomes. To bridge this gap, we propose a unified
+two-stage predictive framework that jointly models action and visual future in
+egocentric scenarios, conditioned on hand trajectories. In the first stage, we
+perform consecutive state modeling to process heterogeneous inputs (visual
+observations, language, and action history) and explicitly predict future hand
+trajectories. In the second stage, we introduce causal cross-attention to fuse
+multi-modal cues, leveraging inferred action signals to guide an image-based
+Latent Diffusion Model (LDM) for frame-by-frame future video generation. Our
+approach is the first unified model designed to handle both egocentric human
+activity understanding and robotic manipulation tasks, providing explicit
+predictions of both upcoming actions and their visual consequences. Extensive
+experiments on Ego4D, BridgeData, and RLBench demonstrate that our method
+outperforms state-of-the-art baselines in both action prediction and future
+video synthesis.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces VimoRAG, a video-based retrieval-augmented framework that enhances motion LLMs by retrieving relevant 2D human motion from large-scale video databases, addressing out-of-domain issues and error propagation through specialized mechanisms.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper presents a unified two-stage framework that predicts future hand trajectories and uses them to guide a latent diffusion model for frame-by-frame future video generation in egocentric scenarios, outperforming existing methods in action prediction and video synthesis.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了VimoRAG，一个基于视频检索增强的框架，通过从大规模视频数据库中检索相关的2D人体运动来增强运动LLM，解决了领域外问题和误差传播，并通过专门的机制实现。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文提出了一个统一的两阶段框架，用于预测未来手部轨迹，并利用这些轨迹来引导潜在扩散模型，在以自我为中心的场景中逐帧生成未来视频，并在动作预测和视频合成方面优于现有方法。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2508.19852v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Binjie Zhang, Mike Zheng Shou</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.05, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">MotionFlux: Efficient Text-Guided Motion Generation through Rectified Flow Matching and Preference Alignment</h2>
+            
+            <p class="paper-summary">Motion generation is essential for animating virtual characters and embodied
+agents. While recent text-driven methods have made significant strides, they
+often struggle with achieving precise alignment between linguistic descriptions
+and motion semantics, as well as with the inefficiencies of slow, multi-step
+inference. To address these issues, we introduce TMR++ Aligned Preference
+Optimization (TAPO), an innovative framework that aligns subtle motion
+variations with textual modifiers and incorporates iterative adjustments to
+reinforce semantic grounding. To further enable real-time synthesis, we propose
+MotionFLUX, a high-speed generation framework based on deterministic rectified
+flow matching. Unlike traditional diffusion models, which require hundreds of
+denoising steps, MotionFLUX constructs optimal transport paths between noise
+distributions and motion spaces, facilitating real-time synthesis. The
+linearized probability paths reduce the need for multi-step sampling typical of
+sequential methods, significantly accelerating inference time without
+sacrificing motion quality. Experimental results demonstrate that, together,
+TAPO and MotionFLUX form a unified system that outperforms state-of-the-art
+approaches in both semantic consistency and motion quality, while also
+accelerating generation speed. The code and pretrained models will be released.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces MotionFLUX, a framework combining rectified flow matching for real-time text-guided motion generation and TAPO for enhanced semantic alignment, achieving state-of-the-art performance in speed and quality.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了MotionFLUX，一个结合了校正流匹配的实时文本引导运动生成框架，以及TAPO，用于增强语义对齐，在速度和质量方面实现了最先进的性能。</p>
             
 
             
@@ -268,8 +387,8 @@ constrained to text-only input.</p>
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
             </div>
@@ -294,29 +413,29 @@ constrained to text-only input.</p>
                     
                 
                     
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="fas fa-star"></i>
                     
                 
                     
                         <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2508.12081v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.19527v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Haidong Xu, Guangwei Xu, Zhedong Zheng, Xiatian Zhu, Wei Ji, Xiangtai Li, Ruijie Guo, Meishan Zhang, Min zhang, Hao Fei</p>
+            <p class="paper-authors">Authors: Zhiting Gao, Dan Song, Diqiong Jiang, Chao Xue, An-An Liu</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-08-28 03:37:25 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-08-28 03:43:04 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

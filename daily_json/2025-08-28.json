@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Ego-centric Predictive Model Conditioned on Hand Trajectories",
+        "summary": "In egocentric scenarios, anticipating both the next action and its visual\noutcome is essential for understanding human-object interactions and for\nenabling robotic planning. However, existing paradigms fall short of jointly\nmodeling these aspects. Vision-Language-Action (VLA) models focus on action\nprediction but lack explicit modeling of how actions influence the visual\nscene, while video prediction models generate future frames without\nconditioning on specific actions, often resulting in implausible or\ncontextually inconsistent outcomes. To bridge this gap, we propose a unified\ntwo-stage predictive framework that jointly models action and visual future in\negocentric scenarios, conditioned on hand trajectories. In the first stage, we\nperform consecutive state modeling to process heterogeneous inputs (visual\nobservations, language, and action history) and explicitly predict future hand\ntrajectories. In the second stage, we introduce causal cross-attention to fuse\nmulti-modal cues, leveraging inferred action signals to guide an image-based\nLatent Diffusion Model (LDM) for frame-by-frame future video generation. Our\napproach is the first unified model designed to handle both egocentric human\nactivity understanding and robotic manipulation tasks, providing explicit\npredictions of both upcoming actions and their visual consequences. Extensive\nexperiments on Ego4D, BridgeData, and RLBench demonstrate that our method\noutperforms state-of-the-art baselines in both action prediction and future\nvideo synthesis.",
+        "url": "http://arxiv.org/abs/2508.19852v1",
+        "published_date": "2025-08-27T13:09:55+00:00",
+        "updated_date": "2025-08-27T13:09:55+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Binjie Zhang",
+            "Mike Zheng Shou"
+        ],
+        "tldr": "This paper presents a unified two-stage framework that predicts future hand trajectories and uses them to guide a latent diffusion model for frame-by-frame future video generation in egocentric scenarios, outperforming existing methods in action prediction and video synthesis.",
+        "tldr_zh": "该论文提出了一个统一的两阶段框架，用于预测未来手部轨迹，并利用这些轨迹来引导潜在扩散模型，在以自我为中心的场景中逐帧生成未来视频，并在动作预测和视频合成方面优于现有方法。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "MotionFlux: Efficient Text-Guided Motion Generation through Rectified Flow Matching and Preference Alignment",
+        "summary": "Motion generation is essential for animating virtual characters and embodied\nagents. While recent text-driven methods have made significant strides, they\noften struggle with achieving precise alignment between linguistic descriptions\nand motion semantics, as well as with the inefficiencies of slow, multi-step\ninference. To address these issues, we introduce TMR++ Aligned Preference\nOptimization (TAPO), an innovative framework that aligns subtle motion\nvariations with textual modifiers and incorporates iterative adjustments to\nreinforce semantic grounding. To further enable real-time synthesis, we propose\nMotionFLUX, a high-speed generation framework based on deterministic rectified\nflow matching. Unlike traditional diffusion models, which require hundreds of\ndenoising steps, MotionFLUX constructs optimal transport paths between noise\ndistributions and motion spaces, facilitating real-time synthesis. The\nlinearized probability paths reduce the need for multi-step sampling typical of\nsequential methods, significantly accelerating inference time without\nsacrificing motion quality. Experimental results demonstrate that, together,\nTAPO and MotionFLUX form a unified system that outperforms state-of-the-art\napproaches in both semantic consistency and motion quality, while also\naccelerating generation speed. The code and pretrained models will be released.",
+        "url": "http://arxiv.org/abs/2508.19527v1",
+        "published_date": "2025-08-27T02:45:09+00:00",
+        "updated_date": "2025-08-27T02:45:09+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Zhiting Gao",
+            "Dan Song",
+            "Diqiong Jiang",
+            "Chao Xue",
+            "An-An Liu"
+        ],
+        "tldr": "This paper introduces MotionFLUX, a framework combining rectified flow matching for real-time text-guided motion generation and TAPO for enhanced semantic alignment, achieving state-of-the-art performance in speed and quality.",
+        "tldr_zh": "本文介绍了MotionFLUX，一个结合了校正流匹配的实时文本引导运动生成框架，以及TAPO，用于增强语义对齐，在速度和质量方面实现了最先进的性能。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
