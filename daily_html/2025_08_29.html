@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 28, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 29, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>August 28, 2025</p>
+            <p>August 29, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,34 +215,37 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Ego-centric Predictive Model Conditioned on Hand Trajectories</h2>
+            <h2 class="paper-title">POSE: Phased One-Step Adversarial Equilibrium for Video Diffusion Models</h2>
             
-            <p class="paper-summary">In egocentric scenarios, anticipating both the next action and its visual
-outcome is essential for understanding human-object interactions and for
-enabling robotic planning. However, existing paradigms fall short of jointly
-modeling these aspects. Vision-Language-Action (VLA) models focus on action
-prediction but lack explicit modeling of how actions influence the visual
-scene, while video prediction models generate future frames without
-conditioning on specific actions, often resulting in implausible or
-contextually inconsistent outcomes. To bridge this gap, we propose a unified
-two-stage predictive framework that jointly models action and visual future in
-egocentric scenarios, conditioned on hand trajectories. In the first stage, we
-perform consecutive state modeling to process heterogeneous inputs (visual
-observations, language, and action history) and explicitly predict future hand
-trajectories. In the second stage, we introduce causal cross-attention to fuse
-multi-modal cues, leveraging inferred action signals to guide an image-based
-Latent Diffusion Model (LDM) for frame-by-frame future video generation. Our
-approach is the first unified model designed to handle both egocentric human
-activity understanding and robotic manipulation tasks, providing explicit
-predictions of both upcoming actions and their visual consequences. Extensive
-experiments on Ego4D, BridgeData, and RLBench demonstrate that our method
-outperforms state-of-the-art baselines in both action prediction and future
-video synthesis.</p>
+            <p class="paper-summary">The field of video diffusion generation faces critical bottlenecks in
+sampling efficiency, especially for large-scale models and long sequences.
+Existing video acceleration methods adopt image-based techniques but suffer
+from fundamental limitations: they neither model the temporal coherence of
+video frames nor provide single-step distillation for large-scale video models.
+To bridge this gap, we propose POSE (Phased One-Step Equilibrium), a
+distillation framework that reduces the sampling steps of large-scale video
+diffusion models, enabling the generation of high-quality videos in a single
+step. POSE employs a carefully designed two-phase process to distill video
+models:(i) stability priming: a warm-up mechanism to stabilize adversarial
+distillation that adapts the high-quality trajectory of the one-step generator
+from high to low signal-to-noise ratio regimes, optimizing the video quality of
+single-step mappings near the endpoints of flow trajectories. (ii) unified
+adversarial equilibrium: a flexible self-adversarial distillation mechanism
+that promotes stable single-step adversarial training towards a Nash
+equilibrium within the Gaussian noise space, generating realistic single-step
+videos close to real videos. For conditional video generation, we propose (iii)
+conditional adversarial consistency, a method to improve both semantic
+consistency and frame consistency between conditional frames and generated
+frames. Comprehensive experiments demonstrate that POSE outperforms other
+acceleration methods on VBench-I2V by average 7.15% in semantic alignment,
+temporal conference and frame quality, reducing the latency of the pre-trained
+model by 100$\times$, from 1000 seconds to 10 seconds, while maintaining
+competitive performance.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper presents a unified two-stage framework that predicts future hand trajectories and uses them to guide a latent diffusion model for frame-by-frame future video generation in egocentric scenarios, outperforming existing methods in action prediction and video synthesis.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces POSE, a distillation framework for video diffusion models that achieves single-step video generation with significant latency reduction and improved quality compared to existing methods.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文提出了一个统一的两阶段框架，用于预测未来手部轨迹，并利用这些轨迹来引导潜在扩散模型，在以自我为中心的场景中逐帧生成未来视频，并在动作预测和视频合成方面优于现有方法。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了POSE，一个用于视频扩散模型的蒸馏框架，通过单步视频生成实现了显著的延迟降低，并提高了相对于现有方法的质量。</p>
             
 
             
@@ -260,24 +263,24 @@ video synthesis.</p>
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                     <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
+                    <span class="rating-label">Clarity:</span>
                     
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                     <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
             </div>
@@ -313,11 +316,11 @@ video synthesis.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2508.19852v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.21019v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Binjie Zhang, Mike Zheng Shou</p>
+            <p class="paper-authors">Authors: Jiaxiang Cheng, Bing Ma, Xuhua Ren, Hongyi Jin, Kai Yu, Peng Zhang, Wenyue Li, Yuan Zhou, Tianxiang Zheng, Qinglin Lu</p>
             
         </motion.div>
         
@@ -329,31 +332,32 @@ video synthesis.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">MotionFlux: Efficient Text-Guided Motion Generation through Rectified Flow Matching and Preference Alignment</h2>
+            <h2 class="paper-title">InfinityHuman: Towards Long-Term Audio-Driven Human</h2>
             
-            <p class="paper-summary">Motion generation is essential for animating virtual characters and embodied
-agents. While recent text-driven methods have made significant strides, they
-often struggle with achieving precise alignment between linguistic descriptions
-and motion semantics, as well as with the inefficiencies of slow, multi-step
-inference. To address these issues, we introduce TMR++ Aligned Preference
-Optimization (TAPO), an innovative framework that aligns subtle motion
-variations with textual modifiers and incorporates iterative adjustments to
-reinforce semantic grounding. To further enable real-time synthesis, we propose
-MotionFLUX, a high-speed generation framework based on deterministic rectified
-flow matching. Unlike traditional diffusion models, which require hundreds of
-denoising steps, MotionFLUX constructs optimal transport paths between noise
-distributions and motion spaces, facilitating real-time synthesis. The
-linearized probability paths reduce the need for multi-step sampling typical of
-sequential methods, significantly accelerating inference time without
-sacrificing motion quality. Experimental results demonstrate that, together,
-TAPO and MotionFLUX form a unified system that outperforms state-of-the-art
-approaches in both semantic consistency and motion quality, while also
-accelerating generation speed. The code and pretrained models will be released.</p>
+            <p class="paper-summary">Audio-driven human animation has attracted wide attention thanks to its
+practical applications. However, critical challenges remain in generating
+high-resolution, long-duration videos with consistent appearance and natural
+hand motions. Existing methods extend videos using overlapping motion frames
+but suffer from error accumulation, leading to identity drift, color shifts,
+and scene instability. Additionally, hand movements are poorly modeled,
+resulting in noticeable distortions and misalignment with the audio. In this
+work, we propose InfinityHuman, a coarse-to-fine framework that first generates
+audio-synchronized representations, then progressively refines them into
+high-resolution, long-duration videos using a pose-guided refiner. Since pose
+sequences are decoupled from appearance and resist temporal degradation, our
+pose-guided refiner employs stable poses and the initial frame as a visual
+anchor to reduce drift and improve lip synchronization. Moreover, to enhance
+semantic accuracy and gesture realism, we introduce a hand-specific reward
+mechanism trained with high-quality hand motion data. Experiments on the EMTD
+and HDTF datasets show that InfinityHuman achieves state-of-the-art performance
+in video quality, identity preservation, hand accuracy, and lip-sync. Ablation
+studies further confirm the effectiveness of each module. Code will be made
+public.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces MotionFLUX, a framework combining rectified flow matching for real-time text-guided motion generation and TAPO for enhanced semantic alignment, achieving state-of-the-art performance in speed and quality.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces InfinityHuman, a coarse-to-fine framework for generating high-resolution, long-duration audio-driven human videos with improved identity preservation, lip-sync, and hand realism by using pose-guided refinement and hand-specific reward mechanisms.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了MotionFLUX，一个结合了校正流匹配的实时文本引导运动生成框架，以及TAPO，用于增强语义对齐，在速度和质量方面实现了最先进的性能。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了InfinityHuman，一个用于生成高分辨率、长时间音频驱动的人类视频的由粗到精的框架。该框架通过姿势引导的细化和手部特定奖励机制，提高了身份保持、唇部同步和手部逼真度。</p>
             
 
             
@@ -387,8 +391,8 @@ accelerating generation speed. The code and pretrained models will be released.<
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
             </div>
@@ -413,29 +417,110 @@ accelerating generation speed. The code and pretrained models will be released.<
                     
                 
                     
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
                     
                         <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2508.19527v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.20210v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Zhiting Gao, Dan Song, Diqiong Jiang, Chao Xue, An-An Liu</p>
+            <p class="paper-authors">Authors: Xiaodi Li, Pan Xie, Yi Ren, Qijun Gan, Chen Zhang, Fangyuan Kong, Xiang Yin, Bingyue Peng, Zehuan Yuan</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.1, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">Dress&Dance: Dress up and Dance as You Like It - Technical Preview</h2>
+            
+            <p class="paper-summary">We present Dress&Dance, a video diffusion framework that generates high
+quality 5-second-long 24 FPS virtual try-on videos at 1152x720 resolution of a
+user wearing desired garments while moving in accordance with a given reference
+video. Our approach requires a single user image and supports a range of tops,
+bottoms, and one-piece garments, as well as simultaneous tops and bottoms
+try-on in a single pass. Key to our framework is CondNet, a novel conditioning
+network that leverages attention to unify multi-modal inputs (text, images, and
+videos), thereby enhancing garment registration and motion fidelity. CondNet is
+trained on heterogeneous training data, combining limited video data and a
+larger, more readily available image dataset, in a multistage progressive
+manner. Dress&Dance outperforms existing open source and commercial solutions
+and enables a high quality and flexible try-on experience.</p>
+            
+            
+
+            
+            
+            
+
+            
+
+            <a href="http://arxiv.org/abs/2508.21070v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Jun-Kun Chen, Aayush Bansal, Minh Phuoc Vo, Yu-Xiong Wang</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.15000000000000002, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">Mixture of Contexts for Long Video Generation</h2>
+            
+            <p class="paper-summary">Long video generation is fundamentally a long context memory problem: models
+must retain and retrieve salient events across a long range without collapsing
+or drifting. However, scaling diffusion transformers to generate long-context
+videos is fundamentally limited by the quadratic cost of self-attention, which
+makes memory and computation intractable and difficult to optimize for long
+sequences. We recast long-context video generation as an internal information
+retrieval task and propose a simple, learnable sparse attention routing module,
+Mixture of Contexts (MoC), as an effective long-term memory retrieval engine.
+In MoC, each query dynamically selects a few informative chunks plus mandatory
+anchors (caption, local windows) to attend to, with causal routing that
+prevents loop closures. As we scale the data and gradually sparsify the
+routing, the model allocates compute to salient history, preserving identities,
+actions, and scenes over minutes of content. Efficiency follows as a byproduct
+of retrieval (near-linear scaling), which enables practical training and
+synthesis, and the emergence of memory and consistency at the scale of minutes.</p>
+            
+            
+
+            
+            
+            
+
+            
+
+            <a href="http://arxiv.org/abs/2508.21058v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Shengqu Cai, Ceyuan Yang, Lvmin Zhang, Yuwei Guo, Junfei Xiao, Ziyan Yang, Yinghao Xu, Zhenheng Yang, Alan Yuille, Leonidas Guibas, Maneesh Agrawala, Lu Jiang, Gordon Wetzstein</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-08-29 03:36:37 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-08-29 03:53:33 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

@@ -1,0 +1,103 @@
+[
+    {
+        "title": "POSE: Phased One-Step Adversarial Equilibrium for Video Diffusion Models",
+        "summary": "The field of video diffusion generation faces critical bottlenecks in\nsampling efficiency, especially for large-scale models and long sequences.\nExisting video acceleration methods adopt image-based techniques but suffer\nfrom fundamental limitations: they neither model the temporal coherence of\nvideo frames nor provide single-step distillation for large-scale video models.\nTo bridge this gap, we propose POSE (Phased One-Step Equilibrium), a\ndistillation framework that reduces the sampling steps of large-scale video\ndiffusion models, enabling the generation of high-quality videos in a single\nstep. POSE employs a carefully designed two-phase process to distill video\nmodels:(i) stability priming: a warm-up mechanism to stabilize adversarial\ndistillation that adapts the high-quality trajectory of the one-step generator\nfrom high to low signal-to-noise ratio regimes, optimizing the video quality of\nsingle-step mappings near the endpoints of flow trajectories. (ii) unified\nadversarial equilibrium: a flexible self-adversarial distillation mechanism\nthat promotes stable single-step adversarial training towards a Nash\nequilibrium within the Gaussian noise space, generating realistic single-step\nvideos close to real videos. For conditional video generation, we propose (iii)\nconditional adversarial consistency, a method to improve both semantic\nconsistency and frame consistency between conditional frames and generated\nframes. Comprehensive experiments demonstrate that POSE outperforms other\nacceleration methods on VBench-I2V by average 7.15% in semantic alignment,\ntemporal conference and frame quality, reducing the latency of the pre-trained\nmodel by 100$\\times$, from 1000 seconds to 10 seconds, while maintaining\ncompetitive performance.",
+        "url": "http://arxiv.org/abs/2508.21019v1",
+        "published_date": "2025-08-28T17:20:01+00:00",
+        "updated_date": "2025-08-28T17:20:01+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Jiaxiang Cheng",
+            "Bing Ma",
+            "Xuhua Ren",
+            "Hongyi Jin",
+            "Kai Yu",
+            "Peng Zhang",
+            "Wenyue Li",
+            "Yuan Zhou",
+            "Tianxiang Zheng",
+            "Qinglin Lu"
+        ],
+        "tldr": "The paper introduces POSE, a distillation framework for video diffusion models that achieves single-step video generation with significant latency reduction and improved quality compared to existing methods.",
+        "tldr_zh": "该论文介绍了POSE，一个用于视频扩散模型的蒸馏框架，通过单步视频生成实现了显著的延迟降低，并提高了相对于现有方法的质量。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 9,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "InfinityHuman: Towards Long-Term Audio-Driven Human",
+        "summary": "Audio-driven human animation has attracted wide attention thanks to its\npractical applications. However, critical challenges remain in generating\nhigh-resolution, long-duration videos with consistent appearance and natural\nhand motions. Existing methods extend videos using overlapping motion frames\nbut suffer from error accumulation, leading to identity drift, color shifts,\nand scene instability. Additionally, hand movements are poorly modeled,\nresulting in noticeable distortions and misalignment with the audio. In this\nwork, we propose InfinityHuman, a coarse-to-fine framework that first generates\naudio-synchronized representations, then progressively refines them into\nhigh-resolution, long-duration videos using a pose-guided refiner. Since pose\nsequences are decoupled from appearance and resist temporal degradation, our\npose-guided refiner employs stable poses and the initial frame as a visual\nanchor to reduce drift and improve lip synchronization. Moreover, to enhance\nsemantic accuracy and gesture realism, we introduce a hand-specific reward\nmechanism trained with high-quality hand motion data. Experiments on the EMTD\nand HDTF datasets show that InfinityHuman achieves state-of-the-art performance\nin video quality, identity preservation, hand accuracy, and lip-sync. Ablation\nstudies further confirm the effectiveness of each module. Code will be made\npublic.",
+        "url": "http://arxiv.org/abs/2508.20210v1",
+        "published_date": "2025-08-27T18:36:30+00:00",
+        "updated_date": "2025-08-27T18:36:30+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Xiaodi Li",
+            "Pan Xie",
+            "Yi Ren",
+            "Qijun Gan",
+            "Chen Zhang",
+            "Fangyuan Kong",
+            "Xiang Yin",
+            "Bingyue Peng",
+            "Zehuan Yuan"
+        ],
+        "tldr": "The paper introduces InfinityHuman, a coarse-to-fine framework for generating high-resolution, long-duration audio-driven human videos with improved identity preservation, lip-sync, and hand realism by using pose-guided refinement and hand-specific reward mechanisms.",
+        "tldr_zh": "该论文介绍了InfinityHuman，一个用于生成高分辨率、长时间音频驱动的人类视频的由粗到精的框架。该框架通过姿势引导的细化和手部特定奖励机制，提高了身份保持、唇部同步和手部逼真度。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    },
+    {
+        "title": "Dress&Dance: Dress up and Dance as You Like It - Technical Preview",
+        "summary": "We present Dress&Dance, a video diffusion framework that generates high\nquality 5-second-long 24 FPS virtual try-on videos at 1152x720 resolution of a\nuser wearing desired garments while moving in accordance with a given reference\nvideo. Our approach requires a single user image and supports a range of tops,\nbottoms, and one-piece garments, as well as simultaneous tops and bottoms\ntry-on in a single pass. Key to our framework is CondNet, a novel conditioning\nnetwork that leverages attention to unify multi-modal inputs (text, images, and\nvideos), thereby enhancing garment registration and motion fidelity. CondNet is\ntrained on heterogeneous training data, combining limited video data and a\nlarger, more readily available image dataset, in a multistage progressive\nmanner. Dress&Dance outperforms existing open source and commercial solutions\nand enables a high quality and flexible try-on experience.",
+        "url": "http://arxiv.org/abs/2508.21070v1",
+        "published_date": "2025-08-28T17:59:55+00:00",
+        "updated_date": "2025-08-28T17:59:55+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.LG"
+        ],
+        "authors": [
+            "Jun-Kun Chen",
+            "Aayush Bansal",
+            "Minh Phuoc Vo",
+            "Yu-Xiong Wang"
+        ]
+    },
+    {
+        "title": "Mixture of Contexts for Long Video Generation",
+        "summary": "Long video generation is fundamentally a long context memory problem: models\nmust retain and retrieve salient events across a long range without collapsing\nor drifting. However, scaling diffusion transformers to generate long-context\nvideos is fundamentally limited by the quadratic cost of self-attention, which\nmakes memory and computation intractable and difficult to optimize for long\nsequences. We recast long-context video generation as an internal information\nretrieval task and propose a simple, learnable sparse attention routing module,\nMixture of Contexts (MoC), as an effective long-term memory retrieval engine.\nIn MoC, each query dynamically selects a few informative chunks plus mandatory\nanchors (caption, local windows) to attend to, with causal routing that\nprevents loop closures. As we scale the data and gradually sparsify the\nrouting, the model allocates compute to salient history, preserving identities,\nactions, and scenes over minutes of content. Efficiency follows as a byproduct\nof retrieval (near-linear scaling), which enables practical training and\nsynthesis, and the emergence of memory and consistency at the scale of minutes.",
+        "url": "http://arxiv.org/abs/2508.21058v1",
+        "published_date": "2025-08-28T17:57:55+00:00",
+        "updated_date": "2025-08-28T17:57:55+00:00",
+        "categories": [
+            "cs.GR",
+            "cs.AI",
+            "cs.CV"
+        ],
+        "authors": [
+            "Shengqu Cai",
+            "Ceyuan Yang",
+            "Lvmin Zhang",
+            "Yuwei Guo",
+            "Junfei Xiao",
+            "Ziyan Yang",
+            "Yinghao Xu",
+            "Zhenheng Yang",
+            "Alan Yuille",
+            "Leonidas Guibas",
+            "Maneesh Agrawala",
+            "Lu Jiang",
+            "Gordon Wetzstein"
+        ]
+    }
+]
