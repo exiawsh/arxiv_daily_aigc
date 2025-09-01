@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - July 23, 2025 - August 01, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 21, 2025 - August 30, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,8 +200,8 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>10 days: August 01, 2025 - July 23, 2025</p>
-            <p>Total: 13 papers</p>
+            <p>10 days: August 30, 2025 - August 21, 2025</p>
+            <p>Total: 16 papers</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -216,28 +216,37 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Back to the Features: DINO as a Foundation for Video World Models</h2>
+            <h2 class="paper-title">Waver: Wave Your Way to Lifelike Video Generation</h2>
             
             <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
-                <i class="fas fa-calendar-alt"></i> July 26, 2025
+                <i class="fas fa-calendar-alt"></i> August 22, 2025
             </p>
             
-            <p class="paper-summary">We present DINO-world, a powerful generalist video world model trained to
-predict future frames in the latent space of DINOv2. By leveraging a
-pre-trained image encoder and training a future predictor on a large-scale
-uncurated video dataset, DINO-world learns the temporal dynamics of diverse
-scenes, from driving and indoor scenes to simulated environments. We show that
-DINO-world outperforms previous models on a variety of video prediction
-benchmarks, e.g. segmentation and depth forecasting, and demonstrates strong
-understanding of intuitive physics. Furthermore, we show that it is possible to
-fine-tune the predictor on observation-action trajectories. The resulting
-action-conditioned world model can be used for planning by simulating candidate
-trajectories in latent space.</p>
+            <p class="paper-summary">We present Waver, a high-performance foundation model for unified image and
+video generation. Waver can directly generate videos with durations ranging
+from 5 to 10 seconds at a native resolution of 720p, which are subsequently
+upscaled to 1080p. The model simultaneously supports text-to-video (T2V),
+image-to-video (I2V), and text-to-image (T2I) generation within a single,
+integrated framework. We introduce a Hybrid Stream DiT architecture to enhance
+modality alignment and accelerate training convergence. To ensure training data
+quality, we establish a comprehensive data curation pipeline and manually
+annotate and train an MLLM-based video quality model to filter for the
+highest-quality samples. Furthermore, we provide detailed training and
+inference recipes to facilitate the generation of high-quality videos. Building
+on these contributions, Waver excels at capturing complex motion, achieving
+superior motion amplitude and temporal consistency in video synthesis. Notably,
+it ranks among the Top 3 on both the T2V and I2V leaderboards at Artificial
+Analysis (data as of 2025-07-30 10:00 GMT+8), consistently outperforming
+existing open-source models and matching or surpassing state-of-the-art
+commercial solutions. We hope this technical report will help the community
+more efficiently train high-quality video generation models and accelerate
+progress in video generation technologies. Official page:
+https://github.com/FoundationVision/Waver.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: DINO-world is a video world model trained on DINOv2's latent space, demonstrating superior performance in video prediction benchmarks and enabling action-conditioned planning through fine-tuning.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: Waver is a new foundation model for unified image and video generation (T2V, I2V, T2I) that achieves state-of-the-art results with a novel Hybrid Stream DiT architecture and a high-quality data curation pipeline, excelling in complex motion and temporal consistency.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: DINO-world是一个在DINOv2的潜在空间中训练的视频世界模型，它在视频预测基准测试中表现出色，并通过微调实现动作条件下的规划。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: Waver 是一个新的统一图像和视频生成的基础模型（T2V, I2V, T2I），它采用新颖的混合流 DiT 架构和高质量的数据管理流程，达到了最先进的结果，擅长捕捉复杂的运动和时间一致性。</p>
             
 
             
@@ -271,8 +280,8 @@ trajectories in latent space.</p>
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
             </div>
@@ -308,11 +317,11 @@ trajectories in latent space.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2507.19468v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.15761v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Federico Baldassarre, Marc Szafraniec, Basile Terver, Vasil Khalidov, Francisco Massa, Yann LeCun, Patrick Labatut, Maximilian Seitzer, Piotr Bojanowski</p>
+            <p class="paper-authors">Authors: Yifu Zhang, Hao Yang, Yuqi Zhang, Yifei Hu, Fengda Zhu, Chuang Lin, Xiaofeng Mei, Yi Jiang, Zehuan Yuan, Bingyue Peng</p>
             
         </motion.div>
         
@@ -324,41 +333,41 @@ trajectories in latent space.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">PUSA V1.0: Surpassing Wan-I2V with $500 Training Cost by Vectorized Timestep Adaptation</h2>
+            <h2 class="paper-title">POSE: Phased One-Step Adversarial Equilibrium for Video Diffusion Models</h2>
             
             <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
-                <i class="fas fa-calendar-alt"></i> July 23, 2025
+                <i class="fas fa-calendar-alt"></i> August 29, 2025
             </p>
             
-            <p class="paper-summary">The rapid advancement of video diffusion models has been hindered by
-fundamental limitations in temporal modeling, particularly the rigid
-synchronization of frame evolution imposed by conventional scalar timestep
-variables. While task-specific adaptations and autoregressive models have
-sought to address these challenges, they remain constrained by computational
-inefficiency, catastrophic forgetting, or narrow applicability. In this work,
-we present Pusa, a groundbreaking paradigm that leverages vectorized timestep
-adaptation (VTA) to enable fine-grained temporal control within a unified video
-diffusion framework. Besides, VTA is a non-destructive adaptation, which means
-it fully preserves the capabilities of the base model. By finetuning the SOTA
-Wan2.1-T2V-14B model with VTA, we achieve unprecedented efficiency --
-surpassing the performance of Wan-I2V-14B with $\leq$ 1/200 of the training
-cost (\$500 vs. $\geq$ \$100,000) and $\leq$ 1/2500 of the dataset size (4K vs.
-$\geq$ 10M samples). Pusa not only sets a new standard for image-to-video (I2V)
-generation, achieving a VBench-I2V total score of 87.32\% (vs. 86.86\% of
-Wan-I2V-14B), but also unlocks many zero-shot multi-task capabilities such as
-start-end frames and video extension -- all without task-specific training.
-Meanwhile, Pusa can still perform text-to-video generation. Mechanistic
-analyses reveal that our approach preserves the foundation model's generative
-priors while surgically injecting temporal dynamics, avoiding the combinatorial
-explosion inherent to vectorized timesteps. This work establishes a scalable,
-efficient, and versatile paradigm for next-generation video synthesis,
-democratizing high-fidelity video generation for research and industry alike.
-Code is open-sourced at https://github.com/Yaofang-Liu/Pusa-VidGen</p>
+            <p class="paper-summary">The field of video diffusion generation faces critical bottlenecks in
+sampling efficiency, especially for large-scale models and long sequences.
+Existing video acceleration methods adopt image-based techniques but suffer
+from fundamental limitations: they neither model the temporal coherence of
+video frames nor provide single-step distillation for large-scale video models.
+To bridge this gap, we propose POSE (Phased One-Step Equilibrium), a
+distillation framework that reduces the sampling steps of large-scale video
+diffusion models, enabling the generation of high-quality videos in a single
+step. POSE employs a carefully designed two-phase process to distill video
+models:(i) stability priming: a warm-up mechanism to stabilize adversarial
+distillation that adapts the high-quality trajectory of the one-step generator
+from high to low signal-to-noise ratio regimes, optimizing the video quality of
+single-step mappings near the endpoints of flow trajectories. (ii) unified
+adversarial equilibrium: a flexible self-adversarial distillation mechanism
+that promotes stable single-step adversarial training towards a Nash
+equilibrium within the Gaussian noise space, generating realistic single-step
+videos close to real videos. For conditional video generation, we propose (iii)
+conditional adversarial consistency, a method to improve both semantic
+consistency and frame consistency between conditional frames and generated
+frames. Comprehensive experiments demonstrate that POSE outperforms other
+acceleration methods on VBench-I2V by average 7.15% in semantic alignment,
+temporal conference and frame quality, reducing the latency of the pre-trained
+model by 100$\times$, from 1000 seconds to 10 seconds, while maintaining
+competitive performance.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Pusa, a new video diffusion paradigm using vectorized timestep adaptation (VTA) that achieves SOTA I2V performance with significantly lower training costs and dataset size compared to existing models, while also enabling zero-shot multi-task capabilities.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces POSE, a distillation framework for video diffusion models that achieves single-step video generation with significant latency reduction and improved quality compared to existing methods.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了 Pusa，一种新的视频扩散范式，使用向量化时间步长自适应 (VTA)，以远低于现有模型的训练成本和数据集大小实现了 SOTA I2V 性能，同时还实现了零样本多任务能力。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了POSE，一个用于视频扩散模型的蒸馏框架，通过单步视频生成实现了显著的延迟降低，并提高了相对于现有方法的质量。</p>
             
 
             
@@ -422,18 +431,18 @@ Code is open-sourced at https://github.com/Yaofang-Liu/Pusa-VidGen</p>
                     
                 
                     
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2507.16116v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.21019v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Yaofang Liu, Yumeng Ren, Aitor Artola, Yuxuan Hu, Xiaodong Cun, Xiaotong Zhao, Alan Zhao, Raymond H. Chan, Suiyun Zhang, Rui Liu, Dandan Tu, Jean-Michel Morel</p>
+            <p class="paper-authors">Authors: Jiaxiang Cheng, Bing Ma, Xuhua Ren, Hongyi Jin, Kai Yu, Peng Zhang, Wenyue Li, Yuan Zhou, Tianxiang Zheng, Qinglin Lu</p>
             
         </motion.div>
         
@@ -445,34 +454,38 @@ Code is open-sourced at https://github.com/Yaofang-Liu/Pusa-VidGen</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Compositional Video Synthesis by Temporal Object-Centric Learning</h2>
+            <h2 class="paper-title">Ego-centric Predictive Model Conditioned on Hand Trajectories</h2>
             
             <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
-                <i class="fas fa-calendar-alt"></i> July 29, 2025
+                <i class="fas fa-calendar-alt"></i> August 28, 2025
             </p>
             
-            <p class="paper-summary">We present a novel framework for compositional video synthesis that leverages
-temporally consistent object-centric representations, extending our previous
-work, SlotAdapt, from images to video. While existing object-centric approaches
-either lack generative capabilities entirely or treat video sequences
-holistically, thus neglecting explicit object-level structure, our approach
-explicitly captures temporal dynamics by learning pose invariant object-centric
-slots and conditioning them on pretrained diffusion models. This design enables
-high-quality, pixel-level video synthesis with superior temporal coherence, and
-offers intuitive compositional editing capabilities such as object insertion,
-deletion, or replacement, maintaining consistent object identities across
-frames. Extensive experiments demonstrate that our method sets new benchmarks
-in video generation quality and temporal consistency, outperforming previous
-object-centric generative methods. Although our segmentation performance
-closely matches state-of-the-art methods, our approach uniquely integrates this
-capability with robust generative performance, significantly advancing
-interactive and controllable video generation and opening new possibilities for
-advanced content creation, semantic editing, and dynamic scene understanding.</p>
+            <p class="paper-summary">In egocentric scenarios, anticipating both the next action and its visual
+outcome is essential for understanding human-object interactions and for
+enabling robotic planning. However, existing paradigms fall short of jointly
+modeling these aspects. Vision-Language-Action (VLA) models focus on action
+prediction but lack explicit modeling of how actions influence the visual
+scene, while video prediction models generate future frames without
+conditioning on specific actions, often resulting in implausible or
+contextually inconsistent outcomes. To bridge this gap, we propose a unified
+two-stage predictive framework that jointly models action and visual future in
+egocentric scenarios, conditioned on hand trajectories. In the first stage, we
+perform consecutive state modeling to process heterogeneous inputs (visual
+observations, language, and action history) and explicitly predict future hand
+trajectories. In the second stage, we introduce causal cross-attention to fuse
+multi-modal cues, leveraging inferred action signals to guide an image-based
+Latent Diffusion Model (LDM) for frame-by-frame future video generation. Our
+approach is the first unified model designed to handle both egocentric human
+activity understanding and robotic manipulation tasks, providing explicit
+predictions of both upcoming actions and their visual consequences. Extensive
+experiments on Ego4D, BridgeData, and RLBench demonstrate that our method
+outperforms state-of-the-art baselines in both action prediction and future
+video synthesis.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces a novel framework for compositional video synthesis using temporally consistent, object-centric representations and diffusion models, enabling high-quality video generation with object-level editing capabilities.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper presents a unified two-stage framework that predicts future hand trajectories and uses them to guide a latent diffusion model for frame-by-frame future video generation in egocentric scenarios, outperforming existing methods in action prediction and video synthesis.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文提出了一种新颖的组合视频合成框架，该框架利用时间上一致的、以对象为中心的表示和扩散模型，从而能够生成高质量的视频并具有对象级别的编辑功能。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文提出了一个统一的两阶段框架，用于预测未来手部轨迹，并利用这些轨迹来引导潜在扩散模型，在以自我为中心的场景中逐帧生成未来视频，并在动作预测和视频合成方面优于现有方法。</p>
             
 
             
@@ -482,8 +495,8 @@ advanced content creation, semantic editing, and dynamic scene understanding.</p
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -543,11 +556,11 @@ advanced content creation, semantic editing, and dynamic scene understanding.</p
             </div>
             
 
-            <a href="http://arxiv.org/abs/2507.20855v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.19852v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Adil Kaan Akan, Yucel Yemez</p>
+            <p class="paper-authors">Authors: Binjie Zhang, Mike Zheng Shou</p>
             
         </motion.div>
         
@@ -559,33 +572,35 @@ advanced content creation, semantic editing, and dynamic scene understanding.</p
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Captain Cinema: Towards Short Movie Generation</h2>
+            <h2 class="paper-title">MotionFlux: Efficient Text-Guided Motion Generation through Rectified Flow Matching and Preference Alignment</h2>
             
             <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
-                <i class="fas fa-calendar-alt"></i> July 25, 2025
+                <i class="fas fa-calendar-alt"></i> August 28, 2025
             </p>
             
-            <p class="paper-summary">We present Captain Cinema, a generation framework for short movie generation.
-Given a detailed textual description of a movie storyline, our approach firstly
-generates a sequence of keyframes that outline the entire narrative, which
-ensures long-range coherence in both the storyline and visual appearance (e.g.,
-scenes and characters). We refer to this step as top-down keyframe planning.
-These keyframes then serve as conditioning signals for a video synthesis model,
-which supports long context learning, to produce the spatio-temporal dynamics
-between them. This step is referred to as bottom-up video synthesis. To support
-stable and efficient generation of multi-scene long narrative cinematic works,
-we introduce an interleaved training strategy for Multimodal Diffusion
-Transformers (MM-DiT), specifically adapted for long-context video data. Our
-model is trained on a specially curated cinematic dataset consisting of
-interleaved data pairs. Our experiments demonstrate that Captain Cinema
-performs favorably in the automated creation of visually coherent and narrative
-consistent short movies in high quality and efficiency. Project page:
-https://thecinema.ai</p>
+            <p class="paper-summary">Motion generation is essential for animating virtual characters and embodied
+agents. While recent text-driven methods have made significant strides, they
+often struggle with achieving precise alignment between linguistic descriptions
+and motion semantics, as well as with the inefficiencies of slow, multi-step
+inference. To address these issues, we introduce TMR++ Aligned Preference
+Optimization (TAPO), an innovative framework that aligns subtle motion
+variations with textual modifiers and incorporates iterative adjustments to
+reinforce semantic grounding. To further enable real-time synthesis, we propose
+MotionFLUX, a high-speed generation framework based on deterministic rectified
+flow matching. Unlike traditional diffusion models, which require hundreds of
+denoising steps, MotionFLUX constructs optimal transport paths between noise
+distributions and motion spaces, facilitating real-time synthesis. The
+linearized probability paths reduce the need for multi-step sampling typical of
+sequential methods, significantly accelerating inference time without
+sacrificing motion quality. Experimental results demonstrate that, together,
+TAPO and MotionFLUX form a unified system that outperforms state-of-the-art
+approaches in both semantic consistency and motion quality, while also
+accelerating generation speed. The code and pretrained models will be released.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: Captain Cinema is a framework for short movie generation from textual descriptions, using top-down keyframe planning and bottom-up video synthesis with Multimodal Diffusion Transformers.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces MotionFLUX, a framework combining rectified flow matching for real-time text-guided motion generation and TAPO for enhanced semantic alignment, achieving state-of-the-art performance in speed and quality.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: Captain Cinema是一个从文本描述生成短电影的框架，它使用自顶向下的关键帧规划和自底向上的视频合成，并结合了多模态扩散Transformer。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了MotionFLUX，一个结合了校正流匹配的实时文本引导运动生成框架，以及TAPO，用于增强语义对齐，在速度和质量方面实现了最先进的性能。</p>
             
 
             
@@ -595,8 +610,8 @@ https://thecinema.ai</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
@@ -656,11 +671,11 @@ https://thecinema.ai</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2507.18634v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.19527v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Junfei Xiao, Ceyuan Yang, Lvmin Zhang, Shengqu Cai, Yang Zhao, Yuwei Guo, Gordon Wetzstein, Maneesh Agrawala, Alan Yuille, Lu Jiang</p>
+            <p class="paper-authors">Authors: Zhiting Gao, Dan Song, Diqiong Jiang, Chao Xue, An-An Liu</p>
             
         </motion.div>
         
@@ -672,37 +687,35 @@ https://thecinema.ai</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Adversarial Distribution Matching for Diffusion Distillation Towards Efficient Image and Video Synthesis</h2>
+            <h2 class="paper-title">HERO: Hierarchical Extrapolation and Refresh for Efficient World Models</h2>
             
             <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
-                <i class="fas fa-calendar-alt"></i> July 25, 2025
+                <i class="fas fa-calendar-alt"></i> August 26, 2025
             </p>
             
-            <p class="paper-summary">Distribution Matching Distillation (DMD) is a promising score distillation
-technique that compresses pre-trained teacher diffusion models into efficient
-one-step or multi-step student generators. Nevertheless, its reliance on the
-reverse Kullback-Leibler (KL) divergence minimization potentially induces mode
-collapse (or mode-seeking) in certain applications. To circumvent this inherent
-drawback, we propose Adversarial Distribution Matching (ADM), a novel framework
-that leverages diffusion-based discriminators to align the latent predictions
-between real and fake score estimators for score distillation in an adversarial
-manner. In the context of extremely challenging one-step distillation, we
-further improve the pre-trained generator by adversarial distillation with
-hybrid discriminators in both latent and pixel spaces. Different from the mean
-squared error used in DMD2 pre-training, our method incorporates the
-distributional loss on ODE pairs collected from the teacher model, and thus
-providing a better initialization for score distillation fine-tuning in the
-next stage. By combining the adversarial distillation pre-training with ADM
-fine-tuning into a unified pipeline termed DMDX, our proposed method achieves
-superior one-step performance on SDXL compared to DMD2 while consuming less GPU
-time. Additional experiments that apply multi-step ADM distillation on
-SD3-Medium, SD3.5-Large, and CogVideoX set a new benchmark towards efficient
-image and video synthesis.</p>
+            <p class="paper-summary">Generation-driven world models create immersive virtual environments but
+suffer slow inference due to the iterative nature of diffusion models. While
+recent advances have improved diffusion model efficiency, directly applying
+these techniques to world models introduces limitations such as quality
+degradation. In this paper, we present HERO, a training-free hierarchical
+acceleration framework tailored for efficient world models. Owing to the
+multi-modal nature of world models, we identify a feature coupling phenomenon,
+wherein shallow layers exhibit high temporal variability, while deeper layers
+yield more stable feature representations. Motivated by this, HERO adopts
+hierarchical strategies to accelerate inference: (i) In shallow layers, a
+patch-wise refresh mechanism efficiently selects tokens for recomputation. With
+patch-wise sampling and frequency-aware tracking, it avoids extra metric
+computation and remain compatible with FlashAttention. (ii) In deeper layers, a
+linear extrapolation scheme directly estimates intermediate features. This
+completely bypasses the computations in attention modules and feed-forward
+networks. Our experiments show that HERO achieves a 1.73$\times$ speedup with
+minimal quality degradation, significantly outperforming existing diffusion
+acceleration methods.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces Adversarial Distribution Matching (ADM), a novel framework for distilling diffusion models, addressing mode collapse issues in existing Distribution Matching Distillation (DMD) techniques, and achieving state-of-the-art performance in efficient image and video synthesis.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces HERO, a training-free hierarchical acceleration framework for world models that improves inference speed by using patch-wise refresh in shallow layers and linear extrapolation in deeper layers, achieving a 1.73x speedup with minimal quality degradation.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文提出了一种新的对抗分布匹配（ADM）框架，用于蒸馏扩散模型，解决了现有分布匹配蒸馏（DMD）技术中的模式崩溃问题，并在高效图像和视频合成方面取得了最先进的性能。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文提出了HERO，一种用于世界模型的免训练分层加速框架，通过在浅层中使用分块刷新，在深层中使用线性外推来提高推理速度，实现了1.73倍的加速，且质量损失极小。</p>
             
 
             
@@ -712,8 +725,8 @@ image and video synthesis.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -773,11 +786,11 @@ image and video synthesis.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2507.18569v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.17588v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Yanzuo Lu, Yuxi Ren, Xin Xia, Shanchuan Lin, Xing Wang, Xuefeng Xiao, Andy J. Ma, Xiaohua Xie, Jian-Huang Lai</p>
+            <p class="paper-authors">Authors: Quanjian Song, Xinyu Wang, Donghao Zhou, Jingyu Lin, Cunjian Chen, Yue Ma, Xiu Li</p>
             
         </motion.div>
         
@@ -789,32 +802,36 @@ image and video synthesis.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Enhancing Scene Transition Awareness in Video Generation via Post-Training</h2>
+            <h2 class="paper-title">MoCo: Motion-Consistent Human Video Generation via Structure-Appearance Decoupling</h2>
             
             <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
-                <i class="fas fa-calendar-alt"></i> July 25, 2025
+                <i class="fas fa-calendar-alt"></i> August 25, 2025
             </p>
             
-            <p class="paper-summary">Recent advances in AI-generated video have shown strong performance on
-\emph{text-to-video} tasks, particularly for short clips depicting a single
-scene. However, current models struggle to generate longer videos with coherent
-scene transitions, primarily because they cannot infer when a transition is
-needed from the prompt. Most open-source models are trained on datasets
-consisting of single-scene video clips, which limits their capacity to learn
-and respond to prompts requiring multiple scenes. Developing scene transition
-awareness is essential for multi-scene generation, as it allows models to
-identify and segment videos into distinct clips by accurately detecting
-transitions.
-  To address this, we propose the \textbf{Transition-Aware Video} (TAV)
-dataset, which consists of preprocessed video clips with multiple scene
-transitions. Our experiment shows that post-training on the \textbf{TAV}
-dataset improves prompt-based scene transition understanding, narrows the gap
-between required and generated scenes, and maintains image quality.</p>
+            <p class="paper-summary">Generating human videos with consistent motion from text prompts remains a
+significant challenge, particularly for whole-body or long-range motion.
+Existing video generation models prioritize appearance fidelity, resulting in
+unrealistic or physically implausible human movements with poor structural
+coherence. Additionally, most existing human video datasets primarily focus on
+facial or upper-body motions, or consist of vertically oriented dance videos,
+limiting the scope of corresponding generation methods to simple movements. To
+overcome these challenges, we propose MoCo, which decouples the process of
+human video generation into two components: structure generation and appearance
+generation. Specifically, our method first employs an efficient 3D structure
+generator to produce a human motion sequence from a text prompt. The remaining
+video appearance is then synthesized under the guidance of the generated
+structural sequence. To improve fine-grained control over sparse human
+structures, we introduce Human-Aware Dynamic Control modules and integrate
+dense tracking constraints during training. Furthermore, recognizing the
+limitations of existing datasets, we construct a large-scale whole-body human
+video dataset featuring complex and diverse motions. Extensive experiments
+demonstrate that MoCo outperforms existing approaches in generating realistic
+and structurally coherent human videos.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces a Transition-Aware Video (TAV) dataset and demonstrates that post-training video generation models on this dataset improves their ability to generate videos with coherent scene transitions from text prompts.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces MoCo, a framework for generating realistic and structurally coherent human videos from text prompts by decoupling structure and appearance generation, and it introduces a new large-scale whole-body human video dataset.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一个Transition-Aware Video (TAV)数据集，并展示了通过在该数据集上对视频生成模型进行后训练，可以提高模型根据文本提示生成具有连贯场景过渡视频的能力。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了 MoCo，一个通过解耦结构和外观生成，从文本提示生成逼真且结构连贯的人体视频的框架。同时，它引入了一个新的大规模全身人体视频数据集。</p>
             
 
             
@@ -885,11 +902,11 @@ between required and generated scenes, and maintains image quality.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2507.18046v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.17404v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Hanwen Shen, Jiajie Lu, Yupeng Cao, Xiaonan Yang</p>
+            <p class="paper-authors">Authors: Haoyu Wang, Hao Tang, Donglin Di, Zhilu Zhang, Wangmeng Zuo, Feng Gao, Siwei Ma, Shiliang Zhang</p>
             
         </motion.div>
         
@@ -901,38 +918,36 @@ between required and generated scenes, and maintains image quality.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Yume: An Interactive World Generation Model</h2>
+            <h2 class="paper-title">SSG-Dit: A Spatial Signal Guided Framework for Controllable Video Generation</h2>
             
             <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
-                <i class="fas fa-calendar-alt"></i> July 24, 2025
+                <i class="fas fa-calendar-alt"></i> August 24, 2025
             </p>
             
-            <p class="paper-summary">Yume aims to use images, text, or videos to create an interactive, realistic,
-and dynamic world, which allows exploration and control using peripheral
-devices or neural signals. In this report, we present a preview version of
-\method, which creates a dynamic world from an input image and allows
-exploration of the world using keyboard actions. To achieve this high-fidelity
-and interactive video world generation, we introduce a well-designed framework,
-which consists of four main components, including camera motion quantization,
-video generation architecture, advanced sampler, and model acceleration. First,
-we quantize camera motions for stable training and user-friendly interaction
-using keyboard inputs. Then, we introduce the Masked Video Diffusion
-Transformer~(MVDT) with a memory module for infinite video generation in an
-autoregressive manner. After that, training-free Anti-Artifact Mechanism (AAM)
-and Time Travel Sampling based on Stochastic Differential Equations (TTS-SDE)
-are introduced to the sampler for better visual quality and more precise
-control. Moreover, we investigate model acceleration by synergistic
-optimization of adversarial distillation and caching mechanisms. We use the
-high-quality world exploration dataset \sekai to train \method, and it achieves
-remarkable results in diverse scenes and applications. All data, codebase, and
-model weights are available on https://github.com/stdstu12/YUME. Yume will
-update monthly to achieve its original goal. Project page:
-https://stdstu12.github.io/YUME-Project/.</p>
+            <p class="paper-summary">Controllable video generation aims to synthesize video content that aligns
+precisely with user-provided conditions, such as text descriptions and initial
+images. However, a significant challenge persists in this domain: existing
+models often struggle to maintain strong semantic consistency, frequently
+generating videos that deviate from the nuanced details specified in the
+prompts. To address this issue, we propose SSG-DiT (Spatial Signal Guided
+Diffusion Transformer), a novel and efficient framework for high-fidelity
+controllable video generation. Our approach introduces a decoupled two-stage
+process. The first stage, Spatial Signal Prompting, generates a spatially aware
+visual prompt by leveraging the rich internal representations of a pre-trained
+multi-modal model. This prompt, combined with the original text, forms a joint
+condition that is then injected into a frozen video DiT backbone via our
+lightweight and parameter-efficient SSG-Adapter. This unique design, featuring
+a dual-branch attention mechanism, allows the model to simultaneously harness
+its powerful generative priors while being precisely steered by external
+spatial signals. Extensive experiments demonstrate that SSG-DiT achieves
+state-of-the-art performance, outperforming existing models on multiple key
+metrics in the VBench benchmark, particularly in spatial relationship control
+and overall consistency.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: Yume is a model for generating interactive and dynamic worlds from images using a novel framework including camera motion quantization, a Masked Video Diffusion Transformer, an advanced sampler, and model acceleration techniques, with code and data publicly available.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces SSG-DiT, a novel framework for controllable video generation that uses spatial signal prompting and a lightweight adapter to improve semantic consistency and control, achieving state-of-the-art performance on VBench.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: Yume是一个基于图像生成交互式和动态世界的模型，它采用了一个新颖的框架，包括相机运动量化、Masked Video Diffusion Transformer、高级采样器和模型加速技术，并公开发布了代码和数据。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了SSG-DiT，一种用于可控视频生成的新框架，它使用空间信号提示和一个轻量级适配器来提高语义一致性和控制，并在VBench上实现了最先进的性能。</p>
             
 
             
@@ -942,8 +957,8 @@ https://stdstu12.github.io/YUME-Project/.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -958,16 +973,16 @@ https://stdstu12.github.io/YUME-Project/.</p>
                 <div class="rating-item">
                     <span class="rating-label">Clarity:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
             </div>
@@ -1003,11 +1018,11 @@ https://stdstu12.github.io/YUME-Project/.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2507.17744v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.17062v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Xiaofeng Mao, Shaoheng Lin, Zhen Li, Chuanhao Li, Wenshuo Peng, Tong He, Jiangmiao Pang, Mingmin Chi, Yu Qiao, Kaipeng Zhang</p>
+            <p class="paper-authors">Authors: Peng Hu, Yu Gu, Liang Luo, Fuji Ren</p>
             
         </motion.div>
         
@@ -1019,41 +1034,149 @@ https://stdstu12.github.io/YUME-Project/.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Controllable Video Generation: A Survey</h2>
+            <h2 class="paper-title">Seeing Clearly, Forgetting Deeply: Revisiting Fine-Tuned Video Generators for Driving Simulation</h2>
             
             <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
-                <i class="fas fa-calendar-alt"></i> July 23, 2025
+                <i class="fas fa-calendar-alt"></i> August 23, 2025
             </p>
             
-            <p class="paper-summary">With the rapid development of AI-generated content (AIGC), video generation
-has emerged as one of its most dynamic and impactful subfields. In particular,
-the advancement of video generation foundation models has led to growing demand
-for controllable video generation methods that can more accurately reflect user
-intent. Most existing foundation models are designed for text-to-video
-generation, where text prompts alone are often insufficient to express complex,
-multi-modal, and fine-grained user requirements. This limitation makes it
-challenging for users to generate videos with precise control using current
-models. To address this issue, recent research has explored the integration of
-additional non-textual conditions, such as camera motion, depth maps, and human
-pose, to extend pretrained video generation models and enable more controllable
-video synthesis. These approaches aim to enhance the flexibility and practical
-applicability of AIGC-driven video generation systems. In this survey, we
-provide a systematic review of controllable video generation, covering both
-theoretical foundations and recent advances in the field. We begin by
-introducing the key concepts and commonly used open-source video generation
-models. We then focus on control mechanisms in video diffusion models,
-analyzing how different types of conditions can be incorporated into the
-denoising process to guide generation. Finally, we categorize existing methods
-based on the types of control signals they leverage, including single-condition
-generation, multi-condition generation, and universal controllable generation.
-For a complete list of the literature on controllable video generation
-reviewed, please visit our curated repository at
-https://github.com/mayuelala/Awesome-Controllable-Video-Generation.</p>
+            <p class="paper-summary">Recent advancements in video generation have substantially improved visual
+quality and temporal coherence, making these models increasingly appealing for
+applications such as autonomous driving, particularly in the context of driving
+simulation and so-called "world models". In this work, we investigate the
+effects of existing fine-tuning video generation approaches on structured
+driving datasets and uncover a potential trade-off: although visual fidelity
+improves, spatial accuracy in modeling dynamic elements may degrade. We
+attribute this degradation to a shift in the alignment between visual quality
+and dynamic understanding objectives. In datasets with diverse scene structures
+within temporal space, where objects or perspective shift in varied ways, these
+objectives tend to highly correlated. However, the very regular and repetitive
+nature of driving scenes allows visual quality to improve by modeling dominant
+scene motion patterns, without necessarily preserving fine-grained dynamic
+behavior. As a result, fine-tuning encourages the model to prioritize
+surface-level realism over dynamic accuracy. To further examine this
+phenomenon, we show that simple continual learning strategies, such as replay
+from diverse domains, can offer a balanced alternative by preserving spatial
+accuracy while maintaining strong visual quality.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This survey paper reviews the field of controllable video generation, focusing on methods that incorporate non-textual conditions like camera motion and pose to improve user control over generated videos, categorizing approaches based on the control signals used.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper investigates the trade-off between visual fidelity and spatial accuracy when fine-tuning video generation models on driving datasets, finding that fine-tuning can prioritize realism over dynamic accuracy, and proposes continual learning as a balancing strategy.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该综述论文回顾了可控视频生成领域，重点介绍了结合非文本条件（如相机运动和姿势）以提高用户对生成视频控制的方法，并根据使用的控制信号对方法进行分类。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文研究了在驾驶数据集上微调视频生成模型时，视觉保真度和空间准确性之间的权衡。研究发现，微调可能会优先考虑真实感而非动态准确性，并提出持续学习作为一种平衡策略。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2508.16512v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Chun-Peng Chang, Chen-Yu Wang, Julian Schmidt, Holger Caesar, Alain Pagani</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.4, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">WorldWeaver: Generating Long-Horizon Video Worlds via Rich Perception</h2>
+            
+            <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
+                <i class="fas fa-calendar-alt"></i> August 22, 2025
+            </p>
+            
+            <p class="paper-summary">Generative video modeling has made significant strides, yet ensuring
+structural and temporal consistency over long sequences remains a challenge.
+Current methods predominantly rely on RGB signals, leading to accumulated
+errors in object structure and motion over extended durations. To address these
+issues, we introduce WorldWeaver, a robust framework for long video generation
+that jointly models RGB frames and perceptual conditions within a unified
+long-horizon modeling scheme. Our training framework offers three key
+advantages. First, by jointly predicting perceptual conditions and color
+information from a unified representation, it significantly enhances temporal
+consistency and motion dynamics. Second, by leveraging depth cues, which we
+observe to be more resistant to drift than RGB, we construct a memory bank that
+preserves clearer contextual information, improving quality in long-horizon
+video generation. Third, we employ segmented noise scheduling for training
+prediction groups, which further mitigates drift and reduces computational
+cost. Extensive experiments on both diffusion- and rectified flow-based models
+demonstrate the effectiveness of WorldWeaver in reducing temporal drift and
+improving the fidelity of generated videos.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: WorldWeaver is a framework for long video generation that jointly models RGB frames and perceptual conditions, leveraging depth cues and segmented noise scheduling to improve temporal consistency and fidelity.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: WorldWeaver是一个用于长视频生成的框架，它联合建模RGB帧和感知条件，利用深度线索和分段噪声调度来提高时间一致性和保真度。</p>
             
 
             
@@ -1071,16 +1194,16 @@ https://github.com/mayuelala/Awesome-Controllable-Video-Generation.</p>
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(6/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Clarity:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
@@ -1124,130 +1247,11 @@ https://github.com/mayuelala/Awesome-Controllable-Video-Generation.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2507.16869v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.15720v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Yue Ma, Kunyu Feng, Zhongyuan Hu, Xinyu Wang, Yucheng Wang, Mingzhe Zheng, Xuanhua He, Chenyang Zhu, Hongyu Liu, Yingqing He, Zeyu Wang, Zhifeng Li, Xiu Li, Wei Liu, Dan Xu, Linfeng Zhang, Qifeng Chen</p>
-            
-        </motion.div>
-        
-        <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.4, ease: 'easeOut' }"  
-            class="bento-item"
-            data-motion-element
-        >
-            <h2 class="paper-title">ChoreoMuse: Robust Music-to-Dance Video Generation with Style Transfer and Beat-Adherent Motion</h2>
-            
-            <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
-                <i class="fas fa-calendar-alt"></i> July 27, 2025
-            </p>
-            
-            <p class="paper-summary">Modern artistic productions increasingly demand automated choreography
-generation that adapts to diverse musical styles and individual dancer
-characteristics. Existing approaches often fail to produce high-quality dance
-videos that harmonize with both musical rhythm and user-defined choreography
-styles, limiting their applicability in real-world creative contexts. To
-address this gap, we introduce ChoreoMuse, a diffusion-based framework that
-uses SMPL format parameters and their variation version as intermediaries
-between music and video generation, thereby overcoming the usual constraints
-imposed by video resolution. Critically, ChoreoMuse supports
-style-controllable, high-fidelity dance video generation across diverse musical
-genres and individual dancer characteristics, including the flexibility to
-handle any reference individual at any resolution. Our method employs a novel
-music encoder MotionTune to capture motion cues from audio, ensuring that the
-generated choreography closely follows the beat and expressive qualities of the
-input music. To quantitatively evaluate how well the generated dances match
-both musical and choreographic styles, we introduce two new metrics that
-measure alignment with the intended stylistic cues. Extensive experiments
-confirm that ChoreoMuse achieves state-of-the-art performance across multiple
-dimensions, including video quality, beat alignment, dance diversity, and style
-adherence, demonstrating its potential as a robust solution for a wide range of
-creative applications. Video results can be found on our project page:
-https://choreomuse.github.io.</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: ChoreoMuse is a diffusion-based framework for generating high-fidelity, style-controllable dance videos from music using SMPL parameters, achieving state-of-the-art performance in video quality, beat alignment, and style adherence.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: ChoreoMuse是一个基于扩散模型的框架，利用SMPL参数从音乐生成高质量、风格可控的舞蹈视频，并在视频质量、节拍对齐和风格一致性方面实现了最先进的性能。</p>
-            
-
-            
-            
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
-                </div>
-                
-            </div>
-            
-            
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star-half-alt"></i>
-                    
-                
-                    
-                        <i class="far fa-star"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2507.19836v1" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Xuanchen Wang, Heng Wang, Weidong Cai</p>
+            <p class="paper-authors">Authors: Zhiheng Liu, Xueqing Deng, Shoufa Chen, Angtian Wang, Qiushan Guo, Mingfei Han, Zeyue Xue, Mengzhao Chen, Ping Luo, Linjie Yang</p>
             
         </motion.div>
         
@@ -1259,34 +1263,36 @@ https://choreomuse.github.io.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">PINO: Person-Interaction Noise Optimization for Long-Duration and Customizable Motion Generation of Arbitrary-Sized Groups</h2>
+            <h2 class="paper-title">MoVieDrive: Multi-Modal Multi-View Urban Scene Video Generation</h2>
             
             <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
-                <i class="fas fa-calendar-alt"></i> July 26, 2025
+                <i class="fas fa-calendar-alt"></i> August 21, 2025
             </p>
             
-            <p class="paper-summary">Generating realistic group interactions involving multiple characters remains
-challenging due to increasing complexity as group size expands. While existing
-conditional diffusion models incrementally generate motions by conditioning on
-previously generated characters, they rely on single shared prompts, limiting
-nuanced control and leading to overly simplified interactions. In this paper,
-we introduce Person-Interaction Noise Optimization (PINO), a novel,
-training-free framework designed for generating realistic and customizable
-interactions among groups of arbitrary size. PINO decomposes complex group
-interactions into semantically relevant pairwise interactions, and leverages
-pretrained two-person interaction diffusion models to incrementally compose
-group interactions. To ensure physical plausibility and avoid common artifacts
-such as overlapping or penetration between characters, PINO employs
-physics-based penalties during noise optimization. This approach allows precise
-user control over character orientation, speed, and spatial relationships
-without additional training. Comprehensive evaluations demonstrate that PINO
-generates visually realistic, physically coherent, and adaptable multi-person
-interactions suitable for diverse animation, gaming, and robotics applications.</p>
+            <p class="paper-summary">Video generation has recently shown superiority in urban scene synthesis for
+autonomous driving. Existing video generation approaches to autonomous driving
+primarily focus on RGB video generation and lack the ability to support
+multi-modal video generation. However, multi-modal data, such as depth maps and
+semantic maps, are crucial for holistic urban scene understanding in autonomous
+driving. Although it is feasible to use multiple models to generate different
+modalities, this increases the difficulty of model deployment and does not
+leverage complementary cues for multi-modal data generation. To address this
+problem, in this work, we propose a novel multi-modal multi-view video
+generation approach to autonomous driving. Specifically, we construct a unified
+diffusion transformer model composed of modal-shared components and
+modal-specific components. Then, we leverage diverse conditioning inputs to
+encode controllable scene structure and content cues into the unified diffusion
+model for multi-modal multi-view video generation. In this way, our approach is
+capable of generating multi-modal multi-view driving scene videos in a unified
+framework. Our experiments on the challenging real-world autonomous driving
+dataset, nuScenes, show that our approach can generate multi-modal multi-view
+urban scene videos with high fidelity and controllability, surpassing the
+state-of-the-art methods.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: PINO is a training-free framework for generating realistic and customizable interactions among groups of arbitrary size by decomposing complex group interactions into pairwise interactions and using physics-based penalties during noise optimization.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces MoVieDrive, a novel multi-modal multi-view video generation approach for autonomous driving using a unified diffusion transformer model, demonstrating improved fidelity and controllability on the nuScenes dataset.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: PINO是一个无需训练的框架，通过将复杂的群体互动分解为成对互动，并在噪声优化过程中采用基于物理的惩罚，来生成任意大小的群体中逼真且可定制的互动。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了MoVieDrive，一种新颖的多模态多视角视频生成方法，用于自动驾驶，它使用统一的扩散Transformer模型，并在nuScenes数据集上展示了改进的逼真度和可控性。</p>
             
 
             
@@ -1296,16 +1302,16 @@ interactions suitable for diverse animation, gaming, and robotics applications.<
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(6/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
@@ -1320,8 +1326,8 @@ interactions suitable for diverse animation, gaming, and robotics applications.<
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
             </div>
@@ -1346,22 +1352,22 @@ interactions suitable for diverse animation, gaming, and robotics applications.<
                     
                 
                     
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="fas fa-star"></i>
                     
                 
                     
                         <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2507.19292v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.14327v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Sakuya Ota, Qing Yu, Kent Fujiwara, Satoshi Ikehata, Ikuro Sato</p>
+            <p class="paper-authors">Authors: Guile Wu, David Huang, Dongfeng Bai, Bingbing Liu</p>
             
         </motion.div>
         
@@ -1373,36 +1379,36 @@ interactions suitable for diverse animation, gaming, and robotics applications.<
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">MVG4D: Image Matrix-Based Multi-View and Motion Generation for 4D Content Creation from a Single Image</h2>
+            <h2 class="paper-title">InfinityHuman: Towards Long-Term Audio-Driven Human</h2>
             
             <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
-                <i class="fas fa-calendar-alt"></i> July 25, 2025
+                <i class="fas fa-calendar-alt"></i> August 29, 2025
             </p>
             
-            <p class="paper-summary">Advances in generative modeling have significantly enhanced digital content
-creation, extending from 2D images to complex 3D and 4D scenes. Despite
-substantial progress, producing high-fidelity and temporally consistent dynamic
-4D content remains a challenge. In this paper, we propose MVG4D, a novel
-framework that generates dynamic 4D content from a single still image by
-combining multi-view synthesis with 4D Gaussian Splatting (4D GS). At its core,
-MVG4D employs an image matrix module that synthesizes temporally coherent and
-spatially diverse multi-view images, providing rich supervisory signals for
-downstream 3D and 4D reconstruction. These multi-view images are used to
-optimize a 3D Gaussian point cloud, which is further extended into the temporal
-domain via a lightweight deformation network. Our method effectively enhances
-temporal consistency, geometric fidelity, and visual realism, addressing key
-challenges in motion discontinuity and background degradation that affect prior
-4D GS-based methods. Extensive experiments on the Objaverse dataset demonstrate
-that MVG4D outperforms state-of-the-art baselines in CLIP-I, PSNR, FVD, and
-time efficiency. Notably, it reduces flickering artifacts and sharpens
-structural details across views and time, enabling more immersive AR/VR
-experiences. MVG4D sets a new direction for efficient and controllable 4D
-generation from minimal inputs.</p>
+            <p class="paper-summary">Audio-driven human animation has attracted wide attention thanks to its
+practical applications. However, critical challenges remain in generating
+high-resolution, long-duration videos with consistent appearance and natural
+hand motions. Existing methods extend videos using overlapping motion frames
+but suffer from error accumulation, leading to identity drift, color shifts,
+and scene instability. Additionally, hand movements are poorly modeled,
+resulting in noticeable distortions and misalignment with the audio. In this
+work, we propose InfinityHuman, a coarse-to-fine framework that first generates
+audio-synchronized representations, then progressively refines them into
+high-resolution, long-duration videos using a pose-guided refiner. Since pose
+sequences are decoupled from appearance and resist temporal degradation, our
+pose-guided refiner employs stable poses and the initial frame as a visual
+anchor to reduce drift and improve lip synchronization. Moreover, to enhance
+semantic accuracy and gesture realism, we introduce a hand-specific reward
+mechanism trained with high-quality hand motion data. Experiments on the EMTD
+and HDTF datasets show that InfinityHuman achieves state-of-the-art performance
+in video quality, identity preservation, hand accuracy, and lip-sync. Ablation
+studies further confirm the effectiveness of each module. Code will be made
+public.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: MVG4D generates temporally consistent 4D content from a single image by combining multi-view synthesis with 4D Gaussian Splatting, outperforming existing methods in fidelity, consistency, and time efficiency.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces InfinityHuman, a coarse-to-fine framework for generating high-resolution, long-duration audio-driven human videos with improved identity preservation, lip-sync, and hand realism by using pose-guided refinement and hand-specific reward mechanisms.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: MVG4D结合多视角合成和4D高斯溅射，从单张图像生成时间上一致的4D内容，在保真度、一致性和时间效率方面优于现有方法。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了InfinityHuman，一个用于生成高分辨率、长时间音频驱动的人类视频的由粗到精的框架。该框架通过姿势引导的细化和手部特定奖励机制，提高了身份保持、唇部同步和手部逼真度。</p>
             
 
             
@@ -1473,11 +1479,11 @@ generation from minimal inputs.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2507.18371v2" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.20210v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: DongFu Yin, Xiaotian Chen, Fei Richard Yu, Xuanchen Li, Xinhao Zhang</p>
+            <p class="paper-authors">Authors: Xiaodi Li, Pan Xie, Yi Ren, Qijun Gan, Chen Zhang, Fangyuan Kong, Xiang Yin, Bingyue Peng, Zehuan Yuan</p>
             
         </motion.div>
         
@@ -1489,35 +1495,35 @@ generation from minimal inputs.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">EndoGen: Conditional Autoregressive Endoscopic Video Generation</h2>
+            <h2 class="paper-title">Forecast then Calibrate: Feature Caching as ODE for Efficient Diffusion Transformers</h2>
             
             <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
-                <i class="fas fa-calendar-alt"></i> July 24, 2025
+                <i class="fas fa-calendar-alt"></i> August 23, 2025
             </p>
             
-            <p class="paper-summary">Endoscopic video generation is crucial for advancing medical imaging and
-enhancing diagnostic capabilities. However, prior efforts in this field have
-either focused on static images, lacking the dynamic context required for
-practical applications, or have relied on unconditional generation that fails
-to provide meaningful references for clinicians. Therefore, in this paper, we
-propose the first conditional endoscopic video generation framework, namely
-EndoGen. Specifically, we build an autoregressive model with a tailored
-Spatiotemporal Grid-Frame Patterning (SGP) strategy. It reformulates the
-learning of generating multiple frames as a grid-based image generation
-pattern, which effectively capitalizes the inherent global dependency modeling
-capabilities of autoregressive architectures. Furthermore, we propose a
-Semantic-Aware Token Masking (SAT) mechanism, which enhances the model's
-ability to produce rich and diverse content by selectively focusing on
-semantically meaningful regions during the generation process. Through
-extensive experiments, we demonstrate the effectiveness of our framework in
-generating high-quality, conditionally guided endoscopic content, and improves
-the performance of downstream task of polyp segmentation. Code released at
-https://www.github.com/CUHK-AIM-Group/EndoGen.</p>
+            <p class="paper-summary">Diffusion Transformers (DiTs) have demonstrated exceptional performance in
+high-fidelity image and video generation. To reduce their substantial
+computational costs, feature caching techniques have been proposed to
+accelerate inference by reusing hidden representations from previous timesteps.
+However, current methods often struggle to maintain generation quality at high
+acceleration ratios, where prediction errors increase sharply due to the
+inherent instability of long-step forecasting. In this work, we adopt an
+ordinary differential equation (ODE) perspective on the hidden-feature
+sequence, modeling layer representations along the trajectory as a feature-ODE.
+We attribute the degradation of existing caching strategies to their inability
+to robustly integrate historical features under large skipping intervals. To
+address this, we propose FoCa (Forecast-then-Calibrate), which treats feature
+caching as a feature-ODE solving problem. Extensive experiments on image
+synthesis, video generation, and super-resolution tasks demonstrate the
+effectiveness of FoCa, especially under aggressive acceleration. Without
+additional training, FoCa achieves near-lossless speedups of 5.50 times on
+FLUX, 6.45 times on HunyuanVideo, 3.17 times on Inf-DiT, and maintains high
+quality with a 4.53 times speedup on DiT.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: EndoGen is a conditional autoregressive framework for endoscopic video generation, using spatiotemporal grid-frame patterning and semantic-aware token masking to improve video quality and polyp segmentation performance.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces FoCa, a novel feature caching technique for Diffusion Transformers (DiTs) that treats feature caching as a feature-ODE solving problem, achieving significant speedups in image and video generation without compromising quality.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: EndoGen是一个内窥镜视频生成的条件自回归框架，它使用时空网格帧模式和语义感知令牌掩蔽来提高视频质量和息肉分割性能。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了一种名为FoCa的新型特征缓存技术，用于扩散Transformer（DiT）。该技术将特征缓存视为特征ODE求解问题，从而在不影响质量的前提下，显著加速图像和视频生成。</p>
             
 
             
@@ -1588,11 +1594,11 @@ https://www.github.com/CUHK-AIM-Group/EndoGen.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2507.17388v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.16211v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Xinyu Liu, Hengyu Liu, Cheng Wang, Tianming Liu, Yixuan Yuan</p>
+            <p class="paper-authors">Authors: Shikang Zheng, Liang Feng, Xinyu Wang, Qinming Zhou, Peiliang Cai, Chang Zou, Jiacheng Liu, Yuqi Lin, Junjie Chen, Yue Ma, Linfeng Zhang</p>
             
         </motion.div>
         
@@ -1604,30 +1610,40 @@ https://www.github.com/CUHK-AIM-Group/EndoGen.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">MotionShot: Adaptive Motion Transfer across Arbitrary Objects for Text-to-Video Generation</h2>
+            <h2 class="paper-title">CineScale: Free Lunch in High-Resolution Cinematic Visual Generation</h2>
             
             <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
-                <i class="fas fa-calendar-alt"></i> July 23, 2025
+                <i class="fas fa-calendar-alt"></i> August 22, 2025
             </p>
             
-            <p class="paper-summary">Existing text-to-video methods struggle to transfer motion smoothly from a
-reference object to a target object with significant differences in appearance
-or structure between them. To address this challenge, we introduce MotionShot,
-a training-free framework capable of parsing reference-target correspondences
-in a fine-grained manner, thereby achieving high-fidelity motion transfer while
-preserving coherence in appearance. To be specific, MotionShot first performs
-semantic feature matching to ensure high-level alignments between the reference
-and target objects. It then further establishes low-level morphological
-alignments through reference-to-target shape retargeting. By encoding motion
-with temporal attention, our MotionShot can coherently transfer motion across
-objects, even in the presence of significant appearance and structure
-disparities, demonstrated by extensive experiments. The project page is
-available at: https://motionshot.github.io/.</p>
+            <p class="paper-summary">Visual diffusion models achieve remarkable progress, yet they are typically
+trained at limited resolutions due to the lack of high-resolution data and
+constrained computation resources, hampering their ability to generate
+high-fidelity images or videos at higher resolutions. Recent efforts have
+explored tuning-free strategies to exhibit the untapped potential
+higher-resolution visual generation of pre-trained models. However, these
+methods are still prone to producing low-quality visual content with repetitive
+patterns. The key obstacle lies in the inevitable increase in high-frequency
+information when the model generates visual content exceeding its training
+resolution, leading to undesirable repetitive patterns deriving from the
+accumulated errors. In this work, we propose CineScale, a novel inference
+paradigm to enable higher-resolution visual generation. To tackle the various
+issues introduced by the two types of video generation architectures, we
+propose dedicated variants tailored to each. Unlike existing baseline methods
+that are confined to high-resolution T2I and T2V generation, CineScale broadens
+the scope by enabling high-resolution I2V and V2V synthesis, built atop
+state-of-the-art open-source video generation frameworks. Extensive experiments
+validate the superiority of our paradigm in extending the capabilities of
+higher-resolution visual generation for both image and video models.
+Remarkably, our approach enables 8k image generation without any fine-tuning,
+and achieves 4k video generation with only minimal LoRA fine-tuning. Generated
+video samples are available at our website:
+https://eyeline-labs.github.io/CineScale/.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: MotionShot is a training-free framework for text-to-video generation that addresses the challenge of transferring motion between objects with significant appearance and structural differences by using semantic feature matching and shape retargeting.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: CineScale is a novel inference paradigm enabling higher-resolution (8k image, 4k video) visual generation from existing pre-trained diffusion models, mitigating repetitive artifacts without extensive fine-tuning, even expanding to I2V and V2V tasks.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: MotionShot是一个无需训练的文本到视频生成框架，它通过语义特征匹配和形状重定向，解决了在外观和结构差异显著的物体之间传递运动的难题。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: CineScale是一种新颖的推理范式，能够从现有的预训练扩散模型生成更高分辨率（8k图像，4k视频）的视觉效果，缓解重复的伪影，而无需进行广泛的微调，甚至扩展到I2V和V2V任务。</p>
             
 
             
@@ -1698,18 +1714,216 @@ available at: https://motionshot.github.io/.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2507.16310v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2508.15774v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Yanchen Liu, Yanan Sun, Zhening Xing, Junyao Gao, Kai Chen, Wenjie Pei</p>
+            <p class="paper-authors">Authors: Haonan Qiu, Ning Yu, Ziqi Huang, Paul Debevec, Ziwei Liu</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.65, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">Language-Guided Temporal Token Pruning for Efficient VideoLLM Processing</h2>
+            
+            <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
+                <i class="fas fa-calendar-alt"></i> August 26, 2025
+            </p>
+            
+            <p class="paper-summary">Vision Language Models (VLMs) struggle with long-form videos due to the
+quadratic complexity of attention mechanisms. We propose Language-Guided
+Temporal Token Pruning (LGTTP), which leverages temporal cues from queries to
+adaptively prune video tokens, preserving contextual continuity while reducing
+computational overhead. Unlike uniform pruning or keyframe selection, LGTTP
+retains higher token density in temporally relevant segments. Our
+model-agnostic framework integrates with TimeChat and LLaVA-Video, achieving a
+65% reduction in computation while preserving 97-99% of the original
+performance. On QVHighlights, LGTTP improves HIT@1 by +9.5%, and on
+Charades-STA, it retains 99.6% of R@1. It excels on queries with explicit
+temporal markers and remains effective across general video understanding
+tasks.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Language-Guided Temporal Token Pruning (LGTTP) to efficiently process long videos in VideoLLMs by adaptively pruning video tokens based on temporal cues from language queries, achieving significant computational reduction with minimal performance loss.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了语言引导的时间令牌剪枝（LGTTP），通过基于语言查询的时间线索自适应地剪枝视频令牌，从而高效地处理VideoLLM中的长视频，在计算量大幅减少的同时，性能损失极小。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(3/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star-half-alt"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(5/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2508.17686v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Yogesh Kumar</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.7000000000000001, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">Dress&Dance: Dress up and Dance as You Like It - Technical Preview</h2>
+            
+            <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
+                <i class="fas fa-calendar-alt"></i> August 29, 2025
+            </p>
+            
+            <p class="paper-summary">We present Dress&Dance, a video diffusion framework that generates high
+quality 5-second-long 24 FPS virtual try-on videos at 1152x720 resolution of a
+user wearing desired garments while moving in accordance with a given reference
+video. Our approach requires a single user image and supports a range of tops,
+bottoms, and one-piece garments, as well as simultaneous tops and bottoms
+try-on in a single pass. Key to our framework is CondNet, a novel conditioning
+network that leverages attention to unify multi-modal inputs (text, images, and
+videos), thereby enhancing garment registration and motion fidelity. CondNet is
+trained on heterogeneous training data, combining limited video data and a
+larger, more readily available image dataset, in a multistage progressive
+manner. Dress&Dance outperforms existing open source and commercial solutions
+and enables a high quality and flexible try-on experience.</p>
+            
+            
+
+            
+            
+            
+
+            
+
+            <a href="http://arxiv.org/abs/2508.21070v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Jun-Kun Chen, Aayush Bansal, Minh Phuoc Vo, Yu-Xiong Wang</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.75, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">Mixture of Contexts for Long Video Generation</h2>
+            
+            <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
+                <i class="fas fa-calendar-alt"></i> August 29, 2025
+            </p>
+            
+            <p class="paper-summary">Long video generation is fundamentally a long context memory problem: models
+must retain and retrieve salient events across a long range without collapsing
+or drifting. However, scaling diffusion transformers to generate long-context
+videos is fundamentally limited by the quadratic cost of self-attention, which
+makes memory and computation intractable and difficult to optimize for long
+sequences. We recast long-context video generation as an internal information
+retrieval task and propose a simple, learnable sparse attention routing module,
+Mixture of Contexts (MoC), as an effective long-term memory retrieval engine.
+In MoC, each query dynamically selects a few informative chunks plus mandatory
+anchors (caption, local windows) to attend to, with causal routing that
+prevents loop closures. As we scale the data and gradually sparsify the
+routing, the model allocates compute to salient history, preserving identities,
+actions, and scenes over minutes of content. Efficiency follows as a byproduct
+of retrieval (near-linear scaling), which enables practical training and
+synthesis, and the emergence of memory and consistency at the scale of minutes.</p>
+            
+            
+
+            
+            
+            
+
+            
+
+            <a href="http://arxiv.org/abs/2508.21058v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Shengqu Cai, Ceyuan Yang, Lvmin Zhang, Yuwei Guo, Junfei Xiao, Ziyan Yang, Yinghao Xu, Zhenheng Yang, Alan Yuille, Leonidas Guibas, Maneesh Agrawala, Lu Jiang, Gordon Wetzstein</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-08-02 07:42:00 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-09-01 02:55:45 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
