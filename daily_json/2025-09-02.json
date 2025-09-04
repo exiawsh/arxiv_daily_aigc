@@ -1,0 +1,78 @@
+[
+    {
+        "title": "Bidirectional Sparse Attention for Faster Video Diffusion Training",
+        "summary": "Video diffusion Transformer (DiT) models excel in generative quality but hit\nmajor computational bottlenecks when producing high-resolution, long-duration\nvideos. The quadratic complexity of full attention leads to prohibitively high\ntraining and inference costs. Full attention inefficiency stems from two key\nchallenges: excessive computation due to the inherent sparsity of Queries and\nKey-Value pairs, and redundant computation as fixed sparse patterns fail to\nleverage DiT's dynamic attention. To overcome this limitation, we propose a\nBidirectional Sparse Attention (BSA) framework for faster video DiT training,\nthe first to dynamically sparsify both Queries and Key-Value pairs within 3D\nfull attention, thereby substantially improving training and inference\nefficiency. BSA addresses these issues through two key components. Query\nsparsity is optimized by selecting the most informative query tokens via\nsemantic similarity and with a dynamic spatial-time training strategy, while KV\nsparsity is achieved by computing a statistical dynamic threshold to retain\nonly the most salient KV blocks for computation. Extensive experiments\ndemonstrate that BSA significantly accelerates DiT training across long\nsequences, reducing FLOPs by up to 20x and achieving 17.79x faster attention\ntraining, while preserving or even surpassing the generative quality of full\nattention.",
+        "url": "http://arxiv.org/abs/2509.01085v1",
+        "published_date": "2025-09-01T03:16:52+00:00",
+        "updated_date": "2025-09-01T03:16:52+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Chenlu Zhan",
+            "Wen Li",
+            "Chuyu Shen",
+            "Jun Zhang",
+            "Suhui Wu",
+            "Hao Zhang"
+        ],
+        "tldr": "The paper introduces Bidirectional Sparse Attention (BSA) to accelerate video diffusion transformer (DiT) training by dynamically sparsifying both queries and key-value pairs, achieving significant speedups and FLOPs reduction while maintaining or improving generative quality.",
+        "tldr_zh": "该论文介绍了双向稀疏注意力（BSA），通过动态稀疏化查询和键值对，加速视频扩散Transformer（DiT）的训练，实现了显著的加速和FLOPs减少，同时保持或提高了生成质量。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "Identity-Preserving Text-to-Video Generation via Training-Free Prompt, Image, and Guidance Enhancement",
+        "summary": "Identity-preserving text-to-video (IPT2V) generation creates videos faithful\nto both a reference subject image and a text prompt. While fine-tuning large\npretrained video diffusion models on ID-matched data achieves state-of-the-art\nresults on IPT2V, data scarcity and high tuning costs hinder broader\nimprovement. We thus introduce a Training-Free Prompt, Image, and Guidance\nEnhancement (TPIGE) framework that bridges the semantic gap between the video\ndescription and the reference image and design sampling guidance that enhances\nidentity preservation and video quality, achieving performance gains at minimal\ncost.Specifically, we first propose Face Aware Prompt Enhancement, using GPT-4o\nto enhance the text prompt with facial details derived from the reference\nimage. We then propose Prompt Aware Reference Image Enhancement, leveraging an\nidentity-preserving image generator to refine the reference image, rectifying\nconflicts with the text prompt. The above mutual refinement significantly\nimproves input quality before video generation. Finally, we propose ID-Aware\nSpatiotemporal Guidance Enhancement, utilizing unified gradients to optimize\nidentity preservation and video quality jointly during generation.Our method\noutperforms prior work and is validated by automatic and human evaluations on a\n1000 video test set, winning first place in the ACM Multimedia 2025\nIdentity-Preserving Video Generation Challenge, demonstrating state-of-the-art\nperformance and strong generality. The code is available at\nhttps://github.com/Andyplus1/IPT2V.git.",
+        "url": "http://arxiv.org/abs/2509.01362v1",
+        "published_date": "2025-09-01T11:03:13+00:00",
+        "updated_date": "2025-09-01T11:03:13+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.MM"
+        ],
+        "authors": [
+            "Jiayi Gao",
+            "Changcheng Hua",
+            "Qingchao Chen",
+            "Yuxin Peng",
+            "Yang Liu"
+        ],
+        "tldr": "This paper introduces a training-free framework (TPIGE) for identity-preserving text-to-video generation, enhancing prompts, images, and guidance to improve identity preservation and video quality without fine-tuning, achieving state-of-the-art results.",
+        "tldr_zh": "该论文介绍了一个无需训练的框架（TPIGE），用于保持身份的文本到视频生成，通过增强提示、图像和指导来提高身份保持和视频质量，无需微调，并实现了最先进的结果。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "FantasyHSI: Video-Generation-Centric 4D Human Synthesis In Any Scene through A Graph-based Multi-Agent Framework",
+        "summary": "Human-Scene Interaction (HSI) seeks to generate realistic human behaviors\nwithin complex environments, yet it faces significant challenges in handling\nlong-horizon, high-level tasks and generalizing to unseen scenes. To address\nthese limitations, we introduce FantasyHSI, a novel HSI framework centered on\nvideo generation and multi-agent systems that operates without paired data. We\nmodel the complex interaction process as a dynamic directed graph, upon which\nwe build a collaborative multi-agent system. This system comprises a scene\nnavigator agent for environmental perception and high-level path planning, and\na planning agent that decomposes long-horizon goals into atomic actions.\nCritically, we introduce a critic agent that establishes a closed-loop feedback\nmechanism by evaluating the deviation between generated actions and the planned\npath. This allows for the dynamic correction of trajectory drifts caused by the\nstochasticity of the generative model, thereby ensuring long-term logical\nconsistency. To enhance the physical realism of the generated motions, we\nleverage Direct Preference Optimization (DPO) to train the action generator,\nsignificantly reducing artifacts such as limb distortion and foot-sliding.\nExtensive experiments on our custom SceneBench benchmark demonstrate that\nFantasyHSI significantly outperforms existing methods in terms of\ngeneralization, long-horizon task completion, and physical realism. Ours\nproject page: https://fantasy-amap.github.io/fantasy-hsi/",
+        "url": "http://arxiv.org/abs/2509.01232v1",
+        "published_date": "2025-09-01T08:20:50+00:00",
+        "updated_date": "2025-09-01T08:20:50+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Lingzhou Mu",
+            "Qiang Wang",
+            "Fan Jiang",
+            "Mengchao Wang",
+            "Yaqi Fan",
+            "Mu Xu",
+            "Kai Zhang"
+        ],
+        "tldr": "FantasyHSI introduces a graph-based multi-agent framework for generating realistic human-scene interaction videos, improving long-horizon task completion and physical realism without paired data.",
+        "tldr_zh": "FantasyHSI 提出了一种基于图的多智能体框架，用于生成逼真的人-场景交互视频，无需配对数据即可提高长时程任务完成度和物理真实感。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]

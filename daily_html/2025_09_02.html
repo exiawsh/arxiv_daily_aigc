@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 28, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - September 02, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>August 28, 2025</p>
+            <p>September 02, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,34 +215,32 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Ego-centric Predictive Model Conditioned on Hand Trajectories</h2>
+            <h2 class="paper-title">Bidirectional Sparse Attention for Faster Video Diffusion Training</h2>
             
-            <p class="paper-summary">In egocentric scenarios, anticipating both the next action and its visual
-outcome is essential for understanding human-object interactions and for
-enabling robotic planning. However, existing paradigms fall short of jointly
-modeling these aspects. Vision-Language-Action (VLA) models focus on action
-prediction but lack explicit modeling of how actions influence the visual
-scene, while video prediction models generate future frames without
-conditioning on specific actions, often resulting in implausible or
-contextually inconsistent outcomes. To bridge this gap, we propose a unified
-two-stage predictive framework that jointly models action and visual future in
-egocentric scenarios, conditioned on hand trajectories. In the first stage, we
-perform consecutive state modeling to process heterogeneous inputs (visual
-observations, language, and action history) and explicitly predict future hand
-trajectories. In the second stage, we introduce causal cross-attention to fuse
-multi-modal cues, leveraging inferred action signals to guide an image-based
-Latent Diffusion Model (LDM) for frame-by-frame future video generation. Our
-approach is the first unified model designed to handle both egocentric human
-activity understanding and robotic manipulation tasks, providing explicit
-predictions of both upcoming actions and their visual consequences. Extensive
-experiments on Ego4D, BridgeData, and RLBench demonstrate that our method
-outperforms state-of-the-art baselines in both action prediction and future
-video synthesis.</p>
+            <p class="paper-summary">Video diffusion Transformer (DiT) models excel in generative quality but hit
+major computational bottlenecks when producing high-resolution, long-duration
+videos. The quadratic complexity of full attention leads to prohibitively high
+training and inference costs. Full attention inefficiency stems from two key
+challenges: excessive computation due to the inherent sparsity of Queries and
+Key-Value pairs, and redundant computation as fixed sparse patterns fail to
+leverage DiT's dynamic attention. To overcome this limitation, we propose a
+Bidirectional Sparse Attention (BSA) framework for faster video DiT training,
+the first to dynamically sparsify both Queries and Key-Value pairs within 3D
+full attention, thereby substantially improving training and inference
+efficiency. BSA addresses these issues through two key components. Query
+sparsity is optimized by selecting the most informative query tokens via
+semantic similarity and with a dynamic spatial-time training strategy, while KV
+sparsity is achieved by computing a statistical dynamic threshold to retain
+only the most salient KV blocks for computation. Extensive experiments
+demonstrate that BSA significantly accelerates DiT training across long
+sequences, reducing FLOPs by up to 20x and achieving 17.79x faster attention
+training, while preserving or even surpassing the generative quality of full
+attention.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper presents a unified two-stage framework that predicts future hand trajectories and uses them to guide a latent diffusion model for frame-by-frame future video generation in egocentric scenarios, outperforming existing methods in action prediction and video synthesis.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Bidirectional Sparse Attention (BSA) to accelerate video diffusion transformer (DiT) training by dynamically sparsifying both queries and key-value pairs, achieving significant speedups and FLOPs reduction while maintaining or improving generative quality.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文提出了一个统一的两阶段框架，用于预测未来手部轨迹，并利用这些轨迹来引导潜在扩散模型，在以自我为中心的场景中逐帧生成未来视频，并在动作预测和视频合成方面优于现有方法。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了双向稀疏注意力（BSA），通过动态稀疏化查询和键值对，加速视频扩散Transformer（DiT）的训练，实现了显著的加速和FLOPs减少，同时保持或提高了生成质量。</p>
             
 
             
@@ -260,8 +258,8 @@ video synthesis.</p>
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
@@ -276,8 +274,8 @@ video synthesis.</p>
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
             </div>
@@ -306,18 +304,18 @@ video synthesis.</p>
                     
                 
                     
-                        <i class="far fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2508.19852v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2509.01085v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Binjie Zhang, Mike Zheng Shou</p>
+            <p class="paper-authors">Authors: Chenlu Zhan, Wen Li, Chuyu Shen, Jun Zhang, Suhui Wu, Hao Zhang</p>
             
         </motion.div>
         
@@ -329,31 +327,34 @@ video synthesis.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">MotionFlux: Efficient Text-Guided Motion Generation through Rectified Flow Matching and Preference Alignment</h2>
+            <h2 class="paper-title">Identity-Preserving Text-to-Video Generation via Training-Free Prompt, Image, and Guidance Enhancement</h2>
             
-            <p class="paper-summary">Motion generation is essential for animating virtual characters and embodied
-agents. While recent text-driven methods have made significant strides, they
-often struggle with achieving precise alignment between linguistic descriptions
-and motion semantics, as well as with the inefficiencies of slow, multi-step
-inference. To address these issues, we introduce TMR++ Aligned Preference
-Optimization (TAPO), an innovative framework that aligns subtle motion
-variations with textual modifiers and incorporates iterative adjustments to
-reinforce semantic grounding. To further enable real-time synthesis, we propose
-MotionFLUX, a high-speed generation framework based on deterministic rectified
-flow matching. Unlike traditional diffusion models, which require hundreds of
-denoising steps, MotionFLUX constructs optimal transport paths between noise
-distributions and motion spaces, facilitating real-time synthesis. The
-linearized probability paths reduce the need for multi-step sampling typical of
-sequential methods, significantly accelerating inference time without
-sacrificing motion quality. Experimental results demonstrate that, together,
-TAPO and MotionFLUX form a unified system that outperforms state-of-the-art
-approaches in both semantic consistency and motion quality, while also
-accelerating generation speed. The code and pretrained models will be released.</p>
+            <p class="paper-summary">Identity-preserving text-to-video (IPT2V) generation creates videos faithful
+to both a reference subject image and a text prompt. While fine-tuning large
+pretrained video diffusion models on ID-matched data achieves state-of-the-art
+results on IPT2V, data scarcity and high tuning costs hinder broader
+improvement. We thus introduce a Training-Free Prompt, Image, and Guidance
+Enhancement (TPIGE) framework that bridges the semantic gap between the video
+description and the reference image and design sampling guidance that enhances
+identity preservation and video quality, achieving performance gains at minimal
+cost.Specifically, we first propose Face Aware Prompt Enhancement, using GPT-4o
+to enhance the text prompt with facial details derived from the reference
+image. We then propose Prompt Aware Reference Image Enhancement, leveraging an
+identity-preserving image generator to refine the reference image, rectifying
+conflicts with the text prompt. The above mutual refinement significantly
+improves input quality before video generation. Finally, we propose ID-Aware
+Spatiotemporal Guidance Enhancement, utilizing unified gradients to optimize
+identity preservation and video quality jointly during generation.Our method
+outperforms prior work and is validated by automatic and human evaluations on a
+1000 video test set, winning first place in the ACM Multimedia 2025
+Identity-Preserving Video Generation Challenge, demonstrating state-of-the-art
+performance and strong generality. The code is available at
+https://github.com/Andyplus1/IPT2V.git.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces MotionFLUX, a framework combining rectified flow matching for real-time text-guided motion generation and TAPO for enhanced semantic alignment, achieving state-of-the-art performance in speed and quality.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces a training-free framework (TPIGE) for identity-preserving text-to-video generation, enhancing prompts, images, and guidance to improve identity preservation and video quality without fine-tuning, achieving state-of-the-art results.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了MotionFLUX，一个结合了校正流匹配的实时文本引导运动生成框架，以及TAPO，用于增强语义对齐，在速度和质量方面实现了最先进的性能。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了一个无需训练的框架（TPIGE），用于保持身份的文本到视频生成，通过增强提示、图像和指导来提高身份保持和视频质量，无需微调，并实现了最先进的结果。</p>
             
 
             
@@ -424,18 +425,131 @@ accelerating generation speed. The code and pretrained models will be released.<
             </div>
             
 
-            <a href="http://arxiv.org/abs/2508.19527v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2509.01362v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Zhiting Gao, Dan Song, Diqiong Jiang, Chao Xue, An-An Liu</p>
+            <p class="paper-authors">Authors: Jiayi Gao, Changcheng Hua, Qingchao Chen, Yuxin Peng, Yang Liu</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.1, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">FantasyHSI: Video-Generation-Centric 4D Human Synthesis In Any Scene through A Graph-based Multi-Agent Framework</h2>
+            
+            <p class="paper-summary">Human-Scene Interaction (HSI) seeks to generate realistic human behaviors
+within complex environments, yet it faces significant challenges in handling
+long-horizon, high-level tasks and generalizing to unseen scenes. To address
+these limitations, we introduce FantasyHSI, a novel HSI framework centered on
+video generation and multi-agent systems that operates without paired data. We
+model the complex interaction process as a dynamic directed graph, upon which
+we build a collaborative multi-agent system. This system comprises a scene
+navigator agent for environmental perception and high-level path planning, and
+a planning agent that decomposes long-horizon goals into atomic actions.
+Critically, we introduce a critic agent that establishes a closed-loop feedback
+mechanism by evaluating the deviation between generated actions and the planned
+path. This allows for the dynamic correction of trajectory drifts caused by the
+stochasticity of the generative model, thereby ensuring long-term logical
+consistency. To enhance the physical realism of the generated motions, we
+leverage Direct Preference Optimization (DPO) to train the action generator,
+significantly reducing artifacts such as limb distortion and foot-sliding.
+Extensive experiments on our custom SceneBench benchmark demonstrate that
+FantasyHSI significantly outperforms existing methods in terms of
+generalization, long-horizon task completion, and physical realism. Ours
+project page: https://fantasy-amap.github.io/fantasy-hsi/</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: FantasyHSI introduces a graph-based multi-agent framework for generating realistic human-scene interaction videos, improving long-horizon task completion and physical realism without paired data.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: FantasyHSI 提出了一种基于图的多智能体框架，用于生成逼真的人-场景交互视频，无需配对数据即可提高长时程任务完成度和物理真实感。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2509.01232v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Lingzhou Mu, Qiang Wang, Fan Jiang, Mengchao Wang, Yaqi Fan, Mu Xu, Kai Zhang</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-09-04 03:31:26 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-09-04 03:52:35 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

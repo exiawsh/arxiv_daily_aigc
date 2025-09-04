@@ -1,0 +1,28 @@
+[
+    {
+        "title": "DevilSight: Augmenting Monocular Human Avatar Reconstruction through a Virtual Perspective",
+        "summary": "We present a novel framework to reconstruct human avatars from monocular\nvideos. Recent approaches have struggled either to capture the fine-grained\ndynamic details from the input or to generate plausible details at novel\nviewpoints, which mainly stem from the limited representational capacity of the\navatar model and insufficient observational data. To overcome these challenges,\nwe propose to leverage the advanced video generative model, Human4DiT, to\ngenerate the human motions from alternative perspective as an additional\nsupervision signal. This approach not only enriches the details in previously\nunseen regions but also effectively regularizes the avatar representation to\nmitigate artifacts. Furthermore, we introduce two complementary strategies to\nenhance video generation: To ensure consistent reproduction of human motion, we\ninject the physical identity into the model through video fine-tuning. For\nhigher-resolution outputs with finer details, a patch-based denoising algorithm\nis employed. Experimental results demonstrate that our method outperforms\nrecent state-of-the-art approaches and validate the effectiveness of our\nproposed strategies.",
+        "url": "http://arxiv.org/abs/2509.00403v1",
+        "published_date": "2025-08-30T08:06:16+00:00",
+        "updated_date": "2025-08-30T08:06:16+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yushuo Chen",
+            "Ruizhi Shao",
+            "Youxin Pang",
+            "Hongwen Zhang",
+            "Xinyi Wu",
+            "Rihui Wu",
+            "Yebin Liu"
+        ],
+        "tldr": "This paper introduces DevilSight, a framework that augments monocular human avatar reconstruction by leveraging a video generative model (Human4DiT) to generate alternative perspectives as additional supervision, enhancing detail and regularization.",
+        "tldr_zh": "本文介绍了 DevilSight，一个通过利用视频生成模型 (Human4DiT) 生成的替代视角作为额外监督来增强单目人体化身重建的框架，从而增强细节和正则化。",
+        "relevance_score": 6,
+        "novelty_claim_score": 7,
+        "clarity_score": 8,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]

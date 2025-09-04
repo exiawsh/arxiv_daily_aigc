@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 25, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 31, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>August 25, 2025</p>
+            <p>August 31, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,32 +215,29 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">MoCo: Motion-Consistent Human Video Generation via Structure-Appearance Decoupling</h2>
+            <h2 class="paper-title">DevilSight: Augmenting Monocular Human Avatar Reconstruction through a Virtual Perspective</h2>
             
-            <p class="paper-summary">Generating human videos with consistent motion from text prompts remains a
-significant challenge, particularly for whole-body or long-range motion.
-Existing video generation models prioritize appearance fidelity, resulting in
-unrealistic or physically implausible human movements with poor structural
-coherence. Additionally, most existing human video datasets primarily focus on
-facial or upper-body motions, or consist of vertically oriented dance videos,
-limiting the scope of corresponding generation methods to simple movements. To
-overcome these challenges, we propose MoCo, which decouples the process of
-human video generation into two components: structure generation and appearance
-generation. Specifically, our method first employs an efficient 3D structure
-generator to produce a human motion sequence from a text prompt. The remaining
-video appearance is then synthesized under the guidance of the generated
-structural sequence. To improve fine-grained control over sparse human
-structures, we introduce Human-Aware Dynamic Control modules and integrate
-dense tracking constraints during training. Furthermore, recognizing the
-limitations of existing datasets, we construct a large-scale whole-body human
-video dataset featuring complex and diverse motions. Extensive experiments
-demonstrate that MoCo outperforms existing approaches in generating realistic
-and structurally coherent human videos.</p>
+            <p class="paper-summary">We present a novel framework to reconstruct human avatars from monocular
+videos. Recent approaches have struggled either to capture the fine-grained
+dynamic details from the input or to generate plausible details at novel
+viewpoints, which mainly stem from the limited representational capacity of the
+avatar model and insufficient observational data. To overcome these challenges,
+we propose to leverage the advanced video generative model, Human4DiT, to
+generate the human motions from alternative perspective as an additional
+supervision signal. This approach not only enriches the details in previously
+unseen regions but also effectively regularizes the avatar representation to
+mitigate artifacts. Furthermore, we introduce two complementary strategies to
+enhance video generation: To ensure consistent reproduction of human motion, we
+inject the physical identity into the model through video fine-tuning. For
+higher-resolution outputs with finer details, a patch-based denoising algorithm
+is employed. Experimental results demonstrate that our method outperforms
+recent state-of-the-art approaches and validate the effectiveness of our
+proposed strategies.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces MoCo, a framework for generating realistic and structurally coherent human videos from text prompts by decoupling structure and appearance generation, and it introduces a new large-scale whole-body human video dataset.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces DevilSight, a framework that augments monocular human avatar reconstruction by leveraging a video generative model (Human4DiT) to generate alternative perspectives as additional supervision, enhancing detail and regularization.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了 MoCo，一个通过解耦结构和外观生成，从文本提示生成逼真且结构连贯的人体视频的框架。同时，它引入了一个新的大规模全身人体视频数据集。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了 DevilSight，一个通过利用视频生成模型 (Human4DiT) 生成的替代视角作为额外监督来增强单目人体化身重建的框架，从而增强细节和正则化。</p>
             
 
             
@@ -250,8 +247,8 @@ and structurally coherent human videos.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(6/10)</span>
                 </div>
                 
                 
@@ -266,16 +263,16 @@ and structurally coherent human videos.</p>
                 <div class="rating-item">
                     <span class="rating-label">Clarity:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
             </div>
@@ -300,29 +297,29 @@ and structurally coherent human videos.</p>
                     
                 
                     
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
                     
                         <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2508.17404v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2509.00403v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Haoyu Wang, Hao Tang, Donglin Di, Zhilu Zhang, Wangmeng Zuo, Feng Gao, Siwei Ma, Shiliang Zhang</p>
+            <p class="paper-authors">Authors: Yushuo Chen, Ruizhi Shao, Youxin Pang, Hongwen Zhang, Xinyi Wu, Rihui Wu, Yebin Liu</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-09-04 03:31:26 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-09-04 03:37:52 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
