@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - September 04, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - September 05, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>September 04, 2025</p>
+            <p>September 05, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -208,19 +208,121 @@
     <div class="bento-grid" id="paper-grid">
         
         <motion.div
-            initial="{ opacity: 0 }"
-            animate="{ opacity: 1 }"
-            transition="{ duration: 0.5 }"
-            class="bento-item col-span-full text-center text-gray-500"
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.0, ease: 'easeOut' }"  
+            class="bento-item"
             data-motion-element
         >
-            <p>No relevant papers found for today.</p>
+            <h2 class="paper-title">OccTENS: 3D Occupancy World Model via Temporal Next-Scale Prediction</h2>
+            
+            <p class="paper-summary">In this paper, we propose OccTENS, a generative occupancy world model that
+enables controllable, high-fidelity long-term occupancy generation while
+maintaining computational efficiency. Different from visual generation, the
+occupancy world model must capture the fine-grained 3D geometry and dynamic
+evolution of the 3D scenes, posing great challenges for the generative models.
+Recent approaches based on autoregression (AR) have demonstrated the potential
+to predict vehicle movement and future occupancy scenes simultaneously from
+historical observations, but they typically suffer from \textbf{inefficiency},
+\textbf{temporal degradation} in long-term generation and \textbf{lack of
+controllability}. To holistically address these issues, we reformulate the
+occupancy world model as a temporal next-scale prediction (TENS) task, which
+decomposes the temporal sequence modeling problem into the modeling of spatial
+scale-by-scale generation and temporal scene-by-scene prediction. With a
+\textbf{TensFormer}, OccTENS can effectively manage the temporal causality and
+spatial relationships of occupancy sequences in a flexible and scalable way. To
+enhance the pose controllability, we further propose a holistic pose
+aggregation strategy, which features a unified sequence modeling for occupancy
+and ego-motion. Experiments show that OccTENS outperforms the state-of-the-art
+method with both higher occupancy quality and faster inference time.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: OccTENS is introduced as a generative occupancy world model that uses temporal next-scale prediction (TENS) and a TensFormer to generate controllable, high-fidelity, and long-term occupancy predictions with improved efficiency and pose controllability.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: OccTENS被提出为一个生成式占据世界模型，它使用时间下一尺度预测（TENS）和一个TensFormer来生成可控、高保真和长期的占据预测，并提高了效率和姿态可控性。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2509.03887v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Bu Jin, Songen Gu, Xiaotao Hu, Yupeng Zheng, Xiaoyang Guo, Qian Zhang, Xiaoxiao Long, Wei Yin</p>
+            
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-09-05 03:33:19 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-09-05 03:36:15 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

@@ -1,0 +1,29 @@
+[
+    {
+        "title": "OccTENS: 3D Occupancy World Model via Temporal Next-Scale Prediction",
+        "summary": "In this paper, we propose OccTENS, a generative occupancy world model that\nenables controllable, high-fidelity long-term occupancy generation while\nmaintaining computational efficiency. Different from visual generation, the\noccupancy world model must capture the fine-grained 3D geometry and dynamic\nevolution of the 3D scenes, posing great challenges for the generative models.\nRecent approaches based on autoregression (AR) have demonstrated the potential\nto predict vehicle movement and future occupancy scenes simultaneously from\nhistorical observations, but they typically suffer from \\textbf{inefficiency},\n\\textbf{temporal degradation} in long-term generation and \\textbf{lack of\ncontrollability}. To holistically address these issues, we reformulate the\noccupancy world model as a temporal next-scale prediction (TENS) task, which\ndecomposes the temporal sequence modeling problem into the modeling of spatial\nscale-by-scale generation and temporal scene-by-scene prediction. With a\n\\textbf{TensFormer}, OccTENS can effectively manage the temporal causality and\nspatial relationships of occupancy sequences in a flexible and scalable way. To\nenhance the pose controllability, we further propose a holistic pose\naggregation strategy, which features a unified sequence modeling for occupancy\nand ego-motion. Experiments show that OccTENS outperforms the state-of-the-art\nmethod with both higher occupancy quality and faster inference time.",
+        "url": "http://arxiv.org/abs/2509.03887v1",
+        "published_date": "2025-09-04T05:06:47+00:00",
+        "updated_date": "2025-09-04T05:06:47+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Bu Jin",
+            "Songen Gu",
+            "Xiaotao Hu",
+            "Yupeng Zheng",
+            "Xiaoyang Guo",
+            "Qian Zhang",
+            "Xiaoxiao Long",
+            "Wei Yin"
+        ],
+        "tldr": "OccTENS is introduced as a generative occupancy world model that uses temporal next-scale prediction (TENS) and a TensFormer to generate controllable, high-fidelity, and long-term occupancy predictions with improved efficiency and pose controllability.",
+        "tldr_zh": "OccTENS被提出为一个生成式占据世界模型，它使用时间下一尺度预测（TENS）和一个TensFormer来生成可控、高保真和长期的占据预测，并提高了效率和姿态可控性。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
