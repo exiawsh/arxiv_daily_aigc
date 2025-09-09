@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - September 01, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - September 08, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>September 01, 2025</p>
+            <p>September 08, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -208,19 +208,121 @@
     <div class="bento-grid" id="paper-grid">
         
         <motion.div
-            initial="{ opacity: 0 }"
-            animate="{ opacity: 1 }"
-            transition="{ duration: 0.5 }"
-            class="bento-item col-span-full text-center text-gray-500"
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.0, ease: 'easeOut' }"  
+            class="bento-item"
             data-motion-element
         >
-            <p>No relevant papers found for today.</p>
+            <h2 class="paper-title">UniVerse-1: Unified Audio-Video Generation via Stitching of Experts</h2>
+            
+            <p class="paper-summary">We introduce UniVerse-1, a unified, Veo-3-like model capable of
+simultaneously generating coordinated audio and video. To enhance training
+efficiency, we bypass training from scratch and instead employ a stitching of
+experts (SoE) technique. This approach deeply fuses the corresponding blocks of
+pre-trained video and music generation experts models, thereby fully leveraging
+their foundational capabilities. To ensure accurate annotations and temporal
+alignment for both ambient sounds and speech with video content, we developed
+an online annotation pipeline that processes the required training data and
+generates labels during training process. This strategy circumvents the
+performance degradation often caused by misalignment text-based annotations.
+Through the synergy of these techniques, our model, after being finetuned on
+approximately 7,600 hours of audio-video data, produces results with
+well-coordinated audio-visuals for ambient sounds generation and strong
+alignment for speech generation. To systematically evaluate our proposed
+method, we introduce Verse-Bench, a new benchmark dataset. In an effort to
+advance research in audio-video generation and to close the performance gap
+with state-of-the-art models such as Veo3, we make our model and code publicly
+available. We hope this contribution will benefit the broader research
+community. Project page: https://dorniwang.github.io/UniVerse-1/.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: UniVerse-1 is introduced, a unified audio-video generation model employing a stitching of experts technique and an online annotation pipeline for improved training efficiency and audio-visual alignment, evaluated with a new benchmark dataset.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: UniVerse-1被提出，它是一个统一的音频视频生成模型，采用了专家缝合技术和一个在线标注流程，以提高训练效率和音频视频对齐，并使用一个新的基准数据集进行评估。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2509.06155v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Duomin Wang, Wei Zuo, Aojie Li, Ling-Hao Chen, Xinyao Liao, Deyu Zhou, Zixin Yin, Xili Dai, Daxin Jiang, Gang Yu</p>
+            
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-09-09 03:36:08 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-09-09 03:38:08 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

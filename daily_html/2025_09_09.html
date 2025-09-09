@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - September 01, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - September 09, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>September 01, 2025</p>
+            <p>September 09, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -208,19 +208,125 @@
     <div class="bento-grid" id="paper-grid">
         
         <motion.div
-            initial="{ opacity: 0 }"
-            animate="{ opacity: 1 }"
-            transition="{ duration: 0.5 }"
-            class="bento-item col-span-full text-center text-gray-500"
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.0, ease: 'easeOut' }"  
+            class="bento-item"
             data-motion-element
         >
-            <p>No relevant papers found for today.</p>
+            <h2 class="paper-title">Zero-shot 3D-Aware Trajectory-Guided image-to-video generation via Test-Time Training</h2>
+            
+            <p class="paper-summary">Trajectory-Guided image-to-video (I2V) generation aims to synthesize videos
+that adhere to user-specified motion instructions. Existing methods typically
+rely on computationally expensive fine-tuning on scarce annotated datasets.
+Although some zero-shot methods attempt to trajectory control in the latent
+space, they may yield unrealistic motion by neglecting 3D perspective and
+creating a misalignment between the manipulated latents and the network's noise
+predictions. To address these challenges, we introduce Zo3T, a novel zero-shot
+test-time-training framework for trajectory-guided generation with three core
+innovations: First, we incorporate a 3D-Aware Kinematic Projection, leveraging
+inferring scene depth to derive perspective-correct affine transformations for
+target regions. Second, we introduce Trajectory-Guided Test-Time LoRA, a
+mechanism that dynamically injects and optimizes ephemeral LoRA adapters into
+the denoising network alongside the latent state. Driven by a regional feature
+consistency loss, this co-adaptation effectively enforces motion constraints
+while allowing the pre-trained model to locally adapt its internal
+representations to the manipulated latent, thereby ensuring generative fidelity
+and on-manifold adherence. Finally, we develop Guidance Field Rectification,
+which refines the denoising evolutionary path by optimizing the conditional
+guidance field through a one-step lookahead strategy, ensuring efficient
+generative progression towards the target trajectory. Zo3T significantly
+enhances 3D realism and motion accuracy in trajectory-controlled I2V
+generation, demonstrating superior performance over existing training-based and
+zero-shot approaches.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces Zo3T, a zero-shot test-time training framework for trajectory-guided image-to-video generation that enhances 3D realism and motion accuracy by incorporating 3D-aware kinematic projection, trajectory-guided LoRA, and guidance field rectification.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了一种名为Zo3T的零样本测试时训练框架，用于轨迹引导的图像到视频生成，通过结合3D感知运动学投影、轨迹引导的LoRA和引导场校正，增强了3D真实感和运动精度。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2509.06723v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Ruicheng Zhang, Jun Zhou, Zunnan Xu, Zihao Liu, Jiehui Huang, Mingyang Zhang, Yu Sun, Xiu Li</p>
+            
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-09-09 03:36:08 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-09-09 03:40:15 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

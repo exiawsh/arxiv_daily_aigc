@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Zero-shot 3D-Aware Trajectory-Guided image-to-video generation via Test-Time Training",
+        "summary": "Trajectory-Guided image-to-video (I2V) generation aims to synthesize videos\nthat adhere to user-specified motion instructions. Existing methods typically\nrely on computationally expensive fine-tuning on scarce annotated datasets.\nAlthough some zero-shot methods attempt to trajectory control in the latent\nspace, they may yield unrealistic motion by neglecting 3D perspective and\ncreating a misalignment between the manipulated latents and the network's noise\npredictions. To address these challenges, we introduce Zo3T, a novel zero-shot\ntest-time-training framework for trajectory-guided generation with three core\ninnovations: First, we incorporate a 3D-Aware Kinematic Projection, leveraging\ninferring scene depth to derive perspective-correct affine transformations for\ntarget regions. Second, we introduce Trajectory-Guided Test-Time LoRA, a\nmechanism that dynamically injects and optimizes ephemeral LoRA adapters into\nthe denoising network alongside the latent state. Driven by a regional feature\nconsistency loss, this co-adaptation effectively enforces motion constraints\nwhile allowing the pre-trained model to locally adapt its internal\nrepresentations to the manipulated latent, thereby ensuring generative fidelity\nand on-manifold adherence. Finally, we develop Guidance Field Rectification,\nwhich refines the denoising evolutionary path by optimizing the conditional\nguidance field through a one-step lookahead strategy, ensuring efficient\ngenerative progression towards the target trajectory. Zo3T significantly\nenhances 3D realism and motion accuracy in trajectory-controlled I2V\ngeneration, demonstrating superior performance over existing training-based and\nzero-shot approaches.",
+        "url": "http://arxiv.org/abs/2509.06723v1",
+        "published_date": "2025-09-08T14:21:45+00:00",
+        "updated_date": "2025-09-08T14:21:45+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Ruicheng Zhang",
+            "Jun Zhou",
+            "Zunnan Xu",
+            "Zihao Liu",
+            "Jiehui Huang",
+            "Mingyang Zhang",
+            "Yu Sun",
+            "Xiu Li"
+        ],
+        "tldr": "This paper introduces Zo3T, a zero-shot test-time training framework for trajectory-guided image-to-video generation that enhances 3D realism and motion accuracy by incorporating 3D-aware kinematic projection, trajectory-guided LoRA, and guidance field rectification.",
+        "tldr_zh": "该论文介绍了一种名为Zo3T的零样本测试时训练框架，用于轨迹引导的图像到视频生成，通过结合3D感知运动学投影、轨迹引导的LoRA和引导场校正，增强了3D真实感和运动精度。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
