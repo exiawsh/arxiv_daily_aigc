@@ -1,0 +1,47 @@
+[
+    {
+        "title": "LINR Bridge: Vector Graphic Animation via Neural Implicits and Video Diffusion Priors",
+        "summary": "Vector graphics, known for their scalability and user-friendliness, provide a\nunique approach to visual content compared to traditional pixel-based images.\nAnimation of these graphics, driven by the motion of their elements, offers\nenhanced comprehensibility and controllability but often requires substantial\nmanual effort. To automate this process, we propose a novel method that\nintegrates implicit neural representations with text-to-video diffusion models\nfor vector graphic animation. Our approach employs layered implicit neural\nrepresentations to reconstruct vector graphics, preserving their inherent\nproperties such as infinite resolution and precise color and shape constraints,\nwhich effectively bridges the large domain gap between vector graphics and\ndiffusion models. The neural representations are then optimized using video\nscore distillation sampling, which leverages motion priors from pretrained\ntext-to-video diffusion models. Finally, the vector graphics are warped to\nmatch the representations resulting in smooth animation. Experimental results\nvalidate the effectiveness of our method in generating vivid and natural vector\ngraphic animations, demonstrating significant improvement over existing\ntechniques that suffer from limitations in flexibility and animation quality.",
+        "url": "http://arxiv.org/abs/2509.07484v1",
+        "published_date": "2025-09-09T08:04:36+00:00",
+        "updated_date": "2025-09-09T08:04:36+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Wenshuo Gao",
+            "Xicheng Lan",
+            "Luyao Zhang",
+            "Shuai Yang"
+        ],
+        "tldr": "This paper introduces a novel method for automating vector graphic animation by integrating implicit neural representations with text-to-video diffusion models, demonstrating improved animation quality and flexibility compared to existing techniques.",
+        "tldr_zh": "本文提出了一种新颖的方法，通过将隐式神经表示与文本到视频的扩散模型相结合，实现矢量图形动画的自动化，与现有技术相比，动画质量和灵活性都有所提高。",
+        "relevance_score": 7,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "ANYPORTAL: Zero-Shot Consistent Video Background Replacement",
+        "summary": "Despite the rapid advancements in video generation technology, creating\nhigh-quality videos that precisely align with user intentions remains a\nsignificant challenge. Existing methods often fail to achieve fine-grained\ncontrol over video details, limiting their practical applicability. We\nintroduce ANYPORTAL, a novel zero-shot framework for video background\nreplacement that leverages pre-trained diffusion models. Our framework\ncollaboratively integrates the temporal prior of video diffusion models with\nthe relighting capabilities of image diffusion models in a zero-shot setting.\nTo address the critical challenge of foreground consistency, we propose a\nRefinement Projection Algorithm, which enables pixel-level detail manipulation\nto ensure precise foreground preservation. ANYPORTAL is training-free and\novercomes the challenges of achieving foreground consistency and temporally\ncoherent relighting. Experimental results demonstrate that ANYPORTAL achieves\nhigh-quality results on consumer-grade GPUs, offering a practical and efficient\nsolution for video content creation and editing.",
+        "url": "http://arxiv.org/abs/2509.07472v1",
+        "published_date": "2025-09-09T07:50:53+00:00",
+        "updated_date": "2025-09-09T07:50:53+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Wenshuo Gao",
+            "Xicheng Lan",
+            "Shuai Yang"
+        ],
+        "tldr": "ANYPORTAL is a zero-shot framework leveraging pre-trained diffusion models for video background replacement, ensuring foreground consistency and temporally coherent relighting without training.",
+        "tldr_zh": "ANYPORTAL是一个零样本框架，利用预训练的扩散模型进行视频背景替换，无需训练即可确保前景一致性和时间上连贯的重新照明。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]
