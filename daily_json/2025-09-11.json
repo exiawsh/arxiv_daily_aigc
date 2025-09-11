@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Bitrate-Controlled Diffusion for Disentangling Motion and Content in Video",
+        "summary": "We propose a novel and general framework to disentangle video data into its\ndynamic motion and static content components. Our proposed method is a\nself-supervised pipeline with less assumptions and inductive biases than\nprevious works: it utilizes a transformer-based architecture to jointly\ngenerate flexible implicit features for frame-wise motion and clip-wise\ncontent, and incorporates a low-bitrate vector quantization as an information\nbottleneck to promote disentanglement and form a meaningful discrete motion\nspace. The bitrate-controlled latent motion and content are used as conditional\ninputs to a denoising diffusion model to facilitate self-supervised\nrepresentation learning. We validate our disentangled representation learning\nframework on real-world talking head videos with motion transfer and\nauto-regressive motion generation tasks. Furthermore, we also show that our\nmethod can generalize to other types of video data, such as pixel sprites of 2D\ncartoon characters. Our work presents a new perspective on self-supervised\nlearning of disentangled video representations, contributing to the broader\nfield of video analysis and generation.",
+        "url": "http://arxiv.org/abs/2509.08376v1",
+        "published_date": "2025-09-10T08:14:45+00:00",
+        "updated_date": "2025-09-10T08:14:45+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Xiao Li",
+            "Qi Chen",
+            "Xiulian Peng",
+            "Kai Yu",
+            "Xie Chen",
+            "Yan Lu"
+        ],
+        "tldr": "This paper introduces a self-supervised method for disentangling motion and content in videos using a bitrate-controlled diffusion model. The method achieves disentanglement by using a transformer and low-bitrate vector quantization, and validates the approach on motion transfer and auto-regressive motion generation tasks.",
+        "tldr_zh": "本文提出了一种自监督方法，通过使用比特率控制的扩散模型来分离视频中的运动和内容。该方法利用Transformer和低比特率矢量量化实现解耦，并在运动迁移和自回归运动生成任务上验证了该方法。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 8,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]

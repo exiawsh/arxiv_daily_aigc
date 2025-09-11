@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - August 31, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - September 11, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>August 31, 2025</p>
+            <p>September 11, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,29 +215,29 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">DevilSight: Augmenting Monocular Human Avatar Reconstruction through a Virtual Perspective</h2>
+            <h2 class="paper-title">Bitrate-Controlled Diffusion for Disentangling Motion and Content in Video</h2>
             
-            <p class="paper-summary">We present a novel framework to reconstruct human avatars from monocular
-videos. Recent approaches have struggled either to capture the fine-grained
-dynamic details from the input or to generate plausible details at novel
-viewpoints, which mainly stem from the limited representational capacity of the
-avatar model and insufficient observational data. To overcome these challenges,
-we propose to leverage the advanced video generative model, Human4DiT, to
-generate the human motions from alternative perspective as an additional
-supervision signal. This approach not only enriches the details in previously
-unseen regions but also effectively regularizes the avatar representation to
-mitigate artifacts. Furthermore, we introduce two complementary strategies to
-enhance video generation: To ensure consistent reproduction of human motion, we
-inject the physical identity into the model through video fine-tuning. For
-higher-resolution outputs with finer details, a patch-based denoising algorithm
-is employed. Experimental results demonstrate that our method outperforms
-recent state-of-the-art approaches and validate the effectiveness of our
-proposed strategies.</p>
+            <p class="paper-summary">We propose a novel and general framework to disentangle video data into its
+dynamic motion and static content components. Our proposed method is a
+self-supervised pipeline with less assumptions and inductive biases than
+previous works: it utilizes a transformer-based architecture to jointly
+generate flexible implicit features for frame-wise motion and clip-wise
+content, and incorporates a low-bitrate vector quantization as an information
+bottleneck to promote disentanglement and form a meaningful discrete motion
+space. The bitrate-controlled latent motion and content are used as conditional
+inputs to a denoising diffusion model to facilitate self-supervised
+representation learning. We validate our disentangled representation learning
+framework on real-world talking head videos with motion transfer and
+auto-regressive motion generation tasks. Furthermore, we also show that our
+method can generalize to other types of video data, such as pixel sprites of 2D
+cartoon characters. Our work presents a new perspective on self-supervised
+learning of disentangled video representations, contributing to the broader
+field of video analysis and generation.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces DevilSight, a framework that augments monocular human avatar reconstruction by leveraging a video generative model (Human4DiT) to generate alternative perspectives as additional supervision, enhancing detail and regularization.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces a self-supervised method for disentangling motion and content in videos using a bitrate-controlled diffusion model. The method achieves disentanglement by using a transformer and low-bitrate vector quantization, and validates the approach on motion transfer and auto-regressive motion generation tasks.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了 DevilSight，一个通过利用视频生成模型 (Human4DiT) 生成的替代视角作为额外监督来增强单目人体化身重建的框架，从而增强细节和正则化。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文提出了一种自监督方法，通过使用比特率控制的扩散模型来分离视频中的运动和内容。该方法利用Transformer和低比特率矢量量化实现解耦，并在运动迁移和自回归运动生成任务上验证了该方法。</p>
             
 
             
@@ -247,8 +247,8 @@ proposed strategies.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(6/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -308,18 +308,18 @@ proposed strategies.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2509.00403v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2509.08376v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Yushuo Chen, Ruizhi Shao, Youxin Pang, Hongwen Zhang, Xinyi Wu, Rihui Wu, Yebin Liu</p>
+            <p class="paper-authors">Authors: Xiao Li, Qi Chen, Xiulian Peng, Kai Yu, Xie Chen, Yan Lu</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-09-11 02:25:24 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-09-11 02:33:45 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
