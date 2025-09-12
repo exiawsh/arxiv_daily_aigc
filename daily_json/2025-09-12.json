@@ -1,0 +1,60 @@
+[
+    {
+        "title": "Kling-Avatar: Grounding Multimodal Instructions for Cascaded Long-Duration Avatar Animation Synthesis",
+        "summary": "Recent advances in audio-driven avatar video generation have significantly\nenhanced audio-visual realism. However, existing methods treat instruction\nconditioning merely as low-level tracking driven by acoustic or visual cues,\nwithout modeling the communicative purpose conveyed by the instructions. This\nlimitation compromises their narrative coherence and character expressiveness.\nTo bridge this gap, we introduce Kling-Avatar, a novel cascaded framework that\nunifies multimodal instruction understanding with photorealistic portrait\ngeneration. Our approach adopts a two-stage pipeline. In the first stage, we\ndesign a multimodal large language model (MLLM) director that produces a\nblueprint video conditioned on diverse instruction signals, thereby governing\nhigh-level semantics such as character motion and emotions. In the second\nstage, guided by blueprint keyframes, we generate multiple sub-clips in\nparallel using a first-last frame strategy. This global-to-local framework\npreserves fine-grained details while faithfully encoding the high-level intent\nbehind multimodal instructions. Our parallel architecture also enables fast and\nstable generation of long-duration videos, making it suitable for real-world\napplications such as digital human livestreaming and vlogging. To\ncomprehensively evaluate our method, we construct a benchmark of 375 curated\nsamples covering diverse instructions and challenging scenarios. Extensive\nexperiments demonstrate that Kling-Avatar is capable of generating vivid,\nfluent, long-duration videos at up to 1080p and 48 fps, achieving superior\nperformance in lip synchronization accuracy, emotion and dynamic\nexpressiveness, instruction controllability, identity preservation, and\ncross-domain generalization. These results establish Kling-Avatar as a new\nbenchmark for semantically grounded, high-fidelity audio-driven avatar\nsynthesis.",
+        "url": "http://arxiv.org/abs/2509.09595v1",
+        "published_date": "2025-09-11T16:34:57+00:00",
+        "updated_date": "2025-09-11T16:34:57+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yikang Ding",
+            "Jiwen Liu",
+            "Wenyuan Zhang",
+            "Zekun Wang",
+            "Wentao Hu",
+            "Liyuan Cui",
+            "Mingming Lao",
+            "Yingchao Shao",
+            "Hui Liu",
+            "Xiaohan Li",
+            "Ming Chen",
+            "Xiaoqiang Liu",
+            "Yu-Shen Liu",
+            "Pengfei Wan"
+        ],
+        "tldr": "The paper introduces Kling-Avatar, a cascaded framework using a multimodal LLM to generate long-duration, high-fidelity avatar videos from multimodal instructions, improving narrative coherence and character expressiveness compared to existing methods.",
+        "tldr_zh": "该论文介绍了Kling-Avatar，一个级联框架，使用多模态LLM从多模态指令生成长时、高保真的头像视频，相比现有方法，提升了叙事连贯性和角色表现力。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Improving Video Diffusion Transformer Training by Multi-Feature Fusion and Alignment from Self-Supervised Vision Encoders",
+        "summary": "Video diffusion models have advanced rapidly in the recent years as a result\nof series of architectural innovations (e.g., diffusion transformers) and use\nof novel training objectives (e.g., flow matching). In contrast, less attention\nhas been paid to improving the feature representation power of such models. In\nthis work, we show that training video diffusion models can benefit from\naligning the intermediate features of the video generator with feature\nrepresentations of pre-trained vision encoders. We propose a new metric and\nconduct an in-depth analysis of various vision encoders to evaluate their\ndiscriminability and temporal consistency, thereby assessing their suitability\nfor video feature alignment. Based on the analysis, we present Align4Gen which\nprovides a novel multi-feature fusion and alignment method integrated into\nvideo diffusion model training. We evaluate Align4Gen both for unconditional\nand class-conditional video generation tasks and show that it results in\nimproved video generation as quantified by various metrics. Full video results\nare available on our project page: https://align4gen.github.io/align4gen/",
+        "url": "http://arxiv.org/abs/2509.09547v1",
+        "published_date": "2025-09-11T15:39:27+00:00",
+        "updated_date": "2025-09-11T15:39:27+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Dohun Lee",
+            "Hyeonho Jeong",
+            "Jiwook Kim",
+            "Duygu Ceylan",
+            "Jong Chul Ye"
+        ],
+        "tldr": "This paper introduces Align4Gen, a novel method to improve video diffusion model training by aligning intermediate features with pre-trained vision encoders, resulting in enhanced video generation quality.",
+        "tldr_zh": "本文介绍了一种名为Align4Gen的新方法，通过将中间特征与预训练的视觉编码器对齐，来改进视频扩散模型的训练，从而提高视频生成质量。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]
