@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - September 03, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - September 13, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>September 03, 2025</p>
+            <p>September 13, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -208,19 +208,120 @@
     <div class="bento-grid" id="paper-grid">
         
         <motion.div
-            initial="{ opacity: 0 }"
-            animate="{ opacity: 1 }"
-            transition="{ duration: 0.5 }"
-            class="bento-item col-span-full text-center text-gray-500"
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.0, ease: 'easeOut' }"  
+            class="bento-item"
             data-motion-element
         >
-            <p>No relevant papers found for today.</p>
+            <h2 class="paper-title">Compute Only 16 Tokens in One Timestep: Accelerating Diffusion Transformers with Cluster-Driven Feature Caching</h2>
+            
+            <p class="paper-summary">Diffusion transformers have gained significant attention in recent years for
+their ability to generate high-quality images and videos, yet still suffer from
+a huge computational cost due to their iterative denoising process. Recently,
+feature caching has been introduced to accelerate diffusion transformers by
+caching the feature computation in previous timesteps and reusing it in the
+following timesteps, which leverage the temporal similarity of diffusion models
+while ignoring the similarity in the spatial dimension. In this paper, we
+introduce Cluster-Driven Feature Caching (ClusCa) as an orthogonal and
+complementary perspective for previous feature caching. Specifically, ClusCa
+performs spatial clustering on tokens in each timestep, computes only one token
+in each cluster and propagates their information to all the other tokens, which
+is able to reduce the number of tokens by over 90%. Extensive experiments on
+DiT, FLUX and HunyuanVideo demonstrate its effectiveness in both text-to-image
+and text-to-video generation. Besides, it can be directly applied to any
+diffusion transformer without requirements for training. For instance, ClusCa
+achieves 4.96x acceleration on FLUX with an ImageReward of 99.49%, surpassing
+the original model by 0.51%. The code is available at
+https://github.com/Shenyi-Z/Cache4Diffusion.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces Cluster-Driven Feature Caching (ClusCa), a method to accelerate diffusion transformers by spatially clustering tokens and only computing a representative token in each cluster, achieving significant speedups in image and video generation without retraining.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了聚类驱动特征缓存（ClusCa），这是一种通过对 tokens 进行空间聚类，并仅计算每个聚类中的代表性 token 来加速扩散 Transformer 的方法，从而在图像和视频生成中实现显著加速，且无需重新训练。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2509.10312v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Zhixin Zheng, Xinyu Wang, Chang Zou, Shaobo Wang, Linfeng Zhang</p>
+            
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-09-15 03:41:15 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-09-15 03:42:58 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
