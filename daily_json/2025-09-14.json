@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Stable Part Diffusion 4D: Multi-View RGB and Kinematic Parts Video Generation",
+        "summary": "We present Stable Part Diffusion 4D (SP4D), a framework for generating paired\nRGB and kinematic part videos from monocular inputs. Unlike conventional part\nsegmentation methods that rely on appearance-based semantic cues, SP4D learns\nto produce kinematic parts - structural components aligned with object\narticulation and consistent across views and time. SP4D adopts a dual-branch\ndiffusion model that jointly synthesizes RGB frames and corresponding part\nsegmentation maps. To simplify the architecture and flexibly enable different\npart counts, we introduce a spatial color encoding scheme that maps part masks\nto continuous RGB-like images. This encoding allows the segmentation branch to\nshare the latent VAE from the RGB branch, while enabling part segmentation to\nbe recovered via straightforward post-processing. A Bidirectional Diffusion\nFusion (BiDiFuse) module enhances cross-branch consistency, supported by a\ncontrastive part consistency loss to promote spatial and temporal alignment of\npart predictions. We demonstrate that the generated 2D part maps can be lifted\nto 3D to derive skeletal structures and harmonic skinning weights with few\nmanual adjustments. To train and evaluate SP4D, we construct KinematicParts20K,\na curated dataset of over 20K rigged objects selected and processed from\nObjaverse XL (Deitke et al., 2023), each paired with multi-view RGB and part\nvideo sequences. Experiments show that SP4D generalizes strongly to diverse\nscenarios, including real-world videos, novel generated objects, and rare\narticulated poses, producing kinematic-aware outputs suitable for downstream\nanimation and motion-related tasks.",
+        "url": "http://arxiv.org/abs/2509.10687v1",
+        "published_date": "2025-09-12T20:39:43+00:00",
+        "updated_date": "2025-09-12T20:39:43+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Hao Zhang",
+            "Chun-Han Yao",
+            "Simon Donné",
+            "Narendra Ahuja",
+            "Varun Jampani"
+        ],
+        "tldr": "The paper introduces Stable Part Diffusion 4D (SP4D), a framework for generating paired RGB and kinematic part videos from monocular inputs, leveraging a dual-branch diffusion model and a novel spatial color encoding scheme. It also includes a new dataset, KinematicParts20K, for training and evaluation.",
+        "tldr_zh": "本文介绍了 Stable Part Diffusion 4D (SP4D)，一个从单目输入生成配对的 RGB 和运动学部件视频的框架，它利用双分支扩散模型和一种新的空间颜色编码方案。它还包括一个新的数据集 KinematicParts20K，用于训练和评估。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]
