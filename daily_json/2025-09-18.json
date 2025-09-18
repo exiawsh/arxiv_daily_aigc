@@ -1,0 +1,28 @@
+[
+    {
+        "title": "BWCache: Accelerating Video Diffusion Transformers through Block-Wise Caching",
+        "summary": "Recent advancements in Diffusion Transformers (DiTs) have established them as\nthe state-of-the-art method for video generation. However, their inherently\nsequential denoising process results in inevitable latency, limiting real-world\napplicability. Existing acceleration methods either compromise visual quality\ndue to architectural modifications or fail to reuse intermediate features at\nproper granularity. Our analysis reveals that DiT blocks are the primary\ncontributors to inference latency. Across diffusion timesteps, the feature\nvariations of DiT blocks exhibit a U-shaped pattern with high similarity during\nintermediate timesteps, which suggests substantial computational redundancy. In\nthis paper, we propose Block-Wise Caching (BWCache), a training-free method to\naccelerate DiT-based video generation. BWCache dynamically caches and reuses\nfeatures from DiT blocks across diffusion timesteps. Furthermore, we introduce\na similarity indicator that triggers feature reuse only when the differences\nbetween block features at adjacent timesteps fall below a threshold, thereby\nminimizing redundant computations while maintaining visual fidelity. Extensive\nexperiments on several video diffusion models demonstrate that BWCache achieves\nup to 2.24$\\times$ speedup with comparable visual quality.",
+        "url": "http://arxiv.org/abs/2509.13789v1",
+        "published_date": "2025-09-17T07:58:36+00:00",
+        "updated_date": "2025-09-17T07:58:36+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Hanshuai Cui",
+            "Zhiqing Tang",
+            "Zhifei Xu",
+            "Zhi Yao",
+            "Wenyi Zeng",
+            "Weijia Jia"
+        ],
+        "tldr": "The paper introduces BWCache, a training-free method that accelerates video diffusion transformers by caching and reusing intermediate features from DiT blocks across diffusion timesteps, achieving up to 2.24x speedup with comparable visual quality.",
+        "tldr_zh": "该论文介绍了BWCache，一种免训练方法，通过缓存和重用DiT块在扩散时间步中的中间特征来加速视频扩散Transformer，实现了高达2.24倍的加速，并保持了相当的视觉质量。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]

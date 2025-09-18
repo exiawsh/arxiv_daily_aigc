@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - September 14, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - September 18, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>September 14, 2025</p>
+            <p>September 18, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,35 +215,30 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Stable Part Diffusion 4D: Multi-View RGB and Kinematic Parts Video Generation</h2>
+            <h2 class="paper-title">BWCache: Accelerating Video Diffusion Transformers through Block-Wise Caching</h2>
             
-            <p class="paper-summary">We present Stable Part Diffusion 4D (SP4D), a framework for generating paired
-RGB and kinematic part videos from monocular inputs. Unlike conventional part
-segmentation methods that rely on appearance-based semantic cues, SP4D learns
-to produce kinematic parts - structural components aligned with object
-articulation and consistent across views and time. SP4D adopts a dual-branch
-diffusion model that jointly synthesizes RGB frames and corresponding part
-segmentation maps. To simplify the architecture and flexibly enable different
-part counts, we introduce a spatial color encoding scheme that maps part masks
-to continuous RGB-like images. This encoding allows the segmentation branch to
-share the latent VAE from the RGB branch, while enabling part segmentation to
-be recovered via straightforward post-processing. A Bidirectional Diffusion
-Fusion (BiDiFuse) module enhances cross-branch consistency, supported by a
-contrastive part consistency loss to promote spatial and temporal alignment of
-part predictions. We demonstrate that the generated 2D part maps can be lifted
-to 3D to derive skeletal structures and harmonic skinning weights with few
-manual adjustments. To train and evaluate SP4D, we construct KinematicParts20K,
-a curated dataset of over 20K rigged objects selected and processed from
-Objaverse XL (Deitke et al., 2023), each paired with multi-view RGB and part
-video sequences. Experiments show that SP4D generalizes strongly to diverse
-scenarios, including real-world videos, novel generated objects, and rare
-articulated poses, producing kinematic-aware outputs suitable for downstream
-animation and motion-related tasks.</p>
+            <p class="paper-summary">Recent advancements in Diffusion Transformers (DiTs) have established them as
+the state-of-the-art method for video generation. However, their inherently
+sequential denoising process results in inevitable latency, limiting real-world
+applicability. Existing acceleration methods either compromise visual quality
+due to architectural modifications or fail to reuse intermediate features at
+proper granularity. Our analysis reveals that DiT blocks are the primary
+contributors to inference latency. Across diffusion timesteps, the feature
+variations of DiT blocks exhibit a U-shaped pattern with high similarity during
+intermediate timesteps, which suggests substantial computational redundancy. In
+this paper, we propose Block-Wise Caching (BWCache), a training-free method to
+accelerate DiT-based video generation. BWCache dynamically caches and reuses
+features from DiT blocks across diffusion timesteps. Furthermore, we introduce
+a similarity indicator that triggers feature reuse only when the differences
+between block features at adjacent timesteps fall below a threshold, thereby
+minimizing redundant computations while maintaining visual fidelity. Extensive
+experiments on several video diffusion models demonstrate that BWCache achieves
+up to 2.24$\times$ speedup with comparable visual quality.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Stable Part Diffusion 4D (SP4D), a framework for generating paired RGB and kinematic part videos from monocular inputs, leveraging a dual-branch diffusion model and a novel spatial color encoding scheme. It also includes a new dataset, KinematicParts20K, for training and evaluation.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces BWCache, a training-free method that accelerates video diffusion transformers by caching and reusing intermediate features from DiT blocks across diffusion timesteps, achieving up to 2.24x speedup with comparable visual quality.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了 Stable Part Diffusion 4D (SP4D)，一个从单目输入生成配对的 RGB 和运动学部件视频的框架，它利用双分支扩散模型和一种新的空间颜色编码方案。它还包括一个新的数据集 KinematicParts20K，用于训练和评估。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了BWCache，一种免训练方法，通过缓存和重用DiT块在扩散时间步中的中间特征来加速视频扩散Transformer，实现了高达2.24倍的加速，并保持了相当的视觉质量。</p>
             
 
             
@@ -277,8 +272,8 @@ animation and motion-related tasks.</p>
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
             </div>
@@ -303,29 +298,29 @@ animation and motion-related tasks.</p>
                     
                 
                     
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="fas fa-star"></i>
                     
                 
                     
                         <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2509.10687v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2509.13789v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Hao Zhang, Chun-Han Yao, Simon Donné, Narendra Ahuja, Varun Jampani</p>
+            <p class="paper-authors">Authors: Hanshuai Cui, Zhiqing Tang, Zhifei Xu, Zhi Yao, Wenyi Zeng, Weijia Jia</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-09-18 03:33:10 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-09-18 03:40:46 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
