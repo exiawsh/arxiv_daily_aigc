@@ -1,0 +1,28 @@
+[
+    {
+        "title": "WorldForge: Unlocking Emergent 3D/4D Generation in Video Diffusion Model via Training-Free Guidance",
+        "summary": "Recent video diffusion models demonstrate strong potential in spatial\nintelligence tasks due to their rich latent world priors. However, this\npotential is hindered by their limited controllability and geometric\ninconsistency, creating a gap between their strong priors and their practical\nuse in 3D/4D tasks. As a result, current approaches often rely on retraining or\nfine-tuning, which risks degrading pretrained knowledge and incurs high\ncomputational costs. To address this, we propose WorldForge, a training-free,\ninference-time framework composed of three tightly coupled modules. Intra-Step\nRecursive Refinement introduces a recursive refinement mechanism during\ninference, which repeatedly optimizes network predictions within each denoising\nstep to enable precise trajectory injection. Flow-Gated Latent Fusion leverages\noptical flow similarity to decouple motion from appearance in the latent space\nand selectively inject trajectory guidance into motion-related channels.\nDual-Path Self-Corrective Guidance compares guided and unguided denoising paths\nto adaptively correct trajectory drift caused by noisy or misaligned structural\nsignals. Together, these components inject fine-grained, trajectory-aligned\nguidance without training, achieving both accurate motion control and\nphotorealistic content generation. Extensive experiments across diverse\nbenchmarks validate our method's superiority in realism, trajectory\nconsistency, and visual fidelity. This work introduces a novel plug-and-play\nparadigm for controllable video synthesis, offering a new perspective on\nleveraging generative priors for spatial intelligence.",
+        "url": "http://arxiv.org/abs/2509.15130v1",
+        "published_date": "2025-09-18T16:40:47+00:00",
+        "updated_date": "2025-09-18T16:40:47+00:00",
+        "categories": [
+            "cs.GR",
+            "cs.AI",
+            "cs.CV"
+        ],
+        "authors": [
+            "Chenxi Song",
+            "Yanming Yang",
+            "Tong Zhao",
+            "Ruibo Li",
+            "Chi Zhang"
+        ],
+        "tldr": "The paper introduces WorldForge, a training-free framework to improve controllability and geometric consistency in video diffusion models for 3D/4D tasks by injecting fine-grained, trajectory-aligned guidance during inference.",
+        "tldr_zh": "该论文介绍了一种名为WorldForge的免训练框架，通过在推理过程中注入细粒度的、轨迹对齐的指导，以提高视频扩散模型在3D/4D任务中的可控性和几何一致性。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
