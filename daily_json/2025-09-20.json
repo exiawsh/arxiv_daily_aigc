@@ -1,0 +1,52 @@
+[
+    {
+        "title": "Lynx: Towards High-Fidelity Personalized Video Generation",
+        "summary": "We present Lynx, a high-fidelity model for personalized video synthesis from\na single input image. Built on an open-source Diffusion Transformer (DiT)\nfoundation model, Lynx introduces two lightweight adapters to ensure identity\nfidelity. The ID-adapter employs a Perceiver Resampler to convert\nArcFace-derived facial embeddings into compact identity tokens for\nconditioning, while the Ref-adapter integrates dense VAE features from a frozen\nreference pathway, injecting fine-grained details across all transformer layers\nthrough cross-attention. These modules collectively enable robust identity\npreservation while maintaining temporal coherence and visual realism. Through\nevaluation on a curated benchmark of 40 subjects and 20 unbiased prompts, which\nyielded 800 test cases, Lynx has demonstrated superior face resemblance,\ncompetitive prompt following, and strong video quality, thereby advancing the\nstate of personalized video generation.",
+        "url": "http://arxiv.org/abs/2509.15496v1",
+        "published_date": "2025-09-19T00:31:57+00:00",
+        "updated_date": "2025-09-19T00:31:57+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Shen Sang",
+            "Tiancheng Zhi",
+            "Tianpei Gu",
+            "Jing Liu",
+            "Linjie Luo"
+        ],
+        "tldr": "Lynx introduces a high-fidelity personalized video generation model using a diffusion transformer with two lightweight adapters (ID-adapter and Ref-adapter) for improved identity preservation and visual realism from a single image.",
+        "tldr_zh": "Lynx 提出了一种高保真个性化视频生成模型，该模型使用扩散 Transformer，并带有两个轻量级适配器（ID-adapter 和 Ref-adapter），可从单个图像中改进身份保持和视觉真实感。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "OpenViGA: Video Generation for Automotive Driving Scenes by Streamlining and Fine-Tuning Open Source Models with Public Data",
+        "summary": "Recent successful video generation systems that predict and create realistic\nautomotive driving scenes from short video inputs assign tokenization, future\nstate prediction (world model), and video decoding to dedicated models. These\napproaches often utilize large models that require significant training\nresources, offer limited insight into design choices, and lack publicly\navailable code and datasets. In this work, we address these deficiencies and\npresent OpenViGA, an open video generation system for automotive driving\nscenes. Our contributions are: Unlike several earlier works for video\ngeneration, such as GAIA-1, we provide a deep analysis of the three components\nof our system by separate quantitative and qualitative evaluation: Image\ntokenizer, world model, video decoder. Second, we purely build upon powerful\npre-trained open source models from various domains, which we fine-tune by\npublicly available automotive data (BDD100K) on GPU hardware at academic scale.\nThird, we build a coherent video generation system by streamlining interfaces\nof our components. Fourth, due to public availability of the underlying models\nand data, we allow full reproducibility. Finally, we also publish our code and\nmodels on Github. For an image size of 256x256 at 4 fps we are able to predict\nrealistic driving scene videos frame-by-frame with only one frame of\nalgorithmic latency.",
+        "url": "http://arxiv.org/abs/2509.15479v1",
+        "published_date": "2025-09-18T22:54:13+00:00",
+        "updated_date": "2025-09-18T22:54:13+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Björn Möller",
+            "Zhengyang Li",
+            "Malte Stelzer",
+            "Thomas Graave",
+            "Fabian Bettels",
+            "Muaaz Ataya",
+            "Tim Fingscheidt"
+        ],
+        "tldr": "The paper introduces OpenViGA, an open-source video generation system for automotive driving scenes, built by fine-tuning pre-trained open-source models with public data and streamlining the interfaces of different components. The authors emphasize reproducibility and provide code and models on GitHub.",
+        "tldr_zh": "该论文介绍了OpenViGA，一个用于汽车驾驶场景的开源视频生成系统，通过使用公共数据微调预训练的开源模型，并简化了不同组件的接口。作者强调了可重复性，并在GitHub上提供了代码和模型。",
+        "relevance_score": 9,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
