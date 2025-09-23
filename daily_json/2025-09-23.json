@@ -1,0 +1,56 @@
+[
+    {
+        "title": "OmniInsert: Mask-Free Video Insertion of Any Reference via Diffusion Transformer Models",
+        "summary": "Recent advances in video insertion based on diffusion models are impressive.\nHowever, existing methods rely on complex control signals but struggle with\nsubject consistency, limiting their practical applicability. In this paper, we\nfocus on the task of Mask-free Video Insertion and aim to resolve three key\nchallenges: data scarcity, subject-scene equilibrium, and insertion\nharmonization. To address the data scarcity, we propose a new data pipeline\nInsertPipe, constructing diverse cross-pair data automatically. Building upon\nour data pipeline, we develop OmniInsert, a novel unified framework for\nmask-free video insertion from both single and multiple subject references.\nSpecifically, to maintain subject-scene equilibrium, we introduce a simple yet\neffective Condition-Specific Feature Injection mechanism to distinctly inject\nmulti-source conditions and propose a novel Progressive Training strategy that\nenables the model to balance feature injection from subjects and source video.\nMeanwhile, we design the Subject-Focused Loss to improve the detailed\nappearance of the subjects. To further enhance insertion harmonization, we\npropose an Insertive Preference Optimization methodology to optimize the model\nby simulating human preferences, and incorporate a Context-Aware Rephraser\nmodule during reference to seamlessly integrate the subject into the original\nscenes. To address the lack of a benchmark for the field, we introduce\nInsertBench, a comprehensive benchmark comprising diverse scenes with\nmeticulously selected subjects. Evaluation on InsertBench indicates OmniInsert\noutperforms state-of-the-art closed-source commercial solutions. The code will\nbe released.",
+        "url": "http://arxiv.org/abs/2509.17627v1",
+        "published_date": "2025-09-22T11:35:55+00:00",
+        "updated_date": "2025-09-22T11:35:55+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Jinshu Chen",
+            "Xinghui Li",
+            "Xu Bai",
+            "Tianxiang Ma",
+            "Pengze Zhang",
+            "Zhuowei Chen",
+            "Gen Li",
+            "Lijie Liu",
+            "Songtao Zhao",
+            "Bingchuan Li",
+            "Qian He"
+        ],
+        "tldr": "The paper introduces OmniInsert, a mask-free video insertion framework using diffusion transformers, addressing data scarcity and subject-scene equilibrium. They also introduce a new benchmark, InsertBench, and outperform existing commercial solutions.",
+        "tldr_zh": "该论文介绍了一种名为OmniInsert的无掩码视频插入框架，该框架使用扩散转换器，解决了数据稀缺和主体-场景平衡的问题。他们还引入了一个新的基准测试InsertBench，并优于现有的商业解决方案。",
+        "relevance_score": 6,
+        "novelty_claim_score": 8,
+        "clarity_score": 8,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    },
+    {
+        "title": "Echo-Path: Pathology-Conditioned Echo Video Generation",
+        "summary": "Cardiovascular diseases (CVDs) remain the leading cause of mortality\nglobally, and echocardiography is critical for diagnosis of both common and\ncongenital cardiac conditions. However, echocardiographic data for certain\npathologies are scarce, hindering the development of robust automated diagnosis\nmodels. In this work, we propose Echo-Path, a novel generative framework to\nproduce echocardiogram videos conditioned on specific cardiac pathologies.\nEcho-Path can synthesize realistic ultrasound video sequences that exhibit\ntargeted abnormalities, focusing here on atrial septal defect (ASD) and\npulmonary arterial hypertension (PAH). Our approach introduces a\npathology-conditioning mechanism into a state-of-the-art echo video generator,\nallowing the model to learn and control disease-specific structural and motion\npatterns in the heart. Quantitative evaluation demonstrates that the synthetic\nvideos achieve low distribution distances, indicating high visual fidelity.\nClinically, the generated echoes exhibit plausible pathology markers.\nFurthermore, classifiers trained on our synthetic data generalize well to real\ndata and, when used to augment real training sets, it improves downstream\ndiagnosis of ASD and PAH by 7\\% and 8\\% respectively. Code, weights and dataset\nare available here https://github.com/Marshall-mk/EchoPathv1",
+        "url": "http://arxiv.org/abs/2509.17190v1",
+        "published_date": "2025-09-21T18:31:28+00:00",
+        "updated_date": "2025-09-21T18:31:28+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Kabir Hamzah Muhammad",
+            "Marawan Elbatel",
+            "Yi Qin",
+            "Xiaomeng Li"
+        ],
+        "tldr": "The paper introduces Echo-Path, a generative framework for synthesizing echocardiogram videos conditioned on specific cardiac pathologies (ASD and PAH), demonstrating improved downstream diagnosis when used to augment real training data.",
+        "tldr_zh": "该论文介绍了Echo-Path，一个用于合成以特定心脏病理（ASD和PAH）为条件的超声心动图视频的生成框架，并表明当用于扩充真实训练数据时，可以改善下游诊断。",
+        "relevance_score": 6,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 7
+    }
+]
