@@ -1,0 +1,102 @@
+[
+    {
+        "title": "NewtonGen: Physics-Consistent and Controllable Text-to-Video Generation via Neural Newtonian Dynamics",
+        "summary": "A primary bottleneck in large-scale text-to-video generation today is\nphysical consistency and controllability. Despite recent advances,\nstate-of-the-art models often produce unrealistic motions, such as objects\nfalling upward, or abrupt changes in velocity and direction. Moreover, these\nmodels lack precise parameter control, struggling to generate physically\nconsistent dynamics under different initial conditions. We argue that this\nfundamental limitation stems from current models learning motion distributions\nsolely from appearance, while lacking an understanding of the underlying\ndynamics. In this work, we propose NewtonGen, a framework that integrates\ndata-driven synthesis with learnable physical principles. At its core lies\ntrainable Neural Newtonian Dynamics (NND), which can model and predict a\nvariety of Newtonian motions, thereby injecting latent dynamical constraints\ninto the video generation process. By jointly leveraging data priors and\ndynamical guidance, NewtonGen enables physically consistent video synthesis\nwith precise parameter control.",
+        "url": "http://arxiv.org/abs/2509.21309v1",
+        "published_date": "2025-09-25T15:25:33+00:00",
+        "updated_date": "2025-09-25T15:25:33+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yu Yuan",
+            "Xijun Wang",
+            "Tharindu Wickremasinghe",
+            "Zeeshan Nadir",
+            "Bole Ma",
+            "Stanley H. Chan"
+        ],
+        "tldr": "NewtonGen introduces Neural Newtonian Dynamics (NND) to text-to-video generation to improve physical consistency and controllability by incorporating learnable physical principles.",
+        "tldr_zh": "NewtonGen 引入了神经牛顿动力学（NND）到文本到视频生成中，通过结合可学习的物理原理，提高了物理一致性和可控性。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "MotionFlow:Learning Implicit Motion Flow for Complex Camera Trajectory Control in Video Generation",
+        "summary": "Generating videos guided by camera trajectories poses significant challenges\nin achieving consistency and generalizability, particularly when both camera\nand object motions are present. Existing approaches often attempt to learn\nthese motions separately, which may lead to confusion regarding the relative\nmotion between the camera and the objects. To address this challenge, we\npropose a novel approach that integrates both camera and object motions by\nconverting them into the motion of corresponding pixels. Utilizing a stable\ndiffusion network, we effectively learn reference motion maps in relation to\nthe specified camera trajectory. These maps, along with an extracted semantic\nobject prior, are then fed into an image-to-video network to generate the\ndesired video that can accurately follow the designated camera trajectory while\nmaintaining consistent object motions. Extensive experiments verify that our\nmodel outperforms SOTA methods by a large margin.",
+        "url": "http://arxiv.org/abs/2509.21119v1",
+        "published_date": "2025-09-25T13:06:12+00:00",
+        "updated_date": "2025-09-25T13:06:12+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Guojun Lei",
+            "Chi Wang",
+            "Yikai Wang",
+            "Hong Li",
+            "Ying Song",
+            "Weiwei Xu"
+        ],
+        "tldr": "The paper introduces MotionFlow, a novel approach for camera trajectory-guided video generation that integrates camera and object motions by learning reference motion maps using a stable diffusion network. It outperforms SOTA methods in generating videos that accurately follow the designated camera trajectory while maintaining consistent object motions.",
+        "tldr_zh": "本文介绍了一种名为MotionFlow的新方法，用于相机轨迹引导的视频生成。该方法通过使用稳定扩散网络学习参考运动图，整合了相机和物体的运动。它在生成能够准确跟随指定相机轨迹并保持物体运动一致性的视频方面优于现有技术。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "UniTransfer: Video Concept Transfer via Progressive Spatial and Timestep Decomposition",
+        "summary": "We propose a novel architecture UniTransfer, which introduces both spatial\nand diffusion timestep decomposition in a progressive paradigm, achieving\nprecise and controllable video concept transfer. Specifically, in terms of\nspatial decomposition, we decouple videos into three key components: the\nforeground subject, the background, and the motion flow. Building upon this\ndecomposed formulation, we further introduce a dual-to-single-stream DiT-based\narchitecture for supporting fine-grained control over different components in\nthe videos. We also introduce a self-supervised pretraining strategy based on\nrandom masking to enhance the decomposed representation learning from\nlarge-scale unlabeled video data. Inspired by the Chain-of-Thought reasoning\nparadigm, we further revisit the denoising diffusion process and propose a\nChain-of-Prompt (CoP) mechanism to achieve the timestep decomposition. We\ndecompose the denoising process into three stages of different granularity and\nleverage large language models (LLMs) for stage-specific instructions to guide\nthe generation progressively. We also curate an animal-centric video dataset\ncalled OpenAnimal to facilitate the advancement and benchmarking of research in\nvideo concept transfer. Extensive experiments demonstrate that our method\nachieves high-quality and controllable video concept transfer across diverse\nreference images and scenes, surpassing existing baselines in both visual\nfidelity and editability. Web Page:\nhttps://yu-shaonian.github.io/UniTransfer-Web/",
+        "url": "http://arxiv.org/abs/2509.21086v1",
+        "published_date": "2025-09-25T12:39:06+00:00",
+        "updated_date": "2025-09-25T12:39:06+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Guojun Lei",
+            "Rong Zhang",
+            "Chi Wang",
+            "Tianhang Liu",
+            "Hong Li",
+            "Zhiyuan Ma",
+            "Weiwei Xu"
+        ],
+        "tldr": "UniTransfer introduces a novel architecture for video concept transfer using spatial and timestep decomposition with a Chain-of-Prompt mechanism guided by LLMs, achieving high-quality and controllable video editing.",
+        "tldr_zh": "UniTransfer 提出了一种新颖的视频概念迁移架构，该架构使用空间和时间步分解，以及由大型语言模型引导的 Chain-of-Prompt 机制，实现了高质量和可控的视频编辑。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "KeyWorld: Key Frame Reasoning Enables Effective and Efficient World Models",
+        "summary": "Robotic world models are a promising paradigm for forecasting future\nenvironment states, yet their inference speed and the physical plausibility of\ngenerated trajectories remain critical bottlenecks, limiting their real-world\napplications. This stems from the redundancy of the prevailing frame-to-frame\ngeneration approach, where the model conducts costly computation on similar\nframes, as well as neglecting the semantic importance of key transitions. To\naddress this inefficiency, we propose KeyWorld, a framework that improves\ntext-conditioned robotic world models by concentrating transformers computation\non a few semantic key frames while employing a lightweight convolutional model\nto fill the intermediate frames. Specifically, KeyWorld first identifies\nsignificant transitions by iteratively simplifying the robot's motion\ntrajectories, obtaining the ground truth key frames. Then, a DiT model is\ntrained to reason and generate these physically meaningful key frames from\ntextual task descriptions. Finally, a lightweight interpolator efficiently\nreconstructs the full video by inpainting all intermediate frames. Evaluations\non the LIBERO benchmark demonstrate that KeyWorld achieves a 5.68$\\times$\nacceleration compared to the frame-to-frame generation baseline, and focusing\non the motion-aware key frames further contributes to the physical validity of\nthe generated videos, especially on complex tasks. Our approach highlights a\npractical path toward deploying world models in real-time robotic control and\nother domains requiring both efficient and effective world models. Code is\nreleased at https://anonymous.4open.science/r/Keyworld-E43D.",
+        "url": "http://arxiv.org/abs/2509.21027v1",
+        "published_date": "2025-09-25T11:35:40+00:00",
+        "updated_date": "2025-09-25T11:35:40+00:00",
+        "categories": [
+            "cs.RO",
+            "cs.CV"
+        ],
+        "authors": [
+            "Sibo Li",
+            "Qianyue Hao",
+            "Yu Shang",
+            "Yong Li"
+        ],
+        "tldr": "The paper introduces KeyWorld, a framework for efficient and effective robotic world models that accelerates video generation by focusing computation on key frames identified via motion trajectory simplification and using a lightweight interpolator for intermediate frames.",
+        "tldr_zh": "该论文介绍了KeyWorld，一个高效的机器人世界模型框架，通过集中计算运动轨迹简化识别的关键帧，并使用轻量级插值器来生成中间帧，从而加速视频生成。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
