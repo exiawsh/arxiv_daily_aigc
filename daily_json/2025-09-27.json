@@ -1,0 +1,215 @@
+[
+    {
+        "title": "LongLive: Real-time Interactive Long Video Generation",
+        "summary": "We present LongLive, a frame-level autoregressive (AR) framework for\nreal-time and interactive long video generation. Long video generation presents\nchallenges in both efficiency and quality. Diffusion and Diffusion-Forcing\nmodels can produce high-quality videos but suffer from low efficiency due to\nbidirectional attention. Causal attention AR models support KV caching for\nfaster inference, but often degrade in quality on long videos due to memory\nchallenges during long-video training. In addition, beyond static prompt-based\ngeneration, interactive capabilities, such as streaming prompt inputs, are\ncritical for dynamic content creation, enabling users to guide narratives in\nreal time. This interactive requirement significantly increases complexity,\nespecially in ensuring visual consistency and semantic coherence during prompt\ntransitions. To address these challenges, LongLive adopts a causal, frame-level\nAR design that integrates a KV-recache mechanism that refreshes cached states\nwith new prompts for smooth, adherent switches; streaming long tuning to enable\nlong video training and to align training and inference (train-long-test-long);\nand short window attention paired with a frame-level attention sink, shorten as\nframe sink, preserving long-range consistency while enabling faster generation.\nWith these key designs, LongLive fine-tunes a 1.3B-parameter short-clip model\nto minute-long generation in just 32 GPU-days. At inference, LongLive sustains\n20.7 FPS on a single NVIDIA H100, achieves strong performance on VBench in both\nshort and long videos. LongLive supports up to 240-second videos on a single\nH100 GPU. LongLive further supports INT8-quantized inference with only marginal\nquality loss.",
+        "url": "http://arxiv.org/abs/2509.22622v1",
+        "published_date": "2025-09-26T17:48:24+00:00",
+        "updated_date": "2025-09-26T17:48:24+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Shuai Yang",
+            "Wei Huang",
+            "Ruihang Chu",
+            "Yicheng Xiao",
+            "Yuyang Zhao",
+            "Xianbang Wang",
+            "Muyang Li",
+            "Enze Xie",
+            "Yingcong Chen",
+            "Yao Lu",
+            "Song Han",
+            "Yukang Chen"
+        ],
+        "tldr": "LongLive is a frame-level autoregressive framework for real-time interactive long video generation that addresses efficiency and quality challenges by integrating KV-recache, streaming long tuning, and frame sink attention mechanisms.",
+        "tldr_zh": "LongLive是一个帧级别的自回归框架，用于实时交互式长视频生成，通过集成KV-recache、流式长时调优和帧sink注意力机制，解决了效率和质量方面的挑战。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "LongScape: Advancing Long-Horizon Embodied World Models with Context-Aware MoE",
+        "summary": "Video-based world models hold significant potential for generating\nhigh-quality embodied manipulation data. However, current video generation\nmethods struggle to achieve stable long-horizon generation: classical\ndiffusion-based approaches often suffer from temporal inconsistency and visual\ndrift over multiple rollouts, while autoregressive methods tend to compromise\non visual detail. To solve this, we introduce LongScape, a hybrid framework\nthat adaptively combines intra-chunk diffusion denoising with inter-chunk\nautoregressive causal generation. Our core innovation is an action-guided,\nvariable-length chunking mechanism that partitions video based on the semantic\ncontext of robotic actions. This ensures each chunk represents a complete,\ncoherent action, enabling the model to flexibly generate diverse dynamics. We\nfurther introduce a Context-aware Mixture-of-Experts (CMoE) framework that\nadaptively activates specialized experts for each chunk during generation,\nguaranteeing high visual quality and seamless chunk transitions. Extensive\nexperimental results demonstrate that our method achieves stable and consistent\nlong-horizon generation over extended rollouts. Our code is available at:\nhttps://github.com/tsinghua-fib-lab/Longscape.",
+        "url": "http://arxiv.org/abs/2509.21790v1",
+        "published_date": "2025-09-26T02:47:05+00:00",
+        "updated_date": "2025-09-26T02:47:05+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yu Shang",
+            "Lei Jin",
+            "Yiding Ma",
+            "Xin Zhang",
+            "Chen Gao",
+            "Wei Wu",
+            "Yong Li"
+        ],
+        "tldr": "LongScape introduces a hybrid video generation framework combining diffusion and autoregressive models with context-aware chunking and Mixture-of-Experts to achieve stable long-horizon embodied manipulation data generation.",
+        "tldr_zh": "LongScape 引入了一种混合视频生成框架，结合了扩散模型和自回归模型，通过上下文感知的分块和混合专家网络来实现稳定的长时程具身操作数据生成。",
+        "relevance_score": 10,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "MoWM: Mixture-of-World-Models for Embodied Planning via Latent-to-Pixel Feature Modulation",
+        "summary": "Embodied action planning is a core challenge in robotics, requiring models to\ngenerate precise actions from visual observations and language instructions.\nWhile video generation world models are promising, their reliance on\npixel-level reconstruction often introduces visual redundancies that hinder\naction decoding and generalization. Latent world models offer a compact,\nmotion-aware representation, but overlook the fine-grained details critical for\nprecise manipulation. To overcome these limitations, we propose MoWM, a\nmixture-of-world-model framework that fuses representations from hybrid world\nmodels for embodied action planning. Our approach uses motion-aware\nrepresentations from a latent model as a high-level prior, which guides the\nextraction of fine-grained visual features from the pixel space model. This\ndesign allows MoWM to highlight the informative visual details needed for\naction decoding. Extensive evaluations on the CALVIN benchmark demonstrate that\nour method achieves state-of-the-art task success rates and superior\ngeneralization. We also provide a comprehensive analysis of the strengths of\neach feature space, offering valuable insights for future research in embodied\nplanning. The code is available at: https://github.com/tsinghua-fib-lab/MoWM.",
+        "url": "http://arxiv.org/abs/2509.21797v1",
+        "published_date": "2025-09-26T02:54:36+00:00",
+        "updated_date": "2025-09-26T02:54:36+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yu Shang",
+            "Yangcheng Yu",
+            "Xin Zhang",
+            "Xin Jin",
+            "Haisheng Su",
+            "Wei Wu",
+            "Yong Li"
+        ],
+        "tldr": "The paper introduces MoWM, a mixture-of-world-model framework that combines latent and pixel space representations for improved embodied action planning, achieving state-of-the-art results on the CALVIN benchmark.",
+        "tldr_zh": "该论文介绍了 MoWM，一种混合世界模型框架，结合了潜在空间和像素空间表示，以改进具身动作规划，并在 CALVIN 基准测试中取得了最先进的结果。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "What Happens Next? Anticipating Future Motion by Generating Point Trajectories",
+        "summary": "We consider the problem of forecasting motion from a single image, i.e.,\npredicting how objects in the world are likely to move, without the ability to\nobserve other parameters such as the object velocities or the forces applied to\nthem. We formulate this task as conditional generation of dense trajectory\ngrids with a model that closely follows the architecture of modern video\ngenerators but outputs motion trajectories instead of pixels. This approach\ncaptures scene-wide dynamics and uncertainty, yielding more accurate and\ndiverse predictions than prior regressors and generators. We extensively\nevaluate our method on simulated data, demonstrate its effectiveness on\ndownstream applications such as robotics, and show promising accuracy on\nreal-world intuitive physics datasets. Although recent state-of-the-art video\ngenerators are often regarded as world models, we show that they struggle with\nforecasting motion from a single image, even in simple physical scenarios such\nas falling blocks or mechanical object interactions, despite fine-tuning on\nsuch data. We show that this limitation arises from the overhead of generating\npixels rather than directly modeling motion.",
+        "url": "http://arxiv.org/abs/2509.21592v1",
+        "published_date": "2025-09-25T21:03:56+00:00",
+        "updated_date": "2025-09-25T21:03:56+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.LG"
+        ],
+        "authors": [
+            "Gabrijel Boduljak",
+            "Laurynas Karazija",
+            "Iro Laina",
+            "Christian Rupprecht",
+            "Andrea Vedaldi"
+        ],
+        "tldr": "The paper proposes a method for forecasting motion from a single image by generating dense trajectory grids, outperforming existing video generators that struggle with modeling motion directly from pixels.",
+        "tldr_zh": "本文提出了一种从单张图像预测运动的方法，通过生成密集的轨迹网格，优于现有在像素基础上直接建模运动的视频生成器。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "X-Streamer: Unified Human World Modeling with Audiovisual Interaction",
+        "summary": "We introduce X-Streamer, an end-to-end multimodal human world modeling\nframework for building digital human agents capable of infinite interactions\nacross text, speech, and video within a single unified architecture. Starting\nfrom a single portrait, X-Streamer enables real-time, open-ended video calls\ndriven by streaming multimodal inputs. At its core is a Thinker-Actor\ndual-transformer architecture that unifies multimodal understanding and\ngeneration, turning a static portrait into persistent and intelligent\naudiovisual interactions. The Thinker module perceives and reasons over\nstreaming user inputs, while its hidden states are translated by the Actor into\nsynchronized multimodal streams in real time. Concretely, the Thinker leverages\na pretrained large language-speech model, while the Actor employs a chunk-wise\nautoregressive diffusion model that cross-attends to the Thinker's hidden\nstates to produce time-aligned multimodal responses with interleaved discrete\ntext and audio tokens and continuous video latents. To ensure long-horizon\nstability, we design inter- and intra-chunk attentions with time-aligned\nmultimodal positional embeddings for fine-grained cross-modality alignment and\ncontext retention, further reinforced by chunk-wise diffusion forcing and\nglobal identity referencing. X-Streamer runs in real time on two A100 GPUs,\nsustaining hours-long consistent video chat experiences from arbitrary\nportraits and paving the way toward unified world modeling of interactive\ndigital humans.",
+        "url": "http://arxiv.org/abs/2509.21574v1",
+        "published_date": "2025-09-25T20:53:27+00:00",
+        "updated_date": "2025-09-25T20:53:27+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "You Xie",
+            "Tianpei Gu",
+            "Zenan Li",
+            "Chenxu Zhang",
+            "Guoxian Song",
+            "Xiaochen Zhao",
+            "Chao Liang",
+            "Jianwen Jiang",
+            "Hongyi Xu",
+            "Linjie Luo"
+        ],
+        "tldr": "X-Streamer introduces a unified multimodal framework for creating interactive digital humans capable of real-time, open-ended video calls using a Thinker-Actor architecture. It achieves long-horizon stability through chunk-wise processing and runs on two A100 GPUs.",
+        "tldr_zh": "X-Streamer 介绍了一个统一的多模态框架，用于创建能够进行实时、开放式视频通话的交互式数字人，该框架使用 Thinker-Actor 架构。它通过分块处理实现长期稳定性，并在两个 A100 GPU 上运行。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "DiTraj: training-free trajectory control for video diffusion transformer",
+        "summary": "Diffusion Transformers (DiT)-based video generation models with 3D full\nattention exhibit strong generative capabilities. Trajectory control represents\na user-friendly task in the field of controllable video generation. However,\nexisting methods either require substantial training resources or are\nspecifically designed for U-Net, do not take advantage of the superior\nperformance of DiT. To address these issues, we propose DiTraj, a simple but\neffective training-free framework for trajectory control in text-to-video\ngeneration, tailored for DiT. Specifically, first, to inject the object's\ntrajectory, we propose foreground-background separation guidance: we use the\nLarge Language Model (LLM) to convert user-provided prompts into foreground and\nbackground prompts, which respectively guide the generation of foreground and\nbackground regions in the video. Then, we analyze 3D full attention and explore\nthe tight correlation between inter-token attention scores and position\nembedding. Based on this, we propose inter-frame Spatial-Temporal Decoupled\n3D-RoPE (STD-RoPE). By modifying only foreground tokens' position embedding,\nSTD-RoPE eliminates their cross-frame spatial discrepancies, strengthening\ncross-frame attention among them and thus enhancing trajectory control.\nAdditionally, we achieve 3D-aware trajectory control by regulating the density\nof position embedding. Extensive experiments demonstrate that our method\noutperforms previous methods in both video quality and trajectory\ncontrollability.",
+        "url": "http://arxiv.org/abs/2509.21839v2",
+        "published_date": "2025-09-26T03:53:31+00:00",
+        "updated_date": "2025-09-29T09:15:43+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Cheng Lei",
+            "Jiayu Zhang",
+            "Yue Ma",
+            "Xinyu Wang",
+            "Long Chen",
+            "Liang Tang",
+            "Yiqiang Yan",
+            "Fei Su",
+            "Zhicheng Zhao"
+        ],
+        "tldr": "This paper introduces DiTraj, a training-free method for trajectory control in DiT-based text-to-video generation, utilizing foreground-background separation and spatial-temporal decoupled RoPE to improve controllability and video quality.",
+        "tldr_zh": "本文介绍了DiTraj，一种无需训练的DiT视频生成轨迹控制方法。该方法利用前景-背景分离指导和空间-时间解耦的RoPE来提升可控性和视频质量。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 8,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    },
+    {
+        "title": "UniVid: Unifying Vision Tasks with Pre-trained Video Generation Models",
+        "summary": "Large language models, trained on extensive corpora, successfully unify\ndiverse linguistic tasks within a single generative framework. Inspired by\nthis, recent works like Large Vision Model (LVM) extend this paradigm to vision\nby organizing tasks into sequential visual sentences, where visual prompts\nserve as the context to guide outputs. However, such modeling requires\ntask-specific pre-training across modalities and sources, which is costly and\nlimits scalability to unseen tasks. Given that pre-trained video generation\nmodels inherently capture temporal sequence dependencies, we explore a more\nunified and scalable alternative: can a pre-trained video generation model\nadapt to diverse image and video tasks? To answer this, we propose UniVid, a\nframework that fine-tunes a video diffusion transformer to handle various\nvision tasks without task-specific modifications. Tasks are represented as\nvisual sentences, where the context sequence defines both the task and the\nexpected output modality. We evaluate the generalization of UniVid from two\nperspectives: (1) cross-modal inference with contexts composed of both images\nand videos, extending beyond LVM's uni-modal setting; (2) cross-source tasks\nfrom natural to annotated data, without multi-source pre-training. Despite\nbeing trained solely on natural video data, UniVid generalizes well in both\nsettings. Notably, understanding and generation tasks can easily switch by\nsimply reversing the visual sentence order in this paradigm. These findings\nhighlight the potential of pre-trained video generation models to serve as a\nscalable and unified foundation for vision modeling. Our code will be released\nat https://github.com/CUC-MIPG/UniVid.",
+        "url": "http://arxiv.org/abs/2509.21760v1",
+        "published_date": "2025-09-26T01:43:40+00:00",
+        "updated_date": "2025-09-26T01:43:40+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Lan Chen",
+            "Yuchao Gu",
+            "Qi Mao"
+        ],
+        "tldr": "The paper introduces UniVid, a framework that fine-tunes a pre-trained video diffusion transformer to perform various vision tasks by representing them as visual sentences, demonstrating generalization across modalities and sources without task-specific pre-training.",
+        "tldr_zh": "该论文介绍了 UniVid，一个通过微调预训练视频扩散 Transformer，将各种视觉任务表示为视觉语句来执行这些任务的框架，展示了跨模态和跨来源的泛化能力，而无需针对特定任务的预训练。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    },
+    {
+        "title": "ControlHair: Physically-based Video Diffusion for Controllable Dynamic Hair Rendering",
+        "summary": "Hair simulation and rendering are challenging due to complex strand dynamics,\ndiverse material properties, and intricate light-hair interactions. Recent\nvideo diffusion models can generate high-quality videos, but they lack\nfine-grained control over hair dynamics. We present ControlHair, a hybrid\nframework that integrates a physics simulator with conditional video diffusion\nto enable controllable dynamic hair rendering. ControlHair adopts a three-stage\npipeline: it first encodes physics parameters (e.g., hair stiffness, wind) into\nper-frame geometry using a simulator, then extracts per-frame control signals,\nand finally feeds control signals into a video diffusion model to generate\nvideos with desired hair dynamics. This cascaded design decouples physics\nreasoning from video generation, supports diverse physics, and makes training\nthe video diffusion model easy. Trained on a curated 10K video dataset,\nControlHair outperforms text- and pose-conditioned baselines, delivering\nprecisely controlled hair dynamics. We further demonstrate three use cases of\nControlHair: dynamic hairstyle try-on, bullet-time effects, and cinemagraphic.\nControlHair introduces the first physics-informed video diffusion framework for\ncontrollable dynamics. We provide a teaser video and experimental results on\nour website.",
+        "url": "http://arxiv.org/abs/2509.21541v2",
+        "published_date": "2025-09-25T20:29:05+00:00",
+        "updated_date": "2025-09-29T10:41:47+00:00",
+        "categories": [
+            "cs.GR",
+            "cs.CV",
+            "I.3; I.2; I.4"
+        ],
+        "authors": [
+            "Weikai Lin",
+            "Haoxiang Li",
+            "Yuhao Zhu"
+        ],
+        "tldr": "ControlHair introduces a physics-informed video diffusion framework that integrates physics simulation with conditional video diffusion to enable controllable dynamic hair rendering.",
+        "tldr_zh": "ControlHair 引入了一个物理信息视频扩散框架，该框架将物理模拟与条件视频扩散相结合，以实现可控的动态头发渲染。",
+        "relevance_score": 6,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]
