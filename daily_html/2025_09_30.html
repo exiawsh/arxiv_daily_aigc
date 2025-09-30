@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - September 19, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - September 30, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>September 19, 2025</p>
+            <p>September 30, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -208,124 +208,19 @@
     <div class="bento-grid" id="paper-grid">
         
         <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.0, ease: 'easeOut' }"  
-            class="bento-item"
+            initial="{ opacity: 0 }"
+            animate="{ opacity: 1 }"
+            transition="{ duration: 0.5 }"
+            class="bento-item col-span-full text-center text-gray-500"
             data-motion-element
         >
-            <h2 class="paper-title">WorldForge: Unlocking Emergent 3D/4D Generation in Video Diffusion Model via Training-Free Guidance</h2>
-            
-            <p class="paper-summary">Recent video diffusion models demonstrate strong potential in spatial
-intelligence tasks due to their rich latent world priors. However, this
-potential is hindered by their limited controllability and geometric
-inconsistency, creating a gap between their strong priors and their practical
-use in 3D/4D tasks. As a result, current approaches often rely on retraining or
-fine-tuning, which risks degrading pretrained knowledge and incurs high
-computational costs. To address this, we propose WorldForge, a training-free,
-inference-time framework composed of three tightly coupled modules. Intra-Step
-Recursive Refinement introduces a recursive refinement mechanism during
-inference, which repeatedly optimizes network predictions within each denoising
-step to enable precise trajectory injection. Flow-Gated Latent Fusion leverages
-optical flow similarity to decouple motion from appearance in the latent space
-and selectively inject trajectory guidance into motion-related channels.
-Dual-Path Self-Corrective Guidance compares guided and unguided denoising paths
-to adaptively correct trajectory drift caused by noisy or misaligned structural
-signals. Together, these components inject fine-grained, trajectory-aligned
-guidance without training, achieving both accurate motion control and
-photorealistic content generation. Extensive experiments across diverse
-benchmarks validate our method's superiority in realism, trajectory
-consistency, and visual fidelity. This work introduces a novel plug-and-play
-paradigm for controllable video synthesis, offering a new perspective on
-leveraging generative priors for spatial intelligence.</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces WorldForge, a training-free framework to improve controllability and geometric consistency in video diffusion models for 3D/4D tasks by injecting fine-grained, trajectory-aligned guidance during inference.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了一种名为WorldForge的免训练框架，通过在推理过程中注入细粒度的、轨迹对齐的指导，以提高视频扩散模型在3D/4D任务中的可控性和几何一致性。</p>
-            
-
-            
-            
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-            </div>
-            
-            
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="far fa-star"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2509.15130v1" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Chenxi Song, Yanming Yang, Tong Zhao, Ruibo Li, Chi Zhang</p>
-            
+            <p>No relevant papers found for today.</p>
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-09-30 03:33:41 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-09-30 06:11:32 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
