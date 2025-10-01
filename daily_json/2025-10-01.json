@@ -1,0 +1,25 @@
+[
+    {
+        "title": "VRWKV-Editor: Reducing quadratic complexity in transformer-based video editing",
+        "summary": "In light of recent progress in video editing, deep learning models focusing\non both spatial and temporal dependencies have emerged as the primary method.\nHowever, these models suffer from the quadratic computational complexity of\ntraditional attention mechanisms, making them difficult to adapt to\nlong-duration and high-resolution videos. This limitation restricts their\napplicability in practical contexts such as real-time video processing. To\ntackle this challenge, we introduce a method to reduce both time and space\ncomplexity of these systems by proposing VRWKV-Editor, a novel video editing\nmodel that integrates a linear spatio-temporal aggregation module into\nvideo-based diffusion models. VRWKV-Editor leverages bidirectional weighted\nkey-value recurrence mechanism of the RWKV transformer to capture global\ndependencies while preserving temporal coherence, achieving linear complexity\nwithout sacrificing quality. Extensive experiments demonstrate that the\nproposed method achieves up to 3.7x speedup and 60% lower memory usage compared\nto state-of-the-art diffusion-based video editing methods, while maintaining\ncompetitive performance in frame consistency and text alignment. Furthermore, a\ncomparative analysis we conducted on videos with different sequence lengths\nconfirms that the gap in editing speed between our approach and architectures\nwith self-attention becomes more significant with long videos.",
+        "url": "http://arxiv.org/abs/2509.25998v1",
+        "published_date": "2025-09-30T09:30:23+00:00",
+        "updated_date": "2025-09-30T09:30:23+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Abdelilah Aitrouga",
+            "Youssef Hmamouche",
+            "Amal El Fallah Seghrouchni"
+        ],
+        "tldr": "This paper introduces VRWKV-Editor, a novel video editing model that uses a linear spatio-temporal aggregation module within a diffusion model, achieving significant speedups and reduced memory usage compared to existing methods.",
+        "tldr_zh": "本文介绍了VRWKV-Editor，一种新的视频编辑模型，它在扩散模型中使用了线性时空聚合模块，与现有方法相比，实现了显著的加速并降低了内存使用。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
