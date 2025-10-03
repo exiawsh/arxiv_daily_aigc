@@ -1,0 +1,133 @@
+[
+    {
+        "title": "MultiModal Action Conditioned Video Generation",
+        "summary": "Current video models fail as world model as they lack fine-graiend control.\nGeneral-purpose household robots require real-time fine motor control to handle\ndelicate tasks and urgent situations. In this work, we introduce fine-grained\nmultimodal actions to capture such precise control. We consider senses of\nproprioception, kinesthesia, force haptics, and muscle activation. Such\nmultimodal senses naturally enables fine-grained interactions that are\ndifficult to simulate with text-conditioned generative models. To effectively\nsimulate fine-grained multisensory actions, we develop a feature learning\nparadigm that aligns these modalities while preserving the unique information\neach modality provides. We further propose a regularization scheme to enhance\ncausality of the action trajectory features in representing intricate\ninteraction dynamics. Experiments show that incorporating multimodal senses\nimproves simulation accuracy and reduces temporal drift. Extensive ablation\nstudies and downstream applications demonstrate the effectiveness and\npracticality of our work.",
+        "url": "http://arxiv.org/abs/2510.02287v1",
+        "published_date": "2025-10-02T17:57:06+00:00",
+        "updated_date": "2025-10-02T17:57:06+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yichen Li",
+            "Antonio Torralba"
+        ],
+        "tldr": "This paper introduces a multimodal action-conditioned video generation model that uses proprioception, kinesthesia, force haptics, and muscle activation to enable fine-grained control, improving simulation accuracy and reducing temporal drift compared to text-conditioned models.",
+        "tldr_zh": "本文介绍了一种多模态动作条件视频生成模型，该模型利用本体感受、运动感觉、力触觉和肌肉激活来实现细粒度控制，与文本条件模型相比，提高了模拟精度并减少了时间漂移。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Learning to Generate Object Interactions with Physics-Guided Video Diffusion",
+        "summary": "Recent models for video generation have achieved remarkable progress and are\nnow deployed in film, social media production, and advertising. Beyond their\ncreative potential, such models also hold promise as world simulators for\nrobotics and embodied decision making. Despite strong advances, however,\ncurrent approaches still struggle to generate physically plausible object\ninteractions and lack physics-grounded control mechanisms. To address this\nlimitation, we introduce KineMask, an approach for physics-guided video\ngeneration that enables realistic rigid body control, interactions, and\neffects. Given a single image and a specified object velocity, our method\ngenerates videos with inferred motions and future object interactions. We\npropose a two-stage training strategy that gradually removes future motion\nsupervision via object masks. Using this strategy we train video diffusion\nmodels (VDMs) on synthetic scenes of simple interactions and demonstrate\nsignificant improvements of object interactions in real scenes. Furthermore,\nKineMask integrates low-level motion control with high-level textual\nconditioning via predictive scene descriptions, leading to effective support\nfor synthesis of complex dynamical phenomena. Extensive experiments show that\nKineMask achieves strong improvements over recent models of comparable size.\nAblation studies further highlight the complementary roles of low- and\nhigh-level conditioning in VDMs. Our code, model, and data will be made\npublicly available.",
+        "url": "http://arxiv.org/abs/2510.02284v1",
+        "published_date": "2025-10-02T17:56:46+00:00",
+        "updated_date": "2025-10-02T17:56:46+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.LG"
+        ],
+        "authors": [
+            "David Romero",
+            "Ariana Bermudez",
+            "Hao Li",
+            "Fabio Pizzati",
+            "Ivan Laptev"
+        ],
+        "tldr": "The paper introduces KineMask, a physics-guided video diffusion model for generating realistic object interactions with rigid body control, showing improvements over existing methods in both synthetic and real-world scenes.",
+        "tldr_zh": "该论文介绍了KineMask，一种物理引导的视频扩散模型，用于生成具有刚体控制的真实物体交互，并在合成和真实场景中均表现出优于现有方法的改进。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Self-Forcing++: Towards Minute-Scale High-Quality Video Generation",
+        "summary": "Diffusion models have revolutionized image and video generation, achieving\nunprecedented visual quality. However, their reliance on transformer\narchitectures incurs prohibitively high computational costs, particularly when\nextending generation to long videos. Recent work has explored autoregressive\nformulations for long video generation, typically by distilling from\nshort-horizon bidirectional teachers. Nevertheless, given that teacher models\ncannot synthesize long videos, the extrapolation of student models beyond their\ntraining horizon often leads to pronounced quality degradation, arising from\nthe compounding of errors within the continuous latent space. In this paper, we\npropose a simple yet effective approach to mitigate quality degradation in\nlong-horizon video generation without requiring supervision from long-video\nteachers or retraining on long video datasets. Our approach centers on\nexploiting the rich knowledge of teacher models to provide guidance for the\nstudent model through sampled segments drawn from self-generated long videos.\nOur method maintains temporal consistency while scaling video length by up to\n20x beyond teacher's capability, avoiding common issues such as over-exposure\nand error-accumulation without recomputing overlapping frames like previous\nmethods. When scaling up the computation, our method shows the capability of\ngenerating videos up to 4 minutes and 15 seconds, equivalent to 99.9% of the\nmaximum span supported by our base model's position embedding and more than 50x\nlonger than that of our baseline model. Experiments on standard benchmarks and\nour proposed improved benchmark demonstrate that our approach substantially\noutperforms baseline methods in both fidelity and consistency. Our long-horizon\nvideos demo can be found at https://self-forcing-plus-plus.github.io/",
+        "url": "http://arxiv.org/abs/2510.02283v1",
+        "published_date": "2025-10-02T17:55:42+00:00",
+        "updated_date": "2025-10-02T17:55:42+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Justin Cui",
+            "Jie Wu",
+            "Ming Li",
+            "Tao Yang",
+            "Xiaojie Li",
+            "Rui Wang",
+            "Andrew Bai",
+            "Yuanhao Ban",
+            "Cho-Jui Hsieh"
+        ],
+        "tldr": "The paper introduces Self-Forcing++, a method for generating long, high-quality videos by guiding a student model with sampled segments from self-generated long videos, effectively extending video length beyond the teacher model's capabilities without significant quality degradation or retraining.",
+        "tldr_zh": "该论文介绍了Self-Forcing++，一种通过使用自生成长视频的抽样片段来指导学生模型，从而生成高质量长视频的方法，有效地将视频长度扩展到超过教师模型的能力，且不会显著降低质量或需要重新训练。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Pack and Force Your Memory: Long-form and Consistent Video Generation",
+        "summary": "Long-form video generation presents a dual challenge: models must capture\nlong-range dependencies while preventing the error accumulation inherent in\nautoregressive decoding. To address these challenges, we make two\ncontributions. First, for dynamic context modeling, we propose MemoryPack, a\nlearnable context-retrieval mechanism that leverages both textual and image\ninformation as global guidance to jointly model short- and long-term\ndependencies, achieving minute-level temporal consistency. This design scales\ngracefully with video length, preserves computational efficiency, and maintains\nlinear complexity. Second, to mitigate error accumulation, we introduce Direct\nForcing, an efficient single-step approximating strategy that improves\ntraining-inference alignment and thereby curtails error propagation during\ninference. Together, MemoryPack and Direct Forcing substantially enhance the\ncontext consistency and reliability of long-form video generation, advancing\nthe practical usability of autoregressive video models.",
+        "url": "http://arxiv.org/abs/2510.01784v1",
+        "published_date": "2025-10-02T08:22:46+00:00",
+        "updated_date": "2025-10-02T08:22:46+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Xiaofei Wu",
+            "Guozhen Zhang",
+            "Zhiyong Xu",
+            "Yuan Zhou",
+            "Qinglin Lu",
+            "Xuming He"
+        ],
+        "tldr": "This paper introduces MemoryPack and Direct Forcing to improve long-form video generation by addressing long-range dependency modeling and error accumulation during autoregressive decoding.",
+        "tldr_zh": "该论文介绍了 MemoryPack 和 Direct Forcing，通过解决长程依赖建模和自回归解码过程中的误差累积问题，来改进长视频生成。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Growing Visual Generative Capacity for Pre-Trained MLLMs",
+        "summary": "Multimodal large language models (MLLMs) extend the success of language\nmodels to visual understanding, and recent efforts have sought to build unified\nMLLMs that support both understanding and generation. However, constructing\nsuch models remains challenging: hybrid approaches combine continuous\nembeddings with diffusion or flow-based objectives, producing high-quality\nimages but breaking the autoregressive paradigm, while pure autoregressive\napproaches unify text and image prediction over discrete visual tokens but\noften face trade-offs between semantic alignment and pixel-level fidelity. In\nthis work, we present Bridge, a pure autoregressive unified MLLM that augments\npre-trained visual understanding models with generative ability through a\nMixture-of-Transformers architecture, enabling both image understanding and\ngeneration within a single next-token prediction framework. To further improve\nvisual generation fidelity, we propose a semantic-to-pixel discrete\nrepresentation that integrates compact semantic tokens with fine-grained pixel\ntokens, achieving strong language alignment and precise description of visual\ndetails with only a 7.9% increase in sequence length. Extensive experiments\nacross diverse multimodal benchmarks demonstrate that Bridge achieves\ncompetitive or superior results in both understanding and generation\nbenchmarks, while requiring less training data and reduced training time\ncompared to prior unified MLLMs.",
+        "url": "http://arxiv.org/abs/2510.01546v1",
+        "published_date": "2025-10-02T00:40:02+00:00",
+        "updated_date": "2025-10-02T00:40:02+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.LG"
+        ],
+        "authors": [
+            "Hanyu Wang",
+            "Jiaming Han",
+            "Ziyan Yang",
+            "Qi Zhao",
+            "Shanchuan Lin",
+            "Xiangyu Yue",
+            "Abhinav Shrivastava",
+            "Zhenheng Yang",
+            "Hao Chen"
+        ],
+        "tldr": "The paper introduces Bridge, a unified MLLM using a Mixture-of-Transformers architecture for both image understanding and generation via next-token prediction, achieving competitive performance with less data and training time.",
+        "tldr_zh": "该论文介绍了Bridge，一个统一的MLLM，使用混合Transformer架构通过预测下一个token来进行图像理解和生成，并以更少的数据和训练时间实现了有竞争力的性能。",
+        "relevance_score": 5,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 6
+    }
+]

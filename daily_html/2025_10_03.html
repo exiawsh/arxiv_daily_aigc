@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - September 25, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 03, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>September 25, 2025</p>
+            <p>October 03, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,31 +215,28 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">EditVerse: Unifying Image and Video Editing and Generation with In-Context Learning</h2>
+            <h2 class="paper-title">MultiModal Action Conditioned Video Generation</h2>
             
-            <p class="paper-summary">Recent advances in foundation models highlight a clear trend toward
-unification and scaling, showing emergent capabilities across diverse domains.
-While image generation and editing have rapidly transitioned from task-specific
-to unified frameworks, video generation and editing remain fragmented due to
-architectural limitations and data scarcity. In this work, we introduce
-EditVerse, a unified framework for image and video generation and editing
-within a single model. By representing all modalities, i.e., text, image, and
-video, as a unified token sequence, EditVerse leverages self-attention to
-achieve robust in-context learning, natural cross-modal knowledge transfer, and
-flexible handling of inputs and outputs with arbitrary resolutions and
-durations. To address the lack of video editing training data, we design a
-scalable data pipeline that curates 232K video editing samples and combines
-them with large-scale image and video datasets for joint training. Furthermore,
-we present EditVerseBench, the first benchmark for instruction-based video
-editing covering diverse tasks and resolutions. Extensive experiments and user
-studies demonstrate that EditVerse achieves state-of-the-art performance,
-surpassing existing open-source and commercial models, while exhibiting
-emergent editing and generation abilities across modalities.</p>
+            <p class="paper-summary">Current video models fail as world model as they lack fine-graiend control.
+General-purpose household robots require real-time fine motor control to handle
+delicate tasks and urgent situations. In this work, we introduce fine-grained
+multimodal actions to capture such precise control. We consider senses of
+proprioception, kinesthesia, force haptics, and muscle activation. Such
+multimodal senses naturally enables fine-grained interactions that are
+difficult to simulate with text-conditioned generative models. To effectively
+simulate fine-grained multisensory actions, we develop a feature learning
+paradigm that aligns these modalities while preserving the unique information
+each modality provides. We further propose a regularization scheme to enhance
+causality of the action trajectory features in representing intricate
+interaction dynamics. Experiments show that incorporating multimodal senses
+improves simulation accuracy and reduces temporal drift. Extensive ablation
+studies and downstream applications demonstrate the effectiveness and
+practicality of our work.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: EditVerse is a unified framework for image and video generation and editing, leveraging in-context learning and a large-scale dataset to achieve state-of-the-art performance across modalities.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces a multimodal action-conditioned video generation model that uses proprioception, kinesthesia, force haptics, and muscle activation to enable fine-grained control, improving simulation accuracy and reducing temporal drift compared to text-conditioned models.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: EditVerse是一个统一的图像和视频生成与编辑框架，它利用上下文学习和大规模数据集，在多种模态上实现了最先进的性能。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种多模态动作条件视频生成模型，该模型利用本体感受、运动感觉、力触觉和肌肉激活来实现细粒度控制，与文本条件模型相比，提高了模拟精度并减少了时间漂移。</p>
             
 
             
@@ -265,16 +262,16 @@ emergent editing and generation abilities across modalities.</p>
                 <div class="rating-item">
                     <span class="rating-label">Clarity:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
             </div>
@@ -303,18 +300,18 @@ emergent editing and generation abilities across modalities.</p>
                     
                 
                     
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2509.20360v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.02287v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Xuan Ju, Tianyu Wang, Yuqian Zhou, He Zhang, Qing Liu, Nanxuan Zhao, Zhifei Zhang, Yijun Li, Yuanhao Cai, Shaoteng Liu, Daniil Pakhomov, Zhe Lin, Soo Ye Kim, Qiang Xu</p>
+            <p class="paper-authors">Authors: Yichen Li, Antonio Torralba</p>
             
         </motion.div>
         
@@ -326,30 +323,34 @@ emergent editing and generation abilities across modalities.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">PhysCtrl: Generative Physics for Controllable and Physics-Grounded Video Generation</h2>
+            <h2 class="paper-title">Learning to Generate Object Interactions with Physics-Guided Video Diffusion</h2>
             
-            <p class="paper-summary">Existing video generation models excel at producing photo-realistic videos
-from text or images, but often lack physical plausibility and 3D
-controllability. To overcome these limitations, we introduce PhysCtrl, a novel
-framework for physics-grounded image-to-video generation with physical
-parameters and force control. At its core is a generative physics network that
-learns the distribution of physical dynamics across four materials (elastic,
-sand, plasticine, and rigid) via a diffusion model conditioned on physics
-parameters and applied forces. We represent physical dynamics as 3D point
-trajectories and train on a large-scale synthetic dataset of 550K animations
-generated by physics simulators. We enhance the diffusion model with a novel
-spatiotemporal attention block that emulates particle interactions and
-incorporates physics-based constraints during training to enforce physical
-plausibility. Experiments show that PhysCtrl generates realistic,
-physics-grounded motion trajectories which, when used to drive image-to-video
-models, yield high-fidelity, controllable videos that outperform existing
-methods in both visual quality and physical plausibility. Project Page:
-https://cwchenwang.github.io/physctrl</p>
+            <p class="paper-summary">Recent models for video generation have achieved remarkable progress and are
+now deployed in film, social media production, and advertising. Beyond their
+creative potential, such models also hold promise as world simulators for
+robotics and embodied decision making. Despite strong advances, however,
+current approaches still struggle to generate physically plausible object
+interactions and lack physics-grounded control mechanisms. To address this
+limitation, we introduce KineMask, an approach for physics-guided video
+generation that enables realistic rigid body control, interactions, and
+effects. Given a single image and a specified object velocity, our method
+generates videos with inferred motions and future object interactions. We
+propose a two-stage training strategy that gradually removes future motion
+supervision via object masks. Using this strategy we train video diffusion
+models (VDMs) on synthetic scenes of simple interactions and demonstrate
+significant improvements of object interactions in real scenes. Furthermore,
+KineMask integrates low-level motion control with high-level textual
+conditioning via predictive scene descriptions, leading to effective support
+for synthesis of complex dynamical phenomena. Extensive experiments show that
+KineMask achieves strong improvements over recent models of comparable size.
+Ablation studies further highlight the complementary roles of low- and
+high-level conditioning in VDMs. Our code, model, and data will be made
+publicly available.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: PhysCtrl is a novel framework for controllable and physics-grounded video generation using a diffusion model trained on a large dataset of simulated physical dynamics, outperforming existing methods in visual quality and physical plausibility.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces KineMask, a physics-guided video diffusion model for generating realistic object interactions with rigid body control, showing improvements over existing methods in both synthetic and real-world scenes.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: PhysCtrl是一个新颖的框架，用于可控的、基于物理的视频生成，它使用在大型模拟物理动态数据集上训练的扩散模型，在视觉质量和物理合理性方面优于现有方法。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了KineMask，一种物理引导的视频扩散模型，用于生成具有刚体控制的真实物体交互，并在合成和真实场景中均表现出优于现有方法的改进。</p>
             
 
             
@@ -420,11 +421,11 @@ https://cwchenwang.github.io/physctrl</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2509.20358v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.02284v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Chen Wang, Chuhao Chen, Yiming Huang, Zhiyang Dou, Yuan Liu, Jiatao Gu, Lingjie Liu</p>
+            <p class="paper-authors">Authors: David Romero, Ariana Bermudez, Hao Li, Fabio Pizzati, Ivan Laptev</p>
             
         </motion.div>
         
@@ -436,36 +437,37 @@ https://cwchenwang.github.io/physctrl</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">4D Driving Scene Generation With Stereo Forcing</h2>
+            <h2 class="paper-title">Self-Forcing++: Towards Minute-Scale High-Quality Video Generation</h2>
             
-            <p class="paper-summary">Current generative models struggle to synthesize dynamic 4D driving scenes
-that simultaneously support temporal extrapolation and spatial novel view
-synthesis (NVS) without per-scene optimization. Bridging generation and novel
-view synthesis remains a major challenge. We present PhiGenesis, a unified
-framework for 4D scene generation that extends video generation techniques with
-geometric and temporal consistency. Given multi-view image sequences and camera
-parameters, PhiGenesis produces temporally continuous 4D Gaussian splatting
-representations along target 3D trajectories. In its first stage, PhiGenesis
-leverages a pre-trained video VAE with a novel range-view adapter to enable
-feed-forward 4D reconstruction from multi-view images. This architecture
-supports single-frame or video inputs and outputs complete 4D scenes including
-geometry, semantics, and motion. In the second stage, PhiGenesis introduces a
-geometric-guided video diffusion model, using rendered historical 4D scenes as
-priors to generate future views conditioned on trajectories. To address
-geometric exposure bias in novel views, we propose Stereo Forcing, a novel
-conditioning strategy that integrates geometric uncertainty during denoising.
-This method enhances temporal coherence by dynamically adjusting generative
-influence based on uncertainty-aware perturbations. Our experimental results
-demonstrate that our method achieves state-of-the-art performance in both
-appearance and geometric reconstruction, temporal generation and novel view
-synthesis (NVS) tasks, while simultaneously delivering competitive performance
-in downstream evaluations. Homepage is at
-\href{https://jiangxb98.github.io/PhiGensis}{PhiGensis}.</p>
+            <p class="paper-summary">Diffusion models have revolutionized image and video generation, achieving
+unprecedented visual quality. However, their reliance on transformer
+architectures incurs prohibitively high computational costs, particularly when
+extending generation to long videos. Recent work has explored autoregressive
+formulations for long video generation, typically by distilling from
+short-horizon bidirectional teachers. Nevertheless, given that teacher models
+cannot synthesize long videos, the extrapolation of student models beyond their
+training horizon often leads to pronounced quality degradation, arising from
+the compounding of errors within the continuous latent space. In this paper, we
+propose a simple yet effective approach to mitigate quality degradation in
+long-horizon video generation without requiring supervision from long-video
+teachers or retraining on long video datasets. Our approach centers on
+exploiting the rich knowledge of teacher models to provide guidance for the
+student model through sampled segments drawn from self-generated long videos.
+Our method maintains temporal consistency while scaling video length by up to
+20x beyond teacher's capability, avoiding common issues such as over-exposure
+and error-accumulation without recomputing overlapping frames like previous
+methods. When scaling up the computation, our method shows the capability of
+generating videos up to 4 minutes and 15 seconds, equivalent to 99.9% of the
+maximum span supported by our base model's position embedding and more than 50x
+longer than that of our baseline model. Experiments on standard benchmarks and
+our proposed improved benchmark demonstrate that our approach substantially
+outperforms baseline methods in both fidelity and consistency. Our long-horizon
+videos demo can be found at https://self-forcing-plus-plus.github.io/</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces PhiGenesis, a framework for generating temporally consistent 4D driving scenes supporting both temporal extrapolation and novel view synthesis, using a video VAE and a geometric-guided video diffusion model with a novel 'Stereo Forcing' conditioning strategy.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Self-Forcing++, a method for generating long, high-quality videos by guiding a student model with sampled segments from self-generated long videos, effectively extending video length beyond the teacher model's capabilities without significant quality degradation or retraining.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了一种名为 PhiGenesis 的框架，用于生成时间上一致的 4D 驾驶场景，支持时间外推和新视角合成。该框架使用视频 VAE 和几何引导的视频扩散模型，并采用了一种名为“立体强制”的新型条件策略。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了Self-Forcing++，一种通过使用自生成长视频的抽样片段来指导学生模型，从而生成高质量长视频的方法，有效地将视频长度扩展到超过教师模型的能力，且不会显著降低质量或需要重新训练。</p>
             
 
             
@@ -475,24 +477,24 @@ in downstream evaluations. Homepage is at
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                     <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
+                    <span class="rating-label">Novelty:</span>
                     
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                     <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
@@ -536,11 +538,11 @@ in downstream evaluations. Homepage is at
             </div>
             
 
-            <a href="http://arxiv.org/abs/2509.20251v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.02283v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Hao Lu, Zhuang Ma, Guangfeng Jiang, Wenhang Ge, Bohan Li, Yuzhan Cai, Wenzhao Zheng, Yunpeng Zhang, Yingcong Chen</p>
+            <p class="paper-authors">Authors: Justin Cui, Jie Wu, Ming Li, Tao Yang, Xiaojie Li, Rui Wang, Andrew Bai, Yuanhao Ban, Cho-Jui Hsieh</p>
             
         </motion.div>
         
@@ -552,33 +554,27 @@ in downstream evaluations. Homepage is at
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">CamPVG: Camera-Controlled Panoramic Video Generation with Epipolar-Aware Diffusion</h2>
+            <h2 class="paper-title">Pack and Force Your Memory: Long-form and Consistent Video Generation</h2>
             
-            <p class="paper-summary">Recently, camera-controlled video generation has seen rapid development,
-offering more precise control over video generation. However, existing methods
-predominantly focus on camera control in perspective projection video
-generation, while geometrically consistent panoramic video generation remains
-challenging. This limitation is primarily due to the inherent complexities in
-panoramic pose representation and spherical projection. To address this issue,
-we propose CamPVG, the first diffusion-based framework for panoramic video
-generation guided by precise camera poses. We achieve camera position encoding
-for panoramic images and cross-view feature aggregation based on spherical
-projection. Specifically, we propose a panoramic Pl\"ucker embedding that
-encodes camera extrinsic parameters through spherical coordinate
-transformation. This pose encoder effectively captures panoramic geometry,
-overcoming the limitations of traditional methods when applied to
-equirectangular projections. Additionally, we introduce a spherical epipolar
-module that enforces geometric constraints through adaptive attention masking
-along epipolar lines. This module enables fine-grained cross-view feature
-aggregation, substantially enhancing the quality and consistency of generated
-panoramic videos. Extensive experiments demonstrate that our method generates
-high-quality panoramic videos consistent with camera trajectories, far
-surpassing existing methods in panoramic video generation.</p>
+            <p class="paper-summary">Long-form video generation presents a dual challenge: models must capture
+long-range dependencies while preventing the error accumulation inherent in
+autoregressive decoding. To address these challenges, we make two
+contributions. First, for dynamic context modeling, we propose MemoryPack, a
+learnable context-retrieval mechanism that leverages both textual and image
+information as global guidance to jointly model short- and long-term
+dependencies, achieving minute-level temporal consistency. This design scales
+gracefully with video length, preserves computational efficiency, and maintains
+linear complexity. Second, to mitigate error accumulation, we introduce Direct
+Forcing, an efficient single-step approximating strategy that improves
+training-inference alignment and thereby curtails error propagation during
+inference. Together, MemoryPack and Direct Forcing substantially enhance the
+context consistency and reliability of long-form video generation, advancing
+the practical usability of autoregressive video models.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces CamPVG, a diffusion-based framework for generating camera-controlled panoramic videos using a novel panoramic Plücker embedding and a spherical epipolar module for improved geometric consistency and quality.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces MemoryPack and Direct Forcing to improve long-form video generation by addressing long-range dependency modeling and error accumulation during autoregressive decoding.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了 CamPVG，一个基于扩散的框架，用于生成相机控制的全景视频，它采用了一种新颖的全景 Plücker 嵌入和一个球形对极模块，以提高几何一致性和质量。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了 MemoryPack 和 Direct Forcing，通过解决长程依赖建模和自回归解码过程中的误差累积问题，来改进长视频生成。</p>
             
 
             
@@ -588,13 +584,21 @@ surpassing existing methods in panoramic video generation.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                     <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
+                    <span class="rating-label">Clarity:</span>
                     
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                     <span class="text-xs text-gray-500 ml-1">(9/10)</span>
@@ -602,18 +606,10 @@ surpassing existing methods in panoramic video generation.</p>
                 
                 
                 <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
+                    <span class="rating-label">Potential Impact:</span>
                     
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                     <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
             </div>
@@ -649,11 +645,11 @@ surpassing existing methods in panoramic video generation.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2509.19979v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.01784v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Chenhao Ji, Chaohui Yu, Junyao Gao, Fan Wang, Cairong Zhao</p>
+            <p class="paper-authors">Authors: Xiaofei Wu, Guozhen Zhang, Zhiyong Xu, Yuan Zhou, Qinglin Lu, Xuming He</p>
             
         </motion.div>
         
@@ -665,31 +661,33 @@ surpassing existing methods in panoramic video generation.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">From Prompt to Progression: Taming Video Diffusion Models for Seamless Attribute Transition</h2>
+            <h2 class="paper-title">Growing Visual Generative Capacity for Pre-Trained MLLMs</h2>
             
-            <p class="paper-summary">Existing models often struggle with complex temporal changes, particularly
-when generating videos with gradual attribute transitions. The most common
-prompt interpolation approach for motion transitions often fails to handle
-gradual attribute transitions, where inconsistencies tend to become more
-pronounced. In this work, we propose a simple yet effective method to extend
-existing models for smooth and consistent attribute transitions, through
-introducing frame-wise guidance during the denoising process. Our approach
-constructs a data-specific transitional direction for each noisy latent,
-guiding the gradual shift from initial to final attributes frame by frame while
-preserving the motion dynamics of the video. Moreover, we present the
-Controlled-Attribute-Transition Benchmark (CAT-Bench), which integrates both
-attribute and motion dynamics, to comprehensively evaluate the performance of
-different models. We further propose two metrics to assess the accuracy and
-smoothness of attribute transitions. Experimental results demonstrate that our
-approach performs favorably against existing baselines, achieving visual
-fidelity, maintaining alignment with text prompts, and delivering seamless
-attribute transitions. Code and CATBench are released:
-https://github.com/lynn-ling-lo/Prompt2Progression.</p>
+            <p class="paper-summary">Multimodal large language models (MLLMs) extend the success of language
+models to visual understanding, and recent efforts have sought to build unified
+MLLMs that support both understanding and generation. However, constructing
+such models remains challenging: hybrid approaches combine continuous
+embeddings with diffusion or flow-based objectives, producing high-quality
+images but breaking the autoregressive paradigm, while pure autoregressive
+approaches unify text and image prediction over discrete visual tokens but
+often face trade-offs between semantic alignment and pixel-level fidelity. In
+this work, we present Bridge, a pure autoregressive unified MLLM that augments
+pre-trained visual understanding models with generative ability through a
+Mixture-of-Transformers architecture, enabling both image understanding and
+generation within a single next-token prediction framework. To further improve
+visual generation fidelity, we propose a semantic-to-pixel discrete
+representation that integrates compact semantic tokens with fine-grained pixel
+tokens, achieving strong language alignment and precise description of visual
+details with only a 7.9% increase in sequence length. Extensive experiments
+across diverse multimodal benchmarks demonstrate that Bridge achieves
+competitive or superior results in both understanding and generation
+benchmarks, while requiring less training data and reduced training time
+compared to prior unified MLLMs.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces a novel frame-wise guidance method for video diffusion models that enables seamless attribute transitions, along with a new benchmark (CAT-Bench) and metrics for evaluation. The experiments show improvement over existing methods.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Bridge, a unified MLLM using a Mixture-of-Transformers architecture for both image understanding and generation via next-token prediction, achieving competitive performance with less data and training time.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文提出了一种新的视频扩散模型逐帧引导方法，能够实现无缝的属性转换，同时还提出了一个新的基准测试 (CAT-Bench) 和评估指标。 实验表明，该方法优于现有方法。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了Bridge，一个统一的MLLM，使用混合Transformer架构通过预测下一个token来进行图像理解和生成，并以更少的数据和训练时间实现了有竞争力的性能。</p>
             
 
             
@@ -699,16 +697,16 @@ https://github.com/lynn-ling-lo/Prompt2Progression.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(5/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -749,29 +747,29 @@ https://github.com/lynn-ling-lo/Prompt2Progression.</p>
                     
                 
                     
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
                     
                 
                     
                         <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(6/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2509.19690v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.01546v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Ling Lo, Kelvin C. K. Chan, Wen-Huang Cheng, Ming-Hsuan Yang</p>
+            <p class="paper-authors">Authors: Hanyu Wang, Jiaming Han, Ziyan Yang, Qi Zhao, Shanchuan Lin, Xiangyu Yue, Abhinav Shrivastava, Zhenheng Yang, Hao Chen</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-10-03 03:31:05 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-10-03 03:36:16 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

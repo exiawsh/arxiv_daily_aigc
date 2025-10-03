@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - September 25, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 02, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>September 25, 2025</p>
+            <p>October 02, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,31 +215,34 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">EditVerse: Unifying Image and Video Editing and Generation with In-Context Learning</h2>
+            <h2 class="paper-title">EvoWorld: Evolving Panoramic World Generation with Explicit 3D Memory</h2>
             
-            <p class="paper-summary">Recent advances in foundation models highlight a clear trend toward
-unification and scaling, showing emergent capabilities across diverse domains.
-While image generation and editing have rapidly transitioned from task-specific
-to unified frameworks, video generation and editing remain fragmented due to
-architectural limitations and data scarcity. In this work, we introduce
-EditVerse, a unified framework for image and video generation and editing
-within a single model. By representing all modalities, i.e., text, image, and
-video, as a unified token sequence, EditVerse leverages self-attention to
-achieve robust in-context learning, natural cross-modal knowledge transfer, and
-flexible handling of inputs and outputs with arbitrary resolutions and
-durations. To address the lack of video editing training data, we design a
-scalable data pipeline that curates 232K video editing samples and combines
-them with large-scale image and video datasets for joint training. Furthermore,
-we present EditVerseBench, the first benchmark for instruction-based video
-editing covering diverse tasks and resolutions. Extensive experiments and user
-studies demonstrate that EditVerse achieves state-of-the-art performance,
-surpassing existing open-source and commercial models, while exhibiting
-emergent editing and generation abilities across modalities.</p>
+            <p class="paper-summary">Humans possess a remarkable ability to mentally explore and replay 3D
+environments they have previously experienced. Inspired by this mental process,
+we present EvoWorld: a world model that bridges panoramic video generation with
+evolving 3D memory to enable spatially consistent long-horizon exploration.
+Given a single panoramic image as input, EvoWorld first generates future video
+frames by leveraging a video generator with fine-grained view control, then
+evolves the scene's 3D reconstruction using a feedforward plug-and-play
+transformer, and finally synthesizes futures by conditioning on geometric
+reprojections from this evolving explicit 3D memory. Unlike prior
+state-of-the-arts that synthesize videos only, our key insight lies in
+exploiting this evolving 3D reconstruction as explicit spatial guidance for the
+video generation process, projecting the reconstructed geometry onto target
+viewpoints to provide rich spatial cues that significantly enhance both visual
+realism and geometric consistency. To evaluate long-range exploration
+capabilities, we introduce the first comprehensive benchmark spanning synthetic
+outdoor environments, Habitat indoor scenes, and challenging real-world
+scenarios, with particular emphasis on loop-closure detection and spatial
+coherence over extended trajectories. Extensive experiments demonstrate that
+our evolving 3D memory substantially improves visual fidelity and maintains
+spatial scene coherence compared to existing approaches, representing a
+significant advance toward long-horizon spatially consistent world modeling.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: EditVerse is a unified framework for image and video generation and editing, leveraging in-context learning and a large-scale dataset to achieve state-of-the-art performance across modalities.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: EvoWorld presents a world model that generates long-horizon, spatially consistent videos by evolving a 3D representation of the scene, which is then used to guide video generation. It introduces a benchmark for evaluating long-range exploration.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: EditVerse是一个统一的图像和视频生成与编辑框架，它利用上下文学习和大规模数据集，在多种模态上实现了最先进的性能。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: EvoWorld 提出了一个世界模型，通过演化场景的 3D 表示来生成长时程、空间一致的视频，然后利用该 3D 表示来指导视频生成。 它还引入了一个用于评估长距离探索的基准。</p>
             
 
             
@@ -273,8 +276,8 @@ emergent editing and generation abilities across modalities.</p>
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
             </div>
@@ -303,18 +306,18 @@ emergent editing and generation abilities across modalities.</p>
                     
                 
                     
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2509.20360v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.01183v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Xuan Ju, Tianyu Wang, Yuqian Zhou, He Zhang, Qing Liu, Nanxuan Zhao, Zhifei Zhang, Yijun Li, Yuanhao Cai, Shaoteng Liu, Daniil Pakhomov, Zhe Lin, Soo Ye Kim, Qiang Xu</p>
+            <p class="paper-authors">Authors: Jiahao Wang, Luoxin Ye, TaiMing Lu, Junfei Xiao, Jiahan Zhang, Yuxiang Guo, Xijun Liu, Rama Chellappa, Cheng Peng, Alan Yuille, Jieneng Chen</p>
             
         </motion.div>
         
@@ -326,30 +329,23 @@ emergent editing and generation abilities across modalities.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">PhysCtrl: Generative Physics for Controllable and Physics-Grounded Video Generation</h2>
+            <h2 class="paper-title">From Seeing to Predicting: A Vision-Language Framework for Trajectory Forecasting and Controlled Video Generation</h2>
             
-            <p class="paper-summary">Existing video generation models excel at producing photo-realistic videos
-from text or images, but often lack physical plausibility and 3D
-controllability. To overcome these limitations, we introduce PhysCtrl, a novel
-framework for physics-grounded image-to-video generation with physical
-parameters and force control. At its core is a generative physics network that
-learns the distribution of physical dynamics across four materials (elastic,
-sand, plasticine, and rigid) via a diffusion model conditioned on physics
-parameters and applied forces. We represent physical dynamics as 3D point
-trajectories and train on a large-scale synthetic dataset of 550K animations
-generated by physics simulators. We enhance the diffusion model with a novel
-spatiotemporal attention block that emulates particle interactions and
-incorporates physics-based constraints during training to enforce physical
-plausibility. Experiments show that PhysCtrl generates realistic,
-physics-grounded motion trajectories which, when used to drive image-to-video
-models, yield high-fidelity, controllable videos that outperform existing
-methods in both visual quality and physical plausibility. Project Page:
-https://cwchenwang.github.io/physctrl</p>
+            <p class="paper-summary">Current video generation models produce physically inconsistent motion that
+violates real-world dynamics. We propose TrajVLM-Gen, a two-stage framework for
+physics-aware image-to-video generation. First, we employ a Vision Language
+Model to predict coarse-grained motion trajectories that maintain consistency
+with real-world physics. Second, these trajectories guide video generation
+through attention-based mechanisms for fine-grained motion refinement. We build
+a trajectory prediction dataset based on video tracking data with realistic
+motion patterns. Experiments on UCF-101 and MSR-VTT demonstrate that
+TrajVLM-Gen outperforms existing methods, achieving competitive FVD scores of
+545 on UCF-101 and 539 on MSR-VTT.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: PhysCtrl is a novel framework for controllable and physics-grounded video generation using a diffusion model trained on a large dataset of simulated physical dynamics, outperforming existing methods in visual quality and physical plausibility.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces TrajVLM-Gen, a two-stage vision-language framework for physics-aware video generation, using trajectory prediction to guide motion refinement and improve consistency with real-world dynamics, demonstrating improvements on UCF-101 and MSR-VTT datasets.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: PhysCtrl是一个新颖的框架，用于可控的、基于物理的视频生成，它使用在大型模拟物理动态数据集上训练的扩散模型，在视觉质量和物理合理性方面优于现有方法。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文提出了TrajVLM-Gen，一个用于物理感知视频生成的两阶段视觉-语言框架，它使用轨迹预测来指导运动细化，并提高与现实世界动态的一致性，并在UCF-101和MSR-VTT数据集上展示了改进。</p>
             
 
             
@@ -420,11 +416,11 @@ https://cwchenwang.github.io/physctrl</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2509.20358v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.00806v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Chen Wang, Chuhao Chen, Yiming Huang, Zhiyang Dou, Yuan Liu, Jiatao Gu, Lingjie Liu</p>
+            <p class="paper-authors">Authors: Fan Yang, Zhiyang Chen, Yousong Zhu, Xin Li, Jinqiao Wang</p>
             
         </motion.div>
         
@@ -436,36 +432,30 @@ https://cwchenwang.github.io/physctrl</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">4D Driving Scene Generation With Stereo Forcing</h2>
+            <h2 class="paper-title">BindWeave: Subject-Consistent Video Generation via Cross-Modal Integration</h2>
             
-            <p class="paper-summary">Current generative models struggle to synthesize dynamic 4D driving scenes
-that simultaneously support temporal extrapolation and spatial novel view
-synthesis (NVS) without per-scene optimization. Bridging generation and novel
-view synthesis remains a major challenge. We present PhiGenesis, a unified
-framework for 4D scene generation that extends video generation techniques with
-geometric and temporal consistency. Given multi-view image sequences and camera
-parameters, PhiGenesis produces temporally continuous 4D Gaussian splatting
-representations along target 3D trajectories. In its first stage, PhiGenesis
-leverages a pre-trained video VAE with a novel range-view adapter to enable
-feed-forward 4D reconstruction from multi-view images. This architecture
-supports single-frame or video inputs and outputs complete 4D scenes including
-geometry, semantics, and motion. In the second stage, PhiGenesis introduces a
-geometric-guided video diffusion model, using rendered historical 4D scenes as
-priors to generate future views conditioned on trajectories. To address
-geometric exposure bias in novel views, we propose Stereo Forcing, a novel
-conditioning strategy that integrates geometric uncertainty during denoising.
-This method enhances temporal coherence by dynamically adjusting generative
-influence based on uncertainty-aware perturbations. Our experimental results
-demonstrate that our method achieves state-of-the-art performance in both
-appearance and geometric reconstruction, temporal generation and novel view
-synthesis (NVS) tasks, while simultaneously delivering competitive performance
-in downstream evaluations. Homepage is at
-\href{https://jiangxb98.github.io/PhiGensis}{PhiGensis}.</p>
+            <p class="paper-summary">Diffusion Transformer has shown remarkable abilities in generating
+high-fidelity videos, delivering visually coherent frames and rich details over
+extended durations. However, existing video generation models still fall short
+in subject-consistent video generation due to an inherent difficulty in parsing
+prompts that specify complex spatial relationships, temporal logic, and
+interactions among multiple subjects. To address this issue, we propose
+BindWeave, a unified framework that handles a broad range of subject-to-video
+scenarios from single-subject cases to complex multi-subject scenes with
+heterogeneous entities. To bind complex prompt semantics to concrete visual
+subjects, we introduce an MLLM-DiT framework in which a pretrained multimodal
+large language model performs deep cross-modal reasoning to ground entities and
+disentangle roles, attributes, and interactions, yielding subject-aware hidden
+states that condition the diffusion transformer for high-fidelity
+subject-consistent video generation. Experiments on the OpenS2V benchmark
+demonstrate that our method achieves superior performance across subject
+consistency, naturalness, and text relevance in generated videos, outperforming
+existing open-source and commercial models.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces PhiGenesis, a framework for generating temporally consistent 4D driving scenes supporting both temporal extrapolation and novel view synthesis, using a video VAE and a geometric-guided video diffusion model with a novel 'Stereo Forcing' conditioning strategy.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: BindWeave introduces a new MLLM-DiT framework for subject-consistent video generation, using cross-modal reasoning to improve consistency, naturalness, and text relevance in generated videos, particularly in complex multi-subject scenarios.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了一种名为 PhiGenesis 的框架，用于生成时间上一致的 4D 驾驶场景，支持时间外推和新视角合成。该框架使用视频 VAE 和几何引导的视频扩散模型，并采用了一种名为“立体强制”的新型条件策略。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: BindWeave 提出了一个新的 MLLM-DiT 框架，用于生成主题一致的视频。该框架利用跨模态推理来提高生成视频的一致性、自然性和文本相关性，尤其是在复杂的多主题场景中。</p>
             
 
             
@@ -475,24 +465,24 @@ in downstream evaluations. Homepage is at
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                     <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
+                    <span class="rating-label">Novelty:</span>
                     
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                     <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
@@ -536,11 +526,11 @@ in downstream evaluations. Homepage is at
             </div>
             
 
-            <a href="http://arxiv.org/abs/2509.20251v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.00438v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Hao Lu, Zhuang Ma, Guangfeng Jiang, Wenhang Ge, Bohan Li, Yuzhan Cai, Wenzhao Zheng, Yunpeng Zhang, Yingcong Chen</p>
+            <p class="paper-authors">Authors: Zhaoyang Li, Dongjun Qian, Kai Su, Qishuai Diao, Xiangyang Xia, Chang Liu, Wenfei Yang, Tianzhu Zhang, Zehuan Yuan</p>
             
         </motion.div>
         
@@ -552,144 +542,36 @@ in downstream evaluations. Homepage is at
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">CamPVG: Camera-Controlled Panoramic Video Generation with Epipolar-Aware Diffusion</h2>
+            <h2 class="paper-title">Code2Video: A Code-centric Paradigm for Educational Video Generation</h2>
             
-            <p class="paper-summary">Recently, camera-controlled video generation has seen rapid development,
-offering more precise control over video generation. However, existing methods
-predominantly focus on camera control in perspective projection video
-generation, while geometrically consistent panoramic video generation remains
-challenging. This limitation is primarily due to the inherent complexities in
-panoramic pose representation and spherical projection. To address this issue,
-we propose CamPVG, the first diffusion-based framework for panoramic video
-generation guided by precise camera poses. We achieve camera position encoding
-for panoramic images and cross-view feature aggregation based on spherical
-projection. Specifically, we propose a panoramic Pl\"ucker embedding that
-encodes camera extrinsic parameters through spherical coordinate
-transformation. This pose encoder effectively captures panoramic geometry,
-overcoming the limitations of traditional methods when applied to
-equirectangular projections. Additionally, we introduce a spherical epipolar
-module that enforces geometric constraints through adaptive attention masking
-along epipolar lines. This module enables fine-grained cross-view feature
-aggregation, substantially enhancing the quality and consistency of generated
-panoramic videos. Extensive experiments demonstrate that our method generates
-high-quality panoramic videos consistent with camera trajectories, far
-surpassing existing methods in panoramic video generation.</p>
+            <p class="paper-summary">While recent generative models advance pixel-space video synthesis, they
+remain limited in producing professional educational videos, which demand
+disciplinary knowledge, precise visual structures, and coherent transitions,
+limiting their applicability in educational scenarios. Intuitively, such
+requirements are better addressed through the manipulation of a renderable
+environment, which can be explicitly controlled via logical commands (e.g.,
+code). In this work, we propose Code2Video, a code-centric agent framework for
+generating educational videos via executable Python code. The framework
+comprises three collaborative agents: (i) Planner, which structures lecture
+content into temporally coherent flows and prepares corresponding visual
+assets; (ii) Coder, which converts structured instructions into executable
+Python codes while incorporating scope-guided auto-fix to enhance efficiency;
+and (iii) Critic, which leverages vision-language models (VLM) with visual
+anchor prompts to refine spatial layout and ensure clarity. To support
+systematic evaluation, we build MMMC, a benchmark of professionally produced,
+discipline-specific educational videos. We evaluate MMMC across diverse
+dimensions, including VLM-as-a-Judge aesthetic scores, code efficiency, and
+particularly, TeachQuiz, a novel end-to-end metric that quantifies how well a
+VLM, after unlearning, can recover knowledge by watching the generated videos.
+Our results demonstrate the potential of Code2Video as a scalable,
+interpretable, and controllable approach, achieving 40% improvement over direct
+code generation and producing videos comparable to human-crafted tutorials. The
+code and datasets are available at https://github.com/showlab/Code2Video.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces CamPVG, a diffusion-based framework for generating camera-controlled panoramic videos using a novel panoramic Plücker embedding and a spherical epipolar module for improved geometric consistency and quality.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了 CamPVG，一个基于扩散的框架，用于生成相机控制的全景视频，它采用了一种新颖的全景 Plücker 嵌入和一个球形对极模块，以提高几何一致性和质量。</p>
-            
-
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Code2Video, a code-centric framework for generating educational videos using executable Python code and three collaborative agents: Planner, Coder, and Critic. It demonstrates promising results on a new benchmark, MMMC, indicating its potential as a scalable and controllable approach.</p>
             
             
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
-                </div>
-                
-            </div>
-            
-            
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="far fa-star"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2509.19979v1" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Chenhao Ji, Chaohui Yu, Junyao Gao, Fan Wang, Cairong Zhao</p>
-            
-        </motion.div>
-        
-        <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.2, ease: 'easeOut' }"  
-            class="bento-item"
-            data-motion-element
-        >
-            <h2 class="paper-title">From Prompt to Progression: Taming Video Diffusion Models for Seamless Attribute Transition</h2>
-            
-            <p class="paper-summary">Existing models often struggle with complex temporal changes, particularly
-when generating videos with gradual attribute transitions. The most common
-prompt interpolation approach for motion transitions often fails to handle
-gradual attribute transitions, where inconsistencies tend to become more
-pronounced. In this work, we propose a simple yet effective method to extend
-existing models for smooth and consistent attribute transitions, through
-introducing frame-wise guidance during the denoising process. Our approach
-constructs a data-specific transitional direction for each noisy latent,
-guiding the gradual shift from initial to final attributes frame by frame while
-preserving the motion dynamics of the video. Moreover, we present the
-Controlled-Attribute-Transition Benchmark (CAT-Bench), which integrates both
-attribute and motion dynamics, to comprehensively evaluate the performance of
-different models. We further propose two metrics to assess the accuracy and
-smoothness of attribute transitions. Experimental results demonstrate that our
-approach performs favorably against existing baselines, achieving visual
-fidelity, maintaining alignment with text prompts, and delivering seamless
-attribute transitions. Code and CATBench are released:
-https://github.com/lynn-ling-lo/Prompt2Progression.</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces a novel frame-wise guidance method for video diffusion models that enables seamless attribute transitions, along with a new benchmark (CAT-Bench) and metrics for evaluation. The experiments show improvement over existing methods.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文提出了一种新的视频扩散模型逐帧引导方法，能够实现无缝的属性转换，同时还提出了一个新的基准测试 (CAT-Bench) 和评估指标。 实验表明，该方法优于现有方法。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了 Code2Video，一个以代码为中心的框架，用于通过可执行的 Python 代码和三个协同代理（Planner、Coder 和 Critic）生成教育视频。 它在一个新的基准 MMMC 上展示了有希望的结果，表明它作为一种可扩展和可控的方法的潜力。</p>
             
 
             
@@ -699,16 +581,16 @@ https://github.com/lynn-ling-lo/Prompt2Progression.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -760,18 +642,127 @@ https://github.com/lynn-ling-lo/Prompt2Progression.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2509.19690v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.01174v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Ling Lo, Kelvin C. K. Chan, Wen-Huang Cheng, Ming-Hsuan Yang</p>
+            <p class="paper-authors">Authors: Yanzhe Chen, Kevin Qinghong Lin, Mike Zheng Shou</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.2, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">Ovi: Twin Backbone Cross-Modal Fusion for Audio-Video Generation</h2>
+            
+            <p class="paper-summary">Audio-video generation has often relied on complex multi-stage architectures
+or sequential synthesis of sound and visuals. We introduce Ovi, a unified
+paradigm for audio-video generation that models the two modalities as a single
+generative process. By using blockwise cross-modal fusion of twin-DiT modules,
+Ovi achieves natural synchronization and removes the need for separate
+pipelines or post hoc alignment. To facilitate fine-grained multimodal fusion
+modeling, we initialize an audio tower with an architecture identical to that
+of a strong pretrained video model. Trained from scratch on hundreds of
+thousands of hours of raw audio, the audio tower learns to generate realistic
+sound effects, as well as speech that conveys rich speaker identity and
+emotion. Fusion is obtained by jointly training the identical video and audio
+towers via blockwise exchange of timing (via scaled-RoPE embeddings) and
+semantics (through bidirectional cross-attention) on a vast video corpus. Our
+model enables cinematic storytelling with natural speech and accurate,
+context-matched sound effects, producing movie-grade video clips. All the
+demos, code and model weights are published at https://aaxwaz.github.io/Ovi</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: Ovi is a novel audio-video generation model utilizing twin-DiT modules with blockwise cross-modal fusion, trained from scratch to produce high-quality, synchronized audio and video. The model allows for cinematic storytelling with natural speech and accurate sound effects.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: Ovi 是一种新颖的音视频生成模型，它利用具有分块跨模态融合的 twin-DiT 模块，从头开始训练以生成高质量、同步的音频和视频。该模型可以通过自然的语音和准确的声音效果实现电影级的叙事。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star-half-alt"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2510.01284v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Chetwin Low, Weimin Wang, Calder Katyal</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-10-03 03:31:05 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-10-03 03:33:40 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
