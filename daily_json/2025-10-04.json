@@ -1,0 +1,78 @@
+[
+    {
+        "title": "Memory Forcing: Spatio-Temporal Memory for Consistent Scene Generation on Minecraft",
+        "summary": "Autoregressive video diffusion models have proved effective for world\nmodeling and interactive scene generation, with Minecraft gameplay as a\nrepresentative application. To faithfully simulate play, a model must generate\nnatural content while exploring new scenes and preserve spatial consistency\nwhen revisiting explored areas. Under limited computation budgets, it must\ncompress and exploit historical cues within a finite context window, which\nexposes a trade-off: Temporal-only memory lacks long-term spatial consistency,\nwhereas adding spatial memory strengthens consistency but may degrade new scene\ngeneration quality when the model over-relies on insufficient spatial context.\nWe present Memory Forcing, a learning framework that pairs training protocols\nwith a geometry-indexed spatial memory. Hybrid Training exposes distinct\ngameplay regimes, guiding the model to rely on temporal memory during\nexploration and incorporate spatial memory for revisits. Chained Forward\nTraining extends autoregressive training with model rollouts, where chained\npredictions create larger pose variations and encourage reliance on spatial\nmemory for maintaining consistency. Point-to-Frame Retrieval efficiently\nretrieves history by mapping currently visible points to their source frames,\nwhile Incremental 3D Reconstruction maintains and updates an explicit 3D cache.\nExtensive experiments demonstrate that Memory Forcing achieves superior\nlong-term spatial consistency and generative quality across diverse\nenvironments, while maintaining computational efficiency for extended\nsequences.",
+        "url": "http://arxiv.org/abs/2510.03198v1",
+        "published_date": "2025-10-03T17:35:16+00:00",
+        "updated_date": "2025-10-03T17:35:16+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Junchao Huang",
+            "Xinting Hu",
+            "Boyao Han",
+            "Shaoshuai Shi",
+            "Zhuotao Tian",
+            "Tianyu He",
+            "Li Jiang"
+        ],
+        "tldr": "The paper introduces 'Memory Forcing,' a framework with training protocols and spatial memory for consistent scene generation in Minecraft, balancing exploration and revisits. It addresses the trade-off between temporal and spatial memory in video generation.",
+        "tldr_zh": "该论文介绍了“记忆强制”，这是一个框架，具有训练协议和空间记忆，用于在Minecraft中生成一致的场景，平衡探索和重访。它解决了视频生成中时间和空间记忆之间的权衡。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Mask2IV: Interaction-Centric Video Generation via Mask Trajectories",
+        "summary": "Generating interaction-centric videos, such as those depicting humans or\nrobots interacting with objects, is crucial for embodied intelligence, as they\nprovide rich and diverse visual priors for robot learning, manipulation policy\ntraining, and affordance reasoning. However, existing methods often struggle to\nmodel such complex and dynamic interactions. While recent studies show that\nmasks can serve as effective control signals and enhance generation quality,\nobtaining dense and precise mask annotations remains a major challenge for\nreal-world use. To overcome this limitation, we introduce Mask2IV, a novel\nframework specifically designed for interaction-centric video generation. It\nadopts a decoupled two-stage pipeline that first predicts plausible motion\ntrajectories for both actor and object, then generates a video conditioned on\nthese trajectories. This design eliminates the need for dense mask inputs from\nusers while preserving the flexibility to manipulate the interaction process.\nFurthermore, Mask2IV supports versatile and intuitive control, allowing users\nto specify the target object of interaction and guide the motion trajectory\nthrough action descriptions or spatial position cues. To support systematic\ntraining and evaluation, we curate two benchmarks covering diverse action and\nobject categories across both human-object interaction and robotic manipulation\nscenarios. Extensive experiments demonstrate that our method achieves superior\nvisual realism and controllability compared to existing baselines.",
+        "url": "http://arxiv.org/abs/2510.03135v1",
+        "published_date": "2025-10-03T16:04:33+00:00",
+        "updated_date": "2025-10-03T16:04:33+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.RO"
+        ],
+        "authors": [
+            "Gen Li",
+            "Bo Zhao",
+            "Jianfei Yang",
+            "Laura Sevilla-Lara"
+        ],
+        "tldr": "The paper introduces Mask2IV, a novel two-stage framework for generating interaction-centric videos by predicting plausible motion trajectories for actors and objects, eliminating the need for dense mask annotations.",
+        "tldr_zh": "该论文介绍了Mask2IV，一种新颖的两阶段框架，用于生成以交互为中心的视频，通过预测演员和物体的合理运动轨迹，从而无需密集的mask标注。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "When and Where do Events Switch in Multi-Event Video Generation?",
+        "summary": "Text-to-video (T2V) generation has surged in response to challenging\nquestions, especially when a long video must depict multiple sequential events\nwith temporal coherence and controllable content. Existing methods that extend\nto multi-event generation omit an inspection of the intrinsic factor in event\nshifting. The paper aims to answer the central question: When and where\nmulti-event prompts control event transition during T2V generation. This work\nintroduces MEve, a self-curated prompt suite for evaluating multi-event\ntext-to-video (T2V) generation, and conducts a systematic study of two\nrepresentative model families, i.e., OpenSora and CogVideoX. Extensive\nexperiments demonstrate the importance of early intervention in denoising steps\nand block-wise model layers, revealing the essential factor for multi-event\nvideo generation and highlighting the possibilities for multi-event\nconditioning in future models.",
+        "url": "http://arxiv.org/abs/2510.03049v1",
+        "published_date": "2025-10-03T14:31:56+00:00",
+        "updated_date": "2025-10-03T14:31:56+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Ruotong Liao",
+            "Guowen Huang",
+            "Qing Cheng",
+            "Thomas Seidl",
+            "Daniel Cremers",
+            "Volker Tresp"
+        ],
+        "tldr": "This paper investigates how and when event transitions are controlled in text-to-video generation models when generating videos with multiple sequential events, introducing a new benchmark and analyzing existing models.",
+        "tldr_zh": "本文研究了在生成具有多个连续事件的视频时，文本到视频生成模型中事件转换的控制方式和时间，引入了一个新的基准并分析了现有模型。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    }
+]
