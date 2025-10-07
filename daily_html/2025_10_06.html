@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 01, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 06, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>October 01, 2025</p>
+            <p>October 06, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,32 +215,34 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">VRWKV-Editor: Reducing quadratic complexity in transformer-based video editing</h2>
+            <h2 class="paper-title">ChronoEdit: Towards Temporal Reasoning for Image Editing and World Simulation</h2>
             
-            <p class="paper-summary">In light of recent progress in video editing, deep learning models focusing
-on both spatial and temporal dependencies have emerged as the primary method.
-However, these models suffer from the quadratic computational complexity of
-traditional attention mechanisms, making them difficult to adapt to
-long-duration and high-resolution videos. This limitation restricts their
-applicability in practical contexts such as real-time video processing. To
-tackle this challenge, we introduce a method to reduce both time and space
-complexity of these systems by proposing VRWKV-Editor, a novel video editing
-model that integrates a linear spatio-temporal aggregation module into
-video-based diffusion models. VRWKV-Editor leverages bidirectional weighted
-key-value recurrence mechanism of the RWKV transformer to capture global
-dependencies while preserving temporal coherence, achieving linear complexity
-without sacrificing quality. Extensive experiments demonstrate that the
-proposed method achieves up to 3.7x speedup and 60% lower memory usage compared
-to state-of-the-art diffusion-based video editing methods, while maintaining
-competitive performance in frame consistency and text alignment. Furthermore, a
-comparative analysis we conducted on videos with different sequence lengths
-confirms that the gap in editing speed between our approach and architectures
-with self-attention becomes more significant with long videos.</p>
+            <p class="paper-summary">Recent advances in large generative models have significantly advanced image
+editing and in-context image generation, yet a critical gap remains in ensuring
+physical consistency, where edited objects must remain coherent. This
+capability is especially vital for world simulation related tasks. In this
+paper, we present ChronoEdit, a framework that reframes image editing as a
+video generation problem. First, ChronoEdit treats the input and edited images
+as the first and last frames of a video, allowing it to leverage large
+pretrained video generative models that capture not only object appearance but
+also the implicit physics of motion and interaction through learned temporal
+consistency. Second, ChronoEdit introduces a temporal reasoning stage that
+explicitly performs editing at inference time. Under this setting, the target
+frame is jointly denoised with reasoning tokens to imagine a plausible editing
+trajectory that constrains the solution space to physically viable
+transformations. The reasoning tokens are then dropped after a few steps to
+avoid the high computational cost of rendering a full video. To validate
+ChronoEdit, we introduce PBench-Edit, a new benchmark of image-prompt pairs for
+contexts that require physical consistency, and demonstrate that ChronoEdit
+surpasses state-of-the-art baselines in both visual fidelity and physical
+plausibility. Code and models for both the 14B and 2B variants of ChronoEdit
+will be released on the project page:
+https://research.nvidia.com/labs/toronto-ai/chronoedit</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces VRWKV-Editor, a novel video editing model that uses a linear spatio-temporal aggregation module within a diffusion model, achieving significant speedups and reduced memory usage compared to existing methods.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: ChronoEdit reframes image editing as video generation using pretrained video generative models and temporal reasoning to improve physical consistency, outperforming SOTA baselines on a new benchmark.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了VRWKV-Editor，一种新的视频编辑模型，它在扩散模型中使用了线性时空聚合模块，与现有方法相比，实现了显著的加速并降低了内存使用。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: ChronoEdit 将图像编辑重新定义为视频生成问题，利用预训练的视频生成模型和时间推理来提高物理一致性，并在新的基准测试中优于最先进的基线。</p>
             
 
             
@@ -250,16 +252,16 @@ with self-attention becomes more significant with long videos.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
@@ -268,6 +270,116 @@ with self-attention becomes more significant with long videos.</p>
                     
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                     <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2510.04290v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Jay Zhangjie Wu, Xuanchi Ren, Tianchang Shen, Tianshi Cao, Kai He, Yifan Lu, Ruiyuan Gao, Enze Xie, Shiyi Lan, Jose M. Alvarez, Jun Gao, Sanja Fidler, Zian Wang, Huan Ling</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.05, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">Scaling Sequence-to-Sequence Generative Neural Rendering</h2>
+            
+            <p class="paper-summary">We present Kaleido, a family of generative models designed for
+photorealistic, unified object- and scene-level neural rendering. Kaleido
+operates on the principle that 3D can be regarded as a specialised sub-domain
+of video, expressed purely as a sequence-to-sequence image synthesis task.
+Through a systemic study of scaling sequence-to-sequence generative neural
+rendering, we introduce key architectural innovations that enable our model to:
+i) perform generative view synthesis without explicit 3D representations; ii)
+generate any number of 6-DoF target views conditioned on any number of
+reference views via a masked autoregressive framework; and iii) seamlessly
+unify 3D and video modelling within a single decoder-only rectified flow
+transformer. Within this unified framework, Kaleido leverages large-scale video
+data for pre-training, which significantly improves spatial consistency and
+reduces reliance on scarce, camera-labelled 3D datasets -- all without any
+architectural modifications. Kaleido sets a new state-of-the-art on a range of
+view synthesis benchmarks. Its zero-shot performance substantially outperforms
+other generative methods in few-view settings, and, for the first time, matches
+the quality of per-scene optimisation methods in many-view settings.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: Kaleido is a generative model that unifies 3D and video modelling into a sequence-to-sequence image synthesis task using a transformer architecture, achieving SOTA view synthesis results, especially in few-view settings, by leveraging video pre-training.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: Kaleido 是一种生成模型，它使用 Transformer 架构将 3D 和视频建模统一为序列到序列的图像合成任务，并通过利用视频预训练实现了 SOTA 视图合成结果，尤其是在少视图设置中。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -311,18 +423,18 @@ with self-attention becomes more significant with long videos.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2509.25998v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.04236v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Abdelilah Aitrouga, Youssef Hmamouche, Amal El Fallah Seghrouchni</p>
+            <p class="paper-authors">Authors: Shikun Liu, Kam Woh Ng, Wonbong Jang, Jiadong Guo, Junlin Han, Haozhe Liu, Yiannis Douratsos, Juan C. Pérez, Zijian Zhou, Chi Phung, Tao Xiang, Juan-Manuel Pérez-Rúa</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-10-07 03:33:04 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-10-07 03:35:17 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

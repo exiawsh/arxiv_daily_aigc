@@ -1,0 +1,66 @@
+[
+    {
+        "title": "ChronoEdit: Towards Temporal Reasoning for Image Editing and World Simulation",
+        "summary": "Recent advances in large generative models have significantly advanced image\nediting and in-context image generation, yet a critical gap remains in ensuring\nphysical consistency, where edited objects must remain coherent. This\ncapability is especially vital for world simulation related tasks. In this\npaper, we present ChronoEdit, a framework that reframes image editing as a\nvideo generation problem. First, ChronoEdit treats the input and edited images\nas the first and last frames of a video, allowing it to leverage large\npretrained video generative models that capture not only object appearance but\nalso the implicit physics of motion and interaction through learned temporal\nconsistency. Second, ChronoEdit introduces a temporal reasoning stage that\nexplicitly performs editing at inference time. Under this setting, the target\nframe is jointly denoised with reasoning tokens to imagine a plausible editing\ntrajectory that constrains the solution space to physically viable\ntransformations. The reasoning tokens are then dropped after a few steps to\navoid the high computational cost of rendering a full video. To validate\nChronoEdit, we introduce PBench-Edit, a new benchmark of image-prompt pairs for\ncontexts that require physical consistency, and demonstrate that ChronoEdit\nsurpasses state-of-the-art baselines in both visual fidelity and physical\nplausibility. Code and models for both the 14B and 2B variants of ChronoEdit\nwill be released on the project page:\nhttps://research.nvidia.com/labs/toronto-ai/chronoedit",
+        "url": "http://arxiv.org/abs/2510.04290v1",
+        "published_date": "2025-10-05T17:02:01+00:00",
+        "updated_date": "2025-10-05T17:02:01+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Jay Zhangjie Wu",
+            "Xuanchi Ren",
+            "Tianchang Shen",
+            "Tianshi Cao",
+            "Kai He",
+            "Yifan Lu",
+            "Ruiyuan Gao",
+            "Enze Xie",
+            "Shiyi Lan",
+            "Jose M. Alvarez",
+            "Jun Gao",
+            "Sanja Fidler",
+            "Zian Wang",
+            "Huan Ling"
+        ],
+        "tldr": "ChronoEdit reframes image editing as video generation using pretrained video generative models and temporal reasoning to improve physical consistency, outperforming SOTA baselines on a new benchmark.",
+        "tldr_zh": "ChronoEdit 将图像编辑重新定义为视频生成问题，利用预训练的视频生成模型和时间推理来提高物理一致性，并在新的基准测试中优于最先进的基线。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Scaling Sequence-to-Sequence Generative Neural Rendering",
+        "summary": "We present Kaleido, a family of generative models designed for\nphotorealistic, unified object- and scene-level neural rendering. Kaleido\noperates on the principle that 3D can be regarded as a specialised sub-domain\nof video, expressed purely as a sequence-to-sequence image synthesis task.\nThrough a systemic study of scaling sequence-to-sequence generative neural\nrendering, we introduce key architectural innovations that enable our model to:\ni) perform generative view synthesis without explicit 3D representations; ii)\ngenerate any number of 6-DoF target views conditioned on any number of\nreference views via a masked autoregressive framework; and iii) seamlessly\nunify 3D and video modelling within a single decoder-only rectified flow\ntransformer. Within this unified framework, Kaleido leverages large-scale video\ndata for pre-training, which significantly improves spatial consistency and\nreduces reliance on scarce, camera-labelled 3D datasets -- all without any\narchitectural modifications. Kaleido sets a new state-of-the-art on a range of\nview synthesis benchmarks. Its zero-shot performance substantially outperforms\nother generative methods in few-view settings, and, for the first time, matches\nthe quality of per-scene optimisation methods in many-view settings.",
+        "url": "http://arxiv.org/abs/2510.04236v1",
+        "published_date": "2025-10-05T15:03:31+00:00",
+        "updated_date": "2025-10-05T15:03:31+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Shikun Liu",
+            "Kam Woh Ng",
+            "Wonbong Jang",
+            "Jiadong Guo",
+            "Junlin Han",
+            "Haozhe Liu",
+            "Yiannis Douratsos",
+            "Juan C. Pérez",
+            "Zijian Zhou",
+            "Chi Phung",
+            "Tao Xiang",
+            "Juan-Manuel Pérez-Rúa"
+        ],
+        "tldr": "Kaleido is a generative model that unifies 3D and video modelling into a sequence-to-sequence image synthesis task using a transformer architecture, achieving SOTA view synthesis results, especially in few-view settings, by leveraging video pre-training.",
+        "tldr_zh": "Kaleido 是一种生成模型，它使用 Transformer 架构将 3D 和视频建模统一为序列到序列的图像合成任务，并通过利用视频预训练实现了 SOTA 视图合成结果，尤其是在少视图设置中。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]

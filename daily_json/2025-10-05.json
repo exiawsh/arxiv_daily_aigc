@@ -1,0 +1,51 @@
+[
+    {
+        "title": "Bridging the Gap Between Multimodal Foundation Models and World Models",
+        "summary": "Humans understand the world through the integration of multiple sensory\nmodalities, enabling them to perceive, reason about, and imagine dynamic\nphysical processes. Inspired by this capability, multimodal foundation models\n(MFMs) have emerged as powerful tools for multimodal understanding and\ngeneration. However, today's MFMs fall short of serving as effective world\nmodels. They lack the essential ability such as perform counterfactual\nreasoning, simulate dynamics, understand the spatiotemporal information,\ncontrol generated visual outcomes, and perform multifaceted reasoning. We\ninvestigates what it takes to bridge the gap between multimodal foundation\nmodels and world models. We begin by improving the reasoning capabilities of\nMFMs through discriminative tasks and equipping MFMs with structured reasoning\nskills, such as causal inference, counterfactual thinking, and spatiotemporal\nreasoning, enabling them to go beyond surface correlations and understand\ndeeper relationships within visual and textual data. Next, we explore\ngenerative capabilities of multimodal foundation models across both image and\nvideo modalities, introducing new frameworks for structured and controllable\ngeneration. Our approaches incorporate scene graphs, multimodal conditioning,\nand multimodal alignment strategies to guide the generation process, ensuring\nconsistency with high-level semantics and fine-grained user intent. We further\nextend these techniques to controllable 4D generation, enabling interactive,\neditable, and morphable object synthesis over time and space.",
+        "url": "http://arxiv.org/abs/2510.03727v1",
+        "published_date": "2025-10-04T08:14:20+00:00",
+        "updated_date": "2025-10-04T08:14:20+00:00",
+        "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.CV",
+            "cs.LG"
+        ],
+        "authors": [
+            "Xuehai He"
+        ],
+        "tldr": "This paper investigates methods to enhance multimodal foundation models (MFMs) to function as effective world models, focusing on improving reasoning and controllable generation capabilities, including 4D generation.",
+        "tldr_zh": "本文研究如何增强多模态基础模型（MFMs）使其能够作为有效的世界模型，重点在于提高推理能力和可控生成能力，包括4D生成。",
+        "relevance_score": 9,
+        "novelty_claim_score": 7,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Streaming Drag-Oriented Interactive Video Manipulation: Drag Anything, Anytime!",
+        "summary": "Achieving streaming, fine-grained control over the outputs of autoregressive\nvideo diffusion models remains challenging, making it difficult to ensure that\nthey consistently align with user expectations. To bridge this gap, we propose\n\\textbf{stReaming drag-oriEnted interactiVe vidEo manipuLation (REVEL)}, a new\ntask that enables users to modify generated videos \\emph{anytime} on\n\\emph{anything} via fine-grained, interactive drag. Beyond DragVideo and\nSG-I2V, REVEL unifies drag-style video manipulation as editing and animating\nvideo frames with both supporting user-specified translation, deformation, and\nrotation effects, making drag operations versatile. In resolving REVEL, we\nobserve: \\emph{i}) drag-induced perturbations accumulate in latent space,\ncausing severe latent distribution drift that halts the drag process;\n\\emph{ii}) streaming drag is easily disturbed by context frames, thereby\nyielding visually unnatural outcomes. We thus propose a training-free approach,\n\\textbf{DragStream}, comprising: \\emph{i}) an adaptive distribution\nself-rectification strategy that leverages neighboring frames' statistics to\neffectively constrain the drift of latent embeddings; \\emph{ii}) a\nspatial-frequency selective optimization mechanism, allowing the model to fully\nexploit contextual information while mitigating its interference via\nselectively propagating visual cues along generation. Our method can be\nseamlessly integrated into existing autoregressive video diffusion models, and\nextensive experiments firmly demonstrate the effectiveness of our DragStream.",
+        "url": "http://arxiv.org/abs/2510.03550v1",
+        "published_date": "2025-10-03T22:38:35+00:00",
+        "updated_date": "2025-10-03T22:38:35+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Junbao Zhou",
+            "Yuan Zhou",
+            "Kesen Zhao",
+            "Qingshan Xu",
+            "Beier Zhu",
+            "Richang Hong",
+            "Hanwang Zhang"
+        ],
+        "tldr": "The paper introduces REVEL, a new task for interactive video manipulation via dragging, and DragStream, a training-free approach to address latent drift and contextual interference in streaming drag-oriented video editing using diffusion models.",
+        "tldr_zh": "该论文介绍了REVEL，一种通过拖拽进行交互式视频操作的新任务，以及DragStream，一种无需训练的方法，用于解决在使用扩散模型进行流式拖拽视频编辑时出现的潜在漂移和上下文干扰问题。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - September 26, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 07, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>September 26, 2025</p>
+            <p>October 07, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,28 +215,28 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">NewtonGen: Physics-Consistent and Controllable Text-to-Video Generation via Neural Newtonian Dynamics</h2>
+            <h2 class="paper-title">VChain: Chain-of-Visual-Thought for Reasoning in Video Generation</h2>
             
-            <p class="paper-summary">A primary bottleneck in large-scale text-to-video generation today is
-physical consistency and controllability. Despite recent advances,
-state-of-the-art models often produce unrealistic motions, such as objects
-falling upward, or abrupt changes in velocity and direction. Moreover, these
-models lack precise parameter control, struggling to generate physically
-consistent dynamics under different initial conditions. We argue that this
-fundamental limitation stems from current models learning motion distributions
-solely from appearance, while lacking an understanding of the underlying
-dynamics. In this work, we propose NewtonGen, a framework that integrates
-data-driven synthesis with learnable physical principles. At its core lies
-trainable Neural Newtonian Dynamics (NND), which can model and predict a
-variety of Newtonian motions, thereby injecting latent dynamical constraints
-into the video generation process. By jointly leveraging data priors and
-dynamical guidance, NewtonGen enables physically consistent video synthesis
-with precise parameter control.</p>
+            <p class="paper-summary">Recent video generation models can produce smooth and visually appealing
+clips, but they often struggle to synthesize complex dynamics with a coherent
+chain of consequences. Accurately modeling visual outcomes and state
+transitions over time remains a core challenge. In contrast, large language and
+multimodal models (e.g., GPT-4o) exhibit strong visual state reasoning and
+future prediction capabilities. To bridge these strengths, we introduce VChain,
+a novel inference-time chain-of-visual-thought framework that injects visual
+reasoning signals from multimodal models into video generation. Specifically,
+VChain contains a dedicated pipeline that leverages large multimodal models to
+generate a sparse set of critical keyframes as snapshots, which are then used
+to guide the sparse inference-time tuning of a pre-trained video generator only
+at these key moments. Our approach is tuning-efficient, introduces minimal
+overhead and avoids dense supervision. Extensive experiments on complex,
+multi-step scenarios show that VChain significantly enhances the quality of
+generated videos.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: NewtonGen introduces Neural Newtonian Dynamics (NND) to text-to-video generation to improve physical consistency and controllability by incorporating learnable physical principles.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: VChain uses a chain-of-visual-thought approach, leveraging large multimodal models to generate keyframes that guide a pre-trained video generator, improving video quality in complex scenarios with minimal overhead.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: NewtonGen 引入了神经牛顿动力学（NND）到文本到视频生成中，通过结合可学习的物理原理，提高了物理一致性和可控性。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: VChain 采用视觉思维链方法，利用大型多模态模型生成关键帧，引导预训练的视频生成器，以最小的开销提高复杂场景中的视频质量。</p>
             
 
             
@@ -300,18 +300,18 @@ with precise parameter control.</p>
                     
                 
                     
-                        <i class="far fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2509.21309v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.05094v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Yu Yuan, Xijun Wang, Tharindu Wickremasinghe, Zeeshan Nadir, Bole Ma, Stanley H. Chan</p>
+            <p class="paper-authors">Authors: Ziqi Huang, Ning Yu, Gordon Chen, Haonan Qiu, Paul Debevec, Ziwei Liu</p>
             
         </motion.div>
         
@@ -323,26 +323,32 @@ with precise parameter control.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">MotionFlow:Learning Implicit Motion Flow for Complex Camera Trajectory Control in Video Generation</h2>
+            <h2 class="paper-title">MorphoSim: An Interactive, Controllable, and Editable Language-guided 4D World Simulator</h2>
             
-            <p class="paper-summary">Generating videos guided by camera trajectories poses significant challenges
-in achieving consistency and generalizability, particularly when both camera
-and object motions are present. Existing approaches often attempt to learn
-these motions separately, which may lead to confusion regarding the relative
-motion between the camera and the objects. To address this challenge, we
-propose a novel approach that integrates both camera and object motions by
-converting them into the motion of corresponding pixels. Utilizing a stable
-diffusion network, we effectively learn reference motion maps in relation to
-the specified camera trajectory. These maps, along with an extracted semantic
-object prior, are then fed into an image-to-video network to generate the
-desired video that can accurately follow the designated camera trajectory while
-maintaining consistent object motions. Extensive experiments verify that our
-model outperforms SOTA methods by a large margin.</p>
+            <p class="paper-summary">World models that support controllable
+  and editable spatiotemporal environments are valuable
+  for robotics, enabling scalable training data, repro ducible evaluation, and
+flexible task design. While
+  recent text-to-video models generate realistic dynam ics, they are
+constrained to 2D views and offer limited
+  interaction. We introduce MorphoSim, a language guided framework that
+generates 4D scenes with
+  multi-view consistency and object-level controls. From
+  natural language instructions, MorphoSim produces
+  dynamic environments where objects can be directed,
+  recolored, or removed, and scenes can be observed
+  from arbitrary viewpoints. The framework integrates
+  trajectory-guided generation with feature field dis tillation, allowing edits
+to be applied interactively
+  without full re-generation. Experiments show that Mor phoSim maintains high
+scene fidelity while enabling
+  controllability and editability. The code is available
+  at https://github.com/eric-ai-lab/Morph4D.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces MotionFlow, a novel approach for camera trajectory-guided video generation that integrates camera and object motions by learning reference motion maps using a stable diffusion network. It outperforms SOTA methods in generating videos that accurately follow the designated camera trajectory while maintaining consistent object motions.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: MorphoSim is a language-guided framework for generating controllable and editable 4D scenes with multi-view consistency, enabling object manipulation and viewpoint changes based on text instructions.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种名为MotionFlow的新方法，用于相机轨迹引导的视频生成。该方法通过使用稳定扩散网络学习参考运动图，整合了相机和物体的运动。它在生成能够准确跟随指定相机轨迹并保持物体运动一致性的视频方面优于现有技术。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: MorphoSim是一个语言引导的框架，用于生成具有多视图一致性的可控和可编辑的4D场景，允许基于文本指令的对象操作和视点更改。</p>
             
 
             
@@ -376,8 +382,8 @@ model outperforms SOTA methods by a large margin.</p>
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
             </div>
@@ -406,18 +412,18 @@ model outperforms SOTA methods by a large margin.</p>
                     
                 
                     
-                        <i class="far fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2509.21119v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.04390v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Guojun Lei, Chi Wang, Yikai Wang, Hong Li, Ying Song, Weiwei Xu</p>
+            <p class="paper-authors">Authors: Xuehai He, Shijie Zhou, Thivyanth Venkateswaran, Kaizhi Zheng, Ziyu Wan, Achuta Kadambi, Xin Eric Wang</p>
             
         </motion.div>
         
@@ -429,149 +435,38 @@ model outperforms SOTA methods by a large margin.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">UniTransfer: Video Concept Transfer via Progressive Spatial and Timestep Decomposition</h2>
+            <h2 class="paper-title">Bridging Text and Video Generation: A Survey</h2>
             
-            <p class="paper-summary">We propose a novel architecture UniTransfer, which introduces both spatial
-and diffusion timestep decomposition in a progressive paradigm, achieving
-precise and controllable video concept transfer. Specifically, in terms of
-spatial decomposition, we decouple videos into three key components: the
-foreground subject, the background, and the motion flow. Building upon this
-decomposed formulation, we further introduce a dual-to-single-stream DiT-based
-architecture for supporting fine-grained control over different components in
-the videos. We also introduce a self-supervised pretraining strategy based on
-random masking to enhance the decomposed representation learning from
-large-scale unlabeled video data. Inspired by the Chain-of-Thought reasoning
-paradigm, we further revisit the denoising diffusion process and propose a
-Chain-of-Prompt (CoP) mechanism to achieve the timestep decomposition. We
-decompose the denoising process into three stages of different granularity and
-leverage large language models (LLMs) for stage-specific instructions to guide
-the generation progressively. We also curate an animal-centric video dataset
-called OpenAnimal to facilitate the advancement and benchmarking of research in
-video concept transfer. Extensive experiments demonstrate that our method
-achieves high-quality and controllable video concept transfer across diverse
-reference images and scenes, surpassing existing baselines in both visual
-fidelity and editability. Web Page:
-https://yu-shaonian.github.io/UniTransfer-Web/</p>
+            <p class="paper-summary">Text-to-video (T2V) generation technology holds potential to transform
+multiple domains such as education, marketing, entertainment, and assistive
+technologies for individuals with visual or reading comprehension challenges,
+by creating coherent visual content from natural language prompts. From its
+inception, the field has advanced from adversarial models to diffusion-based
+models, yielding higher-fidelity, temporally consistent outputs. Yet challenges
+persist, such as alignment, long-range coherence, and computational efficiency.
+Addressing this evolving landscape, we present a comprehensive survey of
+text-to-video generative models, tracing their development from early GANs and
+VAEs to hybrid Diffusion-Transformer (DiT) architectures, detailing how these
+models work, what limitations they addressed in their predecessors, and why
+shifts toward new architectural paradigms were necessary to overcome challenges
+in quality, coherence, and control. We provide a systematic account of the
+datasets, which the surveyed text-to-video models were trained and evaluated
+on, and, to support reproducibility and assess the accessibility of training
+such models, we detail their training configurations, including their hardware
+specifications, GPU counts, batch sizes, learning rates, optimizers, epochs,
+and other key hyperparameters. Further, we outline the evaluation metrics
+commonly used for evaluating such models and present their performance across
+standard benchmarks, while also discussing the limitations of these metrics and
+the emerging shift toward more holistic, perception-aligned evaluation
+strategies. Finally, drawing from our analysis, we outline the current open
+challenges and propose a few promising future directions, laying out a
+perspective for future researchers to explore and build upon in advancing T2V
+research and applications.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: UniTransfer introduces a novel architecture for video concept transfer using spatial and timestep decomposition with a Chain-of-Prompt mechanism guided by LLMs, achieving high-quality and controllable video editing.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: UniTransfer 提出了一种新颖的视频概念迁移架构，该架构使用空间和时间步分解，以及由大型语言模型引导的 Chain-of-Prompt 机制，实现了高质量和可控的视频编辑。</p>
-            
-
-            
-            
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-            </div>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper presents a comprehensive survey of text-to-video generation models, covering their evolution, datasets, training configurations, evaluation metrics, and future directions, offering a valuable resource for researchers in the field.</p>
             
             
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="far fa-star"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2509.21086v1" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Guojun Lei, Rong Zhang, Chi Wang, Tianhang Liu, Hong Li, Zhiyuan Ma, Weiwei Xu</p>
-            
-        </motion.div>
-        
-        <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.15000000000000002, ease: 'easeOut' }"  
-            class="bento-item"
-            data-motion-element
-        >
-            <h2 class="paper-title">KeyWorld: Key Frame Reasoning Enables Effective and Efficient World Models</h2>
-            
-            <p class="paper-summary">Robotic world models are a promising paradigm for forecasting future
-environment states, yet their inference speed and the physical plausibility of
-generated trajectories remain critical bottlenecks, limiting their real-world
-applications. This stems from the redundancy of the prevailing frame-to-frame
-generation approach, where the model conducts costly computation on similar
-frames, as well as neglecting the semantic importance of key transitions. To
-address this inefficiency, we propose KeyWorld, a framework that improves
-text-conditioned robotic world models by concentrating transformers computation
-on a few semantic key frames while employing a lightweight convolutional model
-to fill the intermediate frames. Specifically, KeyWorld first identifies
-significant transitions by iteratively simplifying the robot's motion
-trajectories, obtaining the ground truth key frames. Then, a DiT model is
-trained to reason and generate these physically meaningful key frames from
-textual task descriptions. Finally, a lightweight interpolator efficiently
-reconstructs the full video by inpainting all intermediate frames. Evaluations
-on the LIBERO benchmark demonstrate that KeyWorld achieves a 5.68$\times$
-acceleration compared to the frame-to-frame generation baseline, and focusing
-on the motion-aware key frames further contributes to the physical validity of
-the generated videos, especially on complex tasks. Our approach highlights a
-practical path toward deploying world models in real-time robotic control and
-other domains requiring both efficient and effective world models. Code is
-released at https://anonymous.4open.science/r/Keyworld-E43D.</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces KeyWorld, a framework for efficient and effective robotic world models that accelerates video generation by focusing computation on key frames identified via motion trajectory simplification and using a lightweight interpolator for intermediate frames.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了KeyWorld，一个高效的机器人世界模型框架，通过集中计算运动轨迹简化识别的关键帧，并使用轻量级插值器来生成中间帧，从而加速视频生成。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文全面综述了文本到视频生成模型，涵盖了它们的发展历程、数据集、训练配置、评估指标和未来方向，为该领域的研究人员提供了宝贵的资源。</p>
             
 
             
@@ -581,16 +476,16 @@ released at https://anonymous.4open.science/r/Keyworld-E43D.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(5/10)</span>
                 </div>
                 
                 
@@ -631,29 +526,29 @@ released at https://anonymous.4open.science/r/Keyworld-E43D.</p>
                     
                 
                     
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
                     
                         <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2509.21027v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.04999v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Sibo Li, Qianyue Hao, Yu Shang, Yong Li</p>
+            <p class="paper-authors">Authors: Nilay Kumar, Priyansh Bhandari, G. Maragatham</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-10-07 03:33:04 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-10-07 03:37:03 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

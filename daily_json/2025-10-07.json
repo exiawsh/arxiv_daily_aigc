@@ -1,0 +1,79 @@
+[
+    {
+        "title": "VChain: Chain-of-Visual-Thought for Reasoning in Video Generation",
+        "summary": "Recent video generation models can produce smooth and visually appealing\nclips, but they often struggle to synthesize complex dynamics with a coherent\nchain of consequences. Accurately modeling visual outcomes and state\ntransitions over time remains a core challenge. In contrast, large language and\nmultimodal models (e.g., GPT-4o) exhibit strong visual state reasoning and\nfuture prediction capabilities. To bridge these strengths, we introduce VChain,\na novel inference-time chain-of-visual-thought framework that injects visual\nreasoning signals from multimodal models into video generation. Specifically,\nVChain contains a dedicated pipeline that leverages large multimodal models to\ngenerate a sparse set of critical keyframes as snapshots, which are then used\nto guide the sparse inference-time tuning of a pre-trained video generator only\nat these key moments. Our approach is tuning-efficient, introduces minimal\noverhead and avoids dense supervision. Extensive experiments on complex,\nmulti-step scenarios show that VChain significantly enhances the quality of\ngenerated videos.",
+        "url": "http://arxiv.org/abs/2510.05094v1",
+        "published_date": "2025-10-06T17:57:59+00:00",
+        "updated_date": "2025-10-06T17:57:59+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Ziqi Huang",
+            "Ning Yu",
+            "Gordon Chen",
+            "Haonan Qiu",
+            "Paul Debevec",
+            "Ziwei Liu"
+        ],
+        "tldr": "VChain uses a chain-of-visual-thought approach, leveraging large multimodal models to generate keyframes that guide a pre-trained video generator, improving video quality in complex scenarios with minimal overhead.",
+        "tldr_zh": "VChain 采用视觉思维链方法，利用大型多模态模型生成关键帧，引导预训练的视频生成器，以最小的开销提高复杂场景中的视频质量。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "MorphoSim: An Interactive, Controllable, and Editable Language-guided 4D World Simulator",
+        "summary": "World models that support controllable\n  and editable spatiotemporal environments are valuable\n  for robotics, enabling scalable training data, repro ducible evaluation, and\nflexible task design. While\n  recent text-to-video models generate realistic dynam ics, they are\nconstrained to 2D views and offer limited\n  interaction. We introduce MorphoSim, a language guided framework that\ngenerates 4D scenes with\n  multi-view consistency and object-level controls. From\n  natural language instructions, MorphoSim produces\n  dynamic environments where objects can be directed,\n  recolored, or removed, and scenes can be observed\n  from arbitrary viewpoints. The framework integrates\n  trajectory-guided generation with feature field dis tillation, allowing edits\nto be applied interactively\n  without full re-generation. Experiments show that Mor phoSim maintains high\nscene fidelity while enabling\n  controllability and editability. The code is available\n  at https://github.com/eric-ai-lab/Morph4D.",
+        "url": "http://arxiv.org/abs/2510.04390v1",
+        "published_date": "2025-10-05T22:55:17+00:00",
+        "updated_date": "2025-10-05T22:55:17+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.CL"
+        ],
+        "authors": [
+            "Xuehai He",
+            "Shijie Zhou",
+            "Thivyanth Venkateswaran",
+            "Kaizhi Zheng",
+            "Ziyu Wan",
+            "Achuta Kadambi",
+            "Xin Eric Wang"
+        ],
+        "tldr": "MorphoSim is a language-guided framework for generating controllable and editable 4D scenes with multi-view consistency, enabling object manipulation and viewpoint changes based on text instructions.",
+        "tldr_zh": "MorphoSim是一个语言引导的框架，用于生成具有多视图一致性的可控和可编辑的4D场景，允许基于文本指令的对象操作和视点更改。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "Bridging Text and Video Generation: A Survey",
+        "summary": "Text-to-video (T2V) generation technology holds potential to transform\nmultiple domains such as education, marketing, entertainment, and assistive\ntechnologies for individuals with visual or reading comprehension challenges,\nby creating coherent visual content from natural language prompts. From its\ninception, the field has advanced from adversarial models to diffusion-based\nmodels, yielding higher-fidelity, temporally consistent outputs. Yet challenges\npersist, such as alignment, long-range coherence, and computational efficiency.\nAddressing this evolving landscape, we present a comprehensive survey of\ntext-to-video generative models, tracing their development from early GANs and\nVAEs to hybrid Diffusion-Transformer (DiT) architectures, detailing how these\nmodels work, what limitations they addressed in their predecessors, and why\nshifts toward new architectural paradigms were necessary to overcome challenges\nin quality, coherence, and control. We provide a systematic account of the\ndatasets, which the surveyed text-to-video models were trained and evaluated\non, and, to support reproducibility and assess the accessibility of training\nsuch models, we detail their training configurations, including their hardware\nspecifications, GPU counts, batch sizes, learning rates, optimizers, epochs,\nand other key hyperparameters. Further, we outline the evaluation metrics\ncommonly used for evaluating such models and present their performance across\nstandard benchmarks, while also discussing the limitations of these metrics and\nthe emerging shift toward more holistic, perception-aligned evaluation\nstrategies. Finally, drawing from our analysis, we outline the current open\nchallenges and propose a few promising future directions, laying out a\nperspective for future researchers to explore and build upon in advancing T2V\nresearch and applications.",
+        "url": "http://arxiv.org/abs/2510.04999v1",
+        "published_date": "2025-10-06T16:39:05+00:00",
+        "updated_date": "2025-10-06T16:39:05+00:00",
+        "categories": [
+            "cs.GR",
+            "cs.AI",
+            "cs.CV"
+        ],
+        "authors": [
+            "Nilay Kumar",
+            "Priyansh Bhandari",
+            "G. Maragatham"
+        ],
+        "tldr": "This paper presents a comprehensive survey of text-to-video generation models, covering their evolution, datasets, training configurations, evaluation metrics, and future directions, offering a valuable resource for researchers in the field.",
+        "tldr_zh": "本文全面综述了文本到视频生成模型，涵盖了它们的发展历程、数据集、训练配置、评估指标和未来方向，为该领域的研究人员提供了宝贵的资源。",
+        "relevance_score": 7,
+        "novelty_claim_score": 5,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 7
+    }
+]
