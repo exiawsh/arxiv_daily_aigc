@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 07, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 09, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>October 07, 2025</p>
+            <p>October 09, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,28 +215,32 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">VChain: Chain-of-Visual-Thought for Reasoning in Video Generation</h2>
+            <h2 class="paper-title">WristWorld: Generating Wrist-Views via 4D World Models for Robotic Manipulation</h2>
             
-            <p class="paper-summary">Recent video generation models can produce smooth and visually appealing
-clips, but they often struggle to synthesize complex dynamics with a coherent
-chain of consequences. Accurately modeling visual outcomes and state
-transitions over time remains a core challenge. In contrast, large language and
-multimodal models (e.g., GPT-4o) exhibit strong visual state reasoning and
-future prediction capabilities. To bridge these strengths, we introduce VChain,
-a novel inference-time chain-of-visual-thought framework that injects visual
-reasoning signals from multimodal models into video generation. Specifically,
-VChain contains a dedicated pipeline that leverages large multimodal models to
-generate a sparse set of critical keyframes as snapshots, which are then used
-to guide the sparse inference-time tuning of a pre-trained video generator only
-at these key moments. Our approach is tuning-efficient, introduces minimal
-overhead and avoids dense supervision. Extensive experiments on complex,
-multi-step scenarios show that VChain significantly enhances the quality of
-generated videos.</p>
+            <p class="paper-summary">Wrist-view observations are crucial for VLA models as they capture
+fine-grained hand-object interactions that directly enhance manipulation
+performance. Yet large-scale datasets rarely include such recordings, resulting
+in a substantial gap between abundant anchor views and scarce wrist views.
+Existing world models cannot bridge this gap, as they require a wrist-view
+first frame and thus fail to generate wrist-view videos from anchor views
+alone. Amid this gap, recent visual geometry models such as VGGT emerge with
+geometric and cross-view priors that make it possible to address extreme
+viewpoint shifts. Inspired by these insights, we propose WristWorld, the first
+4D world model that generates wrist-view videos solely from anchor views.
+WristWorld operates in two stages: (i) Reconstruction, which extends VGGT and
+incorporates our Spatial Projection Consistency (SPC) Loss to estimate
+geometrically consistent wrist-view poses and 4D point clouds; (ii) Generation,
+which employs our video generation model to synthesize temporally coherent
+wrist-view videos from the reconstructed perspective. Experiments on Droid,
+Calvin, and Franka Panda demonstrate state-of-the-art video generation with
+superior spatial consistency, while also improving VLA performance, raising the
+average task completion length on Calvin by 3.81% and closing 42.4% of the
+anchor-wrist view gap.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: VChain uses a chain-of-visual-thought approach, leveraging large multimodal models to generate keyframes that guide a pre-trained video generator, improving video quality in complex scenarios with minimal overhead.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: WristWorld is a novel 4D world model that generates wrist-view videos from anchor views, improving robotic manipulation by closing the gap between abundant anchor views and scarce wrist views.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: VChain 采用视觉思维链方法，利用大型多模态模型生成关键帧，引导预训练的视频生成器，以最小的开销提高复杂场景中的视频质量。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: WristWorld 是一种新型的 4D 世界模型，可以从主视角视图生成腕部视角视频，通过缩小丰富的视点视图和稀缺的腕部视图之间的差距，从而改进机器人操作。</p>
             
 
             
@@ -246,24 +250,24 @@ generated videos.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                     <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
+                    <span class="rating-label">Novelty:</span>
                     
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                     <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -300,18 +304,18 @@ generated videos.</p>
                     
                 
                     
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.05094v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.07313v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Ziqi Huang, Ning Yu, Gordon Chen, Haonan Qiu, Paul Debevec, Ziwei Liu</p>
+            <p class="paper-authors">Authors: Zezhong Qian, Xiaowei Chi, Yuming Li, Shizun Wang, Zhiyuan Qin, Xiaozhu Ju, Sirui Han, Shanghang Zhang</p>
             
         </motion.div>
         
@@ -323,150 +327,32 @@ generated videos.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">MorphoSim: An Interactive, Controllable, and Editable Language-guided 4D World Simulator</h2>
+            <h2 class="paper-title">MV-Performer: Taming Video Diffusion Model for Faithful and Synchronized Multi-view Performer Synthesis</h2>
             
-            <p class="paper-summary">World models that support controllable
-  and editable spatiotemporal environments are valuable
-  for robotics, enabling scalable training data, repro ducible evaluation, and
-flexible task design. While
-  recent text-to-video models generate realistic dynam ics, they are
-constrained to 2D views and offer limited
-  interaction. We introduce MorphoSim, a language guided framework that
-generates 4D scenes with
-  multi-view consistency and object-level controls. From
-  natural language instructions, MorphoSim produces
-  dynamic environments where objects can be directed,
-  recolored, or removed, and scenes can be observed
-  from arbitrary viewpoints. The framework integrates
-  trajectory-guided generation with feature field dis tillation, allowing edits
-to be applied interactively
-  without full re-generation. Experiments show that Mor phoSim maintains high
-scene fidelity while enabling
-  controllability and editability. The code is available
-  at https://github.com/eric-ai-lab/Morph4D.</p>
+            <p class="paper-summary">Recent breakthroughs in video generation, powered by large-scale datasets and
+diffusion techniques, have shown that video diffusion models can function as
+implicit 4D novel view synthesizers. Nevertheless, current methods primarily
+concentrate on redirecting camera trajectory within the front view while
+struggling to generate 360-degree viewpoint changes. In this paper, we focus on
+human-centric subdomain and present MV-Performer, an innovative framework for
+creating synchronized novel view videos from monocular full-body captures. To
+achieve a 360-degree synthesis, we extensively leverage the MVHumanNet dataset
+and incorporate an informative condition signal. Specifically, we use the
+camera-dependent normal maps rendered from oriented partial point clouds, which
+effectively alleviate the ambiguity between seen and unseen observations. To
+maintain synchronization in the generated videos, we propose a multi-view
+human-centric video diffusion model that fuses information from the reference
+video, partial rendering, and different viewpoints. Additionally, we provide a
+robust inference procedure for in-the-wild video cases, which greatly mitigates
+the artifacts induced by imperfect monocular depth estimation. Extensive
+experiments on three datasets demonstrate our MV-Performer's state-of-the-art
+effectiveness and robustness, setting a strong model for human-centric 4D novel
+view synthesis.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: MorphoSim is a language-guided framework for generating controllable and editable 4D scenes with multi-view consistency, enabling object manipulation and viewpoint changes based on text instructions.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: MorphoSim是一个语言引导的框架，用于生成具有多视图一致性的可控和可编辑的4D场景，允许基于文本指令的对象操作和视点更改。</p>
-            
-
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces MV-Performer, a framework for generating synchronized multi-view videos of human performers from monocular video using a diffusion model conditioned on partial point cloud renderings, addressing the challenge of 360-degree viewpoint changes.</p>
             
             
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-            </div>
-            
-            
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star-half-alt"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2510.04390v1" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Xuehai He, Shijie Zhou, Thivyanth Venkateswaran, Kaizhi Zheng, Ziyu Wan, Achuta Kadambi, Xin Eric Wang</p>
-            
-        </motion.div>
-        
-        <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.1, ease: 'easeOut' }"  
-            class="bento-item"
-            data-motion-element
-        >
-            <h2 class="paper-title">Bridging Text and Video Generation: A Survey</h2>
-            
-            <p class="paper-summary">Text-to-video (T2V) generation technology holds potential to transform
-multiple domains such as education, marketing, entertainment, and assistive
-technologies for individuals with visual or reading comprehension challenges,
-by creating coherent visual content from natural language prompts. From its
-inception, the field has advanced from adversarial models to diffusion-based
-models, yielding higher-fidelity, temporally consistent outputs. Yet challenges
-persist, such as alignment, long-range coherence, and computational efficiency.
-Addressing this evolving landscape, we present a comprehensive survey of
-text-to-video generative models, tracing their development from early GANs and
-VAEs to hybrid Diffusion-Transformer (DiT) architectures, detailing how these
-models work, what limitations they addressed in their predecessors, and why
-shifts toward new architectural paradigms were necessary to overcome challenges
-in quality, coherence, and control. We provide a systematic account of the
-datasets, which the surveyed text-to-video models were trained and evaluated
-on, and, to support reproducibility and assess the accessibility of training
-such models, we detail their training configurations, including their hardware
-specifications, GPU counts, batch sizes, learning rates, optimizers, epochs,
-and other key hyperparameters. Further, we outline the evaluation metrics
-commonly used for evaluating such models and present their performance across
-standard benchmarks, while also discussing the limitations of these metrics and
-the emerging shift toward more holistic, perception-aligned evaluation
-strategies. Finally, drawing from our analysis, we outline the current open
-challenges and propose a few promising future directions, laying out a
-perspective for future researchers to explore and build upon in advancing T2V
-research and applications.</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper presents a comprehensive survey of text-to-video generation models, covering their evolution, datasets, training configurations, evaluation metrics, and future directions, offering a valuable resource for researchers in the field.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文全面综述了文本到视频生成模型，涵盖了它们的发展历程、数据集、训练配置、评估指标和未来方向，为该领域的研究人员提供了宝贵的资源。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种名为 MV-Performer 的框架，它使用基于部分点云渲染的扩散模型，从单目视频生成同步的多视角人物视频，解决了 360 度视角变化的问题。</p>
             
 
             
@@ -484,8 +370,8 @@ research and applications.</p>
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(5/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -500,8 +386,8 @@ research and applications.</p>
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
             </div>
@@ -537,18 +423,18 @@ research and applications.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.04999v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.07190v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Nilay Kumar, Priyansh Bhandari, G. Maragatham</p>
+            <p class="paper-authors">Authors: Yihao Zhi, Chenghong Li, Hongjie Liao, Xihe Yang, Zhengwentai Sun, Jiahao Chang, Xiaodong Cun, Wensen Feng, Xiaoguang Han</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-10-09 03:35:14 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-10-09 03:37:18 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

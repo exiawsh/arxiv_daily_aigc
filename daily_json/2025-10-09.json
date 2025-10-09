@@ -1,0 +1,58 @@
+[
+    {
+        "title": "WristWorld: Generating Wrist-Views via 4D World Models for Robotic Manipulation",
+        "summary": "Wrist-view observations are crucial for VLA models as they capture\nfine-grained hand-object interactions that directly enhance manipulation\nperformance. Yet large-scale datasets rarely include such recordings, resulting\nin a substantial gap between abundant anchor views and scarce wrist views.\nExisting world models cannot bridge this gap, as they require a wrist-view\nfirst frame and thus fail to generate wrist-view videos from anchor views\nalone. Amid this gap, recent visual geometry models such as VGGT emerge with\ngeometric and cross-view priors that make it possible to address extreme\nviewpoint shifts. Inspired by these insights, we propose WristWorld, the first\n4D world model that generates wrist-view videos solely from anchor views.\nWristWorld operates in two stages: (i) Reconstruction, which extends VGGT and\nincorporates our Spatial Projection Consistency (SPC) Loss to estimate\ngeometrically consistent wrist-view poses and 4D point clouds; (ii) Generation,\nwhich employs our video generation model to synthesize temporally coherent\nwrist-view videos from the reconstructed perspective. Experiments on Droid,\nCalvin, and Franka Panda demonstrate state-of-the-art video generation with\nsuperior spatial consistency, while also improving VLA performance, raising the\naverage task completion length on Calvin by 3.81% and closing 42.4% of the\nanchor-wrist view gap.",
+        "url": "http://arxiv.org/abs/2510.07313v1",
+        "published_date": "2025-10-08T17:59:08+00:00",
+        "updated_date": "2025-10-08T17:59:08+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.RO"
+        ],
+        "authors": [
+            "Zezhong Qian",
+            "Xiaowei Chi",
+            "Yuming Li",
+            "Shizun Wang",
+            "Zhiyuan Qin",
+            "Xiaozhu Ju",
+            "Sirui Han",
+            "Shanghang Zhang"
+        ],
+        "tldr": "WristWorld is a novel 4D world model that generates wrist-view videos from anchor views, improving robotic manipulation by closing the gap between abundant anchor views and scarce wrist views.",
+        "tldr_zh": "WristWorld 是一种新型的 4D 世界模型，可以从主视角视图生成腕部视角视频，通过缩小丰富的视点视图和稀缺的腕部视图之间的差距，从而改进机器人操作。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "MV-Performer: Taming Video Diffusion Model for Faithful and Synchronized Multi-view Performer Synthesis",
+        "summary": "Recent breakthroughs in video generation, powered by large-scale datasets and\ndiffusion techniques, have shown that video diffusion models can function as\nimplicit 4D novel view synthesizers. Nevertheless, current methods primarily\nconcentrate on redirecting camera trajectory within the front view while\nstruggling to generate 360-degree viewpoint changes. In this paper, we focus on\nhuman-centric subdomain and present MV-Performer, an innovative framework for\ncreating synchronized novel view videos from monocular full-body captures. To\nachieve a 360-degree synthesis, we extensively leverage the MVHumanNet dataset\nand incorporate an informative condition signal. Specifically, we use the\ncamera-dependent normal maps rendered from oriented partial point clouds, which\neffectively alleviate the ambiguity between seen and unseen observations. To\nmaintain synchronization in the generated videos, we propose a multi-view\nhuman-centric video diffusion model that fuses information from the reference\nvideo, partial rendering, and different viewpoints. Additionally, we provide a\nrobust inference procedure for in-the-wild video cases, which greatly mitigates\nthe artifacts induced by imperfect monocular depth estimation. Extensive\nexperiments on three datasets demonstrate our MV-Performer's state-of-the-art\neffectiveness and robustness, setting a strong model for human-centric 4D novel\nview synthesis.",
+        "url": "http://arxiv.org/abs/2510.07190v1",
+        "published_date": "2025-10-08T16:24:22+00:00",
+        "updated_date": "2025-10-08T16:24:22+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yihao Zhi",
+            "Chenghong Li",
+            "Hongjie Liao",
+            "Xihe Yang",
+            "Zhengwentai Sun",
+            "Jiahao Chang",
+            "Xiaodong Cun",
+            "Wensen Feng",
+            "Xiaoguang Han"
+        ],
+        "tldr": "The paper introduces MV-Performer, a framework for generating synchronized multi-view videos of human performers from monocular video using a diffusion model conditioned on partial point cloud renderings, addressing the challenge of 360-degree viewpoint changes.",
+        "tldr_zh": "本文介绍了一种名为 MV-Performer 的框架，它使用基于部分点云渲染的扩散模型，从单目视频生成同步的多视角人物视频，解决了 360 度视角变化的问题。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]
