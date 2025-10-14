@@ -1,0 +1,77 @@
+[
+    {
+        "title": "Stable Video Infinity: Infinite-Length Video Generation with Error Recycling",
+        "summary": "We propose Stable Video Infinity (SVI) that is able to generate\ninfinite-length videos with high temporal consistency, plausible scene\ntransitions, and controllable streaming storylines. While existing long-video\nmethods attempt to mitigate accumulated errors via handcrafted anti-drifting\n(e.g., modified noise scheduler, frame anchoring), they remain limited to\nsingle-prompt extrapolation, producing homogeneous scenes with repetitive\nmotions. We identify that the fundamental challenge extends beyond error\naccumulation to a critical discrepancy between the training assumption (seeing\nclean data) and the test-time autoregressive reality (conditioning on\nself-generated, error-prone outputs). To bridge this hypothesis gap, SVI\nincorporates Error-Recycling Fine-Tuning, a new type of efficient training that\nrecycles the Diffusion Transformer (DiT)'s self-generated errors into\nsupervisory prompts, thereby encouraging DiT to actively identify and correct\nits own errors. This is achieved by injecting, collecting, and banking errors\nthrough closed-loop recycling, autoregressively learning from error-injected\nfeedback. Specifically, we (i) inject historical errors made by DiT to\nintervene on clean inputs, simulating error-accumulated trajectories in flow\nmatching; (ii) efficiently approximate predictions with one-step bidirectional\nintegration and calculate errors with residuals; (iii) dynamically bank errors\ninto replay memory across discretized timesteps, which are resampled for new\ninput. SVI is able to scale videos from seconds to infinite durations with no\nadditional inference cost, while remaining compatible with diverse conditions\n(e.g., audio, skeleton, and text streams). We evaluate SVI on three benchmarks,\nincluding consistent, creative, and conditional settings, thoroughly verifying\nits versatility and state-of-the-art role.",
+        "url": "http://arxiv.org/abs/2510.09212v1",
+        "published_date": "2025-10-10T09:45:46+00:00",
+        "updated_date": "2025-10-10T09:45:46+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Wuyang Li",
+            "Wentao Pan",
+            "Po-Chien Luan",
+            "Yang Gao",
+            "Alexandre Alahi"
+        ],
+        "tldr": "Stable Video Infinity (SVI) introduces Error-Recycling Fine-Tuning to generate infinite-length videos with improved temporal consistency by training a diffusion transformer to correct its own errors.",
+        "tldr_zh": "Stable Video Infinity (SVI) 引入了错误循环微调，通过训练扩散 Transformer 来纠正自身错误，从而生成具有更高时间一致性的无限长度视频。",
+        "relevance_score": 9,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "StreamingVLM: Real-Time Understanding for Infinite Video Streams",
+        "summary": "Vision-language models (VLMs) could power real-time assistants and autonomous\nagents, but they face a critical challenge: understanding near-infinite video\nstreams without escalating latency and memory usage. Processing entire videos\nwith full attention leads to quadratic computational costs and poor performance\non long videos. Meanwhile, simple sliding window methods are also flawed, as\nthey either break coherence or suffer from high latency due to redundant\nrecomputation. In this paper, we introduce StreamingVLM, a model designed for\nreal-time, stable understanding of infinite visual input. Our approach is a\nunified framework that aligns training with streaming inference. During\ninference, we maintain a compact KV cache by reusing states of attention sinks,\na short window of recent vision tokens, and a long window of recent text\ntokens. This streaming ability is instilled via a simple supervised fine-tuning\n(SFT) strategy that applies full attention on short, overlapped video chunks,\nwhich effectively mimics the inference-time attention pattern without training\non prohibitively long contexts. For evaluation, we build Inf-Streams-Eval, a\nnew benchmark with videos averaging over two hours that requires dense,\nper-second alignment between frames and text. On Inf-Streams-Eval, StreamingVLM\nachieves a 66.18% win rate against GPT-4O mini and maintains stable, real-time\nperformance at up to 8 FPS on a single NVIDIA H100. Notably, our SFT strategy\nalso enhances general VQA abilities without any VQA-specific fine-tuning,\nimproving performance on LongVideoBench by +4.30 and OVOBench Realtime by\n+5.96. Code is available at https://github.com/mit-han-lab/streaming-vlm.",
+        "url": "http://arxiv.org/abs/2510.09608v1",
+        "published_date": "2025-10-10T17:59:58+00:00",
+        "updated_date": "2025-10-10T17:59:58+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.CL"
+        ],
+        "authors": [
+            "Ruyi Xu",
+            "Guangxuan Xiao",
+            "Yukang Chen",
+            "Liuning He",
+            "Kelly Peng",
+            "Yao Lu",
+            "Song Han"
+        ],
+        "tldr": "StreamingVLM enables real-time understanding of infinite video streams by using a novel KV cache mechanism and a supervised fine-tuning strategy, achieving state-of-the-art results on a new long video benchmark.",
+        "tldr_zh": "StreamingVLM通过新颖的KV缓存机制和有监督的微调策略，实现了对无限视频流的实时理解，并在新的长视频基准测试中取得了最先进的结果。",
+        "relevance_score": 3,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 5
+    },
+    {
+        "title": "D-CoDe: Scaling Image-Pretrained VLMs to Video via Dynamic Compression and Question Decomposition",
+        "summary": "Video large language models (Vid-LLMs), which excel in diverse video-language\ntasks, can be effectively constructed by adapting image-pretrained\nvision-language models (VLMs). However, this adaptation remains challenging, as\nit requires processing dense and temporally extended visual inputs that exceed\nthe capacity of image-based models. This paper identifies the perception\nbottleneck and token overload as key challenges in extending image-based VLMs\nto the video domain. To address these issues, we propose D-CoDe, a\ntraining-free adaptation framework that incorporates dynamic compression and\nquestion decomposition. Specifically, dynamic compression alleviates the\nperception bottleneck through adaptive selection of representative frames and\ncontent-aware aggregation of spatial tokens, thereby reducing redundancy while\npreserving informative content. In parallel, question decomposition mitigates\ntoken overload by reformulating the original query into sub-questions, guiding\nthe model to focus on distinct aspects of the video and enabling more\ncomprehensive understanding. Experiments demonstrate that D-CoDe effectively\nimproves video understanding across various benchmarks. Furthermore, strong\nperformance on the challenging long-video benchmark highlights the potential of\nD-CoDe in handling complex video-language tasks. Code is available at\nhttps://github.com/hukcc/D-CoDe.",
+        "url": "http://arxiv.org/abs/2510.08818v1",
+        "published_date": "2025-10-09T21:08:32+00:00",
+        "updated_date": "2025-10-09T21:08:32+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Yiyang Huang",
+            "Yizhou Wang",
+            "Yun Fu"
+        ],
+        "tldr": "The paper introduces D-CoDe, a training-free framework that adapts image-pretrained VLMs to video by using dynamic compression and question decomposition to address perception bottlenecks and token overload in video understanding tasks.",
+        "tldr_zh": "该论文介绍了一种名为D-CoDe的免训练框架，通过动态压缩和问题分解将图像预训练的VLM适配到视频领域，以解决视频理解任务中的感知瓶颈和token过载问题。",
+        "relevance_score": 3,
+        "novelty_claim_score": 7,
+        "clarity_score": 8,
+        "potential_impact_score": 6,
+        "overall_priority_score": 5
+    }
+]
