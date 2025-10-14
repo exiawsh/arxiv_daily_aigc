@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 01, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 13, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>October 01, 2025</p>
+            <p>October 13, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,32 +215,30 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">VRWKV-Editor: Reducing quadratic complexity in transformer-based video editing</h2>
+            <h2 class="paper-title">AdaViewPlanner: Adapting Video Diffusion Models for Viewpoint Planning in 4D Scenes</h2>
             
-            <p class="paper-summary">In light of recent progress in video editing, deep learning models focusing
-on both spatial and temporal dependencies have emerged as the primary method.
-However, these models suffer from the quadratic computational complexity of
-traditional attention mechanisms, making them difficult to adapt to
-long-duration and high-resolution videos. This limitation restricts their
-applicability in practical contexts such as real-time video processing. To
-tackle this challenge, we introduce a method to reduce both time and space
-complexity of these systems by proposing VRWKV-Editor, a novel video editing
-model that integrates a linear spatio-temporal aggregation module into
-video-based diffusion models. VRWKV-Editor leverages bidirectional weighted
-key-value recurrence mechanism of the RWKV transformer to capture global
-dependencies while preserving temporal coherence, achieving linear complexity
-without sacrificing quality. Extensive experiments demonstrate that the
-proposed method achieves up to 3.7x speedup and 60% lower memory usage compared
-to state-of-the-art diffusion-based video editing methods, while maintaining
-competitive performance in frame consistency and text alignment. Furthermore, a
-comparative analysis we conducted on videos with different sequence lengths
-confirms that the gap in editing speed between our approach and architectures
-with self-attention becomes more significant with long videos.</p>
+            <p class="paper-summary">Recent Text-to-Video (T2V) models have demonstrated powerful capability in
+visual simulation of real-world geometry and physical laws, indicating its
+potential as implicit world models. Inspired by this, we explore the
+feasibility of leveraging the video generation prior for viewpoint planning
+from given 4D scenes, since videos internally accompany dynamic scenes with
+natural viewpoints. To this end, we propose a two-stage paradigm to adapt
+pre-trained T2V models for viewpoint prediction, in a compatible manner. First,
+we inject the 4D scene representation into the pre-trained T2V model via an
+adaptive learning branch, where the 4D scene is viewpoint-agnostic and the
+conditional generated video embeds the viewpoints visually. Then, we formulate
+viewpoint extraction as a hybrid-condition guided camera extrinsic denoising
+process. Specifically, a camera extrinsic diffusion branch is further
+introduced onto the pre-trained T2V model, by taking the generated video and 4D
+scene as input. Experimental results show the superiority of our proposed
+method over existing competitors, and ablation studies validate the
+effectiveness of our key technical designs. To some extent, this work proves
+the potential of video generation models toward 4D interaction in real world.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces VRWKV-Editor, a novel video editing model that uses a linear spatio-temporal aggregation module within a diffusion model, achieving significant speedups and reduced memory usage compared to existing methods.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces AdaViewPlanner, a two-stage paradigm that adapts pre-trained Text-to-Video models for viewpoint planning from given 4D scenes, using adaptive learning and camera extrinsic denoising.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了VRWKV-Editor，一种新的视频编辑模型，它在扩散模型中使用了线性时空聚合模块，与现有方法相比，实现了显著的加速并降低了内存使用。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种名为AdaViewPlanner的两阶段范例，它通过自适应学习和相机外参去噪来调整预训练的文本到视频模型，以实现从给定的4D场景中进行视点规划。</p>
             
 
             
@@ -250,8 +248,8 @@ with self-attention becomes more significant with long videos.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
@@ -266,16 +264,16 @@ with self-attention becomes more significant with long videos.</p>
                 <div class="rating-item">
                     <span class="rating-label">Clarity:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
             </div>
@@ -311,18 +309,18 @@ with self-attention becomes more significant with long videos.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2509.25998v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.10670v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Abdelilah Aitrouga, Youssef Hmamouche, Amal El Fallah Seghrouchni</p>
+            <p class="paper-authors">Authors: Yu Li, Menghan Xia, Gongye Liu, Jianhong Bai, Xintao Wang, Conglang Zhang, Yuxuan Lin, Ruihang Chu, Pengfei Wan, Yujiu Yang</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-10-14 03:35:38 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-10-14 03:41:42 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

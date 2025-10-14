@@ -1,0 +1,31 @@
+[
+    {
+        "title": "AdaViewPlanner: Adapting Video Diffusion Models for Viewpoint Planning in 4D Scenes",
+        "summary": "Recent Text-to-Video (T2V) models have demonstrated powerful capability in\nvisual simulation of real-world geometry and physical laws, indicating its\npotential as implicit world models. Inspired by this, we explore the\nfeasibility of leveraging the video generation prior for viewpoint planning\nfrom given 4D scenes, since videos internally accompany dynamic scenes with\nnatural viewpoints. To this end, we propose a two-stage paradigm to adapt\npre-trained T2V models for viewpoint prediction, in a compatible manner. First,\nwe inject the 4D scene representation into the pre-trained T2V model via an\nadaptive learning branch, where the 4D scene is viewpoint-agnostic and the\nconditional generated video embeds the viewpoints visually. Then, we formulate\nviewpoint extraction as a hybrid-condition guided camera extrinsic denoising\nprocess. Specifically, a camera extrinsic diffusion branch is further\nintroduced onto the pre-trained T2V model, by taking the generated video and 4D\nscene as input. Experimental results show the superiority of our proposed\nmethod over existing competitors, and ablation studies validate the\neffectiveness of our key technical designs. To some extent, this work proves\nthe potential of video generation models toward 4D interaction in real world.",
+        "url": "http://arxiv.org/abs/2510.10670v1",
+        "published_date": "2025-10-12T15:55:44+00:00",
+        "updated_date": "2025-10-12T15:55:44+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yu Li",
+            "Menghan Xia",
+            "Gongye Liu",
+            "Jianhong Bai",
+            "Xintao Wang",
+            "Conglang Zhang",
+            "Yuxuan Lin",
+            "Ruihang Chu",
+            "Pengfei Wan",
+            "Yujiu Yang"
+        ],
+        "tldr": "The paper introduces AdaViewPlanner, a two-stage paradigm that adapts pre-trained Text-to-Video models for viewpoint planning from given 4D scenes, using adaptive learning and camera extrinsic denoising.",
+        "tldr_zh": "本文介绍了一种名为AdaViewPlanner的两阶段范例，它通过自适应学习和相机外参去噪来调整预训练的文本到视频模型，以实现从给定的4D场景中进行视点规划。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 8,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    }
+]

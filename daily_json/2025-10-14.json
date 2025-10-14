@@ -1,0 +1,26 @@
+[
+    {
+        "title": "MoMaps: Semantics-Aware Scene Motion Generation with Motion Maps",
+        "summary": "This paper addresses the challenge of learning semantically and functionally\nmeaningful 3D motion priors from real-world videos, in order to enable\nprediction of future 3D scene motion from a single input image. We propose a\nnovel pixel-aligned Motion Map (MoMap) representation for 3D scene motion,\nwhich can be generated from existing generative image models to facilitate\nefficient and effective motion prediction. To learn meaningful distributions\nover motion, we create a large-scale database of MoMaps from over 50,000 real\nvideos and train a diffusion model on these representations. Our motion\ngeneration not only synthesizes trajectories in 3D but also suggests a new\npipeline for 2D video synthesis: first generate a MoMap, then warp an image\naccordingly and complete the warped point-based renderings. Experimental\nresults demonstrate that our approach generates plausible and semantically\nconsistent 3D scene motion.",
+        "url": "http://arxiv.org/abs/2510.11107v1",
+        "published_date": "2025-10-13T07:56:19+00:00",
+        "updated_date": "2025-10-13T07:56:19+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Jiahui Lei",
+            "Kyle Genova",
+            "George Kopanas",
+            "Noah Snavely",
+            "Leonidas Guibas"
+        ],
+        "tldr": "The paper introduces 'MoMaps,' a novel representation for 3D scene motion, and trains a diffusion model on a large dataset of MoMaps to predict future 3D scene motion from a single image and create 2D videos by warping images.",
+        "tldr_zh": "该论文提出了“运动地图（MoMaps）”，一种用于3D场景运动的新表示方法。通过在一个大型运动地图数据集上训练扩散模型，该方法能够从单张图像预测未来的3D场景运动，并可以通过扭曲图像来创建2D视频。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]

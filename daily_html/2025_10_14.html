@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 01, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 14, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>October 01, 2025</p>
+            <p>October 14, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,32 +215,26 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">VRWKV-Editor: Reducing quadratic complexity in transformer-based video editing</h2>
+            <h2 class="paper-title">MoMaps: Semantics-Aware Scene Motion Generation with Motion Maps</h2>
             
-            <p class="paper-summary">In light of recent progress in video editing, deep learning models focusing
-on both spatial and temporal dependencies have emerged as the primary method.
-However, these models suffer from the quadratic computational complexity of
-traditional attention mechanisms, making them difficult to adapt to
-long-duration and high-resolution videos. This limitation restricts their
-applicability in practical contexts such as real-time video processing. To
-tackle this challenge, we introduce a method to reduce both time and space
-complexity of these systems by proposing VRWKV-Editor, a novel video editing
-model that integrates a linear spatio-temporal aggregation module into
-video-based diffusion models. VRWKV-Editor leverages bidirectional weighted
-key-value recurrence mechanism of the RWKV transformer to capture global
-dependencies while preserving temporal coherence, achieving linear complexity
-without sacrificing quality. Extensive experiments demonstrate that the
-proposed method achieves up to 3.7x speedup and 60% lower memory usage compared
-to state-of-the-art diffusion-based video editing methods, while maintaining
-competitive performance in frame consistency and text alignment. Furthermore, a
-comparative analysis we conducted on videos with different sequence lengths
-confirms that the gap in editing speed between our approach and architectures
-with self-attention becomes more significant with long videos.</p>
+            <p class="paper-summary">This paper addresses the challenge of learning semantically and functionally
+meaningful 3D motion priors from real-world videos, in order to enable
+prediction of future 3D scene motion from a single input image. We propose a
+novel pixel-aligned Motion Map (MoMap) representation for 3D scene motion,
+which can be generated from existing generative image models to facilitate
+efficient and effective motion prediction. To learn meaningful distributions
+over motion, we create a large-scale database of MoMaps from over 50,000 real
+videos and train a diffusion model on these representations. Our motion
+generation not only synthesizes trajectories in 3D but also suggests a new
+pipeline for 2D video synthesis: first generate a MoMap, then warp an image
+accordingly and complete the warped point-based renderings. Experimental
+results demonstrate that our approach generates plausible and semantically
+consistent 3D scene motion.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces VRWKV-Editor, a novel video editing model that uses a linear spatio-temporal aggregation module within a diffusion model, achieving significant speedups and reduced memory usage compared to existing methods.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces 'MoMaps,' a novel representation for 3D scene motion, and trains a diffusion model on a large dataset of MoMaps to predict future 3D scene motion from a single image and create 2D videos by warping images.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了VRWKV-Editor，一种新的视频编辑模型，它在扩散模型中使用了线性时空聚合模块，与现有方法相比，实现了显著的加速并降低了内存使用。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文提出了“运动地图（MoMaps）”，一种用于3D场景运动的新表示方法。通过在一个大型运动地图数据集上训练扩散模型，该方法能够从单张图像预测未来的3D场景运动，并可以通过扭曲图像来创建2D视频。</p>
             
 
             
@@ -250,8 +244,8 @@ with self-attention becomes more significant with long videos.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
@@ -311,18 +305,18 @@ with self-attention becomes more significant with long videos.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2509.25998v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.11107v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Abdelilah Aitrouga, Youssef Hmamouche, Amal El Fallah Seghrouchni</p>
+            <p class="paper-authors">Authors: Jiahui Lei, Kyle Genova, George Kopanas, Noah Snavely, Leonidas Guibas</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-10-14 03:35:38 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-10-14 03:47:22 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
