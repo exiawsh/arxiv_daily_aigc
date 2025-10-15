@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 14, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 15, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>October 14, 2025</p>
+            <p>October 15, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,26 +215,28 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">MoMaps: Semantics-Aware Scene Motion Generation with Motion Maps</h2>
+            <h2 class="paper-title">Learning Human Motion with Temporally Conditional Mamba</h2>
             
-            <p class="paper-summary">This paper addresses the challenge of learning semantically and functionally
-meaningful 3D motion priors from real-world videos, in order to enable
-prediction of future 3D scene motion from a single input image. We propose a
-novel pixel-aligned Motion Map (MoMap) representation for 3D scene motion,
-which can be generated from existing generative image models to facilitate
-efficient and effective motion prediction. To learn meaningful distributions
-over motion, we create a large-scale database of MoMaps from over 50,000 real
-videos and train a diffusion model on these representations. Our motion
-generation not only synthesizes trajectories in 3D but also suggests a new
-pipeline for 2D video synthesis: first generate a MoMap, then warp an image
-accordingly and complete the warped point-based renderings. Experimental
-results demonstrate that our approach generates plausible and semantically
-consistent 3D scene motion.</p>
+            <p class="paper-summary">Learning human motion based on a time-dependent input signal presents a
+challenging yet impactful task with various applications. The goal of this task
+is to generate or estimate human movement that consistently reflects the
+temporal patterns of conditioning inputs. Existing methods typically rely on
+cross-attention mechanisms to fuse the condition with motion. However, this
+approach primarily captures global interactions and struggles to maintain
+step-by-step temporal alignment. To address this limitation, we introduce
+Temporally Conditional Mamba, a new mamba-based model for human motion
+generation. Our approach integrates conditional information into the recurrent
+dynamics of the Mamba block, enabling better temporally aligned motion. To
+validate the effectiveness of our method, we evaluate it on a variety of human
+motion tasks. Extensive experiments demonstrate that our model significantly
+improves temporal alignment, motion realism, and condition consistency over
+state-of-the-art approaches. Our project page is available at
+https://zquang2202.github.io/TCM.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces 'MoMaps,' a novel representation for 3D scene motion, and trains a diffusion model on a large dataset of MoMaps to predict future 3D scene motion from a single image and create 2D videos by warping images.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Temporally Conditional Mamba (TCM), a Mamba-based model for human motion generation that improves temporal alignment and condition consistency compared to existing methods.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文提出了“运动地图（MoMaps）”，一种用于3D场景运动的新表示方法。通过在一个大型运动地图数据集上训练扩散模型，该方法能够从单张图像预测未来的3D场景运动，并可以通过扭曲图像来创建2D视频。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了一种名为Temporally Conditional Mamba (TCM) 的基于Mamba的人体运动生成模型，与现有方法相比，该模型提高了时间对齐和条件一致性。</p>
             
 
             
@@ -244,8 +246,8 @@ consistent 3D scene motion.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
@@ -268,8 +270,8 @@ consistent 3D scene motion.</p>
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
             </div>
@@ -294,29 +296,141 @@ consistent 3D scene motion.</p>
                     
                 
                     
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
                     
                         <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.11107v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.12573v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Jiahui Lei, Kyle Genova, George Kopanas, Noah Snavely, Leonidas Guibas</p>
+            <p class="paper-authors">Authors: Quang Nguyen, Tri Le, Baoru Huang, Minh Nhat Vu, Ngan Le, Thieu Vo, Anh Nguyen</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.05, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">Playmate2: Training-Free Multi-Character Audio-Driven Animation via Diffusion Transformer with Reward Feedback</h2>
+            
+            <p class="paper-summary">Recent advances in diffusion models have significantly improved audio-driven
+human video generation, surpassing traditional methods in both quality and
+controllability. However, existing approaches still face challenges in lip-sync
+accuracy, temporal coherence for long video generation, and multi-character
+animation. In this work, we propose a diffusion transformer (DiT)-based
+framework for generating lifelike talking videos of arbitrary length, and
+introduce a training-free method for multi-character audio-driven animation.
+First, we employ a LoRA-based training strategy combined with a position shift
+inference approach, which enables efficient long video generation while
+preserving the capabilities of the foundation model. Moreover, we combine
+partial parameter updates with reward feedback to enhance both lip
+synchronization and natural body motion. Finally, we propose a training-free
+approach, Mask Classifier-Free Guidance (Mask-CFG), for multi-character
+animation, which requires no specialized datasets or model modifications and
+supports audio-driven animation for three or more characters. Experimental
+results demonstrate that our method outperforms existing state-of-the-art
+approaches, achieving high-quality, temporally coherent, and multi-character
+audio-driven video generation in a simple, efficient, and cost-effective
+manner.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Playmate2, a diffusion transformer-based framework for training-free multi-character audio-driven animation, achieving high-quality and temporally coherent long video generation with improved lip-sync accuracy and natural body motion.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了Playmate2，一个基于扩散变换器的框架，用于无需训练的多角色音频驱动动画，实现了高质量且时间连贯的长视频生成，并提高了唇形同步准确性和自然的身体运动。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star-half-alt"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2510.12089v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Xingpei Ma, Shenneng Huang, Jiaran Cai, Yuansheng Guan, Shen Zheng, Hanfeng Zhao, Qiang Zhang, Shunsi Zhang</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-10-15 03:38:38 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-10-15 03:49:37 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

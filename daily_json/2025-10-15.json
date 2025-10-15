@@ -1,0 +1,55 @@
+[
+    {
+        "title": "Learning Human Motion with Temporally Conditional Mamba",
+        "summary": "Learning human motion based on a time-dependent input signal presents a\nchallenging yet impactful task with various applications. The goal of this task\nis to generate or estimate human movement that consistently reflects the\ntemporal patterns of conditioning inputs. Existing methods typically rely on\ncross-attention mechanisms to fuse the condition with motion. However, this\napproach primarily captures global interactions and struggles to maintain\nstep-by-step temporal alignment. To address this limitation, we introduce\nTemporally Conditional Mamba, a new mamba-based model for human motion\ngeneration. Our approach integrates conditional information into the recurrent\ndynamics of the Mamba block, enabling better temporally aligned motion. To\nvalidate the effectiveness of our method, we evaluate it on a variety of human\nmotion tasks. Extensive experiments demonstrate that our model significantly\nimproves temporal alignment, motion realism, and condition consistency over\nstate-of-the-art approaches. Our project page is available at\nhttps://zquang2202.github.io/TCM.",
+        "url": "http://arxiv.org/abs/2510.12573v1",
+        "published_date": "2025-10-14T14:29:51+00:00",
+        "updated_date": "2025-10-14T14:29:51+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Quang Nguyen",
+            "Tri Le",
+            "Baoru Huang",
+            "Minh Nhat Vu",
+            "Ngan Le",
+            "Thieu Vo",
+            "Anh Nguyen"
+        ],
+        "tldr": "The paper introduces Temporally Conditional Mamba (TCM), a Mamba-based model for human motion generation that improves temporal alignment and condition consistency compared to existing methods.",
+        "tldr_zh": "该论文介绍了一种名为Temporally Conditional Mamba (TCM) 的基于Mamba的人体运动生成模型，与现有方法相比，该模型提高了时间对齐和条件一致性。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    },
+    {
+        "title": "Playmate2: Training-Free Multi-Character Audio-Driven Animation via Diffusion Transformer with Reward Feedback",
+        "summary": "Recent advances in diffusion models have significantly improved audio-driven\nhuman video generation, surpassing traditional methods in both quality and\ncontrollability. However, existing approaches still face challenges in lip-sync\naccuracy, temporal coherence for long video generation, and multi-character\nanimation. In this work, we propose a diffusion transformer (DiT)-based\nframework for generating lifelike talking videos of arbitrary length, and\nintroduce a training-free method for multi-character audio-driven animation.\nFirst, we employ a LoRA-based training strategy combined with a position shift\ninference approach, which enables efficient long video generation while\npreserving the capabilities of the foundation model. Moreover, we combine\npartial parameter updates with reward feedback to enhance both lip\nsynchronization and natural body motion. Finally, we propose a training-free\napproach, Mask Classifier-Free Guidance (Mask-CFG), for multi-character\nanimation, which requires no specialized datasets or model modifications and\nsupports audio-driven animation for three or more characters. Experimental\nresults demonstrate that our method outperforms existing state-of-the-art\napproaches, achieving high-quality, temporally coherent, and multi-character\naudio-driven video generation in a simple, efficient, and cost-effective\nmanner.",
+        "url": "http://arxiv.org/abs/2510.12089v1",
+        "published_date": "2025-10-14T02:50:05+00:00",
+        "updated_date": "2025-10-14T02:50:05+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Xingpei Ma",
+            "Shenneng Huang",
+            "Jiaran Cai",
+            "Yuansheng Guan",
+            "Shen Zheng",
+            "Hanfeng Zhao",
+            "Qiang Zhang",
+            "Shunsi Zhang"
+        ],
+        "tldr": "The paper introduces Playmate2, a diffusion transformer-based framework for training-free multi-character audio-driven animation, achieving high-quality and temporally coherent long video generation with improved lip-sync accuracy and natural body motion.",
+        "tldr_zh": "该论文介绍了Playmate2，一个基于扩散变换器的框架，用于无需训练的多角色音频驱动动画，实现了高质量且时间连贯的长视频生成，并提高了唇形同步准确性和自然的身体运动。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]
