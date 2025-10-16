@@ -1,0 +1,101 @@
+[
+    {
+        "title": "PhysMaster: Mastering Physical Representation for Video Generation via Reinforcement Learning",
+        "summary": "Video generation models nowadays are capable of generating visually realistic\nvideos, but often fail to adhere to physical laws, limiting their ability to\ngenerate physically plausible videos and serve as ''world models''. To address\nthis issue, we propose PhysMaster, which captures physical knowledge as a\nrepresentation for guiding video generation models to enhance their\nphysics-awareness. Specifically, PhysMaster is based on the image-to-video task\nwhere the model is expected to predict physically plausible dynamics from the\ninput image. Since the input image provides physical priors like relative\npositions and potential interactions of objects in the scenario, we devise\nPhysEncoder to encode physical information from it as an extra condition to\ninject physical knowledge into the video generation process. The lack of proper\nsupervision on the model's physical performance beyond mere appearance\nmotivates PhysEncoder to apply reinforcement learning with human feedback to\nphysical representation learning, which leverages feedback from generation\nmodels to optimize physical representations with Direct Preference Optimization\n(DPO) in an end-to-end manner. PhysMaster provides a feasible solution for\nimproving physics-awareness of PhysEncoder and thus of video generation,\nproving its ability on a simple proxy task and generalizability to wide-ranging\nphysical scenarios. This implies that our PhysMaster, which unifies solutions\nfor various physical processes via representation learning in the reinforcement\nlearning paradigm, can act as a generic and plug-in solution for physics-aware\nvideo generation and broader applications.",
+        "url": "http://arxiv.org/abs/2510.13809v1",
+        "published_date": "2025-10-15T17:59:59+00:00",
+        "updated_date": "2025-10-15T17:59:59+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Sihui Ji",
+            "Xi Chen",
+            "Xin Tao",
+            "Pengfei Wan",
+            "Hengshuang Zhao"
+        ],
+        "tldr": "The paper introduces PhysMaster, a reinforcement learning-based approach for learning physical representations to guide video generation models, enhancing their ability to generate physically plausible videos. They use human feedback and Direct Preference Optimization (DPO) to improve physics-awareness.",
+        "tldr_zh": "该论文介绍了PhysMaster，一种基于强化学习的方法，用于学习物理表示以指导视频生成模型，从而提高其生成符合物理规律视频的能力。他们使用人类反馈和直接偏好优化（DPO）来提高物理感知能力。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "CanvasMAR: Improving Masked Autoregressive Video Generation With Canvas",
+        "summary": "Masked autoregressive models (MAR) have recently emerged as a powerful\nparadigm for image and video generation, combining the flexibility of masked\nmodeling with the potential of continuous tokenizer. However, video MAR models\nsuffer from two major limitations: the slow-start problem, caused by the lack\nof a structured global prior at early sampling stages, and error accumulation\nacross the autoregression in both spatial and temporal dimensions. In this\nwork, we propose CanvasMAR, a novel video MAR model that mitigates these issues\nby introducing a canvas mechanism--a blurred, global prediction of the next\nframe, used as the starting point for masked generation. The canvas provides\nglobal structure early in sampling, enabling faster and more coherent frame\nsynthesis. Furthermore, we introduce compositional classifier-free guidance\nthat jointly enlarges spatial (canvas) and temporal conditioning, and employ\nnoise-based canvas augmentation to enhance robustness. Experiments on the BAIR\nand Kinetics-600 benchmarks demonstrate that CanvasMAR produces high-quality\nvideos with fewer autoregressive steps. Our approach achieves remarkable\nperformance among autoregressive models on Kinetics-600 dataset and rivals\ndiffusion-based methods.",
+        "url": "http://arxiv.org/abs/2510.13669v1",
+        "published_date": "2025-10-15T15:29:09+00:00",
+        "updated_date": "2025-10-15T15:29:09+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.LG"
+        ],
+        "authors": [
+            "Zian Li",
+            "Muhan Zhang"
+        ],
+        "tldr": "CanvasMAR improves video generation by introducing a canvas mechanism (blurred global prediction) to address slow-start and error accumulation issues in masked autoregressive models, achieving state-of-the-art results among autoregressive models.",
+        "tldr_zh": "CanvasMAR通过引入画布机制（模糊的全局预测）来改进视频生成，解决了掩蔽自回归模型中的启动缓慢和误差累积问题，并在自回归模型中取得了最先进的结果。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "SeqBench: Benchmarking Sequential Narrative Generation in Text-to-Video Models",
+        "summary": "Text-to-video (T2V) generation models have made significant progress in\ncreating visually appealing videos. However, they struggle with generating\ncoherent sequential narratives that require logical progression through\nmultiple events. Existing T2V benchmarks primarily focus on visual quality\nmetrics but fail to evaluate narrative coherence over extended sequences. To\nbridge this gap, we present SeqBench, a comprehensive benchmark for evaluating\nsequential narrative coherence in T2V generation. SeqBench includes a carefully\ndesigned dataset of 320 prompts spanning various narrative complexities, with\n2,560 human-annotated videos generated from 8 state-of-the-art T2V models.\nAdditionally, we design a Dynamic Temporal Graphs (DTG)-based automatic\nevaluation metric, which can efficiently capture long-range dependencies and\ntemporal ordering while maintaining computational efficiency. Our DTG-based\nmetric demonstrates a strong correlation with human annotations. Through\nsystematic evaluation using SeqBench, we reveal critical limitations in current\nT2V models: failure to maintain consistent object states across multi-action\nsequences, physically implausible results in multi-object scenarios, and\ndifficulties in preserving realistic timing and ordering relationships between\nsequential actions. SeqBench provides the first systematic framework for\nevaluating narrative coherence in T2V generation and offers concrete insights\nfor improving sequential reasoning capabilities in future models. Please refer\nto https://videobench.github.io/SeqBench.github.io/ for more details.",
+        "url": "http://arxiv.org/abs/2510.13042v1",
+        "published_date": "2025-10-14T23:40:57+00:00",
+        "updated_date": "2025-10-14T23:40:57+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Zhengxu Tang",
+            "Zizheng Wang",
+            "Luning Wang",
+            "Zitao Shuai",
+            "Chenhao Zhang",
+            "Siyu Qian",
+            "Yirui Wu",
+            "Bohao Wang",
+            "Haosong Rao",
+            "Zhenyu Yang",
+            "Chenwei Wu"
+        ],
+        "tldr": "The paper introduces SeqBench, a new benchmark for evaluating sequential narrative coherence in text-to-video generation models, including a dataset and an automatic evaluation metric, revealing limitations in current models.",
+        "tldr_zh": "该论文介绍了SeqBench，一个新的用于评估文本到视频生成模型中连续叙事连贯性的基准，包括一个数据集和一个自动评估指标，揭示了当前模型的局限性。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 10,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Adaptive Visual Conditioning for Semantic Consistency in Diffusion-Based Story Continuation",
+        "summary": "Story continuation focuses on generating the next image in a narrative\nsequence so that it remains coherent with both the ongoing text description and\nthe previously observed images. A central challenge in this setting lies in\nutilizing prior visual context effectively, while ensuring semantic alignment\nwith the current textual input. In this work, we introduce AVC (Adaptive Visual\nConditioning), a framework for diffusion-based story continuation. AVC employs\nthe CLIP model to retrieve the most semantically aligned image from previous\nframes. Crucially, when no sufficiently relevant image is found, AVC adaptively\nrestricts the influence of prior visuals to only the early stages of the\ndiffusion process. This enables the model to exploit visual context when\nbeneficial, while avoiding the injection of misleading or irrelevant\ninformation. Furthermore, we improve data quality by re-captioning a noisy\ndataset using large language models, thereby strengthening textual supervision\nand semantic alignment. Quantitative results and human evaluations demonstrate\nthat AVC achieves superior coherence, semantic consistency, and visual fidelity\ncompared to strong baselines, particularly in challenging cases where prior\nvisuals conflict with the current input.",
+        "url": "http://arxiv.org/abs/2510.13787v1",
+        "published_date": "2025-10-15T17:43:22+00:00",
+        "updated_date": "2025-10-15T17:43:22+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Seyed Mohammad Mousavi",
+            "Morteza Analoui"
+        ],
+        "tldr": "This paper introduces AVC, a diffusion-based framework for story continuation that adaptively uses prior visual context to generate semantically consistent image sequences, using CLIP for retrieval and LLMs for improved data quality.",
+        "tldr_zh": "本文介绍了一种名为AVC的扩散模型框架，用于故事延续，它自适应地利用先前的视觉上下文来生成语义一致的图像序列，使用CLIP进行检索，并使用LLM来提高数据质量。",
+        "relevance_score": 7,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 03, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 16, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>October 03, 2025</p>
+            <p>October 16, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,28 +215,35 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">MultiModal Action Conditioned Video Generation</h2>
+            <h2 class="paper-title">PhysMaster: Mastering Physical Representation for Video Generation via Reinforcement Learning</h2>
             
-            <p class="paper-summary">Current video models fail as world model as they lack fine-graiend control.
-General-purpose household robots require real-time fine motor control to handle
-delicate tasks and urgent situations. In this work, we introduce fine-grained
-multimodal actions to capture such precise control. We consider senses of
-proprioception, kinesthesia, force haptics, and muscle activation. Such
-multimodal senses naturally enables fine-grained interactions that are
-difficult to simulate with text-conditioned generative models. To effectively
-simulate fine-grained multisensory actions, we develop a feature learning
-paradigm that aligns these modalities while preserving the unique information
-each modality provides. We further propose a regularization scheme to enhance
-causality of the action trajectory features in representing intricate
-interaction dynamics. Experiments show that incorporating multimodal senses
-improves simulation accuracy and reduces temporal drift. Extensive ablation
-studies and downstream applications demonstrate the effectiveness and
-practicality of our work.</p>
+            <p class="paper-summary">Video generation models nowadays are capable of generating visually realistic
+videos, but often fail to adhere to physical laws, limiting their ability to
+generate physically plausible videos and serve as ''world models''. To address
+this issue, we propose PhysMaster, which captures physical knowledge as a
+representation for guiding video generation models to enhance their
+physics-awareness. Specifically, PhysMaster is based on the image-to-video task
+where the model is expected to predict physically plausible dynamics from the
+input image. Since the input image provides physical priors like relative
+positions and potential interactions of objects in the scenario, we devise
+PhysEncoder to encode physical information from it as an extra condition to
+inject physical knowledge into the video generation process. The lack of proper
+supervision on the model's physical performance beyond mere appearance
+motivates PhysEncoder to apply reinforcement learning with human feedback to
+physical representation learning, which leverages feedback from generation
+models to optimize physical representations with Direct Preference Optimization
+(DPO) in an end-to-end manner. PhysMaster provides a feasible solution for
+improving physics-awareness of PhysEncoder and thus of video generation,
+proving its ability on a simple proxy task and generalizability to wide-ranging
+physical scenarios. This implies that our PhysMaster, which unifies solutions
+for various physical processes via representation learning in the reinforcement
+learning paradigm, can act as a generic and plug-in solution for physics-aware
+video generation and broader applications.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces a multimodal action-conditioned video generation model that uses proprioception, kinesthesia, force haptics, and muscle activation to enable fine-grained control, improving simulation accuracy and reducing temporal drift compared to text-conditioned models.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces PhysMaster, a reinforcement learning-based approach for learning physical representations to guide video generation models, enhancing their ability to generate physically plausible videos. They use human feedback and Direct Preference Optimization (DPO) to improve physics-awareness.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种多模态动作条件视频生成模型，该模型利用本体感受、运动感觉、力触觉和肌肉激活来实现细粒度控制，与文本条件模型相比，提高了模拟精度并减少了时间漂移。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了PhysMaster，一种基于强化学习的方法，用于学习物理表示以指导视频生成模型，从而提高其生成符合物理规律视频的能力。他们使用人类反馈和直接偏好优化（DPO）来提高物理感知能力。</p>
             
 
             
@@ -246,24 +253,24 @@ practicality of our work.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Clarity:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
@@ -307,11 +314,11 @@ practicality of our work.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.02287v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.13809v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Yichen Li, Antonio Torralba</p>
+            <p class="paper-authors">Authors: Sihui Ji, Xi Chen, Xin Tao, Pengfei Wan, Hengshuang Zhao</p>
             
         </motion.div>
         
@@ -323,34 +330,30 @@ practicality of our work.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Learning to Generate Object Interactions with Physics-Guided Video Diffusion</h2>
+            <h2 class="paper-title">CanvasMAR: Improving Masked Autoregressive Video Generation With Canvas</h2>
             
-            <p class="paper-summary">Recent models for video generation have achieved remarkable progress and are
-now deployed in film, social media production, and advertising. Beyond their
-creative potential, such models also hold promise as world simulators for
-robotics and embodied decision making. Despite strong advances, however,
-current approaches still struggle to generate physically plausible object
-interactions and lack physics-grounded control mechanisms. To address this
-limitation, we introduce KineMask, an approach for physics-guided video
-generation that enables realistic rigid body control, interactions, and
-effects. Given a single image and a specified object velocity, our method
-generates videos with inferred motions and future object interactions. We
-propose a two-stage training strategy that gradually removes future motion
-supervision via object masks. Using this strategy we train video diffusion
-models (VDMs) on synthetic scenes of simple interactions and demonstrate
-significant improvements of object interactions in real scenes. Furthermore,
-KineMask integrates low-level motion control with high-level textual
-conditioning via predictive scene descriptions, leading to effective support
-for synthesis of complex dynamical phenomena. Extensive experiments show that
-KineMask achieves strong improvements over recent models of comparable size.
-Ablation studies further highlight the complementary roles of low- and
-high-level conditioning in VDMs. Our code, model, and data will be made
-publicly available.</p>
+            <p class="paper-summary">Masked autoregressive models (MAR) have recently emerged as a powerful
+paradigm for image and video generation, combining the flexibility of masked
+modeling with the potential of continuous tokenizer. However, video MAR models
+suffer from two major limitations: the slow-start problem, caused by the lack
+of a structured global prior at early sampling stages, and error accumulation
+across the autoregression in both spatial and temporal dimensions. In this
+work, we propose CanvasMAR, a novel video MAR model that mitigates these issues
+by introducing a canvas mechanism--a blurred, global prediction of the next
+frame, used as the starting point for masked generation. The canvas provides
+global structure early in sampling, enabling faster and more coherent frame
+synthesis. Furthermore, we introduce compositional classifier-free guidance
+that jointly enlarges spatial (canvas) and temporal conditioning, and employ
+noise-based canvas augmentation to enhance robustness. Experiments on the BAIR
+and Kinetics-600 benchmarks demonstrate that CanvasMAR produces high-quality
+videos with fewer autoregressive steps. Our approach achieves remarkable
+performance among autoregressive models on Kinetics-600 dataset and rivals
+diffusion-based methods.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces KineMask, a physics-guided video diffusion model for generating realistic object interactions with rigid body control, showing improvements over existing methods in both synthetic and real-world scenes.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: CanvasMAR improves video generation by introducing a canvas mechanism (blurred global prediction) to address slow-start and error accumulation issues in masked autoregressive models, achieving state-of-the-art results among autoregressive models.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了KineMask，一种物理引导的视频扩散模型，用于生成具有刚体控制的真实物体交互，并在合成和真实场景中均表现出优于现有方法的改进。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: CanvasMAR通过引入画布机制（模糊的全局预测）来改进视频生成，解决了掩蔽自回归模型中的启动缓慢和误差累积问题，并在自回归模型中取得了最先进的结果。</p>
             
 
             
@@ -421,11 +424,11 @@ publicly available.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.02284v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.13669v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: David Romero, Ariana Bermudez, Hao Li, Fabio Pizzati, Ivan Laptev</p>
+            <p class="paper-authors">Authors: Zian Li, Muhan Zhang</p>
             
         </motion.div>
         
@@ -437,37 +440,34 @@ publicly available.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Self-Forcing++: Towards Minute-Scale High-Quality Video Generation</h2>
+            <h2 class="paper-title">SeqBench: Benchmarking Sequential Narrative Generation in Text-to-Video Models</h2>
             
-            <p class="paper-summary">Diffusion models have revolutionized image and video generation, achieving
-unprecedented visual quality. However, their reliance on transformer
-architectures incurs prohibitively high computational costs, particularly when
-extending generation to long videos. Recent work has explored autoregressive
-formulations for long video generation, typically by distilling from
-short-horizon bidirectional teachers. Nevertheless, given that teacher models
-cannot synthesize long videos, the extrapolation of student models beyond their
-training horizon often leads to pronounced quality degradation, arising from
-the compounding of errors within the continuous latent space. In this paper, we
-propose a simple yet effective approach to mitigate quality degradation in
-long-horizon video generation without requiring supervision from long-video
-teachers or retraining on long video datasets. Our approach centers on
-exploiting the rich knowledge of teacher models to provide guidance for the
-student model through sampled segments drawn from self-generated long videos.
-Our method maintains temporal consistency while scaling video length by up to
-20x beyond teacher's capability, avoiding common issues such as over-exposure
-and error-accumulation without recomputing overlapping frames like previous
-methods. When scaling up the computation, our method shows the capability of
-generating videos up to 4 minutes and 15 seconds, equivalent to 99.9% of the
-maximum span supported by our base model's position embedding and more than 50x
-longer than that of our baseline model. Experiments on standard benchmarks and
-our proposed improved benchmark demonstrate that our approach substantially
-outperforms baseline methods in both fidelity and consistency. Our long-horizon
-videos demo can be found at https://self-forcing-plus-plus.github.io/</p>
+            <p class="paper-summary">Text-to-video (T2V) generation models have made significant progress in
+creating visually appealing videos. However, they struggle with generating
+coherent sequential narratives that require logical progression through
+multiple events. Existing T2V benchmarks primarily focus on visual quality
+metrics but fail to evaluate narrative coherence over extended sequences. To
+bridge this gap, we present SeqBench, a comprehensive benchmark for evaluating
+sequential narrative coherence in T2V generation. SeqBench includes a carefully
+designed dataset of 320 prompts spanning various narrative complexities, with
+2,560 human-annotated videos generated from 8 state-of-the-art T2V models.
+Additionally, we design a Dynamic Temporal Graphs (DTG)-based automatic
+evaluation metric, which can efficiently capture long-range dependencies and
+temporal ordering while maintaining computational efficiency. Our DTG-based
+metric demonstrates a strong correlation with human annotations. Through
+systematic evaluation using SeqBench, we reveal critical limitations in current
+T2V models: failure to maintain consistent object states across multi-action
+sequences, physically implausible results in multi-object scenarios, and
+difficulties in preserving realistic timing and ordering relationships between
+sequential actions. SeqBench provides the first systematic framework for
+evaluating narrative coherence in T2V generation and offers concrete insights
+for improving sequential reasoning capabilities in future models. Please refer
+to https://videobench.github.io/SeqBench.github.io/ for more details.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Self-Forcing++, a method for generating long, high-quality videos by guiding a student model with sampled segments from self-generated long videos, effectively extending video length beyond the teacher model's capabilities without significant quality degradation or retraining.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces SeqBench, a new benchmark for evaluating sequential narrative coherence in text-to-video generation models, including a dataset and an automatic evaluation metric, revealing limitations in current models.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了Self-Forcing++，一种通过使用自生成长视频的抽样片段来指导学生模型，从而生成高质量长视频的方法，有效地将视频长度扩展到超过教师模型的能力，且不会显著降低质量或需要重新训练。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了SeqBench，一个新的用于评估文本到视频生成模型中连续叙事连贯性的基准，包括一个数据集和一个自动评估指标，揭示了当前模型的局限性。</p>
             
 
             
@@ -477,24 +477,24 @@ videos demo can be found at https://self-forcing-plus-plus.github.io/</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                     <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
+                    <span class="rating-label">Novelty:</span>
                     
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                     <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(10/10)</span>
                 </div>
                 
                 
@@ -538,11 +538,11 @@ videos demo can be found at https://self-forcing-plus-plus.github.io/</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.02283v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.13042v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Justin Cui, Jie Wu, Ming Li, Tao Yang, Xiaojie Li, Rui Wang, Andrew Bai, Yuanhao Ban, Cho-Jui Hsieh</p>
+            <p class="paper-authors">Authors: Zhengxu Tang, Zizheng Wang, Luning Wang, Zitao Shuai, Chenhao Zhang, Siyu Qian, Yirui Wu, Bohao Wang, Haosong Rao, Zhenyu Yang, Chenwei Wu</p>
             
         </motion.div>
         
@@ -554,140 +554,30 @@ videos demo can be found at https://self-forcing-plus-plus.github.io/</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Pack and Force Your Memory: Long-form and Consistent Video Generation</h2>
+            <h2 class="paper-title">Adaptive Visual Conditioning for Semantic Consistency in Diffusion-Based Story Continuation</h2>
             
-            <p class="paper-summary">Long-form video generation presents a dual challenge: models must capture
-long-range dependencies while preventing the error accumulation inherent in
-autoregressive decoding. To address these challenges, we make two
-contributions. First, for dynamic context modeling, we propose MemoryPack, a
-learnable context-retrieval mechanism that leverages both textual and image
-information as global guidance to jointly model short- and long-term
-dependencies, achieving minute-level temporal consistency. This design scales
-gracefully with video length, preserves computational efficiency, and maintains
-linear complexity. Second, to mitigate error accumulation, we introduce Direct
-Forcing, an efficient single-step approximating strategy that improves
-training-inference alignment and thereby curtails error propagation during
-inference. Together, MemoryPack and Direct Forcing substantially enhance the
-context consistency and reliability of long-form video generation, advancing
-the practical usability of autoregressive video models.</p>
+            <p class="paper-summary">Story continuation focuses on generating the next image in a narrative
+sequence so that it remains coherent with both the ongoing text description and
+the previously observed images. A central challenge in this setting lies in
+utilizing prior visual context effectively, while ensuring semantic alignment
+with the current textual input. In this work, we introduce AVC (Adaptive Visual
+Conditioning), a framework for diffusion-based story continuation. AVC employs
+the CLIP model to retrieve the most semantically aligned image from previous
+frames. Crucially, when no sufficiently relevant image is found, AVC adaptively
+restricts the influence of prior visuals to only the early stages of the
+diffusion process. This enables the model to exploit visual context when
+beneficial, while avoiding the injection of misleading or irrelevant
+information. Furthermore, we improve data quality by re-captioning a noisy
+dataset using large language models, thereby strengthening textual supervision
+and semantic alignment. Quantitative results and human evaluations demonstrate
+that AVC achieves superior coherence, semantic consistency, and visual fidelity
+compared to strong baselines, particularly in challenging cases where prior
+visuals conflict with the current input.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces MemoryPack and Direct Forcing to improve long-form video generation by addressing long-range dependency modeling and error accumulation during autoregressive decoding.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了 MemoryPack 和 Direct Forcing，通过解决长程依赖建模和自回归解码过程中的误差累积问题，来改进长视频生成。</p>
-            
-
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces AVC, a diffusion-based framework for story continuation that adaptively uses prior visual context to generate semantically consistent image sequences, using CLIP for retrieval and LLMs for improved data quality.</p>
             
             
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-            </div>
-            
-            
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="far fa-star"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2510.01784v1" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Xiaofei Wu, Guozhen Zhang, Zhiyong Xu, Yuan Zhou, Qinglin Lu, Xuming He</p>
-            
-        </motion.div>
-        
-        <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.2, ease: 'easeOut' }"  
-            class="bento-item"
-            data-motion-element
-        >
-            <h2 class="paper-title">Growing Visual Generative Capacity for Pre-Trained MLLMs</h2>
-            
-            <p class="paper-summary">Multimodal large language models (MLLMs) extend the success of language
-models to visual understanding, and recent efforts have sought to build unified
-MLLMs that support both understanding and generation. However, constructing
-such models remains challenging: hybrid approaches combine continuous
-embeddings with diffusion or flow-based objectives, producing high-quality
-images but breaking the autoregressive paradigm, while pure autoregressive
-approaches unify text and image prediction over discrete visual tokens but
-often face trade-offs between semantic alignment and pixel-level fidelity. In
-this work, we present Bridge, a pure autoregressive unified MLLM that augments
-pre-trained visual understanding models with generative ability through a
-Mixture-of-Transformers architecture, enabling both image understanding and
-generation within a single next-token prediction framework. To further improve
-visual generation fidelity, we propose a semantic-to-pixel discrete
-representation that integrates compact semantic tokens with fine-grained pixel
-tokens, achieving strong language alignment and precise description of visual
-details with only a 7.9% increase in sequence length. Extensive experiments
-across diverse multimodal benchmarks demonstrate that Bridge achieves
-competitive or superior results in both understanding and generation
-benchmarks, while requiring less training data and reduced training time
-compared to prior unified MLLMs.</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Bridge, a unified MLLM using a Mixture-of-Transformers architecture for both image understanding and generation via next-token prediction, achieving competitive performance with less data and training time.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了Bridge，一个统一的MLLM，使用混合Transformer架构通过预测下一个token来进行图像理解和生成，并以更少的数据和训练时间实现了有竞争力的性能。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种名为AVC的扩散模型框架，用于故事延续，它自适应地利用先前的视觉上下文来生成语义一致的图像序列，使用CLIP进行检索，并使用LLM来提高数据质量。</p>
             
 
             
@@ -697,16 +587,16 @@ compared to prior unified MLLMs.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(5/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
@@ -747,29 +637,29 @@ compared to prior unified MLLMs.</p>
                     
                 
                     
-                        <i class="far fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
                     
                         <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(6/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.01546v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.13787v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Hanyu Wang, Jiaming Han, Ziyan Yang, Qi Zhao, Shanchuan Lin, Xiangyu Yue, Abhinav Shrivastava, Zhenheng Yang, Hao Chen</p>
+            <p class="paper-authors">Authors: Seyed Mohammad Mousavi, Morteza Analoui</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-10-16 03:38:24 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-10-16 03:42:01 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
