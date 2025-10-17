@@ -1,0 +1,196 @@
+[
+    {
+        "title": "RealDPO: Real or Not Real, that is the Preference",
+        "summary": "Video generative models have recently achieved notable advancements in\nsynthesis quality. However, generating complex motions remains a critical\nchallenge, as existing models often struggle to produce natural, smooth, and\ncontextually consistent movements. This gap between generated and real-world\nmotions limits their practical applicability. To address this issue, we\nintroduce RealDPO, a novel alignment paradigm that leverages real-world data as\npositive samples for preference learning, enabling more accurate motion\nsynthesis. Unlike traditional supervised fine-tuning (SFT), which offers\nlimited corrective feedback, RealDPO employs Direct Preference Optimization\n(DPO) with a tailored loss function to enhance motion realism. By contrasting\nreal-world videos with erroneous model outputs, RealDPO enables iterative\nself-correction, progressively refining motion quality. To support\npost-training in complex motion synthesis, we propose RealAction-5K, a curated\ndataset of high-quality videos capturing human daily activities with rich and\nprecise motion details. Extensive experiments demonstrate that RealDPO\nsignificantly improves video quality, text alignment, and motion realism\ncompared to state-of-the-art models and existing preference optimization\ntechniques.",
+        "url": "http://arxiv.org/abs/2510.14955v1",
+        "published_date": "2025-10-16T17:58:25+00:00",
+        "updated_date": "2025-10-16T17:58:25+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Guo Cheng",
+            "Danni Yang",
+            "Ziqi Huang",
+            "Jianlou Si",
+            "Chenyang Si",
+            "Ziwei Liu"
+        ],
+        "tldr": "RealDPO introduces a novel alignment paradigm for video generation that leverages real-world data as positive samples for direct preference optimization, resulting in improved motion realism. They also introduce a new dataset, RealAction-5K.",
+        "tldr_zh": "RealDPO 提出了一种新的视频生成对齐方法，利用真实世界的数据作为直接偏好优化的正样本，从而提高运动的真实感。他们还介绍了一个新的数据集 RealAction-5K。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "3D Scene Prompting for Scene-Consistent Camera-Controllable Video Generation",
+        "summary": "We present 3DScenePrompt, a framework that generates the next video chunk\nfrom arbitrary-length input while enabling precise camera control and\npreserving scene consistency. Unlike methods conditioned on a single image or a\nshort clip, we employ dual spatio-temporal conditioning that reformulates\ncontext-view referencing across the input video. Our approach conditions on\nboth temporally adjacent frames for motion continuity and spatially adjacent\ncontent for scene consistency. However, when generating beyond temporal\nboundaries, directly using spatially adjacent frames would incorrectly preserve\ndynamic elements from the past. We address this by introducing a 3D scene\nmemory that represents exclusively the static geometry extracted from the\nentire input video. To construct this memory, we leverage dynamic SLAM with our\nnewly introduced dynamic masking strategy that explicitly separates static\nscene geometry from moving elements. The static scene representation can then\nbe projected to any target viewpoint, providing geometrically consistent warped\nviews that serve as strong 3D spatial prompts while allowing dynamic regions to\nevolve naturally from temporal context. This enables our model to maintain\nlong-range spatial coherence and precise camera control without sacrificing\ncomputational efficiency or motion realism. Extensive experiments demonstrate\nthat our framework significantly outperforms existing methods in scene\nconsistency, camera controllability, and generation quality. Project page :\nhttps://cvlab-kaist.github.io/3DScenePrompt/",
+        "url": "http://arxiv.org/abs/2510.14945v1",
+        "published_date": "2025-10-16T17:55:25+00:00",
+        "updated_date": "2025-10-16T17:55:25+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "JoungBin Lee",
+            "Jaewoo Jung",
+            "Jisang Han",
+            "Takuya Narihira",
+            "Kazumi Fukuda",
+            "Junyoung Seo",
+            "Sunghwan Hong",
+            "Yuki Mitsufuji",
+            "Seungryong Kim"
+        ],
+        "tldr": "This paper introduces 3DScenePrompt, a framework for generating scene-consistent, camera-controllable videos from long inputs by using a 3D scene memory derived from dynamic SLAM to provide spatial prompts.",
+        "tldr_zh": "该论文介绍了一种名为 3DScenePrompt 的框架，该框架通过使用从动态 SLAM 导出的 3D 场景记忆来提供空间提示，从而从长输入生成场景一致、相机可控的视频。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "STANCE: Motion Coherent Video Generation Via Sparse-to-Dense Anchored Encoding",
+        "summary": "Video generation has recently made striking visual progress, but maintaining\ncoherent object motion and interactions remains difficult. We trace two\npractical bottlenecks: (i) human-provided motion hints (e.g., small 2D maps)\noften collapse to too few effective tokens after encoding, weakening guidance;\nand (ii) optimizing for appearance and motion in a single head can favor\ntexture over temporal consistency. We present STANCE, an image-to-video\nframework that addresses both issues with two simple components. First, we\nintroduce Instance Cues -- a pixel-aligned control signal that turns sparse,\nuser-editable hints into a dense 2.5D (camera-relative) motion field by\naveraging per-instance flow and augmenting with monocular depth over the\ninstance mask. This reduces depth ambiguity compared to 2D arrow inputs while\nremaining easy to use. Second, we preserve the salience of these cues in token\nspace with Dense RoPE, which tags a small set of motion tokens (anchored on the\nfirst frame) with spatial-addressable rotary embeddings. Paired with joint RGB\n\\(+\\) auxiliary-map prediction (segmentation or depth), our model anchors\nstructure while RGB handles appearance, stabilizing optimization and improving\ntemporal coherence without requiring per-frame trajectory scripts.",
+        "url": "http://arxiv.org/abs/2510.14588v1",
+        "published_date": "2025-10-16T11:50:38+00:00",
+        "updated_date": "2025-10-16T11:50:38+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Zhifei Chen",
+            "Tianshuo Xu",
+            "Leyi Wu",
+            "Luozhou Wang",
+            "Dongyu Yan",
+            "Zihan You",
+            "Wenting Luo",
+            "Guo Zhang",
+            "Yingcong Chen"
+        ],
+        "tldr": "STANCE introduces a new video generation framework that uses instance cues and dense RoPE to improve motion coherence and temporal consistency in generated videos, addressing limitations in encoding motion hints and optimizing for both appearance and motion.",
+        "tldr_zh": "STANCE 提出了一种新的视频生成框架，利用实例提示和密集 RoPE 来提高生成视频中的运动连贯性和时间一致性，解决了编码运动提示和优化外观与运动时的局限性。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Virtually Being: Customizing Camera-Controllable Video Diffusion Models with Multi-View Performance Captures",
+        "summary": "We introduce a framework that enables both multi-view character consistency\nand 3D camera control in video diffusion models through a novel customization\ndata pipeline. We train the character consistency component with recorded\nvolumetric capture performances re-rendered with diverse camera trajectories\nvia 4D Gaussian Splatting (4DGS), lighting variability obtained with a video\nrelighting model. We fine-tune state-of-the-art open-source video diffusion\nmodels on this data to provide strong multi-view identity preservation, precise\ncamera control, and lighting adaptability. Our framework also supports core\ncapabilities for virtual production, including multi-subject generation using\ntwo approaches: joint training and noise blending, the latter enabling\nefficient composition of independently customized models at inference time; it\nalso achieves scene and real-life video customization as well as control over\nmotion and spatial layout during customization. Extensive experiments show\nimproved video quality, higher personalization accuracy, and enhanced camera\ncontrol and lighting adaptability, advancing the integration of video\ngeneration into virtual production. Our project page is available at:\nhttps://eyeline-labs.github.io/Virtually-Being.",
+        "url": "http://arxiv.org/abs/2510.14179v1",
+        "published_date": "2025-10-16T00:20:57+00:00",
+        "updated_date": "2025-10-16T00:20:57+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Yuancheng Xu",
+            "Wenqi Xian",
+            "Li Ma",
+            "Julien Philip",
+            "Ahmet Levent Taşel",
+            "Yiwei Zhao",
+            "Ryan Burgert",
+            "Mingming He",
+            "Oliver Hermann",
+            "Oliver Pilarski",
+            "Rahul Garg",
+            "Paul Debevec",
+            "Ning Yu"
+        ],
+        "tldr": "The paper presents a framework for customizing video diffusion models with multi-view performance captures, enabling character consistency and 3D camera control, aiming for integration into virtual production workflows.",
+        "tldr_zh": "该论文提出了一个框架，通过多视角性能捕捉来定制视频扩散模型，实现角色一致性和3D相机控制，旨在整合到虚拟制作流程中。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "ImagerySearch: Adaptive Test-Time Search for Video Generation Beyond Semantic Dependency Constraints",
+        "summary": "Video generation models have achieved remarkable progress, particularly\nexcelling in realistic scenarios; however, their performance degrades notably\nin imaginative scenarios. These prompts often involve rarely co-occurring\nconcepts with long-distance semantic relationships, falling outside training\ndistributions. Existing methods typically apply test-time scaling for improving\nvideo quality, but their fixed search spaces and static reward designs limit\nadaptability to imaginative scenarios. To fill this gap, we propose\nImagerySearch, a prompt-guided adaptive test-time search strategy that\ndynamically adjusts both the inference search space and reward function\naccording to semantic relationships in the prompt. This enables more coherent\nand visually plausible videos in challenging imaginative settings. To evaluate\nprogress in this direction, we introduce LDT-Bench, the first dedicated\nbenchmark for long-distance semantic prompts, consisting of 2,839 diverse\nconcept pairs and an automated protocol for assessing creative generation\ncapabilities. Extensive experiments show that ImagerySearch consistently\noutperforms strong video generation baselines and existing test-time scaling\napproaches on LDT-Bench, and achieves competitive improvements on VBench,\ndemonstrating its effectiveness across diverse prompt types. We will release\nLDT-Bench and code to facilitate future research on imaginative video\ngeneration.",
+        "url": "http://arxiv.org/abs/2510.14847v1",
+        "published_date": "2025-10-16T16:19:13+00:00",
+        "updated_date": "2025-10-16T16:19:13+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Meiqi Wu",
+            "Jiashu Zhu",
+            "Xiaokun Feng",
+            "Chubin Chen",
+            "Chen Zhu",
+            "Bingze Song",
+            "Fangyuan Mao",
+            "Jiahong Wu",
+            "Xiangxiang Chu",
+            "Kaiqi Huang"
+        ],
+        "tldr": "The paper introduces ImagerySearch, a prompt-guided adaptive test-time search strategy for video generation that addresses the challenges of generating videos from imaginative prompts with long-distance semantic relationships. They also introduce a new benchmark, LDT-Bench, for evaluating such scenarios.",
+        "tldr_zh": "该论文介绍了ImagerySearch，一种提示引导的自适应测试时搜索策略，用于视频生成，旨在解决从具有长距离语义关系的想象性提示生成视频的挑战。他们还引入了一个新的基准测试LDT-Bench，用于评估此类场景。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    },
+    {
+        "title": "Deep Compositional Phase Diffusion for Long Motion Sequence Generation",
+        "summary": "Recent research on motion generation has shown significant progress in\ngenerating semantically aligned motion with singular semantics. However, when\nemploying these models to create composite sequences containing multiple\nsemantically generated motion clips, they often struggle to preserve the\ncontinuity of motion dynamics at the transition boundaries between clips,\nresulting in awkward transitions and abrupt artifacts. To address these\nchallenges, we present Compositional Phase Diffusion, which leverages the\nSemantic Phase Diffusion Module (SPDM) and Transitional Phase Diffusion Module\n(TPDM) to progressively incorporate semantic guidance and phase details from\nadjacent motion clips into the diffusion process. Specifically, SPDM and TPDM\noperate within the latent motion frequency domain established by the\npre-trained Action-Centric Motion Phase Autoencoder (ACT-PAE). This allows them\nto learn semantically important and transition-aware phase information from\nvariable-length motion clips during training. Experimental results demonstrate\nthe competitive performance of our proposed framework in generating\ncompositional motion sequences that align semantically with the input\nconditions, while preserving phase transitional continuity between preceding\nand succeeding motion clips. Additionally, motion inbetweening task is made\npossible by keeping the phase parameter of the input motion sequences fixed\nthroughout the diffusion process, showcasing the potential for extending the\nproposed framework to accommodate various application scenarios. Codes are\navailable at https://github.com/asdryau/TransPhase.",
+        "url": "http://arxiv.org/abs/2510.14427v1",
+        "published_date": "2025-10-16T08:28:46+00:00",
+        "updated_date": "2025-10-16T08:28:46+00:00",
+        "categories": [
+            "cs.MM",
+            "cs.CV"
+        ],
+        "authors": [
+            "Ho Yin Au",
+            "Jie Chen",
+            "Junkun Jiang",
+            "Jingyu Xiang"
+        ],
+        "tldr": "This paper introduces Compositional Phase Diffusion, a novel approach for generating long, composite motion sequences with smooth transitions between clips, using Semantic and Transitional Phase Diffusion Modules within a latent frequency domain.",
+        "tldr_zh": "本文介绍了一种名为组合相位扩散的新方法，用于生成具有平滑片段过渡的长组合运动序列，该方法在潜在频率域中使用语义和过渡相位扩散模块。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    },
+    {
+        "title": "Identity-GRPO: Optimizing Multi-Human Identity-preserving Video Generation via Reinforcement Learning",
+        "summary": "While advanced methods like VACE and Phantom have advanced video generation\nfor specific subjects in diverse scenarios, they struggle with multi-human\nidentity preservation in dynamic interactions, where consistent identities\nacross multiple characters are critical. To address this, we propose\nIdentity-GRPO, a human feedback-driven optimization pipeline for refining\nmulti-human identity-preserving video generation. First, we construct a video\nreward model trained on a large-scale preference dataset containing\nhuman-annotated and synthetic distortion data, with pairwise annotations\nfocused on maintaining human consistency throughout the video. We then employ a\nGRPO variant tailored for multi-human consistency, which greatly enhances both\nVACE and Phantom. Through extensive ablation studies, we evaluate the impact of\nannotation quality and design choices on policy optimization. Experiments show\nthat Identity-GRPO achieves up to 18.9% improvement in human consistency\nmetrics over baseline methods, offering actionable insights for aligning\nreinforcement learning with personalized video generation.",
+        "url": "http://arxiv.org/abs/2510.14256v1",
+        "published_date": "2025-10-16T03:13:56+00:00",
+        "updated_date": "2025-10-16T03:13:56+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Xiangyu Meng",
+            "Zixian Zhang",
+            "Zhenghao Zhang",
+            "Junchao Liao",
+            "Long Qin",
+            "Weizhi Wang"
+        ],
+        "tldr": "The paper introduces Identity-GRPO, a reinforcement learning based method, optimized with human feedback, to improve multi-human identity preservation in video generation, demonstrating improved consistency metrics over baselines.",
+        "tldr_zh": "该论文介绍了 Identity-GRPO，一种基于强化学习的方法，通过人工反馈进行优化，以提高视频生成中多人身份保持，并在一致性指标方面优于基线方法。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]
