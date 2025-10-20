@@ -1,0 +1,114 @@
+[
+    {
+        "title": "VISTA: A Test-Time Self-Improving Video Generation Agent",
+        "summary": "Despite rapid advances in text-to-video synthesis, generated video quality\nremains critically dependent on precise user prompts. Existing test-time\noptimization methods, successful in other domains, struggle with the\nmulti-faceted nature of video. In this work, we introduce VISTA (Video\nIterative Self-improvemenT Agent), a novel multi-agent system that autonomously\nimproves video generation through refining prompts in an iterative loop. VISTA\nfirst decomposes a user idea into a structured temporal plan. After generation,\nthe best video is identified through a robust pairwise tournament. This winning\nvideo is then critiqued by a trio of specialized agents focusing on visual,\naudio, and contextual fidelity. Finally, a reasoning agent synthesizes this\nfeedback to introspectively rewrite and enhance the prompt for the next\ngeneration cycle. Experiments on single- and multi-scene video generation\nscenarios show that while prior methods yield inconsistent gains, VISTA\nconsistently improves video quality and alignment with user intent, achieving\nup to 60% pairwise win rate against state-of-the-art baselines. Human\nevaluators concur, preferring VISTA outputs in 66.4% of comparisons.",
+        "url": "http://arxiv.org/abs/2510.15831v1",
+        "published_date": "2025-10-17T17:12:08+00:00",
+        "updated_date": "2025-10-17T17:12:08+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Do Xuan Long",
+            "Xingchen Wan",
+            "Hootan Nakhost",
+            "Chen-Yu Lee",
+            "Tomas Pfister",
+            "Sercan Ö. Arık"
+        ],
+        "tldr": "The paper introduces VISTA, a multi-agent system for self-improving text-to-video generation through iterative prompt refinement, demonstrating significant improvements in video quality and alignment with user intent compared to existing methods.",
+        "tldr_zh": "该论文介绍了一种名为VISTA的多智能体系统，通过迭代优化提示词来实现文本到视频生成的自我改进，与现有方法相比，在视频质量和用户意图对齐方面表现出显著的提升。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "DriveGen3D: Boosting Feed-Forward Driving Scene Generation with Efficient Video Diffusion",
+        "summary": "We present DriveGen3D, a novel framework for generating high-quality and\nhighly controllable dynamic 3D driving scenes that addresses critical\nlimitations in existing methodologies. Current approaches to driving scene\nsynthesis either suffer from prohibitive computational demands for extended\ntemporal generation, focus exclusively on prolonged video synthesis without 3D\nrepresentation, or restrict themselves to static single-scene reconstruction.\nOur work bridges this methodological gap by integrating accelerated long-term\nvideo generation with large-scale dynamic scene reconstruction through\nmultimodal conditional control. DriveGen3D introduces a unified pipeline\nconsisting of two specialized components: FastDrive-DiT, an efficient video\ndiffusion transformer for high-resolution, temporally coherent video synthesis\nunder text and Bird's-Eye-View (BEV) layout guidance; and FastRecon3D, a\nfeed-forward reconstruction module that rapidly builds 3D Gaussian\nrepresentations across time, ensuring spatial-temporal consistency. Together,\nthese components enable real-time generation of extended driving videos (up to\n$424\\times800$ at 12 FPS) and corresponding dynamic 3D scenes, achieving SSIM\nof 0.811 and PSNR of 22.84 on novel view synthesis, all while maintaining\nparameter efficiency.",
+        "url": "http://arxiv.org/abs/2510.15264v1",
+        "published_date": "2025-10-17T03:00:08+00:00",
+        "updated_date": "2025-10-17T03:00:08+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Weijie Wang",
+            "Jiagang Zhu",
+            "Zeyu Zhang",
+            "Xiaofeng Wang",
+            "Zheng Zhu",
+            "Guosheng Zhao",
+            "Chaojun Ni",
+            "Haoxiao Wang",
+            "Guan Huang",
+            "Xinze Chen",
+            "Yukun Zhou",
+            "Wenkang Qin",
+            "Duochao Shi",
+            "Haoyun Li",
+            "Guanghong Jia",
+            "Jiwen Lu"
+        ],
+        "tldr": "DriveGen3D introduces a framework for generating high-quality, controllable 3D driving scenes by integrating efficient video diffusion for video synthesis and a feed-forward reconstruction module for dynamic 3D scene creation, achieving real-time performance and high spatial-temporal consistency.",
+        "tldr_zh": "DriveGen3D 提出了一个生成高质量、可控 3D 驾驶场景的框架，该框架通过整合高效的视频扩散技术进行视频合成，以及一个前馈重建模块进行动态 3D 场景创建，实现了实时性能和高时空一致性。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "TGT: Text-Grounded Trajectories for Locally Controlled Video Generation",
+        "summary": "Text-to-video generation has advanced rapidly in visual fidelity, whereas\nstandard methods still have limited ability to control the subject composition\nof generated scenes. Prior work shows that adding localized text control\nsignals, such as bounding boxes or segmentation masks, can help. However, these\nmethods struggle in complex scenarios and degrade in multi-object settings,\noffering limited precision and lacking a clear correspondence between\nindividual trajectories and visual entities as the number of controllable\nobjects increases. We introduce Text-Grounded Trajectories (TGT), a framework\nthat conditions video generation on trajectories paired with localized text\ndescriptions. We propose Location-Aware Cross-Attention (LACA) to integrate\nthese signals and adopt a dual-CFG scheme to separately modulate local and\nglobal text guidance. In addition, we develop a data processing pipeline that\nproduces trajectories with localized descriptions of tracked entities, and we\nannotate two million high quality video clips to train TGT. Together, these\ncomponents enable TGT to use point trajectories as intuitive motion handles,\npairing each trajectory with text to control both appearance and motion.\nExtensive experiments show that TGT achieves higher visual quality, more\naccurate text alignment, and improved motion controllability compared with\nprior approaches. Website: https://textgroundedtraj.github.io.",
+        "url": "http://arxiv.org/abs/2510.15104v1",
+        "published_date": "2025-10-16T19:45:27+00:00",
+        "updated_date": "2025-10-16T19:45:27+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Guofeng Zhang",
+            "Angtian Wang",
+            "Jacob Zhiyuan Fang",
+            "Liming Jiang",
+            "Haotian Yang",
+            "Bo Liu",
+            "Yiding Yang",
+            "Guang Chen",
+            "Longyin Wen",
+            "Alan Yuille",
+            "Chongyang Ma"
+        ],
+        "tldr": "The paper introduces Text-Grounded Trajectories (TGT), a framework for generating videos controlled by localized text descriptions paired with trajectories, enabling precise control over object appearance and motion.",
+        "tldr_zh": "该论文介绍了文本引导轨迹（TGT），一个通过与轨迹配对的局部文本描述控制视频生成的框架，从而实现对物体外观和运动的精确控制。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "LILAC: Long-sequence Incremental Low-latency Arbitrary Motion Stylization via Streaming VAE-Diffusion with Causal Decoding",
+        "summary": "Generating long and stylized human motions in real time is critical for\napplications that demand continuous and responsive character control. Despite\nits importance, existing streaming approaches often operate directly in the raw\nmotion space, leading to substantial computational overhead and making it\ndifficult to maintain temporal stability. In contrast, latent-space\nVAE-Diffusion-based frameworks alleviate these issues and achieve high-quality\nstylization, but they are generally confined to offline processing. To bridge\nthis gap, LILAC (Long-sequence Incremental Low-latency Arbitrary Motion\nStylization via Streaming VAE-Diffusion with Causal Decoding) builds upon a\nrecent high-performing offline framework for arbitrary motion stylization and\nextends it to an online setting through a latent-space streaming architecture\nwith a sliding-window causal design and the injection of decoded motion\nfeatures to ensure smooth motion transitions. This architecture enables\nlong-sequence real-time arbitrary stylization without relying on future frames\nor modifying the diffusion model architecture, achieving a favorable balance\nbetween stylization quality and responsiveness as demonstrated by experiments\non benchmark datasets. Supplementary video and examples are available at the\nproject page: https://pren1.github.io/lilac/",
+        "url": "http://arxiv.org/abs/2510.15392v1",
+        "published_date": "2025-10-17T07:45:43+00:00",
+        "updated_date": "2025-10-17T07:45:43+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.LG"
+        ],
+        "authors": [
+            "Peng Ren",
+            "Hai Yang"
+        ],
+        "tldr": "LILAC introduces a streaming VAE-Diffusion architecture for real-time, long-sequence motion stylization, addressing the computational limitations of raw motion space approaches and the offline nature of existing VAE-Diffusion methods.",
+        "tldr_zh": "LILAC 提出了一种流式 VAE-Diffusion 架构，用于实时、长序列的动作风格化，解决了原始动作空间方法的计算限制以及现有 VAE-Diffusion 方法的离线特性。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]
