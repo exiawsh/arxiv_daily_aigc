@@ -1,0 +1,24 @@
+[
+    {
+        "title": "MUG-V 10B: High-efficiency Training Pipeline for Large Video Generation Models",
+        "summary": "In recent years, large-scale generative models for visual content\n(\\textit{e.g.,} images, videos, and 3D objects/scenes) have made remarkable\nprogress. However, training large-scale video generation models remains\nparticularly challenging and resource-intensive due to cross-modal text-video\nalignment, the long sequences involved, and the complex spatiotemporal\ndependencies. To address these challenges, we present a training framework that\noptimizes four pillars: (i) data processing, (ii) model architecture, (iii)\ntraining strategy, and (iv) infrastructure for large-scale video generation\nmodels. These optimizations delivered significant efficiency gains and\nperformance improvements across all stages of data preprocessing, video\ncompression, parameter scaling, curriculum-based pretraining, and\nalignment-focused post-training. Our resulting model, MUG-V 10B, matches recent\nstate-of-the-art video generators overall and, on e-commerce-oriented video\ngeneration tasks, surpasses leading open-source baselines in human evaluations.\nMore importantly, we open-source the complete stack, including model weights,\nMegatron-Core-based large-scale training code, and inference pipelines for\nvideo generation and enhancement. To our knowledge, this is the first public\nrelease of large-scale video generation training code that exploits\nMegatron-Core to achieve high training efficiency and near-linear multi-node\nscaling, details are available in\n\\href{https://github.com/Shopee-MUG/MUG-V}{our webpage}.",
+        "url": "http://arxiv.org/abs/2510.17519v1",
+        "published_date": "2025-10-20T13:20:37+00:00",
+        "updated_date": "2025-10-20T13:20:37+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Yongshun Zhang",
+            "Zhongyi Fan",
+            "Yonghang Zhang",
+            "Zhangzikang Li",
+            "Weifeng Chen",
+            "Zhongwei Feng",
+            "Chaoyue Wang",
+            "Peng Hou",
+            "Anxiang Zeng"
+        ]
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "title": "From Mannequin to Human: A Pose-Aware and Identity-Preserving Video Generation Framework for Lifelike Clothing Display",
+        "summary": "Mannequin-based clothing displays offer a cost-effective alternative to\nreal-model showcases for online fashion presentation, but lack realism and\nexpressive detail. To overcome this limitation, we introduce a new task called\nmannequin-to-human (M2H) video generation, which aims to synthesize\nidentity-controllable, photorealistic human videos from footage of mannequins.\nWe propose M2HVideo, a pose-aware and identity-preserving video generation\nframework that addresses two key challenges: the misalignment between head and\nbody motion, and identity drift caused by temporal modeling. In particular,\nM2HVideo incorporates a dynamic pose-aware head encoder that fuses facial\nsemantics with body pose to produce consistent identity embeddings across\nframes. To address the loss of fine facial details due to latent space\ncompression, we introduce a mirror loss applied in pixel space through a\ndenoising diffusion implicit model (DDIM)-based one-step denoising.\nAdditionally, we design a distribution-aware adapter that aligns statistical\ndistributions of identity and clothing features to enhance temporal coherence.\nExtensive experiments on the UBC fashion dataset, our self-constructed ASOS\ndataset, and the newly collected MannequinVideos dataset captured on-site\ndemonstrate that M2HVideo achieves superior performance in terms of clothing\nconsistency, identity preservation, and video fidelity in comparison to\nstate-of-the-art methods.",
+        "url": "http://arxiv.org/abs/2510.16833v1",
+        "published_date": "2025-10-19T13:42:03+00:00",
+        "updated_date": "2025-10-19T13:42:03+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.GR"
+        ],
+        "authors": [
+            "Xiangyu Mu",
+            "Dongliang Zhou",
+            "Jie Hou",
+            "Haijun Zhang",
+            "Weili Guan"
+        ],
+        "tldr": "This paper introduces M2HVideo, a pose-aware and identity-preserving video generation framework to create realistic human videos from mannequin footage for online fashion, addressing head/body motion misalignment and identity drift. It outperforms state-of-the-art methods in clothing consistency, identity preservation, and video fidelity.",
+        "tldr_zh": "本文介绍了M2HVideo，一个姿态感知和身份保持的视频生成框架，旨在从人体模型镜头中创建逼真的人类视频，用于在线时尚展示，解决了头部/身体运动不对齐和身份漂移的问题。在服装一致性、身份保持和视频逼真度方面，该方法优于现有技术。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]

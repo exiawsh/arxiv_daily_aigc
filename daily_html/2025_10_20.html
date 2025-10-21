@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 09, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 20, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>October 09, 2025</p>
+            <p>October 20, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,144 +215,33 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">WristWorld: Generating Wrist-Views via 4D World Models for Robotic Manipulation</h2>
+            <h2 class="paper-title">From Mannequin to Human: A Pose-Aware and Identity-Preserving Video Generation Framework for Lifelike Clothing Display</h2>
             
-            <p class="paper-summary">Wrist-view observations are crucial for VLA models as they capture
-fine-grained hand-object interactions that directly enhance manipulation
-performance. Yet large-scale datasets rarely include such recordings, resulting
-in a substantial gap between abundant anchor views and scarce wrist views.
-Existing world models cannot bridge this gap, as they require a wrist-view
-first frame and thus fail to generate wrist-view videos from anchor views
-alone. Amid this gap, recent visual geometry models such as VGGT emerge with
-geometric and cross-view priors that make it possible to address extreme
-viewpoint shifts. Inspired by these insights, we propose WristWorld, the first
-4D world model that generates wrist-view videos solely from anchor views.
-WristWorld operates in two stages: (i) Reconstruction, which extends VGGT and
-incorporates our Spatial Projection Consistency (SPC) Loss to estimate
-geometrically consistent wrist-view poses and 4D point clouds; (ii) Generation,
-which employs our video generation model to synthesize temporally coherent
-wrist-view videos from the reconstructed perspective. Experiments on Droid,
-Calvin, and Franka Panda demonstrate state-of-the-art video generation with
-superior spatial consistency, while also improving VLA performance, raising the
-average task completion length on Calvin by 3.81% and closing 42.4% of the
-anchor-wrist view gap.</p>
+            <p class="paper-summary">Mannequin-based clothing displays offer a cost-effective alternative to
+real-model showcases for online fashion presentation, but lack realism and
+expressive detail. To overcome this limitation, we introduce a new task called
+mannequin-to-human (M2H) video generation, which aims to synthesize
+identity-controllable, photorealistic human videos from footage of mannequins.
+We propose M2HVideo, a pose-aware and identity-preserving video generation
+framework that addresses two key challenges: the misalignment between head and
+body motion, and identity drift caused by temporal modeling. In particular,
+M2HVideo incorporates a dynamic pose-aware head encoder that fuses facial
+semantics with body pose to produce consistent identity embeddings across
+frames. To address the loss of fine facial details due to latent space
+compression, we introduce a mirror loss applied in pixel space through a
+denoising diffusion implicit model (DDIM)-based one-step denoising.
+Additionally, we design a distribution-aware adapter that aligns statistical
+distributions of identity and clothing features to enhance temporal coherence.
+Extensive experiments on the UBC fashion dataset, our self-constructed ASOS
+dataset, and the newly collected MannequinVideos dataset captured on-site
+demonstrate that M2HVideo achieves superior performance in terms of clothing
+consistency, identity preservation, and video fidelity in comparison to
+state-of-the-art methods.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: WristWorld is a novel 4D world model that generates wrist-view videos from anchor views, improving robotic manipulation by closing the gap between abundant anchor views and scarce wrist views.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: WristWorld 是一种新型的 4D 世界模型，可以从主视角视图生成腕部视角视频，通过缩小丰富的视点视图和稀缺的腕部视图之间的差距，从而改进机器人操作。</p>
-            
-
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces M2HVideo, a pose-aware and identity-preserving video generation framework to create realistic human videos from mannequin footage for online fashion, addressing head/body motion misalignment and identity drift. It outperforms state-of-the-art methods in clothing consistency, identity preservation, and video fidelity.</p>
             
             
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-            </div>
-            
-            
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="far fa-star"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2510.07313v1" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Zezhong Qian, Xiaowei Chi, Yuming Li, Shizun Wang, Zhiyuan Qin, Xiaozhu Ju, Sirui Han, Shanghang Zhang</p>
-            
-        </motion.div>
-        
-        <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.05, ease: 'easeOut' }"  
-            class="bento-item"
-            data-motion-element
-        >
-            <h2 class="paper-title">MV-Performer: Taming Video Diffusion Model for Faithful and Synchronized Multi-view Performer Synthesis</h2>
-            
-            <p class="paper-summary">Recent breakthroughs in video generation, powered by large-scale datasets and
-diffusion techniques, have shown that video diffusion models can function as
-implicit 4D novel view synthesizers. Nevertheless, current methods primarily
-concentrate on redirecting camera trajectory within the front view while
-struggling to generate 360-degree viewpoint changes. In this paper, we focus on
-human-centric subdomain and present MV-Performer, an innovative framework for
-creating synchronized novel view videos from monocular full-body captures. To
-achieve a 360-degree synthesis, we extensively leverage the MVHumanNet dataset
-and incorporate an informative condition signal. Specifically, we use the
-camera-dependent normal maps rendered from oriented partial point clouds, which
-effectively alleviate the ambiguity between seen and unseen observations. To
-maintain synchronization in the generated videos, we propose a multi-view
-human-centric video diffusion model that fuses information from the reference
-video, partial rendering, and different viewpoints. Additionally, we provide a
-robust inference procedure for in-the-wild video cases, which greatly mitigates
-the artifacts induced by imperfect monocular depth estimation. Extensive
-experiments on three datasets demonstrate our MV-Performer's state-of-the-art
-effectiveness and robustness, setting a strong model for human-centric 4D novel
-view synthesis.</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces MV-Performer, a framework for generating synchronized multi-view videos of human performers from monocular video using a diffusion model conditioned on partial point cloud renderings, addressing the challenge of 360-degree viewpoint changes.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种名为 MV-Performer 的框架，它使用基于部分点云渲染的扩散模型，从单目视频生成同步的多视角人物视频，解决了 360 度视角变化的问题。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了M2HVideo，一个姿态感知和身份保持的视频生成框架，旨在从人体模型镜头中创建逼真的人类视频，用于在线时尚展示，解决了头部/身体运动不对齐和身份漂移的问题。在服装一致性、身份保持和视频逼真度方面，该方法优于现有技术。</p>
             
 
             
@@ -423,18 +312,18 @@ view synthesis.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.07190v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.16833v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Yihao Zhi, Chenghong Li, Hongjie Liao, Xihe Yang, Zhengwentai Sun, Jiahao Chang, Xiaodong Cun, Wensen Feng, Xiaoguang Han</p>
+            <p class="paper-authors">Authors: Xiangyu Mu, Dongliang Zhou, Jie Hou, Haijun Zhang, Weili Guan</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-10-21 03:39:58 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-10-21 04:00:43 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
