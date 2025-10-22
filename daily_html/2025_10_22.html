@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 18, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 22, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>October 18, 2025</p>
+            <p>October 22, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,29 +215,35 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">VISTA: A Test-Time Self-Improving Video Generation Agent</h2>
+            <h2 class="paper-title">UltraGen: High-Resolution Video Generation with Hierarchical Attention</h2>
             
-            <p class="paper-summary">Despite rapid advances in text-to-video synthesis, generated video quality
-remains critically dependent on precise user prompts. Existing test-time
-optimization methods, successful in other domains, struggle with the
-multi-faceted nature of video. In this work, we introduce VISTA (Video
-Iterative Self-improvemenT Agent), a novel multi-agent system that autonomously
-improves video generation through refining prompts in an iterative loop. VISTA
-first decomposes a user idea into a structured temporal plan. After generation,
-the best video is identified through a robust pairwise tournament. This winning
-video is then critiqued by a trio of specialized agents focusing on visual,
-audio, and contextual fidelity. Finally, a reasoning agent synthesizes this
-feedback to introspectively rewrite and enhance the prompt for the next
-generation cycle. Experiments on single- and multi-scene video generation
-scenarios show that while prior methods yield inconsistent gains, VISTA
-consistently improves video quality and alignment with user intent, achieving
-up to 60% pairwise win rate against state-of-the-art baselines. Human
-evaluators concur, preferring VISTA outputs in 66.4% of comparisons.</p>
+            <p class="paper-summary">Recent advances in video generation have made it possible to produce visually
+compelling videos, with wide-ranging applications in content creation,
+entertainment, and virtual reality. However, most existing diffusion
+transformer based video generation models are limited to low-resolution outputs
+(<=720P) due to the quadratic computational complexity of the attention
+mechanism with respect to the output width and height. This computational
+bottleneck makes native high-resolution video generation (1080P/2K/4K)
+impractical for both training and inference. To address this challenge, we
+present UltraGen, a novel video generation framework that enables i) efficient
+and ii) end-to-end native high-resolution video synthesis. Specifically,
+UltraGen features a hierarchical dual-branch attention architecture based on
+global-local attention decomposition, which decouples full attention into a
+local attention branch for high-fidelity regional content and a global
+attention branch for overall semantic consistency. We further propose a
+spatially compressed global modeling strategy to efficiently learn global
+dependencies, and a hierarchical cross-window local attention mechanism to
+reduce computational costs while enhancing information flow across different
+local windows. Extensive experiments demonstrate that UltraGen can effectively
+scale pre-trained low-resolution video models to 1080P and even 4K resolution
+for the first time, outperforming existing state-of-the-art methods and
+super-resolution based two-stage pipelines in both qualitative and quantitative
+evaluations.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces VISTA, a multi-agent system for self-improving text-to-video generation through iterative prompt refinement, demonstrating significant improvements in video quality and alignment with user intent compared to existing methods.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: UltraGen introduces a hierarchical attention mechanism to efficiently generate high-resolution (up to 4K) videos, overcoming the computational limitations of existing diffusion transformer models.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了一种名为VISTA的多智能体系统，通过迭代优化提示词来实现文本到视频生成的自我改进，与现有方法相比，在视频质量和用户意图对齐方面表现出显著的提升。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: UltraGen 提出了一种分层注意力机制，以高效生成高分辨率（高达 4K）视频，克服了现有扩散 Transformer 模型的计算限制。</p>
             
 
             
@@ -271,8 +277,8 @@ evaluators concur, preferring VISTA outputs in 66.4% of comparisons.</p>
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
             </div>
@@ -287,336 +293,6 @@ evaluators concur, preferring VISTA outputs in 66.4% of comparisons.</p>
                     
                         <i class="fas fa-star"></i>
                     
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="far fa-star"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2510.15831v1" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Do Xuan Long, Xingchen Wan, Hootan Nakhost, Chen-Yu Lee, Tomas Pfister, Sercan Ö. Arık</p>
-            
-        </motion.div>
-        
-        <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.05, ease: 'easeOut' }"  
-            class="bento-item"
-            data-motion-element
-        >
-            <h2 class="paper-title">DriveGen3D: Boosting Feed-Forward Driving Scene Generation with Efficient Video Diffusion</h2>
-            
-            <p class="paper-summary">We present DriveGen3D, a novel framework for generating high-quality and
-highly controllable dynamic 3D driving scenes that addresses critical
-limitations in existing methodologies. Current approaches to driving scene
-synthesis either suffer from prohibitive computational demands for extended
-temporal generation, focus exclusively on prolonged video synthesis without 3D
-representation, or restrict themselves to static single-scene reconstruction.
-Our work bridges this methodological gap by integrating accelerated long-term
-video generation with large-scale dynamic scene reconstruction through
-multimodal conditional control. DriveGen3D introduces a unified pipeline
-consisting of two specialized components: FastDrive-DiT, an efficient video
-diffusion transformer for high-resolution, temporally coherent video synthesis
-under text and Bird's-Eye-View (BEV) layout guidance; and FastRecon3D, a
-feed-forward reconstruction module that rapidly builds 3D Gaussian
-representations across time, ensuring spatial-temporal consistency. Together,
-these components enable real-time generation of extended driving videos (up to
-$424\times800$ at 12 FPS) and corresponding dynamic 3D scenes, achieving SSIM
-of 0.811 and PSNR of 22.84 on novel view synthesis, all while maintaining
-parameter efficiency.</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: DriveGen3D introduces a framework for generating high-quality, controllable 3D driving scenes by integrating efficient video diffusion for video synthesis and a feed-forward reconstruction module for dynamic 3D scene creation, achieving real-time performance and high spatial-temporal consistency.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: DriveGen3D 提出了一个生成高质量、可控 3D 驾驶场景的框架，该框架通过整合高效的视频扩散技术进行视频合成，以及一个前馈重建模块进行动态 3D 场景创建，实现了实时性能和高时空一致性。</p>
-            
-
-            
-            
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-            </div>
-            
-            
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="far fa-star"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2510.15264v1" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Weijie Wang, Jiagang Zhu, Zeyu Zhang, Xiaofeng Wang, Zheng Zhu, Guosheng Zhao, Chaojun Ni, Haoxiao Wang, Guan Huang, Xinze Chen, Yukun Zhou, Wenkang Qin, Duochao Shi, Haoyun Li, Guanghong Jia, Jiwen Lu</p>
-            
-        </motion.div>
-        
-        <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.1, ease: 'easeOut' }"  
-            class="bento-item"
-            data-motion-element
-        >
-            <h2 class="paper-title">TGT: Text-Grounded Trajectories for Locally Controlled Video Generation</h2>
-            
-            <p class="paper-summary">Text-to-video generation has advanced rapidly in visual fidelity, whereas
-standard methods still have limited ability to control the subject composition
-of generated scenes. Prior work shows that adding localized text control
-signals, such as bounding boxes or segmentation masks, can help. However, these
-methods struggle in complex scenarios and degrade in multi-object settings,
-offering limited precision and lacking a clear correspondence between
-individual trajectories and visual entities as the number of controllable
-objects increases. We introduce Text-Grounded Trajectories (TGT), a framework
-that conditions video generation on trajectories paired with localized text
-descriptions. We propose Location-Aware Cross-Attention (LACA) to integrate
-these signals and adopt a dual-CFG scheme to separately modulate local and
-global text guidance. In addition, we develop a data processing pipeline that
-produces trajectories with localized descriptions of tracked entities, and we
-annotate two million high quality video clips to train TGT. Together, these
-components enable TGT to use point trajectories as intuitive motion handles,
-pairing each trajectory with text to control both appearance and motion.
-Extensive experiments show that TGT achieves higher visual quality, more
-accurate text alignment, and improved motion controllability compared with
-prior approaches. Website: https://textgroundedtraj.github.io.</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Text-Grounded Trajectories (TGT), a framework for generating videos controlled by localized text descriptions paired with trajectories, enabling precise control over object appearance and motion.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了文本引导轨迹（TGT），一个通过与轨迹配对的局部文本描述控制视频生成的框架，从而实现对物体外观和运动的精确控制。</p>
-            
-
-            
-            
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-            </div>
-            
-            
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="far fa-star"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2510.15104v1" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Guofeng Zhang, Angtian Wang, Jacob Zhiyuan Fang, Liming Jiang, Haotian Yang, Bo Liu, Yiding Yang, Guang Chen, Longyin Wen, Alan Yuille, Chongyang Ma</p>
-            
-        </motion.div>
-        
-        <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.15000000000000002, ease: 'easeOut' }"  
-            class="bento-item"
-            data-motion-element
-        >
-            <h2 class="paper-title">LILAC: Long-sequence Incremental Low-latency Arbitrary Motion Stylization via Streaming VAE-Diffusion with Causal Decoding</h2>
-            
-            <p class="paper-summary">Generating long and stylized human motions in real time is critical for
-applications that demand continuous and responsive character control. Despite
-its importance, existing streaming approaches often operate directly in the raw
-motion space, leading to substantial computational overhead and making it
-difficult to maintain temporal stability. In contrast, latent-space
-VAE-Diffusion-based frameworks alleviate these issues and achieve high-quality
-stylization, but they are generally confined to offline processing. To bridge
-this gap, LILAC (Long-sequence Incremental Low-latency Arbitrary Motion
-Stylization via Streaming VAE-Diffusion with Causal Decoding) builds upon a
-recent high-performing offline framework for arbitrary motion stylization and
-extends it to an online setting through a latent-space streaming architecture
-with a sliding-window causal design and the injection of decoded motion
-features to ensure smooth motion transitions. This architecture enables
-long-sequence real-time arbitrary stylization without relying on future frames
-or modifying the diffusion model architecture, achieving a favorable balance
-between stylization quality and responsiveness as demonstrated by experiments
-on benchmark datasets. Supplementary video and examples are available at the
-project page: https://pren1.github.io/lilac/</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: LILAC introduces a streaming VAE-Diffusion architecture for real-time, long-sequence motion stylization, addressing the computational limitations of raw motion space approaches and the offline nature of existing VAE-Diffusion methods.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: LILAC 提出了一种流式 VAE-Diffusion 架构，用于实时、长序列的动作风格化，解决了原始动作空间方法的计算限制以及现有 VAE-Diffusion 方法的离线特性。</p>
-            
-
-            
-            
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
-                </div>
-                
-            </div>
-            
-            
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
                 
                     
                         <i class="fas fa-star"></i>
@@ -634,26 +310,349 @@ project page: https://pren1.github.io/lilac/</p>
                         <i class="fas fa-star-half-alt"></i>
                     
                 
+                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2510.18775v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Teng Hu, Jiangning Zhang, Zihan Su, Ran Yi</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.05, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">MoGA: Mixture-of-Groups Attention for End-to-End Long Video Generation</h2>
+            
+            <p class="paper-summary">Long video generation with Diffusion Transformers (DiTs) is bottlenecked by
+the quadratic scaling of full attention with sequence length. Since attention
+is highly redundant, outputs are dominated by a small subset of query-key
+pairs. Existing sparse methods rely on blockwise coarse estimation, whose
+accuracy-efficiency trade-offs are constrained by block size. This paper
+introduces Mixture-of-Groups Attention (MoGA), an efficient sparse attention
+that uses a lightweight, learnable token router to precisely match tokens
+without blockwise estimation. Through semantic-aware routing, MoGA enables
+effective long-range interactions. As a kernel-free method, MoGA integrates
+seamlessly with modern attention stacks, including FlashAttention and sequence
+parallelism. Building on MoGA, we develop an efficient long video generation
+model that end-to-end produces minute-level, multi-shot, 480p videos at 24 fps,
+with a context length of approximately 580k. Comprehensive experiments on
+various video generation tasks validate the effectiveness of our approach.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Mixture-of-Groups Attention (MoGA), a novel sparse attention mechanism for efficient long video generation using Diffusion Transformers, achieving minute-level, multi-shot, 480p videos at 24 fps.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种新的稀疏注意力机制，即混合组注意力（MoGA），用于使用扩散Transformer进行高效的长视频生成，实现了分钟级、多镜头、480p视频，帧率为24 fps。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(10/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star-half-alt"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2510.18692v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Weinan Jia, Yuning Lu, Mengqi Huang, Hualiang Wang, Binyuan Huang, Nan Chen, Mu Liu, Jidong Jiang, Zhendong Mao</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.1, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">OmniNWM: Omniscient Driving Navigation World Models</h2>
+            
+            <p class="paper-summary">Autonomous driving world models are expected to work effectively across three
+core dimensions: state, action, and reward. Existing models, however, are
+typically restricted to limited state modalities, short video sequences,
+imprecise action control, and a lack of reward awareness. In this paper, we
+introduce OmniNWM, an omniscient panoramic navigation world model that
+addresses all three dimensions within a unified framework. For state, OmniNWM
+jointly generates panoramic videos of RGB, semantics, metric depth, and 3D
+occupancy. A flexible forcing strategy enables high-quality long-horizon
+auto-regressive generation. For action, we introduce a normalized panoramic
+Plucker ray-map representation that encodes input trajectories into pixel-level
+signals, enabling highly precise and generalizable control over panoramic video
+generation. Regarding reward, we move beyond learning reward functions with
+external image-based models: instead, we leverage the generated 3D occupancy to
+directly define rule-based dense rewards for driving compliance and safety.
+Extensive experiments demonstrate that OmniNWM achieves state-of-the-art
+performance in video generation, control accuracy, and long-horizon stability,
+while providing a reliable closed-loop evaluation framework through
+occupancy-grounded rewards. Project page is available at
+https://github.com/Arlo0o/OmniNWM.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: OmniNWM is a novel omniscient panoramic navigation world model for autonomous driving that jointly generates multi-modal panoramic videos, achieves precise action control using a Plucker ray-map representation, and defines dense rewards based on generated 3D occupancy, demonstrating state-of-the-art performance.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: OmniNWM是一个新型的全知全景导航世界模型，用于自动驾驶。它联合生成多模态全景视频，通过Plucker射线图表示实现精确的动作控制，并基于生成的3D占用定义密集奖励，展示了最先进的性能。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
                     
                         <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.15392v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.18313v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Peng Ren, Hai Yang</p>
+            <p class="paper-authors">Authors: Bohan Li, Zhuang Ma, Dalong Du, Baorui Peng, Zhujin Liang, Zhenqiang Liu, Chao Ma, Yueming Jin, Hao Zhao, Wenjun Zeng, Xin Jin</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.15000000000000002, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">HouseTour: A Virtual Real Estate A(I)gent</h2>
+            
+            <p class="paper-summary">We introduce HouseTour, a method for spatially-aware 3D camera trajectory and
+natural language summary generation from a collection of images depicting an
+existing 3D space. Unlike existing vision-language models (VLMs), which
+struggle with geometric reasoning, our approach generates smooth video
+trajectories via a diffusion process constrained by known camera poses and
+integrates this information into the VLM for 3D-grounded descriptions. We
+synthesize the final video using 3D Gaussian splatting to render novel views
+along the trajectory. To support this task, we present the HouseTour dataset,
+which includes over 1,200 house-tour videos with camera poses, 3D
+reconstructions, and real estate descriptions. Experiments demonstrate that
+incorporating 3D camera trajectories into the text generation process improves
+performance over methods handling each task independently. We evaluate both
+individual and end-to-end performance, introducing a new joint metric. Our work
+enables automated, professional-quality video creation for real estate and
+touristic applications without requiring specialized expertise or equipment.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: HouseTour introduces a method for generating spatially-aware 3D camera trajectories and natural language summaries for real estate videos using diffusion processes and 3D Gaussian splatting, along with a new dataset and evaluation metric.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: HouseTour 提出了一种利用扩散过程和 3D 高斯溅射生成具有空间感知能力的 3D 摄像机轨迹和自然语言摘要的方法，用于房地产视频，并提供了一个新的数据集和评估指标。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2510.18054v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Ata Çelen, Marc Pollefeys, Daniel Barath, Iro Armeni</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-10-22 03:46:02 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-10-22 03:59:14 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

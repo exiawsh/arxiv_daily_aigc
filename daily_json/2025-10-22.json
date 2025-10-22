@@ -1,0 +1,107 @@
+[
+    {
+        "title": "UltraGen: High-Resolution Video Generation with Hierarchical Attention",
+        "summary": "Recent advances in video generation have made it possible to produce visually\ncompelling videos, with wide-ranging applications in content creation,\nentertainment, and virtual reality. However, most existing diffusion\ntransformer based video generation models are limited to low-resolution outputs\n(<=720P) due to the quadratic computational complexity of the attention\nmechanism with respect to the output width and height. This computational\nbottleneck makes native high-resolution video generation (1080P/2K/4K)\nimpractical for both training and inference. To address this challenge, we\npresent UltraGen, a novel video generation framework that enables i) efficient\nand ii) end-to-end native high-resolution video synthesis. Specifically,\nUltraGen features a hierarchical dual-branch attention architecture based on\nglobal-local attention decomposition, which decouples full attention into a\nlocal attention branch for high-fidelity regional content and a global\nattention branch for overall semantic consistency. We further propose a\nspatially compressed global modeling strategy to efficiently learn global\ndependencies, and a hierarchical cross-window local attention mechanism to\nreduce computational costs while enhancing information flow across different\nlocal windows. Extensive experiments demonstrate that UltraGen can effectively\nscale pre-trained low-resolution video models to 1080P and even 4K resolution\nfor the first time, outperforming existing state-of-the-art methods and\nsuper-resolution based two-stage pipelines in both qualitative and quantitative\nevaluations.",
+        "url": "http://arxiv.org/abs/2510.18775v1",
+        "published_date": "2025-10-21T16:23:21+00:00",
+        "updated_date": "2025-10-21T16:23:21+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Teng Hu",
+            "Jiangning Zhang",
+            "Zihan Su",
+            "Ran Yi"
+        ],
+        "tldr": "UltraGen introduces a hierarchical attention mechanism to efficiently generate high-resolution (up to 4K) videos, overcoming the computational limitations of existing diffusion transformer models.",
+        "tldr_zh": "UltraGen 提出了一种分层注意力机制，以高效生成高分辨率（高达 4K）视频，克服了现有扩散 Transformer 模型的计算限制。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "MoGA: Mixture-of-Groups Attention for End-to-End Long Video Generation",
+        "summary": "Long video generation with Diffusion Transformers (DiTs) is bottlenecked by\nthe quadratic scaling of full attention with sequence length. Since attention\nis highly redundant, outputs are dominated by a small subset of query-key\npairs. Existing sparse methods rely on blockwise coarse estimation, whose\naccuracy-efficiency trade-offs are constrained by block size. This paper\nintroduces Mixture-of-Groups Attention (MoGA), an efficient sparse attention\nthat uses a lightweight, learnable token router to precisely match tokens\nwithout blockwise estimation. Through semantic-aware routing, MoGA enables\neffective long-range interactions. As a kernel-free method, MoGA integrates\nseamlessly with modern attention stacks, including FlashAttention and sequence\nparallelism. Building on MoGA, we develop an efficient long video generation\nmodel that end-to-end produces minute-level, multi-shot, 480p videos at 24 fps,\nwith a context length of approximately 580k. Comprehensive experiments on\nvarious video generation tasks validate the effectiveness of our approach.",
+        "url": "http://arxiv.org/abs/2510.18692v1",
+        "published_date": "2025-10-21T14:50:42+00:00",
+        "updated_date": "2025-10-21T14:50:42+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Weinan Jia",
+            "Yuning Lu",
+            "Mengqi Huang",
+            "Hualiang Wang",
+            "Binyuan Huang",
+            "Nan Chen",
+            "Mu Liu",
+            "Jidong Jiang",
+            "Zhendong Mao"
+        ],
+        "tldr": "The paper introduces Mixture-of-Groups Attention (MoGA), a novel sparse attention mechanism for efficient long video generation using Diffusion Transformers, achieving minute-level, multi-shot, 480p videos at 24 fps.",
+        "tldr_zh": "本文介绍了一种新的稀疏注意力机制，即混合组注意力（MoGA），用于使用扩散Transformer进行高效的长视频生成，实现了分钟级、多镜头、480p视频，帧率为24 fps。",
+        "relevance_score": 10,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "OmniNWM: Omniscient Driving Navigation World Models",
+        "summary": "Autonomous driving world models are expected to work effectively across three\ncore dimensions: state, action, and reward. Existing models, however, are\ntypically restricted to limited state modalities, short video sequences,\nimprecise action control, and a lack of reward awareness. In this paper, we\nintroduce OmniNWM, an omniscient panoramic navigation world model that\naddresses all three dimensions within a unified framework. For state, OmniNWM\njointly generates panoramic videos of RGB, semantics, metric depth, and 3D\noccupancy. A flexible forcing strategy enables high-quality long-horizon\nauto-regressive generation. For action, we introduce a normalized panoramic\nPlucker ray-map representation that encodes input trajectories into pixel-level\nsignals, enabling highly precise and generalizable control over panoramic video\ngeneration. Regarding reward, we move beyond learning reward functions with\nexternal image-based models: instead, we leverage the generated 3D occupancy to\ndirectly define rule-based dense rewards for driving compliance and safety.\nExtensive experiments demonstrate that OmniNWM achieves state-of-the-art\nperformance in video generation, control accuracy, and long-horizon stability,\nwhile providing a reliable closed-loop evaluation framework through\noccupancy-grounded rewards. Project page is available at\nhttps://github.com/Arlo0o/OmniNWM.",
+        "url": "http://arxiv.org/abs/2510.18313v1",
+        "published_date": "2025-10-21T05:49:01+00:00",
+        "updated_date": "2025-10-21T05:49:01+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Bohan Li",
+            "Zhuang Ma",
+            "Dalong Du",
+            "Baorui Peng",
+            "Zhujin Liang",
+            "Zhenqiang Liu",
+            "Chao Ma",
+            "Yueming Jin",
+            "Hao Zhao",
+            "Wenjun Zeng",
+            "Xin Jin"
+        ],
+        "tldr": "OmniNWM is a novel omniscient panoramic navigation world model for autonomous driving that jointly generates multi-modal panoramic videos, achieves precise action control using a Plucker ray-map representation, and defines dense rewards based on generated 3D occupancy, demonstrating state-of-the-art performance.",
+        "tldr_zh": "OmniNWM是一个新型的全知全景导航世界模型，用于自动驾驶。它联合生成多模态全景视频，通过Plucker射线图表示实现精确的动作控制，并基于生成的3D占用定义密集奖励，展示了最先进的性能。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "HouseTour: A Virtual Real Estate A(I)gent",
+        "summary": "We introduce HouseTour, a method for spatially-aware 3D camera trajectory and\nnatural language summary generation from a collection of images depicting an\nexisting 3D space. Unlike existing vision-language models (VLMs), which\nstruggle with geometric reasoning, our approach generates smooth video\ntrajectories via a diffusion process constrained by known camera poses and\nintegrates this information into the VLM for 3D-grounded descriptions. We\nsynthesize the final video using 3D Gaussian splatting to render novel views\nalong the trajectory. To support this task, we present the HouseTour dataset,\nwhich includes over 1,200 house-tour videos with camera poses, 3D\nreconstructions, and real estate descriptions. Experiments demonstrate that\nincorporating 3D camera trajectories into the text generation process improves\nperformance over methods handling each task independently. We evaluate both\nindividual and end-to-end performance, introducing a new joint metric. Our work\nenables automated, professional-quality video creation for real estate and\ntouristic applications without requiring specialized expertise or equipment.",
+        "url": "http://arxiv.org/abs/2510.18054v1",
+        "published_date": "2025-10-20T19:47:35+00:00",
+        "updated_date": "2025-10-20T19:47:35+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.CL"
+        ],
+        "authors": [
+            "Ata Çelen",
+            "Marc Pollefeys",
+            "Daniel Barath",
+            "Iro Armeni"
+        ],
+        "tldr": "HouseTour introduces a method for generating spatially-aware 3D camera trajectories and natural language summaries for real estate videos using diffusion processes and 3D Gaussian splatting, along with a new dataset and evaluation metric.",
+        "tldr_zh": "HouseTour 提出了一种利用扩散过程和 3D 高斯溅射生成具有空间感知能力的 3D 摄像机轨迹和自然语言摘要的方法，用于房地产视频，并提供了一个新的数据集和评估指标。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    }
+]
