@@ -1,0 +1,95 @@
+[
+    {
+        "title": "MoAlign: Motion-Centric Representation Alignment for Video Diffusion Models",
+        "summary": "Text-to-video diffusion models have enabled high-quality video synthesis, yet\noften fail to generate temporally coherent and physically plausible motion. A\nkey reason is the models' insufficient understanding of complex motions that\nnatural videos often entail. Recent works tackle this problem by aligning\ndiffusion model features with those from pretrained video encoders. However,\nthese encoders mix video appearance and dynamics into entangled features,\nlimiting the benefit of such alignment. In this paper, we propose a\nmotion-centric alignment framework that learns a disentangled motion subspace\nfrom a pretrained video encoder. This subspace is optimized to predict\nground-truth optical flow, ensuring it captures true motion dynamics. We then\nalign the latent features of a text-to-video diffusion model to this new\nsubspace, enabling the generative model to internalize motion knowledge and\ngenerate more plausible videos. Our method improves the physical commonsense in\na state-of-the-art video diffusion model, while preserving adherence to textual\nprompts, as evidenced by empirical evaluations on VideoPhy, VideoPhy2, VBench,\nand VBench-2.0, along with a user study.",
+        "url": "http://arxiv.org/abs/2510.19022v1",
+        "published_date": "2025-10-21T19:05:23+00:00",
+        "updated_date": "2025-10-21T19:05:23+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Aritra Bhowmik",
+            "Denis Korzhenkov",
+            "Cees G. M. Snoek",
+            "Amirhossein Habibian",
+            "Mohsen Ghafoorian"
+        ],
+        "tldr": "The paper introduces MoAlign, a method to improve the temporal coherence and physical plausibility of text-to-video diffusion models by aligning their latent features with a disentangled, motion-centric subspace learned from a pretrained video encoder.",
+        "tldr_zh": "该论文介绍了MoAlign，一种通过将文本到视频扩散模型的潜在特征与从预训练视频编码器中学习到的解耦的、以运动为中心子空间对齐，从而提高文本到视频扩散模型的时间连贯性和物理合理性的方法。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "GigaBrain-0: A World Model-Powered Vision-Language-Action Model",
+        "summary": "Training Vision-Language-Action (VLA) models for generalist robots typically\nrequires large-scale real-world robot data, which is expensive and\ntime-consuming to collect. The inefficiency of physical data collection\nseverely limits the scalability, and generalization capacity of current VLA\nsystems. To address this challenge, we introduce GigaBrain-0, a novel VLA\nfoundation model empowered by world model-generated data (e.g., video\ngeneration, real2real transfer, human transfer, view transfer, sim2real\ntransfer data). By leveraging world models to generate diverse data at scale,\nGigaBrain-0 significantly reduces reliance on real robot data while improving\ncross-task generalization. Our approach further improves policy robustness\nthrough RGBD input modeling and embodied Chain-of-Thought (CoT) supervision,\nenabling the model to reason about spatial geometry, object states, and\nlong-horizon dependencies during task execution. This leads to substantial\ngains in real-world performance on dexterous, long-horizon, and mobile\nmanipulation tasks. Extensive experiments demonstrate that GigaBrain-0 achieves\nsuperior generalization across variations in appearances (e.g., textures,\ncolors), object placements, and camera viewpoints. Additionally, we present\nGigaBrain-0-Small, an optimized lightweight variant designed to run efficiently\non devices such as the NVIDIA Jetson AGX Orin.",
+        "url": "http://arxiv.org/abs/2510.19430v1",
+        "published_date": "2025-10-22T09:57:13+00:00",
+        "updated_date": "2025-10-22T09:57:13+00:00",
+        "categories": [
+            "cs.RO",
+            "cs.CV"
+        ],
+        "authors": [
+            "GigaBrain Team",
+            "Angen Ye",
+            "Boyuan Wang",
+            "Chaojun Ni",
+            "Guan Huang",
+            "Guosheng Zhao",
+            "Haoyun Li",
+            "Jie Li",
+            "Jiagang Zhu",
+            "Lv Feng",
+            "Peng Li",
+            "Qiuping Deng",
+            "Runqi Ouyang",
+            "Wenkang Qin",
+            "Xinze Chen",
+            "Xiaofeng Wang",
+            "Yang Wang",
+            "Yifan Li",
+            "Yilong Li",
+            "Yiran Ding",
+            "Yuan Xu",
+            "Yun Ye",
+            "Yukun Zhou",
+            "Zhehao Dong",
+            "Zhenan Wang",
+            "Zhichao Liu",
+            "Zheng Zhu"
+        ],
+        "tldr": "GigaBrain-0 is a Vision-Language-Action model that uses world model-generated data to improve generalization and reduce reliance on real-world robot data collection, showing substantial gains in real-world performance.",
+        "tldr_zh": "GigaBrain-0是一个视觉-语言-动作模型，它使用世界模型生成的数据来提高泛化能力并减少对真实世界机器人数据收集的依赖，从而在真实世界性能方面取得了显著的提升。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Video Consistency Distance: Enhancing Temporal Consistency for Image-to-Video Generation via Reward-Based Fine-Tuning",
+        "summary": "Reward-based fine-tuning of video diffusion models is an effective approach\nto improve the quality of generated videos, as it can fine-tune models without\nrequiring real-world video datasets. However, it can sometimes be limited to\nspecific performances because conventional reward functions are mainly aimed at\nenhancing the quality across the whole generated video sequence, such as\naesthetic appeal and overall consistency. Notably, the temporal consistency of\nthe generated video often suffers when applying previous approaches to\nimage-to-video (I2V) generation tasks. To address this limitation, we propose\nVideo Consistency Distance (VCD), a novel metric designed to enhance temporal\nconsistency, and fine-tune a model with the reward-based fine-tuning framework.\nTo achieve coherent temporal consistency relative to a conditioning image, VCD\nis defined in the frequency space of video frame features to capture frame\ninformation effectively through frequency-domain analysis. Experimental results\nacross multiple I2V datasets demonstrate that fine-tuning a video generation\nmodel with VCD significantly enhances temporal consistency without degrading\nother performance compared to the previous method.",
+        "url": "http://arxiv.org/abs/2510.19193v1",
+        "published_date": "2025-10-22T02:59:45+00:00",
+        "updated_date": "2025-10-22T02:59:45+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Takehiro Aoshima",
+            "Yusuke Shinohara",
+            "Park Byeongseon"
+        ],
+        "tldr": "This paper introduces Video Consistency Distance (VCD), a novel metric for reward-based fine-tuning of video diffusion models to enhance temporal consistency in image-to-video generation, showing improvements over existing methods.",
+        "tldr_zh": "本文介绍了一种新的视频一致性距离 (VCD)，用于基于奖励的视频扩散模型微调，以增强图像到视频生成中的时间一致性，并表明该方法优于现有方法。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    }
+]
