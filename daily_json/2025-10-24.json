@@ -1,0 +1,115 @@
+[
+    {
+        "title": "HoloCine: Holistic Generation of Cinematic Multi-Shot Long Video Narratives",
+        "summary": "State-of-the-art text-to-video models excel at generating isolated clips but\nfall short of creating the coherent, multi-shot narratives, which are the\nessence of storytelling. We bridge this \"narrative gap\" with HoloCine, a model\nthat generates entire scenes holistically to ensure global consistency from the\nfirst shot to the last. Our architecture achieves precise directorial control\nthrough a Window Cross-Attention mechanism that localizes text prompts to\nspecific shots, while a Sparse Inter-Shot Self-Attention pattern (dense within\nshots but sparse between them) ensures the efficiency required for minute-scale\ngeneration. Beyond setting a new state-of-the-art in narrative coherence,\nHoloCine develops remarkable emergent abilities: a persistent memory for\ncharacters and scenes, and an intuitive grasp of cinematic techniques. Our work\nmarks a pivotal shift from clip synthesis towards automated filmmaking, making\nend-to-end cinematic creation a tangible future. Our code is available at:\nhttps://holo-cine.github.io/.",
+        "url": "http://arxiv.org/abs/2510.20822v1",
+        "published_date": "2025-10-23T17:59:59+00:00",
+        "updated_date": "2025-10-23T17:59:59+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yihao Meng",
+            "Hao Ouyang",
+            "Yue Yu",
+            "Qiuyu Wang",
+            "Wen Wang",
+            "Ka Leong Cheng",
+            "Hanlin Wang",
+            "Yixuan Li",
+            "Cheng Chen",
+            "Yanhong Zeng",
+            "Yujun Shen",
+            "Huamin Qu"
+        ],
+        "tldr": "HoloCine introduces a novel architecture for generating coherent, multi-shot long videos with directorial control and emergent cinematic abilities, addressing the narrative gap in existing text-to-video models.",
+        "tldr_zh": "HoloCine 提出了一种新的架构，用于生成连贯的、多镜头的长视频，具有导演控制和新兴的电影制作能力，解决了现有文本到视频模型中的叙事差距。",
+        "relevance_score": 9,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "Video Prediction of Dynamic Physical Simulations With Pixel-Space Spatiotemporal Transformers",
+        "summary": "Inspired by the performance and scalability of autoregressive large language\nmodels (LLMs), transformer-based models have seen recent success in the visual\ndomain. This study investigates a transformer adaptation for video prediction\nwith a simple end-to-end approach, comparing various spatiotemporal\nself-attention layouts. Focusing on causal modeling of physical simulations\nover time; a common shortcoming of existing video-generative approaches, we\nattempt to isolate spatiotemporal reasoning via physical object tracking\nmetrics and unsupervised training on physical simulation datasets. We introduce\na simple yet effective pure transformer model for autoregressive video\nprediction, utilizing continuous pixel-space representations for video\nprediction. Without the need for complex training strategies or latent\nfeature-learning components, our approach significantly extends the time\nhorizon for physically accurate predictions by up to 50% when compared with\nexisting latent-space approaches, while maintaining comparable performance on\ncommon video quality metrics. In addition, we conduct interpretability\nexperiments to identify network regions that encode information useful to\nperform accurate estimations of PDE simulation parameters via probing models,\nand find that this generalizes to the estimation of out-of-distribution\nsimulation parameters. This work serves as a platform for further\nattention-based spatiotemporal modeling of videos via a simple, parameter\nefficient, and interpretable approach.",
+        "url": "http://arxiv.org/abs/2510.20807v1",
+        "published_date": "2025-10-23T17:58:45+00:00",
+        "updated_date": "2025-10-23T17:58:45+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.LG"
+        ],
+        "authors": [
+            "Dean L Slack",
+            "G Thomas Hudson",
+            "Thomas Winterbottom",
+            "Noura Al Moubayed"
+        ],
+        "tldr": "This paper introduces a simple, parameter-efficient, and interpretable pixel-space spatiotemporal transformer model for autoregressive video prediction of dynamic physical simulations, achieving longer accurate prediction horizons compared to latent-space approaches.",
+        "tldr_zh": "本文介绍了一种简单、参数高效且可解释的像素空间时空Transformer模型，用于动态物理仿真的自回归视频预测，与潜在空间方法相比，实现了更长的精确预测范围。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "AutoScape: Geometry-Consistent Long-Horizon Scene Generation",
+        "summary": "This paper proposes AutoScape, a long-horizon driving scene generation\nframework. At its core is a novel RGB-D diffusion model that iteratively\ngenerates sparse, geometrically consistent keyframes, serving as reliable\nanchors for the scene's appearance and geometry. To maintain long-range\ngeometric consistency, the model 1) jointly handles image and depth in a shared\nlatent space, 2) explicitly conditions on the existing scene geometry (i.e.,\nrendered point clouds) from previously generated keyframes, and 3) steers the\nsampling process with a warp-consistent guidance. Given high-quality RGB-D\nkeyframes, a video diffusion model then interpolates between them to produce\ndense and coherent video frames. AutoScape generates realistic and\ngeometrically consistent driving videos of over 20 seconds, improving the\nlong-horizon FID and FVD scores over the prior state-of-the-art by 48.6\\% and\n43.0\\%, respectively.",
+        "url": "http://arxiv.org/abs/2510.20726v1",
+        "published_date": "2025-10-23T16:44:34+00:00",
+        "updated_date": "2025-10-23T16:44:34+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Jiacheng Chen",
+            "Ziyu Jiang",
+            "Mingfu Liang",
+            "Bingbing Zhuang",
+            "Jong-Chyi Su",
+            "Sparsh Garg",
+            "Ying Wu",
+            "Manmohan Chandraker"
+        ],
+        "tldr": "AutoScape introduces a novel RGB-D diffusion model for generating geometrically consistent long-horizon driving scene videos by iteratively creating keyframes and then interpolating them with a video diffusion model, achieving significant improvements over existing methods.",
+        "tldr_zh": "AutoScape 提出了一种新颖的 RGB-D 扩散模型，用于生成几何一致的长时间驾驶场景视频。该模型通过迭代创建关键帧，然后使用视频扩散模型对它们进行插值，从而显著优于现有方法。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "RAPO++: Cross-Stage Prompt Optimization for Text-to-Video Generation via Data Alignment and Test-Time Scaling",
+        "summary": "Prompt design plays a crucial role in text-to-video (T2V) generation, yet\nuser-provided prompts are often short, unstructured, and misaligned with\ntraining data, limiting the generative potential of diffusion-based T2V models.\nWe present \\textbf{RAPO++}, a cross-stage prompt optimization framework that\nunifies training-data--aligned refinement, test-time iterative scaling, and\nlarge language model (LLM) fine-tuning to substantially improve T2V generation\nwithout modifying the underlying generative backbone. In \\textbf{Stage 1},\nRetrieval-Augmented Prompt Optimization (RAPO) enriches user prompts with\nsemantically relevant modifiers retrieved from a relation graph and refactors\nthem to match training distributions, enhancing compositionality and\nmulti-object fidelity. \\textbf{Stage 2} introduces Sample-Specific Prompt\nOptimization (SSPO), a closed-loop mechanism that iteratively refines prompts\nusing multi-source feedback -- including semantic alignment, spatial fidelity,\ntemporal coherence, and task-specific signals such as optical flow -- yielding\nprogressively improved video generation quality. \\textbf{Stage 3} leverages\noptimized prompt pairs from SSPO to fine-tune the rewriter LLM, internalizing\ntask-specific optimization patterns and enabling efficient, high-quality prompt\ngeneration even before inference. Extensive experiments across five\nstate-of-the-art T2V models and five benchmarks demonstrate that RAPO++\nachieves significant gains in semantic alignment, compositional reasoning,\ntemporal stability, and physical plausibility, outperforming existing methods\nby large margins. Our results highlight RAPO++ as a model-agnostic,\ncost-efficient, and scalable solution that sets a new standard for prompt\noptimization in T2V generation. The code is available at\nhttps://github.com/Vchitect/RAPO.",
+        "url": "http://arxiv.org/abs/2510.20206v1",
+        "published_date": "2025-10-23T04:45:09+00:00",
+        "updated_date": "2025-10-23T04:45:09+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Bingjie Gao",
+            "Qianli Ma",
+            "Xiaoxue Wu",
+            "Shuai Yang",
+            "Guanzhou Lan",
+            "Haonan Zhao",
+            "Jiaxuan Chen",
+            "Qingyang Liu",
+            "Yu Qiao",
+            "Xinyuan Chen",
+            "Yaohui Wang",
+            "Li Niu"
+        ],
+        "tldr": "The paper introduces RAPO++, a three-stage framework for optimizing text prompts to improve text-to-video generation by aligning prompts with training data, iteratively refining them during test-time, and fine-tuning an LLM to generate optimized prompts efficiently.",
+        "tldr_zh": "该论文介绍了RAPO++，一个三阶段框架，通过将提示与训练数据对齐、在测试时迭代改进提示以及微调LLM以高效生成优化提示，来改进文本到视频的生成。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]

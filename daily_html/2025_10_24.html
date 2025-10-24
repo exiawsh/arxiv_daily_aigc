@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 22, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 24, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>October 22, 2025</p>
+            <p>October 24, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,35 +215,27 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">UltraGen: High-Resolution Video Generation with Hierarchical Attention</h2>
+            <h2 class="paper-title">HoloCine: Holistic Generation of Cinematic Multi-Shot Long Video Narratives</h2>
             
-            <p class="paper-summary">Recent advances in video generation have made it possible to produce visually
-compelling videos, with wide-ranging applications in content creation,
-entertainment, and virtual reality. However, most existing diffusion
-transformer based video generation models are limited to low-resolution outputs
-(<=720P) due to the quadratic computational complexity of the attention
-mechanism with respect to the output width and height. This computational
-bottleneck makes native high-resolution video generation (1080P/2K/4K)
-impractical for both training and inference. To address this challenge, we
-present UltraGen, a novel video generation framework that enables i) efficient
-and ii) end-to-end native high-resolution video synthesis. Specifically,
-UltraGen features a hierarchical dual-branch attention architecture based on
-global-local attention decomposition, which decouples full attention into a
-local attention branch for high-fidelity regional content and a global
-attention branch for overall semantic consistency. We further propose a
-spatially compressed global modeling strategy to efficiently learn global
-dependencies, and a hierarchical cross-window local attention mechanism to
-reduce computational costs while enhancing information flow across different
-local windows. Extensive experiments demonstrate that UltraGen can effectively
-scale pre-trained low-resolution video models to 1080P and even 4K resolution
-for the first time, outperforming existing state-of-the-art methods and
-super-resolution based two-stage pipelines in both qualitative and quantitative
-evaluations.</p>
+            <p class="paper-summary">State-of-the-art text-to-video models excel at generating isolated clips but
+fall short of creating the coherent, multi-shot narratives, which are the
+essence of storytelling. We bridge this "narrative gap" with HoloCine, a model
+that generates entire scenes holistically to ensure global consistency from the
+first shot to the last. Our architecture achieves precise directorial control
+through a Window Cross-Attention mechanism that localizes text prompts to
+specific shots, while a Sparse Inter-Shot Self-Attention pattern (dense within
+shots but sparse between them) ensures the efficiency required for minute-scale
+generation. Beyond setting a new state-of-the-art in narrative coherence,
+HoloCine develops remarkable emergent abilities: a persistent memory for
+characters and scenes, and an intuitive grasp of cinematic techniques. Our work
+marks a pivotal shift from clip synthesis towards automated filmmaking, making
+end-to-end cinematic creation a tangible future. Our code is available at:
+https://holo-cine.github.io/.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: UltraGen introduces a hierarchical attention mechanism to efficiently generate high-resolution (up to 4K) videos, overcoming the computational limitations of existing diffusion transformer models.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: HoloCine introduces a novel architecture for generating coherent, multi-shot long videos with directorial control and emergent cinematic abilities, addressing the narrative gap in existing text-to-video models.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: UltraGen 提出了一种分层注意力机制，以高效生成高分辨率（高达 4K）视频，克服了现有扩散 Transformer 模型的计算限制。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: HoloCine 提出了一种新的架构，用于生成连贯的、多镜头的长视频，具有导演控制和新兴的电影制作能力，解决了现有文本到视频模型中的叙事差距。</p>
             
 
             
@@ -253,8 +245,8 @@ evaluations.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
@@ -269,8 +261,8 @@ evaluations.</p>
                 <div class="rating-item">
                     <span class="rating-label">Clarity:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -314,11 +306,11 @@ evaluations.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.18775v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.20822v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Teng Hu, Jiangning Zhang, Zihan Su, Ran Yi</p>
+            <p class="paper-authors">Authors: Yihao Meng, Hao Ouyang, Yue Yu, Qiuyu Wang, Wen Wang, Ka Leong Cheng, Hanlin Wang, Yixuan Li, Cheng Chen, Yanhong Zeng, Yujun Shen, Huamin Qu</p>
             
         </motion.div>
         
@@ -330,27 +322,34 @@ evaluations.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">MoGA: Mixture-of-Groups Attention for End-to-End Long Video Generation</h2>
+            <h2 class="paper-title">Video Prediction of Dynamic Physical Simulations With Pixel-Space Spatiotemporal Transformers</h2>
             
-            <p class="paper-summary">Long video generation with Diffusion Transformers (DiTs) is bottlenecked by
-the quadratic scaling of full attention with sequence length. Since attention
-is highly redundant, outputs are dominated by a small subset of query-key
-pairs. Existing sparse methods rely on blockwise coarse estimation, whose
-accuracy-efficiency trade-offs are constrained by block size. This paper
-introduces Mixture-of-Groups Attention (MoGA), an efficient sparse attention
-that uses a lightweight, learnable token router to precisely match tokens
-without blockwise estimation. Through semantic-aware routing, MoGA enables
-effective long-range interactions. As a kernel-free method, MoGA integrates
-seamlessly with modern attention stacks, including FlashAttention and sequence
-parallelism. Building on MoGA, we develop an efficient long video generation
-model that end-to-end produces minute-level, multi-shot, 480p videos at 24 fps,
-with a context length of approximately 580k. Comprehensive experiments on
-various video generation tasks validate the effectiveness of our approach.</p>
+            <p class="paper-summary">Inspired by the performance and scalability of autoregressive large language
+models (LLMs), transformer-based models have seen recent success in the visual
+domain. This study investigates a transformer adaptation for video prediction
+with a simple end-to-end approach, comparing various spatiotemporal
+self-attention layouts. Focusing on causal modeling of physical simulations
+over time; a common shortcoming of existing video-generative approaches, we
+attempt to isolate spatiotemporal reasoning via physical object tracking
+metrics and unsupervised training on physical simulation datasets. We introduce
+a simple yet effective pure transformer model for autoregressive video
+prediction, utilizing continuous pixel-space representations for video
+prediction. Without the need for complex training strategies or latent
+feature-learning components, our approach significantly extends the time
+horizon for physically accurate predictions by up to 50% when compared with
+existing latent-space approaches, while maintaining comparable performance on
+common video quality metrics. In addition, we conduct interpretability
+experiments to identify network regions that encode information useful to
+perform accurate estimations of PDE simulation parameters via probing models,
+and find that this generalizes to the estimation of out-of-distribution
+simulation parameters. This work serves as a platform for further
+attention-based spatiotemporal modeling of videos via a simple, parameter
+efficient, and interpretable approach.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Mixture-of-Groups Attention (MoGA), a novel sparse attention mechanism for efficient long video generation using Diffusion Transformers, achieving minute-level, multi-shot, 480p videos at 24 fps.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces a simple, parameter-efficient, and interpretable pixel-space spatiotemporal transformer model for autoregressive video prediction of dynamic physical simulations, achieving longer accurate prediction horizons compared to latent-space approaches.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种新的稀疏注意力机制，即混合组注意力（MoGA），用于使用扩散Transformer进行高效的长视频生成，实现了分钟级、多镜头、480p视频，帧率为24 fps。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种简单、参数高效且可解释的像素空间时空Transformer模型，用于动态物理仿真的自回归视频预测，与潜在空间方法相比，实现了更长的精确预测范围。</p>
             
 
             
@@ -360,16 +359,16 @@ various video generation tasks validate the effectiveness of our approach.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(10/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
@@ -384,8 +383,8 @@ various video generation tasks validate the effectiveness of our approach.</p>
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
             </div>
@@ -414,18 +413,18 @@ various video generation tasks validate the effectiveness of our approach.</p>
                     
                 
                     
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.18692v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.20807v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Weinan Jia, Yuning Lu, Mengqi Huang, Hualiang Wang, Binyuan Huang, Nan Chen, Mu Liu, Jidong Jiang, Zhendong Mao</p>
+            <p class="paper-authors">Authors: Dean L Slack, G Thomas Hudson, Thomas Winterbottom, Noura Al Moubayed</p>
             
         </motion.div>
         
@@ -437,32 +436,26 @@ various video generation tasks validate the effectiveness of our approach.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">OmniNWM: Omniscient Driving Navigation World Models</h2>
+            <h2 class="paper-title">AutoScape: Geometry-Consistent Long-Horizon Scene Generation</h2>
             
-            <p class="paper-summary">Autonomous driving world models are expected to work effectively across three
-core dimensions: state, action, and reward. Existing models, however, are
-typically restricted to limited state modalities, short video sequences,
-imprecise action control, and a lack of reward awareness. In this paper, we
-introduce OmniNWM, an omniscient panoramic navigation world model that
-addresses all three dimensions within a unified framework. For state, OmniNWM
-jointly generates panoramic videos of RGB, semantics, metric depth, and 3D
-occupancy. A flexible forcing strategy enables high-quality long-horizon
-auto-regressive generation. For action, we introduce a normalized panoramic
-Plucker ray-map representation that encodes input trajectories into pixel-level
-signals, enabling highly precise and generalizable control over panoramic video
-generation. Regarding reward, we move beyond learning reward functions with
-external image-based models: instead, we leverage the generated 3D occupancy to
-directly define rule-based dense rewards for driving compliance and safety.
-Extensive experiments demonstrate that OmniNWM achieves state-of-the-art
-performance in video generation, control accuracy, and long-horizon stability,
-while providing a reliable closed-loop evaluation framework through
-occupancy-grounded rewards. Project page is available at
-https://github.com/Arlo0o/OmniNWM.</p>
+            <p class="paper-summary">This paper proposes AutoScape, a long-horizon driving scene generation
+framework. At its core is a novel RGB-D diffusion model that iteratively
+generates sparse, geometrically consistent keyframes, serving as reliable
+anchors for the scene's appearance and geometry. To maintain long-range
+geometric consistency, the model 1) jointly handles image and depth in a shared
+latent space, 2) explicitly conditions on the existing scene geometry (i.e.,
+rendered point clouds) from previously generated keyframes, and 3) steers the
+sampling process with a warp-consistent guidance. Given high-quality RGB-D
+keyframes, a video diffusion model then interpolates between them to produce
+dense and coherent video frames. AutoScape generates realistic and
+geometrically consistent driving videos of over 20 seconds, improving the
+long-horizon FID and FVD scores over the prior state-of-the-art by 48.6\% and
+43.0\%, respectively.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: OmniNWM is a novel omniscient panoramic navigation world model for autonomous driving that jointly generates multi-modal panoramic videos, achieves precise action control using a Plucker ray-map representation, and defines dense rewards based on generated 3D occupancy, demonstrating state-of-the-art performance.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: AutoScape introduces a novel RGB-D diffusion model for generating geometrically consistent long-horizon driving scene videos by iteratively creating keyframes and then interpolating them with a video diffusion model, achieving significant improvements over existing methods.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: OmniNWM是一个新型的全知全景导航世界模型，用于自动驾驶。它联合生成多模态全景视频，通过Plucker射线图表示实现精确的动作控制，并基于生成的3D占用定义密集奖励，展示了最先进的性能。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: AutoScape 提出了一种新颖的 RGB-D 扩散模型，用于生成几何一致的长时间驾驶场景视频。该模型通过迭代创建关键帧，然后使用视频扩散模型对它们进行插值，从而显著优于现有方法。</p>
             
 
             
@@ -533,11 +526,11 @@ https://github.com/Arlo0o/OmniNWM.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.18313v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.20726v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Bohan Li, Zhuang Ma, Dalong Du, Baorui Peng, Zhujin Liang, Zhenqiang Liu, Chao Ma, Yueming Jin, Hao Zhao, Wenjun Zeng, Xin Jin</p>
+            <p class="paper-authors">Authors: Jiacheng Chen, Ziyu Jiang, Mingfu Liang, Bingbing Zhuang, Jong-Chyi Su, Sparsh Garg, Ying Wu, Manmohan Chandraker</p>
             
         </motion.div>
         
@@ -549,28 +542,38 @@ https://github.com/Arlo0o/OmniNWM.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">HouseTour: A Virtual Real Estate A(I)gent</h2>
+            <h2 class="paper-title">RAPO++: Cross-Stage Prompt Optimization for Text-to-Video Generation via Data Alignment and Test-Time Scaling</h2>
             
-            <p class="paper-summary">We introduce HouseTour, a method for spatially-aware 3D camera trajectory and
-natural language summary generation from a collection of images depicting an
-existing 3D space. Unlike existing vision-language models (VLMs), which
-struggle with geometric reasoning, our approach generates smooth video
-trajectories via a diffusion process constrained by known camera poses and
-integrates this information into the VLM for 3D-grounded descriptions. We
-synthesize the final video using 3D Gaussian splatting to render novel views
-along the trajectory. To support this task, we present the HouseTour dataset,
-which includes over 1,200 house-tour videos with camera poses, 3D
-reconstructions, and real estate descriptions. Experiments demonstrate that
-incorporating 3D camera trajectories into the text generation process improves
-performance over methods handling each task independently. We evaluate both
-individual and end-to-end performance, introducing a new joint metric. Our work
-enables automated, professional-quality video creation for real estate and
-touristic applications without requiring specialized expertise or equipment.</p>
+            <p class="paper-summary">Prompt design plays a crucial role in text-to-video (T2V) generation, yet
+user-provided prompts are often short, unstructured, and misaligned with
+training data, limiting the generative potential of diffusion-based T2V models.
+We present \textbf{RAPO++}, a cross-stage prompt optimization framework that
+unifies training-data--aligned refinement, test-time iterative scaling, and
+large language model (LLM) fine-tuning to substantially improve T2V generation
+without modifying the underlying generative backbone. In \textbf{Stage 1},
+Retrieval-Augmented Prompt Optimization (RAPO) enriches user prompts with
+semantically relevant modifiers retrieved from a relation graph and refactors
+them to match training distributions, enhancing compositionality and
+multi-object fidelity. \textbf{Stage 2} introduces Sample-Specific Prompt
+Optimization (SSPO), a closed-loop mechanism that iteratively refines prompts
+using multi-source feedback -- including semantic alignment, spatial fidelity,
+temporal coherence, and task-specific signals such as optical flow -- yielding
+progressively improved video generation quality. \textbf{Stage 3} leverages
+optimized prompt pairs from SSPO to fine-tune the rewriter LLM, internalizing
+task-specific optimization patterns and enabling efficient, high-quality prompt
+generation even before inference. Extensive experiments across five
+state-of-the-art T2V models and five benchmarks demonstrate that RAPO++
+achieves significant gains in semantic alignment, compositional reasoning,
+temporal stability, and physical plausibility, outperforming existing methods
+by large margins. Our results highlight RAPO++ as a model-agnostic,
+cost-efficient, and scalable solution that sets a new standard for prompt
+optimization in T2V generation. The code is available at
+https://github.com/Vchitect/RAPO.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: HouseTour introduces a method for generating spatially-aware 3D camera trajectories and natural language summaries for real estate videos using diffusion processes and 3D Gaussian splatting, along with a new dataset and evaluation metric.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces RAPO++, a three-stage framework for optimizing text prompts to improve text-to-video generation by aligning prompts with training data, iteratively refining them during test-time, and fine-tuning an LLM to generate optimized prompts efficiently.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: HouseTour 提出了一种利用扩散过程和 3D 高斯溅射生成具有空间感知能力的 3D 摄像机轨迹和自然语言摘要的方法，用于房地产视频，并提供了一个新的数据集和评估指标。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了RAPO++，一个三阶段框架，通过将提示与训练数据对齐、在测试时迭代改进提示以及微调LLM以高效生成优化提示，来改进文本到视频的生成。</p>
             
 
             
@@ -580,16 +583,16 @@ touristic applications without requiring specialized expertise or equipment.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -604,8 +607,8 @@ touristic applications without requiring specialized expertise or equipment.</p>
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
             </div>
@@ -641,18 +644,18 @@ touristic applications without requiring specialized expertise or equipment.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.18054v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.20206v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Ata Çelen, Marc Pollefeys, Daniel Barath, Iro Armeni</p>
+            <p class="paper-authors">Authors: Bingjie Gao, Qianli Ma, Xiaoxue Wu, Shuai Yang, Guanzhou Lan, Haonan Zhao, Jiaxuan Chen, Qingyang Liu, Yu Qiao, Xinyuan Chen, Yaohui Wang, Li Niu</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-10-24 03:35:48 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-10-24 03:40:46 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
