@@ -1,0 +1,25 @@
+[
+    {
+        "title": "Epipolar Geometry Improves Video Generation Models",
+        "summary": "Video generation models have progressed tremendously through large latent\ndiffusion transformers trained with rectified flow techniques. Yet these models\nstill struggle with geometric inconsistencies, unstable motion, and visual\nartifacts that break the illusion of realistic 3D scenes. 3D-consistent video\ngeneration could significantly impact numerous downstream applications in\ngeneration and reconstruction tasks. We explore how epipolar geometry\nconstraints improve modern video diffusion models. Despite massive training\ndata, these models fail to capture fundamental geometric principles underlying\nvisual content. We align diffusion models using pairwise epipolar geometry\nconstraints via preference-based optimization, directly addressing unstable\ncamera trajectories and geometric artifacts through mathematically principled\ngeometric enforcement. Our approach efficiently enforces geometric principles\nwithout requiring end-to-end differentiability. Evaluation demonstrates that\nclassical geometric constraints provide more stable optimization signals than\nmodern learned metrics, which produce noisy targets that compromise alignment\nquality. Training on static scenes with dynamic cameras ensures high-quality\nmeasurements while the model generalizes effectively to diverse dynamic\ncontent. By bridging data-driven deep learning with classical geometric\ncomputer vision, we present a practical method for generating spatially\nconsistent videos without compromising visual quality.",
+        "url": "http://arxiv.org/abs/2510.21615v1",
+        "published_date": "2025-10-24T16:21:37+00:00",
+        "updated_date": "2025-10-24T16:21:37+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Orest Kupyn",
+            "Fabian Manhardt",
+            "Federico Tombari",
+            "Christian Rupprecht"
+        ],
+        "tldr": "This paper introduces a method to improve video generation models by enforcing epipolar geometry constraints, leading to more geometrically consistent videos with stable motion and fewer visual artifacts.",
+        "tldr_zh": "本文介绍了一种通过强制执行对极几何约束来改进视频生成模型的方法，从而生成具有更稳定的运动和更少的视觉伪影的几何上更一致的视频。",
+        "relevance_score": 9,
+        "novelty_claim_score": 7,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
