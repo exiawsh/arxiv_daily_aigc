@@ -1,0 +1,31 @@
+[
+    {
+        "title": "Hollywood Town: Long-Video Generation via Cross-Modal Multi-Agent Orchestration",
+        "summary": "Recent advancements in multi-agent systems have demonstrated significant\npotential for enhancing creative task performance, such as long video\ngeneration. This study introduces three innovations to improve multi-agent\ncollaboration. First, we propose OmniAgent, a hierarchical, graph-based\nmulti-agent framework for long video generation that leverages a\nfilm-production-inspired architecture to enable modular specialization and\nscalable inter-agent collaboration. Second, inspired by context engineering, we\npropose hypergraph nodes that enable temporary group discussions among agents\nlacking sufficient context, reducing individual memory requirements while\nensuring adequate contextual information. Third, we transition from directed\nacyclic graphs (DAGs) to directed cyclic graphs with limited retries, allowing\nagents to reflect and refine outputs iteratively, thereby improving earlier\nstages through feedback from subsequent nodes. These contributions lay the\ngroundwork for developing more robust multi-agent systems in creative tasks.",
+        "url": "http://arxiv.org/abs/2510.22431v1",
+        "published_date": "2025-10-25T20:34:18+00:00",
+        "updated_date": "2025-10-25T20:34:18+00:00",
+        "categories": [
+            "cs.MA",
+            "cs.CV"
+        ],
+        "authors": [
+            "Zheng Wei",
+            "Mingchen Li",
+            "Zeqian Zhang",
+            "Ruibin Yuan",
+            "Pan Hui",
+            "Huamin Qu",
+            "James Evans",
+            "Maneesh Agrawala",
+            "Anyi Rao"
+        ],
+        "tldr": "This paper introduces a hierarchical, graph-based multi-agent framework (OmniAgent) with hypergraph nodes and directed cyclic graphs to improve long video generation by enhancing inter-agent collaboration and contextual awareness.",
+        "tldr_zh": "本文介绍了一个分层的、基于图的多智能体框架（OmniAgent），该框架具有超图节点和有向循环图，通过增强智能体间的协作和上下文感知来改进长视频生成。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 8,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    }
+]

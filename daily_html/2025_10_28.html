@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 23, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 28, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>October 23, 2025</p>
+            <p>October 28, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,29 +215,32 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">MoAlign: Motion-Centric Representation Alignment for Video Diffusion Models</h2>
+            <h2 class="paper-title">CoMo: Compositional Motion Customization for Text-to-Video Generation</h2>
             
-            <p class="paper-summary">Text-to-video diffusion models have enabled high-quality video synthesis, yet
-often fail to generate temporally coherent and physically plausible motion. A
-key reason is the models' insufficient understanding of complex motions that
-natural videos often entail. Recent works tackle this problem by aligning
-diffusion model features with those from pretrained video encoders. However,
-these encoders mix video appearance and dynamics into entangled features,
-limiting the benefit of such alignment. In this paper, we propose a
-motion-centric alignment framework that learns a disentangled motion subspace
-from a pretrained video encoder. This subspace is optimized to predict
-ground-truth optical flow, ensuring it captures true motion dynamics. We then
-align the latent features of a text-to-video diffusion model to this new
-subspace, enabling the generative model to internalize motion knowledge and
-generate more plausible videos. Our method improves the physical commonsense in
-a state-of-the-art video diffusion model, while preserving adherence to textual
-prompts, as evidenced by empirical evaluations on VideoPhy, VideoPhy2, VBench,
-and VBench-2.0, along with a user study.</p>
+            <p class="paper-summary">While recent text-to-video models excel at generating diverse scenes, they
+struggle with precise motion control, particularly for complex, multi-subject
+motions. Although methods for single-motion customization have been developed
+to address this gap, they fail in compositional scenarios due to two primary
+challenges: motion-appearance entanglement and ineffective multi-motion
+blending. This paper introduces CoMo, a novel framework for
+$\textbf{compositional motion customization}$ in text-to-video generation,
+enabling the synthesis of multiple, distinct motions within a single video.
+CoMo addresses these issues through a two-phase approach. First, in the
+single-motion learning phase, a static-dynamic decoupled tuning paradigm
+disentangles motion from appearance to learn a motion-specific module. Second,
+in the multi-motion composition phase, a plug-and-play divide-and-merge
+strategy composes these learned motions without additional training by
+spatially isolating their influence during the denoising process. To facilitate
+research in this new domain, we also introduce a new benchmark and a novel
+evaluation metric designed to assess multi-motion fidelity and blending.
+Extensive experiments demonstrate that CoMo achieves state-of-the-art
+performance, significantly advancing the capabilities of controllable video
+generation. Our project page is at https://como6.github.io/.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces MoAlign, a method to improve the temporal coherence and physical plausibility of text-to-video diffusion models by aligning their latent features with a disentangled, motion-centric subspace learned from a pretrained video encoder.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces CoMo, a framework for compositional motion customization in text-to-video generation, enabling multiple distinct motions within a single video through a static-dynamic decoupled tuning and a divide-and-merge strategy. They also provide a new benchmark and evaluation metric.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了MoAlign，一种通过将文本到视频扩散模型的潜在特征与从预训练视频编码器中学习到的解耦的、以运动为中心子空间对齐，从而提高文本到视频扩散模型的时间连贯性和物理合理性的方法。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文提出了CoMo，一个用于文本到视频生成中组合运动定制的框架，通过静态-动态解耦调整和分而合之的策略，可以在单个视频中实现多个不同的运动。他们还提供了一个新的基准和评估指标。</p>
             
 
             
@@ -301,18 +304,18 @@ and VBench-2.0, along with a user study.</p>
                     
                 
                     
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.19022v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.23007v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Aritra Bhowmik, Denis Korzhenkov, Cees G. M. Snoek, Amirhossein Habibian, Mohsen Ghafoorian</p>
+            <p class="paper-authors">Authors: Youcan Xu, Zhen Wang, Jiaxin Shi, Kexin Li, Feifei Shao, Jun Xiao, Yi Yang, Jun Yu, Long Chen</p>
             
         </motion.div>
         
@@ -324,32 +327,30 @@ and VBench-2.0, along with a user study.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">GigaBrain-0: A World Model-Powered Vision-Language-Action Model</h2>
+            <h2 class="paper-title">VALA: Learning Latent Anchors for Training-Free and Temporally Consistent</h2>
             
-            <p class="paper-summary">Training Vision-Language-Action (VLA) models for generalist robots typically
-requires large-scale real-world robot data, which is expensive and
-time-consuming to collect. The inefficiency of physical data collection
-severely limits the scalability, and generalization capacity of current VLA
-systems. To address this challenge, we introduce GigaBrain-0, a novel VLA
-foundation model empowered by world model-generated data (e.g., video
-generation, real2real transfer, human transfer, view transfer, sim2real
-transfer data). By leveraging world models to generate diverse data at scale,
-GigaBrain-0 significantly reduces reliance on real robot data while improving
-cross-task generalization. Our approach further improves policy robustness
-through RGBD input modeling and embodied Chain-of-Thought (CoT) supervision,
-enabling the model to reason about spatial geometry, object states, and
-long-horizon dependencies during task execution. This leads to substantial
-gains in real-world performance on dexterous, long-horizon, and mobile
-manipulation tasks. Extensive experiments demonstrate that GigaBrain-0 achieves
-superior generalization across variations in appearances (e.g., textures,
-colors), object placements, and camera viewpoints. Additionally, we present
-GigaBrain-0-Small, an optimized lightweight variant designed to run efficiently
-on devices such as the NVIDIA Jetson AGX Orin.</p>
+            <p class="paper-summary">Recent advances in training-free video editing have enabled lightweight and
+precise cross-frame generation by leveraging pre-trained text-to-image
+diffusion models. However, existing methods often rely on heuristic frame
+selection to maintain temporal consistency during DDIM inversion, which
+introduces manual bias and reduces the scalability of end-to-end inference. In
+this paper, we propose~\textbf{VALA} (\textbf{V}ariational \textbf{A}lignment
+for \textbf{L}atent \textbf{A}nchors), a variational alignment module that
+adaptively selects key frames and compresses their latent features into
+semantic anchors for consistent video editing. To learn meaningful assignments,
+VALA propose a variational framework with a contrastive learning objective.
+Therefore, it can transform cross-frame latent representations into compressed
+latent anchors that preserve both content and temporal coherence. Our method
+can be fully integrated into training-free text-to-image based video editing
+models. Extensive experiments on real-world video editing benchmarks show that
+VALA achieves state-of-the-art performance in inversion fidelity, editing
+quality, and temporal consistency, while offering improved efficiency over
+prior methods.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: GigaBrain-0 is a Vision-Language-Action model that uses world model-generated data to improve generalization and reduce reliance on real-world robot data collection, showing substantial gains in real-world performance.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces VALA, a variational alignment module for training-free video editing that adaptively selects key frames and compresses their latent features into semantic anchors to improve temporal consistency. It achieves state-of-the-art performance in inversion fidelity, editing quality, and temporal consistency while being more efficient.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: GigaBrain-0是一个视觉-语言-动作模型，它使用世界模型生成的数据来提高泛化能力并减少对真实世界机器人数据收集的依赖，从而在真实世界性能方面取得了显著的提升。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种名为VALA的变分对齐模块，用于免训练的视频编辑。该模块自适应地选择关键帧，并将它们的潜在特征压缩为语义锚点，从而提高时间一致性。VALA在反演保真度、编辑质量和时间一致性方面达到了最先进的性能，同时提高了效率。</p>
             
 
             
@@ -367,8 +368,8 @@ on devices such as the NVIDIA Jetson AGX Orin.</p>
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -383,8 +384,8 @@ on devices such as the NVIDIA Jetson AGX Orin.</p>
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
             </div>
@@ -420,11 +421,11 @@ on devices such as the NVIDIA Jetson AGX Orin.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.19430v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.22970v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: GigaBrain Team, Angen Ye, Boyuan Wang, Chaojun Ni, Guan Huang, Guosheng Zhao, Haoyun Li, Jie Li, Jiagang Zhu, Lv Feng, Peng Li, Qiuping Deng, Runqi Ouyang, Wenkang Qin, Xinze Chen, Xiaofeng Wang, Yang Wang, Yifan Li, Yilong Li, Yiran Ding, Yuan Xu, Yun Ye, Yukun Zhou, Zhehao Dong, Zhenan Wang, Zhichao Liu, Zheng Zhu</p>
+            <p class="paper-authors">Authors: Zhangkai Wu, Xuhui Fan, Zhongyuan Xie, Kaize Shi, Longbing Cao</p>
             
         </motion.div>
         
@@ -436,29 +437,29 @@ on devices such as the NVIDIA Jetson AGX Orin.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Video Consistency Distance: Enhancing Temporal Consistency for Image-to-Video Generation via Reward-Based Fine-Tuning</h2>
+            <h2 class="paper-title">MAGIC-Talk: Motion-aware Audio-Driven Talking Face Generation with Customizable Identity Control</h2>
             
-            <p class="paper-summary">Reward-based fine-tuning of video diffusion models is an effective approach
-to improve the quality of generated videos, as it can fine-tune models without
-requiring real-world video datasets. However, it can sometimes be limited to
-specific performances because conventional reward functions are mainly aimed at
-enhancing the quality across the whole generated video sequence, such as
-aesthetic appeal and overall consistency. Notably, the temporal consistency of
-the generated video often suffers when applying previous approaches to
-image-to-video (I2V) generation tasks. To address this limitation, we propose
-Video Consistency Distance (VCD), a novel metric designed to enhance temporal
-consistency, and fine-tune a model with the reward-based fine-tuning framework.
-To achieve coherent temporal consistency relative to a conditioning image, VCD
-is defined in the frequency space of video frame features to capture frame
-information effectively through frequency-domain analysis. Experimental results
-across multiple I2V datasets demonstrate that fine-tuning a video generation
-model with VCD significantly enhances temporal consistency without degrading
-other performance compared to the previous method.</p>
+            <p class="paper-summary">Audio-driven talking face generation has gained significant attention for
+applications in digital media and virtual avatars. While recent methods improve
+audio-lip synchronization, they often struggle with temporal consistency,
+identity preservation, and customization, especially in long video generation.
+To address these issues, we propose MAGIC-Talk, a one-shot diffusion-based
+framework for customizable and temporally stable talking face generation.
+MAGIC-Talk consists of ReferenceNet, which preserves identity and enables
+fine-grained facial editing via text prompts, and AnimateNet, which enhances
+motion coherence using structured motion priors. Unlike previous methods
+requiring multiple reference images or fine-tuning, MAGIC-Talk maintains
+identity from a single image while ensuring smooth transitions across frames.
+Additionally, a progressive latent fusion strategy is introduced to improve
+long-form video quality by reducing motion inconsistencies and flickering.
+Extensive experiments demonstrate that MAGIC-Talk outperforms state-of-the-art
+methods in visual quality, identity preservation, and synchronization accuracy,
+offering a robust solution for talking face generation.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces Video Consistency Distance (VCD), a novel metric for reward-based fine-tuning of video diffusion models to enhance temporal consistency in image-to-video generation, showing improvements over existing methods.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: MAGIC-Talk is a one-shot diffusion-based framework for generating customizable and temporally stable talking faces from audio, addressing issues like identity preservation and motion consistency in long videos.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种新的视频一致性距离 (VCD)，用于基于奖励的视频扩散模型微调，以增强图像到视频生成中的时间一致性，并表明该方法优于现有方法。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: MAGIC-Talk是一个基于扩散模型的框架，用于从音频生成可定制且时间稳定的说话人脸，解决了长视频中身份保持和运动一致性等问题。</p>
             
 
             
@@ -468,8 +469,8 @@ other performance compared to the previous method.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
@@ -492,8 +493,8 @@ other performance compared to the previous method.</p>
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
             </div>
@@ -529,18 +530,18 @@ other performance compared to the previous method.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.19193v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.22810v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Takehiro Aoshima, Yusuke Shinohara, Park Byeongseon</p>
+            <p class="paper-authors">Authors: Fatemeh Nazarieh, Zhenhua Feng, Diptesh Kanojia, Muhammad Awais, Josef Kittler</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-10-28 03:43:03 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-10-28 03:49:23 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

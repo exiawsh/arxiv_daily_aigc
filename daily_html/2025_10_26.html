@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 14, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 26, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>October 14, 2025</p>
+            <p>October 26, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,26 +215,31 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">MoMaps: Semantics-Aware Scene Motion Generation with Motion Maps</h2>
+            <h2 class="paper-title">LongCat-Video Technical Report</h2>
             
-            <p class="paper-summary">This paper addresses the challenge of learning semantically and functionally
-meaningful 3D motion priors from real-world videos, in order to enable
-prediction of future 3D scene motion from a single input image. We propose a
-novel pixel-aligned Motion Map (MoMap) representation for 3D scene motion,
-which can be generated from existing generative image models to facilitate
-efficient and effective motion prediction. To learn meaningful distributions
-over motion, we create a large-scale database of MoMaps from over 50,000 real
-videos and train a diffusion model on these representations. Our motion
-generation not only synthesizes trajectories in 3D but also suggests a new
-pipeline for 2D video synthesis: first generate a MoMap, then warp an image
-accordingly and complete the warped point-based renderings. Experimental
-results demonstrate that our approach generates plausible and semantically
-consistent 3D scene motion.</p>
+            <p class="paper-summary">Video generation is a critical pathway toward world models, with efficient
+long video inference as a key capability. Toward this end, we introduce
+LongCat-Video, a foundational video generation model with 13.6B parameters,
+delivering strong performance across multiple video generation tasks. It
+particularly excels in efficient and high-quality long video generation,
+representing our first step toward world models. Key features include: Unified
+architecture for multiple tasks: Built on the Diffusion Transformer (DiT)
+framework, LongCat-Video supports Text-to-Video, Image-to-Video, and
+Video-Continuation tasks with a single model; Long video generation:
+Pretraining on Video-Continuation tasks enables LongCat-Video to maintain high
+quality and temporal coherence in the generation of minutes-long videos;
+Efficient inference: LongCat-Video generates 720p, 30fps videos within minutes
+by employing a coarse-to-fine generation strategy along both the temporal and
+spatial axes. Block Sparse Attention further enhances efficiency, particularly
+at high resolutions; Strong performance with multi-reward RLHF: Multi-reward
+RLHF training enables LongCat-Video to achieve performance on par with the
+latest closed-source and leading open-source models. Code and model weights are
+publicly available to accelerate progress in the field.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces 'MoMaps,' a novel representation for 3D scene motion, and trains a diffusion model on a large dataset of MoMaps to predict future 3D scene motion from a single image and create 2D videos by warping images.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: LongCat-Video is a 13.6B parameter video generation model excelling in efficient, high-quality, minutes-long video generation via a Diffusion Transformer architecture, multi-reward RLHF training, and coarse-to-fine generation strategies. Code and models are available.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文提出了“运动地图（MoMaps）”，一种用于3D场景运动的新表示方法。通过在一个大型运动地图数据集上训练扩散模型，该方法能够从单张图像预测未来的3D场景运动，并可以通过扭曲图像来创建2D视频。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: LongCat-Video是一个136亿参数的视频生成模型，通过扩散Transformer架构、多奖励RLHF训练和粗到细的生成策略，擅长高效、高质量地生成分钟级视频。代码和模型已开源。</p>
             
 
             
@@ -244,8 +249,8 @@ consistent 3D scene motion.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(10/10)</span>
                 </div>
                 
                 
@@ -268,8 +273,8 @@ consistent 3D scene motion.</p>
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
             </div>
@@ -298,25 +303,25 @@ consistent 3D scene motion.</p>
                     
                 
                     
-                        <i class="far fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.11107v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.22200v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Jiahui Lei, Kyle Genova, George Kopanas, Noah Snavely, Leonidas Guibas</p>
+            <p class="paper-authors">Authors: Meituan LongCat Team, Xunliang Cai, Qilong Huang, Zhuoliang Kang, Hongyu Li, Shijun Liang, Liya Ma, Siyu Ren, Xiaoming Wei, Rixu Xie, Tong Zhang</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-10-28 03:43:02 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-10-28 03:44:46 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

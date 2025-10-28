@@ -1,0 +1,78 @@
+[
+    {
+        "title": "CoMo: Compositional Motion Customization for Text-to-Video Generation",
+        "summary": "While recent text-to-video models excel at generating diverse scenes, they\nstruggle with precise motion control, particularly for complex, multi-subject\nmotions. Although methods for single-motion customization have been developed\nto address this gap, they fail in compositional scenarios due to two primary\nchallenges: motion-appearance entanglement and ineffective multi-motion\nblending. This paper introduces CoMo, a novel framework for\n$\\textbf{compositional motion customization}$ in text-to-video generation,\nenabling the synthesis of multiple, distinct motions within a single video.\nCoMo addresses these issues through a two-phase approach. First, in the\nsingle-motion learning phase, a static-dynamic decoupled tuning paradigm\ndisentangles motion from appearance to learn a motion-specific module. Second,\nin the multi-motion composition phase, a plug-and-play divide-and-merge\nstrategy composes these learned motions without additional training by\nspatially isolating their influence during the denoising process. To facilitate\nresearch in this new domain, we also introduce a new benchmark and a novel\nevaluation metric designed to assess multi-motion fidelity and blending.\nExtensive experiments demonstrate that CoMo achieves state-of-the-art\nperformance, significantly advancing the capabilities of controllable video\ngeneration. Our project page is at https://como6.github.io/.",
+        "url": "http://arxiv.org/abs/2510.23007v1",
+        "published_date": "2025-10-27T04:57:09+00:00",
+        "updated_date": "2025-10-27T04:57:09+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Youcan Xu",
+            "Zhen Wang",
+            "Jiaxin Shi",
+            "Kexin Li",
+            "Feifei Shao",
+            "Jun Xiao",
+            "Yi Yang",
+            "Jun Yu",
+            "Long Chen"
+        ],
+        "tldr": "The paper introduces CoMo, a framework for compositional motion customization in text-to-video generation, enabling multiple distinct motions within a single video through a static-dynamic decoupled tuning and a divide-and-merge strategy. They also provide a new benchmark and evaluation metric.",
+        "tldr_zh": "该论文提出了CoMo，一个用于文本到视频生成中组合运动定制的框架，通过静态-动态解耦调整和分而合之的策略，可以在单个视频中实现多个不同的运动。他们还提供了一个新的基准和评估指标。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "VALA: Learning Latent Anchors for Training-Free and Temporally Consistent",
+        "summary": "Recent advances in training-free video editing have enabled lightweight and\nprecise cross-frame generation by leveraging pre-trained text-to-image\ndiffusion models. However, existing methods often rely on heuristic frame\nselection to maintain temporal consistency during DDIM inversion, which\nintroduces manual bias and reduces the scalability of end-to-end inference. In\nthis paper, we propose~\\textbf{VALA} (\\textbf{V}ariational \\textbf{A}lignment\nfor \\textbf{L}atent \\textbf{A}nchors), a variational alignment module that\nadaptively selects key frames and compresses their latent features into\nsemantic anchors for consistent video editing. To learn meaningful assignments,\nVALA propose a variational framework with a contrastive learning objective.\nTherefore, it can transform cross-frame latent representations into compressed\nlatent anchors that preserve both content and temporal coherence. Our method\ncan be fully integrated into training-free text-to-image based video editing\nmodels. Extensive experiments on real-world video editing benchmarks show that\nVALA achieves state-of-the-art performance in inversion fidelity, editing\nquality, and temporal consistency, while offering improved efficiency over\nprior methods.",
+        "url": "http://arxiv.org/abs/2510.22970v1",
+        "published_date": "2025-10-27T03:44:11+00:00",
+        "updated_date": "2025-10-27T03:44:11+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Zhangkai Wu",
+            "Xuhui Fan",
+            "Zhongyuan Xie",
+            "Kaize Shi",
+            "Longbing Cao"
+        ],
+        "tldr": "This paper introduces VALA, a variational alignment module for training-free video editing that adaptively selects key frames and compresses their latent features into semantic anchors to improve temporal consistency. It achieves state-of-the-art performance in inversion fidelity, editing quality, and temporal consistency while being more efficient.",
+        "tldr_zh": "本文介绍了一种名为VALA的变分对齐模块，用于免训练的视频编辑。该模块自适应地选择关键帧，并将它们的潜在特征压缩为语义锚点，从而提高时间一致性。VALA在反演保真度、编辑质量和时间一致性方面达到了最先进的性能，同时提高了效率。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "MAGIC-Talk: Motion-aware Audio-Driven Talking Face Generation with Customizable Identity Control",
+        "summary": "Audio-driven talking face generation has gained significant attention for\napplications in digital media and virtual avatars. While recent methods improve\naudio-lip synchronization, they often struggle with temporal consistency,\nidentity preservation, and customization, especially in long video generation.\nTo address these issues, we propose MAGIC-Talk, a one-shot diffusion-based\nframework for customizable and temporally stable talking face generation.\nMAGIC-Talk consists of ReferenceNet, which preserves identity and enables\nfine-grained facial editing via text prompts, and AnimateNet, which enhances\nmotion coherence using structured motion priors. Unlike previous methods\nrequiring multiple reference images or fine-tuning, MAGIC-Talk maintains\nidentity from a single image while ensuring smooth transitions across frames.\nAdditionally, a progressive latent fusion strategy is introduced to improve\nlong-form video quality by reducing motion inconsistencies and flickering.\nExtensive experiments demonstrate that MAGIC-Talk outperforms state-of-the-art\nmethods in visual quality, identity preservation, and synchronization accuracy,\noffering a robust solution for talking face generation.",
+        "url": "http://arxiv.org/abs/2510.22810v1",
+        "published_date": "2025-10-26T19:49:31+00:00",
+        "updated_date": "2025-10-26T19:49:31+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Fatemeh Nazarieh",
+            "Zhenhua Feng",
+            "Diptesh Kanojia",
+            "Muhammad Awais",
+            "Josef Kittler"
+        ],
+        "tldr": "MAGIC-Talk is a one-shot diffusion-based framework for generating customizable and temporally stable talking faces from audio, addressing issues like identity preservation and motion consistency in long videos.",
+        "tldr_zh": "MAGIC-Talk是一个基于扩散模型的框架，用于从音频生成可定制且时间稳定的说话人脸，解决了长视频中身份保持和运动一致性等问题。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]

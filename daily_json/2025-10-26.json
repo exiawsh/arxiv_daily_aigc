@@ -1,0 +1,32 @@
+[
+    {
+        "title": "LongCat-Video Technical Report",
+        "summary": "Video generation is a critical pathway toward world models, with efficient\nlong video inference as a key capability. Toward this end, we introduce\nLongCat-Video, a foundational video generation model with 13.6B parameters,\ndelivering strong performance across multiple video generation tasks. It\nparticularly excels in efficient and high-quality long video generation,\nrepresenting our first step toward world models. Key features include: Unified\narchitecture for multiple tasks: Built on the Diffusion Transformer (DiT)\nframework, LongCat-Video supports Text-to-Video, Image-to-Video, and\nVideo-Continuation tasks with a single model; Long video generation:\nPretraining on Video-Continuation tasks enables LongCat-Video to maintain high\nquality and temporal coherence in the generation of minutes-long videos;\nEfficient inference: LongCat-Video generates 720p, 30fps videos within minutes\nby employing a coarse-to-fine generation strategy along both the temporal and\nspatial axes. Block Sparse Attention further enhances efficiency, particularly\nat high resolutions; Strong performance with multi-reward RLHF: Multi-reward\nRLHF training enables LongCat-Video to achieve performance on par with the\nlatest closed-source and leading open-source models. Code and model weights are\npublicly available to accelerate progress in the field.",
+        "url": "http://arxiv.org/abs/2510.22200v1",
+        "published_date": "2025-10-25T07:41:02+00:00",
+        "updated_date": "2025-10-25T07:41:02+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Meituan LongCat Team",
+            "Xunliang Cai",
+            "Qilong Huang",
+            "Zhuoliang Kang",
+            "Hongyu Li",
+            "Shijun Liang",
+            "Liya Ma",
+            "Siyu Ren",
+            "Xiaoming Wei",
+            "Rixu Xie",
+            "Tong Zhang"
+        ],
+        "tldr": "LongCat-Video is a 13.6B parameter video generation model excelling in efficient, high-quality, minutes-long video generation via a Diffusion Transformer architecture, multi-reward RLHF training, and coarse-to-fine generation strategies. Code and models are available.",
+        "tldr_zh": "LongCat-Video是一个136亿参数的视频生成模型，通过扩散Transformer架构、多奖励RLHF训练和粗到细的生成策略，擅长高效、高质量地生成分钟级视频。代码和模型已开源。",
+        "relevance_score": 10,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    }
+]
