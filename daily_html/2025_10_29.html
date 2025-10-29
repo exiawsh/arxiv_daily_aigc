@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 16, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 29, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>October 16, 2025</p>
+            <p>October 29, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,35 +215,33 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">PhysMaster: Mastering Physical Representation for Video Generation via Reinforcement Learning</h2>
+            <h2 class="paper-title">Generative View Stitching</h2>
             
-            <p class="paper-summary">Video generation models nowadays are capable of generating visually realistic
-videos, but often fail to adhere to physical laws, limiting their ability to
-generate physically plausible videos and serve as ''world models''. To address
-this issue, we propose PhysMaster, which captures physical knowledge as a
-representation for guiding video generation models to enhance their
-physics-awareness. Specifically, PhysMaster is based on the image-to-video task
-where the model is expected to predict physically plausible dynamics from the
-input image. Since the input image provides physical priors like relative
-positions and potential interactions of objects in the scenario, we devise
-PhysEncoder to encode physical information from it as an extra condition to
-inject physical knowledge into the video generation process. The lack of proper
-supervision on the model's physical performance beyond mere appearance
-motivates PhysEncoder to apply reinforcement learning with human feedback to
-physical representation learning, which leverages feedback from generation
-models to optimize physical representations with Direct Preference Optimization
-(DPO) in an end-to-end manner. PhysMaster provides a feasible solution for
-improving physics-awareness of PhysEncoder and thus of video generation,
-proving its ability on a simple proxy task and generalizability to wide-ranging
-physical scenarios. This implies that our PhysMaster, which unifies solutions
-for various physical processes via representation learning in the reinforcement
-learning paradigm, can act as a generic and plug-in solution for physics-aware
-video generation and broader applications.</p>
+            <p class="paper-summary">Autoregressive video diffusion models are capable of long rollouts that are
+stable and consistent with history, but they are unable to guide the current
+generation with conditioning from the future. In camera-guided video generation
+with a predefined camera trajectory, this limitation leads to collisions with
+the generated scene, after which autoregression quickly collapses. To address
+this, we propose Generative View Stitching (GVS), which samples the entire
+sequence in parallel such that the generated scene is faithful to every part of
+the predefined camera trajectory. Our main contribution is a sampling algorithm
+that extends prior work on diffusion stitching for robot planning to video
+generation. While such stitching methods usually require a specially trained
+model, GVS is compatible with any off-the-shelf video model trained with
+Diffusion Forcing, a prevalent sequence diffusion framework that we show
+already provides the affordances necessary for stitching. We then introduce
+Omni Guidance, a technique that enhances the temporal consistency in stitching
+by conditioning on both the past and future, and that enables our proposed
+loop-closing mechanism for delivering long-range coherence. Overall, GVS
+achieves camera-guided video generation that is stable, collision-free,
+frame-to-frame consistent, and closes loops for a variety of predefined camera
+paths, including Oscar Reutersv\"ard's Impossible Staircase. Results are best
+viewed as videos at https://andrewsonga.github.io/gvs.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces PhysMaster, a reinforcement learning-based approach for learning physical representations to guide video generation models, enhancing their ability to generate physically plausible videos. They use human feedback and Direct Preference Optimization (DPO) to improve physics-awareness.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Generative View Stitching (GVS), a novel sampling algorithm for camera-guided video generation that leverages diffusion stitching and Omni Guidance to create stable, collision-free, and temporally consistent videos aligned with predefined camera trajectories, even enabling loop closure.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了PhysMaster，一种基于强化学习的方法，用于学习物理表示以指导视频生成模型，从而提高其生成符合物理规律视频的能力。他们使用人类反馈和直接偏好优化（DPO）来提高物理感知能力。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了生成式视图拼接（GVS），一种用于相机引导视频生成的新颖采样算法，它利用扩散拼接和全方位指导来创建稳定、无碰撞且时间一致的视频，这些视频与预定义的相机轨迹对齐，甚至能够实现循环闭合。</p>
             
 
             
@@ -253,16 +251,16 @@ video generation and broader applications.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -314,11 +312,11 @@ video generation and broader applications.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.13809v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.24718v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Sihui Ji, Xi Chen, Xin Tao, Pengfei Wan, Hengshuang Zhao</p>
+            <p class="paper-authors">Authors: Chonghyuk Song, Michal Stary, Boyuan Chen, George Kopanas, Vincent Sitzmann</p>
             
         </motion.div>
         
@@ -330,30 +328,30 @@ video generation and broader applications.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">CanvasMAR: Improving Masked Autoregressive Video Generation With Canvas</h2>
+            <h2 class="paper-title">Uniform Discrete Diffusion with Metric Path for Video Generation</h2>
             
-            <p class="paper-summary">Masked autoregressive models (MAR) have recently emerged as a powerful
-paradigm for image and video generation, combining the flexibility of masked
-modeling with the potential of continuous tokenizer. However, video MAR models
-suffer from two major limitations: the slow-start problem, caused by the lack
-of a structured global prior at early sampling stages, and error accumulation
-across the autoregression in both spatial and temporal dimensions. In this
-work, we propose CanvasMAR, a novel video MAR model that mitigates these issues
-by introducing a canvas mechanism--a blurred, global prediction of the next
-frame, used as the starting point for masked generation. The canvas provides
-global structure early in sampling, enabling faster and more coherent frame
-synthesis. Furthermore, we introduce compositional classifier-free guidance
-that jointly enlarges spatial (canvas) and temporal conditioning, and employ
-noise-based canvas augmentation to enhance robustness. Experiments on the BAIR
-and Kinetics-600 benchmarks demonstrate that CanvasMAR produces high-quality
-videos with fewer autoregressive steps. Our approach achieves remarkable
-performance among autoregressive models on Kinetics-600 dataset and rivals
-diffusion-based methods.</p>
+            <p class="paper-summary">Continuous-space video generation has advanced rapidly, while discrete
+approaches lag behind due to error accumulation and long-context inconsistency.
+In this work, we revisit discrete generative modeling and present Uniform
+discRete diffuSion with metric pAth (URSA), a simple yet powerful framework
+that bridges the gap with continuous approaches for the scalable video
+generation. At its core, URSA formulates the video generation task as an
+iterative global refinement of discrete spatiotemporal tokens. It integrates
+two key designs: a Linearized Metric Path and a Resolution-dependent Timestep
+Shifting mechanism. These designs enable URSA to scale efficiently to
+high-resolution image synthesis and long-duration video generation, while
+requiring significantly fewer inference steps. Additionally, we introduce an
+asynchronous temporal fine-tuning strategy that unifies versatile tasks within
+a single model, including interpolation and image-to-video generation.
+Extensive experiments on challenging video and image generation benchmarks
+demonstrate that URSA consistently outperforms existing discrete methods and
+achieves performance comparable to state-of-the-art continuous diffusion
+methods. Code and models are available at https://github.com/baaivision/URSA</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: CanvasMAR improves video generation by introducing a canvas mechanism (blurred global prediction) to address slow-start and error accumulation issues in masked autoregressive models, achieving state-of-the-art results among autoregressive models.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces URSA, a discrete diffusion framework for video generation that uses a linearized metric path and resolution-dependent timestep shifting to achieve performance comparable to continuous diffusion methods while scaling efficiently to high-resolution and long-duration videos.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: CanvasMAR通过引入画布机制（模糊的全局预测）来改进视频生成，解决了掩蔽自回归模型中的启动缓慢和误差累积问题，并在自回归模型中取得了最先进的结果。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种用于视频生成的离散扩散框架 URSA，它使用线性化度量路径和分辨率相关的时间步移位，以达到与连续扩散方法相当的性能，同时有效地扩展到高分辨率和长时视频。</p>
             
 
             
@@ -424,11 +422,11 @@ diffusion-based methods.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.13669v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.24717v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Zian Li, Muhan Zhang</p>
+            <p class="paper-authors">Authors: Haoge Deng, Ting Pan, Fan Zhang, Yang Liu, Zhuoyan Luo, Yufeng Cui, Wenxuan Wang, Chunhua Shen, Shiguang Shan, Zhaoxiang Zhang, Xinlong Wang</p>
             
         </motion.div>
         
@@ -440,144 +438,31 @@ diffusion-based methods.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">SeqBench: Benchmarking Sequential Narrative Generation in Text-to-Video Models</h2>
+            <h2 class="paper-title">SAGE: Structure-Aware Generative Video Transitions between Diverse Clips</h2>
             
-            <p class="paper-summary">Text-to-video (T2V) generation models have made significant progress in
-creating visually appealing videos. However, they struggle with generating
-coherent sequential narratives that require logical progression through
-multiple events. Existing T2V benchmarks primarily focus on visual quality
-metrics but fail to evaluate narrative coherence over extended sequences. To
-bridge this gap, we present SeqBench, a comprehensive benchmark for evaluating
-sequential narrative coherence in T2V generation. SeqBench includes a carefully
-designed dataset of 320 prompts spanning various narrative complexities, with
-2,560 human-annotated videos generated from 8 state-of-the-art T2V models.
-Additionally, we design a Dynamic Temporal Graphs (DTG)-based automatic
-evaluation metric, which can efficiently capture long-range dependencies and
-temporal ordering while maintaining computational efficiency. Our DTG-based
-metric demonstrates a strong correlation with human annotations. Through
-systematic evaluation using SeqBench, we reveal critical limitations in current
-T2V models: failure to maintain consistent object states across multi-action
-sequences, physically implausible results in multi-object scenarios, and
-difficulties in preserving realistic timing and ordering relationships between
-sequential actions. SeqBench provides the first systematic framework for
-evaluating narrative coherence in T2V generation and offers concrete insights
-for improving sequential reasoning capabilities in future models. Please refer
-to https://videobench.github.io/SeqBench.github.io/ for more details.</p>
+            <p class="paper-summary">Video transitions aim to synthesize intermediate frames between two clips,
+but naive approaches such as linear blending introduce artifacts that limit
+professional use or break temporal coherence. Traditional techniques
+(cross-fades, morphing, frame interpolation) and recent generative inbetweening
+methods can produce high-quality plausible intermediates, but they struggle
+with bridging diverse clips involving large temporal gaps or significant
+semantic differences, leaving a gap for content-aware and visually coherent
+transitions. We address this challenge by drawing on artistic workflows,
+distilling strategies such as aligning silhouettes and interpolating salient
+features to preserve structure and perceptual continuity. Building on this, we
+propose SAGE (Structure-Aware Generative vidEo transitions) as a zeroshot
+approach that combines structural guidance, provided via line maps and motion
+flow, with generative synthesis, enabling smooth, semantically consistent
+transitions without fine-tuning. Extensive experiments and comparison with
+current alternatives, namely [FILM, TVG, DiffMorpher, VACE, GI], demonstrate
+that SAGE outperforms both classical and generative baselines on quantitative
+metrics and user studies for producing transitions between diverse clips. Code
+to be released on acceptance.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces SeqBench, a new benchmark for evaluating sequential narrative coherence in text-to-video generation models, including a dataset and an automatic evaluation metric, revealing limitations in current models.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces SAGE, a zero-shot approach for generating smooth and semantically consistent video transitions between diverse clips by combining structural guidance (line maps and motion flow) with generative synthesis, outperforming existing methods. It addresses challenges in bridging diverse clips with large temporal gaps or semantic differences.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了SeqBench，一个新的用于评估文本到视频生成模型中连续叙事连贯性的基准，包括一个数据集和一个自动评估指标，揭示了当前模型的局限性。</p>
-            
-
-            
-            
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(10/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-            </div>
-            
-            
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="far fa-star"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2510.13042v1" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Zhengxu Tang, Zizheng Wang, Luning Wang, Zitao Shuai, Chenhao Zhang, Siyu Qian, Yirui Wu, Bohao Wang, Haosong Rao, Zhenyu Yang, Chenwei Wu</p>
-            
-        </motion.div>
-        
-        <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.15000000000000002, ease: 'easeOut' }"  
-            class="bento-item"
-            data-motion-element
-        >
-            <h2 class="paper-title">Adaptive Visual Conditioning for Semantic Consistency in Diffusion-Based Story Continuation</h2>
-            
-            <p class="paper-summary">Story continuation focuses on generating the next image in a narrative
-sequence so that it remains coherent with both the ongoing text description and
-the previously observed images. A central challenge in this setting lies in
-utilizing prior visual context effectively, while ensuring semantic alignment
-with the current textual input. In this work, we introduce AVC (Adaptive Visual
-Conditioning), a framework for diffusion-based story continuation. AVC employs
-the CLIP model to retrieve the most semantically aligned image from previous
-frames. Crucially, when no sufficiently relevant image is found, AVC adaptively
-restricts the influence of prior visuals to only the early stages of the
-diffusion process. This enables the model to exploit visual context when
-beneficial, while avoiding the injection of misleading or irrelevant
-information. Furthermore, we improve data quality by re-captioning a noisy
-dataset using large language models, thereby strengthening textual supervision
-and semantic alignment. Quantitative results and human evaluations demonstrate
-that AVC achieves superior coherence, semantic consistency, and visual fidelity
-compared to strong baselines, particularly in challenging cases where prior
-visuals conflict with the current input.</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces AVC, a diffusion-based framework for story continuation that adaptively uses prior visual context to generate semantically consistent image sequences, using CLIP for retrieval and LLMs for improved data quality.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种名为AVC的扩散模型框架，用于故事延续，它自适应地利用先前的视觉上下文来生成语义一致的图像序列，使用CLIP进行检索，并使用LLM来提高数据质量。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了SAGE，一种零样本方法，通过结合结构引导（线条图和运动流）与生成合成，生成多样化视频片段之间平滑且语义一致的视频过渡，优于现有方法。它解决了桥接具有大时间差距或语义差异的多样化片段的挑战。</p>
             
 
             
@@ -595,8 +480,8 @@ visuals conflict with the current input.</p>
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -648,18 +533,18 @@ visuals conflict with the current input.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.13787v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.24667v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Seyed Mohammad Mousavi, Morteza Analoui</p>
+            <p class="paper-authors">Authors: Mia Kan, Yilin Liu, Niloy Mitra</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-10-29 03:50:27 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-10-29 03:53:42 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

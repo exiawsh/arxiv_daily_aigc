@@ -1,0 +1,79 @@
+[
+    {
+        "title": "Generative View Stitching",
+        "summary": "Autoregressive video diffusion models are capable of long rollouts that are\nstable and consistent with history, but they are unable to guide the current\ngeneration with conditioning from the future. In camera-guided video generation\nwith a predefined camera trajectory, this limitation leads to collisions with\nthe generated scene, after which autoregression quickly collapses. To address\nthis, we propose Generative View Stitching (GVS), which samples the entire\nsequence in parallel such that the generated scene is faithful to every part of\nthe predefined camera trajectory. Our main contribution is a sampling algorithm\nthat extends prior work on diffusion stitching for robot planning to video\ngeneration. While such stitching methods usually require a specially trained\nmodel, GVS is compatible with any off-the-shelf video model trained with\nDiffusion Forcing, a prevalent sequence diffusion framework that we show\nalready provides the affordances necessary for stitching. We then introduce\nOmni Guidance, a technique that enhances the temporal consistency in stitching\nby conditioning on both the past and future, and that enables our proposed\nloop-closing mechanism for delivering long-range coherence. Overall, GVS\nachieves camera-guided video generation that is stable, collision-free,\nframe-to-frame consistent, and closes loops for a variety of predefined camera\npaths, including Oscar Reutersv\\\"ard's Impossible Staircase. Results are best\nviewed as videos at https://andrewsonga.github.io/gvs.",
+        "url": "http://arxiv.org/abs/2510.24718v1",
+        "published_date": "2025-10-28T17:59:58+00:00",
+        "updated_date": "2025-10-28T17:59:58+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.LG"
+        ],
+        "authors": [
+            "Chonghyuk Song",
+            "Michal Stary",
+            "Boyuan Chen",
+            "George Kopanas",
+            "Vincent Sitzmann"
+        ],
+        "tldr": "The paper introduces Generative View Stitching (GVS), a novel sampling algorithm for camera-guided video generation that leverages diffusion stitching and Omni Guidance to create stable, collision-free, and temporally consistent videos aligned with predefined camera trajectories, even enabling loop closure.",
+        "tldr_zh": "该论文介绍了生成式视图拼接（GVS），一种用于相机引导视频生成的新颖采样算法，它利用扩散拼接和全方位指导来创建稳定、无碰撞且时间一致的视频，这些视频与预定义的相机轨迹对齐，甚至能够实现循环闭合。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Uniform Discrete Diffusion with Metric Path for Video Generation",
+        "summary": "Continuous-space video generation has advanced rapidly, while discrete\napproaches lag behind due to error accumulation and long-context inconsistency.\nIn this work, we revisit discrete generative modeling and present Uniform\ndiscRete diffuSion with metric pAth (URSA), a simple yet powerful framework\nthat bridges the gap with continuous approaches for the scalable video\ngeneration. At its core, URSA formulates the video generation task as an\niterative global refinement of discrete spatiotemporal tokens. It integrates\ntwo key designs: a Linearized Metric Path and a Resolution-dependent Timestep\nShifting mechanism. These designs enable URSA to scale efficiently to\nhigh-resolution image synthesis and long-duration video generation, while\nrequiring significantly fewer inference steps. Additionally, we introduce an\nasynchronous temporal fine-tuning strategy that unifies versatile tasks within\na single model, including interpolation and image-to-video generation.\nExtensive experiments on challenging video and image generation benchmarks\ndemonstrate that URSA consistently outperforms existing discrete methods and\nachieves performance comparable to state-of-the-art continuous diffusion\nmethods. Code and models are available at https://github.com/baaivision/URSA",
+        "url": "http://arxiv.org/abs/2510.24717v1",
+        "published_date": "2025-10-28T17:59:57+00:00",
+        "updated_date": "2025-10-28T17:59:57+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Haoge Deng",
+            "Ting Pan",
+            "Fan Zhang",
+            "Yang Liu",
+            "Zhuoyan Luo",
+            "Yufeng Cui",
+            "Wenxuan Wang",
+            "Chunhua Shen",
+            "Shiguang Shan",
+            "Zhaoxiang Zhang",
+            "Xinlong Wang"
+        ],
+        "tldr": "The paper introduces URSA, a discrete diffusion framework for video generation that uses a linearized metric path and resolution-dependent timestep shifting to achieve performance comparable to continuous diffusion methods while scaling efficiently to high-resolution and long-duration videos.",
+        "tldr_zh": "本文介绍了一种用于视频生成的离散扩散框架 URSA，它使用线性化度量路径和分辨率相关的时间步移位，以达到与连续扩散方法相当的性能，同时有效地扩展到高分辨率和长时视频。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "SAGE: Structure-Aware Generative Video Transitions between Diverse Clips",
+        "summary": "Video transitions aim to synthesize intermediate frames between two clips,\nbut naive approaches such as linear blending introduce artifacts that limit\nprofessional use or break temporal coherence. Traditional techniques\n(cross-fades, morphing, frame interpolation) and recent generative inbetweening\nmethods can produce high-quality plausible intermediates, but they struggle\nwith bridging diverse clips involving large temporal gaps or significant\nsemantic differences, leaving a gap for content-aware and visually coherent\ntransitions. We address this challenge by drawing on artistic workflows,\ndistilling strategies such as aligning silhouettes and interpolating salient\nfeatures to preserve structure and perceptual continuity. Building on this, we\npropose SAGE (Structure-Aware Generative vidEo transitions) as a zeroshot\napproach that combines structural guidance, provided via line maps and motion\nflow, with generative synthesis, enabling smooth, semantically consistent\ntransitions without fine-tuning. Extensive experiments and comparison with\ncurrent alternatives, namely [FILM, TVG, DiffMorpher, VACE, GI], demonstrate\nthat SAGE outperforms both classical and generative baselines on quantitative\nmetrics and user studies for producing transitions between diverse clips. Code\nto be released on acceptance.",
+        "url": "http://arxiv.org/abs/2510.24667v1",
+        "published_date": "2025-10-28T17:35:02+00:00",
+        "updated_date": "2025-10-28T17:35:02+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Mia Kan",
+            "Yilin Liu",
+            "Niloy Mitra"
+        ],
+        "tldr": "This paper introduces SAGE, a zero-shot approach for generating smooth and semantically consistent video transitions between diverse clips by combining structural guidance (line maps and motion flow) with generative synthesis, outperforming existing methods. It addresses challenges in bridging diverse clips with large temporal gaps or semantic differences.",
+        "tldr_zh": "该论文介绍了SAGE，一种零样本方法，通过结合结构引导（线条图和运动流）与生成合成，生成多样化视频片段之间平滑且语义一致的视频过渡，优于现有方法。它解决了桥接具有大时间差距或语义差异的多样化片段的挑战。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]
