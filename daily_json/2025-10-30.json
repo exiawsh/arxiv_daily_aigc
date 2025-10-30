@@ -1,0 +1,27 @@
+[
+    {
+        "title": "VividCam: Learning Unconventional Camera Motions from Virtual Synthetic Videos",
+        "summary": "Although recent text-to-video generative models are getting more capable of\nfollowing external camera controls, imposed by either text descriptions or\ncamera trajectories, they still struggle to generalize to unconventional camera\nmotions, which is crucial in creating truly original and artistic videos. The\nchallenge lies in the difficulty of finding sufficient training videos with the\nintended uncommon camera motions. To address this challenge, we propose\nVividCam, a training paradigm that enables diffusion models to learn complex\ncamera motions from synthetic videos, releasing the reliance on collecting\nrealistic training videos. VividCam incorporates multiple disentanglement\nstrategies that isolates camera motion learning from synthetic appearance\nartifacts, ensuring more robust motion representation and mitigating domain\nshift. We demonstrate that our design synthesizes a wide range of precisely\ncontrolled and complex camera motions using surprisingly simple synthetic data.\nNotably, this synthetic data often consists of basic geometries within a\nlow-poly 3D scene and can be efficiently rendered by engines like Unity. Our\nvideo results can be found in https://wuqiuche.github.io/VividCamDemoPage/ .",
+        "url": "http://arxiv.org/abs/2510.24904v1",
+        "published_date": "2025-10-28T19:12:22+00:00",
+        "updated_date": "2025-10-28T19:12:22+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Qiucheng Wu",
+            "Handong Zhao",
+            "Zhixin Shu",
+            "Jing Shi",
+            "Yang Zhang",
+            "Shiyu Chang"
+        ],
+        "tldr": "VividCam proposes a training paradigm using synthetic videos to enable diffusion models to learn complex and unconventional camera motions for text-to-video generation, overcoming limitations in real-world training data.",
+        "tldr_zh": "VividCam提出了一种使用合成视频的训练范式，使扩散模型能够学习复杂且非常规的相机运动，用于文本到视频的生成，克服了真实世界训练数据中的局限性。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
