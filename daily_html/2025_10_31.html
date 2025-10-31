@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 28, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 31, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>October 28, 2025</p>
+            <p>October 31, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,32 +215,33 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">CoMo: Compositional Motion Customization for Text-to-Video Generation</h2>
+            <h2 class="paper-title">Emu3.5: Native Multimodal Models are World Learners</h2>
             
-            <p class="paper-summary">While recent text-to-video models excel at generating diverse scenes, they
-struggle with precise motion control, particularly for complex, multi-subject
-motions. Although methods for single-motion customization have been developed
-to address this gap, they fail in compositional scenarios due to two primary
-challenges: motion-appearance entanglement and ineffective multi-motion
-blending. This paper introduces CoMo, a novel framework for
-$\textbf{compositional motion customization}$ in text-to-video generation,
-enabling the synthesis of multiple, distinct motions within a single video.
-CoMo addresses these issues through a two-phase approach. First, in the
-single-motion learning phase, a static-dynamic decoupled tuning paradigm
-disentangles motion from appearance to learn a motion-specific module. Second,
-in the multi-motion composition phase, a plug-and-play divide-and-merge
-strategy composes these learned motions without additional training by
-spatially isolating their influence during the denoising process. To facilitate
-research in this new domain, we also introduce a new benchmark and a novel
-evaluation metric designed to assess multi-motion fidelity and blending.
-Extensive experiments demonstrate that CoMo achieves state-of-the-art
-performance, significantly advancing the capabilities of controllable video
-generation. Our project page is at https://como6.github.io/.</p>
+            <p class="paper-summary">We introduce Emu3.5, a large-scale multimodal world model that natively
+predicts the next state across vision and language. Emu3.5 is pre-trained
+end-to-end with a unified next-token prediction objective on a corpus of
+vision-language interleaved data containing over 10 trillion tokens, primarily
+derived from sequential frames and transcripts of internet videos. The model
+naturally accepts interleaved vision-language inputs and generates interleaved
+vision-language outputs. Emu3.5 is further post-trained with large-scale
+reinforcement learning to enhance multimodal reasoning and generation. To
+improve inference efficiency, we propose Discrete Diffusion Adaptation (DiDA),
+which converts token-by-token decoding into bidirectional parallel prediction,
+accelerating per-image inference by about 20x without sacrificing performance.
+Emu3.5 exhibits strong native multimodal capabilities, including long-horizon
+vision-language generation, any-to-image (X2I) generation, and complex
+text-rich image generation. It also exhibits generalizable world-modeling
+abilities, enabling spatiotemporally consistent world exploration and
+open-world embodied manipulation across diverse scenarios and tasks. For
+comparison, Emu3.5 achieves performance comparable to Gemini 2.5 Flash Image
+(Nano Banana) on image generation and editing tasks and demonstrates superior
+results on a suite of interleaved generation tasks. We open-source Emu3.5 at
+https://github.com/baaivision/Emu3.5 to support community research.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces CoMo, a framework for compositional motion customization in text-to-video generation, enabling multiple distinct motions within a single video through a static-dynamic decoupled tuning and a divide-and-merge strategy. They also provide a new benchmark and evaluation metric.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: Emu3.5 is a large-scale multimodal world model that natively predicts the next state across vision and language, achieving state-of-the-art results in interleaved generation and demonstrating world-modeling abilities.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文提出了CoMo，一个用于文本到视频生成中组合运动定制的框架，通过静态-动态解耦调整和分而合之的策略，可以在单个视频中实现多个不同的运动。他们还提供了一个新的基准和评估指标。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: Emu3.5 是一个大型多模态世界模型，它能够自然地预测视觉和语言的下一个状态，并在交错生成方面取得了最先进的结果，并展示了世界建模能力。</p>
             
 
             
@@ -274,8 +275,8 @@ generation. Our project page is at https://como6.github.io/.</p>
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
             </div>
@@ -304,18 +305,18 @@ generation. Our project page is at https://como6.github.io/.</p>
                     
                 
                     
-                        <i class="far fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.23007v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.26583v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Youcan Xu, Zhen Wang, Jiaxin Shi, Kexin Li, Feifei Shao, Jun Xiao, Yi Yang, Jun Yu, Long Chen</p>
+            <p class="paper-authors">Authors: Yufeng Cui, Honghao Chen, Haoge Deng, Xu Huang, Xinghang Li, Jirong Liu, Yang Liu, Zhuoyan Luo, Jinsheng Wang, Wenxuan Wang, Yueze Wang, Chengyuan Wang, Fan Zhang, Yingli Zhao, Ting Pan, Xianduo Li, Zecheng Hao, Wenxuan Ma, Zhuo Chen, Yulong Ao, Tiejun Huang, Zhongyuan Wang, Xinlong Wang</p>
             
         </motion.div>
         
@@ -327,30 +328,34 @@ generation. Our project page is at https://como6.github.io/.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">VALA: Learning Latent Anchors for Training-Free and Temporally Consistent</h2>
+            <h2 class="paper-title">LoCoT2V-Bench: A Benchmark for Long-Form and Complex Text-to-Video Generation</h2>
             
-            <p class="paper-summary">Recent advances in training-free video editing have enabled lightweight and
-precise cross-frame generation by leveraging pre-trained text-to-image
-diffusion models. However, existing methods often rely on heuristic frame
-selection to maintain temporal consistency during DDIM inversion, which
-introduces manual bias and reduces the scalability of end-to-end inference. In
-this paper, we propose~\textbf{VALA} (\textbf{V}ariational \textbf{A}lignment
-for \textbf{L}atent \textbf{A}nchors), a variational alignment module that
-adaptively selects key frames and compresses their latent features into
-semantic anchors for consistent video editing. To learn meaningful assignments,
-VALA propose a variational framework with a contrastive learning objective.
-Therefore, it can transform cross-frame latent representations into compressed
-latent anchors that preserve both content and temporal coherence. Our method
-can be fully integrated into training-free text-to-image based video editing
-models. Extensive experiments on real-world video editing benchmarks show that
-VALA achieves state-of-the-art performance in inversion fidelity, editing
-quality, and temporal consistency, while offering improved efficiency over
-prior methods.</p>
+            <p class="paper-summary">Recently text-to-video generation has made impressive progress in producing
+short, high-quality clips, but evaluating long-form outputs remains a major
+challenge especially when processing complex prompts. Existing benchmarks
+mostly rely on simplified prompts and focus on low-level metrics, overlooking
+fine-grained alignment with prompts and abstract dimensions such as narrative
+coherence and thematic expression. To address these gaps, we propose
+LoCoT2V-Bench, a benchmark specifically designed for long video generation
+(LVG) under complex input conditions. Based on various real-world videos,
+LoCoT2V-Bench introduces a suite of realistic and complex prompts incorporating
+elements like scene transitions and event dynamics. Moreover, it constructs a
+multi-dimensional evaluation framework that includes our newly proposed metrics
+such as event-level alignment, fine-grained temporal consistency, content
+clarity, and the Human Expectation Realization Degree (HERD) that focuses on
+more abstract attributes like narrative flow, emotional response, and character
+development. Using this framework, we conduct a comprehensive evaluation of
+nine representative LVG models, finding that while current methods perform well
+on basic visual and temporal aspects, they struggle with inter-event
+consistency, fine-grained alignment, and high-level thematic adherence, etc.
+Overall, LoCoT2V-Bench provides a comprehensive and reliable platform for
+evaluating long-form complex text-to-video generation and highlights critical
+directions for future method improvement.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces VALA, a variational alignment module for training-free video editing that adaptively selects key frames and compresses their latent features into semantic anchors to improve temporal consistency. It achieves state-of-the-art performance in inversion fidelity, editing quality, and temporal consistency while being more efficient.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces LoCoT2V-Bench, a new benchmark for evaluating long-form text-to-video generation with complex prompts, addressing limitations of existing benchmarks in fine-grained alignment and abstract attributes.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种名为VALA的变分对齐模块，用于免训练的视频编辑。该模块自适应地选择关键帧，并将它们的潜在特征压缩为语义锚点，从而提高时间一致性。VALA在反演保真度、编辑质量和时间一致性方面达到了最先进的性能，同时提高了效率。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了LoCoT2V-Bench，这是一个新的基准，用于评估基于复杂提示的长文本到视频的生成，解决了现有基准在细粒度对齐和抽象属性方面的局限性。</p>
             
 
             
@@ -360,8 +365,8 @@ prior methods.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
@@ -384,8 +389,8 @@ prior methods.</p>
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
             </div>
@@ -414,18 +419,18 @@ prior methods.</p>
                     
                 
                     
-                        <i class="far fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.22970v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.26412v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Zhangkai Wu, Xuhui Fan, Zhongyuan Xie, Kaize Shi, Longbing Cao</p>
+            <p class="paper-authors">Authors: Xiangqing Zheng, Chengyue Wu, Kehai Chen, Min Zhang</p>
             
         </motion.div>
         
@@ -437,29 +442,36 @@ prior methods.</p>
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">MAGIC-Talk: Motion-aware Audio-Driven Talking Face Generation with Customizable Identity Control</h2>
+            <h2 class="paper-title">SEE4D: Pose-Free 4D Generation via Auto-Regressive Video Inpainting</h2>
             
-            <p class="paper-summary">Audio-driven talking face generation has gained significant attention for
-applications in digital media and virtual avatars. While recent methods improve
-audio-lip synchronization, they often struggle with temporal consistency,
-identity preservation, and customization, especially in long video generation.
-To address these issues, we propose MAGIC-Talk, a one-shot diffusion-based
-framework for customizable and temporally stable talking face generation.
-MAGIC-Talk consists of ReferenceNet, which preserves identity and enables
-fine-grained facial editing via text prompts, and AnimateNet, which enhances
-motion coherence using structured motion priors. Unlike previous methods
-requiring multiple reference images or fine-tuning, MAGIC-Talk maintains
-identity from a single image while ensuring smooth transitions across frames.
-Additionally, a progressive latent fusion strategy is introduced to improve
-long-form video quality by reducing motion inconsistencies and flickering.
-Extensive experiments demonstrate that MAGIC-Talk outperforms state-of-the-art
-methods in visual quality, identity preservation, and synchronization accuracy,
-offering a robust solution for talking face generation.</p>
+            <p class="paper-summary">Immersive applications call for synthesizing spatiotemporal 4D content from
+casual videos without costly 3D supervision. Existing video-to-4D methods
+typically rely on manually annotated camera poses, which are labor-intensive
+and brittle for in-the-wild footage. Recent warp-then-inpaint approaches
+mitigate the need for pose labels by warping input frames along a novel camera
+trajectory and using an inpainting model to fill missing regions, thereby
+depicting the 4D scene from diverse viewpoints. However, this
+trajectory-to-trajectory formulation often entangles camera motion with scene
+dynamics and complicates both modeling and inference. We introduce SEE4D, a
+pose-free, trajectory-to-camera framework that replaces explicit trajectory
+prediction with rendering to a bank of fixed virtual cameras, thereby
+separating camera control from scene modeling. A view-conditional video
+inpainting model is trained to learn a robust geometry prior by denoising
+realistically synthesized warped images and to inpaint occluded or missing
+regions across virtual viewpoints, eliminating the need for explicit 3D
+annotations. Building on this inpainting core, we design a spatiotemporal
+autoregressive inference pipeline that traverses virtual-camera splines and
+extends videos with overlapping windows, enabling coherent generation at
+bounded per-step complexity. We validate See4D on cross-view video generation
+and sparse reconstruction benchmarks. Across quantitative metrics and
+qualitative assessments, our method achieves superior generalization and
+improved performance relative to pose- or trajectory-conditioned baselines,
+advancing practical 4D world modeling from casual videos.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: MAGIC-Talk is a one-shot diffusion-based framework for generating customizable and temporally stable talking faces from audio, addressing issues like identity preservation and motion consistency in long videos.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: SEE4D introduces a pose-free method for 4D content generation from casual videos using view-conditional video inpainting and spatiotemporal autoregressive inference, achieving improved performance compared to pose- or trajectory-conditioned methods.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: MAGIC-Talk是一个基于扩散模型的框架，用于从音频生成可定制且时间稳定的说话人脸，解决了长视频中身份保持和运动一致性等问题。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: SEE4D 提出了一种从普通视频生成 4D 内容的无姿态方法，该方法使用视角条件视频修复和时空自回归推理，与基于姿态或轨迹的方法相比，性能有所提高。</p>
             
 
             
@@ -469,8 +481,8 @@ offering a robust solution for talking face generation.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
@@ -485,8 +497,8 @@ offering a robust solution for talking face generation.</p>
                 <div class="rating-item">
                     <span class="rating-label">Clarity:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -530,18 +542,18 @@ offering a robust solution for talking face generation.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.22810v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.26796v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Fatemeh Nazarieh, Zhenhua Feng, Diptesh Kanojia, Muhammad Awais, Josef Kittler</p>
+            <p class="paper-authors">Authors: Dongyue Lu, Ao Liang, Tianxin Huang, Xiao Fu, Yuyang Zhao, Baorui Ma, Liang Pan, Wei Yin, Lingdong Kong, Wei Tsang Ooi, Ziwei Liu</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-10-31 03:46:21 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-10-31 03:49:45 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

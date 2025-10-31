@@ -1,0 +1,99 @@
+[
+    {
+        "title": "Emu3.5: Native Multimodal Models are World Learners",
+        "summary": "We introduce Emu3.5, a large-scale multimodal world model that natively\npredicts the next state across vision and language. Emu3.5 is pre-trained\nend-to-end with a unified next-token prediction objective on a corpus of\nvision-language interleaved data containing over 10 trillion tokens, primarily\nderived from sequential frames and transcripts of internet videos. The model\nnaturally accepts interleaved vision-language inputs and generates interleaved\nvision-language outputs. Emu3.5 is further post-trained with large-scale\nreinforcement learning to enhance multimodal reasoning and generation. To\nimprove inference efficiency, we propose Discrete Diffusion Adaptation (DiDA),\nwhich converts token-by-token decoding into bidirectional parallel prediction,\naccelerating per-image inference by about 20x without sacrificing performance.\nEmu3.5 exhibits strong native multimodal capabilities, including long-horizon\nvision-language generation, any-to-image (X2I) generation, and complex\ntext-rich image generation. It also exhibits generalizable world-modeling\nabilities, enabling spatiotemporally consistent world exploration and\nopen-world embodied manipulation across diverse scenarios and tasks. For\ncomparison, Emu3.5 achieves performance comparable to Gemini 2.5 Flash Image\n(Nano Banana) on image generation and editing tasks and demonstrates superior\nresults on a suite of interleaved generation tasks. We open-source Emu3.5 at\nhttps://github.com/baaivision/Emu3.5 to support community research.",
+        "url": "http://arxiv.org/abs/2510.26583v1",
+        "published_date": "2025-10-30T15:11:16+00:00",
+        "updated_date": "2025-10-30T15:11:16+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yufeng Cui",
+            "Honghao Chen",
+            "Haoge Deng",
+            "Xu Huang",
+            "Xinghang Li",
+            "Jirong Liu",
+            "Yang Liu",
+            "Zhuoyan Luo",
+            "Jinsheng Wang",
+            "Wenxuan Wang",
+            "Yueze Wang",
+            "Chengyuan Wang",
+            "Fan Zhang",
+            "Yingli Zhao",
+            "Ting Pan",
+            "Xianduo Li",
+            "Zecheng Hao",
+            "Wenxuan Ma",
+            "Zhuo Chen",
+            "Yulong Ao",
+            "Tiejun Huang",
+            "Zhongyuan Wang",
+            "Xinlong Wang"
+        ],
+        "tldr": "Emu3.5 is a large-scale multimodal world model that natively predicts the next state across vision and language, achieving state-of-the-art results in interleaved generation and demonstrating world-modeling abilities.",
+        "tldr_zh": "Emu3.5 是一个大型多模态世界模型，它能够自然地预测视觉和语言的下一个状态，并在交错生成方面取得了最先进的结果，并展示了世界建模能力。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "LoCoT2V-Bench: A Benchmark for Long-Form and Complex Text-to-Video Generation",
+        "summary": "Recently text-to-video generation has made impressive progress in producing\nshort, high-quality clips, but evaluating long-form outputs remains a major\nchallenge especially when processing complex prompts. Existing benchmarks\nmostly rely on simplified prompts and focus on low-level metrics, overlooking\nfine-grained alignment with prompts and abstract dimensions such as narrative\ncoherence and thematic expression. To address these gaps, we propose\nLoCoT2V-Bench, a benchmark specifically designed for long video generation\n(LVG) under complex input conditions. Based on various real-world videos,\nLoCoT2V-Bench introduces a suite of realistic and complex prompts incorporating\nelements like scene transitions and event dynamics. Moreover, it constructs a\nmulti-dimensional evaluation framework that includes our newly proposed metrics\nsuch as event-level alignment, fine-grained temporal consistency, content\nclarity, and the Human Expectation Realization Degree (HERD) that focuses on\nmore abstract attributes like narrative flow, emotional response, and character\ndevelopment. Using this framework, we conduct a comprehensive evaluation of\nnine representative LVG models, finding that while current methods perform well\non basic visual and temporal aspects, they struggle with inter-event\nconsistency, fine-grained alignment, and high-level thematic adherence, etc.\nOverall, LoCoT2V-Bench provides a comprehensive and reliable platform for\nevaluating long-form complex text-to-video generation and highlights critical\ndirections for future method improvement.",
+        "url": "http://arxiv.org/abs/2510.26412v1",
+        "published_date": "2025-10-30T12:00:46+00:00",
+        "updated_date": "2025-10-30T12:00:46+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Xiangqing Zheng",
+            "Chengyue Wu",
+            "Kehai Chen",
+            "Min Zhang"
+        ],
+        "tldr": "The paper introduces LoCoT2V-Bench, a new benchmark for evaluating long-form text-to-video generation with complex prompts, addressing limitations of existing benchmarks in fine-grained alignment and abstract attributes.",
+        "tldr_zh": "该论文介绍了LoCoT2V-Bench，这是一个新的基准，用于评估基于复杂提示的长文本到视频的生成，解决了现有基准在细粒度对齐和抽象属性方面的局限性。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "SEE4D: Pose-Free 4D Generation via Auto-Regressive Video Inpainting",
+        "summary": "Immersive applications call for synthesizing spatiotemporal 4D content from\ncasual videos without costly 3D supervision. Existing video-to-4D methods\ntypically rely on manually annotated camera poses, which are labor-intensive\nand brittle for in-the-wild footage. Recent warp-then-inpaint approaches\nmitigate the need for pose labels by warping input frames along a novel camera\ntrajectory and using an inpainting model to fill missing regions, thereby\ndepicting the 4D scene from diverse viewpoints. However, this\ntrajectory-to-trajectory formulation often entangles camera motion with scene\ndynamics and complicates both modeling and inference. We introduce SEE4D, a\npose-free, trajectory-to-camera framework that replaces explicit trajectory\nprediction with rendering to a bank of fixed virtual cameras, thereby\nseparating camera control from scene modeling. A view-conditional video\ninpainting model is trained to learn a robust geometry prior by denoising\nrealistically synthesized warped images and to inpaint occluded or missing\nregions across virtual viewpoints, eliminating the need for explicit 3D\nannotations. Building on this inpainting core, we design a spatiotemporal\nautoregressive inference pipeline that traverses virtual-camera splines and\nextends videos with overlapping windows, enabling coherent generation at\nbounded per-step complexity. We validate See4D on cross-view video generation\nand sparse reconstruction benchmarks. Across quantitative metrics and\nqualitative assessments, our method achieves superior generalization and\nimproved performance relative to pose- or trajectory-conditioned baselines,\nadvancing practical 4D world modeling from casual videos.",
+        "url": "http://arxiv.org/abs/2510.26796v1",
+        "published_date": "2025-10-30T17:59:39+00:00",
+        "updated_date": "2025-10-30T17:59:39+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.GR"
+        ],
+        "authors": [
+            "Dongyue Lu",
+            "Ao Liang",
+            "Tianxin Huang",
+            "Xiao Fu",
+            "Yuyang Zhao",
+            "Baorui Ma",
+            "Liang Pan",
+            "Wei Yin",
+            "Lingdong Kong",
+            "Wei Tsang Ooi",
+            "Ziwei Liu"
+        ],
+        "tldr": "SEE4D introduces a pose-free method for 4D content generation from casual videos using view-conditional video inpainting and spatiotemporal autoregressive inference, achieving improved performance compared to pose- or trajectory-conditioned methods.",
+        "tldr_zh": "SEE4D 提出了一种从普通视频生成 4D 内容的无姿态方法，该方法使用视角条件视频修复和时空自回归推理，与基于姿态或轨迹的方法相比，性能有所提高。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
