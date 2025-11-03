@@ -1,0 +1,57 @@
+[
+    {
+        "title": "Fine-Tuning Open Video Generators for Cinematic Scene Synthesis: A Small-Data Pipeline with LoRA and Wan2.1 I2V",
+        "summary": "We present a practical pipeline for fine-tuning open-source video diffusion\ntransformers to synthesize cinematic scenes for television and film production\nfrom small datasets. The proposed two-stage process decouples visual style\nlearning from motion generation. In the first stage, Low-Rank Adaptation (LoRA)\nmodules are integrated into the cross-attention layers of the Wan2.1 I2V-14B\nmodel to adapt its visual representations using a compact dataset of short\nclips from Ay Yapim's historical television film El Turco. This enables\nefficient domain transfer within hours on a single GPU. In the second stage,\nthe fine-tuned model produces stylistically consistent keyframes that preserve\ncostume, lighting, and color grading, which are then temporally expanded into\ncoherent 720p sequences through the model's video decoder. We further apply\nlightweight parallelization and sequence partitioning strategies to accelerate\ninference without quality degradation. Quantitative and qualitative evaluations\nusing FVD, CLIP-SIM, and LPIPS metrics, supported by a small expert user study,\ndemonstrate measurable improvements in cinematic fidelity and temporal\nstability over the base model. The complete training and inference pipeline is\nreleased to support reproducibility and adaptation across cinematic domains.",
+        "url": "http://arxiv.org/abs/2510.27364v1",
+        "published_date": "2025-10-31T10:51:35+00:00",
+        "updated_date": "2025-10-31T10:51:35+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Meftun Akarsu",
+            "Kerem Catay",
+            "Sedat Bin Vedat",
+            "Enes Kutay Yarkan",
+            "Ilke Senturk",
+            "Arda Sar",
+            "Dafne Eksioglu"
+        ],
+        "tldr": "This paper presents a pipeline for fine-tuning open-source video diffusion models to generate cinematic scenes from small datasets, using LoRA for efficient domain transfer and sequence partitioning for faster inference.",
+        "tldr_zh": "本文提出了一种微调开源视频扩散模型的流程，旨在从小数据集生成电影场景。该流程采用LoRA实现高效的领域迁移，并采用序列分割加速推理。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Phased DMD: Few-step Distribution Matching Distillation via Score Matching within Subintervals",
+        "summary": "Distribution Matching Distillation (DMD) distills score-based generative\nmodels into efficient one-step generators, without requiring a one-to-one\ncorrespondence with the sampling trajectories of their teachers. However,\nlimited model capacity causes one-step distilled models underperform on complex\ngenerative tasks, e.g., synthesizing intricate object motions in text-to-video\ngeneration. Directly extending DMD to multi-step distillation increases memory\nusage and computational depth, leading to instability and reduced efficiency.\nWhile prior works propose stochastic gradient truncation as a potential\nsolution, we observe that it substantially reduces the generation diversity of\nmulti-step distilled models, bringing it down to the level of their one-step\ncounterparts. To address these limitations, we propose Phased DMD, a multi-step\ndistillation framework that bridges the idea of phase-wise distillation with\nMixture-of-Experts (MoE), reducing learning difficulty while enhancing model\ncapacity. Phased DMD is built upon two key ideas: progressive distribution\nmatching and score matching within subintervals. First, our model divides the\nSNR range into subintervals, progressively refining the model to higher SNR\nlevels, to better capture complex distributions. Next, to ensure the training\nobjective within each subinterval is accurate, we have conducted rigorous\nmathematical derivations. We validate Phased DMD by distilling state-of-the-art\nimage and video generation models, including Qwen-Image (20B parameters) and\nWan2.2 (28B parameters). Experimental results demonstrate that Phased DMD\npreserves output diversity better than DMD while retaining key generative\ncapabilities. We will release our code and models.",
+        "url": "http://arxiv.org/abs/2510.27684v1",
+        "published_date": "2025-10-31T17:55:10+00:00",
+        "updated_date": "2025-10-31T17:55:10+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Xiangyu Fan",
+            "Zesong Qiu",
+            "Zhuguanyu Wu",
+            "Fanzhou Wang",
+            "Zhiqian Lin",
+            "Tianxiang Ren",
+            "Dahua Lin",
+            "Ruihao Gong",
+            "Lei Yang"
+        ],
+        "tldr": "The paper introduces Phased DMD, a multi-step distribution matching distillation framework for score-based generative models that addresses limitations of existing methods by using progressive distribution matching and score matching within subintervals, demonstrating improved diversity and generative capabilities in image and video generation tasks.",
+        "tldr_zh": "该论文介绍了Phased DMD，一种用于基于分数的生成模型的多步分布匹配蒸馏框架，通过使用渐进式分布匹配和子区间内的分数匹配来解决现有方法的局限性，并在图像和视频生成任务中展示了改进的多样性和生成能力。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 8,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]

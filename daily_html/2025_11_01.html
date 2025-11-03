@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 25, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - November 01, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>October 25, 2025</p>
+            <p>November 01, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,33 +215,30 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Epipolar Geometry Improves Video Generation Models</h2>
+            <h2 class="paper-title">Fine-Tuning Open Video Generators for Cinematic Scene Synthesis: A Small-Data Pipeline with LoRA and Wan2.1 I2V</h2>
             
-            <p class="paper-summary">Video generation models have progressed tremendously through large latent
-diffusion transformers trained with rectified flow techniques. Yet these models
-still struggle with geometric inconsistencies, unstable motion, and visual
-artifacts that break the illusion of realistic 3D scenes. 3D-consistent video
-generation could significantly impact numerous downstream applications in
-generation and reconstruction tasks. We explore how epipolar geometry
-constraints improve modern video diffusion models. Despite massive training
-data, these models fail to capture fundamental geometric principles underlying
-visual content. We align diffusion models using pairwise epipolar geometry
-constraints via preference-based optimization, directly addressing unstable
-camera trajectories and geometric artifacts through mathematically principled
-geometric enforcement. Our approach efficiently enforces geometric principles
-without requiring end-to-end differentiability. Evaluation demonstrates that
-classical geometric constraints provide more stable optimization signals than
-modern learned metrics, which produce noisy targets that compromise alignment
-quality. Training on static scenes with dynamic cameras ensures high-quality
-measurements while the model generalizes effectively to diverse dynamic
-content. By bridging data-driven deep learning with classical geometric
-computer vision, we present a practical method for generating spatially
-consistent videos without compromising visual quality.</p>
+            <p class="paper-summary">We present a practical pipeline for fine-tuning open-source video diffusion
+transformers to synthesize cinematic scenes for television and film production
+from small datasets. The proposed two-stage process decouples visual style
+learning from motion generation. In the first stage, Low-Rank Adaptation (LoRA)
+modules are integrated into the cross-attention layers of the Wan2.1 I2V-14B
+model to adapt its visual representations using a compact dataset of short
+clips from Ay Yapim's historical television film El Turco. This enables
+efficient domain transfer within hours on a single GPU. In the second stage,
+the fine-tuned model produces stylistically consistent keyframes that preserve
+costume, lighting, and color grading, which are then temporally expanded into
+coherent 720p sequences through the model's video decoder. We further apply
+lightweight parallelization and sequence partitioning strategies to accelerate
+inference without quality degradation. Quantitative and qualitative evaluations
+using FVD, CLIP-SIM, and LPIPS metrics, supported by a small expert user study,
+demonstrate measurable improvements in cinematic fidelity and temporal
+stability over the base model. The complete training and inference pipeline is
+released to support reproducibility and adaptation across cinematic domains.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces a method to improve video generation models by enforcing epipolar geometry constraints, leading to more geometrically consistent videos with stable motion and fewer visual artifacts.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper presents a pipeline for fine-tuning open-source video diffusion models to generate cinematic scenes from small datasets, using LoRA for efficient domain transfer and sequence partitioning for faster inference.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种通过强制执行对极几何约束来改进视频生成模型的方法，从而生成具有更稳定的运动和更少的视觉伪影的几何上更一致的视频。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文提出了一种微调开源视频扩散模型的流程，旨在从小数据集生成电影场景。该流程采用LoRA实现高效的领域迁移，并采用序列分割加速推理。</p>
             
 
             
@@ -251,8 +248,8 @@ consistent videos without compromising visual quality.</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -267,8 +264,8 @@ consistent videos without compromising visual quality.</p>
                 <div class="rating-item">
                     <span class="rating-label">Clarity:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
@@ -312,18 +309,134 @@ consistent videos without compromising visual quality.</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.21615v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2510.27364v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Orest Kupyn, Fabian Manhardt, Federico Tombari, Christian Rupprecht</p>
+            <p class="paper-authors">Authors: Meftun Akarsu, Kerem Catay, Sedat Bin Vedat, Enes Kutay Yarkan, Ilke Senturk, Arda Sar, Dafne Eksioglu</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.05, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">Phased DMD: Few-step Distribution Matching Distillation via Score Matching within Subintervals</h2>
+            
+            <p class="paper-summary">Distribution Matching Distillation (DMD) distills score-based generative
+models into efficient one-step generators, without requiring a one-to-one
+correspondence with the sampling trajectories of their teachers. However,
+limited model capacity causes one-step distilled models underperform on complex
+generative tasks, e.g., synthesizing intricate object motions in text-to-video
+generation. Directly extending DMD to multi-step distillation increases memory
+usage and computational depth, leading to instability and reduced efficiency.
+While prior works propose stochastic gradient truncation as a potential
+solution, we observe that it substantially reduces the generation diversity of
+multi-step distilled models, bringing it down to the level of their one-step
+counterparts. To address these limitations, we propose Phased DMD, a multi-step
+distillation framework that bridges the idea of phase-wise distillation with
+Mixture-of-Experts (MoE), reducing learning difficulty while enhancing model
+capacity. Phased DMD is built upon two key ideas: progressive distribution
+matching and score matching within subintervals. First, our model divides the
+SNR range into subintervals, progressively refining the model to higher SNR
+levels, to better capture complex distributions. Next, to ensure the training
+objective within each subinterval is accurate, we have conducted rigorous
+mathematical derivations. We validate Phased DMD by distilling state-of-the-art
+image and video generation models, including Qwen-Image (20B parameters) and
+Wan2.2 (28B parameters). Experimental results demonstrate that Phased DMD
+preserves output diversity better than DMD while retaining key generative
+capabilities. We will release our code and models.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Phased DMD, a multi-step distribution matching distillation framework for score-based generative models that addresses limitations of existing methods by using progressive distribution matching and score matching within subintervals, demonstrating improved diversity and generative capabilities in image and video generation tasks.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了Phased DMD，一种用于基于分数的生成模型的多步分布匹配蒸馏框架，通过使用渐进式分布匹配和子区间内的分数匹配来解决现有方法的局限性，并在图像和视频生成任务中展示了改进的多样性和生成能力。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star-half-alt"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2510.27684v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Xiangyu Fan, Zesong Qiu, Zhuguanyu Wu, Fanzhou Wang, Zhiqian Lin, Tianxiang Ren, Dahua Lin, Ruihao Gong, Lei Yang</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-11-03 03:52:40 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-11-03 03:56:15 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
