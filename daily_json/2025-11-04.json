@@ -1,0 +1,117 @@
+[
+    {
+        "title": "MotionStream: Real-Time Video Generation with Interactive Motion Controls",
+        "summary": "Current motion-conditioned video generation methods suffer from prohibitive\nlatency (minutes per video) and non-causal processing that prevents real-time\ninteraction. We present MotionStream, enabling sub-second latency with up to 29\nFPS streaming generation on a single GPU. Our approach begins by augmenting a\ntext-to-video model with motion control, which generates high-quality videos\nthat adhere to the global text prompt and local motion guidance, but does not\nperform inference on the fly. As such, we distill this bidirectional teacher\ninto a causal student through Self Forcing with Distribution Matching\nDistillation, enabling real-time streaming inference. Several key challenges\narise when generating videos of long, potentially infinite time-horizons: (1)\nbridging the domain gap from training on finite length and extrapolating to\ninfinite horizons, (2) sustaining high quality by preventing error\naccumulation, and (3) maintaining fast inference, without incurring growth in\ncomputational cost due to increasing context windows. A key to our approach is\nintroducing carefully designed sliding-window causal attention, combined with\nattention sinks. By incorporating self-rollout with attention sinks and KV\ncache rolling during training, we properly simulate inference-time\nextrapolations with a fixed context window, enabling constant-speed generation\nof arbitrarily long videos. Our models achieve state-of-the-art results in\nmotion following and video quality while being two orders of magnitude faster,\nuniquely enabling infinite-length streaming. With MotionStream, users can paint\ntrajectories, control cameras, or transfer motion, and see results unfold in\nreal-time, delivering a truly interactive experience.",
+        "url": "http://arxiv.org/abs/2511.01266v1",
+        "published_date": "2025-11-03T06:37:53+00:00",
+        "updated_date": "2025-11-03T06:37:53+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.LG"
+        ],
+        "authors": [
+            "Joonghyuk Shin",
+            "Zhengqi Li",
+            "Richard Zhang",
+            "Jun-Yan Zhu",
+            "Jaesik Park",
+            "Eli Schechtman",
+            "Xun Huang"
+        ],
+        "tldr": "MotionStream introduces a novel method for real-time, interactive motion-conditioned video generation using a distilled causal model with sliding-window attention, achieving sub-second latency and state-of-the-art performance.",
+        "tldr_zh": "MotionStream 提出了一种新的实时交互式运动条件视频生成方法，该方法使用具有滑动窗口注意力的蒸馏因果模型，实现了亚秒级延迟和最先进的性能。",
+        "relevance_score": 9,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "How Far Are Surgeons from Surgical World Models? A Pilot Study on Zero-shot Surgical Video Generation with Expert Assessment",
+        "summary": "Foundation models in video generation are demonstrating remarkable\ncapabilities as potential world models for simulating the physical world.\nHowever, their application in high-stakes domains like surgery, which demand\ndeep, specialized causal knowledge rather than general physical rules, remains\na critical unexplored gap. To systematically address this challenge, we present\nSurgVeo, the first expert-curated benchmark for video generation model\nevaluation in surgery, and the Surgical Plausibility Pyramid (SPP), a novel,\nfour-tiered framework tailored to assess model outputs from basic appearance to\ncomplex surgical strategy. On the basis of the SurgVeo benchmark, we task the\nadvanced Veo-3 model with a zero-shot prediction task on surgical clips from\nlaparoscopic and neurosurgical procedures. A panel of four board-certified\nsurgeons evaluates the generated videos according to the SPP. Our results\nreveal a distinct \"plausibility gap\": while Veo-3 achieves exceptional Visual\nPerceptual Plausibility, it fails critically at higher levels of the SPP,\nincluding Instrument Operation Plausibility, Environment Feedback Plausibility,\nand Surgical Intent Plausibility. This work provides the first quantitative\nevidence of the chasm between visually convincing mimicry and causal\nunderstanding in surgical AI. Our findings from SurgVeo and the SPP establish a\ncrucial foundation and roadmap for developing future models capable of\nnavigating the complexities of specialized, real-world healthcare domains.",
+        "url": "http://arxiv.org/abs/2511.01775v1",
+        "published_date": "2025-11-03T17:28:54+00:00",
+        "updated_date": "2025-11-03T17:28:54+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.MM"
+        ],
+        "authors": [
+            "Zhen Chen",
+            "Qing Xu",
+            "Jinlin Wu",
+            "Biao Yang",
+            "Yuhao Zhai",
+            "Geng Guo",
+            "Jing Zhang",
+            "Yinlu Ding",
+            "Nassir Navab",
+            "Jiebo Luo"
+        ],
+        "tldr": "This paper introduces SurgVeo, a benchmark and evaluation framework (Surgical Plausibility Pyramid) to assess video generation models in surgery, finding that while models like Veo-3 can generate visually plausible surgical videos, they lack crucial causal understanding for realistic surgical procedures.",
+        "tldr_zh": "该论文介绍了SurgVeo，一个用于评估手术视频生成模型的基准和评估框架（手术合理性金字塔）。研究发现，虽然Veo-3等模型可以生成视觉上合理的手术视频，但它们缺乏对手术过程至关重要的因果理解。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Reg-DPO: SFT-Regularized Direct Preference Optimization with GT-Pair for Improving Video Generation",
+        "summary": "Recent studies have identified Direct Preference Optimization (DPO) as an\nefficient and reward-free approach to improving video generation quality.\nHowever, existing methods largely follow image-domain paradigms and are mainly\ndeveloped on small-scale models (approximately 2B parameters), limiting their\nability to address the unique challenges of video tasks, such as costly data\nconstruction, unstable training, and heavy memory consumption. To overcome\nthese limitations, we introduce a GT-Pair that automatically builds\nhigh-quality preference pairs by using real videos as positives and\nmodel-generated videos as negatives, eliminating the need for any external\nannotation. We further present Reg-DPO, which incorporates the SFT loss as a\nregularization term into the DPO loss to enhance training stability and\ngeneration fidelity. Additionally, by combining the FSDP framework with\nmultiple memory optimization techniques, our approach achieves nearly three\ntimes higher training capacity than using FSDP alone. Extensive experiments on\nboth I2V and T2V tasks across multiple datasets demonstrate that our method\nconsistently outperforms existing approaches, delivering superior video\ngeneration quality.",
+        "url": "http://arxiv.org/abs/2511.01450v2",
+        "published_date": "2025-11-03T11:04:22+00:00",
+        "updated_date": "2025-11-05T16:11:43+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Jie Du",
+            "Xinyu Gong",
+            "Qingshan Tan",
+            "Wen Li",
+            "Yangming Cheng",
+            "Weitao Wang",
+            "Chenlu Zhan",
+            "Suhui Wu",
+            "Hao Zhang",
+            "Jun Zhang"
+        ],
+        "tldr": "This paper introduces Reg-DPO, a SFT-regularized Direct Preference Optimization method with automatically generated preference pairs for improved video generation, addressing challenges like data construction and training instability, and achieving superior performance on I2V and T2V tasks.",
+        "tldr_zh": "本文介绍了一种名为Reg-DPO的方法，它是一种SFT正则化的直接偏好优化方法，利用自动生成偏好对来改进视频生成。该方法解决了数据构建和训练不稳定性等挑战，并在I2V和T2V任务上实现了卓越的性能。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Towards One-step Causal Video Generation via Adversarial Self-Distillation",
+        "summary": "Recent hybrid video generation models combine autoregressive temporal\ndynamics with diffusion-based spatial denoising, but their sequential,\niterative nature leads to error accumulation and long inference times. In this\nwork, we propose a distillation-based framework for efficient causal video\ngeneration that enables high-quality synthesis with extremely limited denoising\nsteps. Our approach builds upon the Distribution Matching Distillation (DMD)\nframework and proposes a novel Adversarial Self-Distillation (ASD) strategy,\nwhich aligns the outputs of the student model's n-step denoising process with\nits (n+1)-step version at the distribution level. This design provides smoother\nsupervision by bridging small intra-student gaps and more informative guidance\nby combining teacher knowledge with locally consistent student behavior,\nsubstantially improving training stability and generation quality in extremely\nfew-step scenarios (e.g., 1-2 steps). In addition, we present a First-Frame\nEnhancement (FFE) strategy, which allocates more denoising steps to the initial\nframes to mitigate error propagation while applying larger skipping steps to\nlater frames. Extensive experiments on VBench demonstrate that our method\nsurpasses state-of-the-art approaches in both one-step and two-step video\ngeneration. Notably, our framework produces a single distilled model that\nflexibly supports multiple inference-step settings, eliminating the need for\nrepeated re-distillation and enabling efficient, high-quality video synthesis.",
+        "url": "http://arxiv.org/abs/2511.01419v1",
+        "published_date": "2025-11-03T10:12:47+00:00",
+        "updated_date": "2025-11-03T10:12:47+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yongqi Yang",
+            "Huayang Huang",
+            "Xu Peng",
+            "Xiaobin Hu",
+            "Donghao Luo",
+            "Jiangning Zhang",
+            "Chengjie Wang",
+            "Yu Wu"
+        ],
+        "tldr": "This paper introduces an adversarial self-distillation approach (ASD) and First-Frame Enhancement (FFE) strategy to achieve high-quality video generation in extremely few denoising steps, significantly improving efficiency and performance compared to existing methods.",
+        "tldr_zh": "本文提出了一种对抗自蒸馏方法（ASD）和首帧增强（FFE）策略，通过极少的去噪步骤实现高质量的视频生成，与现有方法相比，显著提高了效率和性能。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    }
+]

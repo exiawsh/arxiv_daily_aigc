@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 26, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - November 03, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>October 26, 2025</p>
+            <p>November 03, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -208,120 +208,19 @@
     <div class="bento-grid" id="paper-grid">
         
         <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.0, ease: 'easeOut' }"  
-            class="bento-item"
+            initial="{ opacity: 0 }"
+            animate="{ opacity: 1 }"
+            transition="{ duration: 0.5 }"
+            class="bento-item col-span-full text-center text-gray-500"
             data-motion-element
         >
-            <h2 class="paper-title">LongCat-Video Technical Report</h2>
-            
-            <p class="paper-summary">Video generation is a critical pathway toward world models, with efficient
-long video inference as a key capability. Toward this end, we introduce
-LongCat-Video, a foundational video generation model with 13.6B parameters,
-delivering strong performance across multiple video generation tasks. It
-particularly excels in efficient and high-quality long video generation,
-representing our first step toward world models. Key features include: Unified
-architecture for multiple tasks: Built on the Diffusion Transformer (DiT)
-framework, LongCat-Video supports Text-to-Video, Image-to-Video, and
-Video-Continuation tasks with a single model; Long video generation:
-Pretraining on Video-Continuation tasks enables LongCat-Video to maintain high
-quality and temporal coherence in the generation of minutes-long videos;
-Efficient inference: LongCat-Video generates 720p, 30fps videos within minutes
-by employing a coarse-to-fine generation strategy along both the temporal and
-spatial axes. Block Sparse Attention further enhances efficiency, particularly
-at high resolutions; Strong performance with multi-reward RLHF: Multi-reward
-RLHF training enables LongCat-Video to achieve performance on par with the
-latest closed-source and leading open-source models. Code and model weights are
-publicly available to accelerate progress in the field.</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: LongCat-Video is a 13.6B parameter video generation model excelling in efficient, high-quality, minutes-long video generation via a Diffusion Transformer architecture, multi-reward RLHF training, and coarse-to-fine generation strategies. Code and models are available.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: LongCat-Video是一个136亿参数的视频生成模型，通过扩散Transformer架构、多奖励RLHF训练和粗到细的生成策略，擅长高效、高质量地生成分钟级视频。代码和模型已开源。</p>
-            
-
-            
-            
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(10/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-            </div>
-            
-            
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star-half-alt"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2510.22200v1" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Meituan LongCat Team, Xunliang Cai, Qilong Huang, Zhuoliang Kang, Hongyu Li, Shijun Liang, Liya Ma, Siyu Ren, Xiaoming Wei, Rixu Xie, Tong Zhang</p>
-            
+            <p>No relevant papers found for today.</p>
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-11-06 02:45:44 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-11-06 02:49:30 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
