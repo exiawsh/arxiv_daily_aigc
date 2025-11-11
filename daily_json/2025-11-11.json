@@ -1,0 +1,28 @@
+[
+    {
+        "title": "4DSTR: Advancing Generative 4D Gaussians with Spatial-Temporal Rectification for High-Quality and Consistent 4D Generation",
+        "summary": "Remarkable advances in recent 2D image and 3D shape generation have induced a\nsignificant focus on dynamic 4D content generation. However, previous 4D\ngeneration methods commonly struggle to maintain spatial-temporal consistency\nand adapt poorly to rapid temporal variations, due to the lack of effective\nspatial-temporal modeling. To address these problems, we propose a novel 4D\ngeneration network called 4DSTR, which modulates generative 4D Gaussian\nSplatting with spatial-temporal rectification. Specifically, temporal\ncorrelation across generated 4D sequences is designed to rectify deformable\nscales and rotations and guarantee temporal consistency. Furthermore, an\nadaptive spatial densification and pruning strategy is proposed to address\nsignificant temporal variations by dynamically adding or deleting Gaussian\npoints with the awareness of their pre-frame movements. Extensive experiments\ndemonstrate that our 4DSTR achieves state-of-the-art performance in video-to-4D\ngeneration, excelling in reconstruction quality, spatial-temporal consistency,\nand adaptation to rapid temporal movements.",
+        "url": "http://arxiv.org/abs/2511.07241v1",
+        "published_date": "2025-11-10T15:57:03+00:00",
+        "updated_date": "2025-11-10T15:57:03+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Mengmeng Liu",
+            "Jiuming Liu",
+            "Yunpeng Zhang",
+            "Jiangtao Li",
+            "Michael Ying Yang",
+            "Francesco Nex",
+            "Hao Cheng"
+        ],
+        "tldr": "The paper introduces 4DSTR, a novel 4D generation network using spatial-temporal rectification to improve spatial-temporal consistency and adapt to rapid temporal variations in video-to-4D generation, achieving state-of-the-art performance.",
+        "tldr_zh": "该论文介绍了一种名为4DSTR的新型4D生成网络，该网络利用时空校正来提高视频到4D生成中的时空一致性，并适应快速的时间变化，从而实现了最先进的性能。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    }
+]
