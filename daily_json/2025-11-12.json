@@ -1,0 +1,69 @@
+[
+    {
+        "title": "StreamDiffusionV2: A Streaming System for Dynamic and Interactive Video Generation",
+        "summary": "Generative models are reshaping the live-streaming industry by redefining how content is created, styled, and delivered. Previous image-based streaming diffusion models have powered efficient and creative live streaming products but have hit limits on temporal consistency due to the foundation of image-based designs. Recent advances in video diffusion have markedly improved temporal consistency and sampling efficiency for offline generation. However, offline generation systems primarily optimize throughput by batching large workloads. In contrast, live online streaming operates under strict service-level objectives (SLOs): time-to-first-frame must be minimal, and every frame must meet a per-frame deadline with low jitter. Besides, scalable multi-GPU serving for real-time streams remains largely unresolved so far. To address this, we present StreamDiffusionV2, a training-free pipeline for interactive live streaming with video diffusion models. StreamDiffusionV2 integrates an SLO-aware batching scheduler and a block scheduler, together with a sink-token--guided rolling KV cache, a motion-aware noise controller, and other system-level optimizations. Moreover, we introduce a scalable pipeline orchestration that parallelizes the diffusion process across denoising steps and network layers, achieving near-linear FPS scaling without violating latency guarantees. The system scales seamlessly across heterogeneous GPU environments and supports flexible denoising steps (e.g., 1--4), enabling both ultra-low-latency and higher-quality modes. Without TensorRT or quantization, StreamDiffusionV2 renders the first frame within 0.5s and attains 58.28 FPS with a 14B-parameter model and 64.52 FPS with a 1.3B-parameter model on four H100 GPUs, making state-of-the-art generative live streaming practical and accessible--from individual creators to enterprise-scale platforms.",
+        "url": "http://arxiv.org/abs/2511.07399v1",
+        "published_date": "2025-11-10T18:51:28+00:00",
+        "updated_date": "2025-11-11T02:53:28+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.LG"
+        ],
+        "authors": [
+            "Tianrui Feng",
+            "Zhi Li",
+            "Shuo Yang",
+            "Haocheng Xi",
+            "Muyang Li",
+            "Xiuyu Li",
+            "Lvmin Zhang",
+            "Keting Yang",
+            "Kelly Peng",
+            "Song Han",
+            "Maneesh Agrawala",
+            "Kurt Keutzer",
+            "Akio Kodaira",
+            "Chenfeng Xu"
+        ],
+        "tldr": "StreamDiffusionV2 is a training-free pipeline designed for interactive live streaming with video diffusion models, achieving real-time performance and scalability across GPUs through system-level optimizations and novel scheduling strategies.",
+        "tldr_zh": "StreamDiffusionV2是一个无需训练的流程，专为使用视频扩散模型的交互式直播设计，通过系统级优化和新的调度策略，实现了跨GPU的实时性能和可扩展性。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Robot Learning from a Physical World Model",
+        "summary": "We introduce PhysWorld, a framework that enables robot learning from video generation through physical world modeling. Recent video generation models can synthesize photorealistic visual demonstrations from language commands and images, offering a powerful yet underexplored source of training signals for robotics. However, directly retargeting pixel motions from generated videos to robots neglects physics, often resulting in inaccurate manipulations. PhysWorld addresses this limitation by coupling video generation with physical world reconstruction. Given a single image and a task command, our method generates task-conditioned videos and reconstructs the underlying physical world from the videos, and the generated video motions are grounded into physically accurate actions through object-centric residual reinforcement learning with the physical world model. This synergy transforms implicit visual guidance into physically executable robotic trajectories, eliminating the need for real robot data collection and enabling zero-shot generalizable robotic manipulation. Experiments on diverse real-world tasks demonstrate that PhysWorld substantially improves manipulation accuracy compared to previous approaches. Visit \\href{https://pointscoder.github.io/PhysWorld_Web/}{the project webpage} for details.",
+        "url": "http://arxiv.org/abs/2511.07416v1",
+        "published_date": "2025-11-10T18:59:07+00:00",
+        "updated_date": "2025-11-11T02:53:59+00:00",
+        "categories": [
+            "cs.RO",
+            "cs.AI",
+            "cs.CV"
+        ],
+        "authors": [
+            "Jiageng Mao",
+            "Sicheng He",
+            "Hao-Ning Wu",
+            "Yang You",
+            "Shuyang Sun",
+            "Zhicheng Wang",
+            "Yanan Bao",
+            "Huizhong Chen",
+            "Leonidas Guibas",
+            "Vitor Guizilini",
+            "Howard Zhou",
+            "Yue Wang"
+        ],
+        "tldr": "The paper introduces PhysWorld, a framework for robot learning that uses video generation coupled with physical world reconstruction to train robots without real-world data, enabling zero-shot generalizable manipulation.",
+        "tldr_zh": "该论文介绍了PhysWorld，一个机器人学习框架，它结合了视频生成和物理世界重建，无需真实世界数据即可训练机器人，从而实现零样本的通用机器人操作。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]

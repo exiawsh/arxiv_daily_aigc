@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - October 30, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - November 12, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>October 30, 2025</p>
+            <p>November 12, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,29 +215,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">VividCam: Learning Unconventional Camera Motions from Virtual Synthetic Videos</h2>
+            <h2 class="paper-title">StreamDiffusionV2: A Streaming System for Dynamic and Interactive Video Generation</h2>
             
-            <p class="paper-summary">Although recent text-to-video generative models are getting more capable of
-following external camera controls, imposed by either text descriptions or
-camera trajectories, they still struggle to generalize to unconventional camera
-motions, which is crucial in creating truly original and artistic videos. The
-challenge lies in the difficulty of finding sufficient training videos with the
-intended uncommon camera motions. To address this challenge, we propose
-VividCam, a training paradigm that enables diffusion models to learn complex
-camera motions from synthetic videos, releasing the reliance on collecting
-realistic training videos. VividCam incorporates multiple disentanglement
-strategies that isolates camera motion learning from synthetic appearance
-artifacts, ensuring more robust motion representation and mitigating domain
-shift. We demonstrate that our design synthesizes a wide range of precisely
-controlled and complex camera motions using surprisingly simple synthetic data.
-Notably, this synthetic data often consists of basic geometries within a
-low-poly 3D scene and can be efficiently rendered by engines like Unity. Our
-video results can be found in https://wuqiuche.github.io/VividCamDemoPage/ .</p>
+            <p class="paper-summary">Generative models are reshaping the live-streaming industry by redefining how content is created, styled, and delivered. Previous image-based streaming diffusion models have powered efficient and creative live streaming products but have hit limits on temporal consistency due to the foundation of image-based designs. Recent advances in video diffusion have markedly improved temporal consistency and sampling efficiency for offline generation. However, offline generation systems primarily optimize throughput by batching large workloads. In contrast, live online streaming operates under strict service-level objectives (SLOs): time-to-first-frame must be minimal, and every frame must meet a per-frame deadline with low jitter. Besides, scalable multi-GPU serving for real-time streams remains largely unresolved so far. To address this, we present StreamDiffusionV2, a training-free pipeline for interactive live streaming with video diffusion models. StreamDiffusionV2 integrates an SLO-aware batching scheduler and a block scheduler, together with a sink-token--guided rolling KV cache, a motion-aware noise controller, and other system-level optimizations. Moreover, we introduce a scalable pipeline orchestration that parallelizes the diffusion process across denoising steps and network layers, achieving near-linear FPS scaling without violating latency guarantees. The system scales seamlessly across heterogeneous GPU environments and supports flexible denoising steps (e.g., 1--4), enabling both ultra-low-latency and higher-quality modes. Without TensorRT or quantization, StreamDiffusionV2 renders the first frame within 0.5s and attains 58.28 FPS with a 14B-parameter model and 64.52 FPS with a 1.3B-parameter model on four H100 GPUs, making state-of-the-art generative live streaming practical and accessible--from individual creators to enterprise-scale platforms.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: VividCam proposes a training paradigm using synthetic videos to enable diffusion models to learn complex and unconventional camera motions for text-to-video generation, overcoming limitations in real-world training data.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: StreamDiffusionV2 is a training-free pipeline designed for interactive live streaming with video diffusion models, achieving real-time performance and scalability across GPUs through system-level optimizations and novel scheduling strategies.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: VividCam提出了一种使用合成视频的训练范式，使扩散模型能够学习复杂且非常规的相机运动，用于文本到视频的生成，克服了真实世界训练数据中的局限性。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: StreamDiffusionV2是一个无需训练的流程，专为使用视频扩散模型的交互式直播设计，通过系统级优化和新的调度策略，实现了跨GPU的实时性能和可扩展性。</p>
             
 
             
@@ -247,8 +232,8 @@ video results can be found in https://wuqiuche.github.io/VividCamDemoPage/ .</p>
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
@@ -308,18 +293,112 @@ video results can be found in https://wuqiuche.github.io/VividCamDemoPage/ .</p>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2510.24904v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2511.07399v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Qiucheng Wu, Handong Zhao, Zhixin Shu, Jing Shi, Yang Zhang, Shiyu Chang</p>
+            <p class="paper-authors">Authors: Tianrui Feng, Zhi Li, Shuo Yang, Haocheng Xi, Muyang Li, Xiuyu Li, Lvmin Zhang, Keting Yang, Kelly Peng, Song Han, Maneesh Agrawala, Kurt Keutzer, Akio Kodaira, Chenfeng Xu</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.05, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">Robot Learning from a Physical World Model</h2>
+            
+            <p class="paper-summary">We introduce PhysWorld, a framework that enables robot learning from video generation through physical world modeling. Recent video generation models can synthesize photorealistic visual demonstrations from language commands and images, offering a powerful yet underexplored source of training signals for robotics. However, directly retargeting pixel motions from generated videos to robots neglects physics, often resulting in inaccurate manipulations. PhysWorld addresses this limitation by coupling video generation with physical world reconstruction. Given a single image and a task command, our method generates task-conditioned videos and reconstructs the underlying physical world from the videos, and the generated video motions are grounded into physically accurate actions through object-centric residual reinforcement learning with the physical world model. This synergy transforms implicit visual guidance into physically executable robotic trajectories, eliminating the need for real robot data collection and enabling zero-shot generalizable robotic manipulation. Experiments on diverse real-world tasks demonstrate that PhysWorld substantially improves manipulation accuracy compared to previous approaches. Visit \href{https://pointscoder.github.io/PhysWorld_Web/}{the project webpage} for details.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces PhysWorld, a framework for robot learning that uses video generation coupled with physical world reconstruction to train robots without real-world data, enabling zero-shot generalizable manipulation.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了PhysWorld，一个机器人学习框架，它结合了视频生成和物理世界重建，无需真实世界数据即可训练机器人，从而实现零样本的通用机器人操作。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2511.07416v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Jiageng Mao, Sicheng He, Hao-Ning Wu, Yang You, Shuyang Sun, Zhicheng Wang, Yanan Bao, Huizhong Chen, Leonidas Guibas, Vitor Guizilini, Howard Zhou, Yue Wang</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-11-12 02:44:19 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-11-12 02:50:32 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
