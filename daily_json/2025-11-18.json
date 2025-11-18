@@ -1,0 +1,92 @@
+[
+    {
+        "title": "CorrectAD: A Self-Correcting Agentic System to Improve End-to-end Planning in Autonomous Driving",
+        "summary": "End-to-end planning methods are the de facto standard of the current autonomous driving system, while the robustness of the data-driven approaches suffers due to the notorious long-tail problem (i.e., rare but safety-critical failure cases). In this work, we explore whether recent diffusion-based video generation methods (a.k.a. world models), paired with structured 3D layouts, can enable a fully automated pipeline to self-correct such failure cases. We first introduce an agent to simulate the role of product manager, dubbed PM-Agent, which formulates data requirements to collect data similar to the failure cases. Then, we use a generative model that can simulate both data collection and annotation. However, existing generative models struggle to generate high-fidelity data conditioned on 3D layouts. To address this, we propose DriveSora, which can generate spatiotemporally consistent videos aligned with the 3D annotations requested by PM-Agent. We integrate these components into our self-correcting agentic system, CorrectAD. Importantly, our pipeline is an end-to-end model-agnostic and can be applied to improve any end-to-end planner. Evaluated on both nuScenes and a more challenging in-house dataset across multiple end-to-end planners, CorrectAD corrects 62.5% and 49.8% of failure cases, reducing collision rates by 39% and 27%, respectively.",
+        "url": "http://arxiv.org/abs/2511.13297v1",
+        "published_date": "2025-11-17T12:21:03+00:00",
+        "updated_date": "2025-11-17T12:21:03+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Enhui Ma",
+            "Lijun Zhou",
+            "Tao Tang",
+            "Jiahuan Zhang",
+            "Junpeng Jiang",
+            "Zhan Zhang",
+            "Dong Han",
+            "Kun Zhan",
+            "Xueyang Zhang",
+            "XianPeng Lang",
+            "Haiyang Sun",
+            "Xia Zhou",
+            "Di Lin",
+            "Kaicheng Yu"
+        ],
+        "tldr": "The paper introduces CorrectAD, a self-correcting agentic system leveraging diffusion-based video generation and structured 3D layouts to improve the robustness of end-to-end autonomous driving planners, demonstrating significant collision rate reduction.",
+        "tldr_zh": "该论文介绍CorrectAD，一个自校正的代理系统，利用基于扩散的视频生成和结构化3D布局来提高端到端自动驾驶规划器的鲁棒性，并展示了显著的碰撞率降低。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 8,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "Recurrent Autoregressive Diffusion: Global Memory Meets Local Attention",
+        "summary": "Recent advancements in video generation have demonstrated the potential of using video diffusion models as world models, with autoregressive generation of infinitely long videos through masked conditioning. However, such models, usually with local full attention, lack effective memory compression and retrieval for long-term generation beyond the window size, leading to issues of forgetting and spatiotemporal inconsistencies. To enhance the retention of historical information within a fixed memory budget, we introduce a recurrent neural network (RNN) into the diffusion transformer framework. Specifically, a diffusion model incorporating LSTM with attention achieves comparable performance to state-of-the-art RNN blocks, such as TTT and Mamba2. Moreover, existing diffusion-RNN approaches often suffer from performance degradation due to training-inference gap or the lack of overlap across windows. To address these limitations, we propose a novel Recurrent Autoregressive Diffusion (RAD) framework, which executes frame-wise autoregression for memory update and retrieval, consistently across training and inference time. Experiments on Memory Maze and Minecraft datasets demonstrate the superiority of RAD for long video generation, highlighting the efficiency of LSTM in sequence modeling.",
+        "url": "http://arxiv.org/abs/2511.12940v1",
+        "published_date": "2025-11-17T03:47:12+00:00",
+        "updated_date": "2025-11-17T03:47:12+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Taiye Chen",
+            "Zihan Ding",
+            "Anjian Li",
+            "Christina Zhang",
+            "Zeqi Xiao",
+            "Yisen Wang",
+            "Chi Jin"
+        ],
+        "tldr": "This paper introduces a Recurrent Autoregressive Diffusion (RAD) framework that incorporates an LSTM into a diffusion transformer to improve long video generation by addressing issues of forgetting and spatiotemporal inconsistencies in existing autoregressive models.",
+        "tldr_zh": "本文提出了一种循环自回归扩散（RAD）框架，该框架将LSTM融入扩散Transformer中，通过解决现有自回归模型中存在的遗忘和时空不一致问题，从而改进长视频生成。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Generative Photographic Control for Scene-Consistent Video Cinematic Editing",
+        "summary": "Cinematic storytelling is profoundly shaped by the artful manipulation of photographic elements such as depth of field and exposure. These effects are crucial in conveying mood and creating aesthetic appeal. However, controlling these effects in generative video models remains highly challenging, as most existing methods are restricted to camera motion control. In this paper, we propose CineCtrl, the first video cinematic editing framework that provides fine control over professional camera parameters (e.g., bokeh, shutter speed). We introduce a decoupled cross-attention mechanism to disentangle camera motion from photographic inputs, allowing fine-grained, independent control without compromising scene consistency. To overcome the shortage of training data, we develop a comprehensive data generation strategy that leverages simulated photographic effects with a dedicated real-world collection pipeline, enabling the construction of a large-scale dataset for robust model training. Extensive experiments demonstrate that our model generates high-fidelity videos with precisely controlled, user-specified photographic camera effects.",
+        "url": "http://arxiv.org/abs/2511.12921v1",
+        "published_date": "2025-11-17T03:17:23+00:00",
+        "updated_date": "2025-11-17T03:17:23+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Huiqiang Sun",
+            "Liao Shen",
+            "Zhan Peng",
+            "Kun Wang",
+            "Size Wu",
+            "Yuhang Zang",
+            "Tianqi Liu",
+            "Zihao Huang",
+            "Xingyu Zeng",
+            "Zhiguo Cao",
+            "Wei Li",
+            "Chen Change Loy"
+        ],
+        "tldr": "The paper introduces CineCtrl, a novel framework for fine-grained control of photographic camera parameters (bokeh, shutter speed) in generative video models, using a decoupled cross-attention mechanism and a large-scale synthetic/real dataset.",
+        "tldr_zh": "该论文介绍了 CineCtrl，一种新颖的框架，用于在生成视频模型中对摄影相机参数（散景、快门速度）进行细粒度控制，它使用解耦的交叉注意力机制和一个大规模的合成/真实数据集。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]

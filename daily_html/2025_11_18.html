@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - November 13, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - November 18, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>November 13, 2025</p>
+            <p>November 18, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,14 +215,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">PAN: A World Model for General, Interactable, and Long-Horizon World Simulation</h2>
+            <h2 class="paper-title">CorrectAD: A Self-Correcting Agentic System to Improve End-to-end Planning in Autonomous Driving</h2>
             
-            <p class="paper-summary">A world model enables an intelligent agent to imagine, predict, and reason about how the world evolves in response to its actions, and accordingly to plan and strategize. While recent video generation models produce realistic visual sequences, they typically operate in the prompt-to-full-video manner without causal control, interactivity, or long-horizon consistency required for purposeful reasoning. Existing world modeling efforts, on the other hand, often focus on restricted domains (e.g., physical, game, or 3D-scene dynamics) with limited depth and controllability, and struggle to generalize across diverse environments and interaction formats. In this work, we introduce PAN, a general, interactable, and long-horizon world model that predicts future world states through high-quality video simulation conditioned on history and natural language actions. PAN employs the Generative Latent Prediction (GLP) architecture that combines an autoregressive latent dynamics backbone based on a large language model (LLM), which grounds simulation in extensive text-based knowledge and enables conditioning on language-specified actions, with a video diffusion decoder that reconstructs perceptually detailed and temporally coherent visual observations, to achieve a unification between latent space reasoning (imagination) and realizable world dynamics (reality). Trained on large-scale video-action pairs spanning diverse domains, PAN supports open-domain, action-conditioned simulation with coherent, long-term dynamics. Extensive experiments show that PAN achieves strong performance in action-conditioned world simulation, long-horizon forecasting, and simulative reasoning compared to other video generators and world models, taking a step towards general world models that enable predictive simulation of future world states for reasoning and acting.</p>
+            <p class="paper-summary">End-to-end planning methods are the de facto standard of the current autonomous driving system, while the robustness of the data-driven approaches suffers due to the notorious long-tail problem (i.e., rare but safety-critical failure cases). In this work, we explore whether recent diffusion-based video generation methods (a.k.a. world models), paired with structured 3D layouts, can enable a fully automated pipeline to self-correct such failure cases. We first introduce an agent to simulate the role of product manager, dubbed PM-Agent, which formulates data requirements to collect data similar to the failure cases. Then, we use a generative model that can simulate both data collection and annotation. However, existing generative models struggle to generate high-fidelity data conditioned on 3D layouts. To address this, we propose DriveSora, which can generate spatiotemporally consistent videos aligned with the 3D annotations requested by PM-Agent. We integrate these components into our self-correcting agentic system, CorrectAD. Importantly, our pipeline is an end-to-end model-agnostic and can be applied to improve any end-to-end planner. Evaluated on both nuScenes and a more challenging in-house dataset across multiple end-to-end planners, CorrectAD corrects 62.5% and 49.8% of failure cases, reducing collision rates by 39% and 27%, respectively.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: PAN is a general world model using a LLM-backed latent dynamics model and a video diffusion decoder for generating interactive and long-horizon video simulations conditioned on language actions, demonstrating strong performance in various tasks.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces CorrectAD, a self-correcting agentic system leveraging diffusion-based video generation and structured 3D layouts to improve the robustness of end-to-end autonomous driving planners, demonstrating significant collision rate reduction.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: PAN是一个通用世界模型，它使用由LLM支持的潜在动态模型和视频扩散解码器来生成以语言动作为条件的交互式和长时程视频模拟，并在各种任务中表现出强大的性能。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍CorrectAD，一个自校正的代理系统，利用基于扩散的视频生成和结构化3D布局来提高端到端自动驾驶规划器的鲁棒性，并展示了显著的碰撞率降低。</p>
             
 
             
@@ -248,8 +248,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Clarity:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -293,11 +293,11 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2511.09057v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2511.13297v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: PAN Team, Jiannan Xiang, Yi Gu, Zihan Liu, Zeyu Feng, Qiyue Gao, Yiyan Hu, Benhao Huang, Guangyi Liu, Yichi Yang, Kun Zhou, Davit Abrahamyan, Arif Ahmad, Ganesh Bannur, Junrong Chen, Kimi Chen, Mingkai Deng, Ruobing Han, Xinqi Huang, Haoqiang Kang, Zheqi Li, Enze Ma, Hector Ren, Yashowardhan Shinde, Rohan Shingre, Ramsundar Tanikella, Kaiming Tao, Dequan Yang, Xinle Yu, Cong Zeng, Binglin Zhou, Hector Liu, Zhiting Hu, Eric P. Xing</p>
+            <p class="paper-authors">Authors: Enhui Ma, Lijun Zhou, Tao Tang, Jiahuan Zhang, Junpeng Jiang, Zhan Zhang, Dong Han, Kun Zhan, Xueyang Zhang, XianPeng Lang, Haiyang Sun, Xia Zhou, Di Lin, Kaicheng Yu</p>
             
         </motion.div>
         
@@ -309,14 +309,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Simulating the Visual World with Artificial Intelligence: A Roadmap</h2>
+            <h2 class="paper-title">Recurrent Autoregressive Diffusion: Global Memory Meets Local Attention</h2>
             
-            <p class="paper-summary">The landscape of video generation is shifting, from a focus on generating visually appealing clips to building virtual environments that support interaction and maintain physical plausibility. These developments point toward the emergence of video foundation models that function not only as visual generators but also as implicit world models, models that simulate the physical dynamics, agent-environment interactions, and task planning that govern real or imagined worlds. This survey provides a systematic overview of this evolution, conceptualizing modern video foundation models as the combination of two core components: an implicit world model and a video renderer. The world model encodes structured knowledge about the world, including physical laws, interaction dynamics, and agent behavior. It serves as a latent simulation engine that enables coherent visual reasoning, long-term temporal consistency, and goal-driven planning. The video renderer transforms this latent simulation into realistic visual observations, effectively producing videos as a "window" into the simulated world. We trace the progression of video generation through four generations, in which the core capabilities advance step by step, ultimately culminating in a world model, built upon a video generation model, that embodies intrinsic physical plausibility, real-time multimodal interaction, and planning capabilities spanning multiple spatiotemporal scales. For each generation, we define its core characteristics, highlight representative works, and examine their application domains such as robotics, autonomous driving, and interactive gaming. Finally, we discuss open challenges and design principles for next-generation world models, including the role of agent intelligence in shaping and evaluating these systems. An up-to-date list of related works is maintained at this link.</p>
+            <p class="paper-summary">Recent advancements in video generation have demonstrated the potential of using video diffusion models as world models, with autoregressive generation of infinitely long videos through masked conditioning. However, such models, usually with local full attention, lack effective memory compression and retrieval for long-term generation beyond the window size, leading to issues of forgetting and spatiotemporal inconsistencies. To enhance the retention of historical information within a fixed memory budget, we introduce a recurrent neural network (RNN) into the diffusion transformer framework. Specifically, a diffusion model incorporating LSTM with attention achieves comparable performance to state-of-the-art RNN blocks, such as TTT and Mamba2. Moreover, existing diffusion-RNN approaches often suffer from performance degradation due to training-inference gap or the lack of overlap across windows. To address these limitations, we propose a novel Recurrent Autoregressive Diffusion (RAD) framework, which executes frame-wise autoregression for memory update and retrieval, consistently across training and inference time. Experiments on Memory Maze and Minecraft datasets demonstrate the superiority of RAD for long video generation, highlighting the efficiency of LSTM in sequence modeling.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper surveys the evolution of video generation towards video foundation models that serve as implicit world models, simulating physical dynamics and agent interactions, and outlines future directions.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces a Recurrent Autoregressive Diffusion (RAD) framework that incorporates an LSTM into a diffusion transformer to improve long video generation by addressing issues of forgetting and spatiotemporal inconsistencies in existing autoregressive models.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文综述了视频生成向作为隐式世界模型的视频基础模型的演变，这些模型模拟物理动力学和智能体交互，并概述了未来的发展方向。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文提出了一种循环自回归扩散（RAD）框架，该框架将LSTM融入扩散Transformer中，通过解决现有自回归模型中存在的遗忘和时空不一致问题，从而改进长视频生成。</p>
             
 
             
@@ -326,8 +326,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(10/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
@@ -342,16 +342,16 @@
                 <div class="rating-item">
                     <span class="rating-label">Clarity:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
             </div>
@@ -380,25 +380,119 @@
                     
                 
                     
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2511.08585v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2511.12940v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Jingtong Yue, Ziqi Huang, Zhaoxi Chen, Xintao Wang, Pengfei Wan, Ziwei Liu</p>
+            <p class="paper-authors">Authors: Taiye Chen, Zihan Ding, Anjian Li, Christina Zhang, Zeqi Xiao, Yisen Wang, Chi Jin</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.1, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">Generative Photographic Control for Scene-Consistent Video Cinematic Editing</h2>
+            
+            <p class="paper-summary">Cinematic storytelling is profoundly shaped by the artful manipulation of photographic elements such as depth of field and exposure. These effects are crucial in conveying mood and creating aesthetic appeal. However, controlling these effects in generative video models remains highly challenging, as most existing methods are restricted to camera motion control. In this paper, we propose CineCtrl, the first video cinematic editing framework that provides fine control over professional camera parameters (e.g., bokeh, shutter speed). We introduce a decoupled cross-attention mechanism to disentangle camera motion from photographic inputs, allowing fine-grained, independent control without compromising scene consistency. To overcome the shortage of training data, we develop a comprehensive data generation strategy that leverages simulated photographic effects with a dedicated real-world collection pipeline, enabling the construction of a large-scale dataset for robust model training. Extensive experiments demonstrate that our model generates high-fidelity videos with precisely controlled, user-specified photographic camera effects.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces CineCtrl, a novel framework for fine-grained control of photographic camera parameters (bokeh, shutter speed) in generative video models, using a decoupled cross-attention mechanism and a large-scale synthetic/real dataset.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了 CineCtrl，一种新颖的框架，用于在生成视频模型中对摄影相机参数（散景、快门速度）进行细粒度控制，它使用解耦的交叉注意力机制和一个大规模的合成/真实数据集。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2511.12921v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Huiqiang Sun, Liao Shen, Zhan Peng, Kun Wang, Size Wu, Yuhang Zang, Tianqi Liu, Zihao Huang, Xingyu Zeng, Zhiguo Cao, Wei Li, Chen Change Loy</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-11-18 03:47:17 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-11-18 03:54:42 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
