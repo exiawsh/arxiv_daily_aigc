@@ -1,0 +1,28 @@
+[
+    {
+        "title": "InstantViR: Real-Time Video Inverse Problem Solver with Distilled Diffusion Prior",
+        "summary": "Video inverse problems are fundamental to streaming, telepresence, and AR/VR, where high perceptual quality must coexist with tight latency constraints. Diffusion-based priors currently deliver state-of-the-art reconstructions, but existing approaches either adapt image diffusion models with ad hoc temporal regularizers - leading to temporal artifacts - or rely on native video diffusion models whose iterative posterior sampling is far too slow for real-time use. We introduce InstantViR, an amortized inference framework for ultra-fast video reconstruction powered by a pre-trained video diffusion prior. We distill a powerful bidirectional video diffusion model (teacher) into a causal autoregressive student that maps a degraded video directly to its restored version in a single forward pass, inheriting the teacher's strong temporal modeling while completely removing iterative test-time optimization. The distillation is prior-driven: it only requires the teacher diffusion model and known degradation operators, and does not rely on externally paired clean/noisy video data. To further boost throughput, we replace the video-diffusion backbone VAE with a high-efficiency LeanVAE via an innovative teacher-space regularized distillation scheme, enabling low-latency latent-space processing. Across streaming random inpainting, Gaussian deblurring and super-resolution, InstantViR matches or surpasses the reconstruction quality of diffusion-based baselines while running at over 35 FPS on NVIDIA A100 GPUs, achieving up to 100 times speedups over iterative video diffusion solvers. These results show that diffusion-based video reconstruction is compatible with real-time, interactive, editable, streaming scenarios, turning high-quality video restoration into a practical component of modern vision systems.",
+        "url": "http://arxiv.org/abs/2511.14208v1",
+        "published_date": "2025-11-18T07:40:38+00:00",
+        "updated_date": "2025-11-18T07:40:38+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Weimin Bai",
+            "Suzhe Xu",
+            "Yiwei Ren",
+            "Jinhua Hao",
+            "Ming Sun",
+            "Wenzheng Chen",
+            "He Sun"
+        ],
+        "tldr": "InstantViR distills a video diffusion model into a fast, single-pass autoregressive network for real-time video restoration, achieving state-of-the-art quality with significant speedups compared to iterative diffusion methods.",
+        "tldr_zh": "InstantViR 将视频扩散模型提炼成一个快速的单通道自回归网络，用于实时视频修复，与迭代扩散方法相比，在实现最先进质量的同时，显著提高了速度。",
+        "relevance_score": 4,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 6
+    }
+]
