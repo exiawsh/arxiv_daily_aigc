@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - November 20, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - November 22, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>November 20, 2025</p>
+            <p>November 22, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,14 +215,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Kandinsky 5.0: A Family of Foundation Models for Image and Video Generation</h2>
+            <h2 class="paper-title">Video-as-Answer: Predict and Generate Next Video Event with Joint-GRPO</h2>
             
-            <p class="paper-summary">This report introduces Kandinsky 5.0, a family of state-of-the-art foundation models for high-resolution image and 10-second video synthesis. The framework comprises three core line-up of models: Kandinsky 5.0 Image Lite - a line-up of 6B parameter image generation models, Kandinsky 5.0 Video Lite - a fast and lightweight 2B parameter text-to-video and image-to-video models, and Kandinsky 5.0 Video Pro - 19B parameter models that achieves superior video generation quality. We provide a comprehensive review of the data curation lifecycle - including collection, processing, filtering and clustering - for the multi-stage training pipeline that involves extensive pre-training and incorporates quality-enhancement techniques such as self-supervised fine-tuning (SFT) and reinforcement learning (RL)-based post-training. We also present novel architectural, training, and inference optimizations that enable Kandinsky 5.0 to achieve high generation speeds and state-of-the-art performance across various tasks, as demonstrated by human evaluation. As a large-scale, publicly available generative framework, Kandinsky 5.0 leverages the full potential of its pre-training and subsequent stages to be adapted for a wide range of generative applications. We hope that this report, together with the release of our open-source code and training checkpoints, will substantially advance the development and accessibility of high-quality generative models for the research community.</p>
+            <p class="paper-summary">While language models have become impactful in many real-world applications, video generation remains largely confined to entertainment. Motivated by video's inherent capacity to demonstrate physical-world information that is difficult to convey through language alone (e.g., imagine teaching someone to tie a tie using only text), we identify an underutilized opportunity to extend video as a new answer modality for Next-Event Prediction (NEP), formalized as Video-Next-Event Prediction (VNEP). While the established NEP task takes a video with a procedural or predictive question as input to predict the next event in text, VNEP requires dynamic video responses. This shift from telling to showing unlocks more intuitive and customized answers for procedural learning and creative exploration. However, this task remains challenging for existing models, as it demands an understanding of multimodal input, instruction-conditioned reasoning, and the generation of video with visual and semantic consistency. To address this, we introduce VANS, a model that leverages reinforcement learning to align a Vision-Language Model (VLM) with a Video Diffusion Model (VDM) for VNEP. The core of VANS is our proposed Joint-GRPO that orchestrates the VLM and VDM to function as a unit. Driven by a shared reward on their respective output, it optimizes the VLM to produce captions that are both accurate and friendly to visualize, while guiding the VDM to generate videos that are faithful to these captions and the input visual context. To enable this learning, we craft VANS-Data-100K, a dedicated dataset for the VNEP task. Experiments on procedural and predictive benchmarks demonstrate that VANS achieves state-of-the-art performance in both video event prediction and visualization. Codes are released in https://github.com/KlingTeam/VANS.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: Kandinsky 5.0 introduces a family of foundation models for high-resolution image and video generation, featuring different model sizes and optimization techniques, with open-source code and checkpoints released to foster research and accessibility.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Video-Next-Event Prediction (VNEP), a new task where models predict the next video event as a video instead of text. They propose VANS, a model that uses reinforcement learning to align a Vision-Language Model with a Video Diffusion Model for VNEP, achieving state-of-the-art performance.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: Kandinsky 5.0 推出了一系列用于高分辨率图像和视频生成的基础模型，具有不同的模型大小和优化技术，并发布了开源代码和检查点，以促进研究和可访问性。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文提出了视频下一事件预测（VNEP）任务，模型需要预测下一个视频事件并生成视频而不是文本。他们提出了VANS模型，该模型利用强化学习将视觉-语言模型与视频扩散模型对齐，用于VNEP，并取得了最先进的性能。</p>
             
 
             
@@ -240,16 +240,16 @@
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Clarity:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -293,18 +293,112 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2511.14993v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2511.16669v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Vladimir Arkhipkin, Vladimir Korviakov, Nikolai Gerasimenko, Denis Parkhomenko, Viacheslav Vasilev, Alexey Letunovskiy, Maria Kovaleva, Nikolai Vaulin, Ivan Kirillov, Lev Novitskiy, Denis Koposov, Nikita Kiselev, Alexander Varlamov, Dmitrii Mikhailov, Vladimir Polovnikov, Andrey Shutkin, Ilya Vasiliev, Julia Agafonova, Anastasiia Kargapoltseva, Anna Dmitrienko, Anastasia Maltseva, Anna Averchenkova, Olga Kim, Tatiana Nikulina, Denis Dimitrov</p>
+            <p class="paper-authors">Authors: Junhao Cheng, Liang Hou, Xin Tao, Jing Liao</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.05, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">TriDiff-4D: Fast 4D Generation through Diffusion-based Triplane Re-posing</h2>
+            
+            <p class="paper-summary">With the increasing demand for 3D animation, generating high-fidelity, controllable 4D avatars from textual descriptions remains a significant challenge. Despite notable efforts in 4D generative modeling, existing methods exhibit fundamental limitations that impede their broader applicability, including temporal and geometric inconsistencies, perceptual artifacts, motion irregularities, high computational costs, and limited control over dynamics. To address these challenges, we propose TriDiff-4D, a novel 4D generative pipeline that employs diffusion-based triplane re-posing to produce high-quality, temporally coherent 4D avatars. Our model adopts an auto-regressive strategy to generate 4D sequences of arbitrary length, synthesizing each 3D frame with a single diffusion process. By explicitly learning 3D structure and motion priors from large-scale 3D and motion datasets, TriDiff-4D enables skeleton-driven 4D generation that excels in temporal consistency, motion accuracy, computational efficiency, and visual fidelity. Specifically, TriDiff-4D first generates a canonical 3D avatar and a corresponding motion sequence from a text prompt, then uses a second diffusion model to animate the avatar according to the motion sequence, supporting arbitrarily long 4D generation. Experimental results demonstrate that TriDiff-4D significantly outperforms existing methods, reducing generation time from hours to seconds by eliminating the optimization process, while substantially improving the generation of complex motions with high-fidelity appearance and accurate 3D geometry.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: TriDiff-4D is a novel diffusion-based pipeline for generating high-fidelity, controllable 4D avatars from text, using triplane re-posing and auto-regressive sequence generation to achieve temporal consistency, motion accuracy, and computational efficiency.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: TriDiff-4D 是一种新的基于扩散的流程，用于从文本生成高保真、可控的 4D 头像，使用三平面重定位和自回归序列生成来实现时间一致性、运动精度和计算效率。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2511.16662v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Eddie Pokming Sheung, Qihao Liu, Wufei Ma, Prakhar Kaushik, Jianwen Xie, Alan Yuille</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-11-22 02:27:25 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-11-22 02:28:07 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Video-as-Answer: Predict and Generate Next Video Event with Joint-GRPO",
+        "summary": "While language models have become impactful in many real-world applications, video generation remains largely confined to entertainment. Motivated by video's inherent capacity to demonstrate physical-world information that is difficult to convey through language alone (e.g., imagine teaching someone to tie a tie using only text), we identify an underutilized opportunity to extend video as a new answer modality for Next-Event Prediction (NEP), formalized as Video-Next-Event Prediction (VNEP). While the established NEP task takes a video with a procedural or predictive question as input to predict the next event in text, VNEP requires dynamic video responses. This shift from telling to showing unlocks more intuitive and customized answers for procedural learning and creative exploration. However, this task remains challenging for existing models, as it demands an understanding of multimodal input, instruction-conditioned reasoning, and the generation of video with visual and semantic consistency. To address this, we introduce VANS, a model that leverages reinforcement learning to align a Vision-Language Model (VLM) with a Video Diffusion Model (VDM) for VNEP. The core of VANS is our proposed Joint-GRPO that orchestrates the VLM and VDM to function as a unit. Driven by a shared reward on their respective output, it optimizes the VLM to produce captions that are both accurate and friendly to visualize, while guiding the VDM to generate videos that are faithful to these captions and the input visual context. To enable this learning, we craft VANS-Data-100K, a dedicated dataset for the VNEP task. Experiments on procedural and predictive benchmarks demonstrate that VANS achieves state-of-the-art performance in both video event prediction and visualization. Codes are released in https://github.com/KlingTeam/VANS.",
+        "url": "http://arxiv.org/abs/2511.16669v1",
+        "published_date": "2025-11-20T18:59:44+00:00",
+        "updated_date": "2025-11-20T18:59:44+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Junhao Cheng",
+            "Liang Hou",
+            "Xin Tao",
+            "Jing Liao"
+        ],
+        "tldr": "The paper introduces Video-Next-Event Prediction (VNEP), a new task where models predict the next video event as a video instead of text. They propose VANS, a model that uses reinforcement learning to align a Vision-Language Model with a Video Diffusion Model for VNEP, achieving state-of-the-art performance.",
+        "tldr_zh": "该论文提出了视频下一事件预测（VNEP）任务，模型需要预测下一个视频事件并生成视频而不是文本。他们提出了VANS模型，该模型利用强化学习将视觉-语言模型与视频扩散模型对齐，用于VNEP，并取得了最先进的性能。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "TriDiff-4D: Fast 4D Generation through Diffusion-based Triplane Re-posing",
+        "summary": "With the increasing demand for 3D animation, generating high-fidelity, controllable 4D avatars from textual descriptions remains a significant challenge. Despite notable efforts in 4D generative modeling, existing methods exhibit fundamental limitations that impede their broader applicability, including temporal and geometric inconsistencies, perceptual artifacts, motion irregularities, high computational costs, and limited control over dynamics. To address these challenges, we propose TriDiff-4D, a novel 4D generative pipeline that employs diffusion-based triplane re-posing to produce high-quality, temporally coherent 4D avatars. Our model adopts an auto-regressive strategy to generate 4D sequences of arbitrary length, synthesizing each 3D frame with a single diffusion process. By explicitly learning 3D structure and motion priors from large-scale 3D and motion datasets, TriDiff-4D enables skeleton-driven 4D generation that excels in temporal consistency, motion accuracy, computational efficiency, and visual fidelity. Specifically, TriDiff-4D first generates a canonical 3D avatar and a corresponding motion sequence from a text prompt, then uses a second diffusion model to animate the avatar according to the motion sequence, supporting arbitrarily long 4D generation. Experimental results demonstrate that TriDiff-4D significantly outperforms existing methods, reducing generation time from hours to seconds by eliminating the optimization process, while substantially improving the generation of complex motions with high-fidelity appearance and accurate 3D geometry.",
+        "url": "http://arxiv.org/abs/2511.16662v1",
+        "published_date": "2025-11-20T18:59:03+00:00",
+        "updated_date": "2025-11-20T18:59:03+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Eddie Pokming Sheung",
+            "Qihao Liu",
+            "Wufei Ma",
+            "Prakhar Kaushik",
+            "Jianwen Xie",
+            "Alan Yuille"
+        ],
+        "tldr": "TriDiff-4D is a novel diffusion-based pipeline for generating high-fidelity, controllable 4D avatars from text, using triplane re-posing and auto-regressive sequence generation to achieve temporal consistency, motion accuracy, and computational efficiency.",
+        "tldr_zh": "TriDiff-4D 是一种新的基于扩散的流程，用于从文本生成高保真、可控的 4D 头像，使用三平面重定位和自回归序列生成来实现时间一致性、运动精度和计算效率。",
+        "relevance_score": 7,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
