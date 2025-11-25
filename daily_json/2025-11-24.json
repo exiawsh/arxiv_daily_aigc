@@ -1,0 +1,72 @@
+[
+    {
+        "title": "Sequence-Adaptive Video Prediction in Continuous Streams using Diffusion Noise Optimization",
+        "summary": "In this work, we investigate diffusion-based video prediction models, which forecast future video frames, for continuous video streams. In this context, the models observe continuously new training samples, and we aim to leverage this to improve their predictions. We thus propose an approach that continuously adapts a pre-trained diffusion model to a video stream. Since fine-tuning the parameters of a large diffusion model is too expensive, we refine the diffusion noise during inference while keeping the model parameters frozen, allowing the model to adaptively determine suitable sampling noise. We term the approach Sequence Adaptive Video Prediction with Diffusion Noise Optimization (SAVi-DNO). To validate our approach, we introduce a new evaluation setting on the Ego4D dataset, focusing on simultaneous adaptation and evaluation on long continuous videos. Empirical results demonstrate improved performance based on FVD, SSIM, and PSNR metrics on long videos of Ego4D and OpenDV-YouTube, as well as videos of UCF-101 and SkyTimelapse, showcasing SAVi-DNO's effectiveness.",
+        "url": "http://arxiv.org/abs/2511.18255v1",
+        "published_date": "2025-11-23T02:58:10+00:00",
+        "updated_date": "2025-11-23T02:58:10+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Sina Mokhtarzadeh Azar",
+            "Emad Bahrami",
+            "Enrico Pallotta",
+            "Gianpiero Francesca",
+            "Radu Timofte",
+            "Juergen Gall"
+        ],
+        "tldr": "This paper introduces Sequence Adaptive Video Prediction with Diffusion Noise Optimization (SAVi-DNO), a method that adapts a pre-trained diffusion model to continuous video streams by refining the diffusion noise during inference, demonstrating improved performance on long video prediction tasks.",
+        "tldr_zh": "本文介绍了一种名为SAVi-DNO的序列自适应视频预测方法，该方法通过在推理过程中优化扩散噪声，使预训练的扩散模型适应连续视频流，并在长视频预测任务中表现出性能提升。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "EgoControl: Controllable Egocentric Video Generation via 3D Full-Body Poses",
+        "summary": "Egocentric video generation with fine-grained control through body motion is a key requirement towards embodied AI agents that can simulate, predict, and plan actions. In this work, we propose EgoControl, a pose-controllable video diffusion model trained on egocentric data. We train a video prediction model to condition future frame generation on explicit 3D body pose sequences. To achieve precise motion control, we introduce a novel pose representation that captures both global camera dynamics and articulated body movements, and integrate it through a dedicated control mechanism within the diffusion process. Given a short sequence of observed frames and a sequence of target poses, EgoControl generates temporally coherent and visually realistic future frames that align with the provided pose control. Experimental results demonstrate that EgoControl produces high-quality, pose-consistent egocentric videos, paving the way toward controllable embodied video simulation and understanding.",
+        "url": "http://arxiv.org/abs/2511.18173v1",
+        "published_date": "2025-11-22T19:56:39+00:00",
+        "updated_date": "2025-11-22T19:56:39+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Enrico Pallotta",
+            "Sina Mokhtarzadeh Azar",
+            "Lars Doorenbos",
+            "Serdar Ozsoy",
+            "Umar Iqbal",
+            "Juergen Gall"
+        ],
+        "tldr": "EgoControl is a pose-controllable video diffusion model for egocentric video generation, enabling precise motion control via a novel pose representation and dedicated control mechanism.",
+        "tldr_zh": "EgoControl是一个姿态可控的用于生成以自我为中心的视频的扩散模型，它通过一种新颖的姿态表示和专门的控制机制来实现精确的运动控制。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "TRANSPORTER: Transferring Visual Semantics from VLM Manifolds",
+        "summary": "How do video understanding models acquire their answers? Although current Vision Language Models (VLMs) reason over complex scenes with diverse objects, action performances, and scene dynamics, understanding and controlling their internal processes remains an open challenge. Motivated by recent advancements in text-to-video (T2V) generative models, this paper introduces a logits-to-video (L2V) task alongside a model-independent approach, TRANSPORTER, to generate videos that capture the underlying rules behind VLMs' predictions. Given the high-visual-fidelity produced by T2V models, TRANSPORTER learns an optimal transport coupling to VLM's high-semantic embedding spaces. In turn, logit scores define embedding directions for conditional video generation. TRANSPORTER generates videos that reflect caption changes over diverse object attributes, action adverbs, and scene context. Quantitative and qualitative evaluations across VLMs demonstrate that L2V can provide a fidelity-rich, novel direction for model interpretability that has not been previously explored.",
+        "url": "http://arxiv.org/abs/2511.18359v1",
+        "published_date": "2025-11-23T09:12:48+00:00",
+        "updated_date": "2025-11-23T09:12:48+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Alexandros Stergiou"
+        ],
+        "tldr": "The paper introduces TRANSPORTER, a model-independent approach that generates videos from VLM logits, aiming to visualize and interpret the decision-making process of Vision Language Models (VLMs). It leverages advances in text-to-video generation to create videos reflecting caption changes in VLMs.",
+        "tldr_zh": "该论文介绍了一种模型无关的方法TRANSPORTER，该方法可以从视觉语言模型(VLM)的logits生成视频，旨在可视化和解释VLM的决策过程。它利用文本到视频生成技术的进步，创建能够反映VLM中字幕变化的视频。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]
