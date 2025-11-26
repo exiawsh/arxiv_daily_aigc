@@ -1,0 +1,171 @@
+[
+    {
+        "title": "GigaWorld-0: World Models as Data Engine to Empower Embodied AI",
+        "summary": "World models are emerging as a foundational paradigm for scalable, data-efficient embodied AI. In this work, we present GigaWorld-0, a unified world model framework designed explicitly as a data engine for Vision-Language-Action (VLA) learning. GigaWorld-0 integrates two synergistic components: GigaWorld-0-Video, which leverages large-scale video generation to produce diverse, texture-rich, and temporally coherent embodied sequences under fine-grained control of appearance, camera viewpoint, and action semantics; and GigaWorld-0-3D, which combines 3D generative modeling, 3D Gaussian Splatting reconstruction, physically differentiable system identification, and executable motion planning to ensure geometric consistency and physical realism. Their joint optimization enables the scalable synthesis of embodied interaction data that is visually compelling, spatially coherent, physically plausible, and instruction-aligned. Training at scale is made feasible through our efficient GigaTrain framework, which exploits FP8-precision and sparse attention to drastically reduce memory and compute requirements. We conduct comprehensive evaluations showing that GigaWorld-0 generates high-quality, diverse, and controllable data across multiple dimensions. Critically, VLA model (e.g., GigaBrain-0) trained on GigaWorld-0-generated data achieve strong real-world performance, significantly improving generalization and task success on physical robots without any real-world interaction during training.",
+        "url": "http://arxiv.org/abs/2511.19861v1",
+        "published_date": "2025-11-25T03:00:42+00:00",
+        "updated_date": "2025-11-25T03:00:42+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.RO"
+        ],
+        "authors": [
+            "GigaWorld Team",
+            "Angen Ye",
+            "Boyuan Wang",
+            "Chaojun Ni",
+            "Guan Huang",
+            "Guosheng Zhao",
+            "Haoyun Li",
+            "Jiagang Zhu",
+            "Kerui Li",
+            "Mengyuan Xu",
+            "Qiuping Deng",
+            "Siting Wang",
+            "Wenkang Qin",
+            "Xinze Chen",
+            "Xiaofeng Wang",
+            "Yankai Wang",
+            "Yu Cao",
+            "Yifan Chang",
+            "Yuan Xu",
+            "Yun Ye",
+            "Yang Wang",
+            "Yukun Zhou",
+            "Zhengyuan Zhang",
+            "Zhehao Dong",
+            "Zheng Zhu"
+        ],
+        "tldr": "The paper introduces GigaWorld-0, a world model framework that generates diverse and realistic embodied interaction data for Vision-Language-Action learning, enabling the training of VLA models that demonstrate strong real-world performance without real-world interaction during training.",
+        "tldr_zh": "该论文介绍了GigaWorld-0，一个世界模型框架，用于生成多样且真实的具身交互数据，以用于视觉-语言-动作学习，从而使VLA模型能够在训练过程中无需真实世界的交互即可展示出强大的真实世界性能。",
+        "relevance_score": 10,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 10,
+        "overall_priority_score": 10
+    },
+    {
+        "title": "Exo2EgoSyn: Unlocking Foundation Video Generation Models for Exocentric-to-Egocentric Video Synthesis",
+        "summary": "Foundation video generation models such as WAN 2.2 exhibit strong text- and image-conditioned synthesis abilities but remain constrained to the same-view generation setting. In this work, we introduce Exo2EgoSyn, an adaptation of WAN 2.2 that unlocks Exocentric-to-Egocentric(Exo2Ego) cross-view video synthesis. Our framework consists of three key modules. Ego-Exo View Alignment(EgoExo-Align) enforces latent-space alignment between exocentric and egocentric first-frame representations, reorienting the generative space from the given exo view toward the ego view. Multi-view Exocentric Video Conditioning (MultiExoCon) aggregates multi-view exocentric videos into a unified conditioning signal, extending WAN2.2 beyond its vanilla single-image or text conditioning. Furthermore, Pose-Aware Latent Injection (PoseInj) injects relative exo-to-ego camera pose information into the latent state, guiding geometry-aware synthesis across viewpoints. Together, these modules enable high-fidelity ego view video generation from third-person observations without retraining from scratch. Experiments on ExoEgo4D validate that Exo2EgoSyn significantly improves Ego2Exo synthesis, paving the way for scalable cross-view video generation with foundation models. Source code and models will be released publicly.",
+        "url": "http://arxiv.org/abs/2511.20186v1",
+        "published_date": "2025-11-25T11:08:37+00:00",
+        "updated_date": "2025-11-25T11:08:37+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Mohammad Mahdi",
+            "Yuqian Fu",
+            "Nedko Savov",
+            "Jiancheng Pan",
+            "Danda Pani Paudel",
+            "Luc Van Gool"
+        ],
+        "tldr": "The paper introduces Exo2EgoSyn, an adaptation of WAN 2.2, which enables the synthesis of egocentric videos from exocentric videos by incorporating view alignment, multi-view conditioning, and pose-aware latent injection, improving cross-view video generation.",
+        "tldr_zh": "该论文介绍了Exo2EgoSyn，这是WAN 2.2的一个改编版本，通过结合视图对齐、多视图条件和姿势感知潜在注入，实现了从外中心视频合成以自我为中心的视频，从而改进了跨视图视频生成。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "UltraViCo: Breaking Extrapolation Limits in Video Diffusion Transformers",
+        "summary": "Despite advances, video diffusion transformers still struggle to generalize beyond their training length, a challenge we term video length extrapolation. We identify two failure modes: model-specific periodic content repetition and a universal quality degradation. Prior works attempt to solve repetition via positional encodings, overlooking quality degradation and achieving only limited extrapolation. In this paper, we revisit this challenge from a more fundamental view: attention maps, which directly govern how context influences outputs. We identify that both failure modes arise from a unified cause: attention dispersion, where tokens beyond the training window dilute learned attention patterns. This leads to quality degradation and repetition emerges as a special case when this dispersion becomes structured into periodic attention patterns, induced by harmonic properties of positional encodings. Building on this insight, we propose UltraViCo, a training-free, plug-and-play method that suppresses attention for tokens beyond the training window via a constant decay factor. By jointly addressing both failure modes, we outperform a broad set of baselines largely across models and extrapolation ratios, pushing the extrapolation limit from 2x to 4x. Remarkably, it improves Dynamic Degree and Imaging Quality by 233% and 40.5% over the previous best method at 4x extrapolation. Furthermore, our method generalizes seamlessly to downstream tasks such as controllable video synthesis and editing.",
+        "url": "http://arxiv.org/abs/2511.20123v1",
+        "published_date": "2025-11-25T09:44:10+00:00",
+        "updated_date": "2025-11-25T09:44:10+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Min Zhao",
+            "Hongzhou Zhu",
+            "Yingze Wang",
+            "Bokai Yan",
+            "Jintao Zhang",
+            "Guande He",
+            "Ling Yang",
+            "Chongxuan Li",
+            "Jun Zhu"
+        ],
+        "tldr": "The paper introduces UltraViCo, a training-free method that suppresses attention dispersion in video diffusion transformers to improve video length extrapolation up to 4x, addressing both repetition and quality degradation issues.",
+        "tldr_zh": "该论文介绍了一种名为UltraViCo的免训练方法，通过抑制视频扩散Transformer中的注意力分散，将视频长度外推能力提高至4倍，解决了重复和质量下降的问题。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Rectified SpaAttn: Revisiting Attention Sparsity for Efficient Video Generation",
+        "summary": "Diffusion Transformers dominate video generation, but the quadratic complexity of attention computation introduces substantial latency. Attention sparsity reduces computational costs by focusing on critical tokens while ignoring non-critical tokens. However, existing methods suffer from severe performance degradation. In this paper, we revisit attention sparsity and reveal that existing methods induce systematic biases in attention allocation: (1) excessive focus on critical tokens amplifies their attention weights; (2) complete neglect of non-critical tokens causes the loss of relevant attention weights. To address these issues, we propose Rectified SpaAttn, which rectifies attention allocation with implicit full attention reference, thereby enhancing the alignment between sparse and full attention maps. Specifically: (1) for critical tokens, we show that their bias is proportional to the sparse attention weights, with the ratio governed by the amplified weights. Accordingly, we propose Isolated-Pooling Attention Reallocation, which calculates accurate rectification factors by reallocating multimodal pooled weights. (2) for non-critical tokens, recovering attention weights from the pooled query-key yields attention gains but also introduces pooling errors. Therefore, we propose Gain-Aware Pooling Rectification, which ensures that the rectified gain consistently surpasses the induced error. Moreover, we customize and integrate the Rectified SpaAttn kernel using Triton, achieving up to 3.33 and 2.08 times speedups on HunyuanVideo and Wan 2.1, respectively, while maintaining high generation quality. We release Rectified SpaAttn as open-source at https://github.com/BienLuky/Rectified-SpaAttn .",
+        "url": "http://arxiv.org/abs/2511.19835v1",
+        "published_date": "2025-11-25T02:03:54+00:00",
+        "updated_date": "2025-11-25T02:03:54+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Xuewen Liu",
+            "Zhikai Li",
+            "Jing Zhang",
+            "Mengjuan Chen",
+            "Qingyi Gu"
+        ],
+        "tldr": "This paper introduces Rectified SpaAttn, a method to improve the efficiency of attention mechanisms in video generation by addressing biases in attention sparsity, achieving significant speedups while maintaining generation quality.",
+        "tldr_zh": "本文介绍了 Rectified SpaAttn，一种通过解决注意力稀疏性偏差来提高视频生成中注意力机制效率的方法，在保持生成质量的同时实现了显著的加速。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "ReDirector: Creating Any-Length Video Retakes with Rotary Camera Encoding",
+        "summary": "We present ReDirector, a novel camera-controlled video retake generation method for dynamically captured variable-length videos. In particular, we rectify a common misuse of RoPE in previous works by aligning the spatiotemporal positions of the input video and the target retake. Moreover, we introduce Rotary Camera Encoding (RoCE), a camera-conditioned RoPE phase shift that captures and integrates multi-view relationships within and across the input and target videos. By integrating camera conditions into RoPE, our method generalizes to out-of-distribution camera trajectories and video lengths, yielding improved dynamic object localization and static background preservation. Extensive experiments further demonstrate significant improvements in camera controllability, geometric consistency, and video quality across various trajectories and lengths.",
+        "url": "http://arxiv.org/abs/2511.19827v1",
+        "published_date": "2025-11-25T01:38:56+00:00",
+        "updated_date": "2025-11-25T01:38:56+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Byeongjun Park",
+            "Byung-Hoon Kim",
+            "Hyungjin Chung",
+            "Jong Chul Ye"
+        ],
+        "tldr": "ReDirector introduces Rotary Camera Encoding (RoCE), a novel camera-controlled video retake generation method leveraging camera-conditioned RoPE phase shifts to improve dynamic object localization and static background preservation for variable-length videos with out-of-distribution camera trajectories.",
+        "tldr_zh": "ReDirector 提出了一种新颖的相机控制视频重拍生成方法，即旋转相机编码（RoCE）。该方法利用相机条件下的 RoPE 相位偏移来改善可变长度视频中动态对象的定位和静态背景的保持，并适用于分布外的相机轨迹。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 7,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "In-Video Instructions: Visual Signals as Generative Control",
+        "summary": "Large-scale video generative models have recently demonstrated strong visual capabilities, enabling the prediction of future frames that adhere to the logical and physical cues in the current observation. In this work, we investigate whether such capabilities can be harnessed for controllable image-to-video generation by interpreting visual signals embedded within the frames as instructions, a paradigm we term In-Video Instruction. In contrast to prompt-based control, which provides textual descriptions that are inherently global and coarse, In-Video Instruction encodes user guidance directly into the visual domain through elements such as overlaid text, arrows, or trajectories. This enables explicit, spatial-aware, and unambiguous correspondences between visual subjects and their intended actions by assigning distinct instructions to different objects. Extensive experiments on three state-of-the-art generators, including Veo 3.1, Kling 2.5, and Wan 2.2, show that video models can reliably interpret and execute such visually embedded instructions, particularly in complex multi-object scenarios.",
+        "url": "http://arxiv.org/abs/2511.19401v1",
+        "published_date": "2025-11-24T18:38:45+00:00",
+        "updated_date": "2025-11-24T18:38:45+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Gongfan Fang",
+            "Xinyin Ma",
+            "Xinchao Wang"
+        ],
+        "tldr": "This paper introduces \"In-Video Instruction,\" a method for controllable video generation where visual signals (e.g., arrows, text) within frames act as instructions for guiding the generation, demonstrating its effectiveness on state-of-the-art generators like Veo, Kling, and Wan.",
+        "tldr_zh": "本文介绍了一种名为“In-Video Instruction”的可控视频生成方法，其中帧内的视觉信号（如箭头、文本）充当指导生成的指令，并在Veo、Kling和Wan等最先进的生成器上展示了其有效性。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    }
+]
