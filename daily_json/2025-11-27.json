@@ -1,0 +1,227 @@
+[
+    {
+        "title": "Video Generation Models Are Good Latent Reward Models",
+        "summary": "Reward feedback learning (ReFL) has proven effective for aligning image generation with human preferences. However, its extension to video generation faces significant challenges. Existing video reward models rely on vision-language models designed for pixel-space inputs, confining ReFL optimization to near-complete denoising steps after computationally expensive VAE decoding. This pixel-space approach incurs substantial memory overhead and increased training time, and its late-stage optimization lacks early-stage supervision, refining only visual quality rather than fundamental motion dynamics and structural coherence. In this work, we show that pre-trained video generation models are naturally suited for reward modeling in the noisy latent space, as they are explicitly designed to process noisy latent representations at arbitrary timesteps and inherently preserve temporal information through their sequential modeling capabilities. Accordingly, we propose Process Reward Feedback Learning~(PRFL), a framework that conducts preference optimization entirely in latent space, enabling efficient gradient backpropagation throughout the full denoising chain without VAE decoding. Extensive experiments demonstrate that PRFL significantly improves alignment with human preferences, while achieving substantial reductions in memory consumption and training time compared to RGB ReFL.",
+        "url": "http://arxiv.org/abs/2511.21541v1",
+        "published_date": "2025-11-26T16:14:18+00:00",
+        "updated_date": "2025-11-26T16:14:18+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Xiaoyue Mi",
+            "Wenqing Yu",
+            "Jiesong Lian",
+            "Shibo Jie",
+            "Ruizhe Zhong",
+            "Zijun Liu",
+            "Guozhen Zhang",
+            "Zixiang Zhou",
+            "Zhiyong Xu",
+            "Yuan Zhou",
+            "Qinglin Lu",
+            "Fan Tang"
+        ],
+        "tldr": "This paper introduces Process Reward Feedback Learning (PRFL), a method for aligning video generation with human preferences by performing reward modeling directly in the latent space of video generation models, resulting in improved efficiency and performance compared to pixel-space methods.",
+        "tldr_zh": "本文介绍了过程奖励反馈学习（PRFL），该方法通过直接在视频生成模型的潜在空间中进行奖励建模，来使视频生成与人类偏好对齐，与像素空间方法相比，提高了效率和性能。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "Infinity-RoPE: Action-Controllable Infinite Video Generation Emerges From Autoregressive Self-Rollout",
+        "summary": "Current autoregressive video diffusion models are constrained by three core bottlenecks: (i) the finite temporal horizon imposed by the base model's 3D Rotary Positional Embedding (3D-RoPE), (ii) slow prompt responsiveness in maintaining fine-grained action control during long-form rollouts, and (iii) the inability to realize discontinuous cinematic transitions within a single generation stream. We introduce $\\infty$-RoPE, a unified inference-time framework that addresses all three limitations through three interconnected components: Block-Relativistic RoPE, KV Flush, and RoPE Cut. Block-Relativistic RoPE reformulates temporal encoding as a moving local reference frame, where each newly generated latent block is rotated relative to the base model's maximum frame horizon while earlier blocks are rotated backward to preserve relative temporal geometry. This relativistic formulation eliminates fixed temporal positions, enabling continuous video generation far beyond the base positional limits. To obtain fine-grained action control without re-encoding, KV Flush renews the KV cache by retaining only two latent frames, the global sink and the last generated latent frame, thereby ensuring immediate prompt responsiveness. Finally, RoPE Cut introduces controlled discontinuities in temporal RoPE coordinates, enabling multi-cut scene transitions within a single continuous rollout. Together, these components establish $\\infty$-RoPE as a training-free foundation for infinite-horizon, controllable, and cinematic video diffusion. Comprehensive experiments show that $\\infty$-RoPE consistently surpasses previous autoregressive models in overall VBench scores.",
+        "url": "http://arxiv.org/abs/2511.20649v1",
+        "published_date": "2025-11-25T18:59:46+00:00",
+        "updated_date": "2025-11-25T18:59:46+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Hidir Yesiltepe",
+            "Tuna Han Salih Meral",
+            "Adil Kaan Akan",
+            "Kaan Oktay",
+            "Pinar Yanardag"
+        ],
+        "tldr": "The paper introduces Infinity-RoPE, a training-free method for infinite, controllable video generation using autoregressive diffusion models, addressing limitations in temporal horizon, prompt responsiveness, and scene transitions.",
+        "tldr_zh": "该论文介绍了Infinity-RoPE，一种无需训练的方法，利用自回归扩散模型进行无限、可控的视频生成，解决了时间范围、提示响应和场景转换方面的局限性。",
+        "relevance_score": 9,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "Efficient Training for Human Video Generation with Entropy-Guided Prioritized Progressive Learning",
+        "summary": "Human video generation has advanced rapidly with the development of diffusion models, but the high computational cost and substantial memory consumption associated with training these models on high-resolution, multi-frame data pose significant challenges. In this paper, we propose Entropy-Guided Prioritized Progressive Learning (Ent-Prog), an efficient training framework tailored for diffusion models on human video generation. First, we introduce Conditional Entropy Inflation (CEI) to assess the importance of different model components on the target conditional generation task, enabling prioritized training of the most critical components. Second, we introduce an adaptive progressive schedule that adaptively increases computational complexity during training by measuring the convergence efficiency. Ent-Prog reduces both training time and GPU memory consumption while maintaining model performance. Extensive experiments across three datasets, demonstrate the effectiveness of Ent-Prog, achieving up to 2.2$\\times$ training speedup and 2.4$\\times$ GPU memory reduction without compromising generative performance.",
+        "url": "http://arxiv.org/abs/2511.21136v1",
+        "published_date": "2025-11-26T07:36:37+00:00",
+        "updated_date": "2025-11-26T07:36:37+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Changlin Li",
+            "Jiawei Zhang",
+            "Shuhao Liu",
+            "Sihao Lin",
+            "Zeyi Shi",
+            "Zhihui Li",
+            "Xiaojun Chang"
+        ],
+        "tldr": "This paper introduces Entropy-Guided Prioritized Progressive Learning (Ent-Prog), an efficient training framework for human video generation diffusion models that reduces computational cost and memory consumption while maintaining performance.",
+        "tldr_zh": "本文介绍了一种名为熵引导的优先渐进学习（Ent-Prog）的有效训练框架，该框架用于人体视频生成的扩散模型，可在保持性能的同时降低计算成本和内存消耗。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "CtrlVDiff: Controllable Video Generation via Unified Multimodal Video Diffusion",
+        "summary": "We tackle the dual challenges of video understanding and controllable video generation within a unified diffusion framework. Our key insights are two-fold: geometry-only cues (e.g., depth, edges) are insufficient: they specify layout but under-constrain appearance, materials, and illumination, limiting physically meaningful edits such as relighting or material swaps and often causing temporal drift. Enriching the model with additional graphics-based modalities (intrinsics and semantics) provides complementary constraints that both disambiguate understanding and enable precise, predictable control during generation.\n  However, building a single model that uses many heterogeneous cues introduces two core difficulties. Architecturally, the model must accept any subset of modalities, remain robust to missing inputs, and inject control signals without sacrificing temporal consistency. Data-wise, training demands large-scale, temporally aligned supervision that ties real videos to per-pixel multimodal annotations.\n  We then propose CtrlVDiff, a unified diffusion model trained with a Hybrid Modality Control Strategy (HMCS) that routes and fuses features from depth, normals, segmentation, edges, and graphics-based intrinsics (albedo, roughness, metallic), and re-renders videos from any chosen subset with strong temporal coherence. To enable this, we build MMVideo, a hybrid real-and-synthetic dataset aligned across modalities and captions. Across understanding and generation benchmarks, CtrlVDiff delivers superior controllability and fidelity, enabling layer-wise edits (relighting, material adjustment, object insertion) and surpassing state-of-the-art baselines while remaining robust when some modalities are unavailable.",
+        "url": "http://arxiv.org/abs/2511.21129v1",
+        "published_date": "2025-11-26T07:27:11+00:00",
+        "updated_date": "2025-11-26T07:27:11+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.GR"
+        ],
+        "authors": [
+            "Dianbing Xi",
+            "Jiepeng Wang",
+            "Yuanzhi Liang",
+            "Xi Qiu",
+            "Jialun Liu",
+            "Hao Pan",
+            "Yuchi Huo",
+            "Rui Wang",
+            "Haibin Huang",
+            "Chi Zhang",
+            "Xuelong Li"
+        ],
+        "tldr": "CtrlVDiff introduces a unified video diffusion model that leverages multiple modalities (depth, normals, segmentation, intrinsics) for controllable video generation, achieving superior fidelity and controllability through a novel training strategy and a hybrid real-synthetic dataset.",
+        "tldr_zh": "CtrlVDiff 提出了一个统一的视频扩散模型，该模型利用多种模态（深度、法线、分割、内在属性）进行可控视频生成，通过一种新的训练策略和一个混合的真实-合成数据集，实现了卓越的保真度和可控性。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Layer-Aware Video Composition via Split-then-Merge",
+        "summary": "We present Split-then-Merge (StM), a novel framework designed to enhance control in generative video composition and address its data scarcity problem. Unlike conventional methods relying on annotated datasets or handcrafted rules, StM splits a large corpus of unlabeled videos into dynamic foreground and background layers, then self-composes them to learn how dynamic subjects interact with diverse scenes. This process enables the model to learn the complex compositional dynamics required for realistic video generation. StM introduces a novel transformation-aware training pipeline that utilizes a multi-layer fusion and augmentation to achieve affordance-aware composition, alongside an identity-preservation loss that maintains foreground fidelity during blending. Experiments show StM outperforms SoTA methods in both quantitative benchmarks and in humans/VLLM-based qualitative evaluations. More details are available at our project page: https://split-then-merge.github.io",
+        "url": "http://arxiv.org/abs/2511.20809v1",
+        "published_date": "2025-11-25T19:53:15+00:00",
+        "updated_date": "2025-11-25T19:53:15+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Ozgur Kara",
+            "Yujia Chen",
+            "Ming-Hsuan Yang",
+            "James M. Rehg",
+            "Wen-Sheng Chu",
+            "Du Tran"
+        ],
+        "tldr": "The paper introduces Split-then-Merge (StM), a novel self-supervised video composition framework that learns compositional dynamics by splitting unlabeled videos into foreground and background layers and then recomposing them. It outperforms state-of-the-art methods in video generation quality.",
+        "tldr_zh": "该论文介绍了一种名为Split-then-Merge (StM) 的新型自监督视频合成框架，通过将未标记的视频分割成前景和背景层，然后重新合成，来学习合成动态。它在视频生成质量方面优于最先进的方法。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "MotionV2V: Editing Motion in a Video",
+        "summary": "While generative video models have achieved remarkable fidelity and consistency, applying these capabilities to video editing remains a complex challenge. Recent research has explored motion controllability as a means to enhance text-to-video generation or image animation; however, we identify precise motion control as a promising yet under-explored paradigm for editing existing videos. In this work, we propose modifying video motion by directly editing sparse trajectories extracted from the input. We term the deviation between input and output trajectories a \"motion edit\" and demonstrate that this representation, when coupled with a generative backbone, enables powerful video editing capabilities. To achieve this, we introduce a pipeline for generating \"motion counterfactuals\", video pairs that share identical content but distinct motion, and we fine-tune a motion-conditioned video diffusion architecture on this dataset. Our approach allows for edits that start at any timestamp and propagate naturally. In a four-way head-to-head user study, our model achieves over 65 percent preference against prior work. Please see our project page: https://ryanndagreat.github.io/MotionV2V",
+        "url": "http://arxiv.org/abs/2511.20640v1",
+        "published_date": "2025-11-25T18:57:25+00:00",
+        "updated_date": "2025-11-25T18:57:25+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.GR",
+            "cs.LG"
+        ],
+        "authors": [
+            "Ryan Burgert",
+            "Charles Herrmann",
+            "Forrester Cole",
+            "Michael S Ryoo",
+            "Neal Wadhwa",
+            "Andrey Voynov",
+            "Nataniel Ruiz"
+        ],
+        "tldr": "This paper introduces MotionV2V, a method for editing video motion by directly manipulating sparse trajectories extracted from the video, using a motion-conditioned diffusion model trained on motion counterfactuals.",
+        "tldr_zh": "本文介绍了一种名为 MotionV2V 的方法，通过直接操纵从视频中提取的稀疏轨迹来编辑视频运动，该方法使用在运动反事实数据上训练的运动条件扩散模型。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "MobileI2V: Fast and High-Resolution Image-to-Video on Mobile Devices",
+        "summary": "Recently, video generation has witnessed rapid advancements, drawing increasing attention to image-to-video (I2V) synthesis on mobile devices. However, the substantial computational complexity and slow generation speed of diffusion models pose significant challenges for real-time, high-resolution video generation on resource-constrained mobile devices. In this work, we propose MobileI2V, a 270M lightweight diffusion model for real-time image-to-video generation on mobile devices. The core lies in: (1) We analyzed the performance of linear attention modules and softmax attention modules on mobile devices, and proposed a linear hybrid architecture denoiser that balances generation efficiency and quality. (2) We design a time-step distillation strategy that compresses the I2V sampling steps from more than 20 to only two without significant quality loss, resulting in a 10-fold increase in generation speed. (3) We apply mobile-specific attention optimizations that yield a 2-fold speed-up for attention operations during on-device inference. MobileI2V enables, for the first time, fast 720p image-to-video generation on mobile devices, with quality comparable to existing models. Under one-step conditions, the generation speed of each frame of 720p video is less than 100 ms. Our code is available at: https://github.com/hustvl/MobileI2V.",
+        "url": "http://arxiv.org/abs/2511.21475v1",
+        "published_date": "2025-11-26T15:09:02+00:00",
+        "updated_date": "2025-11-26T15:09:02+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Shuai Zhang",
+            "Bao Tang",
+            "Siyuan Yu",
+            "Yueting Zhu",
+            "Jingfeng Yao",
+            "Ya Zou",
+            "Shanglin Yuan",
+            "Li Yu",
+            "Wenyu Liu",
+            "Xinggang Wang"
+        ],
+        "tldr": "MobileI2V is a lightweight diffusion model enabling real-time, high-resolution (720p) image-to-video generation on mobile devices, achieving fast inference speeds through a linear hybrid architecture, time-step distillation, and mobile-specific attention optimizations.",
+        "tldr_zh": "MobileI2V是一个轻量级的扩散模型，可以在移动设备上实现实时、高分辨率 (720p) 的图像到视频生成，通过线性混合架构、时间步长蒸馏和移动设备特定的注意力优化，实现了快速的推理速度。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    },
+    {
+        "title": "LongVT: Incentivizing \"Thinking with Long Videos\" via Native Tool Calling",
+        "summary": "Large multimodal models (LMMs) have shown great potential for video reasoning with textual Chain-of-Thought. However, they remain vulnerable to hallucinations, especially when processing long-form videos where evidence is sparse and temporally dispersed. Inspired by how humans comprehend long videos - by first skimming globally and then examining relevant clips for details - we introduce LongVT, an end-to-end agentic framework that enables \"Thinking with Long Videos\" via interleaved Multimodal Chain-of-Tool-Thought. Specifically, we exploit LMMs' inherent temporal grounding ability as a native video cropping tool to zoom in on a specific video clip and resample finer-grained video frames. This global-to-local reasoning loop continues until answers are grounded in retrieved visual evidence. Given the scarcity of fine-grained question-answering (QA) data for the long video reasoning task, we curate and will release a data suite named VideoSIAH to facilitate both training and evaluation. Specifically, our training dataset consists of 247.9K samples for tool-integrated cold-start supervised fine-tuning, 1.6K samples for agentic reinforcement learning, and 15.4K samples for agentic reinforcement fine-tuning, respectively. Our evaluation benchmark consists of 1,280 QA pairs that are carefully curated through a semi-automatic data pipeline with human-in-the-loop validation. With a meticulously designed three-stage training strategy and extensive empirical validation, LongVT consistently outperforms existing strong baselines across four challenging long-video understanding and reasoning benchmarks. Our codes, data, and model checkpoints are publicly available at https://github.com/EvolvingLMMs-Lab/LongVT .",
+        "url": "http://arxiv.org/abs/2511.20785v1",
+        "published_date": "2025-11-25T19:22:48+00:00",
+        "updated_date": "2025-11-25T19:22:48+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Zuhao Yang",
+            "Sudong Wang",
+            "Kaichen Zhang",
+            "Keming Wu",
+            "Sicong Leng",
+            "Yifan Zhang",
+            "Chengwei Qin",
+            "Shijian Lu",
+            "Xingxuan Li",
+            "Lidong Bing"
+        ],
+        "tldr": "The paper introduces LongVT, an agentic framework for long video reasoning that utilizes LMMs' temporal grounding ability as a native video cropping tool, along with a new dataset VideoSIAH, demonstrating superior performance on long-video understanding benchmarks.",
+        "tldr_zh": "该论文介绍了 LongVT，一个用于长视频推理的 agentic 框架，它利用 LMM 的时间定位能力作为本地视频裁剪工具，并提出了一个新的数据集 VideoSIAH，在长视频理解基准测试中表现出卓越的性能。",
+        "relevance_score": 3,
+        "novelty_claim_score": 7,
+        "clarity_score": 8,
+        "potential_impact_score": 6,
+        "overall_priority_score": 5
+    }
+]
