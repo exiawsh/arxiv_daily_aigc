@@ -1,0 +1,160 @@
+[
+    {
+        "title": "BlockVid: Block Diffusion for High-Quality and Consistent Minute-Long Video Generation",
+        "summary": "Generating minute-long videos is a critical step toward developing world models, providing a foundation for realistic extended scenes and advanced AI simulators. The emerging semi-autoregressive (block diffusion) paradigm integrates the strengths of diffusion and autoregressive models, enabling arbitrary-length video generation and improving inference efficiency through KV caching and parallel sampling. However, it yet faces two enduring challenges: (i) KV-cache-induced long-horizon error accumulation, and (ii) the lack of fine-grained long-video benchmarks and coherence-aware metrics. To overcome these limitations, we propose BlockVid, a novel block diffusion framework equipped with semantic-aware sparse KV cache, an effective training strategy called Block Forcing, and dedicated chunk-wise noise scheduling and shuffling to reduce error propagation and enhance temporal consistency. We further introduce LV-Bench, a fine-grained benchmark for minute-long videos, complete with new metrics evaluating long-range coherence. Extensive experiments on VBench and LV-Bench demonstrate that BlockVid consistently outperforms existing methods in generating high-quality, coherent minute-long videos. In particular, it achieves a 22.2% improvement on VDE Subject and a 19.4% improvement on VDE Clarity in LV-Bench over the state of the art approaches. Project website: https://ziplab.co/BlockVid. Inferix (Code): https://github.com/alibaba-damo-academy/Inferix.",
+        "url": "http://arxiv.org/abs/2511.22973v1",
+        "published_date": "2025-11-28T08:25:59+00:00",
+        "updated_date": "2025-11-28T08:25:59+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Zeyu Zhang",
+            "Shuning Chang",
+            "Yuanyu He",
+            "Yizeng Han",
+            "Jiasheng Tang",
+            "Fan Wang",
+            "Bohan Zhuang"
+        ],
+        "tldr": "The paper introduces BlockVid, a block diffusion framework for generating high-quality, minute-long videos, addressing KV-cache error accumulation and the lack of suitable benchmarks with a novel training strategy and evaluation metric (LV-Bench).",
+        "tldr_zh": "该论文介绍了BlockVid，一个用于生成高质量分钟级视频的块扩散框架，通过一种新颖的训练策略和评估指标（LV-Bench）解决了KV缓存误差累积和缺乏合适的基准的问题。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "Vision Bridge Transformer at Scale",
+        "summary": "We introduce Vision Bridge Transformer (ViBT), a large-scale instantiation of Brownian Bridge Models designed for conditional generation. Unlike traditional diffusion models that transform noise into data, Bridge Models directly model the trajectory between inputs and outputs, creating an efficient data-to-data translation paradigm. By scaling these models to 20B and 1.3B parameters, we demonstrate their effectiveness for image and video translation tasks. To support this scale, we adopt a Transformer architecture and propose a variance-stabilized velocity-matching objective for robust training. Together, these advances highlight the power of scaling Bridge Models for instruction-based image editing and complex video translation.",
+        "url": "http://arxiv.org/abs/2511.23199v1",
+        "published_date": "2025-11-28T14:03:39+00:00",
+        "updated_date": "2025-11-28T14:03:39+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Zhenxiong Tan",
+            "Zeqing Wang",
+            "Xingyi Yang",
+            "Songhua Liu",
+            "Xinchao Wang"
+        ],
+        "tldr": "The paper introduces Vision Bridge Transformer (ViBT), a large-scale (up to 20B parameters) Brownian Bridge Model for conditional image and video translation, demonstrating its effectiveness through instruction-based image editing and video translation tasks.",
+        "tldr_zh": "该论文介绍了视觉桥梁Transformer (ViBT)，一个用于条件图像和视频翻译的大规模(高达200亿参数)布朗桥模型。该模型通过基于指令的图像编辑和视频翻译任务展示了其有效性。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "DualCamCtrl: Dual-Branch Diffusion Model for Geometry-Aware Camera-Controlled Video Generation",
+        "summary": "This paper presents DualCamCtrl, a novel end-to-end diffusion model for camera-controlled video generation. Recent works have advanced this field by representing camera poses as ray-based conditions, yet they often lack sufficient scene understanding and geometric awareness. DualCamCtrl specifically targets this limitation by introducing a dual-branch framework that mutually generates camera-consistent RGB and depth sequences. To harmonize these two modalities, we further propose the Semantic Guided Mutual Alignment (SIGMA) mechanism, which performs RGB-depth fusion in a semantics-guided and mutually reinforced manner. These designs collectively enable DualCamCtrl to better disentangle appearance and geometry modeling, generating videos that more faithfully adhere to the specified camera trajectories. Additionally, we analyze and reveal the distinct influence of depth and camera poses across denoising stages and further demonstrate that early and late stages play complementary roles in forming global structure and refining local details. Extensive experiments demonstrate that DualCamCtrl achieves more consistent camera-controlled video generation, with over 40\\% reduction in camera motion errors compared with prior methods. Our project page: https://soyouthinkyoucantell.github.io/dualcamctrl\\-page/",
+        "url": "http://arxiv.org/abs/2511.23127v1",
+        "published_date": "2025-11-28T12:19:57+00:00",
+        "updated_date": "2025-11-28T12:19:57+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Hongfei Zhang",
+            "Kanghao Chen",
+            "Zixin Zhang",
+            "Harold Haodong Chen",
+            "Yuanhuiyi Lyu",
+            "Yuqi Zhang",
+            "Shuai Yang",
+            "Kun Zhou",
+            "Yingcong Chen"
+        ],
+        "tldr": "DualCamCtrl introduces a dual-branch diffusion model that generates camera-controlled videos by jointly generating RGB and depth sequences, using a Semantic Guided Mutual Alignment mechanism to improve geometric awareness and camera consistency.",
+        "tldr_zh": "DualCamCtrl 提出了一个双分支扩散模型，通过联合生成 RGB 和深度序列来生成相机控制的视频，并使用语义引导互对齐机制来提高几何感知和相机一致性。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "McSc: Motion-Corrective Preference Alignment for Video Generation with Self-Critic Hierarchical Reasoning",
+        "summary": "Text-to-video (T2V) generation has achieved remarkable progress in producing high-quality videos aligned with textual prompts. However, aligning synthesized videos with nuanced human preference remains challenging due to the subjective and multifaceted nature of human judgment. Existing video preference alignment methods rely on costly human annotations or utilize proxy metrics to predict preference, which lacks the understanding of human preference logic. Moreover, they usually directly align T2V models with the overall preference distribution, ignoring potential conflict dimensions like motion dynamics and visual quality, which may bias models towards low-motion content. To address these issues, we present Motion-corrective alignment with Self-critic hierarchical Reasoning (McSc), a three-stage reinforcement learning framework for robust preference modeling and alignment. Firstly, Self-critic Dimensional Reasoning (ScDR) trains a generative reward model (RM) to decompose preferences into per-dimension assessments, using self-critic reasoning chains for reliable learning. Secondly, to achieve holistic video comparison, we introduce Hierarchical Comparative Reasoning (HCR) for structural multi-dimensional reasoning with hierarchical reward supervision. Finally, using RM-preferred videos, we propose Motion-corrective Direct Preference Optimization (McDPO) to optimize T2V models, while dynamically re-weighting alignment objective to mitigate bias towards low-motion content. Experiments show that McSc achieves superior performance in human preference alignment and generates videos with high-motion dynamic.",
+        "url": "http://arxiv.org/abs/2511.22974v1",
+        "published_date": "2025-11-28T08:27:53+00:00",
+        "updated_date": "2025-11-28T08:27:53+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Qiushi Yang",
+            "Yingjie Chen",
+            "Yuan Yao",
+            "Yifang Men",
+            "Huaizhuo Liu",
+            "Miaomiao Cui"
+        ],
+        "tldr": "This paper introduces McSc, a reinforcement learning framework for text-to-video generation that aligns videos with human preferences by decomposing preferences into dimensions, using hierarchical reasoning, and mitigating low-motion bias.",
+        "tldr_zh": "本文介绍了一种名为McSc的文本到视频生成强化学习框架，该框架通过将偏好分解为多个维度、使用分层推理并减轻低运动偏差，使视频与人类偏好对齐。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Captain Safari: A World Engine",
+        "summary": "World engines aim to synthesize long, 3D-consistent videos that support interactive exploration of a scene under user-controlled camera motion. However, existing systems struggle under aggressive 6-DoF trajectories and complex outdoor layouts: they lose long-range geometric coherence, deviate from the target path, or collapse into overly conservative motion. To this end, we introduce Captain Safari, a pose-conditioned world engine that generates videos by retrieving from a persistent world memory. Given a camera path, our method maintains a dynamic local memory and uses a retriever to fetch pose-aligned world tokens, which then condition video generation along the trajectory. This design enables the model to maintain stable 3D structure while accurately executing challenging camera maneuvers. To evaluate this setting, we curate OpenSafari, a new in-the-wild FPV dataset containing high-dynamic drone videos with verified camera trajectories, constructed through a multi-stage geometric and kinematic validation pipeline. Across video quality, 3D consistency, and trajectory following, Captain Safari substantially outperforms state-of-the-art camera-controlled generators. It reduces MEt3R from 0.3703 to 0.3690, improves AUC@30 from 0.181 to 0.200, and yields substantially lower FVD than all camera-controlled baselines. More importantly, in a 50-participant, 5-way human study where annotators select the best result among five anonymized models, 67.6% of preferences favor our method across all axes. Our results demonstrate that pose-conditioned world memory is a powerful mechanism for long-horizon, controllable video generation and provide OpenSafari as a challenging new benchmark for future world-engine research.",
+        "url": "http://arxiv.org/abs/2511.22815v1",
+        "published_date": "2025-11-28T00:27:46+00:00",
+        "updated_date": "2025-11-28T00:27:46+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yu-Cheng Chou",
+            "Xingrui Wang",
+            "Yitong Li",
+            "Jiahao Wang",
+            "Hanting Liu",
+            "Cihang Xie",
+            "Alan Yuille",
+            "Junfei Xiao"
+        ],
+        "tldr": "Captain Safari introduces a pose-conditioned world engine for generating long, 3D-consistent videos with interactive camera control, leveraging a world memory and achieving state-of-the-art performance on a new challenging dataset, OpenSafari.",
+        "tldr_zh": "Captain Safari 提出了一种姿势条件的世界引擎，用于生成具有交互式相机控制的、长而 3D 一致的视频，该引擎利用世界记忆并在一个新的具有挑战性的数据集 OpenSafari 上实现了最先进的性能。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "One-to-All Animation: Alignment-Free Character Animation and Image Pose Transfe",
+        "summary": "Recent advances in diffusion models have greatly improved pose-driven character animation. However, existing methods are limited to spatially aligned reference-pose pairs with matched skeletal structures. Handling reference-pose misalignment remains unsolved. To address this, we present One-to-All Animation, a unified framework for high-fidelity character animation and image pose transfer for references with arbitrary layouts. First, to handle spatially misaligned reference, we reformulate training as a self-supervised outpainting task that transforms diverse-layout reference into a unified occluded-input format. Second, to process partially visible reference, we design a reference extractor for comprehensive identity feature extraction. Further, we integrate hybrid reference fusion attention to handle varying resolutions and dynamic sequence lengths. Finally, from the perspective of generation quality, we introduce identity-robust pose control that decouples appearance from skeletal structure to mitigate pose overfitting, and a token replace strategy for coherent long-video generation. Extensive experiments show that our method outperforms existing approaches. The code and model will be available at https://github.com/ssj9596/One-to-All-Animation.",
+        "url": "http://arxiv.org/abs/2511.22940v1",
+        "published_date": "2025-11-28T07:30:10+00:00",
+        "updated_date": "2025-11-28T07:30:10+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Shijun Shi",
+            "Jing Xu",
+            "Zhihang Li",
+            "Chunli Peng",
+            "Xiaoda Yang",
+            "Lijing Lu",
+            "Kai Hu",
+            "Jiangning Zhang"
+        ],
+        "tldr": "The paper introduces 'One-to-All Animation,' a diffusion-model-based framework for pose-driven character animation and image pose transfer that handles misaligned and partially visible reference poses by reformulating training as a self-supervised outpainting task and using a reference extractor. It improves long video generation through identity-robust pose control and token replacement.",
+        "tldr_zh": "该论文提出了一个名为“One-to-All Animation”的框架，基于扩散模型，用于姿势驱动的角色动画和图像姿势迁移，通过将训练重新定义为自监督的图像修复任务，并使用参考提取器，解决了未对齐和部分可见的参考姿势问题。并通过身份鲁棒的姿势控制和令牌替换改进了长视频生成。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]

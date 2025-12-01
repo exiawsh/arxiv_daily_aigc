@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - November 25, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - November 29, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>November 25, 2025</p>
+            <p>November 29, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,14 +215,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Growing with the Generator: Self-paced GRPO for Video Generation</h2>
+            <h2 class="paper-title">BlockVid: Block Diffusion for High-Quality and Consistent Minute-Long Video Generation</h2>
             
-            <p class="paper-summary">Group Relative Policy Optimization (GRPO) has emerged as a powerful reinforcement learning paradigm for post-training video generation models. However, existing GRPO pipelines rely on static, fixed-capacity reward models whose evaluation behavior is frozen during training. Such rigid rewards introduce distributional bias, saturate quickly as the generator improves, and ultimately limit the stability and effectiveness of reinforcement-based alignment. We propose Self-Paced GRPO, a competence-aware GRPO framework in which reward feedback co-evolves with the generator. Our method introduces a progressive reward mechanism that automatically shifts its emphasis from coarse visual fidelity to temporal coherence and fine-grained text-video semantic alignment as generation quality increases. This self-paced curriculum alleviates reward-policy mismatch, mitigates reward exploitation, and yields more stable optimization. Experiments on VBench across multiple video generation backbones demonstrate consistent improvements in both visual quality and semantic alignment over GRPO baselines with static rewards, validating the effectiveness and generality of Self-Paced GRPO.</p>
+            <p class="paper-summary">Generating minute-long videos is a critical step toward developing world models, providing a foundation for realistic extended scenes and advanced AI simulators. The emerging semi-autoregressive (block diffusion) paradigm integrates the strengths of diffusion and autoregressive models, enabling arbitrary-length video generation and improving inference efficiency through KV caching and parallel sampling. However, it yet faces two enduring challenges: (i) KV-cache-induced long-horizon error accumulation, and (ii) the lack of fine-grained long-video benchmarks and coherence-aware metrics. To overcome these limitations, we propose BlockVid, a novel block diffusion framework equipped with semantic-aware sparse KV cache, an effective training strategy called Block Forcing, and dedicated chunk-wise noise scheduling and shuffling to reduce error propagation and enhance temporal consistency. We further introduce LV-Bench, a fine-grained benchmark for minute-long videos, complete with new metrics evaluating long-range coherence. Extensive experiments on VBench and LV-Bench demonstrate that BlockVid consistently outperforms existing methods in generating high-quality, coherent minute-long videos. In particular, it achieves a 22.2% improvement on VDE Subject and a 19.4% improvement on VDE Clarity in LV-Bench over the state of the art approaches. Project website: https://ziplab.co/BlockVid. Inferix (Code): https://github.com/alibaba-damo-academy/Inferix.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces Self-Paced GRPO, a reinforcement learning framework for video generation where the reward model adapts alongside the generator, leading to more stable and effective optimization and improved video quality and semantic alignment.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces BlockVid, a block diffusion framework for generating high-quality, minute-long videos, addressing KV-cache error accumulation and the lack of suitable benchmarks with a novel training strategy and evaluation metric (LV-Bench).</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了 Self-Paced GRPO，一种用于视频生成的强化学习框架，其中奖励模型与生成器同步适应，从而实现更稳定有效的优化，并提高视频质量和语义对齐。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了BlockVid，一个用于生成高质量分钟级视频的块扩散框架，通过一种新颖的训练策略和评估指标（LV-Bench）解决了KV缓存误差累积和缺乏合适的基准的问题。</p>
             
 
             
@@ -256,8 +256,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
             </div>
@@ -286,18 +286,18 @@
                     
                 
                     
-                        <i class="far fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2511.19356v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2511.22973v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Rui Li, Yuanzhi Liang, Ziqi Ni, Haibing Huang, Chi Zhang, Xuelong Li</p>
+            <p class="paper-authors">Authors: Zeyu Zhang, Shuning Chang, Yuanyu He, Yizeng Han, Jiasheng Tang, Fan Wang, Bohan Zhuang</p>
             
         </motion.div>
         
@@ -309,14 +309,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">SyncMV4D: Synchronized Multi-view Joint Diffusion of Appearance and Motion for Hand-Object Interaction Synthesis</h2>
+            <h2 class="paper-title">Vision Bridge Transformer at Scale</h2>
             
-            <p class="paper-summary">Hand-Object Interaction (HOI) generation plays a critical role in advancing applications across animation and robotics. Current video-based methods are predominantly single-view, which impedes comprehensive 3D geometry perception and often results in geometric distortions or unrealistic motion patterns. While 3D HOI approaches can generate dynamically plausible motions, their dependence on high-quality 3D data captured in controlled laboratory settings severely limits their generalization to real-world scenarios. To overcome these limitations, we introduce SyncMV4D, the first model that jointly generates synchronized multi-view HOI videos and 4D motions by unifying visual prior, motion dynamics, and multi-view geometry. Our framework features two core innovations: (1) a Multi-view Joint Diffusion (MJD) model that co-generates HOI videos and intermediate motions, and (2) a Diffusion Points Aligner (DPA) that refines the coarse intermediate motion into globally aligned 4D metric point tracks. To tightly couple 2D appearance with 4D dynamics, we establish a closed-loop, mutually enhancing cycle. During the diffusion denoising process, the generated video conditions the refinement of the 4D motion, while the aligned 4D point tracks are reprojected to guide next-step joint generation. Experimentally, our method demonstrates superior performance to state-of-the-art alternatives in visual realism, motion plausibility, and multi-view consistency.</p>
+            <p class="paper-summary">We introduce Vision Bridge Transformer (ViBT), a large-scale instantiation of Brownian Bridge Models designed for conditional generation. Unlike traditional diffusion models that transform noise into data, Bridge Models directly model the trajectory between inputs and outputs, creating an efficient data-to-data translation paradigm. By scaling these models to 20B and 1.3B parameters, we demonstrate their effectiveness for image and video translation tasks. To support this scale, we adopt a Transformer architecture and propose a variance-stabilized velocity-matching objective for robust training. Together, these advances highlight the power of scaling Bridge Models for instruction-based image editing and complex video translation.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces SyncMV4D, a novel diffusion-based approach for generating synchronized multi-view hand-object interaction (HOI) videos and 4D motions, addressing limitations of single-view methods and reliance on controlled lab settings in existing 3D HOI approaches.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Vision Bridge Transformer (ViBT), a large-scale (up to 20B parameters) Brownian Bridge Model for conditional image and video translation, demonstrating its effectiveness through instruction-based image editing and video translation tasks.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了 SyncMV4D，一种新颖的基于扩散的方法，用于生成同步的多视角手-物体交互 (HOI) 视频和 4D 运动，解决了单视角方法的局限性以及现有 3D HOI 方法对受控实验室环境的依赖。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了视觉桥梁Transformer (ViBT)，一个用于条件图像和视频翻译的大规模(高达200亿参数)布朗桥模型。该模型通过基于指令的图像编辑和视频翻译任务展示了其有效性。</p>
             
 
             
@@ -334,16 +334,16 @@
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Clarity:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
@@ -387,11 +387,11 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2511.19319v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2511.23199v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Lingwei Dang, Zonghan Li, Juntong Li, Hongwen Zhang, Liang An, Yebin Liu, Qingyao Wu</p>
+            <p class="paper-authors">Authors: Zhenxiong Tan, Zeqing Wang, Xingyi Yang, Songhua Liu, Xinchao Wang</p>
             
         </motion.div>
         
@@ -403,14 +403,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Learning Plug-and-play Memory for Guiding Video Diffusion Models</h2>
+            <h2 class="paper-title">DualCamCtrl: Dual-Branch Diffusion Model for Geometry-Aware Camera-Controlled Video Generation</h2>
             
-            <p class="paper-summary">Diffusion Transformer(DiT) based video generation models have recently achieved impressive visual quality and temporal coherence, but they still frequently violate basic physical laws and commonsense dynamics, revealing a lack of explicit world knowledge. In this work, we explore how to equip them with a plug-and-play memory that injects useful world knowledge. Motivated by in-context memory in Transformer-based LLMs, we conduct empirical studies to show that DiT can be steered via interventions on its hidden states, and simple low-pass and high-pass filters in the embedding space naturally disentangle low-level appearance and high-level physical/semantic cues, enabling targeted guidance. Building on these observations, we propose a learnable memory encoder DiT-Mem, composed of stacked 3D CNNs, low-/high-pass filters, and self-attention layers. The encoder maps reference videos into a compact set of memory tokens, which are concatenated as the memory within the DiT self-attention layers. During training, we keep the diffusion backbone frozen, and only optimize the memory encoder. It yields a rather efficient training process on few training parameters (150M) and 10K data samples, and enables plug-and-play usage at inference time. Extensive experiments on state-of-the-art models demonstrate the effectiveness of our method in improving physical rule following and video fidelity. Our code and data are publicly released here: https://thrcle421.github.io/DiT-Mem-Web/.</p>
+            <p class="paper-summary">This paper presents DualCamCtrl, a novel end-to-end diffusion model for camera-controlled video generation. Recent works have advanced this field by representing camera poses as ray-based conditions, yet they often lack sufficient scene understanding and geometric awareness. DualCamCtrl specifically targets this limitation by introducing a dual-branch framework that mutually generates camera-consistent RGB and depth sequences. To harmonize these two modalities, we further propose the Semantic Guided Mutual Alignment (SIGMA) mechanism, which performs RGB-depth fusion in a semantics-guided and mutually reinforced manner. These designs collectively enable DualCamCtrl to better disentangle appearance and geometry modeling, generating videos that more faithfully adhere to the specified camera trajectories. Additionally, we analyze and reveal the distinct influence of depth and camera poses across denoising stages and further demonstrate that early and late stages play complementary roles in forming global structure and refining local details. Extensive experiments demonstrate that DualCamCtrl achieves more consistent camera-controlled video generation, with over 40\% reduction in camera motion errors compared with prior methods. Our project page: https://soyouthinkyoucantell.github.io/dualcamctrl\-page/</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces DiT-Mem, a plug-and-play memory module for Diffusion Transformer video generation models that enhances physical rule following and video fidelity by injecting world knowledge through a learnable memory encoder.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: DualCamCtrl introduces a dual-branch diffusion model that generates camera-controlled videos by jointly generating RGB and depth sequences, using a Semantic Guided Mutual Alignment mechanism to improve geometric awareness and camera consistency.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了一种名为DiT-Mem的即插即用记忆模块，用于扩散Transformer视频生成模型。通过可学习的记忆编码器注入世界知识，从而增强物理规则的遵循和视频的逼真度。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: DualCamCtrl 提出了一个双分支扩散模型，通过联合生成 RGB 和深度序列来生成相机控制的视频，并使用语义引导互对齐机制来提高几何感知和相机一致性。</p>
             
 
             
@@ -481,11 +481,11 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2511.19229v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2511.23127v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Selena Song, Ziming Xu, Zijun Zhang, Kun Zhou, Jiaxian Guo, Lianhui Qin, Biwei Huang</p>
+            <p class="paper-authors">Authors: Hongfei Zhang, Kanghao Chen, Zixin Zhang, Harold Haodong Chen, Yuanhuiyi Lyu, Yuqi Zhang, Shuai Yang, Kun Zhou, Yingcong Chen</p>
             
         </motion.div>
         
@@ -497,14 +497,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Beyond Reward Margin: Rethinking and Resolving Likelihood Displacement in Diffusion Models via Video Generation</h2>
+            <h2 class="paper-title">McSc: Motion-Corrective Preference Alignment for Video Generation with Self-Critic Hierarchical Reasoning</h2>
             
-            <p class="paper-summary">Direct Preference Optimization (DPO) has shown promising results in aligning generative outputs with human preferences by distinguishing between chosen and rejected samples. However, a critical limitation of DPO is likelihood displacement, where the probabilities of chosen samples paradoxically decrease during training, undermining the quality of generation. Although this issue has been investigated in autoregressive models, its impact within diffusion-based models remains largely unexplored. This gap leads to suboptimal performance in tasks involving video generation. To address this, we conduct a formal analysis of DPO loss through updating policy within the diffusion framework, which describes how the updating of specific training samples influences the model's predictions on other samples. Using this tool, we identify two main failure modes: (1) Optimization Conflict, which arises from small reward margins between chosen and rejected samples, and (2) Suboptimal Maximization, caused by large reward margins. Informed by these insights, we introduce a novel solution named Policy-Guided DPO (PG-DPO), combining Adaptive Rejection Scaling (ARS) and Implicit Preference Regularization (IPR) to effectively mitigate likelihood displacement. Experiments show that PG-DPO outperforms existing methods in both quantitative metrics and qualitative evaluations, offering a robust solution for improving preference alignment in video generation tasks.</p>
+            <p class="paper-summary">Text-to-video (T2V) generation has achieved remarkable progress in producing high-quality videos aligned with textual prompts. However, aligning synthesized videos with nuanced human preference remains challenging due to the subjective and multifaceted nature of human judgment. Existing video preference alignment methods rely on costly human annotations or utilize proxy metrics to predict preference, which lacks the understanding of human preference logic. Moreover, they usually directly align T2V models with the overall preference distribution, ignoring potential conflict dimensions like motion dynamics and visual quality, which may bias models towards low-motion content. To address these issues, we present Motion-corrective alignment with Self-critic hierarchical Reasoning (McSc), a three-stage reinforcement learning framework for robust preference modeling and alignment. Firstly, Self-critic Dimensional Reasoning (ScDR) trains a generative reward model (RM) to decompose preferences into per-dimension assessments, using self-critic reasoning chains for reliable learning. Secondly, to achieve holistic video comparison, we introduce Hierarchical Comparative Reasoning (HCR) for structural multi-dimensional reasoning with hierarchical reward supervision. Finally, using RM-preferred videos, we propose Motion-corrective Direct Preference Optimization (McDPO) to optimize T2V models, while dynamically re-weighting alignment objective to mitigate bias towards low-motion content. Experiments show that McSc achieves superior performance in human preference alignment and generates videos with high-motion dynamic.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper addresses the likelihood displacement issue in DPO-based diffusion models for video generation, proposing a Policy-Guided DPO (PG-DPO) method that outperforms existing approaches.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces McSc, a reinforcement learning framework for text-to-video generation that aligns videos with human preferences by decomposing preferences into dimensions, using hierarchical reasoning, and mitigating low-motion bias.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文解决了基于DPO的扩散模型在视频生成中的可能性位移问题，提出了一种策略引导的DPO（PG-DPO）方法，该方法优于现有方法。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种名为McSc的文本到视频生成强化学习框架，该框架通过将偏好分解为多个维度、使用分层推理并减轻低运动偏差，使视频与人类偏好对齐。</p>
             
 
             
@@ -514,8 +514,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -530,16 +530,16 @@
                 <div class="rating-item">
                     <span class="rating-label">Clarity:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
             </div>
@@ -575,11 +575,11 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2511.19049v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2511.22974v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Ruojun Xu, Yu Kai, Xuhua Ren, Jiaxiang Cheng, Bing Ma, Tianxiang Zheng, Qinhlin Lu</p>
+            <p class="paper-authors">Authors: Qiushi Yang, Yingjie Chen, Yuan Yao, Yifang Men, Huaizhuo Liu, Miaomiao Cui</p>
             
         </motion.div>
         
@@ -591,14 +591,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">View-Consistent Diffusion Representations for 3D-Consistent Video Generation</h2>
+            <h2 class="paper-title">Captain Safari: A World Engine</h2>
             
-            <p class="paper-summary">Video generation models have made significant progress in generating realistic content, enabling applications in simulation, gaming, and film making. However, current generated videos still contain visual artifacts arising from 3D inconsistencies, e.g., objects and structures deforming under changes in camera pose, which can undermine user experience and simulation fidelity. Motivated by recent findings on representation alignment for diffusion models, we hypothesize that improving the multi-view consistency of video diffusion representations will yield more 3D-consistent video generation. Through detailed analysis on multiple recent camera-controlled video diffusion models we reveal strong correlations between 3D-consistent representations and videos. We also propose ViCoDR, a new approach for improving the 3D consistency of video models by learning multi-view consistent diffusion representations. We evaluate ViCoDR on camera controlled image-to-video, text-to-video, and multi-view generation models, demonstrating significant improvements in the 3D consistency of the generated videos. Project page: https://danier97.github.io/ViCoDR.</p>
+            <p class="paper-summary">World engines aim to synthesize long, 3D-consistent videos that support interactive exploration of a scene under user-controlled camera motion. However, existing systems struggle under aggressive 6-DoF trajectories and complex outdoor layouts: they lose long-range geometric coherence, deviate from the target path, or collapse into overly conservative motion. To this end, we introduce Captain Safari, a pose-conditioned world engine that generates videos by retrieving from a persistent world memory. Given a camera path, our method maintains a dynamic local memory and uses a retriever to fetch pose-aligned world tokens, which then condition video generation along the trajectory. This design enables the model to maintain stable 3D structure while accurately executing challenging camera maneuvers. To evaluate this setting, we curate OpenSafari, a new in-the-wild FPV dataset containing high-dynamic drone videos with verified camera trajectories, constructed through a multi-stage geometric and kinematic validation pipeline. Across video quality, 3D consistency, and trajectory following, Captain Safari substantially outperforms state-of-the-art camera-controlled generators. It reduces MEt3R from 0.3703 to 0.3690, improves AUC@30 from 0.181 to 0.200, and yields substantially lower FVD than all camera-controlled baselines. More importantly, in a 50-participant, 5-way human study where annotators select the best result among five anonymized models, 67.6% of preferences favor our method across all axes. Our results demonstrate that pose-conditioned world memory is a powerful mechanism for long-horizon, controllable video generation and provide OpenSafari as a challenging new benchmark for future world-engine research.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper proposes ViCoDR, a method to improve 3D consistency in video generation by learning multi-view consistent diffusion representations, demonstrating significant improvements across various camera-controlled video generation tasks.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: Captain Safari introduces a pose-conditioned world engine for generating long, 3D-consistent videos with interactive camera control, leveraging a world memory and achieving state-of-the-art performance on a new challenging dataset, OpenSafari.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文提出了一种名为ViCoDR 的方法，通过学习多视角一致的扩散表示来提高视频生成中的 3D 一致性，并在各种相机控制的视频生成任务中展示了显著的改进。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: Captain Safari 提出了一种姿势条件的世界引擎，用于生成具有交互式相机控制的、长而 3D 一致的视频，该引擎利用世界记忆并在一个新的具有挑战性的数据集 OpenSafari 上实现了最先进的性能。</p>
             
 
             
@@ -616,8 +616,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -669,11 +669,11 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2511.18991v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2511.22815v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Duolikun Danier, Ge Gao, Steven McDonagh, Changjian Li, Hakan Bilen, Oisin Mac Aodha</p>
+            <p class="paper-authors">Authors: Yu-Cheng Chou, Xingrui Wang, Yitong Li, Jiahao Wang, Hanting Liu, Cihang Xie, Alan Yuille, Junfei Xiao</p>
             
         </motion.div>
         
@@ -685,108 +685,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">MagicWorld: Interactive Geometry-driven Video World Exploration</h2>
+            <h2 class="paper-title">One-to-All Animation: Alignment-Free Character Animation and Image Pose Transfe</h2>
             
-            <p class="paper-summary">Recent interactive video world model methods generate scene evolution conditioned on user instructions. Although they achieve impressive results, two key limitations remain. First, they fail to fully exploit the correspondence between instruction-driven scene motion and the underlying 3D geometry, which results in structural instability under viewpoint changes. Second, they easily forget historical information during multi-step interaction, resulting in error accumulation and progressive drift in scene semantics and structure. To address these issues, we propose MagicWorld, an interactive video world model that integrates 3D geometric priors and historical retrieval. MagicWorld starts from a single scene image, employs user actions to drive dynamic scene evolution, and autoregressively synthesizes continuous scenes. We introduce the Action-Guided 3D Geometry Module (AG3D), which constructs a point cloud from the first frame of each interaction and the corresponding action, providing explicit geometric constraints for viewpoint transitions and thereby improving structural consistency. We further propose History Cache Retrieval (HCR) mechanism, which retrieves relevant historical frames during generation and injects them as conditioning signals, helping the model utilize past scene information and mitigate error accumulation. Experimental results demonstrate that MagicWorld achieves notable improvements in scene stability and continuity across interaction iterations.</p>
+            <p class="paper-summary">Recent advances in diffusion models have greatly improved pose-driven character animation. However, existing methods are limited to spatially aligned reference-pose pairs with matched skeletal structures. Handling reference-pose misalignment remains unsolved. To address this, we present One-to-All Animation, a unified framework for high-fidelity character animation and image pose transfer for references with arbitrary layouts. First, to handle spatially misaligned reference, we reformulate training as a self-supervised outpainting task that transforms diverse-layout reference into a unified occluded-input format. Second, to process partially visible reference, we design a reference extractor for comprehensive identity feature extraction. Further, we integrate hybrid reference fusion attention to handle varying resolutions and dynamic sequence lengths. Finally, from the perspective of generation quality, we introduce identity-robust pose control that decouples appearance from skeletal structure to mitigate pose overfitting, and a token replace strategy for coherent long-video generation. Extensive experiments show that our method outperforms existing approaches. The code and model will be available at https://github.com/ssj9596/One-to-All-Animation.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: MagicWorld introduces geometric priors and historical retrieval to improve the stability and continuity of interactive video world models, addressing limitations in existing instruction-driven scene evolution methods.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: MagicWorld引入了几何先验和历史检索，以提高交互式视频世界模型的稳定性和连续性，解决了现有指令驱动场景演化方法的局限性。</p>
-            
-
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces 'One-to-All Animation,' a diffusion-model-based framework for pose-driven character animation and image pose transfer that handles misaligned and partially visible reference poses by reformulating training as a self-supervised outpainting task and using a reference extractor. It improves long video generation through identity-robust pose control and token replacement.</p>
             
             
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-            </div>
-            
-            
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="far fa-star"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2511.18886v1" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Guangyuan Li, Siming Zheng, Shuolin Xu, Jinwei Chen, Bo Li, Xiaobin Hu, Lei Zhao, Peng-Tao Jiang</p>
-            
-        </motion.div>
-        
-        <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.30000000000000004, ease: 'easeOut' }"  
-            class="bento-item"
-            data-motion-element
-        >
-            <h2 class="paper-title">HunyuanVideo 1.5 Technical Report</h2>
-            
-            <p class="paper-summary">We present HunyuanVideo 1.5, a lightweight yet powerful open-source video generation model that achieves state-of-the-art visual quality and motion coherence with only 8.3 billion parameters, enabling efficient inference on consumer-grade GPUs. This achievement is built upon several key components, including meticulous data curation, an advanced DiT architecture featuring selective and sliding tile attention (SSTA), enhanced bilingual understanding through glyph-aware text encoding, progressive pre-training and post-training, and an efficient video super-resolution network. Leveraging these designs, we developed a unified framework capable of high-quality text-to-video and image-to-video generation across multiple durations and resolutions.Extensive experiments demonstrate that this compact and proficient model establishes a new state-of-the-art among open-source video generation models. By releasing the code and model weights, we provide the community with a high-performance foundation that lowers the barrier to video creation and research, making advanced video generation accessible to a broader audience. All open-source assets are publicly available at https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5.</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: HunyuanVideo 1.5 is a lightweight (8.3B parameters) open-source video generation model claiming state-of-the-art visual quality and motion coherence, with efficient inference on consumer GPUs, utilizing a DiT architecture and various training techniques.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: HunyuanVideo 1.5是一个轻量级（83亿参数）的开源视频生成模型，声称具有最先进的视觉质量和运动连贯性，并且可以在消费级GPU上进行高效推理，它利用了DiT架构和各种训练技术。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文提出了一个名为“One-to-All Animation”的框架，基于扩散模型，用于姿势驱动的角色动画和图像姿势迁移，通过将训练重新定义为自监督的图像修复任务，并使用参考提取器，解决了未对齐和部分可见的参考姿势问题。并通过身份鲁棒的姿势控制和令牌替换改进了长视频生成。</p>
             
 
             
@@ -795,14 +701,6 @@
                 
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
                     
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
                     <span class="text-xs text-gray-500 ml-1">(7/10)</span>
@@ -810,6 +708,14 @@
                 
                 
                 <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
                     <span class="rating-label">Clarity:</span>
                     
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -820,8 +726,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
             </div>
@@ -846,29 +752,29 @@
                     
                 
                     
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
                     
                         <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2511.18870v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2511.22940v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Bing Wu, Chang Zou, Changlin Li, Duojun Huang, Fang Yang, Hao Tan, Jack Peng, Jianbing Wu, Jiangfeng Xiong, Jie Jiang, Linus, Patrol, Peizhen Zhang, Peng Chen, Penghao Zhao, Qi Tian, Songtao Liu, Weijie Kong, Weiyan Wang, Xiao He, Xin Li, Xinchi Deng, Xuefei Zhe, Yang Li, Yanxin Long, Yuanbo Peng, Yue Wu, Yuhong Liu, Zhenyu Wang, Zuozhuo Dai, Bo Peng, Coopers Li, Gu Gong, Guojian Xiao, Jiahe Tian, Jiaxin Lin, Jie Liu, Jihong Zhang, Jiesong Lian, Kaihang Pan, Lei Wang, Lin Niu, Mingtao Chen, Mingyang Chen, Mingzhe Zheng, Miles Yang, Qiangqiang Hu, Qi Yang, Qiuyong Xiao, Runzhou Wu, Ryan Xu, Rui Yuan, Shanshan Sang, Shisheng Huang, Siruis Gong, Shuo Huang, Weiting Guo, Xiang Yuan, Xiaojia Chen, Xiawei Hu, Wenzhi Sun, Xiele Wu, Xianshun Ren, Xiaoyan Yuan, Xiaoyue Mi, Yepeng Zhang, Yifu Sun, Yiting Lu, Yitong Li, You Huang, Yu Tang, Yixuan Li, Yuhang Deng, Yuan Zhou, Zhichao Hu, Zhiguang Liu, Zhihe Yang, Zilin Yang, Zhenzhi Lu, Zixiang Zhou, Zhao Zhong</p>
+            <p class="paper-authors">Authors: Shijun Shi, Jing Xu, Zhihang Li, Chunli Peng, Xiaoda Yang, Lijing Lu, Kai Hu, Jiangning Zhang</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-12-01 03:09:41 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-12-01 03:13:24 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

@@ -1,0 +1,65 @@
+[
+    {
+        "title": "Hunyuan-GameCraft-2: Instruction-following Interactive Game World Model",
+        "summary": "Recent advances in generative world models have enabled remarkable progress in creating open-ended game environments, evolving from static scene synthesis toward dynamic, interactive simulation. However, current approaches remain limited by rigid action schemas and high annotation costs, restricting their ability to model diverse in-game interactions and player-driven dynamics. To address these challenges, we introduce Hunyuan-GameCraft-2, a new paradigm of instruction-driven interaction for generative game world modeling. Instead of relying on fixed keyboard inputs, our model allows users to control game video contents through natural language prompts, keyboard, or mouse signals, enabling flexible and semantically rich interaction within generated worlds. We formally defined the concept of interactive video data and developed an automated process to transform large-scale, unstructured text-video pairs into causally aligned interactive datasets. Built upon a 14B image-to-video Mixture-of-Experts(MoE) foundation model, our model incorporates a text-driven interaction injection mechanism for fine-grained control over camera motion, character behavior, and environment dynamics. We introduce an interaction-focused benchmark, InterBench, to evaluate interaction performance comprehensively. Extensive experiments demonstrate that our model generates temporally coherent and causally grounded interactive game videos that faithfully respond to diverse and free-form user instructions such as \"open the door\", \"draw a torch\", or \"trigger an explosion\".",
+        "url": "http://arxiv.org/abs/2511.23429v1",
+        "published_date": "2025-11-28T18:26:39+00:00",
+        "updated_date": "2025-11-28T18:26:39+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Junshu Tang",
+            "Jiacheng Liu",
+            "Jiaqi Li",
+            "Longhuang Wu",
+            "Haoyu Yang",
+            "Penghao Zhao",
+            "Siruis Gong",
+            "Xiang Yuan",
+            "Shuai Shao",
+            "Qinglin Lu"
+        ],
+        "tldr": "Hunyuan-GameCraft-2 introduces a new instruction-driven interaction paradigm for generative game world modeling, enabling users to control game video content through natural language prompts and generating interactive game videos that respond to diverse instructions.",
+        "tldr_zh": "Hunyuan-GameCraft-2 引入了一种新的指令驱动交互范式，用于生成游戏世界模型，允许用户通过自然语言提示控制游戏视频内容，并生成响应各种指令的交互式游戏视频。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "AnyTalker: Scaling Multi-Person Talking Video Generation with Interactivity Refinement",
+        "summary": "Recently, multi-person video generation has started to gain prominence. While a few preliminary works have explored audio-driven multi-person talking video generation, they often face challenges due to the high costs of diverse multi-person data collection and the difficulty of driving multiple identities with coherent interactivity. To address these challenges, we propose AnyTalker, a multi-person generation framework that features an extensible multi-stream processing architecture. Specifically, we extend Diffusion Transformer's attention block with a novel identity-aware attention mechanism that iteratively processes identity-audio pairs, allowing arbitrary scaling of drivable identities. Besides, training multi-person generative models demands massive multi-person data. Our proposed training pipeline depends solely on single-person videos to learn multi-person speaking patterns and refines interactivity with only a few real multi-person clips. Furthermore, we contribute a targeted metric and dataset designed to evaluate the naturalness and interactivity of the generated multi-person videos. Extensive experiments demonstrate that AnyTalker achieves remarkable lip synchronization, visual quality, and natural interactivity, striking a favorable balance between data costs and identity scalability.",
+        "url": "http://arxiv.org/abs/2511.23475v1",
+        "published_date": "2025-11-28T18:59:01+00:00",
+        "updated_date": "2025-11-28T18:59:01+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Zhizhou Zhong",
+            "Yicheng Ji",
+            "Zhe Kong",
+            "Yiying Liu",
+            "Jiarui Wang",
+            "Jiasun Feng",
+            "Lupeng Liu",
+            "Xiangyi Wang",
+            "Yanjia Li",
+            "Yuqing She",
+            "Ying Qin",
+            "Huan Li",
+            "Shuiyang Mao",
+            "Wei Liu",
+            "Wenhan Luo"
+        ],
+        "tldr": "AnyTalker introduces a multi-person talking video generation framework that scales to arbitrary numbers of identities using an identity-aware attention mechanism and a training pipeline that leverages single-person videos to reduce data costs, while also proposing a new metric and dataset for evaluation.",
+        "tldr_zh": "AnyTalker 提出了一种多人物说话视频生成框架，该框架利用身份感知注意力机制扩展到任意数量的身份，并利用单人视频的训练流程来降低数据成本，同时还提出了一种新的评估指标和数据集。",
+        "relevance_score": 6,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]
