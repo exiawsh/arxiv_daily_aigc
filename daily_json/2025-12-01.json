@@ -1,0 +1,54 @@
+[
+    {
+        "title": "TalkingPose: Efficient Face and Gesture Animation with Feedback-guided Diffusion Model",
+        "summary": "Recent advancements in diffusion models have significantly improved the realism and generalizability of character-driven animation, enabling the synthesis of high-quality motion from just a single RGB image and a set of driving poses. Nevertheless, generating temporally coherent long-form content remains challenging. Existing approaches are constrained by computational and memory limitations, as they are typically trained on short video segments, thus performing effectively only over limited frame lengths and hindering their potential for extended coherent generation. To address these constraints, we propose TalkingPose, a novel diffusion-based framework specifically designed for producing long-form, temporally consistent human upper-body animations. TalkingPose leverages driving frames to precisely capture expressive facial and hand movements, transferring these seamlessly to a target actor through a stable diffusion backbone. To ensure continuous motion and enhance temporal coherence, we introduce a feedback-driven mechanism built upon image-based diffusion models. Notably, this mechanism does not incur additional computational costs or require secondary training stages, enabling the generation of animations with unlimited duration. Additionally, we introduce a comprehensive, large-scale dataset to serve as a new benchmark for human upper-body animation.",
+        "url": "http://arxiv.org/abs/2512.00909v1",
+        "published_date": "2025-11-30T14:26:24+00:00",
+        "updated_date": "2025-11-30T14:26:24+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Alireza Javanmardi",
+            "Pragati Jaiswal",
+            "Tewodros Amberbir Habtegebrial",
+            "Christen Millerdurai",
+            "Shaoxiang Wang",
+            "Alain Pagani",
+            "Didier Stricker"
+        ],
+        "tldr": "The paper introduces TalkingPose, a diffusion-based framework for generating long-form, temporally consistent human upper-body animations by using driving frames and a feedback mechanism to ensure continuous motion without additional computational costs. They also introduce a new large-scale dataset for human upper-body animation.",
+        "tldr_zh": "本文介绍了一种名为 TalkingPose 的基于扩散模型的框架，用于生成长时间、时间一致的人体上半身动画，该框架通过使用驱动帧和反馈机制来确保连续运动，且无需额外的计算成本。他们还引入了一个新的大型人体上半身动画数据集。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "PanFlow: Decoupled Motion Control for Panoramic Video Generation",
+        "summary": "Panoramic video generation has attracted growing attention due to its applications in virtual reality and immersive media. However, existing methods lack explicit motion control and struggle to generate scenes with large and complex motions. We propose PanFlow, a novel approach that exploits the spherical nature of panoramas to decouple the highly dynamic camera rotation from the input optical flow condition, enabling more precise control over large and dynamic motions. We further introduce a spherical noise warping strategy to promote loop consistency in motion across panorama boundaries. To support effective training, we curate a large-scale, motion-rich panoramic video dataset with frame-level pose and flow annotations. We also showcase the effectiveness of our method in various applications, including motion transfer and video editing. Extensive experiments demonstrate that PanFlow significantly outperforms prior methods in motion fidelity, visual quality, and temporal coherence. Our code, dataset, and models are available at https://github.com/chengzhag/PanFlow.",
+        "url": "http://arxiv.org/abs/2512.00832v1",
+        "published_date": "2025-11-30T11:03:31+00:00",
+        "updated_date": "2025-11-30T11:03:31+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Cheng Zhang",
+            "Hanwen Liang",
+            "Donny Y. Chen",
+            "Qianyi Wu",
+            "Konstantinos N. Plataniotis",
+            "Camilo Cruz Gambardella",
+            "Jianfei Cai"
+        ],
+        "tldr": "PanFlow introduces a method for panoramic video generation with decoupled motion control using spherical representations and a novel noise warping strategy, along with a new dataset, demonstrating superior performance in motion fidelity and visual quality.",
+        "tldr_zh": "PanFlow 提出了一种全景视频生成方法，该方法利用球面表示解耦了运动控制，并采用了一种新的噪声扭曲策略，同时还发布了一个新的数据集，展示了在运动保真度和视觉质量方面的卓越性能。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
