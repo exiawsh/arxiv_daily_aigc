@@ -1,0 +1,128 @@
+[
+    {
+        "title": "Taming Camera-Controlled Video Generation with Verifiable Geometry Reward",
+        "summary": "Recent advances in video diffusion models have remarkably improved camera-controlled video generation, but most methods rely solely on supervised fine-tuning (SFT), leaving online reinforcement learning (RL) post-training largely underexplored. In this work, we introduce an online RL post-training framework that optimizes a pretrained video generator for precise camera control. To make RL effective in this setting, we design a verifiable geometry reward that delivers dense segment-level feedback to guide model optimization. Specifically, we estimate the 3D camera trajectories for both generated and reference videos, divide each trajectory into short segments, and compute segment-wise relative poses. The reward function then compares each generated-reference segment pair and assigns an alignment score as the reward signal, which helps alleviate reward sparsity and improve optimization efficiency. Moreover, we construct a comprehensive dataset featuring diverse large-amplitude camera motions and scenes with varied subject dynamics. Extensive experiments show that our online RL post-training clearly outperforms SFT baselines across multiple aspects, including camera-control accuracy, geometric consistency, and visual quality, demonstrating its superiority in advancing camera-controlled video generation.",
+        "url": "http://arxiv.org/abs/2512.02870v1",
+        "published_date": "2025-12-02T15:33:19+00:00",
+        "updated_date": "2025-12-02T15:33:19+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Zhaoqing Wang",
+            "Xiaobo Xia",
+            "Zhuolin Bie",
+            "Jinlin Liu",
+            "Dongdong Yu",
+            "Jia-Wang Bian",
+            "Changhu Wang"
+        ],
+        "tldr": "This paper introduces an online reinforcement learning post-training framework with a verifiable geometry reward for precise camera control in video generation, achieving superior performance compared to supervised fine-tuning baselines.",
+        "tldr_zh": "本文介绍了一种在线强化学习后训练框架，该框架使用可验证的几何奖励来实现视频生成中精确的相机控制，与监督微调基线相比，实现了卓越的性能。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "YingVideo-MV: Music-Driven Multi-Stage Video Generation",
+        "summary": "While diffusion model for audio-driven avatar video generation have achieved notable process in synthesizing long sequences with natural audio-visual synchronization and identity consistency, the generation of music-performance videos with camera motions remains largely unexplored. We present YingVideo-MV, the first cascaded framework for music-driven long-video generation. Our approach integrates audio semantic analysis, an interpretable shot planning module (MV-Director), temporal-aware diffusion Transformer architectures, and long-sequence consistency modeling to enable automatic synthesis of high-quality music performance videos from audio signals. We construct a large-scale Music-in-the-Wild Dataset by collecting web data to support the achievement of diverse, high-quality results. Observing that existing long-video generation methods lack explicit camera motion control, we introduce a camera adapter module that embeds camera poses into latent noise. To enhance continulity between clips during long-sequence inference, we further propose a time-aware dynamic window range strategy that adaptively adjust denoising ranges based on audio embedding. Comprehensive benchmark tests demonstrate that YingVideo-MV achieves outstanding performance in generating coherent and expressive music videos, and enables precise music-motion-camera synchronization. More videos are available in our project page: https://giantailab.github.io/YingVideo-MV/ .",
+        "url": "http://arxiv.org/abs/2512.02492v1",
+        "published_date": "2025-12-02T07:31:19+00:00",
+        "updated_date": "2025-12-02T07:31:19+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Jiahui Chen",
+            "Weida Wang",
+            "Runhua Shi",
+            "Huan Yang",
+            "Chaofan Ding",
+            "Zihao Chen"
+        ],
+        "tldr": "YingVideo-MV is a novel cascaded framework for music-driven long video generation, introducing explicit camera motion control and addressing long-sequence consistency for high-quality music performance videos.",
+        "tldr_zh": "YingVideo-MV是一个新颖的级联框架，用于音乐驱动的长视频生成，引入了显式的摄像机运动控制，并解决了长序列一致性问题，从而生成高质量的音乐表演视频。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "WorldPack: Compressed Memory Improves Spatial Consistency in Video World Modeling",
+        "summary": "Video world models have attracted significant attention for their ability to produce high-fidelity future visual observations conditioned on past observations and navigation actions. Temporally- and spatially-consistent, long-term world modeling has been a long-standing problem, unresolved with even recent state-of-the-art models, due to the prohibitively expensive computational costs for long-context inputs. In this paper, we propose WorldPack, a video world model with efficient compressed memory, which significantly improves spatial consistency, fidelity, and quality in long-term generation despite much shorter context length. Our compressed memory consists of trajectory packing and memory retrieval; trajectory packing realizes high context efficiency, and memory retrieval maintains the consistency in rollouts and helps long-term generations that require spatial reasoning. Our performance is evaluated with LoopNav, a benchmark on Minecraft, specialized for the evaluation of long-term consistency, and we verify that WorldPack notably outperforms strong state-of-the-art models.",
+        "url": "http://arxiv.org/abs/2512.02473v1",
+        "published_date": "2025-12-02T07:06:23+00:00",
+        "updated_date": "2025-12-02T07:06:23+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.LG"
+        ],
+        "authors": [
+            "Yuta Oshima",
+            "Yusuke Iwasawa",
+            "Masahiro Suzuki",
+            "Yutaka Matsuo",
+            "Hiroki Furuta"
+        ],
+        "tldr": "The paper introduces WorldPack, a video world model using compressed memory (trajectory packing and memory retrieval) to improve spatial consistency and quality in long-term video generation, outperforming state-of-the-art models on the LoopNav Minecraft benchmark.",
+        "tldr_zh": "该论文介绍了 WorldPack，一种使用压缩内存（轨迹打包和内存检索）的视频世界模型，旨在提高长期视频生成中的空间一致性和质量，并在 LoopNav Minecraft 基准测试中优于最先进的模型。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Objects in Generated Videos Are Slower Than They Appear: Models Suffer Sub-Earth Gravity and Don't Know Galileo's Principle...for now",
+        "summary": "Video generators are increasingly evaluated as potential world models, which requires them to encode and understand physical laws. We investigate their representation of a fundamental law: gravity. Out-of-the-box video generators consistently generate objects falling at an effectively slower acceleration. However, these physical tests are often confounded by ambiguous metric scale. We first investigate if observed physical errors are artifacts of these ambiguities (e.g., incorrect frame rate assumptions). We find that even temporal rescaling cannot correct the high-variance gravity artifacts. To rigorously isolate the underlying physical representation from these confounds, we introduce a unit-free, two-object protocol that tests the timing ratio $t_1^2/t_2^2 = h_1/h_2$, a relationship independent of $g$, focal length, and scale. This relative test reveals violations of Galileo's equivalence principle. We then demonstrate that this physical gap can be partially mitigated with targeted specialization. A lightweight low-rank adaptor fine-tuned on only 100 single-ball clips raises $g_{\\mathrm{eff}}$ from $1.81\\,\\mathrm{m/s^2}$ to $6.43\\,\\mathrm{m/s^2}$ (reaching $65\\%$ of terrestrial gravity). This specialist adaptor also generalizes zero-shot to two-ball drops and inclined planes, offering initial evidence that specific physical laws can be corrected with minimal data.",
+        "url": "http://arxiv.org/abs/2512.02016v1",
+        "published_date": "2025-12-01T18:59:56+00:00",
+        "updated_date": "2025-12-01T18:59:56+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Varun Varma Thozhiyoor",
+            "Shivam Tripathi",
+            "Venkatesh Babu Radhakrishnan",
+            "Anand Bhattad"
+        ],
+        "tldr": "The paper investigates video generators' ability to simulate gravity, finding that generated objects fall slower than they should. They propose a unit-free protocol to isolate physical representations and demonstrate that fine-tuning can partially correct these physical inaccuracies.",
+        "tldr_zh": "该论文研究了视频生成器模拟重力的能力，发现生成的物体下落速度比应有的速度慢。他们提出了一种无单位协议来隔离物理表征，并证明微调可以部分纠正这些物理不准确性。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "SpriteHand: Real-Time Versatile Hand-Object Interaction with Autoregressive Video Generation",
+        "summary": "Modeling and synthesizing complex hand-object interactions remains a significant challenge, even for state-of-the-art physics engines. Conventional simulation-based approaches rely on explicitly defined rigid object models and pre-scripted hand gestures, making them inadequate for capturing dynamic interactions with non-rigid or articulated entities such as deformable fabrics, elastic materials, hinge-based structures, furry surfaces, or even living creatures. In this paper, we present SpriteHand, an autoregressive video generation framework for real-time synthesis of versatile hand-object interaction videos across a wide range of object types and motion patterns. SpriteHand takes as input a static object image and a video stream in which the hands are imagined to interact with the virtual object embedded in a real-world scene, and generates corresponding hand-object interaction effects in real time. Our model employs a causal inference architecture for autoregressive generation and leverages a hybrid post-training approach to enhance visual realism and temporal coherence. Our 1.3B model supports real-time streaming generation at around 18 FPS and 640x368 resolution, with an approximate 150 ms latency on a single NVIDIA RTX 5090 GPU, and more than a minute of continuous output. Experiments demonstrate superior visual quality, physical plausibility, and interaction fidelity compared to both generative and engine-based baselines.",
+        "url": "http://arxiv.org/abs/2512.01960v1",
+        "published_date": "2025-12-01T18:13:40+00:00",
+        "updated_date": "2025-12-01T18:13:40+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.HC"
+        ],
+        "authors": [
+            "Zisu Li",
+            "Hengye Lyu",
+            "Jiaxin Shi",
+            "Yufeng Zeng",
+            "Mingming Fan",
+            "Hanwang Zhang",
+            "Chen Liang"
+        ],
+        "tldr": "SpriteHand introduces an autoregressive video generation framework for real-time synthesis of hand-object interaction videos, handling a wide range of object types and motion patterns, surpassing simulation-based and generative baselines in visual quality and plausibility.",
+        "tldr_zh": "SpriteHand 提出了一种自回归视频生成框架，用于实时合成手部与物体交互的视频，能够处理各种物体类型和运动模式，并在视觉质量和合理性方面超越了基于模拟和生成的基线方法。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
