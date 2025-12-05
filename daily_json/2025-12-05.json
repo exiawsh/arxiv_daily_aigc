@@ -1,0 +1,227 @@
+[
+    {
+        "title": "Live Avatar: Streaming Real-time Audio-Driven Avatar Generation with Infinite Length",
+        "summary": "Existing diffusion-based video generation methods are fundamentally constrained by sequential computation and long-horizon inconsistency, limiting their practical adoption in real-time, streaming audio-driven avatar synthesis. We present Live Avatar, an algorithm-system co-designed framework that enables efficient, high-fidelity, and infinite-length avatar generation using a 14-billion-parameter diffusion model. Our approach introduces Timestep-forcing Pipeline Parallelism (TPP), a distributed inference paradigm that pipelines denoising steps across multiple GPUs, effectively breaking the autoregressive bottleneck and ensuring stable, low-latency real-time streaming. To further enhance temporal consistency and mitigate identity drift and color artifacts, we propose the Rolling Sink Frame Mechanism (RSFM), which maintains sequence fidelity by dynamically recalibrating appearance using a cached reference image. Additionally, we leverage Self-Forcing Distribution Matching Distillation to facilitate causal, streamable adaptation of large-scale models without sacrificing visual quality. Live Avatar demonstrates state-of-the-art performance, reaching 20 FPS end-to-end generation on 5 H800 GPUs, and, to the best of our knowledge, is the first to achieve practical, real-time, high-fidelity avatar generation at this scale. Our work establishes a new paradigm for deploying advanced diffusion models in industrial long-form video synthesis applications.",
+        "url": "http://arxiv.org/abs/2512.04677v1",
+        "published_date": "2025-12-04T11:11:24+00:00",
+        "updated_date": "2025-12-04T11:11:24+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yubo Huang",
+            "Hailong Guo",
+            "Fangtai Wu",
+            "Shifeng Zhang",
+            "Shijie Huang",
+            "Qijun Gan",
+            "Lin Liu",
+            "Sirui Zhao",
+            "Enhong Chen",
+            "Jiaming Liu",
+            "Steven Hoi"
+        ],
+        "tldr": "Live Avatar introduces a system for real-time, high-fidelity, infinite-length audio-driven avatar generation using a 14B parameter diffusion model, achieving 20 FPS on 5 H800 GPUs with techniques like Timestep-forcing Pipeline Parallelism and Rolling Sink Frame Mechanism.",
+        "tldr_zh": "Live Avatar 提出了一种使用 140 亿参数扩散模型进行实时、高保真、无限长度的音频驱动头像生成系统，通过时间步强制流水线并行和滚动 Sink 帧机制等技术，在 5 个 H800 GPU 上实现了 20 FPS。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "EgoLCD: Egocentric Video Generation with Long Context Diffusion",
+        "summary": "Generating long, coherent egocentric videos is difficult, as hand-object interactions and procedural tasks require reliable long-term memory. Existing autoregressive models suffer from content drift, where object identity and scene semantics degrade over time. To address this challenge, we introduce EgoLCD, an end-to-end framework for egocentric long-context video generation that treats long video synthesis as a problem of efficient and stable memory management. EgoLCD combines a Long-Term Sparse KV Cache for stable global context with an attention-based short-term memory, extended by LoRA for local adaptation. A Memory Regulation Loss enforces consistent memory usage, and Structured Narrative Prompting provides explicit temporal guidance. Extensive experiments on the EgoVid-5M benchmark demonstrate that EgoLCD achieves state-of-the-art performance in both perceptual quality and temporal consistency, effectively mitigating generative forgetting and representing a significant step toward building scalable world models for embodied AI. Code: https://github.com/AIGeeksGroup/EgoLCD. Website: https://aigeeksgroup.github.io/EgoLCD.",
+        "url": "http://arxiv.org/abs/2512.04515v1",
+        "published_date": "2025-12-04T06:53:01+00:00",
+        "updated_date": "2025-12-04T06:53:01+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Liuzhou Zhang",
+            "Jiarui Ye",
+            "Yuanlei Wang",
+            "Ming Zhong",
+            "Mingju Cao",
+            "Wanke Xia",
+            "Bowen Zeng",
+            "Zeyu Zhang",
+            "Hao Tang"
+        ],
+        "tldr": "EgoLCD is a novel framework for generating long, coherent egocentric videos using a long-term sparse KV cache and attention-based short-term memory, achieving state-of-the-art performance on the EgoVid-5M benchmark.",
+        "tldr_zh": "EgoLCD是一个用于生成连贯的长时程第一视角视频的新框架，它使用了长期稀疏KV缓存和基于注意力的短期记忆，在EgoVid-5M基准测试中实现了最先进的性能。",
+        "relevance_score": 10,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "RELIC: Interactive Video World Model with Long-Horizon Memory",
+        "summary": "A truly interactive world model requires three key ingredients: real-time long-horizon streaming, consistent spatial memory, and precise user control. However, most existing approaches address only one of these aspects in isolation, as achieving all three simultaneously is highly challenging-for example, long-term memory mechanisms often degrade real-time performance. In this work, we present RELIC, a unified framework that tackles these three challenges altogether. Given a single image and a text description, RELIC enables memory-aware, long-duration exploration of arbitrary scenes in real time. Built upon recent autoregressive video-diffusion distillation techniques, our model represents long-horizon memory using highly compressed historical latent tokens encoded with both relative actions and absolute camera poses within the KV cache. This compact, camera-aware memory structure supports implicit 3D-consistent content retrieval and enforces long-term coherence with minimal computational overhead. In parallel, we fine-tune a bidirectional teacher video model to generate sequences beyond its original 5-second training horizon, and transform it into a causal student generator using a new memory-efficient self-forcing paradigm that enables full-context distillation over long-duration teacher as well as long student self-rollouts. Implemented as a 14B-parameter model and trained on a curated Unreal Engine-rendered dataset, RELIC achieves real-time generation at 16 FPS while demonstrating more accurate action following, more stable long-horizon streaming, and more robust spatial-memory retrieval compared with prior work. These capabilities establish RELIC as a strong foundation for the next generation of interactive world modeling.",
+        "url": "http://arxiv.org/abs/2512.04040v1",
+        "published_date": "2025-12-03T18:29:20+00:00",
+        "updated_date": "2025-12-03T18:29:20+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yicong Hong",
+            "Yiqun Mei",
+            "Chongjian Ge",
+            "Yiran Xu",
+            "Yang Zhou",
+            "Sai Bi",
+            "Yannick Hold-Geoffroy",
+            "Mike Roberts",
+            "Matthew Fisher",
+            "Eli Shechtman",
+            "Kalyan Sunkavalli",
+            "Feng Liu",
+            "Zhengqi Li",
+            "Hao Tan"
+        ],
+        "tldr": "RELIC is a 14B-parameter interactive video world model that achieves real-time, long-horizon streaming with consistent spatial memory and precise user control through compressed latent tokens and a memory-efficient self-forcing paradigm.",
+        "tldr_zh": "RELIC是一个140亿参数的交互式视频世界模型，通过压缩的潜在tokens和记忆高效的自强制范式，实现了实时的、长时程的流式传输，同时具有一致的空间记忆和精确的用户控制。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 8,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "Reward Forcing: Efficient Streaming Video Generation with Rewarded Distribution Matching Distillation",
+        "summary": "Efficient streaming video generation is critical for simulating interactive and dynamic worlds. Existing methods distill few-step video diffusion models with sliding window attention, using initial frames as sink tokens to maintain attention performance and reduce error accumulation. However, video frames become overly dependent on these static tokens, resulting in copied initial frames and diminished motion dynamics. To address this, we introduce Reward Forcing, a novel framework with two key designs. First, we propose EMA-Sink, which maintains fixed-size tokens initialized from initial frames and continuously updated by fusing evicted tokens via exponential moving average as they exit the sliding window. Without additional computation cost, EMA-Sink tokens capture both long-term context and recent dynamics, preventing initial frame copying while maintaining long-horizon consistency. Second, to better distill motion dynamics from teacher models, we propose a novel Rewarded Distribution Matching Distillation (Re-DMD). Vanilla distribution matching treats every training sample equally, limiting the model's ability to prioritize dynamic content. Instead, Re-DMD biases the model's output distribution toward high-reward regions by prioritizing samples with greater dynamics rated by a vision-language model. Re-DMD significantly enhances motion quality while preserving data fidelity. We include both quantitative and qualitative experiments to show that Reward Forcing achieves state-of-the-art performance on standard benchmarks while enabling high-quality streaming video generation at 23.1 FPS on a single H100 GPU.",
+        "url": "http://arxiv.org/abs/2512.04678v1",
+        "published_date": "2025-12-04T11:12:13+00:00",
+        "updated_date": "2025-12-04T11:12:13+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yunhong Lu",
+            "Yanhong Zeng",
+            "Haobo Li",
+            "Hao Ouyang",
+            "Qiuyu Wang",
+            "Ka Leong Cheng",
+            "Jiapeng Zhu",
+            "Hengyuan Cao",
+            "Zhipeng Zhang",
+            "Xing Zhu",
+            "Yujun Shen",
+            "Min Zhang"
+        ],
+        "tldr": "The paper introduces \"Reward Forcing,\" a novel framework for efficient streaming video generation using EMA-Sink tokens for long-term context and Rewarded Distribution Matching Distillation (Re-DMD) to prioritize dynamic content, achieving state-of-the-art performance.",
+        "tldr_zh": "本文介绍了一种名为“奖励强制”（Reward Forcing）的新框架，用于高效的流式视频生成，该框架使用EMA-Sink tokens来捕捉长期上下文，并使用奖励分布匹配蒸馏（Re-DMD）来优先处理动态内容，从而实现了最先进的性能。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "VideoSSM: Autoregressive Long Video Generation with Hybrid State-Space Memory",
+        "summary": "Autoregressive (AR) diffusion enables streaming, interactive long-video generation by producing frames causally, yet maintaining coherence over minute-scale horizons remains challenging due to accumulated errors, motion drift, and content repetition. We approach this problem from a memory perspective, treating video synthesis as a recurrent dynamical process that requires coordinated short- and long-term context. We propose VideoSSM, a Long Video Model that unifies AR diffusion with a hybrid state-space memory. The state-space model (SSM) serves as an evolving global memory of scene dynamics across the entire sequence, while a context window provides local memory for motion cues and fine details. This hybrid design preserves global consistency without frozen, repetitive patterns, supports prompt-adaptive interaction, and scales in linear time with sequence length. Experiments on short- and long-range benchmarks demonstrate state-of-the-art temporal consistency and motion stability among autoregressive video generator especially at minute-scale horizons, enabling content diversity and interactive prompt-based control, thereby establishing a scalable, memory-aware framework for long video generation.",
+        "url": "http://arxiv.org/abs/2512.04519v1",
+        "published_date": "2025-12-04T07:06:02+00:00",
+        "updated_date": "2025-12-04T07:06:02+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yifei Yu",
+            "Xiaoshan Wu",
+            "Xinting Hu",
+            "Tao Hu",
+            "Yangtian Sun",
+            "Xiaoyang Lyu",
+            "Bo Wang",
+            "Lin Ma",
+            "Yuewen Ma",
+            "Zhongrui Wang",
+            "Xiaojuan Qi"
+        ],
+        "tldr": "VideoSSM introduces a novel autoregressive long video generation framework using a hybrid state-space memory to address coherence issues and motion drift, achieving state-of-the-art temporal consistency and interactive control.",
+        "tldr_zh": "VideoSSM提出了一种新的自回归长视频生成框架，该框架使用混合状态空间记忆来解决连贯性问题和运动漂移，实现了最先进的时间一致性和交互控制。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "DeRA: Decoupled Representation Alignment for Video Tokenization",
+        "summary": "This paper presents DeRA, a novel 1D video tokenizer that decouples the spatial-temporal representation learning in video tokenization to achieve better training efficiency and performance. Specifically, DeRA maintains a compact 1D latent space while factorizing video encoding into appearance and motion streams, which are aligned with pretrained vision foundation models to capture the spatial semantics and temporal dynamics in videos separately. To address the gradient conflicts introduced by the heterogeneous supervision, we further propose the Symmetric Alignment-Conflict Projection (SACP) module that proactively reformulates gradients by suppressing the components along conflicting directions. Extensive experiments demonstrate that DeRA outperforms LARP, the previous state-of-the-art video tokenizer by 25% on UCF-101 in terms of rFVD. Moreover, using DeRA for autoregressive video generation, we also achieve new state-of-the-art results on both UCF-101 class-conditional generation and K600 frame prediction.",
+        "url": "http://arxiv.org/abs/2512.04483v1",
+        "published_date": "2025-12-04T05:37:59+00:00",
+        "updated_date": "2025-12-04T05:37:59+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Pengbo Guo",
+            "Junke Wang",
+            "Zhen Xing",
+            "Chengxu Liu",
+            "Daoguo Dong",
+            "Xueming Qian",
+            "Zuxuan Wu"
+        ],
+        "tldr": "DeRA is a novel video tokenizer that decouples spatial and temporal representation learning, achieving improved efficiency and state-of-the-art results in video generation tasks by aligning with pre-trained vision models and using a Symmetric Alignment-Conflict Projection module.",
+        "tldr_zh": "DeRA是一种新型视频标记器，它将空间和时间表示学习解耦，通过与预训练的视觉模型对齐，并使用对称对齐冲突投影模块，从而提高效率并在视频生成任务中获得最先进的结果。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "PSA: Pyramid Sparse Attention for Efficient Video Understanding and Generation",
+        "summary": "Attention mechanisms are the core of foundation models, but their quadratic complexity remains a critical bottleneck for scaling. This challenge has driven the development of efficient attention mechanisms, with sparsity emerging as the dominant paradigm. Current methods typically retain or discard entire key-value blocks with binary masks, resulting in substantial information loss under high sparsity. To mitigate this gap, we present Pyramid Sparse Attention (PSA), a versatile module applicable to both video understanding and generation tasks. Instead of binary masking, PSA introduces multi-level pooled KV representations, enabling finer mask granularity. Specifically, each query block dynamically allocates lower pooling levels to critical KV blocks and higher levels to less important ones, creating an informative interpolation between full retention and complete pruning. This design, analogous to fixed-point quantization and classical feature pyramid networks in computer vision, effectively mitigates information loss while preserving computational efficiency under a low compute budget. It works with a native, hardware-friendly kernel that leverages decoupled block-tile design to ensure efficient execution. Across video understanding and generation benchmarks, PSA preserves contextual information and visual fidelity, consistently outperforming or achieving comparable performance over existing sparse attention baselines with superior efficiency-quality trade-offs. Our code and model weights are publicly available at: http://ziplab.co/PSA",
+        "url": "http://arxiv.org/abs/2512.04025v1",
+        "published_date": "2025-12-03T18:02:11+00:00",
+        "updated_date": "2025-12-03T18:02:11+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.LG"
+        ],
+        "authors": [
+            "Xiaolong Li",
+            "Youping Gu",
+            "Xi Lin",
+            "Weijie Wang",
+            "Bohan Zhuang"
+        ],
+        "tldr": "This paper introduces Pyramid Sparse Attention (PSA), a novel attention mechanism using multi-level pooled KV representations for efficient video understanding and generation, achieving better efficiency-quality trade-offs than existing sparse attention methods.",
+        "tldr_zh": "本文介绍了一种名为金字塔稀疏注意力（PSA）的新型注意力机制，它使用多级池化KV表示，用于高效的视频理解和生成，与现有的稀疏注意力方法相比，实现了更好的效率-质量权衡。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "FreeGen: Feed-Forward Reconstruction-Generation Co-Training for Free-Viewpoint Driving Scene Synthesis",
+        "summary": "Closed-loop simulation and scalable pre-training for autonomous driving require synthesizing free-viewpoint driving scenes. However, existing datasets and generative pipelines rarely provide consistent off-trajectory observations, limiting large-scale evaluation and training. While recent generative models demonstrate strong visual realism, they struggle to jointly achieve interpolation consistency and extrapolation realism without per-scene optimization. To address this, we propose FreeGen, a feed-forward reconstruction-generation co-training framework for free-viewpoint driving scene synthesis. The reconstruction model provides stable geometric representations to ensure interpolation consistency, while the generation model performs geometry-aware enhancement to improve realism at unseen viewpoints. Through co-training, generative priors are distilled into the reconstruction model to improve off-trajectory rendering, and the refined geometry in turn offers stronger structural guidance for generation. Experiments demonstrate that FreeGen achieves state-of-the-art performance for free-viewpoint driving scene synthesis.",
+        "url": "http://arxiv.org/abs/2512.04830v1",
+        "published_date": "2025-12-04T14:14:21+00:00",
+        "updated_date": "2025-12-04T14:14:21+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Shijie Chen",
+            "Peixi Peng"
+        ],
+        "tldr": "FreeGen is a co-training framework for synthesizing free-viewpoint driving scenes, using reconstruction for consistency and generation for realism at novel viewpoints. It achieves state-of-the-art performance by distilling generative priors into the reconstruction model and using refined geometry to guide generation.",
+        "tldr_zh": "FreeGen是一个协同训练框架，用于合成自由视点的驾驶场景，通过重建确保一致性，并通过生成提高新视点下的真实感。它通过将生成先验知识提炼到重建模型中，并使用精细的几何结构来指导生成，实现了最先进的性能。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]

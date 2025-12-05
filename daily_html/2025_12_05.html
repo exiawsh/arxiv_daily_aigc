@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - December 04, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - December 05, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>December 04, 2025</p>
+            <p>December 05, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,14 +215,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Zero-Shot Video Translation and Editing with Frame Spatial-Temporal Correspondence</h2>
+            <h2 class="paper-title">Live Avatar: Streaming Real-time Audio-Driven Avatar Generation with Infinite Length</h2>
             
-            <p class="paper-summary">The remarkable success in text-to-image diffusion models has motivated extensive investigation of their potential for video applications. Zero-shot techniques aim to adapt image diffusion models for videos without requiring further model training. Recent methods largely emphasize integrating inter-frame correspondence into attention mechanisms. However, the soft constraint applied to identify the valid features to attend is insufficient, which could lead to temporal inconsistency. In this paper, we present FRESCO, which integrates intra-frame correspondence with inter-frame correspondence to formulate a more robust spatial-temporal constraint. This enhancement ensures a consistent transformation of semantically similar content between frames. Our method goes beyond attention guidance to explicitly optimize features, achieving high spatial-temporal consistency with the input video, significantly enhancing the visual coherence of manipulated videos. We verify FRESCO adaptations on two zero-shot tasks of video-to-video translation and text-guided video editing. Comprehensive experiments demonstrate the effectiveness of our framework in generating high-quality, coherent videos, highlighting a significant advance over current zero-shot methods.</p>
+            <p class="paper-summary">Existing diffusion-based video generation methods are fundamentally constrained by sequential computation and long-horizon inconsistency, limiting their practical adoption in real-time, streaming audio-driven avatar synthesis. We present Live Avatar, an algorithm-system co-designed framework that enables efficient, high-fidelity, and infinite-length avatar generation using a 14-billion-parameter diffusion model. Our approach introduces Timestep-forcing Pipeline Parallelism (TPP), a distributed inference paradigm that pipelines denoising steps across multiple GPUs, effectively breaking the autoregressive bottleneck and ensuring stable, low-latency real-time streaming. To further enhance temporal consistency and mitigate identity drift and color artifacts, we propose the Rolling Sink Frame Mechanism (RSFM), which maintains sequence fidelity by dynamically recalibrating appearance using a cached reference image. Additionally, we leverage Self-Forcing Distribution Matching Distillation to facilitate causal, streamable adaptation of large-scale models without sacrificing visual quality. Live Avatar demonstrates state-of-the-art performance, reaching 20 FPS end-to-end generation on 5 H800 GPUs, and, to the best of our knowledge, is the first to achieve practical, real-time, high-fidelity avatar generation at this scale. Our work establishes a new paradigm for deploying advanced diffusion models in industrial long-form video synthesis applications.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces FRESCO, a zero-shot video translation and editing method that improves temporal consistency by integrating intra- and inter-frame correspondence for more robust spatial-temporal constraints, demonstrating superior performance in video-to-video translation and text-guided video editing.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: Live Avatar introduces a system for real-time, high-fidelity, infinite-length audio-driven avatar generation using a 14B parameter diffusion model, achieving 20 FPS on 5 H800 GPUs with techniques like Timestep-forcing Pipeline Parallelism and Rolling Sink Frame Mechanism.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了FRESCO，一种零样本视频翻译和编辑方法，通过整合帧内和帧间对应关系来构建更强大的时空约束，从而提高时间一致性，并在视频到视频翻译和文本引导的视频编辑中展示了卓越的性能。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: Live Avatar 提出了一种使用 140 亿参数扩散模型进行实时、高保真、无限长度的音频驱动头像生成系统，通过时间步强制流水线并行和滚动 Sink 帧机制等技术，在 5 个 H800 GPU 上实现了 20 FPS。</p>
             
 
             
@@ -240,24 +240,24 @@
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                     <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
             </div>
@@ -286,18 +286,18 @@
                     
                 
                     
-                        <i class="far fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2512.03905v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2512.04677v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Shuai Yang, Junxin Lin, Yifan Zhou, Ziwei Liu, Chen Change Loy</p>
+            <p class="paper-authors">Authors: Yubo Huang, Hailong Guo, Fangtai Wu, Shifeng Zhang, Shijie Huang, Qijun Gan, Lin Liu, Sirui Zhao, Enhong Chen, Jiaming Liu, Steven Hoi</p>
             
         </motion.div>
         
@@ -309,14 +309,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">ReCamDriving: LiDAR-Free Camera-Controlled Novel Trajectory Video Generation</h2>
+            <h2 class="paper-title">EgoLCD: Egocentric Video Generation with Long Context Diffusion</h2>
             
-            <p class="paper-summary">We propose ReCamDriving, a purely vision-based, camera-controlled novel-trajectory video generation framework. While repair-based methods fail to restore complex artifacts and LiDAR-based approaches rely on sparse and incomplete cues, ReCamDriving leverages dense and scene-complete 3DGS renderings for explicit geometric guidance, achieving precise camera-controllable generation. To mitigate overfitting to restoration behaviors when conditioned on 3DGS renderings, ReCamDriving adopts a two-stage training paradigm: the first stage uses camera poses for coarse control, while the second stage incorporates 3DGS renderings for fine-grained viewpoint and geometric guidance. Furthermore, we present a 3DGS-based cross-trajectory data curation strategy to eliminate the train-test gap in camera transformation patterns, enabling scalable multi-trajectory supervision from monocular videos. Based on this strategy, we construct the ParaDrive dataset, containing over 110K parallel-trajectory video pairs. Extensive experiments demonstrate that ReCamDriving achieves state-of-the-art camera controllability and structural consistency.</p>
+            <p class="paper-summary">Generating long, coherent egocentric videos is difficult, as hand-object interactions and procedural tasks require reliable long-term memory. Existing autoregressive models suffer from content drift, where object identity and scene semantics degrade over time. To address this challenge, we introduce EgoLCD, an end-to-end framework for egocentric long-context video generation that treats long video synthesis as a problem of efficient and stable memory management. EgoLCD combines a Long-Term Sparse KV Cache for stable global context with an attention-based short-term memory, extended by LoRA for local adaptation. A Memory Regulation Loss enforces consistent memory usage, and Structured Narrative Prompting provides explicit temporal guidance. Extensive experiments on the EgoVid-5M benchmark demonstrate that EgoLCD achieves state-of-the-art performance in both perceptual quality and temporal consistency, effectively mitigating generative forgetting and representing a significant step toward building scalable world models for embodied AI. Code: https://github.com/AIGeeksGroup/EgoLCD. Website: https://aigeeksgroup.github.io/EgoLCD.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: ReCamDriving is a novel framework for camera-controlled video generation from monocular videos using 3D Gaussian Splatting (3DGS) for geometric guidance, addressing limitations of repair-based and LiDAR-based methods. They introduce a two-stage training approach and a cross-trajectory data curation strategy, along with the ParaDrive dataset.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: EgoLCD is a novel framework for generating long, coherent egocentric videos using a long-term sparse KV cache and attention-based short-term memory, achieving state-of-the-art performance on the EgoVid-5M benchmark.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: ReCamDriving是一个新的框架，利用3D高斯溅射（3DGS）进行几何引导，从单目视频生成相机控制的视频，解决了基于修复和基于激光雷达方法的局限性。他们引入了两阶段训练方法和交叉轨迹数据管理策略，并提出了ParaDrive数据集。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: EgoLCD是一个用于生成连贯的长时程第一视角视频的新框架，它使用了长期稀疏KV缓存和基于注意力的短期记忆，在EgoVid-5M基准测试中实现了最先进的性能。</p>
             
 
             
@@ -326,16 +326,16 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(10/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
@@ -350,8 +350,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
             </div>
@@ -380,18 +380,18 @@
                     
                 
                     
-                        <i class="far fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2512.03621v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2512.04515v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Yaokun Li, Shuaixian Wang, Mantang Guo, Jiehui Huang, Taojun Ding, Mu Hu, Kaixuan Wang, Shaojie Shen, Guang Tan</p>
+            <p class="paper-authors">Authors: Liuzhou Zhang, Jiarui Ye, Yuanlei Wang, Ming Zhong, Mingju Cao, Wanke Xia, Bowen Zeng, Zeyu Zhang, Hao Tang</p>
             
         </motion.div>
         
@@ -403,14 +403,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">LAMP: Language-Assisted Motion Planning for Controllable Video Generation</h2>
+            <h2 class="paper-title">RELIC: Interactive Video World Model with Long-Horizon Memory</h2>
             
-            <p class="paper-summary">Video generation has achieved remarkable progress in visual fidelity and controllability, enabling conditioning on text, layout, or motion. Among these, motion control - specifying object dynamics and camera trajectories - is essential for composing complex, cinematic scenes, yet existing interfaces remain limited. We introduce LAMP that leverages large language models (LLMs) as motion planners to translate natural language descriptions into explicit 3D trajectories for dynamic objects and (relatively defined) cameras. LAMP defines a motion domain-specific language (DSL), inspired by cinematography conventions. By harnessing program synthesis capabilities of LLMs, LAMP generates structured motion programs from natural language, which are deterministically mapped to 3D trajectories. We construct a large-scale procedural dataset pairing natural text descriptions with corresponding motion programs and 3D trajectories. Experiments demonstrate LAMP's improved performance in motion controllability and alignment with user intent compared to state-of-the-art alternatives establishing the first framework for generating both object and camera motions directly from natural language specifications.</p>
+            <p class="paper-summary">A truly interactive world model requires three key ingredients: real-time long-horizon streaming, consistent spatial memory, and precise user control. However, most existing approaches address only one of these aspects in isolation, as achieving all three simultaneously is highly challenging-for example, long-term memory mechanisms often degrade real-time performance. In this work, we present RELIC, a unified framework that tackles these three challenges altogether. Given a single image and a text description, RELIC enables memory-aware, long-duration exploration of arbitrary scenes in real time. Built upon recent autoregressive video-diffusion distillation techniques, our model represents long-horizon memory using highly compressed historical latent tokens encoded with both relative actions and absolute camera poses within the KV cache. This compact, camera-aware memory structure supports implicit 3D-consistent content retrieval and enforces long-term coherence with minimal computational overhead. In parallel, we fine-tune a bidirectional teacher video model to generate sequences beyond its original 5-second training horizon, and transform it into a causal student generator using a new memory-efficient self-forcing paradigm that enables full-context distillation over long-duration teacher as well as long student self-rollouts. Implemented as a 14B-parameter model and trained on a curated Unreal Engine-rendered dataset, RELIC achieves real-time generation at 16 FPS while demonstrating more accurate action following, more stable long-horizon streaming, and more robust spatial-memory retrieval compared with prior work. These capabilities establish RELIC as a strong foundation for the next generation of interactive world modeling.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: LAMP uses LLMs to translate natural language into 3D trajectories for object and camera motion in video generation, offering improved controllability and alignment with user intent.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: RELIC is a 14B-parameter interactive video world model that achieves real-time, long-horizon streaming with consistent spatial memory and precise user control through compressed latent tokens and a memory-efficient self-forcing paradigm.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: LAMP利用大型语言模型（LLM）将自然语言转化为视频生成中物体和相机运动的3D轨迹，从而提高可控性并与用户意图对齐。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: RELIC是一个140亿参数的交互式视频世界模型，通过压缩的潜在tokens和记忆高效的自强制范式，实现了实时的、长时程的流式传输，同时具有一致的空间记忆和精确的用户控制。</p>
             
 
             
@@ -436,16 +436,16 @@
                 <div class="rating-item">
                     <span class="rating-label">Clarity:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
             </div>
@@ -474,18 +474,18 @@
                     
                 
                     
-                        <i class="far fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2512.03619v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2512.04040v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Muhammed Burak Kizil, Enes Sanli, Niloy J. Mitra, Erkut Erdem, Aykut Erdem, Duygu Ceylan</p>
+            <p class="paper-authors">Authors: Yicong Hong, Yiqun Mei, Chongjian Ge, Yiran Xu, Yang Zhou, Sai Bi, Yannick Hold-Geoffroy, Mike Roberts, Matthew Fisher, Eli Shechtman, Kalyan Sunkavalli, Feng Liu, Zhengqi Li, Hao Tan</p>
             
         </motion.div>
         
@@ -497,14 +497,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">GeoVideo: Introducing Geometric Regularization into Video Generation Model</h2>
+            <h2 class="paper-title">Reward Forcing: Efficient Streaming Video Generation with Rewarded Distribution Matching Distillation</h2>
             
-            <p class="paper-summary">Recent advances in video generation have enabled the synthesis of high-quality and visually realistic clips using diffusion transformer models. However, most existing approaches operate purely in the 2D pixel space and lack explicit mechanisms for modeling 3D structures, often resulting in temporally inconsistent geometries, implausible motions, and structural artifacts. In this work, we introduce geometric regularization losses into video generation by augmenting latent diffusion models with per-frame depth prediction. We adopted depth as the geometric representation because of the great progress in depth prediction and its compatibility with image-based latent encoders. Specifically, to enforce structural consistency over time, we propose a multi-view geometric loss that aligns the predicted depth maps across frames within a shared 3D coordinate system. Our method bridges the gap between appearance generation and 3D structure modeling, leading to improved spatio-temporal coherence, shape consistency, and physical plausibility. Experiments across multiple datasets show that our approach produces significantly more stable and geometrically consistent results than existing baselines.</p>
+            <p class="paper-summary">Efficient streaming video generation is critical for simulating interactive and dynamic worlds. Existing methods distill few-step video diffusion models with sliding window attention, using initial frames as sink tokens to maintain attention performance and reduce error accumulation. However, video frames become overly dependent on these static tokens, resulting in copied initial frames and diminished motion dynamics. To address this, we introduce Reward Forcing, a novel framework with two key designs. First, we propose EMA-Sink, which maintains fixed-size tokens initialized from initial frames and continuously updated by fusing evicted tokens via exponential moving average as they exit the sliding window. Without additional computation cost, EMA-Sink tokens capture both long-term context and recent dynamics, preventing initial frame copying while maintaining long-horizon consistency. Second, to better distill motion dynamics from teacher models, we propose a novel Rewarded Distribution Matching Distillation (Re-DMD). Vanilla distribution matching treats every training sample equally, limiting the model's ability to prioritize dynamic content. Instead, Re-DMD biases the model's output distribution toward high-reward regions by prioritizing samples with greater dynamics rated by a vision-language model. Re-DMD significantly enhances motion quality while preserving data fidelity. We include both quantitative and qualitative experiments to show that Reward Forcing achieves state-of-the-art performance on standard benchmarks while enabling high-quality streaming video generation at 23.1 FPS on a single H100 GPU.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces geometric regularization, specifically depth prediction with a multi-view geometric loss, into video generation models to improve spatio-temporal coherence and shape consistency.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces "Reward Forcing," a novel framework for efficient streaming video generation using EMA-Sink tokens for long-term context and Rewarded Distribution Matching Distillation (Re-DMD) to prioritize dynamic content, achieving state-of-the-art performance.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文通过将几何正则化（特别是深度预测和多视角几何损失）引入视频生成模型，以提高时空一致性和形状一致性。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种名为“奖励强制”（Reward Forcing）的新框架，用于高效的流式视频生成，该框架使用EMA-Sink tokens来捕捉长期上下文，并使用奖励分布匹配蒸馏（Re-DMD）来优先处理动态内容，从而实现了最先进的性能。</p>
             
 
             
@@ -514,16 +514,16 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -575,11 +575,11 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2512.03453v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2512.04678v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Yunpeng Bai, Shaoheng Fang, Chaohui Yu, Fan Wang, Qixing Huang</p>
+            <p class="paper-authors">Authors: Yunhong Lu, Yanhong Zeng, Haobo Li, Hao Ouyang, Qiuyu Wang, Ka Leong Cheng, Jiapeng Zhu, Hengyuan Cao, Zhipeng Zhang, Xing Zhu, Yujun Shen, Min Zhang</p>
             
         </motion.div>
         
@@ -591,15 +591,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">GalaxyDiT: Efficient Video Generation with Guidance Alignment and Adaptive Proxy in Diffusion Transformers</h2>
+            <h2 class="paper-title">VideoSSM: Autoregressive Long Video Generation with Hybrid State-Space Memory</h2>
             
-            <p class="paper-summary">Diffusion models have revolutionized video generation, becoming essential tools in creative content generation and physical simulation. Transformer-based architectures (DiTs) and classifier-free guidance (CFG) are two cornerstones of this success, enabling strong prompt adherence and realistic video quality. Despite their versatility and superior performance, these models require intensive computation. Each video generation requires dozens of iterative steps, and CFG doubles the required compute. This inefficiency hinders broader adoption in downstream applications.
-  We introduce GalaxyDiT, a training-free method to accelerate video generation with guidance alignment and systematic proxy selection for reuse metrics. Through rank-order correlation analysis, our technique identifies the optimal proxy for each video model, across model families and parameter scales, thereby ensuring optimal computational reuse. We achieve $1.87\times$ and $2.37\times$ speedup on Wan2.1-1.3B and Wan2.1-14B with only 0.97% and 0.72% drops on the VBench-2.0 benchmark. At high speedup rates, our approach maintains superior fidelity to the base model, exceeding prior state-of-the-art approaches by 5 to 10 dB in peak signal-to-noise ratio (PSNR).</p>
+            <p class="paper-summary">Autoregressive (AR) diffusion enables streaming, interactive long-video generation by producing frames causally, yet maintaining coherence over minute-scale horizons remains challenging due to accumulated errors, motion drift, and content repetition. We approach this problem from a memory perspective, treating video synthesis as a recurrent dynamical process that requires coordinated short- and long-term context. We propose VideoSSM, a Long Video Model that unifies AR diffusion with a hybrid state-space memory. The state-space model (SSM) serves as an evolving global memory of scene dynamics across the entire sequence, while a context window provides local memory for motion cues and fine details. This hybrid design preserves global consistency without frozen, repetitive patterns, supports prompt-adaptive interaction, and scales in linear time with sequence length. Experiments on short- and long-range benchmarks demonstrate state-of-the-art temporal consistency and motion stability among autoregressive video generator especially at minute-scale horizons, enabling content diversity and interactive prompt-based control, thereby establishing a scalable, memory-aware framework for long video generation.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: GalaxyDiT introduces a training-free method to accelerate video generation in Diffusion Transformers by identifying and reusing optimal proxies, achieving significant speedups with minimal quality loss.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: VideoSSM introduces a novel autoregressive long video generation framework using a hybrid state-space memory to address coherence issues and motion drift, achieving state-of-the-art temporal consistency and interactive control.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: GalaxyDiT 提出了一种无需训练的方法，通过识别和重用最佳代理来加速 Diffusion Transformers 中的视频生成，从而在保证质量损失最小化的同时实现显著的加速。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: VideoSSM提出了一种新的自回归长视频生成框架，该框架使用混合状态空间记忆来解决连贯性问题和运动漂移，实现了最先进的时间一致性和交互控制。</p>
             
 
             
@@ -609,8 +608,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
@@ -625,8 +624,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Clarity:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -670,11 +669,11 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2512.03451v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2512.04519v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Zhiye Song, Steve Dai, Ben Keller, Brucek Khailany</p>
+            <p class="paper-authors">Authors: Yifei Yu, Xiaoshan Wu, Xinting Hu, Tao Hu, Yangtian Sun, Xiaoyang Lyu, Bo Wang, Lin Ma, Yuewen Ma, Zhongrui Wang, Xiaojuan Qi</p>
             
         </motion.div>
         
@@ -686,14 +685,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">SeeU: Seeing the Unseen World via 4D Dynamics-aware Generation</h2>
+            <h2 class="paper-title">DeRA: Decoupled Representation Alignment for Video Tokenization</h2>
             
-            <p class="paper-summary">Images and videos are discrete 2D projections of the 4D world (3D space + time). Most visual understanding, prediction, and generation operate directly on 2D observations, leading to suboptimal performance. We propose SeeU, a novel approach that learns the continuous 4D dynamics and generate the unseen visual contents. The principle behind SeeU is a new 2D$\to$4D$\to$2D learning framework. SeeU first reconstructs the 4D world from sparse and monocular 2D frames (2D$\to$4D). It then learns the continuous 4D dynamics on a low-rank representation and physical constraints (discrete 4D$\to$continuous 4D). Finally, SeeU rolls the world forward in time, re-projects it back to 2D at sampled times and viewpoints, and generates unseen regions based on spatial-temporal context awareness (4D$\to$2D). By modeling dynamics in 4D, SeeU achieves continuous and physically-consistent novel visual generation, demonstrating strong potentials in multiple tasks including unseen temporal generation, unseen spatial generation, and video editing.</p>
+            <p class="paper-summary">This paper presents DeRA, a novel 1D video tokenizer that decouples the spatial-temporal representation learning in video tokenization to achieve better training efficiency and performance. Specifically, DeRA maintains a compact 1D latent space while factorizing video encoding into appearance and motion streams, which are aligned with pretrained vision foundation models to capture the spatial semantics and temporal dynamics in videos separately. To address the gradient conflicts introduced by the heterogeneous supervision, we further propose the Symmetric Alignment-Conflict Projection (SACP) module that proactively reformulates gradients by suppressing the components along conflicting directions. Extensive experiments demonstrate that DeRA outperforms LARP, the previous state-of-the-art video tokenizer by 25% on UCF-101 in terms of rFVD. Moreover, using DeRA for autoregressive video generation, we also achieve new state-of-the-art results on both UCF-101 class-conditional generation and K600 frame prediction.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: SeeU proposes a 2D->4D->2D framework to learn continuous 4D dynamics from sparse 2D videos, enabling novel view and temporal generation with physical consistency.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: DeRA is a novel video tokenizer that decouples spatial and temporal representation learning, achieving improved efficiency and state-of-the-art results in video generation tasks by aligning with pre-trained vision models and using a Symmetric Alignment-Conflict Projection module.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: SeeU 提出了一个 2D->4D->2D 的框架，从稀疏的 2D 视频中学习连续的 4D 动力学，从而实现具有物理一致性的新视角和时间生成。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: DeRA是一种新型视频标记器，它将空间和时间表示学习解耦，通过与预训练的视觉模型对齐，并使用对称对齐冲突投影模块，从而提高效率并在视频生成任务中获得最先进的结果。</p>
             
 
             
@@ -703,16 +702,16 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
@@ -764,11 +763,11 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2512.03350v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2512.04483v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Yu Yuan, Tharindu Wickremasinghe, Zeeshan Nadir, Xijun Wang, Yiheng Chi, Stanley H. Chan</p>
+            <p class="paper-authors">Authors: Pengbo Guo, Junke Wang, Zhen Xing, Chengxu Liu, Daoguo Dong, Xueming Qian, Zuxuan Wu</p>
             
         </motion.div>
         
@@ -780,14 +779,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">MultiShotMaster: A Controllable Multi-Shot Video Generation Framework</h2>
+            <h2 class="paper-title">PSA: Pyramid Sparse Attention for Efficient Video Understanding and Generation</h2>
             
-            <p class="paper-summary">Current video generation techniques excel at single-shot clips but struggle to produce narrative multi-shot videos, which require flexible shot arrangement, coherent narrative, and controllability beyond text prompts. To tackle these challenges, we propose MultiShotMaster, a framework for highly controllable multi-shot video generation. We extend a pretrained single-shot model by integrating two novel variants of RoPE. First, we introduce Multi-Shot Narrative RoPE, which applies explicit phase shift at shot transitions, enabling flexible shot arrangement while preserving the temporal narrative order. Second, we design Spatiotemporal Position-Aware RoPE to incorporate reference tokens and grounding signals, enabling spatiotemporal-grounded reference injection. In addition, to overcome data scarcity, we establish an automated data annotation pipeline to extract multi-shot videos, captions, cross-shot grounding signals and reference images. Our framework leverages the intrinsic architectural properties to support multi-shot video generation, featuring text-driven inter-shot consistency, customized subject with motion control, and background-driven customized scene. Both shot count and duration are flexibly configurable. Extensive experiments demonstrate the superior performance and outstanding controllability of our framework.</p>
+            <p class="paper-summary">Attention mechanisms are the core of foundation models, but their quadratic complexity remains a critical bottleneck for scaling. This challenge has driven the development of efficient attention mechanisms, with sparsity emerging as the dominant paradigm. Current methods typically retain or discard entire key-value blocks with binary masks, resulting in substantial information loss under high sparsity. To mitigate this gap, we present Pyramid Sparse Attention (PSA), a versatile module applicable to both video understanding and generation tasks. Instead of binary masking, PSA introduces multi-level pooled KV representations, enabling finer mask granularity. Specifically, each query block dynamically allocates lower pooling levels to critical KV blocks and higher levels to less important ones, creating an informative interpolation between full retention and complete pruning. This design, analogous to fixed-point quantization and classical feature pyramid networks in computer vision, effectively mitigates information loss while preserving computational efficiency under a low compute budget. It works with a native, hardware-friendly kernel that leverages decoupled block-tile design to ensure efficient execution. Across video understanding and generation benchmarks, PSA preserves contextual information and visual fidelity, consistently outperforming or achieving comparable performance over existing sparse attention baselines with superior efficiency-quality trade-offs. Our code and model weights are publicly available at: http://ziplab.co/PSA</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces MultiShotMaster, a framework for generating controllable multi-shot videos by extending a single-shot model with novel RoPE variants for narrative coherence, grounding, and flexible shot arrangement, also addresses data scarcity through an automated annotation pipeline.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces Pyramid Sparse Attention (PSA), a novel attention mechanism using multi-level pooled KV representations for efficient video understanding and generation, achieving better efficiency-quality trade-offs than existing sparse attention methods.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了MultiShotMaster，一个用于生成可控的多镜头视频的框架。它通过使用新型RoPE变体扩展单镜头模型，实现了叙事连贯性、对齐和灵活的镜头安排。同时，还通过自动标注流程解决了数据稀缺问题。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种名为金字塔稀疏注意力（PSA）的新型注意力机制，它使用多级池化KV表示，用于高效的视频理解和生成，与现有的稀疏注意力方法相比，实现了更好的效率-质量权衡。</p>
             
 
             
@@ -797,8 +796,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
@@ -858,11 +857,11 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2512.03041v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2512.04025v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Qinghe Wang, Xiaoyu Shi, Baolu Li, Weikang Bian, Quande Liu, Huchuan Lu, Xintao Wang, Pengfei Wan, Kun Gai, Xu Jia</p>
+            <p class="paper-authors">Authors: Xiaolong Li, Youping Gu, Xi Lin, Weijie Wang, Bohan Zhuang</p>
             
         </motion.div>
         
@@ -874,14 +873,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Video4Spatial: Towards Visuospatial Intelligence with Context-Guided Video Generation</h2>
+            <h2 class="paper-title">FreeGen: Feed-Forward Reconstruction-Generation Co-Training for Free-Viewpoint Driving Scene Synthesis</h2>
             
-            <p class="paper-summary">We investigate whether video generative models can exhibit visuospatial intelligence, a capability central to human cognition, using only visual data. To this end, we present Video4Spatial, a framework showing that video diffusion models conditioned solely on video-based scene context can perform complex spatial tasks. We validate on two tasks: scene navigation - following camera-pose instructions while remaining consistent with 3D geometry of the scene, and object grounding - which requires semantic localization, instruction following, and planning. Both tasks use video-only inputs, without auxiliary modalities such as depth or poses. With simple yet effective design choices in the framework and data curation, Video4Spatial demonstrates strong spatial understanding from video context: it plans navigation and grounds target objects end-to-end, follows camera-pose instructions while maintaining spatial consistency, and generalizes to long contexts and out-of-domain environments. Taken together, these results advance video generative models toward general visuospatial reasoning.</p>
+            <p class="paper-summary">Closed-loop simulation and scalable pre-training for autonomous driving require synthesizing free-viewpoint driving scenes. However, existing datasets and generative pipelines rarely provide consistent off-trajectory observations, limiting large-scale evaluation and training. While recent generative models demonstrate strong visual realism, they struggle to jointly achieve interpolation consistency and extrapolation realism without per-scene optimization. To address this, we propose FreeGen, a feed-forward reconstruction-generation co-training framework for free-viewpoint driving scene synthesis. The reconstruction model provides stable geometric representations to ensure interpolation consistency, while the generation model performs geometry-aware enhancement to improve realism at unseen viewpoints. Through co-training, generative priors are distilled into the reconstruction model to improve off-trajectory rendering, and the refined geometry in turn offers stronger structural guidance for generation. Experiments demonstrate that FreeGen achieves state-of-the-art performance for free-viewpoint driving scene synthesis.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Video4Spatial, a video diffusion framework that uses video-based scene context to perform complex spatial tasks like scene navigation and object grounding, demonstrating visuospatial reasoning capabilities without relying on auxiliary modalities.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: FreeGen is a co-training framework for synthesizing free-viewpoint driving scenes, using reconstruction for consistency and generation for realism at novel viewpoints. It achieves state-of-the-art performance by distilling generative priors into the reconstruction model and using refined geometry to guide generation.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了Video4Spatial，一个视频扩散框架，它使用基于视频的场景上下文来执行复杂的空间任务，如场景导航和物体定位，展示了视觉空间推理能力，且不依赖于辅助模态。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: FreeGen是一个协同训练框架，用于合成自由视点的驾驶场景，通过重建确保一致性，并通过生成提高新视点下的真实感。它通过将生成先验知识提炼到重建模型中，并使用精细的几何结构来指导生成，实现了最先进的性能。</p>
             
 
             
@@ -891,8 +890,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
@@ -941,29 +940,29 @@
                     
                 
                     
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
                     
                         <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2512.03040v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2512.04830v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Zeqi Xiao, Yiwei Zhao, Lingxiao Li, Yushi Lan, Yu Ning, Rahul Garg, Roshni Cooper, Mohammad H. Taghavi, Xingang Pan</p>
+            <p class="paper-authors">Authors: Shijie Chen, Peixi Peng</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-12-05 02:50:53 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-12-05 02:55:48 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
