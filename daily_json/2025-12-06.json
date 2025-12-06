@@ -1,0 +1,125 @@
+[
+    {
+        "title": "Deep Forcing: Training-Free Long Video Generation with Deep Sink and Participative Compression",
+        "summary": "Recent advances in autoregressive video diffusion have enabled real-time frame streaming, yet existing solutions still suffer from temporal repetition, drift, and motion deceleration. We find that naively applying StreamingLLM-style attention sinks to video diffusion leads to fidelity degradation and motion stagnation. To overcome this, we introduce Deep Forcing, which consists of two training-free mechanisms that address this without any fine-tuning. Specifically, 1) Deep Sink dedicates half of the sliding window to persistent sink tokens and re-aligns their temporal RoPE phase to the current timeline, stabilizing global context during long rollouts. 2) Participative Compression performs importance-aware KV cache pruning that preserves only tokens actively participating in recent attention while safely discarding redundant and degraded history, minimizing error accumulation under out-of-distribution length generation. Together, these components enable over 12x extrapolation (e.g. 5s-trained to 60s+ generation) with better imaging quality than LongLive, better aesthetic quality than RollingForcing, almost maintaining overall consistency, and substantial gains in dynamic degree, all while maintaining real-time generation. Our results demonstrate that training-free KV-cache management can match or exceed training-based approaches for autoregressively streaming long-video generation.",
+        "url": "http://arxiv.org/abs/2512.05081v1",
+        "published_date": "2025-12-04T18:46:44+00:00",
+        "updated_date": "2025-12-04T18:46:44+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Jung Yi",
+            "Wooseok Jang",
+            "Paul Hyunbin Cho",
+            "Jisu Nam",
+            "Heeji Yoon",
+            "Seungryong Kim"
+        ],
+        "tldr": "This paper introduces Deep Forcing, a training-free method for long video generation that addresses temporal repetition, drift, and motion deceleration issues by using Deep Sink and Participative Compression for better quality and consistency when extrapolating beyond training video lengths.",
+        "tldr_zh": "本文介绍了一种名为 Deep Forcing 的无需训练的长视频生成方法，它通过使用 Deep Sink 和 Participative Compression 来解决时间重复、漂移和运动减速问题，从而在超出训练视频长度的推断中获得更好的质量和一致性。",
+        "relevance_score": 9,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "BulletTime: Decoupled Control of Time and Camera Pose for Video Generation",
+        "summary": "Emerging video diffusion models achieve high visual fidelity but fundamentally couple scene dynamics with camera motion, limiting their ability to provide precise spatial and temporal control. We introduce a 4D-controllable video diffusion framework that explicitly decouples scene dynamics from camera pose, enabling fine-grained manipulation of both scene dynamics and camera viewpoint. Our framework takes continuous world-time sequences and camera trajectories as conditioning inputs, injecting them into the video diffusion model through a 4D positional encoding in the attention layer and adaptive normalizations for feature modulation. To train this model, we curate a unique dataset in which temporal and camera variations are independently parameterized; this dataset will be made public. Experiments show that our model achieves robust real-world 4D control across diverse timing patterns and camera trajectories, while preserving high generation quality and outperforming prior work in controllability. See our website for video results: https://19reborn.github.io/Bullet4D/",
+        "url": "http://arxiv.org/abs/2512.05076v1",
+        "published_date": "2025-12-04T18:40:52+00:00",
+        "updated_date": "2025-12-04T18:40:52+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yiming Wang",
+            "Qihang Zhang",
+            "Shengqu Cai",
+            "Tong Wu",
+            "Jan Ackermann",
+            "Zhengfei Kuang",
+            "Yang Zheng",
+            "Frano Rajič",
+            "Siyu Tang",
+            "Gordon Wetzstein"
+        ],
+        "tldr": "The paper introduces a video diffusion framework called BulletTime that decouples scene dynamics and camera pose, allowing for independent control over both. They achieve this through 4D positional encoding and a custom dataset with independently parameterized temporal and camera variations.",
+        "tldr_zh": "该论文介绍了一个名为BulletTime的视频扩散框架，它将场景动态和相机姿态解耦，从而可以独立控制两者。他们通过4D位置编码和一个具有独立参数化的时间和相机变化的自定义数据集来实现这一点。",
+        "relevance_score": 10,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "Light-X: Generative 4D Video Rendering with Camera and Illumination Control",
+        "summary": "Recent advances in illumination control extend image-based methods to video, yet still facing a trade-off between lighting fidelity and temporal consistency. Moving beyond relighting, a key step toward generative modeling of real-world scenes is the joint control of camera trajectory and illumination, since visual dynamics are inherently shaped by both geometry and lighting. To this end, we present Light-X, a video generation framework that enables controllable rendering from monocular videos with both viewpoint and illumination control. 1) We propose a disentangled design that decouples geometry and lighting signals: geometry and motion are captured via dynamic point clouds projected along user-defined camera trajectories, while illumination cues are provided by a relit frame consistently projected into the same geometry. These explicit, fine-grained cues enable effective disentanglement and guide high-quality illumination. 2) To address the lack of paired multi-view and multi-illumination videos, we introduce Light-Syn, a degradation-based pipeline with inverse-mapping that synthesizes training pairs from in-the-wild monocular footage. This strategy yields a dataset covering static, dynamic, and AI-generated scenes, ensuring robust training. Extensive experiments show that Light-X outperforms baseline methods in joint camera-illumination control and surpasses prior video relighting methods under both text- and background-conditioned settings.",
+        "url": "http://arxiv.org/abs/2512.05115v1",
+        "published_date": "2025-12-04T18:59:57+00:00",
+        "updated_date": "2025-12-04T18:59:57+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Tianqi Liu",
+            "Zhaoxi Chen",
+            "Zihao Huang",
+            "Shaocong Xu",
+            "Saining Zhang",
+            "Chongjie Ye",
+            "Bohan Li",
+            "Zhiguo Cao",
+            "Wei Li",
+            "Hao Zhao",
+            "Ziwei Liu"
+        ],
+        "tldr": "Light-X is a video generation framework that allows controllable rendering from monocular videos with joint viewpoint and illumination control, using disentangled geometry and lighting signals and a novel training data synthesis pipeline.",
+        "tldr_zh": "Light-X是一个视频生成框架，允许从单目视频中进行可控渲染，并具有联合视点和光照控制。它使用分离的几何和光照信号以及一种新颖的训练数据合成流程。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "TV2TV: A Unified Framework for Interleaved Language and Video Generation",
+        "summary": "Video generation models are rapidly advancing, but can still struggle with complex video outputs that require significant semantic branching or repeated high-level reasoning about what should happen next. In this paper, we introduce a new class of omni video-text models that integrate ideas from recent LM reasoning advances to address this challenge. More specifically, we present TV2TV, a unified generative modeling framework which decomposes video generation into an interleaved text and video generation process. TV2TV jointly learns language modeling (next-token prediction) and video flow matching (next-frame prediction) using a Mixture-of-Transformers (MoT) architecture. At inference time, TV2TV decides when to alternate between generating text and video frames, allowing the model to \"think in words\" about subsequent content before ``acting in pixels'' to produce frames. This design offloads much of the responsibility for deciding what should happen next to the language modeling tower, enabling improved visual quality and prompt alignment of generated videos. It also enables fine-grained controllability, allowing users to modify the video generation trajectory through text interventions at any point in the process. In controlled experiments on video game data, TV2TV demonstrates substantial improvements in both visual quality and controllability. TV2TV also scales to natural videos, as we show by augmenting sports videos with interleaved natural language action descriptions using vision-language models (VLMs). Training TV2TV on this corpus yields strong visual quality and prompt alignment, showcasing the model's ability to reason about and generate complex real-world action sequences. Together, these results highlight TV2TV as a promising step toward video generation with open-ended textual reasoning and control.",
+        "url": "http://arxiv.org/abs/2512.05103v1",
+        "published_date": "2025-12-04T18:59:09+00:00",
+        "updated_date": "2025-12-04T18:59:09+00:00",
+        "categories": [
+            "cs.LG",
+            "cs.AI",
+            "cs.CV"
+        ],
+        "authors": [
+            "Xiaochuang Han",
+            "Youssef Emad",
+            "Melissa Hall",
+            "John Nguyen",
+            "Karthik Padthe",
+            "Liam Robbins",
+            "Amir Bar",
+            "Delong Chen",
+            "Michal Drozdzal",
+            "Maha Elbayad",
+            "Yushi Hu",
+            "Shang-Wen Li",
+            "Sreya Dutta Roy",
+            "Jakob Verbeek",
+            "XuDong Wang",
+            "Marjan Ghazvininejad",
+            "Luke Zettlemoyer",
+            "Emily Dinan"
+        ],
+        "tldr": "The paper introduces TV2TV, a novel video generation framework that interleaves text and video generation using a Mixture-of-Transformers architecture, enabling improved visual quality, prompt alignment, and fine-grained controllability through textual interventions.",
+        "tldr_zh": "该论文介绍了 TV2TV，一种新颖的视频生成框架，它使用混合Transformer架构交错进行文本和视频生成，从而提高视觉质量、提示对齐和通过文本干预进行的精细控制。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
