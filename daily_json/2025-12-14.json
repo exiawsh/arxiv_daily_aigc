@@ -1,0 +1,55 @@
+[
+    {
+        "title": "AnchorDream: Repurposing Video Diffusion for Embodiment-Aware Robot Data Synthesis",
+        "summary": "The collection of large-scale and diverse robot demonstrations remains a major bottleneck for imitation learning, as real-world data acquisition is costly and simulators offer limited diversity and fidelity with pronounced sim-to-real gaps. While generative models present an attractive solution, existing methods often alter only visual appearances without creating new behaviors, or suffer from embodiment inconsistencies that yield implausible motions. To address these limitations, we introduce AnchorDream, an embodiment-aware world model that repurposes pretrained video diffusion models for robot data synthesis. AnchorDream conditions the diffusion process on robot motion renderings, anchoring the embodiment to prevent hallucination while synthesizing objects and environments consistent with the robot's kinematics. Starting from only a handful of human teleoperation demonstrations, our method scales them into large, diverse, high-quality datasets without requiring explicit environment modeling. Experiments show that the generated data leads to consistent improvements in downstream policy learning, with relative gains of 36.4% in simulator benchmarks and nearly double performance in real-world studies. These results suggest that grounding generative world models in robot motion provides a practical path toward scaling imitation learning.",
+        "url": "http://arxiv.org/abs/2512.11797v1",
+        "published_date": "2025-12-12T18:59:45+00:00",
+        "updated_date": "2025-12-12T18:59:45+00:00",
+        "categories": [
+            "cs.RO",
+            "cs.CV"
+        ],
+        "authors": [
+            "Junjie Ye",
+            "Rong Xue",
+            "Basile Van Hoorick",
+            "Pavel Tokmakov",
+            "Muhammad Zubair Irshad",
+            "Yue Wang",
+            "Vitor Guizilini"
+        ],
+        "tldr": "AnchorDream repurposes video diffusion models for robot data synthesis by conditioning on robot motion renderings, achieving significant improvements in downstream policy learning both in simulation and the real world.",
+        "tldr_zh": "AnchorDream通过基于机器人运动渲染来调节视频扩散模型，从而实现机器人数据的合成。该方法在模拟和真实环境中下游策略学习中取得了显著的改进。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "Structure From Tracking: Distilling Structure-Preserving Motion for Video Generation",
+        "summary": "Reality is a dance between rigid constraints and deformable structures. For video models, that means generating motion that preserves fidelity as well as structure. Despite progress in diffusion models, producing realistic structure-preserving motion remains challenging, especially for articulated and deformable objects such as humans and animals. Scaling training data alone, so far, has failed to resolve physically implausible transitions. Existing approaches rely on conditioning with noisy motion representations, such as optical flow or skeletons extracted using an external imperfect model. To address these challenges, we introduce an algorithm to distill structure-preserving motion priors from an autoregressive video tracking model (SAM2) into a bidirectional video diffusion model (CogVideoX). With our method, we train SAM2VideoX, which contains two innovations: (1) a bidirectional feature fusion module that extracts global structure-preserving motion priors from a recurrent model like SAM2; (2) a Local Gram Flow loss that aligns how local features move together. Experiments on VBench and in human studies show that SAM2VideoX delivers consistent gains (+2.60\\% on VBench, 21-22\\% lower FVD, and 71.4\\% human preference) over prior baselines. Specifically, on VBench, we achieve 95.51\\%, surpassing REPA (92.91\\%) by 2.60\\%, and reduce FVD to 360.57, a 21.20\\% and 22.46\\% improvement over REPA- and LoRA-finetuning, respectively. The project website can be found at https://sam2videox.github.io/ .",
+        "url": "http://arxiv.org/abs/2512.11792v1",
+        "published_date": "2025-12-12T18:56:35+00:00",
+        "updated_date": "2025-12-12T18:56:35+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yang Fei",
+            "George Stoica",
+            "Jingyuan Liu",
+            "Qifeng Chen",
+            "Ranjay Krishna",
+            "Xiaojuan Wang",
+            "Benlin Liu"
+        ],
+        "tldr": "This paper introduces SAM2VideoX, a video diffusion model that distills structure-preserving motion priors from a video tracking model using bidirectional feature fusion and a Local Gram Flow loss, achieving improved performance in realistic motion generation.",
+        "tldr_zh": "该论文介绍了SAM2VideoX，一种视频扩散模型，它利用双向特征融合和局部Gram流损失，从视频跟踪模型中提取结构保持的运动先验，从而在逼真运动生成方面取得改进。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
