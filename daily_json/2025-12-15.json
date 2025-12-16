@@ -1,0 +1,53 @@
+[
+    {
+        "title": "GenieDrive: Towards Physics-Aware Driving World Model with 4D Occupancy Guided Video Generation",
+        "summary": "Physics-aware driving world model is essential for drive planning, out-of-distribution data synthesis, and closed-loop evaluation. However, existing methods often rely on a single diffusion model to directly map driving actions to videos, which makes learning difficult and leads to physically inconsistent outputs. To overcome these challenges, we propose GenieDrive, a novel framework designed for physics-aware driving video generation. Our approach starts by generating 4D occupancy, which serves as a physics-informed foundation for subsequent video generation. 4D occupancy contains rich physical information, including high-resolution 3D structures and dynamics. To facilitate effective compression of such high-resolution occupancy, we propose a VAE that encodes occupancy into a latent tri-plane representation, reducing the latent size to only 58% of that used in previous methods. We further introduce Mutual Control Attention (MCA) to accurately model the influence of control on occupancy evolution, and we jointly train the VAE and the subsequent prediction module in an end-to-end manner to maximize forecasting accuracy. Together, these designs yield a 7.2% improvement in forecasting mIoU at an inference speed of 41 FPS, while using only 3.47 M parameters. Additionally, a Normalized Multi-View Attention is introduced in the video generation model to generate multi-view driving videos with guidance from our 4D occupancy, significantly improving video quality with a 20.7% reduction in FVD. Experiments demonstrate that GenieDrive enables highly controllable, multi-view consistent, and physics-aware driving video generation.",
+        "url": "http://arxiv.org/abs/2512.12751v1",
+        "published_date": "2025-12-14T16:23:51+00:00",
+        "updated_date": "2025-12-14T16:23:51+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Zhenya Yang",
+            "Zhe Liu",
+            "Yuxiang Lu",
+            "Liping Hou",
+            "Chenxuan Miao",
+            "Siyi Peng",
+            "Bailan Feng",
+            "Xiang Bai",
+            "Hengshuang Zhao"
+        ],
+        "tldr": "GenieDrive is a novel framework for physics-aware driving video generation that uses 4D occupancy as a foundation and incorporates VAE compression, Mutual Control Attention, and Normalized Multi-View Attention to achieve improved forecasting accuracy and video quality.",
+        "tldr_zh": "GenieDrive是一个新颖的物理感知驾驶视频生成框架，它使用4D occupancy作为基础，并结合VAE压缩、Mutual Control Attention和Normalized Multi-View Attention，以提高预测精度和视频质量。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Endless World: Real-Time 3D-Aware Long Video Generation",
+        "summary": "Producing long, coherent video sequences with stable 3D structure remains a major challenge, particularly in streaming scenarios. Motivated by this, we introduce Endless World, a real-time framework for infinite, 3D-consistent video generation.To support infinite video generation, we introduce a conditional autoregressive training strategy that aligns newly generated content with existing video frames. This design preserves long-range dependencies while remaining computationally efficient, enabling real-time inference on a single GPU without additional training overhead.Moreover, our Endless World integrates global 3D-aware attention to provide continuous geometric guidance across time. Our 3D injection mechanism enforces physical plausibility and geometric consistency throughout extended sequences, addressing key challenges in long-horizon and dynamic scene synthesis.Extensive experiments demonstrate that Endless World produces long, stable, and visually coherent videos, achieving competitive or superior performance to existing methods in both visual fidelity and spatial consistency. Our project has been available on https://bwgzk-keke.github.io/EndlessWorld/.",
+        "url": "http://arxiv.org/abs/2512.12430v1",
+        "published_date": "2025-12-13T19:06:12+00:00",
+        "updated_date": "2025-12-13T19:06:12+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Ke Zhang",
+            "Yiqun Mei",
+            "Jiacong Xu",
+            "Vishal M. Patel"
+        ],
+        "tldr": "The paper introduces \"Endless World,\" a real-time framework for generating infinite, 3D-consistent video sequences using a conditional autoregressive training strategy and 3D-aware attention, demonstrating competitive performance in visual fidelity and spatial consistency.",
+        "tldr_zh": "该论文介绍了一个名为“Endless World”的实时框架，用于生成无限的、3D一致的视频序列。它采用条件自回归训练策略和3D感知注意力机制，并在视觉保真度和空间一致性方面表现出具有竞争力的性能。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
