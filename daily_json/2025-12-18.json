@@ -1,0 +1,54 @@
+[
+    {
+        "title": "TalkVerse: Democratizing Minute-Long Audio-Driven Video Generation",
+        "summary": "We introduce TalkVerse, a large-scale, open corpus for single-person, audio-driven talking video generation designed to enable fair, reproducible comparison across methods. While current state-of-the-art systems rely on closed data or compute-heavy models, TalkVerse offers 2.3 million high-resolution (720p/1080p) audio-video synchronized clips totaling 6.3k hours. These are curated from over 60k hours of video via a transparent pipeline that includes scene-cut detection, aesthetic assessment, strict audio-visual synchronization checks, and comprehensive annotations including 2D skeletons and structured visual/audio-style captions. Leveraging TalkVerse, we present a reproducible 5B DiT baseline built on Wan2.2-5B. By utilizing a video VAE with a high downsampling ratio and a sliding window mechanism with motion-frame context, our model achieves minute-long generation with low drift. It delivers comparable lip-sync and visual quality to the 14B Wan-S2V model but with 10$\\times$ lower inference cost. To enhance storytelling in long videos, we integrate an MLLM director to rewrite prompts based on audio and visual cues. Furthermore, our model supports zero-shot video dubbing via controlled latent noise injection. We open-source the dataset, training recipes, and 5B checkpoints to lower barriers for research in audio-driven human video generation. Project Page: https://zhenzhiwang.github.io/talkverse/",
+        "url": "http://arxiv.org/abs/2512.14938v1",
+        "published_date": "2025-12-16T22:01:08+00:00",
+        "updated_date": "2025-12-16T22:01:08+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.MM",
+            "cs.SD"
+        ],
+        "authors": [
+            "Zhenzhi Wang",
+            "Jian Wang",
+            "Ke Ma",
+            "Dahua Lin",
+            "Bing Zhou"
+        ],
+        "tldr": "TalkVerse introduces a large-scale audio-driven video dataset and a corresponding 5B parameter model for minute-long talking video generation with low inference cost, also demonstrating zero-shot dubbing and MLLM-driven prompt rewriting.",
+        "tldr_zh": "TalkVerse 引入了一个大规模的音频驱动视频数据集和一个相应的5B参数模型，用于生成分钟级别的说话视频，推理成本低，并展示了零样本配音和 MLLM 驱动的提示重写。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "MemFlow: Flowing Adaptive Memory for Consistent and Efficient Long Video Narratives",
+        "summary": "The core challenge for streaming video generation is maintaining the content consistency in long context, which poses high requirement for the memory design. Most existing solutions maintain the memory by compressing historical frames with predefined strategies. However, different to-generate video chunks should refer to different historical cues, which is hard to satisfy with fixed strategies. In this work, we propose MemFlow to address this problem. Specifically, before generating the coming chunk, we dynamically update the memory bank by retrieving the most relevant historical frames with the text prompt of this chunk. This design enables narrative coherence even if new event happens or scenario switches in future frames. In addition, during generation, we only activate the most relevant tokens in the memory bank for each query in the attention layers, which effectively guarantees the generation efficiency. In this way, MemFlow achieves outstanding long-context consistency with negligible computation burden (7.9% speed reduction compared with the memory-free baseline) and keeps the compatibility with any streaming video generation model with KV cache.",
+        "url": "http://arxiv.org/abs/2512.14699v1",
+        "published_date": "2025-12-16T18:59:59+00:00",
+        "updated_date": "2025-12-16T18:59:59+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Sihui Ji",
+            "Xi Chen",
+            "Shuai Yang",
+            "Xin Tao",
+            "Pengfei Wan",
+            "Hengshuang Zhao"
+        ],
+        "tldr": "The paper introduces MemFlow, a method for streaming video generation that dynamically updates a memory bank by retrieving relevant historical frames based on text prompts, aiming to improve long-context consistency with minimal computational overhead.",
+        "tldr_zh": "该论文介绍了MemFlow，一种流式视频生成方法，它通过根据文本提示检索相关的历史帧来动态更新记忆库，旨在以最小的计算开销提高长上下文一致性。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
