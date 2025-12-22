@@ -1,0 +1,25 @@
+[
+    {
+        "title": "Dexterous World Models",
+        "summary": "Recent progress in 3D reconstruction has made it easy to create realistic digital twins from everyday environments. However, current digital twins remain largely static and are limited to navigation and view synthesis without embodied interactivity. To bridge this gap, we introduce Dexterous World Model (DWM), a scene-action-conditioned video diffusion framework that models how dexterous human actions induce dynamic changes in static 3D scenes.\n  Given a static 3D scene rendering and an egocentric hand motion sequence, DWM generates temporally coherent videos depicting plausible human-scene interactions. Our approach conditions video generation on (1) static scene renderings following a specified camera trajectory to ensure spatial consistency, and (2) egocentric hand mesh renderings that encode both geometry and motion cues to model action-conditioned dynamics directly. To train DWM, we construct a hybrid interaction video dataset. Synthetic egocentric interactions provide fully aligned supervision for joint locomotion and manipulation learning, while fixed-camera real-world videos contribute diverse and realistic object dynamics.\n  Experiments demonstrate that DWM enables realistic and physically plausible interactions, such as grasping, opening, and moving objects, while maintaining camera and scene consistency. This framework represents a first step toward video diffusion-based interactive digital twins and enables embodied simulation from egocentric actions.",
+        "url": "http://arxiv.org/abs/2512.17907v1",
+        "published_date": "2025-12-19T18:59:51+00:00",
+        "updated_date": "2025-12-19T18:59:51+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Byungjun Kim",
+            "Taeksoo Kim",
+            "Junyoung Lee",
+            "Hanbyul Joo"
+        ],
+        "tldr": "The paper introduces Dexterous World Model (DWM), a video diffusion framework conditioned on scene renderings and hand motions to generate realistic videos of human-scene interactions within digital twins, trained on a hybrid real/synthetic dataset.",
+        "tldr_zh": "该论文介绍了灵巧世界模型（DWM），这是一个视频扩散框架，以场景渲染和手部动作为条件，生成数字孪生中人与场景互动的逼真视频，并在混合的真实/合成数据集上进行训练。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
