@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - December 17, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - December 22, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>December 17, 2025</p>
+            <p>December 22, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,14 +215,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">WorldPlay: Towards Long-Term Geometric Consistency for Real-Time Interactive World Modeling</h2>
+            <h2 class="paper-title">EchoMotion: Unified Human Video and Motion Generation via Dual-Modality Diffusion Transformer</h2>
             
-            <p class="paper-summary">This paper presents WorldPlay, a streaming video diffusion model that enables real-time, interactive world modeling with long-term geometric consistency, resolving the trade-off between speed and memory that limits current methods. WorldPlay draws power from three key innovations. 1) We use a Dual Action Representation to enable robust action control in response to the user's keyboard and mouse inputs. 2) To enforce long-term consistency, our Reconstituted Context Memory dynamically rebuilds context from past frames and uses temporal reframing to keep geometrically important but long-past frames accessible, effectively alleviating memory attenuation. 3) We also propose Context Forcing, a novel distillation method designed for memory-aware model. Aligning memory context between the teacher and student preserves the student's capacity to use long-range information, enabling real-time speeds while preventing error drift. Taken together, WorldPlay generates long-horizon streaming 720p video at 24 FPS with superior consistency, comparing favorably with existing techniques and showing strong generalization across diverse scenes. Project page and online demo can be found: https://3d-models.hunyuan.tencent.com/world/ and https://3d.hunyuan.tencent.com/sceneTo3D.</p>
+            <p class="paper-summary">Video generation models have advanced significantly, yet they still struggle to synthesize complex human movements due to the high degrees of freedom in human articulation. This limitation stems from the intrinsic constraints of pixel-only training objectives, which inherently bias models toward appearance fidelity at the expense of learning underlying kinematic principles. To address this, we introduce EchoMotion, a framework designed to model the joint distribution of appearance and human motion, thereby improving the quality of complex human action video generation. EchoMotion extends the DiT (Diffusion Transformer) framework with a dual-branch architecture that jointly processes tokens concatenated from different modalities. Furthermore, we propose MVS-RoPE (Motion-Video Syncronized RoPE), which offers unified 3D positional encoding for both video and motion tokens. By providing a synchronized coordinate system for the dual-modal latent sequence, MVS-RoPE establishes an inductive bias that fosters temporal alignment between the two modalities. We also propose a Motion-Video Two-Stage Training Strategy. This strategy enables the model to perform both the joint generation of complex human action videos and their corresponding motion sequences, as well as versatile cross-modal conditional generation tasks. To facilitate the training of a model with these capabilities, we construct HuMoVe, a large-scale dataset of approximately 80,000 high-quality, human-centric video-motion pairs. Our findings reveal that explicitly representing human motion is complementary to appearance, significantly boosting the coherence and plausibility of human-centric video generation.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: WorldPlay is a real-time video diffusion model for interactive world modeling that achieves long-term geometric consistency using a dual action representation, reconstituted context memory, and context forcing, generating 720p video at 24 FPS.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: EchoMotion introduces a dual-modality diffusion transformer with synchronized positional encoding (MVS-RoPE) and a two-stage training strategy to jointly generate human videos and motion sequences, leveraging a new large-scale dataset, HuMoVe.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: WorldPlay是一个用于交互式世界建模的实时视频扩散模型，它通过双重动作表示、重构上下文记忆和上下文强制来实现长期几何一致性，从而生成24 FPS的720p视频。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: EchoMotion 提出了一种双模态扩散 Transformer，具有同步位置编码（MVS-RoPE）和两阶段训练策略，用于联合生成人体视频和运动序列，并利用了一个新的大型数据集 HuMoVe。</p>
             
 
             
@@ -232,16 +232,16 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
@@ -256,8 +256,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
             </div>
@@ -286,18 +286,18 @@
                     
                 
                     
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2512.14614v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2512.18814v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Wenqiang Sun, Haiyu Zhang, Haoyuan Wang, Junta Wu, Zehan Wang, Zhenwei Wang, Yunhong Wang, Jun Zhang, Tengfei Wang, Chunchao Guo</p>
+            <p class="paper-authors">Authors: Yuxiao Yang, Hualian Sheng, Sijia Cai, Jing Lin, Jiahao Wang, Bing Deng, Junzhe Lu, Haoqian Wang, Jieping Ye</p>
             
         </motion.div>
         
@@ -309,14 +309,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">SS4D: Native 4D Generative Model via Structured Spacetime Latents</h2>
+            <h2 class="paper-title">Memorize-and-Generate: Towards Long-Term Consistency in Real-Time Video Generation</h2>
             
-            <p class="paper-summary">We present SS4D, a native 4D generative model that synthesizes dynamic 3D objects directly from monocular video. Unlike prior approaches that construct 4D representations by optimizing over 3D or video generative models, we train a generator directly on 4D data, achieving high fidelity, temporal coherence, and structural consistency. At the core of our method is a compressed set of structured spacetime latents. Specifically, (1) To address the scarcity of 4D training data, we build on a pre-trained single-image-to-3D model, preserving strong spatial consistency. (2) Temporal consistency is enforced by introducing dedicated temporal layers that reason across frames. (3) To support efficient training and inference over long video sequences, we compress the latent sequence along the temporal axis using factorized 4D convolutions and temporal downsampling blocks. In addition, we employ a carefully designed training strategy to enhance robustness against occlusion</p>
+            <p class="paper-summary">Frame-level autoregressive (frame-AR) models have achieved significant progress, enabling real-time video generation comparable to bidirectional diffusion models and serving as a foundation for interactive world models and game engines. However, current approaches in long video generation typically rely on window attention, which naively discards historical context outside the window, leading to catastrophic forgetting and scene inconsistency; conversely, retaining full history incurs prohibitive memory costs. To address this trade-off, we propose \textbf{Memorize-and-Generate (MAG)}, a framework that decouples memory compression and frame generation into distinct tasks. Specifically, we train a memory model to compress historical information into a compact KV cache, and a separate generator model to synthesize subsequent frames utilizing this compressed representation. Furthermore, we introduce \textbf{MAG-Bench} to strictly evaluate historical memory retention. Extensive experiments demonstrate that MAG achieves superior historical scene consistency while maintaining competitive performance on standard video generation benchmarks.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: SS4D presents a native 4D generative model for synthesizing dynamic 3D objects from monocular video, achieving high fidelity and temporal consistency by directly training on 4D data with structured spacetime latents.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Memorize-and-Generate (MAG), a framework for long video generation that addresses the trade-off between memory cost and scene consistency by decoupling memory compression and frame generation. It also introduces MAG-Bench for evaluating historical memory retention.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: SS4D 提出了一种原生的 4D 生成模型，用于从单目视频合成动态 3D 对象。该模型通过直接在 4D 数据上训练，并利用结构化的时空潜在变量，实现了高保真度和时间一致性。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了Memorize-and-Generate (MAG)，一个用于长视频生成的框架，通过解耦记忆压缩和帧生成来解决内存成本和场景一致性之间的权衡。此外，它还引入了MAG-Bench用于评估历史记忆保持能力。</p>
             
 
             
@@ -387,11 +387,11 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2512.14284v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2512.18741v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Zhibing Li, Mengchen Zhang, Tong Wu, Jing Tan, Jiaqi Wang, Dahua Lin</p>
+            <p class="paper-authors">Authors: Tianrui Zhu, Shiyi Zhang, Zhirui Sun, Jingqi Tian, Yansong Tang</p>
             
         </motion.div>
         
@@ -403,14 +403,15 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">DRAW2ACT: Turning Depth-Encoded Trajectories into Robotic Demonstration Videos</h2>
+            <h2 class="paper-title">PTTA: A Pure Text-to-Animation Framework for High-Quality Creation</h2>
             
-            <p class="paper-summary">Video diffusion models provide powerful real-world simulators for embodied AI but remain limited in controllability for robotic manipulation. Recent works on trajectory-conditioned video generation address this gap but often rely on 2D trajectories or single modality conditioning, which restricts their ability to produce controllable and consistent robotic demonstrations. We present DRAW2ACT, a depth-aware trajectory-conditioned video generation framework that extracts multiple orthogonal representations from the input trajectory, capturing depth, semantics, shape and motion, and injects them into the diffusion model. Moreover, we propose to jointly generate spatially aligned RGB and depth videos, leveraging cross-modality attention mechanisms and depth supervision to enhance the spatio-temporal consistency. Finally, we introduce a multimodal policy model conditioned on the generated RGB and depth sequences to regress the robot's joint angles. Experiments on Bridge V2, Berkeley Autolab, and simulation benchmarks show that DRAW2ACT achieves superior visual fidelity and consistency while yielding higher manipulation success rates compared to existing baselines.</p>
+            <p class="paper-summary">Traditional animation production involves complex pipelines and significant manual labor cost. While recent video generation models such as Sora, Kling, and CogVideoX achieve impressive results on natural video synthesis, they exhibit notable limitations when applied to animation generation. Recent efforts, such as AniSora, demonstrate promising performance by fine-tuning image-to-video models for animation styles, yet analogous exploration in the text-to-video setting remains limited.
+  In this work, we present PTTA, a pure text-to-animation framework for high-quality animation creation. We first construct a small-scale but high-quality paired dataset of animation videos and textual descriptions. Building upon the pretrained text-to-video model HunyuanVideo, we perform fine-tuning to adapt it to animation-style generation. Extensive visual evaluations across multiple dimensions show that the proposed approach consistently outperforms comparable baselines in animation video synthesis.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: DRAW2ACT is a depth-aware trajectory-conditioned video generation framework that creates robotic demonstration videos using a diffusion model conditioned on depth, semantics, shape, and motion, and demonstrates superior visual fidelity and manipulation success rates.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces PTTA, a text-to-animation framework built upon HunyuanVideo, fine-tuned on a high-quality animation dataset, demonstrating improved animation video synthesis compared to baselines.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: DRAW2ACT是一个深度感知的轨迹条件视频生成框架，它使用一个以深度、语义、形状和运动为条件的扩散模型来创建机器人演示视频，并展示了卓越的视觉保真度和操作成功率。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文提出了PTTA，一个基于HunyuanVideo的纯文本到动画的框架，通过在一个高质量动画数据集上进行微调，实现了比基线方法更好的动画视频合成效果。</p>
             
 
             
@@ -481,11 +482,11 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2512.14217v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2512.18614v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Yang Bai, Liudi Yang, George Eskandar, Fengyi Shen, Mohammad Altillawi, Ziyuan Liu, Gitta Kutyniok</p>
+            <p class="paper-authors">Authors: Ruiqi Chen, Kaitong Cai, Yijia Fan, Keze Wang</p>
             
         </motion.div>
         
@@ -497,14 +498,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">FacEDiT: Unified Talking Face Editing and Generation via Facial Motion Infilling</h2>
+            <h2 class="paper-title">In-Context Audio Control of Video Diffusion Transformers</h2>
             
-            <p class="paper-summary">Talking face editing and face generation have often been studied as distinct problems. In this work, we propose viewing both not as separate tasks but as subtasks of a unifying formulation, speech-conditional facial motion infilling. We explore facial motion infilling as a self-supervised pretext task that also serves as a unifying formulation of dynamic talking face synthesis. To instantiate this idea, we propose FacEDiT, a speech-conditional Diffusion Transformer trained with flow matching. Inspired by masked autoencoders, FacEDiT learns to synthesize masked facial motions conditioned on surrounding motions and speech. This formulation enables both localized generation and edits, such as substitution, insertion, and deletion, while ensuring seamless transitions with unedited regions. In addition, biased attention and temporal smoothness constraints enhance boundary continuity and lip synchronization. To address the lack of a standard editing benchmark, we introduce FacEDiTBench, the first dataset for talking face editing, featuring diverse edit types and lengths, along with new evaluation metrics. Extensive experiments validate that talking face editing and generation emerge as subtasks of speech-conditional motion infilling; FacEDiT produces accurate, speech-aligned facial edits with strong identity preservation and smooth visual continuity while generalizing effectively to talking face generation.</p>
+            <p class="paper-summary">Recent advancements in video generation have seen a shift towards unified, transformer-based foundation models that can handle multiple conditional inputs in-context. However, these models have primarily focused on modalities like text, images, and depth maps, while strictly time-synchronous signals like audio have been underexplored. This paper introduces In-Context Audio Control of video diffusion transformers (ICAC), a framework that investigates the integration of audio signals for speech-driven video generation within a unified full-attention architecture, akin to FullDiT. We systematically explore three distinct mechanisms for injecting audio conditions: standard cross-attention, 2D self-attention, and unified 3D self-attention. Our findings reveal that while 3D attention offers the highest potential for capturing spatio-temporal audio-visual correlations, it presents significant training challenges. To overcome this, we propose a Masked 3D Attention mechanism that constrains the attention pattern to enforce temporal alignment, enabling stable training and superior performance. Our experiments demonstrate that this approach achieves strong lip synchronization and video quality, conditioned on an audio stream and reference images.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper presents FacEDiT, a unified framework for talking face editing and generation based on speech-conditional facial motion infilling using a Diffusion Transformer, and introduces a new benchmark dataset, FacEDiTBench.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces a method, ICAC, for incorporating audio as a conditional input into video diffusion transformers for speech-driven video generation, addressing the under-exploration of time-synchronous signals in existing models. They propose a Masked 3D Attention mechanism to improve training stability and performance.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文提出了 FacEDiT，一个基于语音条件面部运动填充的统一框架，用于说话人脸编辑和生成，使用 Diffusion Transformer，并引入了一个新的基准数据集 FacEDiTBench。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种名为ICAC的方法，将音频作为条件输入整合到视频扩散Transformer中，用于语音驱动的视频生成，解决了现有模型对时序同步信号的探索不足的问题。 他们提出了一种Masked 3D Attention机制，以提高训练稳定性和性能。</p>
             
 
             
@@ -575,18 +576,18 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2512.14056v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2512.18772v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Kim Sung-Bin, Joohyun Chang, David Harwath, Tae-Hyun Oh</p>
+            <p class="paper-authors">Authors: Wenze Liu, Weicai Ye, Minghong Cai, Quande Liu, Xintao Wang, Xiangyu Yue</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-12-23 02:57:16 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-12-23 02:58:22 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

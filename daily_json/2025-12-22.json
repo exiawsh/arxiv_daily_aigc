@@ -1,0 +1,103 @@
+[
+    {
+        "title": "EchoMotion: Unified Human Video and Motion Generation via Dual-Modality Diffusion Transformer",
+        "summary": "Video generation models have advanced significantly, yet they still struggle to synthesize complex human movements due to the high degrees of freedom in human articulation. This limitation stems from the intrinsic constraints of pixel-only training objectives, which inherently bias models toward appearance fidelity at the expense of learning underlying kinematic principles. To address this, we introduce EchoMotion, a framework designed to model the joint distribution of appearance and human motion, thereby improving the quality of complex human action video generation. EchoMotion extends the DiT (Diffusion Transformer) framework with a dual-branch architecture that jointly processes tokens concatenated from different modalities. Furthermore, we propose MVS-RoPE (Motion-Video Syncronized RoPE), which offers unified 3D positional encoding for both video and motion tokens. By providing a synchronized coordinate system for the dual-modal latent sequence, MVS-RoPE establishes an inductive bias that fosters temporal alignment between the two modalities. We also propose a Motion-Video Two-Stage Training Strategy. This strategy enables the model to perform both the joint generation of complex human action videos and their corresponding motion sequences, as well as versatile cross-modal conditional generation tasks. To facilitate the training of a model with these capabilities, we construct HuMoVe, a large-scale dataset of approximately 80,000 high-quality, human-centric video-motion pairs. Our findings reveal that explicitly representing human motion is complementary to appearance, significantly boosting the coherence and plausibility of human-centric video generation.",
+        "url": "http://arxiv.org/abs/2512.18814v1",
+        "published_date": "2025-12-21T17:08:14+00:00",
+        "updated_date": "2025-12-21T17:08:14+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yuxiao Yang",
+            "Hualian Sheng",
+            "Sijia Cai",
+            "Jing Lin",
+            "Jiahao Wang",
+            "Bing Deng",
+            "Junzhe Lu",
+            "Haoqian Wang",
+            "Jieping Ye"
+        ],
+        "tldr": "EchoMotion introduces a dual-modality diffusion transformer with synchronized positional encoding (MVS-RoPE) and a two-stage training strategy to jointly generate human videos and motion sequences, leveraging a new large-scale dataset, HuMoVe.",
+        "tldr_zh": "EchoMotion 提出了一种双模态扩散 Transformer，具有同步位置编码（MVS-RoPE）和两阶段训练策略，用于联合生成人体视频和运动序列，并利用了一个新的大型数据集 HuMoVe。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Memorize-and-Generate: Towards Long-Term Consistency in Real-Time Video Generation",
+        "summary": "Frame-level autoregressive (frame-AR) models have achieved significant progress, enabling real-time video generation comparable to bidirectional diffusion models and serving as a foundation for interactive world models and game engines. However, current approaches in long video generation typically rely on window attention, which naively discards historical context outside the window, leading to catastrophic forgetting and scene inconsistency; conversely, retaining full history incurs prohibitive memory costs. To address this trade-off, we propose \\textbf{Memorize-and-Generate (MAG)}, a framework that decouples memory compression and frame generation into distinct tasks. Specifically, we train a memory model to compress historical information into a compact KV cache, and a separate generator model to synthesize subsequent frames utilizing this compressed representation. Furthermore, we introduce \\textbf{MAG-Bench} to strictly evaluate historical memory retention. Extensive experiments demonstrate that MAG achieves superior historical scene consistency while maintaining competitive performance on standard video generation benchmarks.",
+        "url": "http://arxiv.org/abs/2512.18741v1",
+        "published_date": "2025-12-21T14:02:53+00:00",
+        "updated_date": "2025-12-21T14:02:53+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Tianrui Zhu",
+            "Shiyi Zhang",
+            "Zhirui Sun",
+            "Jingqi Tian",
+            "Yansong Tang"
+        ],
+        "tldr": "The paper introduces Memorize-and-Generate (MAG), a framework for long video generation that addresses the trade-off between memory cost and scene consistency by decoupling memory compression and frame generation. It also introduces MAG-Bench for evaluating historical memory retention.",
+        "tldr_zh": "本文介绍了Memorize-and-Generate (MAG)，一个用于长视频生成的框架，通过解耦记忆压缩和帧生成来解决内存成本和场景一致性之间的权衡。此外，它还引入了MAG-Bench用于评估历史记忆保持能力。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "PTTA: A Pure Text-to-Animation Framework for High-Quality Creation",
+        "summary": "Traditional animation production involves complex pipelines and significant manual labor cost. While recent video generation models such as Sora, Kling, and CogVideoX achieve impressive results on natural video synthesis, they exhibit notable limitations when applied to animation generation. Recent efforts, such as AniSora, demonstrate promising performance by fine-tuning image-to-video models for animation styles, yet analogous exploration in the text-to-video setting remains limited.\n  In this work, we present PTTA, a pure text-to-animation framework for high-quality animation creation. We first construct a small-scale but high-quality paired dataset of animation videos and textual descriptions. Building upon the pretrained text-to-video model HunyuanVideo, we perform fine-tuning to adapt it to animation-style generation. Extensive visual evaluations across multiple dimensions show that the proposed approach consistently outperforms comparable baselines in animation video synthesis.",
+        "url": "http://arxiv.org/abs/2512.18614v1",
+        "published_date": "2025-12-21T06:17:28+00:00",
+        "updated_date": "2025-12-21T06:17:28+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Ruiqi Chen",
+            "Kaitong Cai",
+            "Yijia Fan",
+            "Keze Wang"
+        ],
+        "tldr": "The paper introduces PTTA, a text-to-animation framework built upon HunyuanVideo, fine-tuned on a high-quality animation dataset, demonstrating improved animation video synthesis compared to baselines.",
+        "tldr_zh": "本文提出了PTTA，一个基于HunyuanVideo的纯文本到动画的框架，通过在一个高质量动画数据集上进行微调，实现了比基线方法更好的动画视频合成效果。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "In-Context Audio Control of Video Diffusion Transformers",
+        "summary": "Recent advancements in video generation have seen a shift towards unified, transformer-based foundation models that can handle multiple conditional inputs in-context. However, these models have primarily focused on modalities like text, images, and depth maps, while strictly time-synchronous signals like audio have been underexplored. This paper introduces In-Context Audio Control of video diffusion transformers (ICAC), a framework that investigates the integration of audio signals for speech-driven video generation within a unified full-attention architecture, akin to FullDiT. We systematically explore three distinct mechanisms for injecting audio conditions: standard cross-attention, 2D self-attention, and unified 3D self-attention. Our findings reveal that while 3D attention offers the highest potential for capturing spatio-temporal audio-visual correlations, it presents significant training challenges. To overcome this, we propose a Masked 3D Attention mechanism that constrains the attention pattern to enforce temporal alignment, enabling stable training and superior performance. Our experiments demonstrate that this approach achieves strong lip synchronization and video quality, conditioned on an audio stream and reference images.",
+        "url": "http://arxiv.org/abs/2512.18772v1",
+        "published_date": "2025-12-21T15:22:28+00:00",
+        "updated_date": "2025-12-21T15:22:28+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Wenze Liu",
+            "Weicai Ye",
+            "Minghong Cai",
+            "Quande Liu",
+            "Xintao Wang",
+            "Xiangyu Yue"
+        ],
+        "tldr": "This paper introduces a method, ICAC, for incorporating audio as a conditional input into video diffusion transformers for speech-driven video generation, addressing the under-exploration of time-synchronous signals in existing models. They propose a Masked 3D Attention mechanism to improve training stability and performance.",
+        "tldr_zh": "本文介绍了一种名为ICAC的方法，将音频作为条件输入整合到视频扩散Transformer中，用于语音驱动的视频生成，解决了现有模型对时序同步信号的探索不足的问题。 他们提出了一种Masked 3D Attention机制，以提高训练稳定性和性能。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]
