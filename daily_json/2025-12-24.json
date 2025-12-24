@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Generating the Past, Present and Future from a Motion-Blurred Image",
+        "summary": "We seek to answer the question: what can a motion-blurred image reveal about a scene's past, present, and future? Although motion blur obscures image details and degrades visual quality, it also encodes information about scene and camera motion during an exposure. Previous techniques leverage this information to estimate a sharp image from an input blurry one, or to predict a sequence of video frames showing what might have occurred at the moment of image capture. However, they rely on handcrafted priors or network architectures to resolve ambiguities in this inverse problem, and do not incorporate image and video priors on large-scale datasets. As such, existing methods struggle to reproduce complex scene dynamics and do not attempt to recover what occurred before or after an image was taken. Here, we introduce a new technique that repurposes a pre-trained video diffusion model trained on internet-scale datasets to recover videos revealing complex scene dynamics during the moment of capture and what might have occurred immediately into the past or future. Our approach is robust and versatile; it outperforms previous methods for this task, generalizes to challenging in-the-wild images, and supports downstream tasks such as recovering camera trajectories, object motion, and dynamic 3D scene structure. Code and data are available at https://blur2vid.github.io",
+        "url": "http://arxiv.org/abs/2512.19817v1",
+        "published_date": "2025-12-22T19:12:33+00:00",
+        "updated_date": "2025-12-22T19:12:33+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.GR"
+        ],
+        "authors": [
+            "SaiKiran Tedla",
+            "Kelly Zhu",
+            "Trevor Canham",
+            "Felix Taubner",
+            "Michael S. Brown",
+            "Kiriakos N. Kutulakos",
+            "David B. Lindell"
+        ],
+        "tldr": "This paper introduces a method to generate past, present, and future video frames from a single motion-blurred image by leveraging a pre-trained video diffusion model, demonstrating improved performance and generalization compared to existing techniques.",
+        "tldr_zh": "本文介绍了一种利用预训练视频扩散模型从单个运动模糊图像生成过去、现在和未来视频帧的方法，与现有技术相比，该方法表现出更好的性能和泛化能力。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "WorldWarp: Propagating 3D Geometry with Asynchronous Video Diffusion",
+        "summary": "Generating long-range, geometrically consistent video presents a fundamental dilemma: while consistency demands strict adherence to 3D geometry in pixel space, state-of-the-art generative models operate most effectively in a camera-conditioned latent space. This disconnect causes current methods to struggle with occluded areas and complex camera trajectories. To bridge this gap, we propose WorldWarp, a framework that couples a 3D structural anchor with a 2D generative refiner. To establish geometric grounding, WorldWarp maintains an online 3D geometric cache built via Gaussian Splatting (3DGS). By explicitly warping historical content into novel views, this cache acts as a structural scaffold, ensuring each new frame respects prior geometry. However, static warping inevitably leaves holes and artifacts due to occlusions. We address this using a Spatio-Temporal Diffusion (ST-Diff) model designed for a \"fill-and-revise\" objective. Our key innovation is a spatio-temporal varying noise schedule: blank regions receive full noise to trigger generation, while warped regions receive partial noise to enable refinement. By dynamically updating the 3D cache at every step, WorldWarp maintains consistency across video chunks. Consequently, it achieves state-of-the-art fidelity by ensuring that 3D logic guides structure while diffusion logic perfects texture. Project page: \\href{https://hyokong.github.io/worldwarp-page/}{https://hyokong.github.io/worldwarp-page/}.",
+        "url": "http://arxiv.org/abs/2512.19678v1",
+        "published_date": "2025-12-22T18:53:50+00:00",
+        "updated_date": "2025-12-22T18:53:50+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Hanyang Kong",
+            "Xingyi Yang",
+            "Xiaoxu Zheng",
+            "Xinchao Wang"
+        ],
+        "tldr": "WorldWarp generates geometrically consistent long videos by combining a 3D Gaussian Splatting cache with a spatio-temporal diffusion model that intelligently refines warped content and generates new content, achieving state-of-the-art fidelity.",
+        "tldr_zh": "WorldWarp通过结合3D高斯溅射缓存和一个时空扩散模型来生成几何一致的视频，该模型能够智能地细化变形的内容并生成新的内容，从而实现最先进的保真度。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "4D Gaussian Splatting as a Learned Dynamical System",
+        "summary": "We reinterpret 4D Gaussian Splatting as a continuous-time dynamical system, where scene motion arises from integrating a learned neural dynamical field rather than applying per-frame deformations. This formulation, which we call EvoGS, treats the Gaussian representation as an evolving physical system whose state evolves continuously under a learned motion law. This unlocks capabilities absent in deformation-based approaches:(1) sample-efficient learning from sparse temporal supervision by modeling the underlying motion law; (2) temporal extrapolation enabling forward and backward prediction beyond observed time ranges; and (3) compositional dynamics that allow localized dynamics injection for controllable scene synthesis. Experiments on dynamic scene benchmarks show that EvoGS achieves better motion coherence and temporal consistency compared to deformation-field baselines while maintaining real-time rendering",
+        "url": "http://arxiv.org/abs/2512.19648v1",
+        "published_date": "2025-12-22T18:20:29+00:00",
+        "updated_date": "2025-12-22T18:20:29+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Arnold Caleb Asiimwe",
+            "Carl Vondrick"
+        ],
+        "tldr": "The paper presents EvoGS, a method that models dynamic scenes using 4D Gaussian Splatting as a learned dynamical system, enabling sample-efficient learning, temporal extrapolation, and compositional dynamics.",
+        "tldr_zh": "该论文提出了EvoGS，一种将4D高斯溅射建模为学习到的动态系统的方法，从而实现样本高效学习、时间外推和组合动力学。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
