@@ -1,0 +1,146 @@
+[
+    {
+        "title": "Active Intelligence in Video Avatars via Closed-loop World Modeling",
+        "summary": "Current video avatar generation methods excel at identity preservation and motion alignment but lack genuine agency, they cannot autonomously pursue long-term goals through adaptive environmental interaction. We address this by introducing L-IVA (Long-horizon Interactive Visual Avatar), a task and benchmark for evaluating goal-directed planning in stochastic generative environments, and ORCA (Online Reasoning and Cognitive Architecture), the first framework enabling active intelligence in video avatars. ORCA embodies Internal World Model (IWM) capabilities through two key innovations: (1) a closed-loop OTAR cycle (Observe-Think-Act-Reflect) that maintains robust state tracking under generative uncertainty by continuously verifying predicted outcomes against actual generations, and (2) a hierarchical dual-system architecture where System 2 performs strategic reasoning with state prediction while System 1 translates abstract plans into precise, model-specific action captions. By formulating avatar control as a POMDP and implementing continuous belief updating with outcome verification, ORCA enables autonomous multi-step task completion in open-domain scenarios. Extensive experiments demonstrate that ORCA significantly outperforms open-loop and non-reflective baselines in task success rate and behavioral coherence, validating our IWM-inspired design for advancing video avatar intelligence from passive animation to active, goal-oriented behavior.",
+        "url": "http://arxiv.org/abs/2512.20615v1",
+        "published_date": "2025-12-23T18:59:16+00:00",
+        "updated_date": "2025-12-23T18:59:16+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Xuanhua He",
+            "Tianyu Yang",
+            "Ke Cao",
+            "Ruiqi Wu",
+            "Cheng Meng",
+            "Yong Zhang",
+            "Zhuoliang Kang",
+            "Xiaoming Wei",
+            "Qifeng Chen"
+        ],
+        "tldr": "This paper introduces a framework called ORCA that endows video avatars with active intelligence by using a closed-loop world model and hierarchical dual-system architecture, enabling them to autonomously pursue long-term goals in dynamic environments.",
+        "tldr_zh": "本文介绍了一个名为ORCA的框架，该框架通过闭环世界模型和分层双系统架构赋予视频化身主动智能，使它们能够在动态环境中自主追求长期目标。",
+        "relevance_score": 9,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "ACD: Direct Conditional Control for Video Diffusion Models via Attention Supervision",
+        "summary": "Controllability is a fundamental requirement in video synthesis, where accurate alignment with conditioning signals is essential. Existing classifier-free guidance methods typically achieve conditioning indirectly by modeling the joint distribution of data and conditions, which often results in limited controllability over the specified conditions. Classifier-based guidance enforces conditions through an external classifier, but the model may exploit this mechanism to raise the classifier score without genuinely satisfying the intended condition, resulting in adversarial artifacts and limited effective controllability. In this paper, we propose Attention-Conditional Diffusion (ACD), a novel framework for direct conditional control in video diffusion models via attention supervision. By aligning the model's attention maps with external control signals, ACD achieves better controllability. To support this, we introduce a sparse 3D-aware object layout as an efficient conditioning signal, along with a dedicated Layout ControlNet and an automated annotation pipeline for scalable layout integration. Extensive experiments on benchmark video generation datasets demonstrate that ACD delivers superior alignment with conditioning inputs while preserving temporal coherence and visual fidelity, establishing an effective paradigm for conditional video synthesis.",
+        "url": "http://arxiv.org/abs/2512.21268v1",
+        "published_date": "2025-12-24T16:24:18+00:00",
+        "updated_date": "2025-12-24T16:24:18+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Weiqi Li",
+            "Zehao Zhang",
+            "Liang Lin",
+            "Guangrun Wang"
+        ],
+        "tldr": "This paper introduces Attention-Conditional Diffusion (ACD), a novel method for improving controllability in video diffusion models by directly aligning attention maps with conditioning signals, specifically using sparse 3D-aware object layouts.",
+        "tldr_zh": "本文介绍了一种名为注意力条件扩散（ACD）的新方法，通过将注意力图直接与条件信号对齐（特别是使用稀疏的3D感知对象布局），从而提高视频扩散模型的可控性。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "DreaMontage: Arbitrary Frame-Guided One-Shot Video Generation",
+        "summary": "The \"one-shot\" technique represents a distinct and sophisticated aesthetic in filmmaking. However, its practical realization is often hindered by prohibitive costs and complex real-world constraints. Although emerging video generation models offer a virtual alternative, existing approaches typically rely on naive clip concatenation, which frequently fails to maintain visual smoothness and temporal coherence. In this paper, we introduce DreaMontage, a comprehensive framework designed for arbitrary frame-guided generation, capable of synthesizing seamless, expressive, and long-duration one-shot videos from diverse user-provided inputs. To achieve this, we address the challenge through three primary dimensions. (i) We integrate a lightweight intermediate-conditioning mechanism into the DiT architecture. By employing an Adaptive Tuning strategy that effectively leverages base training data, we unlock robust arbitrary-frame control capabilities. (ii) To enhance visual fidelity and cinematic expressiveness, we curate a high-quality dataset and implement a Visual Expression SFT stage. In addressing critical issues such as subject motion rationality and transition smoothness, we apply a Tailored DPO scheme, which significantly improves the success rate and usability of the generated content. (iii) To facilitate the production of extended sequences, we design a Segment-wise Auto-Regressive (SAR) inference strategy that operates in a memory-efficient manner. Extensive experiments demonstrate that our approach achieves visually striking and seamlessly coherent one-shot effects while maintaining computational efficiency, empowering users to transform fragmented visual materials into vivid, cohesive one-shot cinematic experiences.",
+        "url": "http://arxiv.org/abs/2512.21252v1",
+        "published_date": "2025-12-24T16:00:15+00:00",
+        "updated_date": "2025-12-24T16:00:15+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Jiawei Liu",
+            "Junqiao Li",
+            "Jiangfan Deng",
+            "Gen Li",
+            "Siyu Zhou",
+            "Zetao Fang",
+            "Shanshan Lao",
+            "Zengde Deng",
+            "Jianing Zhu",
+            "Tingting Ma",
+            "Jiayi Li",
+            "Yunqiu Wang",
+            "Qian He",
+            "Xinglong Wu"
+        ],
+        "tldr": "DreaMontage is a framework for generating long, seamless one-shot videos from user-provided inputs using a DiT-based architecture with adaptive tuning, a high-quality dataset with visual expression SFT, and a segment-wise auto-regressive inference strategy.",
+        "tldr_zh": "DreaMontage是一个框架，它使用基于DiT的架构，通过自适应调整、高质量数据集和视觉表达SFT，以及分段自回归推理策略，从用户提供的输入中生成无缝的、长镜头视频。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "SemanticGen: Video Generation in Semantic Space",
+        "summary": "State-of-the-art video generative models typically learn the distribution of video latents in the VAE space and map them to pixels using a VAE decoder. While this approach can generate high-quality videos, it suffers from slow convergence and is computationally expensive when generating long videos. In this paper, we introduce SemanticGen, a novel solution to address these limitations by generating videos in the semantic space. Our main insight is that, due to the inherent redundancy in videos, the generation process should begin in a compact, high-level semantic space for global planning, followed by the addition of high-frequency details, rather than directly modeling a vast set of low-level video tokens using bi-directional attention. SemanticGen adopts a two-stage generation process. In the first stage, a diffusion model generates compact semantic video features, which define the global layout of the video. In the second stage, another diffusion model generates VAE latents conditioned on these semantic features to produce the final output. We observe that generation in the semantic space leads to faster convergence compared to the VAE latent space. Our method is also effective and computationally efficient when extended to long video generation. Extensive experiments demonstrate that SemanticGen produces high-quality videos and outperforms state-of-the-art approaches and strong baselines.",
+        "url": "http://arxiv.org/abs/2512.20619v2",
+        "published_date": "2025-12-23T18:59:56+00:00",
+        "updated_date": "2025-12-24T11:39:25+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Jianhong Bai",
+            "Xiaoshi Wu",
+            "Xintao Wang",
+            "Xiao Fu",
+            "Yuanxing Zhang",
+            "Qinghe Wang",
+            "Xiaoyu Shi",
+            "Menghan Xia",
+            "Zuozhu Liu",
+            "Haoji Hu",
+            "Pengfei Wan",
+            "Kun Gai"
+        ],
+        "tldr": "SemanticGen introduces a two-stage video generation approach using diffusion models, first generating semantic features and then VAE latents, achieving faster convergence and improved efficiency, particularly for long videos.",
+        "tldr_zh": "SemanticGen 提出了一种两阶段视频生成方法，使用扩散模型先生成语义特征，然后生成 VAE 潜在变量，从而实现更快的收敛速度和更高的效率，尤其是在长视频生成方面。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "LongVideoAgent: Multi-Agent Reasoning with Long Videos",
+        "summary": "Recent advances in multimodal LLMs and systems that use tools for long-video QA point to the promise of reasoning over hour-long episodes. However, many methods still compress content into lossy summaries or rely on limited toolsets, weakening temporal grounding and missing fine-grained cues. We propose a multi-agent framework in which a master LLM coordinates a grounding agent to localize question-relevant segments and a vision agent to extract targeted textual observations. The master agent plans with a step limit, and is trained with reinforcement learning to encourage concise, correct, and efficient multi-agent cooperation. This design helps the master agent focus on relevant clips via grounding, complements subtitles with visual detail, and yields interpretable trajectories. On our proposed LongTVQA and LongTVQA+ which are episode-level datasets aggregated from TVQA/TVQA+, our multi-agent system significantly outperforms strong non-agent baselines. Experiments also show reinforcement learning further strengthens reasoning and planning for the trained agent. Code and data will be shared at https://longvideoagent.github.io/.",
+        "url": "http://arxiv.org/abs/2512.20618v1",
+        "published_date": "2025-12-23T18:59:49+00:00",
+        "updated_date": "2025-12-23T18:59:49+00:00",
+        "categories": [
+            "cs.AI",
+            "cs.CV",
+            "cs.LG",
+            "cs.MA"
+        ],
+        "authors": [
+            "Runtao Liu",
+            "Ziyi Liu",
+            "Jiaqi Tang",
+            "Yue Ma",
+            "Renjie Pi",
+            "Jipeng Zhang",
+            "Qifeng Chen"
+        ],
+        "tldr": "The paper introduces a multi-agent reinforcement learning framework, LongVideoAgent, for long-video question answering, which outperforms existing methods by grounding questions to relevant video segments and extracting visual observations.",
+        "tldr_zh": "该论文提出了一个多智能体强化学习框架LongVideoAgent，用于长视频问答。该框架通过将问题定位到相关的视频片段并提取视觉信息，性能优于现有方法。",
+        "relevance_score": 2,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 4
+    }
+]
