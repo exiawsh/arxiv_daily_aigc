@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - December 21, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - December 26, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>December 21, 2025</p>
+            <p>December 26, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,16 +215,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Dexterous World Models</h2>
+            <h2 class="paper-title">HiStream: Efficient High-Resolution Video Generation via Redundancy-Eliminated Streaming</h2>
             
-            <p class="paper-summary">Recent progress in 3D reconstruction has made it easy to create realistic digital twins from everyday environments. However, current digital twins remain largely static and are limited to navigation and view synthesis without embodied interactivity. To bridge this gap, we introduce Dexterous World Model (DWM), a scene-action-conditioned video diffusion framework that models how dexterous human actions induce dynamic changes in static 3D scenes.
-  Given a static 3D scene rendering and an egocentric hand motion sequence, DWM generates temporally coherent videos depicting plausible human-scene interactions. Our approach conditions video generation on (1) static scene renderings following a specified camera trajectory to ensure spatial consistency, and (2) egocentric hand mesh renderings that encode both geometry and motion cues to model action-conditioned dynamics directly. To train DWM, we construct a hybrid interaction video dataset. Synthetic egocentric interactions provide fully aligned supervision for joint locomotion and manipulation learning, while fixed-camera real-world videos contribute diverse and realistic object dynamics.
-  Experiments demonstrate that DWM enables realistic and physically plausible interactions, such as grasping, opening, and moving objects, while maintaining camera and scene consistency. This framework represents a first step toward video diffusion-based interactive digital twins and enables embodied simulation from egocentric actions.</p>
+            <p class="paper-summary">High-resolution video generation, while crucial for digital media and film, is computationally bottlenecked by the quadratic complexity of diffusion models, making practical inference infeasible. To address this, we introduce HiStream, an efficient autoregressive framework that systematically reduces redundancy across three axes: i) Spatial Compression: denoising at low resolution before refining at high resolution with cached features; ii) Temporal Compression: a chunk-by-chunk strategy with a fixed-size anchor cache, ensuring stable inference speed; and iii) Timestep Compression: applying fewer denoising steps to subsequent, cache-conditioned chunks. On 1080p benchmarks, our primary HiStream model (i+ii) achieves state-of-the-art visual quality while demonstrating up to 76.2x faster denoising compared to the Wan2.1 baseline and negligible quality loss. Our faster variant, HiStream+, applies all three optimizations (i+ii+iii), achieving a 107.5x acceleration over the baseline, offering a compelling trade-off between speed and quality, thereby making high-resolution video generation both practical and scalable.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Dexterous World Model (DWM), a video diffusion framework conditioned on scene renderings and hand motions to generate realistic videos of human-scene interactions within digital twins, trained on a hybrid real/synthetic dataset.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: HiStream introduces a novel autoregressive framework for efficient high-resolution video generation by systematically reducing redundancy in spatial, temporal, and timestep dimensions, achieving significant speedups compared to baseline methods.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了灵巧世界模型（DWM），这是一个视频扩散框架，以场景渲染和手部动作为条件，生成数字孪生中人与场景互动的逼真视频，并在混合的真实/合成数据集上进行训练。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: HiStream 提出了一种新颖的自回归框架，通过在空间、时间和时间步长维度上系统地减少冗余，从而实现高效的高分辨率视频生成，与基线方法相比，实现了显着的加速。</p>
             
 
             
@@ -295,18 +293,18 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2512.17907v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2512.21338v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Byungjun Kim, Taeksoo Kim, Junyoung Lee, Hanbyul Joo</p>
+            <p class="paper-authors">Authors: Haonan Qiu, Shikun Liu, Zijian Zhou, Zhaochong An, Weiming Ren, Zhiheng Liu, Jonas Schult, Sen He, Shoufa Chen, Yuren Cong, Tao Xiang, Ziwei Liu, Juan-Manuel Perez-Rua</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-12-26 02:55:28 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-12-26 02:55:40 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
