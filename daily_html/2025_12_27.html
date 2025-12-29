@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - December 25, 2025</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - December 27, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>December 25, 2025</p>
+            <p>December 27, 2025</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,14 +215,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">Active Intelligence in Video Avatars via Closed-loop World Modeling</h2>
+            <h2 class="paper-title">Yume-1.5: A Text-Controlled Interactive World Generation Model</h2>
             
-            <p class="paper-summary">Current video avatar generation methods excel at identity preservation and motion alignment but lack genuine agency, they cannot autonomously pursue long-term goals through adaptive environmental interaction. We address this by introducing L-IVA (Long-horizon Interactive Visual Avatar), a task and benchmark for evaluating goal-directed planning in stochastic generative environments, and ORCA (Online Reasoning and Cognitive Architecture), the first framework enabling active intelligence in video avatars. ORCA embodies Internal World Model (IWM) capabilities through two key innovations: (1) a closed-loop OTAR cycle (Observe-Think-Act-Reflect) that maintains robust state tracking under generative uncertainty by continuously verifying predicted outcomes against actual generations, and (2) a hierarchical dual-system architecture where System 2 performs strategic reasoning with state prediction while System 1 translates abstract plans into precise, model-specific action captions. By formulating avatar control as a POMDP and implementing continuous belief updating with outcome verification, ORCA enables autonomous multi-step task completion in open-domain scenarios. Extensive experiments demonstrate that ORCA significantly outperforms open-loop and non-reflective baselines in task success rate and behavioral coherence, validating our IWM-inspired design for advancing video avatar intelligence from passive animation to active, goal-oriented behavior.</p>
+            <p class="paper-summary">Recent approaches have demonstrated the promise of using diffusion models to generate interactive and explorable worlds. However, most of these methods face critical challenges such as excessively large parameter sizes, reliance on lengthy inference steps, and rapidly growing historical context, which severely limit real-time performance and lack text-controlled generation capabilities. To address these challenges, we propose \method, a novel framework designed to generate realistic, interactive, and continuous worlds from a single image or text prompt. \method achieves this through a carefully designed framework that supports keyboard-based exploration of the generated worlds. The framework comprises three core components: (1) a long-video generation framework integrating unified context compression with linear attention; (2) a real-time streaming acceleration strategy powered by bidirectional attention distillation and an enhanced text embedding scheme; (3) a text-controlled method for generating world events. We have provided the codebase in the supplementary material.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces a framework called ORCA that endows video avatars with active intelligence by using a closed-loop world model and hierarchical dual-system architecture, enabling them to autonomously pursue long-term goals in dynamic environments.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: Yume-1.5 introduces a novel framework for generating interactive and continuous worlds from text or image prompts, addressing limitations of existing methods with its efficiency and text control.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一个名为ORCA的框架，该框架通过闭环世界模型和分层双系统架构赋予视频化身主动智能，使它们能够在动态环境中自主追求长期目标。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: Yume-1.5 提出了一个新颖的框架，用于从文本或图像提示生成交互式和连续的世界，解决了现有方法的效率和文本控制的局限性。</p>
             
 
             
@@ -240,8 +240,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -286,18 +286,18 @@
                     
                 
                     
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2512.20615v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2512.22096v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Xuanhua He, Tianyu Yang, Ke Cao, Ruiqi Wu, Cheng Meng, Yong Zhang, Zhuoliang Kang, Xiaoming Wei, Qifeng Chen</p>
+            <p class="paper-authors">Authors: Xiaofeng Mao, Zhen Li, Chuanhao Li, Xiaojie Xu, Kaining Ying, Tong He, Jiangmiao Pang, Yu Qiao, Kaipeng Zhang</p>
             
         </motion.div>
         
@@ -309,14 +309,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">ACD: Direct Conditional Control for Video Diffusion Models via Attention Supervision</h2>
+            <h2 class="paper-title">StreamAvatar: Streaming Diffusion Models for Real-Time Interactive Human Avatars</h2>
             
-            <p class="paper-summary">Controllability is a fundamental requirement in video synthesis, where accurate alignment with conditioning signals is essential. Existing classifier-free guidance methods typically achieve conditioning indirectly by modeling the joint distribution of data and conditions, which often results in limited controllability over the specified conditions. Classifier-based guidance enforces conditions through an external classifier, but the model may exploit this mechanism to raise the classifier score without genuinely satisfying the intended condition, resulting in adversarial artifacts and limited effective controllability. In this paper, we propose Attention-Conditional Diffusion (ACD), a novel framework for direct conditional control in video diffusion models via attention supervision. By aligning the model's attention maps with external control signals, ACD achieves better controllability. To support this, we introduce a sparse 3D-aware object layout as an efficient conditioning signal, along with a dedicated Layout ControlNet and an automated annotation pipeline for scalable layout integration. Extensive experiments on benchmark video generation datasets demonstrate that ACD delivers superior alignment with conditioning inputs while preserving temporal coherence and visual fidelity, establishing an effective paradigm for conditional video synthesis.</p>
+            <p class="paper-summary">Real-time, streaming interactive avatars represent a critical yet challenging goal in digital human research. Although diffusion-based human avatar generation methods achieve remarkable success, their non-causal architecture and high computational costs make them unsuitable for streaming. Moreover, existing interactive approaches are typically limited to head-and-shoulder region, limiting their ability to produce gestures and body motions. To address these challenges, we propose a two-stage autoregressive adaptation and acceleration framework that applies autoregressive distillation and adversarial refinement to adapt a high-fidelity human video diffusion model for real-time, interactive streaming. To ensure long-term stability and consistency, we introduce three key components: a Reference Sink, a Reference-Anchored Positional Re-encoding (RAPR) strategy, and a Consistency-Aware Discriminator. Building on this framework, we develop a one-shot, interactive, human avatar model capable of generating both natural talking and listening behaviors with coherent gestures. Extensive experiments demonstrate that our method achieves state-of-the-art performance, surpassing existing approaches in generation quality, real-time efficiency, and interaction naturalness. Project page: https://streamavatar.github.io .</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces Attention-Conditional Diffusion (ACD), a novel method for improving controllability in video diffusion models by directly aligning attention maps with conditioning signals, specifically using sparse 3D-aware object layouts.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: StreamAvatar introduces a novel two-stage framework for real-time, interactive human avatar generation using streaming diffusion models, achieving state-of-the-art performance in quality, efficiency, and interaction naturalness with the help of several key components.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种名为注意力条件扩散（ACD）的新方法，通过将注意力图直接与条件信号对齐（特别是使用稀疏的3D感知对象布局），从而提高视频扩散模型的可控性。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: StreamAvatar 提出了一个新颖的两阶段框架，利用流式扩散模型实现实时、交互式的人类化身生成，借助几个关键组件，在质量、效率和交互自然度方面都达到了最先进的性能。</p>
             
 
             
@@ -326,24 +326,24 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Clarity:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -387,11 +387,11 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2512.21268v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2512.22065v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Weiqi Li, Zehao Zhang, Liang Lin, Guangrun Wang</p>
+            <p class="paper-authors">Authors: Zhiyao Sun, Ziqiao Peng, Yifeng Ma, Yi Chen, Zhengguang Zhou, Zixiang Zhou, Guozhen Zhang, Youliang Zhang, Yuan Zhou, Qinglin Lu, Yong-Jin Liu</p>
             
         </motion.div>
         
@@ -403,108 +403,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">DreaMontage: Arbitrary Frame-Guided One-Shot Video Generation</h2>
+            <h2 class="paper-title">High-Fidelity and Long-Duration Human Image Animation with Diffusion Transformer</h2>
             
-            <p class="paper-summary">The "one-shot" technique represents a distinct and sophisticated aesthetic in filmmaking. However, its practical realization is often hindered by prohibitive costs and complex real-world constraints. Although emerging video generation models offer a virtual alternative, existing approaches typically rely on naive clip concatenation, which frequently fails to maintain visual smoothness and temporal coherence. In this paper, we introduce DreaMontage, a comprehensive framework designed for arbitrary frame-guided generation, capable of synthesizing seamless, expressive, and long-duration one-shot videos from diverse user-provided inputs. To achieve this, we address the challenge through three primary dimensions. (i) We integrate a lightweight intermediate-conditioning mechanism into the DiT architecture. By employing an Adaptive Tuning strategy that effectively leverages base training data, we unlock robust arbitrary-frame control capabilities. (ii) To enhance visual fidelity and cinematic expressiveness, we curate a high-quality dataset and implement a Visual Expression SFT stage. In addressing critical issues such as subject motion rationality and transition smoothness, we apply a Tailored DPO scheme, which significantly improves the success rate and usability of the generated content. (iii) To facilitate the production of extended sequences, we design a Segment-wise Auto-Regressive (SAR) inference strategy that operates in a memory-efficient manner. Extensive experiments demonstrate that our approach achieves visually striking and seamlessly coherent one-shot effects while maintaining computational efficiency, empowering users to transform fragmented visual materials into vivid, cohesive one-shot cinematic experiences.</p>
+            <p class="paper-summary">Recent progress in diffusion models has significantly advanced the field of human image animation. While existing methods can generate temporally consistent results for short or regular motions, significant challenges remain, particularly in generating long-duration videos. Furthermore, the synthesis of fine-grained facial and hand details remains under-explored, limiting the applicability of current approaches in real-world, high-quality applications. To address these limitations, we propose a diffusion transformer (DiT)-based framework which focuses on generating high-fidelity and long-duration human animation videos. First, we design a set of hybrid implicit guidance signals and a sharpness guidance factor, enabling our framework to additionally incorporate detailed facial and hand features as guidance. Next, we incorporate the time-aware position shift fusion module, modify the input format within the DiT backbone, and refer to this mechanism as the Position Shift Adaptive Module, which enables video generation of arbitrary length. Finally, we introduce a novel data augmentation strategy and a skeleton alignment model to reduce the impact of human shape variations across different identities. Experimental results demonstrate that our method outperforms existing state-of-the-art approaches, achieving superior performance in both high-fidelity and long-duration human image animation.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: DreaMontage is a framework for generating long, seamless one-shot videos from user-provided inputs using a DiT-based architecture with adaptive tuning, a high-quality dataset with visual expression SFT, and a segment-wise auto-regressive inference strategy.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: DreaMontage是一个框架，它使用基于DiT的架构，通过自适应调整、高质量数据集和视觉表达SFT，以及分段自回归推理策略，从用户提供的输入中生成无缝的、长镜头视频。</p>
-            
-
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces a Diffusion Transformer-based framework for high-fidelity and long-duration human image animation, addressing limitations in existing methods regarding detail synthesis and video length. It incorporates novel guidance signals, a time-aware module, and data augmentation techniques.</p>
             
             
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-            </div>
-            
-            
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="far fa-star"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2512.21252v1" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Jiawei Liu, Junqiao Li, Jiangfan Deng, Gen Li, Siyu Zhou, Zetao Fang, Shanshan Lao, Zengde Deng, Jianing Zhu, Tingting Ma, Jiayi Li, Yunqiu Wang, Qian He, Xinglong Wu</p>
-            
-        </motion.div>
-        
-        <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.15000000000000002, ease: 'easeOut' }"  
-            class="bento-item"
-            data-motion-element
-        >
-            <h2 class="paper-title">SemanticGen: Video Generation in Semantic Space</h2>
-            
-            <p class="paper-summary">State-of-the-art video generative models typically learn the distribution of video latents in the VAE space and map them to pixels using a VAE decoder. While this approach can generate high-quality videos, it suffers from slow convergence and is computationally expensive when generating long videos. In this paper, we introduce SemanticGen, a novel solution to address these limitations by generating videos in the semantic space. Our main insight is that, due to the inherent redundancy in videos, the generation process should begin in a compact, high-level semantic space for global planning, followed by the addition of high-frequency details, rather than directly modeling a vast set of low-level video tokens using bi-directional attention. SemanticGen adopts a two-stage generation process. In the first stage, a diffusion model generates compact semantic video features, which define the global layout of the video. In the second stage, another diffusion model generates VAE latents conditioned on these semantic features to produce the final output. We observe that generation in the semantic space leads to faster convergence compared to the VAE latent space. Our method is also effective and computationally efficient when extended to long video generation. Extensive experiments demonstrate that SemanticGen produces high-quality videos and outperforms state-of-the-art approaches and strong baselines.</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: SemanticGen introduces a two-stage video generation approach using diffusion models, first generating semantic features and then VAE latents, achieving faster convergence and improved efficiency, particularly for long videos.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: SemanticGen 提出了一种两阶段视频生成方法，使用扩散模型先生成语义特征，然后生成 VAE 潜在变量，从而实现更快的收敛速度和更高的效率，尤其是在长视频生成方面。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一个基于扩散Transformer的框架，用于高保真和长时程人体图像动画，解决了现有方法在细节合成和视频长度方面的局限性。它结合了新的引导信号、时间感知模块和数据增强技术。</p>
             
 
             
@@ -514,102 +420,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                     <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-            </div>
-            
-            
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="far fa-star"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2512.20619v2" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Jianhong Bai, Xiaoshi Wu, Xintao Wang, Xiao Fu, Yuanxing Zhang, Qinghe Wang, Xiaoyu Shi, Menghan Xia, Zuozhu Liu, Haoji Hu, Pengfei Wan, Kun Gai</p>
-            
-        </motion.div>
-        
-        <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.2, ease: 'easeOut' }"  
-            class="bento-item"
-            data-motion-element
-        >
-            <h2 class="paper-title">LongVideoAgent: Multi-Agent Reasoning with Long Videos</h2>
-            
-            <p class="paper-summary">Recent advances in multimodal LLMs and systems that use tools for long-video QA point to the promise of reasoning over hour-long episodes. However, many methods still compress content into lossy summaries or rely on limited toolsets, weakening temporal grounding and missing fine-grained cues. We propose a multi-agent framework in which a master LLM coordinates a grounding agent to localize question-relevant segments and a vision agent to extract targeted textual observations. The master agent plans with a step limit, and is trained with reinforcement learning to encourage concise, correct, and efficient multi-agent cooperation. This design helps the master agent focus on relevant clips via grounding, complements subtitles with visual detail, and yields interpretable trajectories. On our proposed LongTVQA and LongTVQA+ which are episode-level datasets aggregated from TVQA/TVQA+, our multi-agent system significantly outperforms strong non-agent baselines. Experiments also show reinforcement learning further strengthens reasoning and planning for the trained agent. Code and data will be shared at https://longvideoagent.github.io/.</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces a multi-agent reinforcement learning framework, LongVideoAgent, for long-video question answering, which outperforms existing methods by grounding questions to relevant video segments and extracting visual observations.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文提出了一个多智能体强化学习框架LongVideoAgent，用于长视频问答。该框架通过将问题定位到相关的视频片段并提取视觉信息，性能优于现有方法。</p>
-            
-
-            
-            
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(2/10)</span>
                 </div>
                 
                 
@@ -654,33 +466,127 @@
                     
                 
                     
-                        <i class="far fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
                     
                 
                     
                         <i class="far fa-star"></i>
                     
                 
-                    
-                        <i class="far fa-star"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(4/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2512.20618v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2512.21905v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Runtao Liu, Ziyi Liu, Jiaqi Tang, Yue Ma, Renjie Pi, Jipeng Zhang, Qifeng Chen</p>
+            <p class="paper-authors">Authors: Shen Zheng, Jiaran Cai, Yuansheng Guan, Shenneng Huang, Xingpei Ma, Junjie Cao, Hanfeng Zhao, Qiang Zhang, Shunsi Zhang, Xiao-Ping Zhang</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.15000000000000002, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">Inference-based GAN Video Generation</h2>
+            
+            <p class="paper-summary">Video generation has seen remarkable progresses thanks to advancements in generative deep learning. Generated videos should not only display coherent and continuous movement but also meaningful movement in successions of scenes. Generating models such as Generative Adversarial Networks (GANs) or Variational Autoencoders (VAEs) and more recently Diffusion Networks have been used for generating short video sequences, usually of up to 16 frames. In this paper, we first propose a new type of video generator by enabling adversarial-based unconditional video generators with a variational encoder, akin to a VAE-GAN hybrid structure, in order to enable the generation process with inference capabilities. The proposed model, as in other video deep learning-based processing frameworks, incorporates two processing branches, one for content and another for movement. However, existing models struggle with the temporal scaling of the generated videos. In classical approaches when aiming to increase the generated video length, the resulting video quality degrades, particularly when considering generating significantly long sequences. To overcome this limitation, our research study extends the initially proposed VAE-GAN video generation model by employing a novel, memory-efficient approach to generate long videos composed of hundreds or thousands of frames ensuring their temporal continuity, consistency and dynamics. Our approach leverages a Markov chain framework with a recall mechanism, with each state representing a VAE-GAN short-length video generator. This setup allows for the sequential connection of generated video sub-sequences, enabling temporal dependencies, resulting in meaningful long video sequences.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces a novel VAE-GAN hybrid model with a Markov chain framework and recall mechanism to generate long, temporally consistent videos by sequentially connecting short generated video subsequences.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文提出了一种新颖的VAE-GAN混合模型，该模型具有马尔可夫链框架和召回机制，通过顺序连接生成的短视频子序列来生成长时间、时间上一致的视频。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2512.21776v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Jingbo Yang, Adrian G. Bors</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2025-12-29 03:08:22 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2025-12-29 03:09:53 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
