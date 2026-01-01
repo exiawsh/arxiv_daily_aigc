@@ -1,0 +1,79 @@
+[
+    {
+        "title": "FlowBlending: Stage-Aware Multi-Model Sampling for Fast and High-Fidelity Video Generation",
+        "summary": "In this work, we show that the impact of model capacity varies across timesteps: it is crucial for the early and late stages but largely negligible during the intermediate stage. Accordingly, we propose FlowBlending, a stage-aware multi-model sampling strategy that employs a large model and a small model at capacity-sensitive stages and intermediate stages, respectively. We further introduce simple criteria to choose stage boundaries and provide a velocity-divergence analysis as an effective proxy for identifying capacity-sensitive regions. Across LTX-Video (2B/13B) and WAN 2.1 (1.3B/14B), FlowBlending achieves up to 1.65x faster inference with 57.35% fewer FLOPs, while maintaining the visual fidelity, temporal coherence, and semantic alignment of the large models. FlowBlending is also compatible with existing sampling-acceleration techniques, enabling up to 2x additional speedup. Project page is available at: https://jibin86.github.io/flowblending_project_page.",
+        "url": "http://arxiv.org/abs/2512.24724v1",
+        "published_date": "2025-12-31T08:41:27+00:00",
+        "updated_date": "2025-12-31T08:41:27+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Jibin Song",
+            "Mingi Kwon",
+            "Jaeseok Jeong",
+            "Youngjung Uh"
+        ],
+        "tldr": "FlowBlending accelerates video generation by adaptively using smaller models during less capacity-sensitive intermediate stages, achieving significant speedups with minimal fidelity loss.",
+        "tldr_zh": "FlowBlending通过在对模型容量不敏感的中间阶段自适应地使用较小的模型来加速视频生成，从而在尽量不损失生成质量的前提下显著提高生成速度。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "PhyGDPO: Physics-Aware Groupwise Direct Preference Optimization for Physically Consistent Text-to-Video Generation",
+        "summary": "Recent advances in text-to-video (T2V) generation have achieved good visual quality, yet synthesizing videos that faithfully follow physical laws remains an open challenge. Existing methods mainly based on graphics or prompt extension struggle to generalize beyond simple simulated environments or learn implicit physical reasoning. The scarcity of training data with rich physics interactions and phenomena is also a problem. In this paper, we first introduce a Physics-Augmented video data construction Pipeline, PhyAugPipe, that leverages a vision-language model (VLM) with chain-of-thought reasoning to collect a large-scale training dataset, PhyVidGen-135K. Then we formulate a principled Physics-aware Groupwise Direct Preference Optimization, PhyGDPO, framework that builds upon the groupwise Plackett-Luce probabilistic model to capture holistic preferences beyond pairwise comparisons. In PhyGDPO, we design a Physics-Guided Rewarding (PGR) scheme that embeds VLM-based physics rewards to steer optimization toward physical consistency. We also propose a LoRA-Switch Reference (LoRA-SR) scheme that eliminates memory-heavy reference duplication for efficient training. Experiments show that our method significantly outperforms state-of-the-art open-source methods on PhyGenBench and VideoPhy2. Please check our project page at https://caiyuanhao1998.github.io/project/PhyGDPO for more video results. Our code, models, and data will be released at https://github.com/caiyuanhao1998/Open-PhyGDPO",
+        "url": "http://arxiv.org/abs/2512.24551v1",
+        "published_date": "2025-12-31T01:19:14+00:00",
+        "updated_date": "2025-12-31T01:19:14+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yuanhao Cai",
+            "Kunpeng Li",
+            "Menglin Jia",
+            "Jialiang Wang",
+            "Junzhe Sun",
+            "Feng Liang",
+            "Weifeng Chen",
+            "Felix Juefei-Xu",
+            "Chu Wang",
+            "Ali Thabet",
+            "Xiaoliang Dai",
+            "Xuan Ju",
+            "Alan Yuille",
+            "Ji Hou"
+        ],
+        "tldr": "This paper introduces PhyGDPO, a physics-aware direct preference optimization framework for generating physically consistent text-to-video, utilizing a new large-scale dataset and physics-guided rewards.",
+        "tldr_zh": "本文介绍了PhyGDPO，一个物理感知的直接偏好优化框架，用于生成物理上一致的文本到视频，该框架利用了一个新的大规模数据集和物理引导的奖励。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "DyStream: Streaming Dyadic Talking Heads Generation via Flow Matching-based Autoregressive Model",
+        "summary": "Generating realistic, dyadic talking head video requires ultra-low latency. Existing chunk-based methods require full non-causal context windows, introducing significant delays. This high latency critically prevents the immediate, non-verbal feedback required for a realistic listener. To address this, we present DyStream, a flow matching-based autoregressive model that could generate video in real-time from both speaker and listener audio. Our method contains two key designs: (1) we adopt a stream-friendly autoregressive framework with flow-matching heads for probabilistic modeling, and (2) We propose a causal encoder enhanced by a lookahead module to incorporate short future context (e.g., 60 ms) to improve quality while maintaining low latency. Our analysis shows this simple-and-effective method significantly surpass alternative causal strategies, including distillation and generative encoder. Extensive experiments show that DyStream could generate video within 34 ms per frame, guaranteeing the entire system latency remains under 100 ms. Besides, it achieves state-of-the-art lip-sync quality, with offline and online LipSync Confidence scores of 8.13 and 7.61 on HDTF, respectively. The model, weights and codes are available.",
+        "url": "http://arxiv.org/abs/2512.24408v1",
+        "published_date": "2025-12-30T18:43:38+00:00",
+        "updated_date": "2025-12-30T18:43:38+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Bohong Chen",
+            "Haiyang Liu"
+        ],
+        "tldr": "The paper introduces DyStream, a flow matching-based autoregressive model for real-time, low-latency dyadic talking head video generation, achieving state-of-the-art lip-sync quality with minimal delay.",
+        "tldr_zh": "该论文介绍了DyStream，一种基于流匹配的自回归模型，用于实时、低延迟的二人对话头像视频生成，以最小的延迟实现了最先进的唇形同步质量。",
+        "relevance_score": 6,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]
