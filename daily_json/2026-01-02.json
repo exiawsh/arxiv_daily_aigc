@@ -1,0 +1,30 @@
+[
+    {
+        "title": "SpaceTimePilot: Generative Rendering of Dynamic Scenes Across Space and Time",
+        "summary": "We present SpaceTimePilot, a video diffusion model that disentangles space and time for controllable generative rendering. Given a monocular video, SpaceTimePilot can independently alter the camera viewpoint and the motion sequence within the generative process, re-rendering the scene for continuous and arbitrary exploration across space and time. To achieve this, we introduce an effective animation time-embedding mechanism in the diffusion process, allowing explicit control of the output video's motion sequence with respect to that of the source video. As no datasets provide paired videos of the same dynamic scene with continuous temporal variations, we propose a simple yet effective temporal-warping training scheme that repurposes existing multi-view datasets to mimic temporal differences. This strategy effectively supervises the model to learn temporal control and achieve robust space-time disentanglement. To further enhance the precision of dual control, we introduce two additional components: an improved camera-conditioning mechanism that allows altering the camera from the first frame, and CamxTime, the first synthetic space-and-time full-coverage rendering dataset that provides fully free space-time video trajectories within a scene. Joint training on the temporal-warping scheme and the CamxTime dataset yields more precise temporal control. We evaluate SpaceTimePilot on both real-world and synthetic data, demonstrating clear space-time disentanglement and strong results compared to prior work. Project page: https://zheninghuang.github.io/Space-Time-Pilot/ Code: https://github.com/ZheningHuang/spacetimepilot",
+        "url": "http://arxiv.org/abs/2512.25075v1",
+        "published_date": "2025-12-31T18:59:57+00:00",
+        "updated_date": "2025-12-31T18:59:57+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.RO"
+        ],
+        "authors": [
+            "Zhening Huang",
+            "Hyeonho Jeong",
+            "Xuelin Chen",
+            "Yulia Gryaditskaya",
+            "Tuanfeng Y. Wang",
+            "Joan Lasenby",
+            "Chun-Hao Huang"
+        ],
+        "tldr": "SpaceTimePilot is a video diffusion model enabling controllable generative rendering of dynamic scenes, allowing independent manipulation of camera viewpoint and motion sequences using a novel temporal-warping training scheme and a synthetic dataset called CamxTime.",
+        "tldr_zh": "SpaceTimePilot是一个视频扩散模型，可以通过控制生成渲染动态场景，使用一种新的时间扭曲训练方案和一个名为CamxTime的合成数据集，从而能够独立地操纵相机视点和运动序列。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
