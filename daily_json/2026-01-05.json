@@ -1,0 +1,78 @@
+[
+    {
+        "title": "DrivingGen: A Comprehensive Benchmark for Generative Video World Models in Autonomous Driving",
+        "summary": "Video generation models, as one form of world models, have emerged as one of the most exciting frontiers in AI, promising agents the ability to imagine the future by modeling the temporal evolution of complex scenes. In autonomous driving, this vision gives rise to driving world models: generative simulators that imagine ego and agent futures, enabling scalable simulation, safe testing of corner cases, and rich synthetic data generation. Yet, despite fast-growing research activity, the field lacks a rigorous benchmark to measure progress and guide priorities. Existing evaluations remain limited: generic video metrics overlook safety-critical imaging factors; trajectory plausibility is rarely quantified; temporal and agent-level consistency is neglected; and controllability with respect to ego conditioning is ignored. Moreover, current datasets fail to cover the diversity of conditions required for real-world deployment. To address these gaps, we present DrivingGen, the first comprehensive benchmark for generative driving world models. DrivingGen combines a diverse evaluation dataset curated from both driving datasets and internet-scale video sources, spanning varied weather, time of day, geographic regions, and complex maneuvers, with a suite of new metrics that jointly assess visual realism, trajectory plausibility, temporal coherence, and controllability. Benchmarking 14 state-of-the-art models reveals clear trade-offs: general models look better but break physics, while driving-specific ones capture motion realistically but lag in visual quality. DrivingGen offers a unified evaluation framework to foster reliable, controllable, and deployable driving world models, enabling scalable simulation, planning, and data-driven decision-making.",
+        "url": "http://arxiv.org/abs/2601.01528v1",
+        "published_date": "2026-01-04T13:36:21+00:00",
+        "updated_date": "2026-01-04T13:36:21+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.RO"
+        ],
+        "authors": [
+            "Yang Zhou",
+            "Hao Shao",
+            "Letian Wang",
+            "Zhuofan Zong",
+            "Hongsheng Li",
+            "Steven L. Waslander"
+        ],
+        "tldr": "The paper introduces DrivingGen, a comprehensive benchmark for generative driving world models, addressing limitations in existing evaluation methods and datasets by proposing new metrics and a diverse dataset. It benchmarks 14 models and reveals trade-offs between general and driving-specific models.",
+        "tldr_zh": "该论文介绍了 DrivingGen，一个全面的生成式驾驶世界模型基准，通过提出新的指标和一个多样化的数据集，解决了现有评估方法和数据集的局限性。它对 14 个模型进行了基准测试，揭示了通用模型和特定于驾驶的模型之间的权衡。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "Slot-ID: Identity-Preserving Video Generation from Reference Videos via Slot-Based Temporal Identity Encoding",
+        "summary": "Producing prompt-faithful videos that preserve a user-specified identity remains challenging: models need to extrapolate facial dynamics from sparse reference while balancing the tension between identity preservation and motion naturalness. Conditioning on a single image completely ignores the temporal signature, which leads to pose-locked motions, unnatural warping, and \"average\" faces when viewpoints and expressions change. To this end, we introduce an identity-conditioned variant of a diffusion-transformer video generator which uses a short reference video rather than a single portrait. Our key idea is to incorporate the dynamics in the reference. A short clip reveals subject-specific patterns, e.g., how smiles form, across poses and lighting. From this clip, a Sinkhorn-routed encoder learns compact identity tokens that capture characteristic dynamics while remaining pretrained backbone-compatible. Despite adding only lightweight conditioning, the approach consistently improves identity retention under large pose changes and expressive facial behavior, while maintaining prompt faithfulness and visual realism across diverse subjects and prompts.",
+        "url": "http://arxiv.org/abs/2601.01352v1",
+        "published_date": "2026-01-04T03:41:55+00:00",
+        "updated_date": "2026-01-04T03:41:55+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Yixuan Lai",
+            "He Wang",
+            "Kun Zhou",
+            "Tianjia Shao"
+        ],
+        "tldr": "The paper introduces a novel identity-conditioned video generation method that uses a short reference video to capture subject-specific dynamics, improving identity retention and realism in generated videos.",
+        "tldr_zh": "该论文介绍了一种新的身份条件视频生成方法，该方法使用短参考视频来捕捉特定主体的动态，从而提高生成视频中的身份保留和真实感。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "LinMU: Multimodal Understanding Made Linear",
+        "summary": "Modern Vision-Language Models (VLMs) achieve impressive performance but are limited by the quadratic complexity of self-attention, which prevents their deployment on edge devices and makes their understanding of high-resolution images and long-context videos prohibitively expensive. To address this challenge, we introduce LinMU (Linear-complexity Multimodal Understanding), a VLM design that achieves linear complexity without using any quadratic-complexity modules while maintaining the performance of global-attention-based VLMs. LinMU replaces every self-attention layer in the VLM with the M-MATE block: a dual-branch module that combines a bidirectional state-space model for global context (Flex-MA branch) with localized Swin-style window attention (Local-Swin branch) for adjacent correlations. To transform a pre-trained VLM into the LinMU architecture, we propose a three-stage distillation framework that (i) initializes both branches with self-attention weights and trains the Flex-MA branch alone, (ii) unfreezes the Local-Swin branch and fine-tunes it jointly with the Flex-MA branch, and (iii) unfreezes the remaining blocks and fine-tunes them using LoRA adapters, while regressing on hidden states and token-level logits of the frozen VLM teacher. On MMMU, TextVQA, LongVideoBench, Video-MME, and other benchmarks, LinMU matches the performance of teacher models, yet reduces Time-To-First-Token (TTFT) by up to 2.7$\\times$ and improves token throughput by up to 9.0$\\times$ on minute-length videos. Ablations confirm the importance of each distillation stage and the necessity of the two branches of the M-MATE block. The proposed framework demonstrates that state-of-the-art multimodal reasoning can be achieved without quadratic attention, thus opening up avenues for long-context VLMs that can deal with high-resolution images and long videos.",
+        "url": "http://arxiv.org/abs/2601.01322v1",
+        "published_date": "2026-01-04T01:17:36+00:00",
+        "updated_date": "2026-01-04T01:17:36+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.LG",
+            "cs.MM",
+            "eess.IV"
+        ],
+        "authors": [
+            "Hongjie Wang",
+            "Niraj K. Jha"
+        ],
+        "tldr": "LinMU introduces a linear-complexity VLM using a novel M-MATE block and a three-stage distillation framework, achieving comparable performance to quadratic-attention VLMs with significant speed improvements, enabling long-context VLM applications.",
+        "tldr_zh": "LinMU 引入了一种线性复杂度的 VLM，使用新型的 M-MATE 模块和三阶段蒸馏框架，在实现与二次注意力 VLM 相当的性能的同时，显著提高了速度，从而支持长上下文 VLM 应用。",
+        "relevance_score": 5,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 6
+    }
+]
