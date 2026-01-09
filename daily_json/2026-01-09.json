@@ -1,0 +1,146 @@
+[
+    {
+        "title": "VerseCrafter: Dynamic Realistic Video World Model with 4D Geometric Control",
+        "summary": "Video world models aim to simulate dynamic, real-world environments, yet existing methods struggle to provide unified and precise control over camera and multi-object motion, as videos inherently operate dynamics in the projected 2D image plane. To bridge this gap, we introduce VerseCrafter, a 4D-aware video world model that enables explicit and coherent control over both camera and object dynamics within a unified 4D geometric world state. Our approach is centered on a novel 4D Geometric Control representation, which encodes the world state through a static background point cloud and per-object 3D Gaussian trajectories. This representation captures not only an object's path but also its probabilistic 3D occupancy over time, offering a flexible, category-agnostic alternative to rigid bounding boxes or parametric models. These 4D controls are rendered into conditioning signals for a pretrained video diffusion model, enabling the generation of high-fidelity, view-consistent videos that precisely adhere to the specified dynamics. Unfortunately, another major challenge lies in the scarcity of large-scale training data with explicit 4D annotations. We address this by developing an automatic data engine that extracts the required 4D controls from in-the-wild videos, allowing us to train our model on a massive and diverse dataset.",
+        "url": "http://arxiv.org/abs/2601.05138v1",
+        "published_date": "2026-01-08T17:28:52+00:00",
+        "updated_date": "2026-01-08T17:28:52+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Sixiao Zheng",
+            "Minghao Yin",
+            "Wenbo Hu",
+            "Xiaoyu Li",
+            "Ying Shan",
+            "Yanwei Fu"
+        ],
+        "tldr": "VerseCrafter introduces a 4D-aware video world model for generating high-fidelity videos with explicit camera and multi-object motion control, trained on a large dataset generated using an automatic 4D annotation engine.",
+        "tldr_zh": "VerseCrafter 提出了一个 4D 感知的视频世界模型，用于生成具有显式相机和多对象运动控制的高保真视频，该模型使用自动 4D 注释引擎生成的大型数据集进行训练。",
+        "relevance_score": 10,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "PyramidalWan: On Making Pretrained Video Model Pyramidal for Efficient Inference",
+        "summary": "Recently proposed pyramidal models decompose the conventional forward and backward diffusion processes into multiple stages operating at varying resolutions. These models handle inputs with higher noise levels at lower resolutions, while less noisy inputs are processed at higher resolutions. This hierarchical approach significantly reduces the computational cost of inference in multi-step denoising models. However, existing open-source pyramidal video models have been trained from scratch and tend to underperform compared to state-of-the-art systems in terms of visual plausibility. In this work, we present a pipeline that converts a pretrained diffusion model into a pyramidal one through low-cost finetuning, achieving this transformation without degradation in quality of output videos. Furthermore, we investigate and compare various strategies for step distillation within pyramidal models, aiming to further enhance the inference efficiency. Our results are available at https://qualcomm-ai-research.github.io/PyramidalWan.",
+        "url": "http://arxiv.org/abs/2601.04792v1",
+        "published_date": "2026-01-08T10:16:06+00:00",
+        "updated_date": "2026-01-08T10:16:06+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Denis Korzhenkov",
+            "Adil Karjauv",
+            "Animesh Karnewar",
+            "Mohsen Ghafoorian",
+            "Amirhossein Habibian"
+        ],
+        "tldr": "The paper introduces a method to convert pretrained video diffusion models into pyramidal ones via finetuning, maintaining video quality while improving inference efficiency through step distillation strategies.",
+        "tldr_zh": "该论文提出了一种通过微调将预训练视频扩散模型转换为金字塔模型的方法，在保持视频质量的同时，通过步进式蒸馏策略提高推理效率。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "PackCache: A Training-Free Acceleration Method for Unified Autoregressive Video Generation via Compact KV-Cache",
+        "summary": "A unified autoregressive model is a Transformer-based framework that addresses diverse multimodal tasks (e.g., text, image, video) as a single sequence modeling problem under a shared token space. Such models rely on the KV-cache mechanism to reduce attention computation from O(T^2) to O(T); however, KV-cache size grows linearly with the number of generated tokens, and it rapidly becomes the dominant bottleneck limiting inference efficiency and generative length. Unified autoregressive video generation inherits this limitation. Our analysis reveals that KV-cache tokens exhibit distinct spatiotemporal properties: (i) text and conditioning-image tokens act as persistent semantic anchors that consistently receive high attention, and (ii) attention to previous frames naturally decays with temporal distance. Leveraging these observations, we introduce PackCache, a training-free KV-cache management method that dynamically compacts the KV cache through three coordinated mechanisms: condition anchoring that preserves semantic references, cross-frame decay modeling that allocates cache budget according to temporal distance, and spatially preserving position embedding that maintains coherent 3D structure under cache removal. In terms of efficiency, PackCache accelerates end-to-end generation by 1.7-2.2x on 48-frame long sequences, showcasing its strong potential for enabling longer-sequence video generation. Notably, the final four frames - the portion most impacted by the progressively expanding KV-cache and thus the most expensive segment of the clip - PackCache delivers a 2.6x and 3.7x acceleration on A40 and H200, respectively, for 48-frame videos.",
+        "url": "http://arxiv.org/abs/2601.04359v1",
+        "published_date": "2026-01-07T19:51:06+00:00",
+        "updated_date": "2026-01-07T19:51:06+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Kunyang Li",
+            "Mubarak Shah",
+            "Yuzhang Shang"
+        ],
+        "tldr": "The paper introduces PackCache, a training-free method to accelerate unified autoregressive video generation by dynamically compacting the KV-cache, leading to significant speedups, especially for longer sequences.",
+        "tldr_zh": "该论文介绍了一种名为PackCache的免训练方法，通过动态压缩KV-cache来加速统一自回归视频生成，从而显著提高速度，特别是对于更长的序列。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "ReHyAt: Recurrent Hybrid Attention for Video Diffusion Transformers",
+        "summary": "Recent advances in video diffusion models have shifted towards transformer-based architectures, achieving state-of-the-art video generation but at the cost of quadratic attention complexity, which severely limits scalability for longer sequences. We introduce ReHyAt, a Recurrent Hybrid Attention mechanism that combines the fidelity of softmax attention with the efficiency of linear attention, enabling chunk-wise recurrent reformulation and constant memory usage. Unlike the concurrent linear-only SANA Video, ReHyAt's hybrid design allows efficient distillation from existing softmax-based models, reducing the training cost by two orders of magnitude to ~160 GPU hours, while being competitive in the quality. Our light-weight distillation and finetuning pipeline provides a recipe that can be applied to future state-of-the-art bidirectional softmax-based models. Experiments on VBench and VBench-2.0, as well as a human preference study, demonstrate that ReHyAt achieves state-of-the-art video quality while reducing attention cost from quadratic to linear, unlocking practical scalability for long-duration and on-device video generation. Project page is available at https://qualcomm-ai-research.github.io/rehyat.",
+        "url": "http://arxiv.org/abs/2601.04342v1",
+        "published_date": "2026-01-07T19:26:30+00:00",
+        "updated_date": "2026-01-07T19:26:30+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Mohsen Ghafoorian",
+            "Amirhossein Habibian"
+        ],
+        "tldr": "The paper introduces ReHyAt, a recurrent hybrid attention mechanism for video diffusion transformers that reduces computational complexity from quadratic to linear, enabling efficient long-duration video generation through distillation from existing models.",
+        "tldr_zh": "该论文介绍了ReHyAt，一种用于视频扩散Transformer的循环混合注意力机制，它将计算复杂度从二次降低到线性，通过从现有模型中提取知识，实现高效的长时程视频生成。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Choreographing a World of Dynamic Objects",
+        "summary": "Dynamic objects in our physical 4D (3D + time) world are constantly evolving, deforming, and interacting with other objects, leading to diverse 4D scene dynamics. In this paper, we present a universal generative pipeline, CHORD, for CHOReographing Dynamic objects and scenes and synthesizing this type of phenomena. Traditional rule-based graphics pipelines to create these dynamics are based on category-specific heuristics, yet are labor-intensive and not scalable. Recent learning-based methods typically demand large-scale datasets, which may not cover all object categories in interest. Our approach instead inherits the universality from the video generative models by proposing a distillation-based pipeline to extract the rich Lagrangian motion information hidden in the Eulerian representations of 2D videos. Our method is universal, versatile, and category-agnostic. We demonstrate its effectiveness by conducting experiments to generate a diverse range of multi-body 4D dynamics, show its advantage compared to existing methods, and demonstrate its applicability in generating robotics manipulation policies. Project page: https://yanzhelyu.github.io/chord",
+        "url": "http://arxiv.org/abs/2601.04194v1",
+        "published_date": "2026-01-07T18:59:40+00:00",
+        "updated_date": "2026-01-07T18:59:40+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.GR",
+            "cs.RO"
+        ],
+        "authors": [
+            "Yanzhe Lyu",
+            "Chen Geng",
+            "Karthik Dharmarajan",
+            "Yunzhi Zhang",
+            "Hadi Alzayer",
+            "Shangzhe Wu",
+            "Jiajun Wu"
+        ],
+        "tldr": "The paper introduces CHORD, a universal generative pipeline for synthesizing dynamic 4D scenes by distilling Lagrangian motion information from 2D videos, offering a category-agnostic alternative to rule-based and data-hungry learning methods.",
+        "tldr_zh": "该论文介绍了一种通用生成管道CHORD，通过从2D视频中提取拉格朗日运动信息来合成动态4D场景，为基于规则和数据密集型学习方法提供了一种类别无关的替代方案。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Diffusion-DRF: Differentiable Reward Flow for Video Diffusion Fine-Tuning",
+        "summary": "Direct Preference Optimization (DPO) has recently improved Text-to-Video (T2V) generation by enhancing visual fidelity and text alignment. However, current methods rely on non-differentiable preference signals from human annotations or learned reward models. This reliance makes training label-intensive, bias-prone, and easy-to-game, which often triggers reward hacking and unstable training. We propose Diffusion-DRF, a differentiable reward flow for fine-tuning video diffusion models using a frozen, off-the-shelf Vision-Language Model (VLM) as a training-free critic. Diffusion-DRF directly backpropagates VLM feedback through the diffusion denoising chain, converting logit-level responses into token-aware gradients for optimization. We propose an automated, aspect-structured prompting pipeline to obtain reliable multi-dimensional VLM feedback, while gradient checkpointing enables efficient updates through the final denoising steps. Diffusion-DRF improves video quality and semantic alignment while mitigating reward hacking and collapse -- without additional reward models or preference datasets. It is model-agnostic and readily generalizes to other diffusion-based generative tasks.",
+        "url": "http://arxiv.org/abs/2601.04153v1",
+        "published_date": "2026-01-07T18:05:08+00:00",
+        "updated_date": "2026-01-07T18:05:08+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yifan Wang",
+            "Yanyu Li",
+            "Sergey Tulyakov",
+            "Yun Fu",
+            "Anil Kag"
+        ],
+        "tldr": "Diffusion-DRF introduces a differentiable reward flow using a frozen VLM to fine-tune video diffusion models, improving video quality and semantic alignment without extra reward models or datasets, while mitigating reward hacking.",
+        "tldr_zh": "Diffusion-DRF提出了一种可微分奖励流方法，利用冻结的VLM来微调视频扩散模型，从而在不使用额外奖励模型或数据集的情况下，提高视频质量和语义对齐，并减轻奖励篡改问题。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
