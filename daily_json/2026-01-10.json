@@ -1,0 +1,61 @@
+[
+    {
+        "title": "Plenoptic Video Generation",
+        "summary": "Camera-controlled generative video re-rendering methods, such as ReCamMaster, have achieved remarkable progress. However, despite their success in single-view setting, these works often struggle to maintain consistency across multi-view scenarios. Ensuring spatio-temporal coherence in hallucinated regions remains challenging due to the inherent stochasticity of generative models. To address it, we introduce PlenopticDreamer, a framework that synchronizes generative hallucinations to maintain spatio-temporal memory. The core idea is to train a multi-in-single-out video-conditioned model in an autoregressive manner, aided by a camera-guided video retrieval strategy that adaptively selects salient videos from previous generations as conditional inputs. In addition, Our training incorporates progressive context-scaling to improve convergence, self-conditioning to enhance robustness against long-range visual degradation caused by error accumulation, and a long-video conditioning mechanism to support extended video generation. Extensive experiments on the Basic and Agibot benchmarks demonstrate that PlenopticDreamer achieves state-of-the-art video re-rendering, delivering superior view synchronization, high-fidelity visuals, accurate camera control, and diverse view transformations (e.g., third-person to third-person, and head-view to gripper-view in robotic manipulation). Project page: https://research.nvidia.com/labs/dir/plenopticdreamer/",
+        "url": "http://arxiv.org/abs/2601.05239v1",
+        "published_date": "2026-01-08T18:58:32+00:00",
+        "updated_date": "2026-01-08T18:58:32+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Xiao Fu",
+            "Shitao Tang",
+            "Min Shi",
+            "Xian Liu",
+            "Jinwei Gu",
+            "Ming-Yu Liu",
+            "Dahua Lin",
+            "Chen-Hsuan Lin"
+        ],
+        "tldr": "PlenopticDreamer introduces a framework for multi-view consistent video generation by synchronizing hallucinations using an autoregressive video-conditioned model and a camera-guided video retrieval strategy.",
+        "tldr_zh": "PlenopticDreamer 提出了一个多视角一致的视频生成框架，通过使用自回归视频条件模型和相机引导的视频检索策略来同步幻觉。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "RoboVIP: Multi-View Video Generation with Visual Identity Prompting Augments Robot Manipulation",
+        "summary": "The diversity, quantity, and quality of manipulation data are critical for training effective robot policies. However, due to hardware and physical setup constraints, collecting large-scale real-world manipulation data remains difficult to scale across diverse environments. Recent work uses text-prompt conditioned image diffusion models to augment manipulation data by altering the backgrounds and tabletop objects in the visual observations. However, these approaches often overlook the practical need for multi-view and temporally coherent observations required by state-of-the-art policy models. Further, text prompts alone cannot reliably specify the scene setup. To provide the diffusion model with explicit visual guidance, we introduce visual identity prompting, which supplies exemplar images as conditioning inputs to guide the generation of the desired scene setup. To this end, we also build a scalable pipeline to curate a visual identity pool from large robotics datasets. Using our augmented manipulation data to train downstream vision-language-action and visuomotor policy models yields consistent performance gains in both simulation and real-robot settings.",
+        "url": "http://arxiv.org/abs/2601.05241v1",
+        "published_date": "2026-01-08T18:59:22+00:00",
+        "updated_date": "2026-01-08T18:59:22+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.RO"
+        ],
+        "authors": [
+            "Boyang Wang",
+            "Haoran Zhang",
+            "Shujie Zhang",
+            "Jinkun Hao",
+            "Mingda Jia",
+            "Qi Lv",
+            "Yucheng Mao",
+            "Zhaoyang Lyu",
+            "Jia Zeng",
+            "Xudong Xu",
+            "Jiangmiao Pang"
+        ],
+        "tldr": "This paper introduces a visual identity prompting method to augment robot manipulation data by generating multi-view and temporally coherent videos, leading to performance gains in downstream policy models.",
+        "tldr_zh": "本文提出了一种视觉身份提示方法，通过生成多视角和时间连贯的视频来增强机器人操作数据，从而提高下游策略模型的性能。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]
