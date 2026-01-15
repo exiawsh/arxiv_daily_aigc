@@ -1,0 +1,80 @@
+[
+    {
+        "title": "MAD: Motion Appearance Decoupling for efficient Driving World Models",
+        "summary": "Recent video diffusion models generate photorealistic, temporally coherent videos, yet they fall short as reliable world models for autonomous driving, where structured motion and physically consistent interactions are essential. Adapting these generalist video models to driving domains has shown promise but typically requires massive domain-specific data and costly fine-tuning. We propose an efficient adaptation framework that converts generalist video diffusion models into controllable driving world models with minimal supervision. The key idea is to decouple motion learning from appearance synthesis. First, the model is adapted to predict structured motion in a simplified form: videos of skeletonized agents and scene elements, focusing learning on physical and social plausibility. Then, the same backbone is reused to synthesize realistic RGB videos conditioned on these motion sequences, effectively \"dressing\" the motion with texture and lighting. This two-stage process mirrors a reasoning-rendering paradigm: first infer dynamics, then render appearance. Our experiments show this decoupled approach is exceptionally efficient: adapting SVD, we match prior SOTA models with less than 6% of their compute. Scaling to LTX, our MAD-LTX model outperforms all open-source competitors, and supports a comprehensive suite of text, ego, and object controls. Project page: https://vita-epfl.github.io/MAD-World-Model/",
+        "url": "http://arxiv.org/abs/2601.09452v1",
+        "published_date": "2026-01-14T12:52:23+00:00",
+        "updated_date": "2026-01-14T12:52:23+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Ahmad Rahimi",
+            "Valentin Gerard",
+            "Eloi Zablocki",
+            "Matthieu Cord",
+            "Alexandre Alahi"
+        ],
+        "tldr": "The paper introduces MAD, a two-stage framework for efficiently adapting generalist video diffusion models to driving world models. It decouples motion learning from appearance synthesis, achieving state-of-the-art performance with significantly reduced compute.",
+        "tldr_zh": "该论文介绍了MAD，一个用于高效地将通用视频扩散模型适配到驾驶世界模型的两阶段框架。它将运动学习与外观合成分离，以显著减少的计算量实现了最先进的性能。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "PhyRPR: Training-Free Physics-Constrained Video Generation",
+        "summary": "Recent diffusion-based video generation models can synthesize visually plausible videos, yet they often struggle to satisfy physical constraints. A key reason is that most existing approaches remain single-stage: they entangle high-level physical understanding with low-level visual synthesis, making it hard to generate content that require explicit physical reasoning. To address this limitation, we propose a training-free three-stage pipeline,\\textit{PhyRPR}:\\textit{Phy\\uline{R}eason}--\\textit{Phy\\uline{P}lan}--\\textit{Phy\\uline{R}efine}, which decouples physical understanding from visual synthesis. Specifically, \\textit{PhyReason} uses a large multimodal model for physical state reasoning and an image generator for keyframe synthesis; \\textit{PhyPlan} deterministically synthesizes a controllable coarse motion scaffold; and \\textit{PhyRefine} injects this scaffold into diffusion sampling via a latent fusion strategy to refine appearance while preserving the planned dynamics. This staged design enables explicit physical control during generation. Extensive experiments under physics constraints show that our method consistently improves physical plausibility and motion controllability.",
+        "url": "http://arxiv.org/abs/2601.09255v1",
+        "published_date": "2026-01-14T07:41:56+00:00",
+        "updated_date": "2026-01-14T07:41:56+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yibo Zhao",
+            "Hengjia Li",
+            "Xiaofei He",
+            "Boxi Wu"
+        ],
+        "tldr": "The paper introduces PhyRPR, a training-free three-stage pipeline for video generation that explicitly incorporates physical constraints, leading to improved physical plausibility and motion controllability.",
+        "tldr_zh": "该论文介绍了一种名为PhyRPR的无需训练的三阶段视频生成流程，该流程显式地结合了物理约束，从而提高了物理合理性和运动可控性。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Motion Attribution for Video Generation",
+        "summary": "Despite the rapid progress of video generation models, the role of data in influencing motion is poorly understood. We present Motive (MOTIon attribution for Video gEneration), a motion-centric, gradient-based data attribution framework that scales to modern, large, high-quality video datasets and models. We use this to study which fine-tuning clips improve or degrade temporal dynamics. Motive isolates temporal dynamics from static appearance via motion-weighted loss masks, yielding efficient and scalable motion-specific influence computation. On text-to-video models, Motive identifies clips that strongly affect motion and guides data curation that improves temporal consistency and physical plausibility. With Motive-selected high-influence data, our method improves both motion smoothness and dynamic degree on VBench, achieving a 74.1% human preference win rate compared with the pretrained base model. To our knowledge, this is the first framework to attribute motion rather than visual appearance in video generative models and to use it to curate fine-tuning data.",
+        "url": "http://arxiv.org/abs/2601.08828v1",
+        "published_date": "2026-01-13T18:59:09+00:00",
+        "updated_date": "2026-01-13T18:59:09+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.LG",
+            "cs.MM",
+            "cs.RO"
+        ],
+        "authors": [
+            "Xindi Wu",
+            "Despoina Paschalidou",
+            "Jun Gao",
+            "Antonio Torralba",
+            "Laura Leal-Taixé",
+            "Olga Russakovsky",
+            "Sanja Fidler",
+            "Jonathan Lorraine"
+        ],
+        "tldr": "The paper introduces Motive, a gradient-based data attribution framework for video generation that identifies influential clips affecting motion, enabling data curation to improve temporal consistency and physical plausibility, leading to improved video quality.",
+        "tldr_zh": "该论文介绍了一种名为Motive的基于梯度的视频生成数据归因框架，该框架可识别影响运动的关键片段，从而能够进行数据管理，以提高时间一致性和物理合理性，最终提高视频质量。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
