@@ -1,0 +1,85 @@
+[
+    {
+        "title": "Rethinking Video Generation Model for the Embodied World",
+        "summary": "Video generation models have significantly advanced embodied intelligence, unlocking new possibilities for generating diverse robot data that capture perception, reasoning, and action in the physical world. However, synthesizing high-quality videos that accurately reflect real-world robotic interactions remains challenging, and the lack of a standardized benchmark limits fair comparisons and progress. To address this gap, we introduce a comprehensive robotics benchmark, RBench, designed to evaluate robot-oriented video generation across five task domains and four distinct embodiments. It assesses both task-level correctness and visual fidelity through reproducible sub-metrics, including structural consistency, physical plausibility, and action completeness. Evaluation of 25 representative models highlights significant deficiencies in generating physically realistic robot behaviors. Furthermore, the benchmark achieves a Spearman correlation coefficient of 0.96 with human evaluations, validating its effectiveness. While RBench provides the necessary lens to identify these deficiencies, achieving physical realism requires moving beyond evaluation to address the critical shortage of high-quality training data. Driven by these insights, we introduce a refined four-stage data pipeline, resulting in RoVid-X, the largest open-source robotic dataset for video generation with 4 million annotated video clips, covering thousands of tasks and enriched with comprehensive physical property annotations. Collectively, this synergistic ecosystem of evaluation and data establishes a robust foundation for rigorous assessment and scalable training of video models, accelerating the evolution of embodied AI toward general intelligence.",
+        "url": "http://arxiv.org/abs/2601.15282v1",
+        "published_date": "2026-01-21T18:59:18+00:00",
+        "updated_date": "2026-01-21T18:59:18+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.RO"
+        ],
+        "authors": [
+            "Yufan Deng",
+            "Zilin Pan",
+            "Hongyu Zhang",
+            "Xiaojie Li",
+            "Ruoqing Hu",
+            "Yufei Ding",
+            "Yiming Zou",
+            "Yan Zeng",
+            "Daquan Zhou"
+        ],
+        "tldr": "This paper introduces RBench, a robotics benchmark for video generation, identifies deficiencies in existing models, and presents RoVid-X, a large-scale dataset with physical property annotations to improve realism in robot interaction videos.",
+        "tldr_zh": "该论文介绍了一个用于视频生成的机器人基准测试RBench，指出了现有模型的不足，并提出了一个大型数据集RoVid-X，其中包含物理属性注释，以提高机器人交互视频的真实感。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "Walk through Paintings: Egocentric World Models from Internet Priors",
+        "summary": "What if a video generation model could not only imagine a plausible future, but the correct one, accurately reflecting how the world changes with each action? We address this question by presenting the Egocentric World Model (EgoWM), a simple, architecture-agnostic method that transforms any pretrained video diffusion model into an action-conditioned world model, enabling controllable future prediction. Rather than training from scratch, we repurpose the rich world priors of Internet-scale video models and inject motor commands through lightweight conditioning layers. This allows the model to follow actions faithfully while preserving realism and strong generalization. Our approach scales naturally across embodiments and action spaces, ranging from 3-DoF mobile robots to 25-DoF humanoids, where predicting egocentric joint-angle-driven dynamics is substantially more challenging. The model produces coherent rollouts for both navigation and manipulation tasks, requiring only modest fine-tuning. To evaluate physical correctness independently of visual appearance, we introduce the Structural Consistency Score (SCS), which measures whether stable scene elements evolve consistently with the provided actions. EgoWM improves SCS by up to 80 percent over prior state-of-the-art navigation world models, while achieving up to six times lower inference latency and robust generalization to unseen environments, including navigation inside paintings.",
+        "url": "http://arxiv.org/abs/2601.15284v1",
+        "published_date": "2026-01-21T18:59:32+00:00",
+        "updated_date": "2026-01-21T18:59:32+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Anurag Bagchi",
+            "Zhipeng Bao",
+            "Homanga Bharadhwaj",
+            "Yu-Xiong Wang",
+            "Pavel Tokmakov",
+            "Martial Hebert"
+        ],
+        "tldr": "The paper introduces EgoWM, a method that adapts pre-trained video diffusion models into action-conditioned world models, enabling controllable future prediction and improved structural consistency, even within unconventional environments like paintings.",
+        "tldr_zh": "该论文介绍了EgoWM，一种将预训练的视频扩散模型适配为动作条件世界模型的方法，从而实现可控的未来预测并提高结构一致性，即使在绘画等非传统环境中也能实现。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "StableWorld: Towards Stable and Consistent Long Interactive Video Generation",
+        "summary": "In this paper, we explore the overlooked challenge of stability and temporal consistency in interactive video generation, which synthesizes dynamic and controllable video worlds through interactive behaviors such as camera movements and text prompts. Despite remarkable progress in world modeling, current methods still suffer from severe instability and temporal degradation, often leading to spatial drift and scene collapse during long-horizon interactions. To better understand this issue, we initially investigate the underlying causes of instability and identify that the major source of error accumulation originates from the same scene, where generated frames gradually deviate from the initial clean state and propagate errors to subsequent frames. Building upon this observation, we propose a simple yet effective method, \\textbf{StableWorld}, a Dynamic Frame Eviction Mechanism. By continuously filtering out degraded frames while retaining geometrically consistent ones, StableWorld effectively prevents cumulative drift at its source, leading to more stable and temporal consistency of interactive generation. Promising results on multiple interactive video models, \\eg, Matrix-Game, Open-Oasis, and Hunyuan-GameCraft, demonstrate that StableWorld is model-agnostic and can be applied to different interactive video generation frameworks to substantially improve stability, temporal consistency, and generalization across diverse interactive scenarios.",
+        "url": "http://arxiv.org/abs/2601.15281v1",
+        "published_date": "2026-01-21T18:59:02+00:00",
+        "updated_date": "2026-01-21T18:59:02+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Ying Yang",
+            "Zhengyao Lv",
+            "Tianlin Pan",
+            "Haofan Wang",
+            "Binxin Yang",
+            "Hubery Yin",
+            "Chen Li",
+            "Ziwei Liu",
+            "Chenyang Si"
+        ],
+        "tldr": "The paper introduces StableWorld, a dynamic frame eviction mechanism, to address instability and temporal inconsistency in long interactive video generation by filtering out degraded frames and retaining geometrically consistent ones.",
+        "tldr_zh": "该论文介绍了 StableWorld，一种动态帧清除机制，通过过滤退化的帧并保留几何上一致的帧，来解决长交互视频生成中的不稳定性和时间不一致性问题。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
