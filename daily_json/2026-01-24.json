@@ -1,0 +1,56 @@
+[
+    {
+        "title": "CamPilot: Improving Camera Control in Video Diffusion Model with Efficient Camera Reward Feedback",
+        "summary": "Recent advances in camera-controlled video diffusion models have significantly improved video-camera alignment. However, the camera controllability still remains limited. In this work, we build upon Reward Feedback Learning and aim to further improve camera controllability. However, directly borrowing existing ReFL approaches faces several challenges. First, current reward models lack the capacity to assess video-camera alignment. Second, decoding latent into RGB videos for reward computation introduces substantial computational overhead. Third, 3D geometric information is typically neglected during video decoding. To address these limitations, we introduce an efficient camera-aware 3D decoder that decodes video latent into 3D representations for reward quantization. Specifically, video latent along with the camera pose are decoded into 3D Gaussians. In this process, the camera pose not only acts as input, but also serves as a projection parameter. Misalignment between the video latent and camera pose will cause geometric distortions in the 3D structure, resulting in blurry renderings. Based on this property, we explicitly optimize pixel-level consistency between the rendered novel views and ground-truth ones as reward. To accommodate the stochastic nature, we further introduce a visibility term that selectively supervises only deterministic regions derived via geometric warping. Extensive experiments conducted on RealEstate10K and WorldScore benchmarks demonstrate the effectiveness of our proposed method. Project page: \\href{https://a-bigbao.github.io/CamPilot/}{CamPilot Page}.",
+        "url": "http://arxiv.org/abs/2601.16214v1",
+        "published_date": "2026-01-22T18:59:56+00:00",
+        "updated_date": "2026-01-22T18:59:56+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Wenhang Ge",
+            "Guibao Shen",
+            "Jiawei Feng",
+            "Luozhou Wang",
+            "Hao Lu",
+            "Xingye Tian",
+            "Xin Tao",
+            "Ying-Cong Chen"
+        ],
+        "tldr": "This paper introduces CamPilot, a novel method for improving camera control in video diffusion models by using an efficient camera-aware 3D decoder and a pixel-level consistency reward based on 3D Gaussian representations. It addresses limitations in existing Reward Feedback Learning approaches for video generation.",
+        "tldr_zh": "本文介绍了一种名为CamPilot的新方法，通过使用高效的相机感知3D解码器和基于3D高斯表示的像素级一致性奖励，来提高视频扩散模型中的相机控制。它解决了现有奖励反馈学习方法在视频生成中的局限性。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "PyraTok: Language-Aligned Pyramidal Tokenizer for Video Understanding and Generation",
+        "summary": "Discrete video VAEs underpin modern text-to-video generation and video understanding systems, yet existing tokenizers typically learn visual codebooks at a single scale with limited vocabularies and shallow language supervision, leading to poor cross-modal alignment and zero-shot transfer. We introduce PyraTok, a language-aligned pyramidal tokenizer that learns semantically structured discrete latents across multiple spatiotemporal resolutions. PyraTok builds on a pretrained video VAE and a novel Language aligned Pyramidal Quantization (LaPQ) module that discretizes encoder features at several depths using a shared large binary codebook, yielding compact yet expressive video token sequences. To tightly couple visual tokens with language, PyraTok jointly optimizes multi-scale text-guided quantization and a global autoregressive objective over the token hierarchy. Across ten benchmarks, PyraTok delivers state-of-the-art (SOTA) video reconstruction, consistently improves text-to-video quality, and sets new SOTA zero-shot performance on video segmentation, temporal action localization, and video understanding, scaling robustly to up to 4K/8K resolutions.",
+        "url": "http://arxiv.org/abs/2601.16210v1",
+        "published_date": "2026-01-22T18:58:55+00:00",
+        "updated_date": "2026-01-22T18:58:55+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Onkar Susladkar",
+            "Tushar Prakash",
+            "Adheesh Juvekar",
+            "Kiet A. Nguyen",
+            "Dong-Hwan Jang",
+            "Inderjit S Dhillon",
+            "Ismini Lourentzou"
+        ],
+        "tldr": "PyraTok introduces a novel, language-aligned pyramidal tokenizer for video understanding and generation, achieving SOTA results in video reconstruction, text-to-video generation, and zero-shot video understanding tasks by learning semantically structured discrete latents across multiple spatiotemporal resolutions.",
+        "tldr_zh": "PyraTok 提出了一种新的、语言对齐的金字塔式分词器，用于视频理解和生成，通过学习跨多个时空分辨率的语义结构化离散潜在变量，在视频重建、文本到视频生成和零样本视频理解任务中实现了 SOTA 结果。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 9,
+        "overall_priority_score": 8
+    }
+]
