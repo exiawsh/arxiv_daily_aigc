@@ -1,0 +1,63 @@
+[
+    {
+        "title": "The Script is All You Need: An Agentic Framework for Long-Horizon Dialogue-to-Cinematic Video Generation",
+        "summary": "Recent advances in video generation have produced models capable of synthesizing stunning visual content from simple text prompts. However, these models struggle to generate long-form, coherent narratives from high-level concepts like dialogue, revealing a ``semantic gap'' between a creative idea and its cinematic execution. To bridge this gap, we introduce a novel, end-to-end agentic framework for dialogue-to-cinematic-video generation. Central to our framework is ScripterAgent, a model trained to translate coarse dialogue into a fine-grained, executable cinematic script. To enable this, we construct ScriptBench, a new large-scale benchmark with rich multimodal context, annotated via an expert-guided pipeline. The generated script then guides DirectorAgent, which orchestrates state-of-the-art video models using a cross-scene continuous generation strategy to ensure long-horizon coherence. Our comprehensive evaluation, featuring an AI-powered CriticAgent and a new Visual-Script Alignment (VSA) metric, shows our framework significantly improves script faithfulness and temporal fidelity across all tested video models. Furthermore, our analysis uncovers a crucial trade-off in current SOTA models between visual spectacle and strict script adherence, providing valuable insights for the future of automated filmmaking.",
+        "url": "http://arxiv.org/abs/2601.17737v1",
+        "published_date": "2026-01-25T08:10:28+00:00",
+        "updated_date": "2026-01-25T08:10:28+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Chenyu Mu",
+            "Xin He",
+            "Qu Yang",
+            "Wanshun Chen",
+            "Jiadi Yao",
+            "Huang Liu",
+            "Zihao Yi",
+            "Bo Zhao",
+            "Xingyu Chen",
+            "Ruotian Ma",
+            "Fanghua Ye",
+            "Erkun Yang",
+            "Cheng Deng",
+            "Zhaopeng Tu",
+            "Xiaolong Li",
+            "Linus"
+        ],
+        "tldr": "This paper introduces an agentic framework (ScripterAgent and DirectorAgent) to generate long-form, coherent cinematic videos from dialogue by translating dialogue into executable cinematic scripts and then orchestrating video models, along with a new benchmark dataset (ScriptBench) and evaluation metric (VSA).",
+        "tldr_zh": "本文介绍了一个智能体框架（ScripterAgent 和 DirectorAgent），通过将对话翻译成可执行的电影脚本，然后协调视频模型，从对话生成长篇、连贯的电影视频，同时还引入了一个新的基准数据集（ScriptBench）和评估指标（VSA）。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "MV-S2V: Multi-View Subject-Consistent Video Generation",
+        "summary": "Existing Subject-to-Video Generation (S2V) methods have achieved high-fidelity and subject-consistent video generation, yet remain constrained to single-view subject references. This limitation renders the S2V task reducible to an S2I + I2V pipeline, failing to exploit the full potential of video subject control. In this work, we propose and address the challenging Multi-View S2V (MV-S2V) task, which synthesizes videos from multiple reference views to enforce 3D-level subject consistency. Regarding the scarcity of training data, we first develop a synthetic data curation pipeline to generate highly customized synthetic data, complemented by a small-scale real-world captured dataset to boost the training of MV-S2V. Another key issue lies in the potential confusion between cross-subject and cross-view references in conditional generation. To overcome this, we further introduce Temporally Shifted RoPE (TS-RoPE) to distinguish between different subjects and distinct views of the same subject in reference conditioning. Our framework achieves superior 3D subject consistency w.r.t. multi-view reference images and high-quality visual outputs, establishing a new meaningful direction for subject-driven video generation. Our project page is available at <a href=\"https://szy-young.github.io/mv-s2v\">this URL</a>",
+        "url": "http://arxiv.org/abs/2601.17756v1",
+        "published_date": "2026-01-25T09:02:33+00:00",
+        "updated_date": "2026-01-25T09:02:33+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.GR"
+        ],
+        "authors": [
+            "Ziyang Song",
+            "Xinyu Gong",
+            "Bangya Liu",
+            "Zelin Zhao"
+        ],
+        "tldr": "This paper introduces a Multi-View Subject-to-Video (MV-S2V) generation task, addressing the limitation of existing methods by generating videos from multiple reference views to ensure 3D subject consistency, using synthetic data and a novel Temporally Shifted RoPE.",
+        "tldr_zh": "本文介绍了一种多视角主体到视频（MV-S2V）生成任务，通过从多个参考视图生成视频以确保3D主体一致性，解决了现有方法的局限性，并使用了合成数据和一种新颖的时间移位RoPE。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - January 22, 2026</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - January 26, 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>January 22, 2026</p>
+            <p>January 26, 2026</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,15 +215,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">LaVR: Scene Latent Conditioned Generative Video Trajectory Re-Rendering using Large 4D Reconstruction Models</h2>
+            <h2 class="paper-title">The Script is All You Need: An Agentic Framework for Long-Horizon Dialogue-to-Cinematic Video Generation</h2>
             
-            <p class="paper-summary">Given a monocular video, the goal of video re-rendering is to generate views of the scene from a novel camera trajectory. Existing methods face two distinct challenges. Geometrically unconditioned models lack spatial awareness, leading to drift and deformation under viewpoint changes. On the other hand, geometrically-conditioned models depend on estimated depth and explicit reconstruction, making them susceptible to depth inaccuracies and calibration errors.
-  We propose to address these challenges by using the implicit geometric knowledge embedded in the latent space of a large 4D reconstruction model to condition the video generation process. These latents capture scene structure in a continuous space without explicit reconstruction. Therefore, they provide a flexible representation that allows the pretrained diffusion prior to regularize errors more effectively. By jointly conditioning on these latents and source camera poses, we demonstrate that our model achieves state-of-the-art results on the video re-rendering task. Project webpage is https://lavr-4d-scene-rerender.github.io/</p>
+            <p class="paper-summary">Recent advances in video generation have produced models capable of synthesizing stunning visual content from simple text prompts. However, these models struggle to generate long-form, coherent narratives from high-level concepts like dialogue, revealing a ``semantic gap'' between a creative idea and its cinematic execution. To bridge this gap, we introduce a novel, end-to-end agentic framework for dialogue-to-cinematic-video generation. Central to our framework is ScripterAgent, a model trained to translate coarse dialogue into a fine-grained, executable cinematic script. To enable this, we construct ScriptBench, a new large-scale benchmark with rich multimodal context, annotated via an expert-guided pipeline. The generated script then guides DirectorAgent, which orchestrates state-of-the-art video models using a cross-scene continuous generation strategy to ensure long-horizon coherence. Our comprehensive evaluation, featuring an AI-powered CriticAgent and a new Visual-Script Alignment (VSA) metric, shows our framework significantly improves script faithfulness and temporal fidelity across all tested video models. Furthermore, our analysis uncovers a crucial trade-off in current SOTA models between visual spectacle and strict script adherence, providing valuable insights for the future of automated filmmaking.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces LaVR, a method for video re-rendering from monocular videos that uses the latent space of a large 4D reconstruction model to condition video generation, achieving state-of-the-art results by leveraging implicit geometric knowledge without explicit reconstruction.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces an agentic framework (ScripterAgent and DirectorAgent) to generate long-form, coherent cinematic videos from dialogue by translating dialogue into executable cinematic scripts and then orchestrating video models, along with a new benchmark dataset (ScriptBench) and evaluation metric (VSA).</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了 LaVR，一种从单目视频进行视频重渲染的方法，它利用大型 4D 重建模型的潜在空间来调节视频生成，通过利用隐式几何知识而无需显式重建，实现了最先进的结果。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一个智能体框架（ScripterAgent 和 DirectorAgent），通过将对话翻译成可执行的电影脚本，然后协调视频模型，从对话生成长篇、连贯的电影视频，同时还引入了一个新的基准数据集（ScriptBench）和评估指标（VSA）。</p>
             
 
             
@@ -233,16 +232,16 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -257,8 +256,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
             </div>
@@ -294,11 +293,11 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2601.14674v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2601.17737v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Mingyang Xie, Numair Khan, Tianfu Wang, Naina Dhingra, Seonghyeon Nam, Haitao Yang, Zhuo Hui, Christopher Metzler, Andrea Vedaldi, Hamed Pirsiavash, Lei Luo</p>
+            <p class="paper-authors">Authors: Chenyu Mu, Xin He, Qu Yang, Wanshun Chen, Jiadi Yao, Huang Liu, Zihao Yi, Bo Zhao, Xingyu Chen, Ruotian Ma, Fanghua Ye, Erkun Yang, Cheng Deng, Zhaopeng Tu, Xiaolong Li, Linus</p>
             
         </motion.div>
         
@@ -310,108 +309,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">OmniTransfer: All-in-one Framework for Spatio-temporal Video Transfer</h2>
+            <h2 class="paper-title">MV-S2V: Multi-View Subject-Consistent Video Generation</h2>
             
-            <p class="paper-summary">Videos convey richer information than images or text, capturing both spatial and temporal dynamics. However, most existing video customization methods rely on reference images or task-specific temporal priors, failing to fully exploit the rich spatio-temporal information inherent in videos, thereby limiting flexibility and generalization in video generation. To address these limitations, we propose OmniTransfer, a unified framework for spatio-temporal video transfer. It leverages multi-view information across frames to enhance appearance consistency and exploits temporal cues to enable fine-grained temporal control. To unify various video transfer tasks, OmniTransfer incorporates three key designs: Task-aware Positional Bias that adaptively leverages reference video information to improve temporal alignment or appearance consistency; Reference-decoupled Causal Learning separating reference and target branches to enable precise reference transfer while improving efficiency; and Task-adaptive Multimodal Alignment using multimodal semantic guidance to dynamically distinguish and tackle different tasks. Extensive experiments show that OmniTransfer outperforms existing methods in appearance (ID and style) and temporal transfer (camera movement and video effects), while matching pose-guided methods in motion transfer without using pose, establishing a new paradigm for flexible, high-fidelity video generation.</p>
+            <p class="paper-summary">Existing Subject-to-Video Generation (S2V) methods have achieved high-fidelity and subject-consistent video generation, yet remain constrained to single-view subject references. This limitation renders the S2V task reducible to an S2I + I2V pipeline, failing to exploit the full potential of video subject control. In this work, we propose and address the challenging Multi-View S2V (MV-S2V) task, which synthesizes videos from multiple reference views to enforce 3D-level subject consistency. Regarding the scarcity of training data, we first develop a synthetic data curation pipeline to generate highly customized synthetic data, complemented by a small-scale real-world captured dataset to boost the training of MV-S2V. Another key issue lies in the potential confusion between cross-subject and cross-view references in conditional generation. To overcome this, we further introduce Temporally Shifted RoPE (TS-RoPE) to distinguish between different subjects and distinct views of the same subject in reference conditioning. Our framework achieves superior 3D subject consistency w.r.t. multi-view reference images and high-quality visual outputs, establishing a new meaningful direction for subject-driven video generation. Our project page is available at <a href="https://szy-young.github.io/mv-s2v">this URL</a></p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces OmniTransfer, a unified framework for spatio-temporal video transfer that leverages multi-view and temporal information with task-aware designs to achieve flexible and high-fidelity video generation, outperforming existing methods in various transfer tasks.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了OmniTransfer，一个统一的时空视频转换框架，利用多视角和时间信息以及任务感知设计，实现灵活且高保真的视频生成，在各种转换任务中优于现有方法。</p>
-            
-
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces a Multi-View Subject-to-Video (MV-S2V) generation task, addressing the limitation of existing methods by generating videos from multiple reference views to ensure 3D subject consistency, using synthetic data and a novel Temporally Shifted RoPE.</p>
             
             
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-            </div>
-            
-            
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="far fa-star"></i>
-                    
-                
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2601.14250v1" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Pengze Zhang, Yanze Wu, Mengtian Li, Xu Bai, Songtao Zhao, Fulong Ye, Chong Mou, Xinghui Li, Zhuowei Chen, Qian He, Mingyuan Gao</p>
-            
-        </motion.div>
-        
-        <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.1, ease: 'easeOut' }"  
-            class="bento-item"
-            data-motion-element
-        >
-            <h2 class="paper-title">Mirai: Autoregressive Visual Generation Needs Foresight</h2>
-            
-            <p class="paper-summary">Autoregressive (AR) visual generators model images as sequences of discrete tokens and are trained with next token likelihood. This strict causality supervision optimizes each step only by its immediate next token, which diminishes global coherence and slows convergence. We ask whether foresight, training signals that originate from later tokens, can help AR visual generation. We conduct a series of controlled diagnostics along the injection level, foresight layout, and foresight source axes, unveiling a key insight: aligning foresight to AR models' internal representation on the 2D image grids improves causality modeling. We formulate this insight with Mirai (meaning "future" in Japanese), a general framework that injects future information into AR training with no architecture change and no extra inference overhead: Mirai-E uses explicit foresight from multiple future positions of unidirectional representations, whereas Mirai-I leverages implicit foresight from matched bidirectional representations. Extensive experiments show that Mirai significantly accelerates convergence and improves generation quality. For instance, Mirai can speed up LlamaGen-B's convergence by up to 10$\times$ and reduce the generation FID from 5.34 to 4.34 on the ImageNet class-condition image generation benchmark. Our study highlights that visual autoregressive models need foresight.</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Mirai, a training framework for autoregressive visual generators that incorporates foresight from future tokens to improve convergence and generation quality without architectural changes or inference overhead.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了Mirai，一个用于自回归视觉生成器的训练框架，它通过整合来自未来token的“先见之明”来提高收敛速度和生成质量，且无需架构更改或额外的推理开销。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种多视角主体到视频（MV-S2V）生成任务，通过从多个参考视图生成视频以确保3D主体一致性，解决了现有方法的局限性，并使用了合成数据和一种新颖的时间移位RoPE。</p>
             
 
             
@@ -421,8 +326,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(6/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
@@ -482,18 +387,18 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2601.14671v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2601.17756v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Yonghao Yu, Lang Huang, Zerun Wang, Runyi Li, Toshihiko Yamasaki</p>
+            <p class="paper-authors">Authors: Ziyang Song, Xinyu Gong, Bangya Liu, Zelin Zhao</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2026-01-27 03:07:46 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2026-01-27 03:09:01 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
