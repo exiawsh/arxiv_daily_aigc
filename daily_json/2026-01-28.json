@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Entropy-Guided k-Guard Sampling for Long-Horizon Autoregressive Video Generation",
+        "summary": "Autoregressive (AR) architectures have achieved significant successes in LLMs, inspiring explorations for video generation. In LLMs, top-p/top-k sampling strategies work exceptionally well: language tokens have high semantic density and low redundancy, so a fixed size of token candidates already strikes a balance between semantic accuracy and generation diversity. In contrast, video tokens have low semantic density and high spatio-temporal redundancy. This mismatch makes static top-k/top-p strategies ineffective for video decoders: they either introduce unnecessary randomness for low-uncertainty regions (static backgrounds) or get stuck in early errors for high-uncertainty regions (foreground objects). Prediction errors will accumulate as more frames are generated and eventually severely degrade long-horizon quality. To address this, we propose Entropy-Guided k-Guard (ENkG) sampling, a simple yet effective strategy that adapts sampling to token-wise dispersion, quantified by the entropy of each token's predicted distribution. ENkG uses adaptive token candidate sizes: for low-entropy regions, it employs fewer candidates to suppress redundant noise and preserve structural integrity; for high-entropy regions, it uses more candidates to mitigate error compounding. ENkG is model-agnostic, training-free, and adds negligible overhead. Experiments demonstrate consistent improvements in perceptual quality and structural stability compared to static top-k/top-p strategies.",
+        "url": "http://arxiv.org/abs/2601.19488v1",
+        "published_date": "2026-01-27T11:19:53+00:00",
+        "updated_date": "2026-01-27T11:19:53+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yizhao Han",
+            "Tianxing Shi",
+            "Zhao Wang",
+            "Zifan Xu",
+            "Zhiyuan Pu",
+            "Mingxiao Li",
+            "Qian Zhang",
+            "Wei Yin",
+            "Xiao-Xiao Long"
+        ],
+        "tldr": "The paper introduces Entropy-Guided k-Guard (ENkG) sampling, an adaptive sampling strategy for autoregressive video generation that adjusts the number of candidate tokens based on the entropy of the predicted distribution, improving long-horizon video quality by reducing noise in low-uncertainty regions and mitigating error compounding in high-uncertainty regions.",
+        "tldr_zh": "该论文介绍了一种熵引导的k-Guard（ENkG）采样方法，这是一种自适应的自回归视频生成采样策略，它基于预测分布的熵来调整候选token的数量，通过减少低不确定性区域的噪声并减轻高不确定性区域的误差累积，从而提高长时程视频质量。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    }
+]
