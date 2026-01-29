@@ -1,0 +1,99 @@
+[
+    {
+        "title": "Advancing Open-source World Models",
+        "summary": "We present LingBot-World, an open-sourced world simulator stemming from video generation. Positioned as a top-tier world model, LingBot-World offers the following features. (1) It maintains high fidelity and robust dynamics in a broad spectrum of environments, including realism, scientific contexts, cartoon styles, and beyond. (2) It enables a minute-level horizon while preserving contextual consistency over time, which is also known as \"long-term memory\". (3) It supports real-time interactivity, achieving a latency of under 1 second when producing 16 frames per second. We provide public access to the code and model in an effort to narrow the divide between open-source and closed-source technologies. We believe our release will empower the community with practical applications across areas like content creation, gaming, and robot learning.",
+        "url": "http://arxiv.org/abs/2601.20540v1",
+        "published_date": "2026-01-28T12:37:01+00:00",
+        "updated_date": "2026-01-28T12:37:01+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Robbyant Team",
+            "Zelin Gao",
+            "Qiuyu Wang",
+            "Yanhong Zeng",
+            "Jiapeng Zhu",
+            "Ka Leong Cheng",
+            "Yixuan Li",
+            "Hanlin Wang",
+            "Yinghao Xu",
+            "Shuailei Ma",
+            "Yihang Chen",
+            "Jie Liu",
+            "Yansong Cheng",
+            "Yao Yao",
+            "Jiayi Zhu",
+            "Yihao Meng",
+            "Kecheng Zheng",
+            "Qingyan Bai",
+            "Jingye Chen",
+            "Zehong Shen",
+            "Yue Yu",
+            "Xing Zhu",
+            "Yujun Shen",
+            "Hao Ouyang"
+        ],
+        "tldr": "The paper introduces LingBot-World, an open-sourced video generation-based world simulator boasting high fidelity, long-term memory, and real-time interactivity, aiming to bridge the gap between open and closed-source world model technologies.",
+        "tldr_zh": "该论文介绍了LingBot-World，一个开源的基于视频生成的World Simulator，具有高保真度、长期记忆和实时交互性，旨在弥合开源和闭源世界模型技术之间的差距。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "Latent Temporal Discrepancy as Motion Prior: A Loss-Weighting Strategy for Dynamic Fidelity in T2V",
+        "summary": "Video generation models have achieved notable progress in static scenarios, yet their performance in motion video generation remains limited, with quality degrading under drastic dynamic changes. This is due to noise disrupting temporal coherence and increasing the difficulty of learning dynamic regions. {Unfortunately, existing diffusion models rely on static loss for all scenarios, constraining their ability to capture complex dynamics.} To address this issue, we introduce Latent Temporal Discrepancy (LTD) as a motion prior to guide loss weighting. LTD measures frame-to-frame variation in the latent space, assigning larger penalties to regions with higher discrepancy while maintaining regular optimization for stable regions. This motion-aware strategy stabilizes training and enables the model to better reconstruct high-frequency dynamics. Extensive experiments on the general benchmark VBench and the motion-focused VMBench show consistent gains, with our method outperforming strong baselines by 3.31% on VBench and 3.58% on VMBench, achieving significant improvements in motion quality.",
+        "url": "http://arxiv.org/abs/2601.20504v1",
+        "published_date": "2026-01-28T11:27:23+00:00",
+        "updated_date": "2026-01-28T11:27:23+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Meiqi Wu",
+            "Bingze Song",
+            "Ruimin Lin",
+            "Chen Zhu",
+            "Xiaokun Feng",
+            "Jiahong Wu",
+            "Xiangxiang Chu",
+            "Kaiqi Huang"
+        ],
+        "tldr": "This paper introduces a Latent Temporal Discrepancy (LTD) based loss-weighting strategy for text-to-video generation that improves motion quality, especially in dynamic scenes, by prioritizing learning in regions with high frame-to-frame variation. Experiments show improvements on VBench and VMBench.",
+        "tldr_zh": "该论文提出了一种基于潜在时间差异 (LTD) 的损失权重策略，用于文本到视频的生成，通过优先学习帧间变化大的区域来提高运动质量，尤其是在动态场景中。实验表明，在 VBench 和 VMBench 上有所改进。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Efficient Autoregressive Video Diffusion with Dummy Head",
+        "summary": "The autoregressive video diffusion model has recently gained considerable research interest due to its causal modeling and iterative denoising. In this work, we identify that the multi-head self-attention in these models under-utilizes historical frames: approximately 25% heads attend almost exclusively to the current frame, and discarding their KV caches incurs only minor performance degradation. Building upon this, we propose Dummy Forcing, a simple yet effective method to control context accessibility across different heads. Specifically, the proposed heterogeneous memory allocation reduces head-wise context redundancy, accompanied by dynamic head programming to adaptively classify head types. Moreover, we develop a context packing technique to achieve more aggressive cache compression. Without additional training, our Dummy Forcing delivers up to 2.0x speedup over the baseline, supporting video generation at 24.3 FPS with less than 0.5% quality drop. Project page is available at https://csguoh.github.io/project/DummyForcing/.",
+        "url": "http://arxiv.org/abs/2601.20499v1",
+        "published_date": "2026-01-28T11:20:43+00:00",
+        "updated_date": "2026-01-28T11:20:43+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Hang Guo",
+            "Zhaoyang Jia",
+            "Jiahao Li",
+            "Bin Li",
+            "Yuanhao Cai",
+            "Jiangshan Wang",
+            "Yawei Li",
+            "Yan Lu"
+        ],
+        "tldr": "This paper proposes a method called \"Dummy Forcing\" to optimize autoregressive video diffusion models by reducing context redundancy in multi-head self-attention, achieving significant speedups without substantial quality loss.",
+        "tldr_zh": "本文提出了一种名为“Dummy Forcing”的方法，通过减少多头自注意力中的上下文冗余来优化自回归视频扩散模型，从而在不显著降低质量的前提下实现显著的加速。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    }
+]
