@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Past- and Future-Informed KV Cache Policy with Salience Estimation in Autoregressive Video Diffusion",
+        "summary": "Video generation is pivotal to digital media creation, and recent advances in autoregressive video generation have markedly enhanced the efficiency of real-time video synthesis. However, existing approaches generally rely on heuristic KV Cache policies, which ignore differences in token importance in long-term video generation. This leads to the loss of critical spatiotemporal information and the accumulation of redundant, invalid cache, thereby degrading video generation quality and efficiency. To address this limitation, we first observe that token contributions to video generation are highly time-heterogeneous and accordingly propose a novel Past- and Future-Informed KV Cache Policy (PaFu-KV). Specifically, PaFu-KV introduces a lightweight Salience Estimation Head distilled from a bidirectional teacher to estimate salience scores, allowing the KV cache to retain informative tokens while discarding less relevant ones. This policy yields a better quality-efficiency trade-off by shrinking KV cache capacity and reducing memory footprint at inference time. Extensive experiments on benchmarks demonstrate that our method preserves high-fidelity video generation quality while enables accelerated inference, thereby enabling more efficient long-horizon video generation. Our code will be released upon paper acceptance.",
+        "url": "http://arxiv.org/abs/2601.21896v1",
+        "published_date": "2026-01-29T15:55:29+00:00",
+        "updated_date": "2026-01-29T15:55:29+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Hanmo Chen",
+            "Chenghao Xu",
+            "Xu Yang",
+            "Xuan Chen",
+            "Cheng Deng"
+        ],
+        "tldr": "This paper introduces a novel KV cache policy (PaFu-KV) for autoregressive video diffusion models that uses a salience estimation head to retain informative tokens and discard less relevant ones, improving quality and efficiency in long-horizon video generation.",
+        "tldr_zh": "本文提出了一种新的KV缓存策略 (PaFu-KV)，用于自回归视频扩散模型，该策略使用显著性估计头来保留信息丰富的token并丢弃不太相关的token，从而提高长程视频生成的质量和效率。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    }
+]
