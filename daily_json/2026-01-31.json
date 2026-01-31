@@ -1,0 +1,32 @@
+[
+    {
+        "title": "EditYourself: Audio-Driven Generation and Manipulation of Talking Head Videos with Diffusion Transformers",
+        "summary": "Current generative video models excel at producing novel content from text and image prompts, but leave a critical gap in editing existing pre-recorded videos, where minor alterations to the spoken script require preserving motion, temporal coherence, speaker identity, and accurate lip synchronization. We introduce EditYourself, a DiT-based framework for audio-driven video-to-video (V2V) editing that enables transcript-based modification of talking head videos, including the seamless addition, removal, and retiming of visually spoken content. Building on a general-purpose video diffusion model, EditYourself augments its V2V capabilities with audio conditioning and region-aware, edit-focused training extensions. This enables precise lip synchronization and temporally coherent restructuring of existing performances via spatiotemporal inpainting, including the synthesis of realistic human motion in newly added segments, while maintaining visual fidelity and identity consistency over long durations. This work represents a foundational step toward generative video models as practical tools for professional video post-production.",
+        "url": "http://arxiv.org/abs/2601.22127v1",
+        "published_date": "2026-01-29T18:49:27+00:00",
+        "updated_date": "2026-01-29T18:49:27+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.GR",
+            "cs.LG",
+            "cs.MM"
+        ],
+        "authors": [
+            "John Flynn",
+            "Wolfgang Paier",
+            "Dimitar Dinev",
+            "Sam Nhut Nguyen",
+            "Hayk Poghosyan",
+            "Manuel Toribio",
+            "Sandipan Banerjee",
+            "Guy Gafni"
+        ],
+        "tldr": "EditYourself is a DiT-based framework for audio-driven video editing, enabling transcript-based modification of talking head videos with realistic lip synchronization and temporal coherence.",
+        "tldr_zh": "EditYourself是一个基于DiT的音频驱动视频编辑框架，能够根据文本稿本修改说话人头部视频，实现逼真的唇形同步和时间连贯性。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
