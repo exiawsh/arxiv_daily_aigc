@@ -1,0 +1,107 @@
+[
+    {
+        "title": "Fast Autoregressive Video Diffusion and World Models with Temporal Cache Compression and Sparse Attention",
+        "summary": "Autoregressive video diffusion models enable streaming generation, opening the door to long-form synthesis, video world models, and interactive neural game engines. However, their core attention layers become a major bottleneck at inference time: as generation progresses, the KV cache grows, causing both increasing latency and escalating GPU memory, which in turn restricts usable temporal context and harms long-range consistency. In this work, we study redundancy in autoregressive video diffusion and identify three persistent sources: near-duplicate cached keys across frames, slowly evolving (largely semantic) queries/keys that make many attention computations redundant, and cross-attention over long prompts where only a small subset of tokens matters per frame. Building on these observations, we propose a unified, training-free attention framework for autoregressive diffusion: TempCache compresses the KV cache via temporal correspondence to bound cache growth; AnnCA accelerates cross-attention by selecting frame-relevant prompt tokens using fast approximate nearest neighbor (ANN) matching; and AnnSA sparsifies self-attention by restricting each query to semantically matched keys, also using a lightweight ANN. Together, these modules reduce attention, compute, and memory and are compatible with existing autoregressive diffusion backbones and world models. Experiments demonstrate up to x5--x10 end-to-end speedups while preserving near-identical visual quality and, crucially, maintaining stable throughput and nearly constant peak GPU memory usage over long rollouts, where prior methods progressively slow down and suffer from increasing memory usage.",
+        "url": "http://arxiv.org/abs/2602.01801v1",
+        "published_date": "2026-02-02T08:31:21+00:00",
+        "updated_date": "2026-02-02T08:31:21+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Dvir Samuel",
+            "Issar Tzachor",
+            "Matan Levy",
+            "Micahel Green",
+            "Gal Chechik",
+            "Rami Ben-Ari"
+        ],
+        "tldr": "This paper introduces a training-free attention framework (TempCache, AnnCA, AnnSA) to accelerate autoregressive video diffusion models by compressing the KV cache and sparsifying attention, achieving significant speedups and constant memory usage during long video generation.",
+        "tldr_zh": "该论文介绍了一种无需训练的注意力框架（TempCache、AnnCA、AnnSA），通过压缩KV缓存和稀疏化注意力来加速自回归视频扩散模型，从而在长视频生成过程中实现显著加速和恒定的内存使用。",
+        "relevance_score": 10,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "UniDriveDreamer: A Single-Stage Multimodal World Model for Autonomous Driving",
+        "summary": "World models have demonstrated significant promise for data synthesis in autonomous driving. However, existing methods predominantly concentrate on single-modality generation, typically focusing on either multi-camera video or LiDAR sequence synthesis. In this paper, we propose UniDriveDreamer, a single-stage unified multimodal world model for autonomous driving, which directly generates multimodal future observations without relying on intermediate representations or cascaded modules. Our framework introduces a LiDAR-specific variational autoencoder (VAE) designed to encode input LiDAR sequences, alongside a video VAE for multi-camera images. To ensure cross-modal compatibility and training stability, we propose Unified Latent Anchoring (ULA), which explicitly aligns the latent distributions of the two modalities. The aligned features are fused and processed by a diffusion transformer that jointly models their geometric correspondence and temporal evolution. Additionally, structured scene layout information is projected per modality as a conditioning signal to guide the synthesis. Extensive experiments demonstrate that UniDriveDreamer outperforms previous state-of-the-art methods in both video and LiDAR generation, while also yielding measurable improvements in downstream",
+        "url": "http://arxiv.org/abs/2602.02002v1",
+        "published_date": "2026-02-02T12:02:27+00:00",
+        "updated_date": "2026-02-02T12:02:27+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Guosheng Zhao",
+            "Yaozeng Wang",
+            "Xiaofeng Wang",
+            "Zheng Zhu",
+            "Tingdong Yu",
+            "Guan Huang",
+            "Yongchen Zai",
+            "Ji Jiao",
+            "Changliang Xue",
+            "Xiaole Wang",
+            "Zhen Yang",
+            "Futang Zhu",
+            "Xingang Wang"
+        ],
+        "tldr": "UniDriveDreamer is a single-stage multimodal world model for autonomous driving that generates both video and LiDAR sequences, achieving state-of-the-art results by aligning latent distributions and using a diffusion transformer.",
+        "tldr_zh": "UniDriveDreamer是一个用于自动驾驶的单阶段多模态世界模型，它通过对齐潜在分布并使用扩散变换器，生成视频和激光雷达序列，实现了最先进的结果。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "GPD: Guided Progressive Distillation for Fast and High-Quality Video Generation",
+        "summary": "Diffusion models have achieved remarkable success in video generation; however, the high computational cost of the denoising process remains a major bottleneck. Existing approaches have shown promise in reducing the number of diffusion steps, but they often suffer from significant quality degradation when applied to video generation. We propose Guided Progressive Distillation (GPD), a framework that accelerates the diffusion process for fast and high-quality video generation. GPD introduces a novel training strategy in which a teacher model progressively guides a student model to operate with larger step sizes. The framework consists of two key components: (1) an online-generated training target that reduces optimization difficulty while improving computational efficiency, and (2) frequency-domain constraints in the latent space that promote the preservation of fine-grained details and temporal dynamics. Applied to the Wan2.1 model, GPD reduces the number of sampling steps from 48 to 6 while maintaining competitive visual quality on VBench. Compared with existing distillation methods, GPD demonstrates clear advantages in both pipeline simplicity and quality preservation.",
+        "url": "http://arxiv.org/abs/2602.01814v1",
+        "published_date": "2026-02-02T08:47:33+00:00",
+        "updated_date": "2026-02-02T08:47:33+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Xiao Liang",
+            "Yunzhu Zhang",
+            "Linchao Zhu"
+        ],
+        "tldr": "The paper introduces Guided Progressive Distillation (GPD), a method to accelerate video generation diffusion models by training a student model with larger step sizes under the guidance of a teacher model, while preserving video quality using online-generated targets and frequency-domain constraints.",
+        "tldr_zh": "该论文介绍了一种名为引导渐进蒸馏 (GPD) 的方法，通过在教师模型的指导下，训练一个具有更大步长的学生模型来加速视频生成扩散模型，同时利用在线生成的目标和频域约束来保持视频质量。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "PISCES: Annotation-free Text-to-Video Post-Training via Optimal Transport-Aligned Rewards",
+        "summary": "Text-to-video (T2V) generation aims to synthesize videos with high visual quality and temporal consistency that are semantically aligned with input text. Reward-based post-training has emerged as a promising direction to improve the quality and semantic alignment of generated videos. However, recent methods either rely on large-scale human preference annotations or operate on misaligned embeddings from pre-trained vision-language models, leading to limited scalability or suboptimal supervision. We present $\\texttt{PISCES}$, an annotation-free post-training algorithm that addresses these limitations via a novel Dual Optimal Transport (OT)-aligned Rewards module. To align reward signals with human judgment, $\\texttt{PISCES}$ uses OT to bridge text and video embeddings at both distributional and discrete token levels, enabling reward supervision to fulfill two objectives: (i) a Distributional OT-aligned Quality Reward that captures overall visual quality and temporal coherence; and (ii) a Discrete Token-level OT-aligned Semantic Reward that enforces semantic, spatio-temporal correspondence between text and video tokens. To our knowledge, $\\texttt{PISCES}$ is the first to improve annotation-free reward supervision in generative post-training through the lens of OT. Experiments on both short- and long-video generation show that $\\texttt{PISCES}$ outperforms both annotation-based and annotation-free methods on VBench across Quality and Semantic scores, with human preference studies further validating its effectiveness. We show that the Dual OT-aligned Rewards module is compatible with multiple optimization paradigms, including direct backpropagation and reinforcement learning fine-tuning.",
+        "url": "http://arxiv.org/abs/2602.01624v1",
+        "published_date": "2026-02-02T04:37:11+00:00",
+        "updated_date": "2026-02-02T04:37:11+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Minh-Quan Le",
+            "Gaurav Mittal",
+            "Cheng Zhao",
+            "David Gu",
+            "Dimitris Samaras",
+            "Mei Chen"
+        ],
+        "tldr": "The paper introduces PISCES, an annotation-free post-training method for text-to-video generation that uses Optimal Transport to align text and video embeddings for reward supervision, improving video quality and semantic alignment without human annotations.",
+        "tldr_zh": "该论文介绍了PISCES，一种无需标注的文本到视频生成后训练方法，它使用最优传输来对齐文本和视频嵌入，以进行奖励监督，从而在没有人工标注的情况下提高视频质量和语义对齐。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]

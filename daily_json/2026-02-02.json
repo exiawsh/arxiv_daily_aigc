@@ -1,0 +1,52 @@
+[
+    {
+        "title": "FlowCast: Trajectory Forecasting for Scalable Zero-Cost Speculative Flow Matching",
+        "summary": "Flow Matching (FM) has recently emerged as a powerful approach for high-quality visual generation. However, their prohibitively slow inference due to a large number of denoising steps limits their potential use in real-time or interactive applications. Existing acceleration methods, like distillation, truncation, or consistency training, either degrade quality, incur costly retraining, or lack generalization. We propose FlowCast, a training-free speculative generation framework that accelerates inference by exploiting the fact that FM models are trained to preserve constant velocity. FlowCast speculates future velocity by extrapolating current velocity without incurring additional time cost, and accepts it if it is within a mean-squared error threshold. This constant-velocity forecasting allows redundant steps in stable regions to be aggressively skipped while retaining precision in complex ones. FlowCast is a plug-and-play framework that integrates seamlessly with any FM model and requires no auxiliary networks. We also present a theoretical analysis and bound the worst-case deviation between speculative and full FM trajectories. Empirical evaluations demonstrate that FlowCast achieves $>2.5\\times$ speedup in image generation, video generation, and editing tasks, outperforming existing baselines with no quality loss as compared to standard full generation.",
+        "url": "http://arxiv.org/abs/2602.01329v1",
+        "published_date": "2026-02-01T16:50:15+00:00",
+        "updated_date": "2026-02-01T16:50:15+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Divya Jyoti Bajpai",
+            "Shubham Agarwal",
+            "Apoorv Saxena",
+            "Kuldeep Kulkarni",
+            "Subrata Mitra",
+            "Manjesh Kumar Hanawal"
+        ],
+        "tldr": "FlowCast accelerates Flow Matching based generative models by speculating future velocity based on constant velocity assumption to skip redundant steps, achieving significant speedups without quality loss.",
+        "tldr_zh": "FlowCast通过基于恒定速度假设推测未来速度，从而跳过冗余步骤，加速了基于Flow Matching的生成模型，实现了显著的加速且不损失质量。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "ReDiStory: Region-Disentangled Diffusion for Consistent Visual Story Generation",
+        "summary": "Generating coherent visual stories requires maintaining subject identity across multiple images while preserving frame-specific semantics. Recent training-free methods concatenate identity and frame prompts into a unified representation, but this often introduces inter-frame semantic interference that weakens identity preservation in complex stories. We propose ReDiStory, a training-free framework that improves multi-frame story generation via inference-time prompt embedding reorganization. ReDiStory explicitly decomposes text embeddings into identity-related and frame-specific components, then decorrelates frame embeddings by suppressing shared directions across frames. This reduces cross-frame interference without modifying diffusion parameters or requiring additional supervision. Under identical diffusion backbones and inference settings, ReDiStory improves identity consistency while maintaining prompt fidelity. Experiments on the ConsiStory+ benchmark show consistent gains over 1Prompt1Story on multiple identity consistency metrics. Code is available at: https://github.com/YuZhenyuLindy/ReDiStory",
+        "url": "http://arxiv.org/abs/2602.01303v1",
+        "published_date": "2026-02-01T16:04:40+00:00",
+        "updated_date": "2026-02-01T16:04:40+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Ayushman Sarkar",
+            "Zhenyu Yu",
+            "Chu Chen",
+            "Wei Tang",
+            "Kangning Cui",
+            "Mohd Yamani Idna Idris"
+        ],
+        "tldr": "The paper introduces ReDiStory, a training-free framework for consistent visual story generation that disentangles text embeddings into identity-related and frame-specific components to reduce cross-frame interference and improve identity consistency.",
+        "tldr_zh": "本文介绍了一种名为ReDiStory的免训练框架，用于生成一致的视觉故事。该框架将文本嵌入分解为身份相关和特定于帧的组件，以减少跨帧干扰并提高身份一致性。",
+        "relevance_score": 6,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]
