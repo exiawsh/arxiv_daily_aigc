@@ -1,0 +1,189 @@
+[
+    {
+        "title": "3D-Aware Implicit Motion Control for View-Adaptive Human Video Generation",
+        "summary": "Existing methods for human motion control in video generation typically rely on either 2D poses or explicit 3D parametric models (e.g., SMPL) as control signals. However, 2D poses rigidly bind motion to the driving viewpoint, precluding novel-view synthesis. Explicit 3D models, though structurally informative, suffer from inherent inaccuracies (e.g., depth ambiguity and inaccurate dynamics) which, when used as a strong constraint, override the powerful intrinsic 3D awareness of large-scale video generators. In this work, we revisit motion control from a 3D-aware perspective, advocating for an implicit, view-agnostic motion representation that naturally aligns with the generator's spatial priors rather than depending on externally reconstructed constraints. We introduce 3DiMo, which jointly trains a motion encoder with a pretrained video generator to distill driving frames into compact, view-agnostic motion tokens, injected semantically via cross-attention. To foster 3D awareness, we train with view-rich supervision (i.e., single-view, multi-view, and moving-camera videos), forcing motion consistency across diverse viewpoints. Additionally, we use auxiliary geometric supervision that leverages SMPL only for early initialization and is annealed to zero, enabling the model to transition from external 3D guidance to learning genuine 3D spatial motion understanding from the data and the generator's priors. Experiments confirm that 3DiMo faithfully reproduces driving motions with flexible, text-driven camera control, significantly surpassing existing methods in both motion fidelity and visual quality.",
+        "url": "http://arxiv.org/abs/2602.03796v1",
+        "published_date": "2026-02-03T17:59:09+00:00",
+        "updated_date": "2026-02-03T17:59:09+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Zhixue Fang",
+            "Xu He",
+            "Songlin Tang",
+            "Haoxian Zhang",
+            "Qingfeng Li",
+            "Xiaoqiang Liu",
+            "Pengfei Wan",
+            "Kun Gai"
+        ],
+        "tldr": "The paper introduces 3DiMo, a method for view-adaptive human video generation that uses an implicit, view-agnostic motion representation trained with view-rich supervision and annealed SMPL guidance to achieve superior motion fidelity and visual quality with flexible camera control.",
+        "tldr_zh": "该论文介绍了3DiMo，一种视角自适应的人体视频生成方法，它使用隐式的、视角无关的运动表示，通过视角丰富的监督和退火的SMPL指导进行训练，从而实现卓越的运动保真度和视觉质量，并具有灵活的相机控制。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "BridgeV2W: Bridging Video Generation Models to Embodied World Models via Embodiment Masks",
+        "summary": "Embodied world models have emerged as a promising paradigm in robotics, most of which leverage large-scale Internet videos or pretrained video generation models to enrich visual and motion priors. However, they still face key challenges: a misalignment between coordinate-space actions and pixel-space videos, sensitivity to camera viewpoint, and non-unified architectures across embodiments. To this end, we present BridgeV2W, which converts coordinate-space actions into pixel-aligned embodiment masks rendered from the URDF and camera parameters. These masks are then injected into a pretrained video generation model via a ControlNet-style pathway, which aligns the action control signals with predicted videos, adds view-specific conditioning to accommodate camera viewpoints, and yields a unified world model architecture across embodiments. To mitigate overfitting to static backgrounds, BridgeV2W further introduces a flow-based motion loss that focuses on learning dynamic and task-relevant regions. Experiments on single-arm (DROID) and dual-arm (AgiBot-G1) datasets, covering diverse and challenging conditions with unseen viewpoints and scenes, show that BridgeV2W improves video generation quality compared to prior state-of-the-art methods. We further demonstrate the potential of BridgeV2W on downstream real-world tasks, including policy evaluation and goal-conditioned planning. More results can be found on our project website at https://BridgeV2W.github.io .",
+        "url": "http://arxiv.org/abs/2602.03793v1",
+        "published_date": "2026-02-03T17:56:28+00:00",
+        "updated_date": "2026-02-03T17:56:28+00:00",
+        "categories": [
+            "cs.RO",
+            "cs.CV"
+        ],
+        "authors": [
+            "Yixiang Chen",
+            "Peiyan Li",
+            "Jiabing Yang",
+            "Keji He",
+            "Xiangnan Wu",
+            "Yuan Xu",
+            "Kai Wang",
+            "Jing Liu",
+            "Nianfeng Liu",
+            "Yan Huang",
+            "Liang Wang"
+        ],
+        "tldr": "BridgeV2W addresses challenges in embodied world models by converting actions into pixel-aligned embodiment masks for video generation, improving performance on robot manipulation tasks with unseen viewpoints and scenes.",
+        "tldr_zh": "BridgeV2W 通过将动作转换为像素对齐的实体掩码来进行视频生成，从而解决了具身世界模型中的挑战，并在具有未见视点和场景的机器人操作任务上提高了性能。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "LIVE: Long-horizon Interactive Video World Modeling",
+        "summary": "Autoregressive video world models predict future visual observations conditioned on actions. While effective over short horizons, these models often struggle with long-horizon generation, as small prediction errors accumulate over time. Prior methods alleviate this by introducing pre-trained teacher models and sequence-level distribution matching, which incur additional computational cost and fail to prevent error propagation beyond the training horizon. In this work, we propose LIVE, a Long-horizon Interactive Video world modEl that enforces bounded error accumulation via a novel cycle-consistency objective, thereby eliminating the need for teacher-based distillation. Specifically, LIVE first performs a forward rollout from ground-truth frames and then applies a reverse generation process to reconstruct the initial state. The diffusion loss is subsequently computed on the reconstructed terminal state, providing an explicit constraint on long-horizon error propagation. Moreover, we provide an unified view that encompasses different approaches and introduce progressive training curriculum to stabilize training. Experiments demonstrate that LIVE achieves state-of-the-art performance on long-horizon benchmarks, generating stable, high-quality videos far beyond training rollout lengths.",
+        "url": "http://arxiv.org/abs/2602.03747v1",
+        "published_date": "2026-02-03T17:10:03+00:00",
+        "updated_date": "2026-02-03T17:10:03+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Junchao Huang",
+            "Ziyang Ye",
+            "Xinting Hu",
+            "Tianyu He",
+            "Guiyu Zhang",
+            "Shaoshuai Shi",
+            "Jiang Bian",
+            "Li Jiang"
+        ],
+        "tldr": "The paper introduces LIVE, a novel long-horizon video world model that enforces bounded error accumulation through a cycle-consistency objective, achieving state-of-the-art performance in generating stable, high-quality long videos without teacher-based distillation.",
+        "tldr_zh": "本文介绍了一种新的长时程视频世界模型 LIVE，它通过循环一致性目标来强制限制误差累积，从而在生成稳定、高质量的长视频方面实现了最先进的性能，而无需基于教师模型的知识蒸馏。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "A Lightweight Library for Energy-Based Joint-Embedding Predictive Architectures",
+        "summary": "We present EB-JEPA, an open-source library for learning representations and world models using Joint-Embedding Predictive Architectures (JEPAs). JEPAs learn to predict in representation space rather than pixel space, avoiding the pitfalls of generative modeling while capturing semantically meaningful features suitable for downstream tasks. Our library provides modular, self-contained implementations that illustrate how representation learning techniques developed for image-level self-supervised learning can transfer to video, where temporal dynamics add complexity, and ultimately to action-conditioned world models, where the model must additionally learn to predict the effects of control inputs. Each example is designed for single-GPU training within a few hours, making energy-based self-supervised learning accessible for research and education. We provide ablations of JEA components on CIFAR-10. Probing these representations yields 91% accuracy, indicating that the model learns useful features. Extending to video, we include a multi-step prediction example on Moving MNIST that demonstrates how the same principles scale to temporal modeling. Finally, we show how these representations can drive action-conditioned world models, achieving a 97% planning success rate on the Two Rooms navigation task. Comprehensive ablations reveal the critical importance of each regularization component for preventing representation collapse. Code is available at https://github.com/facebookresearch/eb_jepa.",
+        "url": "http://arxiv.org/abs/2602.03604v1",
+        "published_date": "2026-02-03T14:56:24+00:00",
+        "updated_date": "2026-02-03T14:56:24+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Basile Terver",
+            "Randall Balestriero",
+            "Megi Dervishi",
+            "David Fan",
+            "Quentin Garrido",
+            "Tushar Nagarajan",
+            "Koustuv Sinha",
+            "Wancong Zhang",
+            "Mike Rabbat",
+            "Yann LeCun",
+            "Amir Bar"
+        ],
+        "tldr": "The paper introduces EB-JEPA, a library for Joint-Embedding Predictive Architectures (JEPAs) that learns representations for video and action-conditioned world models, demonstrating its efficacy on tasks like Moving MNIST and Two Rooms navigation.",
+        "tldr_zh": "该论文介绍了EB-JEPA，一个用于联合嵌入预测架构（JEPAs）的库，可以学习视频和动作条件世界模型的表征，并在移动MNIST和Two Rooms导航等任务上展示了其有效性。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "InstaDrive: Instance-Aware Driving World Models for Realistic and Consistent Video Generation",
+        "summary": "Autonomous driving relies on robust models trained on high-quality, large-scale multi-view driving videos. While world models offer a cost-effective solution for generating realistic driving videos, they struggle to maintain instance-level temporal consistency and spatial geometric fidelity. To address these challenges, we propose InstaDrive, a novel framework that enhances driving video realism through two key advancements: (1) Instance Flow Guider, which extracts and propagates instance features across frames to enforce temporal consistency, preserving instance identity over time. (2) Spatial Geometric Aligner, which improves spatial reasoning, ensures precise instance positioning, and explicitly models occlusion hierarchies. By incorporating these instance-aware mechanisms, InstaDrive achieves state-of-the-art video generation quality and enhances downstream autonomous driving tasks on the nuScenes dataset. Additionally, we utilize CARLA's autopilot to procedurally and stochastically simulate rare but safety-critical driving scenarios across diverse maps and regions, enabling rigorous safety evaluation for autonomous systems. Our project page is https://shanpoyang654.github.io/InstaDrive/page.html.",
+        "url": "http://arxiv.org/abs/2602.03242v1",
+        "published_date": "2026-02-03T08:22:13+00:00",
+        "updated_date": "2026-02-03T08:22:13+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Zhuoran Yang",
+            "Xi Guo",
+            "Chenjing Ding",
+            "Chiyu Wang",
+            "Wei Wu",
+            "Yanyong Zhang"
+        ],
+        "tldr": "InstaDrive improves driving video generation by introducing instance-aware mechanisms for temporal consistency and spatial geometric fidelity, leading to state-of-the-art performance and enhanced downstream autonomous driving tasks.",
+        "tldr_zh": "InstaDrive 通过引入实例感知机制来提高驾驶视频生成的质量，该机制关注时间一致性和空间几何保真度，从而实现最先进的性能并增强下游自动驾驶任务。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "ConsisDrive: Identity-Preserving Driving World Models for Video Generation by Instance Mask",
+        "summary": "Autonomous driving relies on robust models trained on large-scale, high-quality multi-view driving videos. Although world models provide a cost-effective solution for generating realistic driving data, they often suffer from identity drift, where the same object changes its appearance or category across frames due to the absence of instance-level temporal constraints. We introduce ConsisDrive, an identity-preserving driving world model designed to enforce temporal consistency at the instance level. Our framework incorporates two key components: (1) Instance-Masked Attention, which applies instance identity masks and trajectory masks within attention blocks to ensure that visual tokens interact only with their corresponding instance features across spatial and temporal dimensions, thereby preserving object identity consistency; and (2) Instance-Masked Loss, which adaptively emphasizes foreground regions with probabilistic instance masking, reducing background noise while maintaining overall scene fidelity. By integrating these mechanisms, ConsisDrive achieves state-of-the-art driving video generation quality and demonstrates significant improvements in downstream autonomous driving tasks on the nuScenes dataset. Our project page is https://shanpoyang654.github.io/ConsisDrive/page.html.",
+        "url": "http://arxiv.org/abs/2602.03213v1",
+        "published_date": "2026-02-03T07:28:44+00:00",
+        "updated_date": "2026-02-03T07:28:44+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Zhuoran Yang",
+            "Yanyong Zhang"
+        ],
+        "tldr": "ConsisDrive introduces instance-masked attention and loss mechanisms to improve temporal consistency in driving world models for video generation, achieving state-of-the-art results and benefiting downstream autonomous driving tasks.",
+        "tldr_zh": "ConsisDrive 引入了实例掩码注意力机制和损失函数，以提高驾驶世界模型在视频生成中的时间一致性，实现了最先进的结果并有益于下游自动驾驶任务。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "MUSE: A Multi-agent Framework for Unconstrained Story Envisioning via Closed-Loop Cognitive Orchestration",
+        "summary": "Generating long-form audio-visual stories from a short user prompt remains challenging due to an intent-execution gap, where high-level narrative intent must be preserved across coherent, shot-level multimodal generation over long horizons. Existing approaches typically rely on feed-forward pipelines or prompt-only refinement, which often leads to semantic drift and identity inconsistency as sequences grow longer. We address this challenge by formulating storytelling as a closed-loop constraint enforcement problem and propose MUSE, a multi-agent framework that coordinates generation through an iterative plan-execute-verify-revise loop. MUSE translates narrative intent into explicit, machine-executable controls over identity, spatial composition, and temporal continuity, and applies targeted multimodal feedback to correct violations during generation. To evaluate open-ended storytelling without ground-truth references, we introduce MUSEBench, a reference-free evaluation protocol validated by human judgments. Experiments demonstrate that MUSE substantially improves long-horizon narrative coherence, cross-modal identity consistency, and cinematic quality compared with representative baselines.",
+        "url": "http://arxiv.org/abs/2602.03028v1",
+        "published_date": "2026-02-03T02:55:00+00:00",
+        "updated_date": "2026-02-03T02:55:00+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Wenzhang Sun",
+            "Zhenyu Wang",
+            "Zhangchi Hu",
+            "Chunfeng Wang",
+            "Hao Li",
+            "Wei Chen"
+        ],
+        "tldr": "The paper introduces MUSE, a multi-agent framework for long-form audio-visual story generation that uses a closed-loop iterative process to enforce narrative constraints and improve coherence and consistency, especially over long sequences. It also introduces MUSEBench, a reference-free evaluation protocol.",
+        "tldr_zh": "该论文介绍了一种名为MUSE的多智能体框架，用于生成长篇视听故事，该框架采用闭环迭代过程来加强叙事约束，并提高连贯性和一致性，尤其是在长序列中。此外，它还引入了MUSEBench，一种无需参考的评估协议。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
