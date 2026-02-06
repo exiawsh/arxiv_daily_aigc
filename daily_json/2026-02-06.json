@@ -1,0 +1,106 @@
+[
+    {
+        "title": "PerpetualWonder: Long-Horizon Action-Conditioned 4D Scene Generation",
+        "summary": "We introduce PerpetualWonder, a hybrid generative simulator that enables long-horizon, action-conditioned 4D scene generation from a single image. Current works fail at this task because their physical state is decoupled from their visual representation, which prevents generative refinements to update the underlying physics for subsequent interactions. PerpetualWonder solves this by introducing the first true closed-loop system. It features a novel unified representation that creates a bidirectional link between the physical state and visual primitives, allowing generative refinements to correct both the dynamics and appearance. It also introduces a robust update mechanism that gathers supervision from multiple viewpoints to resolve optimization ambiguity. Experiments demonstrate that from a single image, PerpetualWonder can successfully simulate complex, multi-step interactions from long-horizon actions, maintaining physical plausibility and visual consistency.",
+        "url": "http://arxiv.org/abs/2602.04876v1",
+        "published_date": "2026-02-04T18:58:55+00:00",
+        "updated_date": "2026-02-04T18:58:55+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Jiahao Zhan",
+            "Zizhang Li",
+            "Hong-Xing Yu",
+            "Jiajun Wu"
+        ],
+        "tldr": "PerpetualWonder introduces a hybrid generative simulator for long-horizon, action-conditioned 4D scene generation from a single image, using a unified representation to link physical state and visual primitives and refine both dynamics and appearance through closed-loop feedback.",
+        "tldr_zh": "PerpetualWonder 提出了一个混合生成模拟器，用于从单个图像生成长时程、动作条件的 4D 场景。它使用统一的表示来连接物理状态和视觉图元，并通过闭环反馈来细化动力学和外观。",
+        "relevance_score": 9,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "Pathwise Test-Time Correction for Autoregressive Long Video Generation",
+        "summary": "Distilled autoregressive diffusion models facilitate real-time short video synthesis but suffer from severe error accumulation during long-sequence generation. While existing Test-Time Optimization (TTO) methods prove effective for images or short clips, we identify that they fail to mitigate drift in extended sequences due to unstable reward landscapes and the hypersensitivity of distilled parameters. To overcome these limitations, we introduce Test-Time Correction (TTC), a training-free alternative. Specifically, TTC utilizes the initial frame as a stable reference anchor to calibrate intermediate stochastic states along the sampling trajectory. Extensive experiments demonstrate that our method seamlessly integrates with various distilled models, extending generation lengths with negligible overhead while matching the quality of resource-intensive training-based methods on 30-second benchmarks.",
+        "url": "http://arxiv.org/abs/2602.05871v1",
+        "published_date": "2026-02-05T16:50:39+00:00",
+        "updated_date": "2026-02-05T16:50:39+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Xunzhi Xiang",
+            "Zixuan Duan",
+            "Guiyu Zhang",
+            "Haiyu Zhang",
+            "Zhe Gao",
+            "Junta Wu",
+            "Shaofeng Zhang",
+            "Tengfei Wang",
+            "Qi Fan",
+            "Chunchao Guo"
+        ],
+        "tldr": "The paper introduces a training-free test-time correction method (TTC) for distilled autoregressive diffusion models to address error accumulation during long video generation, using the initial frame as a reference anchor. TTC extends generation lengths with negligible overhead while achieving comparable quality to resource-intensive training-based methods.",
+        "tldr_zh": "该论文提出了一种无需训练的测试时校正方法 (TTC)，用于解决在长视频生成过程中，蒸馏自回归扩散模型中的误差累积问题，该方法利用初始帧作为参考锚点。TTC 能够以极小的开销延长生成长度，同时达到与资源密集型训练方法相当的质量。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Sparse Video Generation Propels Real-World Beyond-the-View Vision-Language Navigation",
+        "summary": "Why must vision-language navigation be bound to detailed and verbose language instructions? While such details ease decision-making, they fundamentally contradict the goal for navigation in the real-world. Ideally, agents should possess the autonomy to navigate in unknown environments guided solely by simple and high-level intents. Realizing this ambition introduces a formidable challenge: Beyond-the-View Navigation (BVN), where agents must locate distant, unseen targets without dense and step-by-step guidance. Existing large language model (LLM)-based methods, though adept at following dense instructions, often suffer from short-sighted behaviors due to their reliance on short-horimzon supervision. Simply extending the supervision horizon, however, destabilizes LLM training. In this work, we identify that video generation models inherently benefit from long-horizon supervision to align with language instructions, rendering them uniquely suitable for BVN tasks. Capitalizing on this insight, we propose introducing the video generation model into this field for the first time. Yet, the prohibitive latency for generating videos spanning tens of seconds makes real-world deployment impractical. To bridge this gap, we propose SparseVideoNav, achieving sub-second trajectory inference guided by a generated sparse future spanning a 20-second horizon. This yields a remarkable 27x speed-up compared to the unoptimized counterpart. Extensive real-world zero-shot experiments demonstrate that SparseVideoNav achieves 2.5x the success rate of state-of-the-art LLM baselines on BVN tasks and marks the first realization of such capability in challenging night scenes.",
+        "url": "http://arxiv.org/abs/2602.05827v1",
+        "published_date": "2026-02-05T16:16:13+00:00",
+        "updated_date": "2026-02-05T16:16:13+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.RO"
+        ],
+        "authors": [
+            "Hai Zhang",
+            "Siqi Liang",
+            "Li Chen",
+            "Yuxian Li",
+            "Yukuan Xu",
+            "Yichao Zhong",
+            "Fu Zhang",
+            "Hongyang Li"
+        ],
+        "tldr": "This paper introduces SparseVideoNav, a novel approach for Beyond-the-View Navigation (BVN) that leverages video generation models for long-horizon planning, achieving significant speed-up and improved success rates compared to LLM baselines in real-world scenarios, including challenging night scenes.",
+        "tldr_zh": "本文介绍了SparseVideoNav，一种用于超视距导航(BVN)的新方法，该方法利用视频生成模型进行长程规划，与LLM基线相比，在现实场景（包括具有挑战性的夜间场景）中实现了显著的加速和更高的成功率。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "FlashBlock: Attention Caching for Efficient Long-Context Block Diffusion",
+        "summary": "Generating long-form content, such as minute-long videos and extended texts, is increasingly important for modern generative models. Block diffusion improves inference efficiency via KV caching and block-wise causal inference and has been widely adopted in diffusion language models and video generation. However, in long-context settings, block diffusion still incurs substantial overhead from repeatedly computing attention over a growing KV cache. We identify an underexplored property of block diffusion: cross-step redundancy of attention within a block. Our analysis shows that attention outputs from tokens outside the current block remain largely stable across diffusion steps, while block-internal attention varies significantly. Based on this observation, we propose FlashBlock, a cached block-external attention mechanism that reuses stable attention output, reducing attention computation and KV cache access without modifying the diffusion process. Moreover, FlashBlock is orthogonal to sparse attention and can be combined as a complementary residual reuse strategy, substantially improving model accuracy under aggressive sparsification. Experiments on diffusion language models and video generation demonstrate up to 1.44$\\times$ higher token throughput and up to 1.6$\\times$ reduction in attention time, with negligible impact on generation quality. Project page: https://caesarhhh.github.io/FlashBlock/.",
+        "url": "http://arxiv.org/abs/2602.05305v1",
+        "published_date": "2026-02-05T04:57:21+00:00",
+        "updated_date": "2026-02-05T04:57:21+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.CL"
+        ],
+        "authors": [
+            "Zhuokun Chen",
+            "Jianfei Cai",
+            "Bohan Zhuang"
+        ],
+        "tldr": "FlashBlock improves the efficiency of block diffusion models for long-context generation by caching and reusing stable attention outputs from tokens outside the current block, leading to faster inference with minimal impact on quality.",
+        "tldr_zh": "FlashBlock通过缓存和重用来自当前块外部token的稳定注意力输出来提高长上下文生成中块扩散模型的效率，从而实现更快的推理，且对生成质量的影响极小。",
+        "relevance_score": 5,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 6
+    }
+]
