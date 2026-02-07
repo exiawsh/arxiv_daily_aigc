@@ -1,0 +1,55 @@
+[
+    {
+        "title": "Context Forcing: Consistent Autoregressive Video Generation with Long Context",
+        "summary": "Recent approaches to real-time long video generation typically employ streaming tuning strategies, attempting to train a long-context student using a short-context (memoryless) teacher. In these frameworks, the student performs long rollouts but receives supervision from a teacher limited to short 5-second windows. This structural discrepancy creates a critical \\textbf{student-teacher mismatch}: the teacher's inability to access long-term history prevents it from guiding the student on global temporal dependencies, effectively capping the student's context length. To resolve this, we propose \\textbf{Context Forcing}, a novel framework that trains a long-context student via a long-context teacher. By ensuring the teacher is aware of the full generation history, we eliminate the supervision mismatch, enabling the robust training of models capable of long-term consistency. To make this computationally feasible for extreme durations (e.g., 2 minutes), we introduce a context management system that transforms the linearly growing context into a \\textbf{Slow-Fast Memory} architecture, significantly reducing visual redundancy. Extensive results demonstrate that our method enables effective context lengths exceeding 20 seconds -- 2 to 10 times longer than state-of-the-art methods like LongLive and Infinite-RoPE. By leveraging this extended context, Context Forcing preserves superior consistency across long durations, surpassing state-of-the-art baselines on various long video evaluation metrics.",
+        "url": "http://arxiv.org/abs/2602.06028v1",
+        "published_date": "2026-02-05T18:58:01+00:00",
+        "updated_date": "2026-02-05T18:58:01+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Shuo Chen",
+            "Cong Wei",
+            "Sun Sun",
+            "Ping Nie",
+            "Kai Zhou",
+            "Ge Zhang",
+            "Ming-Hsuan Yang",
+            "Wenhu Chen"
+        ],
+        "tldr": "The paper introduces Context Forcing, a novel framework for long video generation that addresses the student-teacher mismatch problem by training a long-context student with a long-context teacher, achieving state-of-the-art results in long-term consistency.",
+        "tldr_zh": "该论文介绍了一种名为Context Forcing的新框架，用于长视频生成，通过使用长上下文教师训练长上下文学生来解决学生-教师不匹配问题，并在长期一致性方面取得了最先进的结果。",
+        "relevance_score": 10,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "LSA: Localized Semantic Alignment for Enhancing Temporal Consistency in Traffic Video Generation",
+        "summary": "Controllable video generation has emerged as a versatile tool for autonomous driving, enabling realistic synthesis of traffic scenarios. However, existing methods depend on control signals at inference time to guide the generative model towards temporally consistent generation of dynamic objects, limiting their utility as scalable and generalizable data engines. In this work, we propose Localized Semantic Alignment (LSA), a simple yet effective framework for fine-tuning pre-trained video generation models. LSA enhances temporal consistency by aligning semantic features between ground-truth and generated video clips. Specifically, we compare the output of an off-the-shelf feature extraction model between the ground-truth and generated video clips localized around dynamic objects inducing a semantic feature consistency loss. We fine-tune the base model by combining this loss with the standard diffusion loss. The model fine-tuned for a single epoch with our novel loss outperforms the baselines in common video generation evaluation metrics. To further test the temporal consistency in generated videos we adapt two additional metrics from object detection task, namely mAP and mIoU. Extensive experiments on nuScenes and KITTI datasets show the effectiveness of our approach in enhancing temporal consistency in video generation without the need for external control signals during inference and any computational overheads.",
+        "url": "http://arxiv.org/abs/2602.05966v1",
+        "published_date": "2026-02-05T18:21:02+00:00",
+        "updated_date": "2026-02-05T18:21:02+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Mirlan Karimov",
+            "Teodora Spasojevic",
+            "Markus Braun",
+            "Julian Wiederer",
+            "Vasileios Belagiannis",
+            "Marc Pollefeys"
+        ],
+        "tldr": "The paper introduces Localized Semantic Alignment (LSA), a fine-tuning framework for improving temporal consistency in traffic video generation by aligning semantic features between ground-truth and generated videos, achieving state-of-the-art results without inference-time control signals.",
+        "tldr_zh": "该论文介绍了局部语义对齐（LSA），一个微调框架，通过对齐真实视频和生成视频之间的语义特征，提高交通视频生成中的时间一致性，无需推理时控制信号即可达到最先进的结果。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    }
+]
