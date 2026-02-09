@@ -1,0 +1,32 @@
+[
+    {
+        "title": "CineScene: Implicit 3D as Effective Scene Representation for Cinematic Video Generation",
+        "summary": "Cinematic video production requires control over scene-subject composition and camera movement, but live-action shooting remains costly due to the need for constructing physical sets. To address this, we introduce the task of cinematic video generation with decoupled scene context: given multiple images of a static environment, the goal is to synthesize high-quality videos featuring dynamic subject while preserving the underlying scene consistency and following a user-specified camera trajectory. We present CineScene, a framework that leverages implicit 3D-aware scene representation for cinematic video generation. Our key innovation is a novel context conditioning mechanism that injects 3D-aware features in an implicit way: By encoding scene images into visual representations through VGGT, CineScene injects spatial priors into a pretrained text-to-video generation model by additional context concatenation, enabling camera-controlled video synthesis with consistent scenes and dynamic subjects. To further enhance the model's robustness, we introduce a simple yet effective random-shuffling strategy for the input scene images during training. To address the lack of training data, we construct a scene-decoupled dataset with Unreal Engine 5, containing paired videos of scenes with and without dynamic subjects, panoramic images representing the underlying static scene, along with their camera trajectories. Experiments show that CineScene achieves state-of-the-art performance in scene-consistent cinematic video generation, handling large camera movements and demonstrating generalization across diverse environments.",
+        "url": "http://arxiv.org/abs/2602.06959v1",
+        "published_date": "2026-02-06T18:59:24+00:00",
+        "updated_date": "2026-02-06T18:59:24+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Kaiyi Huang",
+            "Yukun Huang",
+            "Yu Li",
+            "Jianhong Bai",
+            "Xintao Wang",
+            "Zinan Lin",
+            "Xuefei Ning",
+            "Jiwen Yu",
+            "Pengfei Wan",
+            "Yu Wang",
+            "Xihui Liu"
+        ],
+        "tldr": "The paper introduces CineScene, a framework for cinematic video generation that leverages implicit 3D scene representation to synthesize high-quality videos with dynamic subjects and user-specified camera trajectories, given multiple images of a static environment.",
+        "tldr_zh": "该论文介绍了CineScene，一个用于电影视频生成的框架，它利用隐式3D场景表示，在给定静态环境的多张图像的情况下，合成具有动态主体和用户指定相机轨迹的高质量视频。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
