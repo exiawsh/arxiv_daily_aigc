@@ -1,0 +1,79 @@
+[
+    {
+        "title": "Rolling Sink: Bridging Limited-Horizon Training and Open-Ended Testing in Autoregressive Video Diffusion",
+        "summary": "Recently, autoregressive (AR) video diffusion models has achieved remarkable performance. However, due to their limited training durations, a train-test gap emerges when testing at longer horizons, leading to rapid visual degradations. Following Self Forcing, which studies the train-test gap within the training duration, this work studies the train-test gap beyond the training duration, i.e., the gap between the limited horizons during training and open-ended horizons during testing. Since open-ended testing can extend beyond any finite training window, and long-video training is computationally expensive, we pursue a training-free solution to bridge this gap. To explore a training-free solution, we conduct a systematic analysis of AR cache maintenance. These insights lead to Rolling Sink. Built on Self Forcing (trained on only 5s clips), Rolling Sink effectively scales the AR video synthesis to ultra-long durations (e.g., 5-30 minutes at 16 FPS) at test time, with consistent subjects, stable colors, coherent structures, and smooth motions. As demonstrated by extensive experiments, Rolling Sink achieves superior long-horizon visual fidelity and temporal consistency compared to SOTA baselines. Project page: https://rolling-sink.github.io/",
+        "url": "http://arxiv.org/abs/2602.07775v1",
+        "published_date": "2026-02-08T02:16:02+00:00",
+        "updated_date": "2026-02-08T02:16:02+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Haodong Li",
+            "Shaoteng Liu",
+            "Zhe Lin",
+            "Manmohan Chandraker"
+        ],
+        "tldr": "The paper introduces \"Rolling Sink,\" a training-free method to extend autoregressive video diffusion models to generate ultra-long videos by addressing the train-test gap between limited training horizons and open-ended testing durations, achieving state-of-the-art visual fidelity and temporal consistency.",
+        "tldr_zh": "该论文介绍了一种名为“滚动池（Rolling Sink）”的免训练方法，通过解决有限训练时长和开放式测试时长之间的差距，将自回归视频扩散模型扩展到生成超长视频，实现了最先进的视觉保真度和时间一致性。",
+        "relevance_score": 9,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "ReRoPE: Repurposing RoPE for Relative Camera Control",
+        "summary": "Video generation with controllable camera viewpoints is essential for applications such as interactive content creation, gaming, and simulation. Existing methods typically adapt pre-trained video models using camera poses relative to a fixed reference, e.g., the first frame. However, these encodings lack shift-invariance, often leading to poor generalization and accumulated drift. While relative camera pose embeddings defined between arbitrary view pairs offer a more robust alternative, integrating them into pre-trained video diffusion models without prohibitive training costs or architectural changes remains challenging. We introduce ReRoPE, a plug-and-play framework that incorporates relative camera information into pre-trained video diffusion models without compromising their generation capability. Our approach is based on the insight that Rotary Positional Embeddings (RoPE) in existing models underutilize their full spectral bandwidth, particularly in the low-frequency components. By seamlessly injecting relative camera pose information into these underutilized bands, ReRoPE achieves precise control while preserving strong pre-trained generative priors. We evaluate our method on both image-to-video (I2V) and video-to-video (V2V) tasks in terms of camera control accuracy and visual fidelity. Our results demonstrate that ReRoPE offers a training-efficient path toward controllable, high-fidelity video generation. See project page for more results: https://sisyphe-lee.github.io/ReRoPE/",
+        "url": "http://arxiv.org/abs/2602.08068v1",
+        "published_date": "2026-02-08T17:49:10+00:00",
+        "updated_date": "2026-02-08T17:49:10+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Chunyang Li",
+            "Yuanbo Yang",
+            "Jiahao Shao",
+            "Hongyu Zhou",
+            "Katja Schwarz",
+            "Yiyi Liao"
+        ],
+        "tldr": "The paper introduces ReRoPE, a plug-and-play method to incorporate relative camera pose information into pre-trained video diffusion models by leveraging underutilized low-frequency bands in Rotary Positional Embeddings (RoPE), enabling precise camera control in video generation while preserving visual fidelity.",
+        "tldr_zh": "该论文介绍了ReRoPE，一种即插即用的方法，通过利用旋转位置嵌入(RoPE)中未充分利用的低频段，将相对相机姿态信息整合到预训练的视频扩散模型中，从而在保持视觉保真度的同时，实现视频生成中的精确相机控制。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Geometry-Aware Rotary Position Embedding for Consistent Video World Model",
+        "summary": "Predictive world models that simulate future observations under explicit camera control are fundamental to interactive AI. Despite rapid advances, current systems lack spatial persistence: they fail to maintain stable scene structures over long trajectories, frequently hallucinating details when cameras revisit previously observed locations. We identify that this geometric drift stems from reliance on screen-space positional embeddings, which conflict with the projective geometry required for 3D consistency. We introduce \\textbf{ViewRope}, a geometry-aware encoding that injects camera-ray directions directly into video transformer self-attention layers. By parameterizing attention with relative ray geometry rather than pixel locality, ViewRope provides a model-native inductive bias for retrieving 3D-consistent content across temporal gaps. We further propose \\textbf{Geometry-Aware Frame-Sparse Attention}, which exploits these geometric cues to selectively attend to relevant historical frames, improving efficiency without sacrificing memory consistency. We also present \\textbf{ViewBench}, a diagnostic suite measuring loop-closure fidelity and geometric drift. Our results demonstrate that ViewRope substantially improves long-term consistency while reducing computational costs.",
+        "url": "http://arxiv.org/abs/2602.07854v1",
+        "published_date": "2026-02-08T08:01:16+00:00",
+        "updated_date": "2026-02-08T08:01:16+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Chendong Xiang",
+            "Jiajun Liu",
+            "Jintao Zhang",
+            "Xiao Yang",
+            "Zhengwei Fang",
+            "Shizun Wang",
+            "Zijun Wang",
+            "Yingtian Zou",
+            "Hang Su",
+            "Jun Zhu"
+        ],
+        "tldr": "This paper introduces ViewRope, a geometry-aware rotary position embedding for video transformers, along with a geometry-aware frame-sparse attention mechanism and a diagnostic suite (ViewBench), to improve long-term consistency and reduce computational costs in video world models with camera control.",
+        "tldr_zh": "该论文介绍了ViewRope，一种几何感知的旋转位置嵌入，用于视频Transformer，以及一种几何感知的帧稀疏注意力机制和一个诊断套件(ViewBench)，以提高具有相机控制的视频世界模型中的长期一致性并降低计算成本。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]

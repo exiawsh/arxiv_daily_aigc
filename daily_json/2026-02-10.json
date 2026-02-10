@@ -1,0 +1,66 @@
+[
+    {
+        "title": "Omni-Video 2: Scaling MLLM-Conditioned Diffusion for Unified Video Generation and Editing",
+        "summary": "We present Omni-Video 2, a scalable and computationally efficient model that connects pretrained multimodal large-language models (MLLMs) with video diffusion models for unified video generation and editing. Our key idea is to exploit the understanding and reasoning capabilities of MLLMs to produce explicit target captions to interpret user instructions. In this way, the rich contextual representations from the understanding model are directly used to guide the generative process, thereby improving performance on complex and compositional editing. Moreover, a lightweight adapter is developed to inject multimodal conditional tokens into pretrained text-to-video diffusion models, allowing maximum reuse of their powerful generative priors in a parameter-efficient manner. Benefiting from these designs, we scale up Omni-Video 2 to a 14B video diffusion model on meticulously curated training data with quality, supporting high quality text-to-video generation and various video editing tasks such as object removal, addition, background change, complex motion editing, \\emph{etc.} We evaluate the performance of Omni-Video 2 on the FiVE benchmark for fine-grained video editing and the VBench benchmark for text-to-video generation. The results demonstrate its superior ability to follow complex compositional instructions in video editing, while also achieving competitive or superior quality in video generation tasks.",
+        "url": "http://arxiv.org/abs/2602.08820v1",
+        "published_date": "2026-02-09T15:56:05+00:00",
+        "updated_date": "2026-02-09T15:56:05+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Hao Yang",
+            "Zhiyu Tan",
+            "Jia Gong",
+            "Luozheng Qin",
+            "Hesen Chen",
+            "Xiaomeng Yang",
+            "Yuqing Sun",
+            "Yuetan Lin",
+            "Mengping Yang",
+            "Hao Li"
+        ],
+        "tldr": "Omni-Video 2 uses MLLMs to guide video diffusion models for improved video generation and editing, achieving state-of-the-art results on fine-grained video editing and text-to-video generation benchmarks.",
+        "tldr_zh": "Omni-Video 2利用多模态大语言模型（MLLM）指导视频扩散模型，以实现改进的视频生成和编辑。在精细视频编辑和文本到视频生成基准测试中取得了最先进的结果。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "ALIVE: Animate Your World with Lifelike Audio-Video Generation",
+        "summary": "Video generation is rapidly evolving towards unified audio-video generation. In this paper, we present ALIVE, a generation model that adapts a pretrained Text-to-Video (T2V) model to Sora-style audio-video generation and animation. In particular, the model unlocks the Text-to-Video&Audio (T2VA) and Reference-to-Video&Audio (animation) capabilities compared to the T2V foundation models. To support the audio-visual synchronization and reference animation, we augment the popular MMDiT architecture with a joint audio-video branch which includes TA-CrossAttn for temporally-aligned cross-modal fusion and UniTemp-RoPE for precise audio-visual alignment. Meanwhile, a comprehensive data pipeline consisting of audio-video captioning, quality control, etc., is carefully designed to collect high-quality finetuning data. Additionally, we introduce a new benchmark to perform a comprehensive model test and comparison. After continue pretraining and finetuning on million-level high-quality data, ALIVE demonstrates outstanding performance, consistently outperforming open-source models and matching or surpassing state-of-the-art commercial solutions. With detailed recipes and benchmarks, we hope ALIVE helps the community develop audio-video generation models more efficiently. Official page: https://github.com/FoundationVision/Alive.",
+        "url": "http://arxiv.org/abs/2602.08682v1",
+        "published_date": "2026-02-09T14:06:03+00:00",
+        "updated_date": "2026-02-09T14:06:03+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Ying Guo",
+            "Qijun Gan",
+            "Yifu Zhang",
+            "Jinlai Liu",
+            "Yifei Hu",
+            "Pan Xie",
+            "Dongjun Qian",
+            "Yu Zhang",
+            "Ruiqi Li",
+            "Yuqi Zhang",
+            "Ruibiao Lu",
+            "Xiaofeng Mei",
+            "Bo Han",
+            "Xiang Yin",
+            "Bingyue Peng",
+            "Zehuan Yuan"
+        ],
+        "tldr": "ALIVE is a novel audio-video generation model that adapts a pretrained text-to-video model, achieving state-of-the-art performance in text-to-video&audio and reference-to-video&audio tasks through architectural innovations and a high-quality data pipeline.",
+        "tldr_zh": "ALIVE是一种新型的音视频生成模型，通过架构创新和高质量的数据管道，调整了预训练的文本到视频模型，在文本到视频和音频以及参考到视频和音频任务中实现了最先进的性能。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
