@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - February 04, 2026</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - February 09, 2026 - February 18, 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,8 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>February 04, 2026</p>
+            <p>10 days: February 18, 2026 - February 09, 2026</p>
+            <p>Total: 8 papers</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,14 +216,18 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">3D-Aware Implicit Motion Control for View-Adaptive Human Video Generation</h2>
+            <h2 class="paper-title">Rolling Sink: Bridging Limited-Horizon Training and Open-Ended Testing in Autoregressive Video Diffusion</h2>
             
-            <p class="paper-summary">Existing methods for human motion control in video generation typically rely on either 2D poses or explicit 3D parametric models (e.g., SMPL) as control signals. However, 2D poses rigidly bind motion to the driving viewpoint, precluding novel-view synthesis. Explicit 3D models, though structurally informative, suffer from inherent inaccuracies (e.g., depth ambiguity and inaccurate dynamics) which, when used as a strong constraint, override the powerful intrinsic 3D awareness of large-scale video generators. In this work, we revisit motion control from a 3D-aware perspective, advocating for an implicit, view-agnostic motion representation that naturally aligns with the generator's spatial priors rather than depending on externally reconstructed constraints. We introduce 3DiMo, which jointly trains a motion encoder with a pretrained video generator to distill driving frames into compact, view-agnostic motion tokens, injected semantically via cross-attention. To foster 3D awareness, we train with view-rich supervision (i.e., single-view, multi-view, and moving-camera videos), forcing motion consistency across diverse viewpoints. Additionally, we use auxiliary geometric supervision that leverages SMPL only for early initialization and is annealed to zero, enabling the model to transition from external 3D guidance to learning genuine 3D spatial motion understanding from the data and the generator's priors. Experiments confirm that 3DiMo faithfully reproduces driving motions with flexible, text-driven camera control, significantly surpassing existing methods in both motion fidelity and visual quality.</p>
+            <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
+                <i class="fas fa-calendar-alt"></i> February 09, 2026
+            </p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces 3DiMo, a method for view-adaptive human video generation that uses an implicit, view-agnostic motion representation trained with view-rich supervision and annealed SMPL guidance to achieve superior motion fidelity and visual quality with flexible camera control.</p>
+            <p class="paper-summary">Recently, autoregressive (AR) video diffusion models has achieved remarkable performance. However, due to their limited training durations, a train-test gap emerges when testing at longer horizons, leading to rapid visual degradations. Following Self Forcing, which studies the train-test gap within the training duration, this work studies the train-test gap beyond the training duration, i.e., the gap between the limited horizons during training and open-ended horizons during testing. Since open-ended testing can extend beyond any finite training window, and long-video training is computationally expensive, we pursue a training-free solution to bridge this gap. To explore a training-free solution, we conduct a systematic analysis of AR cache maintenance. These insights lead to Rolling Sink. Built on Self Forcing (trained on only 5s clips), Rolling Sink effectively scales the AR video synthesis to ultra-long durations (e.g., 5-30 minutes at 16 FPS) at test time, with consistent subjects, stable colors, coherent structures, and smooth motions. As demonstrated by extensive experiments, Rolling Sink achieves superior long-horizon visual fidelity and temporal consistency compared to SOTA baselines. Project page: https://rolling-sink.github.io/</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces "Rolling Sink," a training-free method to extend autoregressive video diffusion models to generate ultra-long videos by addressing the train-test gap between limited training horizons and open-ended testing durations, achieving state-of-the-art visual fidelity and temporal consistency.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了3DiMo，一种视角自适应的人体视频生成方法，它使用隐式的、视角无关的运动表示，通过视角丰富的监督和退火的SMPL指导进行训练，从而实现卓越的运动保真度和视觉质量，并具有灵活的相机控制。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了一种名为“滚动池（Rolling Sink）”的免训练方法，通过解决有限训练时长和开放式测试时长之间的差距，将自回归视频扩散模型扩展到生成超长视频，实现了最先进的视觉保真度和时间一致性。</p>
             
 
             
@@ -240,24 +245,24 @@
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                     <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
+                    <span class="rating-label">Clarity:</span>
                     
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                     <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
             </div>
@@ -286,18 +291,18 @@
                     
                 
                     
-                        <i class="far fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(9/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2602.03796v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2602.07775v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Zhixue Fang, Xu He, Songlin Tang, Haoxian Zhang, Qingfeng Li, Xiaoqiang Liu, Pengfei Wan, Kun Gai</p>
+            <p class="paper-authors">Authors: Haodong Li, Shaoteng Liu, Zhe Lin, Manmohan Chandraker</p>
             
         </motion.div>
         
@@ -309,14 +314,18 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">BridgeV2W: Bridging Video Generation Models to Embodied World Models via Embodiment Masks</h2>
+            <h2 class="paper-title">Tele-Omni: a Unified Multimodal Framework for Video Generation and Editing</h2>
             
-            <p class="paper-summary">Embodied world models have emerged as a promising paradigm in robotics, most of which leverage large-scale Internet videos or pretrained video generation models to enrich visual and motion priors. However, they still face key challenges: a misalignment between coordinate-space actions and pixel-space videos, sensitivity to camera viewpoint, and non-unified architectures across embodiments. To this end, we present BridgeV2W, which converts coordinate-space actions into pixel-aligned embodiment masks rendered from the URDF and camera parameters. These masks are then injected into a pretrained video generation model via a ControlNet-style pathway, which aligns the action control signals with predicted videos, adds view-specific conditioning to accommodate camera viewpoints, and yields a unified world model architecture across embodiments. To mitigate overfitting to static backgrounds, BridgeV2W further introduces a flow-based motion loss that focuses on learning dynamic and task-relevant regions. Experiments on single-arm (DROID) and dual-arm (AgiBot-G1) datasets, covering diverse and challenging conditions with unseen viewpoints and scenes, show that BridgeV2W improves video generation quality compared to prior state-of-the-art methods. We further demonstrate the potential of BridgeV2W on downstream real-world tasks, including policy evaluation and goal-conditioned planning. More results can be found on our project website at https://BridgeV2W.github.io .</p>
+            <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
+                <i class="fas fa-calendar-alt"></i> February 11, 2026
+            </p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: BridgeV2W addresses challenges in embodied world models by converting actions into pixel-aligned embodiment masks for video generation, improving performance on robot manipulation tasks with unseen viewpoints and scenes.</p>
+            <p class="paper-summary">Recent advances in diffusion-based video generation have substantially improved visual fidelity and temporal coherence. However, most existing approaches remain task-specific and rely primarily on textual instructions, limiting their ability to handle multimodal inputs, contextual references, and diverse video generation and editing scenarios within a unified framework. Moreover, many video editing methods depend on carefully engineered pipelines tailored to individual operations, which hinders scalability and composability. In this paper, we propose Tele-Omni, a unified multimodal framework for video generation and editing that follows multimodal instructions, including text, images, and reference videos, within a single model. Tele-Omni leverages pretrained multimodal large language models to parse heterogeneous instructions and infer structured generation or editing intents, while diffusion-based generators perform high-quality video synthesis conditioned on these structured signals. To enable joint training across heterogeneous video tasks, we introduce a task-aware data processing pipeline that unifies multimodal inputs into a structured instruction format while preserving task-specific constraints. Tele-Omni supports a wide range of video-centric tasks, including text-to-video generation, image-to-video generation, first-last-frame video generation, in-context video generation, and in-context video editing. By decoupling instruction parsing from video synthesis and combining it with task-aware data design, Tele-Omni achieves flexible multimodal control while maintaining strong temporal coherence and visual consistency. Experimental results demonstrate that Tele-Omni achieves competitive performance across multiple tasks.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Tele-Omni, a unified multimodal framework for video generation and editing that supports various input modalities (text, images, reference videos) and tasks by leveraging pretrained large language models for instruction parsing and diffusion models for video synthesis.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: BridgeV2W 通过将动作转换为像素对齐的实体掩码来进行视频生成，从而解决了具身世界模型中的挑战，并在具有未见视点和场景的机器人操作任务上提高了性能。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了一个名为 Tele-Omni 的统一多模态框架，用于视频生成和编辑。它支持多种输入模态（文本、图像、参考视频）并通过利用预训练的大型语言模型进行指令解析和扩散模型进行视频合成来执行多种任务。</p>
             
 
             
@@ -326,8 +335,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -350,8 +359,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
             </div>
@@ -387,11 +396,11 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2602.03793v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2602.09609v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Yixiang Chen, Peiyan Li, Jiabing Yang, Keji He, Xiangnan Wu, Yuan Xu, Kai Wang, Jing Liu, Nianfeng Liu, Yan Huang, Liang Wang</p>
+            <p class="paper-authors">Authors: Jialun Liu, Yukuo Ma, Xiao Cao, Tian Li, Gonghu Shang, Haibin Huang, Chi Zhang, Xuelong Li, Cong Liu, Junqi Liu, Jiakui Hu, Robby T. Tan, Shiwen Zhang, Liying Yang, Xiaoyan Yang, Qizhen Weng, Xiangzhen Chang, Yuanzhi Liang, Yifan Xu, Zhiyong Huang, Zuoxin Li, Xuelong Li</p>
             
         </motion.div>
         
@@ -403,14 +412,18 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">LIVE: Long-horizon Interactive Video World Modeling</h2>
+            <h2 class="paper-title">Hand2World: Autoregressive Egocentric Interaction Generation via Free-Space Hand Gestures</h2>
             
-            <p class="paper-summary">Autoregressive video world models predict future visual observations conditioned on actions. While effective over short horizons, these models often struggle with long-horizon generation, as small prediction errors accumulate over time. Prior methods alleviate this by introducing pre-trained teacher models and sequence-level distribution matching, which incur additional computational cost and fail to prevent error propagation beyond the training horizon. In this work, we propose LIVE, a Long-horizon Interactive Video world modEl that enforces bounded error accumulation via a novel cycle-consistency objective, thereby eliminating the need for teacher-based distillation. Specifically, LIVE first performs a forward rollout from ground-truth frames and then applies a reverse generation process to reconstruct the initial state. The diffusion loss is subsequently computed on the reconstructed terminal state, providing an explicit constraint on long-horizon error propagation. Moreover, we provide an unified view that encompasses different approaches and introduce progressive training curriculum to stabilize training. Experiments demonstrate that LIVE achieves state-of-the-art performance on long-horizon benchmarks, generating stable, high-quality videos far beyond training rollout lengths.</p>
+            <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
+                <i class="fas fa-calendar-alt"></i> February 11, 2026
+            </p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces LIVE, a novel long-horizon video world model that enforces bounded error accumulation through a cycle-consistency objective, achieving state-of-the-art performance in generating stable, high-quality long videos without teacher-based distillation.</p>
+            <p class="paper-summary">Egocentric interactive world models are essential for augmented reality and embodied AI, where visual generation must respond to user input with low latency, geometric consistency, and long-term stability. We study egocentric interaction generation from a single scene image under free-space hand gestures, aiming to synthesize photorealistic videos in which hands enter the scene, interact with objects, and induce plausible world dynamics under head motion. This setting introduces fundamental challenges, including distribution shift between free-space gestures and contact-heavy training data, ambiguity between hand motion and camera motion in monocular views, and the need for arbitrary-length video generation. We present Hand2World, a unified autoregressive framework that addresses these challenges through occlusion-invariant hand conditioning based on projected 3D hand meshes, allowing visibility and occlusion to be inferred from scene context rather than encoded in the control signal. To stabilize egocentric viewpoint changes, we inject explicit camera geometry via per-pixel Plücker-ray embeddings, disentangling camera motion from hand motion and preventing background drift. We further develop a fully automated monocular annotation pipeline and distill a bidirectional diffusion model into a causal generator, enabling arbitrary-length synthesis. Experiments on three egocentric interaction benchmarks show substantial improvements in perceptual quality and 3D consistency while supporting camera control and long-horizon interactive generation.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: Hand2World introduces an autoregressive framework for generating photorealistic egocentric videos of hand-object interactions, addressing challenges in monocular view ambiguity, distribution shift, and long-term stability by using 3D hand meshes and Plücker-ray embeddings for camera geometry injection.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了一种新的长时程视频世界模型 LIVE，它通过循环一致性目标来强制限制误差累积，从而在生成稳定、高质量的长视频方面实现了最先进的性能，而无需基于教师模型的知识蒸馏。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: Hand2World 提出了一个自回归框架，用于生成逼真的手部与物体交互的自我中心视角视频，通过使用 3D 手部网格和 Plücker 射线嵌入来解决单目视图歧义、分布偏移和长期稳定性等挑战，实现相机几何注入。</p>
             
 
             
@@ -481,11 +494,11 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2602.03747v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2602.09600v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Junchao Huang, Ziyang Ye, Xinting Hu, Tianyu He, Guiyu Zhang, Shaoshuai Shi, Jiang Bian, Li Jiang</p>
+            <p class="paper-authors">Authors: Yuxi Wang, Wenqi Ouyang, Tianyi Wei, Yi Dong, Zhiqi Shen, Xingang Pan</p>
             
         </motion.div>
         
@@ -497,14 +510,18 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">A Lightweight Library for Energy-Based Joint-Embedding Predictive Architectures</h2>
+            <h2 class="paper-title">WorldCompass: Reinforcement Learning for Long-Horizon World Models</h2>
             
-            <p class="paper-summary">We present EB-JEPA, an open-source library for learning representations and world models using Joint-Embedding Predictive Architectures (JEPAs). JEPAs learn to predict in representation space rather than pixel space, avoiding the pitfalls of generative modeling while capturing semantically meaningful features suitable for downstream tasks. Our library provides modular, self-contained implementations that illustrate how representation learning techniques developed for image-level self-supervised learning can transfer to video, where temporal dynamics add complexity, and ultimately to action-conditioned world models, where the model must additionally learn to predict the effects of control inputs. Each example is designed for single-GPU training within a few hours, making energy-based self-supervised learning accessible for research and education. We provide ablations of JEA components on CIFAR-10. Probing these representations yields 91% accuracy, indicating that the model learns useful features. Extending to video, we include a multi-step prediction example on Moving MNIST that demonstrates how the same principles scale to temporal modeling. Finally, we show how these representations can drive action-conditioned world models, achieving a 97% planning success rate on the Two Rooms navigation task. Comprehensive ablations reveal the critical importance of each regularization component for preventing representation collapse. Code is available at https://github.com/facebookresearch/eb_jepa.</p>
+            <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
+                <i class="fas fa-calendar-alt"></i> February 11, 2026
+            </p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces EB-JEPA, a library for Joint-Embedding Predictive Architectures (JEPAs) that learns representations for video and action-conditioned world models, demonstrating its efficacy on tasks like Moving MNIST and Two Rooms navigation.</p>
+            <p class="paper-summary">This work presents WorldCompass, a novel Reinforcement Learning (RL) post-training framework for the long-horizon, interactive video-based world models, enabling them to explore the world more accurately and consistently based on interaction signals. To effectively "steer" the world model's exploration, we introduce three core innovations tailored to the autoregressive video generation paradigm: 1) Clip-level rollout Strategy: We generate and evaluate multiple samples at a single target clip, which significantly boosts rollout efficiency and provides fine-grained reward signals. 2) Complementary Reward Functions: We design reward functions for both interaction-following accuracy and visual quality, which provide direct supervision and effectively suppress reward-hacking behaviors. 3) Efficient RL Algorithm: We employ the negative-aware fine-tuning strategy coupled with various efficiency optimizations to efficiently and effectively enhance model capacity. Evaluations on the SoTA open-source world model, WorldPlay, demonstrate that WorldCompass significantly improves interaction accuracy and visual fidelity across various scenarios.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: WorldCompass is a reinforcement learning framework that enhances long-horizon, video-based world models like WorldPlay through interaction signals, significantly improving interaction accuracy and visual fidelity using clip-level rollouts, complementary rewards, and efficient RL techniques.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了EB-JEPA，一个用于联合嵌入预测架构（JEPAs）的库，可以学习视频和动作条件世界模型的表征，并在移动MNIST和Two Rooms导航等任务上展示了其有效性。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: WorldCompass是一个强化学习框架，通过交互信号增强了像WorldPlay这样的长时程、基于视频的世界模型，利用片段级别展开、互补奖励和高效的强化学习技术，显著提高了交互准确性和视觉保真度。</p>
             
 
             
@@ -514,16 +531,16 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -575,11 +592,11 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2602.03604v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2602.09022v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Basile Terver, Randall Balestriero, Megi Dervishi, David Fan, Quentin Garrido, Tushar Nagarajan, Koustuv Sinha, Wancong Zhang, Mike Rabbat, Yann LeCun, Amir Bar</p>
+            <p class="paper-authors">Authors: Zehan Wang, Tengfei Wang, Haiyu Zhang, Xuhui Zuo, Junta Wu, Haoyuan Wang, Wenqiang Sun, Zhenwei Wang, Chenjie Cao, Hengshuang Zhao, Chunchao Guo, Zhou Zhao</p>
             
         </motion.div>
         
@@ -591,14 +608,18 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">InstaDrive: Instance-Aware Driving World Models for Realistic and Consistent Video Generation</h2>
+            <h2 class="paper-title">Omni-Video 2: Scaling MLLM-Conditioned Diffusion for Unified Video Generation and Editing</h2>
             
-            <p class="paper-summary">Autonomous driving relies on robust models trained on high-quality, large-scale multi-view driving videos. While world models offer a cost-effective solution for generating realistic driving videos, they struggle to maintain instance-level temporal consistency and spatial geometric fidelity. To address these challenges, we propose InstaDrive, a novel framework that enhances driving video realism through two key advancements: (1) Instance Flow Guider, which extracts and propagates instance features across frames to enforce temporal consistency, preserving instance identity over time. (2) Spatial Geometric Aligner, which improves spatial reasoning, ensures precise instance positioning, and explicitly models occlusion hierarchies. By incorporating these instance-aware mechanisms, InstaDrive achieves state-of-the-art video generation quality and enhances downstream autonomous driving tasks on the nuScenes dataset. Additionally, we utilize CARLA's autopilot to procedurally and stochastically simulate rare but safety-critical driving scenarios across diverse maps and regions, enabling rigorous safety evaluation for autonomous systems. Our project page is https://shanpoyang654.github.io/InstaDrive/page.html.</p>
+            <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
+                <i class="fas fa-calendar-alt"></i> February 10, 2026
+            </p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: InstaDrive improves driving video generation by introducing instance-aware mechanisms for temporal consistency and spatial geometric fidelity, leading to state-of-the-art performance and enhanced downstream autonomous driving tasks.</p>
+            <p class="paper-summary">We present Omni-Video 2, a scalable and computationally efficient model that connects pretrained multimodal large-language models (MLLMs) with video diffusion models for unified video generation and editing. Our key idea is to exploit the understanding and reasoning capabilities of MLLMs to produce explicit target captions to interpret user instructions. In this way, the rich contextual representations from the understanding model are directly used to guide the generative process, thereby improving performance on complex and compositional editing. Moreover, a lightweight adapter is developed to inject multimodal conditional tokens into pretrained text-to-video diffusion models, allowing maximum reuse of their powerful generative priors in a parameter-efficient manner. Benefiting from these designs, we scale up Omni-Video 2 to a 14B video diffusion model on meticulously curated training data with quality, supporting high quality text-to-video generation and various video editing tasks such as object removal, addition, background change, complex motion editing, \emph{etc.} We evaluate the performance of Omni-Video 2 on the FiVE benchmark for fine-grained video editing and the VBench benchmark for text-to-video generation. The results demonstrate its superior ability to follow complex compositional instructions in video editing, while also achieving competitive or superior quality in video generation tasks.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: Omni-Video 2 uses MLLMs to guide video diffusion models for improved video generation and editing, achieving state-of-the-art results on fine-grained video editing and text-to-video generation benchmarks.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: InstaDrive 通过引入实例感知机制来提高驾驶视频生成的质量，该机制关注时间一致性和空间几何保真度，从而实现最先进的性能并增强下游自动驾驶任务。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: Omni-Video 2利用多模态大语言模型（MLLM）指导视频扩散模型，以实现改进的视频生成和编辑。在精细视频编辑和文本到视频生成基准测试中取得了最先进的结果。</p>
             
 
             
@@ -608,8 +629,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -669,11 +690,11 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2602.03242v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2602.08820v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Zhuoran Yang, Xi Guo, Chenjing Ding, Chiyu Wang, Wei Wu, Yanyong Zhang</p>
+            <p class="paper-authors">Authors: Hao Yang, Zhiyu Tan, Jia Gong, Luozheng Qin, Hesen Chen, Xiaomeng Yang, Yuqing Sun, Yuetan Lin, Mengping Yang, Hao Li</p>
             
         </motion.div>
         
@@ -685,14 +706,18 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">ConsisDrive: Identity-Preserving Driving World Models for Video Generation by Instance Mask</h2>
+            <h2 class="paper-title">ALIVE: Animate Your World with Lifelike Audio-Video Generation</h2>
             
-            <p class="paper-summary">Autonomous driving relies on robust models trained on large-scale, high-quality multi-view driving videos. Although world models provide a cost-effective solution for generating realistic driving data, they often suffer from identity drift, where the same object changes its appearance or category across frames due to the absence of instance-level temporal constraints. We introduce ConsisDrive, an identity-preserving driving world model designed to enforce temporal consistency at the instance level. Our framework incorporates two key components: (1) Instance-Masked Attention, which applies instance identity masks and trajectory masks within attention blocks to ensure that visual tokens interact only with their corresponding instance features across spatial and temporal dimensions, thereby preserving object identity consistency; and (2) Instance-Masked Loss, which adaptively emphasizes foreground regions with probabilistic instance masking, reducing background noise while maintaining overall scene fidelity. By integrating these mechanisms, ConsisDrive achieves state-of-the-art driving video generation quality and demonstrates significant improvements in downstream autonomous driving tasks on the nuScenes dataset. Our project page is https://shanpoyang654.github.io/ConsisDrive/page.html.</p>
+            <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
+                <i class="fas fa-calendar-alt"></i> February 10, 2026
+            </p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: ConsisDrive introduces instance-masked attention and loss mechanisms to improve temporal consistency in driving world models for video generation, achieving state-of-the-art results and benefiting downstream autonomous driving tasks.</p>
+            <p class="paper-summary">Video generation is rapidly evolving towards unified audio-video generation. In this paper, we present ALIVE, a generation model that adapts a pretrained Text-to-Video (T2V) model to Sora-style audio-video generation and animation. In particular, the model unlocks the Text-to-Video&Audio (T2VA) and Reference-to-Video&Audio (animation) capabilities compared to the T2V foundation models. To support the audio-visual synchronization and reference animation, we augment the popular MMDiT architecture with a joint audio-video branch which includes TA-CrossAttn for temporally-aligned cross-modal fusion and UniTemp-RoPE for precise audio-visual alignment. Meanwhile, a comprehensive data pipeline consisting of audio-video captioning, quality control, etc., is carefully designed to collect high-quality finetuning data. Additionally, we introduce a new benchmark to perform a comprehensive model test and comparison. After continue pretraining and finetuning on million-level high-quality data, ALIVE demonstrates outstanding performance, consistently outperforming open-source models and matching or surpassing state-of-the-art commercial solutions. With detailed recipes and benchmarks, we hope ALIVE helps the community develop audio-video generation models more efficiently. Official page: https://github.com/FoundationVision/Alive.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: ALIVE is a novel audio-video generation model that adapts a pretrained text-to-video model, achieving state-of-the-art performance in text-to-video&audio and reference-to-video&audio tasks through architectural innovations and a high-quality data pipeline.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: ConsisDrive 引入了实例掩码注意力机制和损失函数，以提高驾驶世界模型在视频生成中的时间一致性，实现了最先进的结果并有益于下游自动驾驶任务。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: ALIVE是一种新型的音视频生成模型，通过架构创新和高质量的数据管道，调整了预训练的文本到视频模型，在文本到视频和音频以及参考到视频和音频任务中实现了最先进的性能。</p>
             
 
             
@@ -702,8 +727,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -763,11 +788,11 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2602.03213v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2602.08682v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Zhuoran Yang, Yanyong Zhang</p>
+            <p class="paper-authors">Authors: Ying Guo, Qijun Gan, Yifu Zhang, Jinlai Liu, Yifei Hu, Pan Xie, Dongjun Qian, Yu Zhang, Ruiqi Li, Yuqi Zhang, Ruibiao Lu, Xiaofeng Mei, Bo Han, Xiang Yin, Bingyue Peng, Zehuan Yuan</p>
             
         </motion.div>
         
@@ -779,14 +804,18 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">MUSE: A Multi-agent Framework for Unconstrained Story Envisioning via Closed-Loop Cognitive Orchestration</h2>
+            <h2 class="paper-title">ReRoPE: Repurposing RoPE for Relative Camera Control</h2>
             
-            <p class="paper-summary">Generating long-form audio-visual stories from a short user prompt remains challenging due to an intent-execution gap, where high-level narrative intent must be preserved across coherent, shot-level multimodal generation over long horizons. Existing approaches typically rely on feed-forward pipelines or prompt-only refinement, which often leads to semantic drift and identity inconsistency as sequences grow longer. We address this challenge by formulating storytelling as a closed-loop constraint enforcement problem and propose MUSE, a multi-agent framework that coordinates generation through an iterative plan-execute-verify-revise loop. MUSE translates narrative intent into explicit, machine-executable controls over identity, spatial composition, and temporal continuity, and applies targeted multimodal feedback to correct violations during generation. To evaluate open-ended storytelling without ground-truth references, we introduce MUSEBench, a reference-free evaluation protocol validated by human judgments. Experiments demonstrate that MUSE substantially improves long-horizon narrative coherence, cross-modal identity consistency, and cinematic quality compared with representative baselines.</p>
+            <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
+                <i class="fas fa-calendar-alt"></i> February 09, 2026
+            </p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces MUSE, a multi-agent framework for long-form audio-visual story generation that uses a closed-loop iterative process to enforce narrative constraints and improve coherence and consistency, especially over long sequences. It also introduces MUSEBench, a reference-free evaluation protocol.</p>
+            <p class="paper-summary">Video generation with controllable camera viewpoints is essential for applications such as interactive content creation, gaming, and simulation. Existing methods typically adapt pre-trained video models using camera poses relative to a fixed reference, e.g., the first frame. However, these encodings lack shift-invariance, often leading to poor generalization and accumulated drift. While relative camera pose embeddings defined between arbitrary view pairs offer a more robust alternative, integrating them into pre-trained video diffusion models without prohibitive training costs or architectural changes remains challenging. We introduce ReRoPE, a plug-and-play framework that incorporates relative camera information into pre-trained video diffusion models without compromising their generation capability. Our approach is based on the insight that Rotary Positional Embeddings (RoPE) in existing models underutilize their full spectral bandwidth, particularly in the low-frequency components. By seamlessly injecting relative camera pose information into these underutilized bands, ReRoPE achieves precise control while preserving strong pre-trained generative priors. We evaluate our method on both image-to-video (I2V) and video-to-video (V2V) tasks in terms of camera control accuracy and visual fidelity. Our results demonstrate that ReRoPE offers a training-efficient path toward controllable, high-fidelity video generation. See project page for more results: https://sisyphe-lee.github.io/ReRoPE/</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces ReRoPE, a plug-and-play method to incorporate relative camera pose information into pre-trained video diffusion models by leveraging underutilized low-frequency bands in Rotary Positional Embeddings (RoPE), enabling precise camera control in video generation while preserving visual fidelity.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了一种名为MUSE的多智能体框架，用于生成长篇视听故事，该框架采用闭环迭代过程来加强叙事约束，并提高连贯性和一致性，尤其是在长序列中。此外，它还引入了MUSEBench，一种无需参考的评估协议。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了ReRoPE，一种即插即用的方法，通过利用旋转位置嵌入(RoPE)中未充分利用的低频段，将相对相机姿态信息整合到预训练的视频扩散模型中，从而在保持视觉保真度的同时，实现视频生成中的精确相机控制。</p>
             
 
             
@@ -796,16 +825,16 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
@@ -857,18 +886,116 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2602.03028v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2602.08068v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Wenzhang Sun, Zhenyu Wang, Zhangchi Hu, Chunfeng Wang, Hao Li, Wei Chen</p>
+            <p class="paper-authors">Authors: Chunyang Li, Yuanbo Yang, Jiahao Shao, Hongyu Zhou, Katja Schwarz, Yiyi Liao</p>
+            
+        </motion.div>
+        
+        <motion.div
+            initial="{ opacity: 0, y: 50, scale: 0.9 }"
+            whileInView="{ opacity: 1, y: 0, scale: 1 }"
+            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
+            transition="{ duration: 0.5, delay: 0.35000000000000003, ease: 'easeOut' }"  
+            class="bento-item"
+            data-motion-element
+        >
+            <h2 class="paper-title">Geometry-Aware Rotary Position Embedding for Consistent Video World Model</h2>
+            
+            <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; font-style: italic;">
+                <i class="fas fa-calendar-alt"></i> February 09, 2026
+            </p>
+            
+            <p class="paper-summary">Predictive world models that simulate future observations under explicit camera control are fundamental to interactive AI. Despite rapid advances, current systems lack spatial persistence: they fail to maintain stable scene structures over long trajectories, frequently hallucinating details when cameras revisit previously observed locations. We identify that this geometric drift stems from reliance on screen-space positional embeddings, which conflict with the projective geometry required for 3D consistency. We introduce \textbf{ViewRope}, a geometry-aware encoding that injects camera-ray directions directly into video transformer self-attention layers. By parameterizing attention with relative ray geometry rather than pixel locality, ViewRope provides a model-native inductive bias for retrieving 3D-consistent content across temporal gaps. We further propose \textbf{Geometry-Aware Frame-Sparse Attention}, which exploits these geometric cues to selectively attend to relevant historical frames, improving efficiency without sacrificing memory consistency. We also present \textbf{ViewBench}, a diagnostic suite measuring loop-closure fidelity and geometric drift. Our results demonstrate that ViewRope substantially improves long-term consistency while reducing computational costs.</p>
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces ViewRope, a geometry-aware rotary position embedding for video transformers, along with a geometry-aware frame-sparse attention mechanism and a diagnostic suite (ViewBench), to improve long-term consistency and reduce computational costs in video world models with camera control.</p>
+            
+            
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了ViewRope，一种几何感知的旋转位置嵌入，用于视频Transformer，以及一种几何感知的帧稀疏注意力机制和一个诊断套件(ViewBench)，以提高具有相机控制的视频世界模型中的长期一致性并降低计算成本。</p>
+            
+
+            
+            
+            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+                
+                <div class="rating-item">
+                    <span class="rating-label">Relevance:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Novelty:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
+                    <span class="rating-label">Potential Impact:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+            </div>
+            
+            
+
+            
+            <div class="paper-rating">
+                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+                
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="fas fa-star"></i>
+                    
+                
+                    
+                        <i class="far fa-star"></i>
+                    
+                
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+            </div>
+            
+
+            <a href="http://arxiv.org/abs/2602.07854v1" target="_blank" class="paper-link">
+                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
+            </a>
+            
+            <p class="paper-authors">Authors: Chendong Xiang, Jiajun Liu, Jintao Zhang, Xiao Yang, Zhengwei Fang, Shizun Wang, Zijun Wang, Yingtian Zou, Hang Su, Jun Zhu</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2026-02-18 03:40:47 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2026-02-18 03:54:42 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
