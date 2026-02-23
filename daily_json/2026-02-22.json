@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Generated Reality: Human-centric World Simulation using Interactive Video Generation with Hand and Camera Control",
+        "summary": "Extended reality (XR) demands generative models that respond to users' tracked real-world motion, yet current video world models accept only coarse control signals such as text or keyboard input, limiting their utility for embodied interaction. We introduce a human-centric video world model that is conditioned on both tracked head pose and joint-level hand poses. For this purpose, we evaluate existing diffusion transformer conditioning strategies and propose an effective mechanism for 3D head and hand control, enabling dexterous hand--object interactions. We train a bidirectional video diffusion model teacher using this strategy and distill it into a causal, interactive system that generates egocentric virtual environments. We evaluate this generated reality system with human subjects and demonstrate improved task performance as well as a significantly higher level of perceived amount of control over the performed actions compared with relevant baselines.",
+        "url": "http://arxiv.org/abs/2602.18422v1",
+        "published_date": "2026-02-20T18:45:29+00:00",
+        "updated_date": "2026-02-20T18:45:29+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Linxi Xie",
+            "Lisong C. Sun",
+            "Ashley Neall",
+            "Tong Wu",
+            "Shengqu Cai",
+            "Gordon Wetzstein"
+        ],
+        "tldr": "This paper introduces a video world model conditioned on head pose and hand movements to generate interactive, egocentric virtual environments, demonstrating improved task performance and perceived control compared to baselines.",
+        "tldr_zh": "该论文介绍了一种以头部姿势和手部动作为条件的视频世界模型，用于生成交互式的、以自我为中心的虚拟环境，与基线相比，展示了改进的任务表现和感知控制。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
