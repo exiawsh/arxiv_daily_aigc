@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Flash-VAED: Plug-and-Play VAE Decoders for Efficient Video Generation",
+        "summary": "Latent diffusion models have enabled high-quality video synthesis, yet their inference remains costly and time-consuming. As diffusion transformers become increasingly efficient, the latency bottleneck inevitably shifts to VAE decoders. To reduce their latency while maintaining quality, we propose a universal acceleration framework for VAE decoders that preserves full alignment with the original latent distribution. Specifically, we propose (1) an independence-aware channel pruning method to effectively mitigate severe channel redundancy, and (2) a stage-wise dominant operator optimization strategy to address the high inference cost of the widely used causal 3D convolutions in VAE decoders. Based on these innovations, we construct a Flash-VAED family. Moreover, we design a three-phase dynamic distillation framework that efficiently transfers the capabilities of the original VAE decoder to Flash-VAED. Extensive experiments on Wan and LTX-Video VAE decoders demonstrate that our method outperforms baselines in both quality and speed, achieving approximately a 6$\\times$ speedup while maintaining the reconstruction performance up to 96.9%. Notably, Flash-VAED accelerates the end-to-end generation pipeline by up to 36% with negligible quality drops on VBench-2.0.",
+        "url": "http://arxiv.org/abs/2602.19161v1",
+        "published_date": "2026-02-22T12:43:50+00:00",
+        "updated_date": "2026-02-22T12:43:50+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Lunjie Zhu",
+            "Yushi Huang",
+            "Xingtong Ge",
+            "Yufei Xue",
+            "Zhening Liu",
+            "Yumeng Zhang",
+            "Zehong Lin",
+            "Jun Zhang"
+        ],
+        "tldr": "This paper introduces Flash-VAED, a method for accelerating VAE decoders in video generation pipelines by pruning and optimizing 3D convolutions, achieving significant speedups with minimal quality loss.",
+        "tldr_zh": "本文介绍了Flash-VAED，一种通过剪枝和优化3D卷积来加速视频生成管道中VAE解码器的方法，在质量损失最小的情况下实现了显著的加速。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
