@@ -1,0 +1,113 @@
+[
+    {
+        "title": "RAYNOVA: 3D-Geometry-Free Auto-Regressive Driving World Modeling with Unified Spatio-Temporal Representation",
+        "summary": "World foundation models aim to simulate the evolution of the real world with physically plausible behavior. Unlike prior methods that handle spatial and temporal correlations separately, we propose RAYNOVA, a geometry-free world model that employs a dual-causal autoregressive framework. It follows both scale-wise and temporal topological orders in the autoregressive process, and leverages global attention for unified 4D spatio-temporal reasoning. Different from existing works that impose strong 3D geometric priors, RAYNOVA constructs an isotropic spatio-temporal representation across views, frames, and scales based on relative Plücker-ray positional encoding, enabling robust generalization to diverse camera setups and ego motions. We further introduce a recurrent training paradigm to alleviate distribution drift in long-horizon video generation. RAYNOVA achieves state-of-the-art multi-view video generation results on nuScenes, while offering higher throughput and strong controllability under diverse input conditions, generalizing to novel views and camera configurations without explicit 3D scene representation. Our code will be released at http://yichen928.github.io/raynova.",
+        "url": "http://arxiv.org/abs/2602.20685v1",
+        "published_date": "2026-02-24T08:41:40+00:00",
+        "updated_date": "2026-02-24T08:41:40+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yichen Xie",
+            "Chensheng Peng",
+            "Mazen Abdelfattah",
+            "Yihan Hu",
+            "Jiezhi Yang",
+            "Eric Higgins",
+            "Ryan Brigden",
+            "Masayoshi Tomizuka",
+            "Wei Zhan"
+        ],
+        "tldr": "RAYNOVA is a geometry-free world model using a dual-causal autoregressive framework with unified spatio-temporal reasoning for state-of-the-art multi-view video generation and controllability.",
+        "tldr_zh": "RAYNOVA 是一种无几何形状的世界模型，采用双因果自回归框架与统一的时空推理，实现了最先进的多视角视频生成和可控性。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "GA-Drive: Geometry-Appearance Decoupled Modeling for Free-viewpoint Driving Scene Generatio",
+        "summary": "A free-viewpoint, editable, and high-fidelity driving simulator is crucial for training and evaluating end-to-end autonomous driving systems. In this paper, we present GA-Drive, a novel simulation framework capable of generating camera views along user-specified novel trajectories through Geometry-Appearance Decoupling and Diffusion-Based Generation. Given a set of images captured along a recorded trajectory and the corresponding scene geometry, GA-Drive synthesizes novel pseudo-views using geometry information. These pseudo-views are then transformed into photorealistic views using a trained video diffusion model. In this way, we decouple the geometry and appearance of scenes. An advantage of such decoupling is its support for appearance editing via state-of-the-art video-to-video editing techniques, while preserving the underlying geometry, enabling consistent edits across both original and novel trajectories. Extensive experiments demonstrate that GA-Drive substantially outperforms existing methods in terms of NTA-IoU, NTL-IoU, and FID scores.",
+        "url": "http://arxiv.org/abs/2602.20673v1",
+        "published_date": "2026-02-24T08:22:42+00:00",
+        "updated_date": "2026-02-24T08:22:42+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Hao Zhang",
+            "Lue Fan",
+            "Qitai Wang",
+            "Wenbo Li",
+            "Zehuan Wu",
+            "Lewei Lu",
+            "Zhaoxiang Zhang",
+            "Hongsheng Li"
+        ],
+        "tldr": "GA-Drive is a novel driving simulator framework that decouples geometry and appearance using diffusion models for free-viewpoint driving scene generation, enabling editable and high-fidelity simulation.",
+        "tldr_zh": "GA-Drive 是一种新的驾驶模拟器框架，它使用扩散模型解耦了几何和外观，用于自由视点驾驶场景生成，从而实现可编辑和高保真的模拟。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "AnimeAgent: Is the Multi-Agent via Image-to-Video models a Good Disney Storytelling Artist?",
+        "summary": "Custom Storyboard Generation (CSG) aims to produce high-quality, multi-character consistent storytelling. Current approaches based on static diffusion models, whether used in a one-shot manner or within multi-agent frameworks, face three key limitations: (1) Static models lack dynamic expressiveness and often resort to \"copy-paste\" pattern. (2) One-shot inference cannot iteratively correct missing attributes or poor prompt adherence. (3) Multi-agents rely on non-robust evaluators, ill-suited for assessing stylized, non-realistic animation. To address these, we propose AnimeAgent, the first Image-to-Video (I2V)-based multi-agent framework for CSG. Inspired by Disney's \"Combination of Straight Ahead and Pose to Pose\" workflow, AnimeAgent leverages I2V's implicit motion prior to enhance consistency and expressiveness, while a mixed subjective-objective reviewer enables reliable iterative refinement. We also collect a human-annotated CSG benchmark with ground-truth. Experiments show AnimeAgent achieves SOTA performance in consistency, prompt fidelity, and stylization.",
+        "url": "http://arxiv.org/abs/2602.20664v1",
+        "published_date": "2026-02-24T08:14:24+00:00",
+        "updated_date": "2026-02-24T08:14:24+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Hailong Yan",
+            "Shice Liu",
+            "Tao Wang",
+            "Xiangtao Zhang",
+            "Yijie Zhong",
+            "Jinwei Chen",
+            "Le Zhang",
+            "Bo Li"
+        ],
+        "tldr": "AnimeAgent introduces an Image-to-Video (I2V) based multi-agent framework for custom storyboard generation (CSG) that addresses limitations of static diffusion models using a novel approach inspired by Disney's animation techniques, and it achieves SOTA performance.",
+        "tldr_zh": "AnimeAgent 提出了一个基于图像到视频 (I2V) 的多智能体框架，用于定制故事板生成 (CSG)，该框架利用受迪士尼动画技术启发的新方法，解决了静态扩散模型的局限性，并实现了 SOTA 性能。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    },
+    {
+        "title": "NovaPlan: Zero-Shot Long-Horizon Manipulation via Closed-Loop Video Language Planning",
+        "summary": "Solving long-horizon tasks requires robots to integrate high-level semantic reasoning with low-level physical interaction. While vision-language models (VLMs) and video generation models can decompose tasks and imagine outcomes, they often lack the physical grounding necessary for real-world execution. We introduce NovaPlan, a hierarchical framework that unifies closed-loop VLM and video planning with geometrically grounded robot execution for zero-shot long-horizon manipulation. At the high level, a VLM planner decomposes tasks into sub-goals and monitors robot execution in a closed loop, enabling the system to recover from single-step failures through autonomous re-planning. To compute low-level robot actions, we extract and utilize both task-relevant object keypoints and human hand poses as kinematic priors from the generated videos, and employ a switching mechanism to choose the better one as a reference for robot actions, maintaining stable execution even under heavy occlusion or depth inaccuracy. We demonstrate the effectiveness of NovaPlan on three long-horizon tasks and the Functional Manipulation Benchmark (FMB). Our results show that NovaPlan can perform complex assembly tasks and exhibit dexterous error recovery behaviors without any prior demonstrations or training. Project page: https://nova-plan.github.io/",
+        "url": "http://arxiv.org/abs/2602.20119v1",
+        "published_date": "2026-02-23T18:35:18+00:00",
+        "updated_date": "2026-02-23T18:35:18+00:00",
+        "categories": [
+            "cs.RO",
+            "cs.AI",
+            "cs.CV"
+        ],
+        "authors": [
+            "Jiahui Fu",
+            "Junyu Nan",
+            "Lingfeng Sun",
+            "Hongyu Li",
+            "Jianing Qian",
+            "Jennifer L. Barry",
+            "Kris Kitani",
+            "George Konidaris"
+        ],
+        "tldr": "NovaPlan uses a VLM planner and video generation to guide robot execution for long-horizon manipulation, leveraging keypoints and hand poses extracted from generated videos to control robot actions in a closed-loop, zero-shot manner, demonstrating strong performance in complex tasks.",
+        "tldr_zh": "NovaPlan利用视觉语言模型和视频生成来指导机器人执行长时程操作，通过从生成的视频中提取关键点和手部姿势来控制机器人动作，实现闭环和零样本学习。该系统在复杂任务中表现出色。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]
