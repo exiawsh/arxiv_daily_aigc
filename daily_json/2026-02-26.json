@@ -1,0 +1,259 @@
+[
+    {
+        "title": "SkyReels-V4: Multi-modal Video-Audio Generation, Inpainting and Editing model",
+        "summary": "SkyReels V4 is a unified multi modal video foundation model for joint video audio generation, inpainting, and editing. The model adopts a dual stream Multimodal Diffusion Transformer (MMDiT) architecture, where one branch synthesizes video and the other generates temporally aligned audio, while sharing a powerful text encoder based on the Multimodal Large Language Models (MMLM). SkyReels V4 accepts rich multi modal instructions, including text, images, video clips, masks, and audio references. By combining the MMLMs multi modal instruction following capability with in context learning in the video branch MMDiT, the model can inject fine grained visual guidance under complex conditioning, while the audio branch MMDiT simultaneously leverages audio references to guide sound generation. On the video side, we adopt a channel concatenation formulation that unifies a wide range of inpainting style tasks, such as image to video, video extension, and video editing under a single interface, and naturally extends to vision referenced inpainting and editing via multi modal prompts. SkyReels V4 supports up to 1080p resolution, 32 FPS, and 15 second duration, enabling high fidelity, multi shot, cinema level video generation with synchronized audio. To make such high resolution, long-duration generation computationally feasible, we introduce an efficiency strategy: Joint generation of low resolution full sequences and high-resolution keyframes, followed by dedicated super-resolution and frame interpolation models. To our knowledge, SkyReels V4 is the first video foundation model that simultaneously supports multi-modal input, joint video audio generation, and a unified treatment of generation, inpainting, and editing, while maintaining strong efficiency and quality at cinematic resolutions and durations.",
+        "url": "http://arxiv.org/abs/2602.21818v1",
+        "published_date": "2026-02-25T11:47:00+00:00",
+        "updated_date": "2026-02-25T11:47:00+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Guibin Chen",
+            "Dixuan Lin",
+            "Jiangping Yang",
+            "Youqiang Zhang",
+            "Zhengcong Fei",
+            "Debang Li",
+            "Sheng Chen",
+            "Chaofeng Ao",
+            "Nuo Pang",
+            "Yiming Wang",
+            "Yikun Dou",
+            "Zheng Chen",
+            "Mingyuan Fan",
+            "Tuanhui Li",
+            "Mingshan Chang",
+            "Hao Zhang",
+            "Xiaopeng Sun",
+            "Jingtao Xu",
+            "Yuqiang Xie",
+            "Jiahua Wang",
+            "Zhiheng Xu",
+            "Weiming Xiong",
+            "Yuzhe Jin",
+            "Baoxuan Gu",
+            "Binjie Mao",
+            "Yunjie Yu",
+            "Jujie He",
+            "Yuhao Feng",
+            "Shiwen Tu",
+            "Chaojie Wang",
+            "Rui Yan",
+            "Wei Shen",
+            "Jingchen Wu",
+            "Peng Zhao",
+            "Xuanyue Zhong",
+            "Zhuangzhuang Liu",
+            "Kaifei Wang",
+            "Fuxiang Zhang",
+            "Weikai Xu",
+            "Wenyan Liu",
+            "Binglu Zhang",
+            "Yu Shen",
+            "Tianhui Xiong",
+            "Bin Peng",
+            "Liang Zeng",
+            "Xuchen Song",
+            "Haoxiang Guo",
+            "Peiyu Wang",
+            "Yahui Zhou"
+        ],
+        "tldr": "SkyReels-V4 is a multi-modal video foundation model capable of generating, inpainting, and editing high-resolution, long-duration videos with synchronized audio, using a novel dual-stream diffusion transformer architecture and efficient generation strategies.",
+        "tldr_zh": "SkyReels-V4是一个多模态视频基础模型，能够生成、修复和编辑具有同步音频的高分辨率、长时间视频，采用了一种新颖的双流扩散Transformer架构和高效的生成策略。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "World Guidance: World Modeling in Condition Space for Action Generation",
+        "summary": "Leveraging future observation modeling to facilitate action generation presents a promising avenue for enhancing the capabilities of Vision-Language-Action (VLA) models. However, existing approaches struggle to strike a balance between maintaining efficient, predictable future representations and preserving sufficient fine-grained information to guide precise action generation. To address this limitation, we propose WoG (World Guidance), a framework that maps future observations into compact conditions by injecting them into the action inference pipeline. The VLA is then trained to simultaneously predict these compressed conditions alongside future actions, thereby achieving effective world modeling within the condition space for action inference. We demonstrate that modeling and predicting this condition space not only facilitates fine-grained action generation but also exhibits superior generalization capabilities. Moreover, it learns effectively from substantial human manipulation videos. Extensive experiments across both simulation and real-world environments validate that our method significantly outperforms existing methods based on future prediction. Project page is available at: https://selen-suyue.github.io/WoGNet/",
+        "url": "http://arxiv.org/abs/2602.22010v1",
+        "published_date": "2026-02-25T15:27:09+00:00",
+        "updated_date": "2026-02-25T15:27:09+00:00",
+        "categories": [
+            "cs.RO",
+            "cs.CV"
+        ],
+        "authors": [
+            "Yue Su",
+            "Sijin Chen",
+            "Haixin Shi",
+            "Mingyu Liu",
+            "Zhengshen Zhang",
+            "Ningyuan Huang",
+            "Weiheng Zhong",
+            "Zhengbang Zhu",
+            "Yuxiao Liu",
+            "Xihui Liu"
+        ],
+        "tldr": "The paper introduces World Guidance (WoG), a framework for Vision-Language-Action models that maps future observations into compact conditions to guide action generation, improving fine-grained control and generalization. It outperforms existing future prediction methods in simulation and real-world environments.",
+        "tldr_zh": "该论文介绍了 World Guidance (WoG)，一个视觉-语言-动作模型框架，它将未来的观察映射到紧凑的条件中，以指导动作生成，从而提高细粒度控制和泛化能力。 在模拟和现实世界环境中，它优于现有的未来预测方法。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Geometry-as-context: Modulating Explicit 3D in Scene-consistent Video Generation to Geometry Context",
+        "summary": "Scene-consistent video generation aims to create videos that explore 3D scenes based on a camera trajectory. Previous methods rely on video generation models with external memory for consistency, or iterative 3D reconstruction and inpainting, which accumulate errors during inference due to incorrect intermediary outputs, non-differentiable processes, and separate models. To overcome these limitations, we introduce ``geometry-as-context\". It iteratively completes the following steps using an autoregressive camera-controlled video generation model: (1) estimates the geometry of the current view necessary for 3D reconstruction, and (2) simulates and restores novel view images rendered by the 3D scene. Under this multi-task framework, we develop the camera gated attention module to enhance the model's capability to effectively leverage camera poses. During the training phase, text contexts are utilized to ascertain whether geometric or RGB images should be generated. To ensure that the model can generate RGB-only outputs during inference, the geometry context is randomly dropped from the interleaved text-image-geometry training sequence. The method has been tested on scene video generation with one-direction and forth-and-back trajectories. The results show its superiority over previous approaches in maintaining scene consistency and camera control.",
+        "url": "http://arxiv.org/abs/2602.21929v1",
+        "published_date": "2026-02-25T14:09:03+00:00",
+        "updated_date": "2026-02-25T14:09:03+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "JiaKui Hu",
+            "Jialun Liu",
+            "Liying Yang",
+            "Xinliang Zhang",
+            "Kaiwen Li",
+            "Shuang Zeng",
+            "Yuanwei Li",
+            "Haibin Huang",
+            "Chi Zhang",
+            "Yanye Lu"
+        ],
+        "tldr": "This paper introduces a novel \"geometry-as-context\" approach for scene-consistent video generation by iteratively estimating geometry and rendering novel views using an autoregressive model, improving scene consistency and camera control.",
+        "tldr_zh": "本文提出了一种新的“geometry-as-context”方法，用于生成场景一致的视频。该方法通过迭代地估计几何形状并使用自回归模型渲染新的视角，从而提高场景一致性和相机控制。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Space-Time Forecasting of Dynamic Scenes with Motion-aware Gaussian Grouping",
+        "summary": "Forecasting dynamic scenes remains a fundamental challenge in computer vision, as limited observations make it difficult to capture coherent object-level motion and long-term temporal evolution. We present Motion Group-aware Gaussian Forecasting (MoGaF), a framework for long-term scene extrapolation built upon the 4D Gaussian Splatting representation. MoGaF introduces motion-aware Gaussian grouping and group-wise optimization to enforce physically consistent motion across both rigid and non-rigid regions, yielding spatially coherent dynamic representations. Leveraging this structured space-time representation, a lightweight forecasting module predicts future motion, enabling realistic and temporally stable scene evolution. Experiments on synthetic and real-world datasets demonstrate that MoGaF consistently outperforms existing baselines in rendering quality, motion plausibility, and long-term forecasting stability. Our project page is available at https://slime0519.github.io/mogaf",
+        "url": "http://arxiv.org/abs/2602.21668v1",
+        "published_date": "2026-02-25T08:04:07+00:00",
+        "updated_date": "2026-02-25T08:04:07+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.GR"
+        ],
+        "authors": [
+            "Junmyeong Lee",
+            "Hoseung Choi",
+            "Minsu Cho"
+        ],
+        "tldr": "The paper introduces MoGaF, a novel framework for long-term dynamic scene forecasting using 4D Gaussian Splatting with motion-aware grouping, achieving improved rendering quality and temporal stability.",
+        "tldr_zh": "本文介绍了一种名为MoGaF的新框架，它使用具有运动感知分组的4D高斯溅射进行长期动态场景预测，从而提高了渲染质量和时间稳定性。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Human Video Generation from a Single Image with 3D Pose and View Control",
+        "summary": "Recent diffusion methods have made significant progress in generating videos from single images due to their powerful visual generation capabilities. However, challenges persist in image-to-video synthesis, particularly in human video generation, where inferring view-consistent, motion-dependent clothing wrinkles from a single image remains a formidable problem. In this paper, we present Human Video Generation in 4D (HVG), a latent video diffusion model capable of generating high-quality, multi-view, spatiotemporally coherent human videos from a single image with 3D pose and view control. HVG achieves this through three key designs: (i) Articulated Pose Modulation, which captures the anatomical relationships of 3D joints via a novel dual-dimensional bone map and resolves self-occlusions across views by introducing 3D information; (ii) View and Temporal Alignment, which ensures multi-view consistency and alignment between a reference image and pose sequences for frame-to-frame stability; and (iii) Progressive Spatio-Temporal Sampling with temporal alignment to maintain smooth transitions in long multi-view animations. Extensive experiments on image-to-video tasks demonstrate that HVG outperforms existing methods in generating high-quality 4D human videos from diverse human images and pose inputs.",
+        "url": "http://arxiv.org/abs/2602.21188v1",
+        "published_date": "2026-02-24T18:42:20+00:00",
+        "updated_date": "2026-02-24T18:42:20+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Tiantian Wang",
+            "Chun-Han Yao",
+            "Tao Hu",
+            "Mallikarjun Byrasandra Ramalinga Reddy",
+            "Ming-Hsuan Yang",
+            "Varun Jampani"
+        ],
+        "tldr": "The paper introduces Human Video Generation in 4D (HVG), a latent video diffusion model that generates high-quality, multi-view, spatiotemporally coherent human videos from a single image with 3D pose and view control, outperforming existing methods.",
+        "tldr_zh": "该论文介绍了4D人体视频生成（HVG），一种潜在的视频扩散模型，能够从单张图像生成高质量、多视角、时空连贯的人体视频，并具有3D姿势和视角控制，性能优于现有方法。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Towards Controllable Video Synthesis of Routine and Rare OR Events",
+        "summary": "Purpose: Curating large-scale datasets of operating room (OR) workflow, encompassing rare, safety-critical, or atypical events, remains operationally and ethically challenging. This data bottleneck complicates the development of ambient intelligence for detecting, understanding, and mitigating rare or safety-critical events in the OR.\n  Methods: This work presents an OR video diffusion framework that enables controlled synthesis of rare and safety-critical events. The framework integrates a geometric abstraction module, a conditioning module, and a fine-tuned diffusion model to first transform OR scenes into abstract geometric representations, then condition the synthesis process, and finally generate realistic OR event videos. Using this framework, we also curate a synthetic dataset to train and validate AI models for detecting near-misses of sterile-field violations.\n  Results: In synthesizing routine OR events, our method outperforms off-the-shelf video diffusion baselines, achieving lower FVD/LPIPS and higher SSIM/PSNR in both in- and out-of-domain datasets. Through qualitative results, we illustrate its ability for controlled video synthesis of counterfactual events. An AI model trained and validated on the generated synthetic data achieved a RECALL of 70.13% in detecting near safety-critical events. Finally, we conduct an ablation study to quantify performance gains from key design choices.\n  Conclusion: Our solution enables controlled synthesis of routine and rare OR events from abstract geometric representations. Beyond demonstrating its capability to generate rare and safety-critical scenarios, we show its potential to support the development of ambient intelligence models.",
+        "url": "http://arxiv.org/abs/2602.21365v1",
+        "published_date": "2026-02-24T20:56:15+00:00",
+        "updated_date": "2026-02-24T20:56:15+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.LG",
+            "eess.IV"
+        ],
+        "authors": [
+            "Dominik Schneider",
+            "Lalithkumar Seenivasan",
+            "Sampath Rapuri",
+            "Vishalroshan Anil",
+            "Aiza Maksutova",
+            "Yiqing Shen",
+            "Jan Emily Mangulabnan",
+            "Hao Ding",
+            "Jose L. Porras",
+            "Masaru Ishii",
+            "Mathias Unberath"
+        ],
+        "tldr": "The paper introduces a video diffusion framework for controlled synthesis of operating room videos, including rare and safety-critical events, and demonstrates its utility in training AI models for near-miss detection.",
+        "tldr_zh": "该论文介绍了一个视频扩散框架，用于控制合成手术室视频，包括罕见和安全关键事件，并展示了其在训练用于近失检测的AI模型中的效用。",
+        "relevance_score": 6,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    },
+    {
+        "title": "WeaveTime: Stream from Earlier Frames into Emergent Memory in VideoLLMs",
+        "summary": "Recent advances in Multimodal Large Language Models have greatly improved visual understanding and reasoning, yet their quadratic attention and offline training protocols make them ill-suited for streaming settings where frames arrive sequentially and future observations are inaccessible. We diagnose a core limitation of current Video-LLMs, namely Time-Agnosticism, in which videos are treated as an unordered bag of evidence rather than a causally ordered sequence, yielding two failures in streams: temporal order ambiguity, in which the model cannot follow or reason over the correct chronological order, and past-current focus blindness where it fails to distinguish present observations from accumulated history. We present WeaveTime, a simple, efficient, and model agnostic framework that first teaches order and then uses order. We introduce a lightweight Temporal Reconstruction objective-our Streaming Order Perception enhancement-that instills order aware representations with minimal finetuning and no specialized streaming data. At inference, a Past-Current Dynamic Focus Cache performs uncertainty triggered, coarse-to-fine retrieval, expanding history only when needed. Plugged into exsiting Video-LLM without architectural changes, WeaveTime delivers consistent gains on representative streaming benchmarks, improving accuracy while reducing latency. These results establish WeaveTime as a practical path toward time aware stream Video-LLMs under strict online, time causal constraints. Code and weights will be made publicly available. Project Page: https://zhangyl4.github.io/publications/weavetime/",
+        "url": "http://arxiv.org/abs/2602.22142v1",
+        "published_date": "2026-02-25T17:45:45+00:00",
+        "updated_date": "2026-02-25T17:45:45+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yulin Zhang",
+            "Cheng Shi",
+            "Sibei Yang"
+        ],
+        "tldr": "WeaveTime addresses the time-agnosticism of Video-LLMs in streaming settings by introducing a lightweight temporal reconstruction objective and a dynamic focus cache, improving accuracy and reducing latency without architectural changes.",
+        "tldr_zh": "WeaveTime通过引入轻量级的时间重建目标和一个动态焦点缓存，解决了视频LLM在流媒体设置中的时间不可知问题，从而提高了准确性并降低了延迟，且无需架构更改。",
+        "relevance_score": 3,
+        "novelty_claim_score": 7,
+        "clarity_score": 8,
+        "potential_impact_score": 6,
+        "overall_priority_score": 5
+    },
+    {
+        "title": "XStreamVGGT: Extremely Memory-Efficient Streaming Vision Geometry Grounded Transformer with KV Cache Compression",
+        "summary": "Learning-based 3D visual geometry models have significantly advanced with the advent of large-scale transformers. Among these, StreamVGGT leverages frame-wise causal attention to deliver robust and efficient streaming 3D reconstruction. However, it suffers from unbounded growth in the Key-Value (KV) cache due to the massive influx of vision tokens from multi-image and long-video inputs, leading to increased memory consumption and inference latency as input frames accumulate. This ultimately limits its scalability for long-horizon applications. To address this gap, we propose XStreamVGGT, a tuning-free approach that seamlessly integrates pruning and quantization to systematically compress the KV cache, enabling extremely memory-efficient streaming inference. Specifically, redundant KVs generated from multi-frame inputs are initially pruned to conform to a fixed KV memory budget using an efficient token-importance identification mechanism that maintains full compatibility with high-performance attention kernels (e.g., FlashAttention). Additionally, leveraging the inherent distribution patterns of KV tensors, we apply dimension-adaptive KV quantization within the pruning pipeline to further minimize memory overhead while preserving numerical accuracy. Extensive evaluations show that XStreamVGGT achieves mostly negligible performance degradation while substantially reducing memory usage by 4.42$\\times$ and accelerating inference by 5.48$\\times$, enabling practical and scalable streaming 3D applications. The code is available at https://github.com/ywh187/XStreamVGGT/.",
+        "url": "http://arxiv.org/abs/2602.21780v1",
+        "published_date": "2026-02-25T11:02:02+00:00",
+        "updated_date": "2026-02-25T11:02:02+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Zunhai Su",
+            "Weihao Ye",
+            "Hansen Feng",
+            "Keyu Fan",
+            "Jing Zhang",
+            "Dahai Yu",
+            "Zhengwu Liu",
+            "Ngai Wong"
+        ],
+        "tldr": "The paper proposes XStreamVGGT, a memory-efficient approach to compress the Key-Value cache in StreamVGGT by pruning and quantization, enabling scalable streaming 3D reconstruction with minimal performance degradation and significant speedup.",
+        "tldr_zh": "该论文提出了XStreamVGGT，一种通过剪枝和量化来压缩StreamVGGT中Key-Value缓存的内存高效方法，从而实现可扩展的流式3D重建，同时性能下降最小，并显著加速。",
+        "relevance_score": 3,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 5
+    }
+]
