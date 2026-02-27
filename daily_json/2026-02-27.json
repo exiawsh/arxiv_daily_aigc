@@ -1,0 +1,105 @@
+[
+    {
+        "title": "ColoDiff: Integrating Dynamic Consistency With Content Awareness for Colonoscopy Video Generation",
+        "summary": "Colonoscopy video generation delivers dynamic, information-rich data critical for diagnosing intestinal diseases, particularly in data-scarce scenarios. High-quality video generation demands temporal consistency and precise control over clinical attributes, but faces challenges from irregular intestinal structures, diverse disease representations, and various imaging modalities. To this end, we propose ColoDiff, a diffusion-based framework that generates dynamic-consistent and content-aware colonoscopy videos, aiming to alleviate data shortage and assist clinical analysis. At the inter-frame level, our TimeStream module decouples temporal dependency from video sequences through a cross-frame tokenization mechanism, enabling intricate dynamic modeling despite irregular intestinal structures. At the intra-frame level, our Content-Aware module incorporates noise-injected embeddings and learnable prototypes to realize precise control over clinical attributes, breaking through the coarse guidance of diffusion models. Additionally, ColoDiff employs a non-Markovian sampling strategy that cuts steps by over 90% for real-time generation. ColoDiff is evaluated across three public datasets and one hospital database, based on both generation metrics and downstream tasks including disease diagnosis, modality discrimination, bowel preparation scoring, and lesion segmentation. Extensive experiments show ColoDiff generates videos with smooth transitions and rich dynamics. ColoDiff presents an effort in controllable colonoscopy video generation, revealing the potential of synthetic videos in complementing authentic representation and mitigating data scarcity in clinical settings.",
+        "url": "http://arxiv.org/abs/2602.23203v1",
+        "published_date": "2026-02-26T16:51:24+00:00",
+        "updated_date": "2026-02-26T16:51:24+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Junhu Fu",
+            "Shuyu Liang",
+            "Wutong Li",
+            "Chen Ma",
+            "Peng Huang",
+            "Kehao Wang",
+            "Ke Chen",
+            "Shengli Lin",
+            "Pinghong Zhou",
+            "Zeju Li",
+            "Yuanyuan Wang",
+            "Yi Guo"
+        ],
+        "tldr": "ColoDiff is a diffusion-based framework for generating dynamic and content-aware colonoscopy videos, addressing data scarcity in clinical analysis by enabling control over clinical attributes and achieving real-time generation.",
+        "tldr_zh": "ColoDiff是一个基于扩散模型的框架，用于生成动态且内容感知的结肠镜视频，通过控制临床属性和实现实时生成来解决临床分析中的数据稀缺问题。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "UCM: Unifying Camera Control and Memory with Time-aware Positional Encoding Warping for World Models",
+        "summary": "World models based on video generation demonstrate remarkable potential for simulating interactive environments but face persistent difficulties in two key areas: maintaining long-term content consistency when scenes are revisited and enabling precise camera control from user-provided inputs. Existing methods based on explicit 3D reconstruction often compromise flexibility in unbounded scenarios and fine-grained structures. Alternative methods rely directly on previously generated frames without establishing explicit spatial correspondence, thereby constraining controllability and consistency. To address these limitations, we present UCM, a novel framework that unifies long-term memory and precise camera control via a time-aware positional encoding warping mechanism. To reduce computational overhead, we design an efficient dual-stream diffusion transformer for high-fidelity generation. Moreover, we introduce a scalable data curation strategy utilizing point-cloud-based rendering to simulate scene revisiting, facilitating training on over 500K monocular videos. Extensive experiments on real-world and synthetic benchmarks demonstrate that UCM significantly outperforms state-of-the-art methods in long-term scene consistency, while also achieving precise camera controllability in high-fidelity video generation.",
+        "url": "http://arxiv.org/abs/2602.22960v1",
+        "published_date": "2026-02-26T12:54:46+00:00",
+        "updated_date": "2026-02-26T12:54:46+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Tianxing Xu",
+            "Zixuan Wang",
+            "Guangyuan Wang",
+            "Li Hu",
+            "Zhongyi Zhang",
+            "Peng Zhang",
+            "Bang Zhang",
+            "Song-Hai Zhang"
+        ],
+        "tldr": "The paper introduces UCM, a framework unifying long-term memory and precise camera control in world models using time-aware positional encoding warping, achieving superior performance in long-term scene consistency and camera controllability for high-fidelity video generation.",
+        "tldr_zh": "该论文介绍了一种名为UCM的框架，它通过时间感知位置编码扭曲统一了世界模型中的长期记忆和精确的相机控制，从而在高保真视频生成中实现了卓越的长期场景一致性和相机可控性。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "SPATIALALIGN: Aligning Dynamic Spatial Relationships in Video Generation",
+        "summary": "Most text-to-video (T2V) generators prioritize aesthetic quality, but often ignoring the spatial constraints in the generated videos. In this work, we present SPATIALALIGN, a self-improvement framework that enhances T2V models capabilities to depict Dynamic Spatial Relationships (DSR) specified in text prompts. We present a zeroth-order regularized Direct Preference Optimization (DPO) to fine-tune T2V models towards better alignment with DSR. Specifically, we design DSR-SCORE, a geometry-based metric that quantitatively measures the alignment between generated videos and the specified DSRs in prompts, which is a step forward from prior works that rely on VLM for evaluation. We also conduct a dataset of text-video pairs with diverse DSRs to facilitate the study. Extensive experiments demonstrate that our fine-tuned model significantly out performs the baseline in spatial relationships. The code will be released in Link.",
+        "url": "http://arxiv.org/abs/2602.22745v1",
+        "published_date": "2026-02-26T08:34:09+00:00",
+        "updated_date": "2026-02-26T08:34:09+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Fengming Liu",
+            "Tat-Jen Cham",
+            "Chuanxia Zheng"
+        ],
+        "tldr": "The paper introduces SPATIALALIGN, a self-improvement framework using zeroth-order regularized DPO and a geometry-based metric (DSR-SCORE) to improve text-to-video models' ability to generate videos that accurately depict dynamic spatial relationships specified in text prompts, along with a new dataset for this purpose.",
+        "tldr_zh": "该论文介绍了SPATIALALIGN，一个自提升框架，它使用零阶正则化DPO和一个基于几何的指标（DSR-SCORE）来提高文本到视频模型生成准确描述文本提示中动态空间关系的视频的能力，并为此目的提供了一个新的数据集。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Causal Motion Diffusion Models for Autoregressive Motion Generation",
+        "summary": "Recent advances in motion diffusion models have substantially improved the realism of human motion synthesis. However, existing approaches either rely on full-sequence diffusion models with bidirectional generation, which limits temporal causality and real-time applicability, or autoregressive models that suffer from instability and cumulative errors. In this work, we present Causal Motion Diffusion Models (CMDM), a unified framework for autoregressive motion generation based on a causal diffusion transformer that operates in a semantically aligned latent space. CMDM builds upon a Motion-Language-Aligned Causal VAE (MAC-VAE), which encodes motion sequences into temporally causal latent representations. On top of this latent representation, an autoregressive diffusion transformer is trained using causal diffusion forcing to perform temporally ordered denoising across motion frames. To achieve fast inference, we introduce a frame-wise sampling schedule with causal uncertainty, where each subsequent frame is predicted from partially denoised previous frames. The resulting framework supports high-quality text-to-motion generation, streaming synthesis, and long-horizon motion generation at interactive rates. Experiments on HumanML3D and SnapMoGen demonstrate that CMDM outperforms existing diffusion and autoregressive models in both semantic fidelity and temporal smoothness, while substantially reducing inference latency.",
+        "url": "http://arxiv.org/abs/2602.22594v1",
+        "published_date": "2026-02-26T03:58:25+00:00",
+        "updated_date": "2026-02-26T03:58:25+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Qing Yu",
+            "Akihisa Watanabe",
+            "Kent Fujiwara"
+        ],
+        "tldr": "The paper introduces Causal Motion Diffusion Models (CMDM), a novel framework for autoregressive motion generation using a causal diffusion transformer in a semantically aligned latent space, achieving high-quality text-to-motion, streaming synthesis, and long-horizon motion generation at interactive rates.",
+        "tldr_zh": "本文介绍了因果运动扩散模型（CMDM），这是一种新颖的自回归运动生成框架，它在语义对齐的潜在空间中使用因果扩散transformer，实现了高质量的文本到运动、流式合成和交互速率下的长时程运动生成。",
+        "relevance_score": 7,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]

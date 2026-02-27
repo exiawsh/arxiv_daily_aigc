@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - February 25, 2026</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - February 27, 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>February 25, 2026</p>
+            <p>February 27, 2026</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,14 +215,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">RAYNOVA: 3D-Geometry-Free Auto-Regressive Driving World Modeling with Unified Spatio-Temporal Representation</h2>
+            <h2 class="paper-title">ColoDiff: Integrating Dynamic Consistency With Content Awareness for Colonoscopy Video Generation</h2>
             
-            <p class="paper-summary">World foundation models aim to simulate the evolution of the real world with physically plausible behavior. Unlike prior methods that handle spatial and temporal correlations separately, we propose RAYNOVA, a geometry-free world model that employs a dual-causal autoregressive framework. It follows both scale-wise and temporal topological orders in the autoregressive process, and leverages global attention for unified 4D spatio-temporal reasoning. Different from existing works that impose strong 3D geometric priors, RAYNOVA constructs an isotropic spatio-temporal representation across views, frames, and scales based on relative Plücker-ray positional encoding, enabling robust generalization to diverse camera setups and ego motions. We further introduce a recurrent training paradigm to alleviate distribution drift in long-horizon video generation. RAYNOVA achieves state-of-the-art multi-view video generation results on nuScenes, while offering higher throughput and strong controllability under diverse input conditions, generalizing to novel views and camera configurations without explicit 3D scene representation. Our code will be released at http://yichen928.github.io/raynova.</p>
+            <p class="paper-summary">Colonoscopy video generation delivers dynamic, information-rich data critical for diagnosing intestinal diseases, particularly in data-scarce scenarios. High-quality video generation demands temporal consistency and precise control over clinical attributes, but faces challenges from irregular intestinal structures, diverse disease representations, and various imaging modalities. To this end, we propose ColoDiff, a diffusion-based framework that generates dynamic-consistent and content-aware colonoscopy videos, aiming to alleviate data shortage and assist clinical analysis. At the inter-frame level, our TimeStream module decouples temporal dependency from video sequences through a cross-frame tokenization mechanism, enabling intricate dynamic modeling despite irregular intestinal structures. At the intra-frame level, our Content-Aware module incorporates noise-injected embeddings and learnable prototypes to realize precise control over clinical attributes, breaking through the coarse guidance of diffusion models. Additionally, ColoDiff employs a non-Markovian sampling strategy that cuts steps by over 90% for real-time generation. ColoDiff is evaluated across three public datasets and one hospital database, based on both generation metrics and downstream tasks including disease diagnosis, modality discrimination, bowel preparation scoring, and lesion segmentation. Extensive experiments show ColoDiff generates videos with smooth transitions and rich dynamics. ColoDiff presents an effort in controllable colonoscopy video generation, revealing the potential of synthetic videos in complementing authentic representation and mitigating data scarcity in clinical settings.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: RAYNOVA is a geometry-free world model using a dual-causal autoregressive framework with unified spatio-temporal reasoning for state-of-the-art multi-view video generation and controllability.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: ColoDiff is a diffusion-based framework for generating dynamic and content-aware colonoscopy videos, addressing data scarcity in clinical analysis by enabling control over clinical attributes and achieving real-time generation.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: RAYNOVA 是一种无几何形状的世界模型，采用双因果自回归框架与统一的时空推理，实现了最先进的多视角视频生成和可控性。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: ColoDiff是一个基于扩散模型的框架，用于生成动态且内容感知的结肠镜视频，通过控制临床属性和实现实时生成来解决临床分析中的数据稀缺问题。</p>
             
 
             
@@ -232,8 +232,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
@@ -248,8 +248,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Clarity:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
@@ -293,11 +293,11 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2602.20685v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2602.23203v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Yichen Xie, Chensheng Peng, Mazen Abdelfattah, Yihan Hu, Jiezhi Yang, Eric Higgins, Ryan Brigden, Masayoshi Tomizuka, Wei Zhan</p>
+            <p class="paper-authors">Authors: Junhu Fu, Shuyu Liang, Wutong Li, Chen Ma, Peng Huang, Kehao Wang, Ke Chen, Shengli Lin, Pinghong Zhou, Zeju Li, Yuanyuan Wang, Yi Guo</p>
             
         </motion.div>
         
@@ -309,14 +309,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">GA-Drive: Geometry-Appearance Decoupled Modeling for Free-viewpoint Driving Scene Generatio</h2>
+            <h2 class="paper-title">UCM: Unifying Camera Control and Memory with Time-aware Positional Encoding Warping for World Models</h2>
             
-            <p class="paper-summary">A free-viewpoint, editable, and high-fidelity driving simulator is crucial for training and evaluating end-to-end autonomous driving systems. In this paper, we present GA-Drive, a novel simulation framework capable of generating camera views along user-specified novel trajectories through Geometry-Appearance Decoupling and Diffusion-Based Generation. Given a set of images captured along a recorded trajectory and the corresponding scene geometry, GA-Drive synthesizes novel pseudo-views using geometry information. These pseudo-views are then transformed into photorealistic views using a trained video diffusion model. In this way, we decouple the geometry and appearance of scenes. An advantage of such decoupling is its support for appearance editing via state-of-the-art video-to-video editing techniques, while preserving the underlying geometry, enabling consistent edits across both original and novel trajectories. Extensive experiments demonstrate that GA-Drive substantially outperforms existing methods in terms of NTA-IoU, NTL-IoU, and FID scores.</p>
+            <p class="paper-summary">World models based on video generation demonstrate remarkable potential for simulating interactive environments but face persistent difficulties in two key areas: maintaining long-term content consistency when scenes are revisited and enabling precise camera control from user-provided inputs. Existing methods based on explicit 3D reconstruction often compromise flexibility in unbounded scenarios and fine-grained structures. Alternative methods rely directly on previously generated frames without establishing explicit spatial correspondence, thereby constraining controllability and consistency. To address these limitations, we present UCM, a novel framework that unifies long-term memory and precise camera control via a time-aware positional encoding warping mechanism. To reduce computational overhead, we design an efficient dual-stream diffusion transformer for high-fidelity generation. Moreover, we introduce a scalable data curation strategy utilizing point-cloud-based rendering to simulate scene revisiting, facilitating training on over 500K monocular videos. Extensive experiments on real-world and synthetic benchmarks demonstrate that UCM significantly outperforms state-of-the-art methods in long-term scene consistency, while also achieving precise camera controllability in high-fidelity video generation.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: GA-Drive is a novel driving simulator framework that decouples geometry and appearance using diffusion models for free-viewpoint driving scene generation, enabling editable and high-fidelity simulation.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces UCM, a framework unifying long-term memory and precise camera control in world models using time-aware positional encoding warping, achieving superior performance in long-term scene consistency and camera controllability for high-fidelity video generation.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: GA-Drive 是一种新的驾驶模拟器框架，它使用扩散模型解耦了几何和外观，用于自由视点驾驶场景生成，从而实现可编辑和高保真的模拟。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了一种名为UCM的框架，它通过时间感知位置编码扭曲统一了世界模型中的长期记忆和精确的相机控制，从而在高保真视频生成中实现了卓越的长期场景一致性和相机可控性。</p>
             
 
             
@@ -326,8 +326,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
@@ -387,11 +387,11 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2602.20673v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2602.22960v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Hao Zhang, Lue Fan, Qitai Wang, Wenbo Li, Zehuan Wu, Lewei Lu, Zhaoxiang Zhang, Hongsheng Li</p>
+            <p class="paper-authors">Authors: Tianxing Xu, Zixuan Wang, Guangyuan Wang, Li Hu, Zhongyi Zhang, Peng Zhang, Bang Zhang, Song-Hai Zhang</p>
             
         </motion.div>
         
@@ -403,14 +403,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">AnimeAgent: Is the Multi-Agent via Image-to-Video models a Good Disney Storytelling Artist?</h2>
+            <h2 class="paper-title">SPATIALALIGN: Aligning Dynamic Spatial Relationships in Video Generation</h2>
             
-            <p class="paper-summary">Custom Storyboard Generation (CSG) aims to produce high-quality, multi-character consistent storytelling. Current approaches based on static diffusion models, whether used in a one-shot manner or within multi-agent frameworks, face three key limitations: (1) Static models lack dynamic expressiveness and often resort to "copy-paste" pattern. (2) One-shot inference cannot iteratively correct missing attributes or poor prompt adherence. (3) Multi-agents rely on non-robust evaluators, ill-suited for assessing stylized, non-realistic animation. To address these, we propose AnimeAgent, the first Image-to-Video (I2V)-based multi-agent framework for CSG. Inspired by Disney's "Combination of Straight Ahead and Pose to Pose" workflow, AnimeAgent leverages I2V's implicit motion prior to enhance consistency and expressiveness, while a mixed subjective-objective reviewer enables reliable iterative refinement. We also collect a human-annotated CSG benchmark with ground-truth. Experiments show AnimeAgent achieves SOTA performance in consistency, prompt fidelity, and stylization.</p>
+            <p class="paper-summary">Most text-to-video (T2V) generators prioritize aesthetic quality, but often ignoring the spatial constraints in the generated videos. In this work, we present SPATIALALIGN, a self-improvement framework that enhances T2V models capabilities to depict Dynamic Spatial Relationships (DSR) specified in text prompts. We present a zeroth-order regularized Direct Preference Optimization (DPO) to fine-tune T2V models towards better alignment with DSR. Specifically, we design DSR-SCORE, a geometry-based metric that quantitatively measures the alignment between generated videos and the specified DSRs in prompts, which is a step forward from prior works that rely on VLM for evaluation. We also conduct a dataset of text-video pairs with diverse DSRs to facilitate the study. Extensive experiments demonstrate that our fine-tuned model significantly out performs the baseline in spatial relationships. The code will be released in Link.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: AnimeAgent introduces an Image-to-Video (I2V) based multi-agent framework for custom storyboard generation (CSG) that addresses limitations of static diffusion models using a novel approach inspired by Disney's animation techniques, and it achieves SOTA performance.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces SPATIALALIGN, a self-improvement framework using zeroth-order regularized DPO and a geometry-based metric (DSR-SCORE) to improve text-to-video models' ability to generate videos that accurately depict dynamic spatial relationships specified in text prompts, along with a new dataset for this purpose.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: AnimeAgent 提出了一个基于图像到视频 (I2V) 的多智能体框架，用于定制故事板生成 (CSG)，该框架利用受迪士尼动画技术启发的新方法，解决了静态扩散模型的局限性，并实现了 SOTA 性能。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了SPATIALALIGN，一个自提升框架，它使用零阶正则化DPO和一个基于几何的指标（DSR-SCORE）来提高文本到视频模型生成准确描述文本提示中动态空间关系的视频的能力，并为此目的提供了一个新的数据集。</p>
             
 
             
@@ -420,16 +420,16 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
@@ -470,22 +470,22 @@
                     
                 
                     
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="fas fa-star"></i>
                     
                 
                     
                         <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2602.20664v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2602.22745v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Hailong Yan, Shice Liu, Tao Wang, Xiangtao Zhang, Yijie Zhong, Jinwei Chen, Le Zhang, Bo Li</p>
+            <p class="paper-authors">Authors: Fengming Liu, Tat-Jen Cham, Chuanxia Zheng</p>
             
         </motion.div>
         
@@ -497,14 +497,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">NovaPlan: Zero-Shot Long-Horizon Manipulation via Closed-Loop Video Language Planning</h2>
+            <h2 class="paper-title">Causal Motion Diffusion Models for Autoregressive Motion Generation</h2>
             
-            <p class="paper-summary">Solving long-horizon tasks requires robots to integrate high-level semantic reasoning with low-level physical interaction. While vision-language models (VLMs) and video generation models can decompose tasks and imagine outcomes, they often lack the physical grounding necessary for real-world execution. We introduce NovaPlan, a hierarchical framework that unifies closed-loop VLM and video planning with geometrically grounded robot execution for zero-shot long-horizon manipulation. At the high level, a VLM planner decomposes tasks into sub-goals and monitors robot execution in a closed loop, enabling the system to recover from single-step failures through autonomous re-planning. To compute low-level robot actions, we extract and utilize both task-relevant object keypoints and human hand poses as kinematic priors from the generated videos, and employ a switching mechanism to choose the better one as a reference for robot actions, maintaining stable execution even under heavy occlusion or depth inaccuracy. We demonstrate the effectiveness of NovaPlan on three long-horizon tasks and the Functional Manipulation Benchmark (FMB). Our results show that NovaPlan can perform complex assembly tasks and exhibit dexterous error recovery behaviors without any prior demonstrations or training. Project page: https://nova-plan.github.io/</p>
+            <p class="paper-summary">Recent advances in motion diffusion models have substantially improved the realism of human motion synthesis. However, existing approaches either rely on full-sequence diffusion models with bidirectional generation, which limits temporal causality and real-time applicability, or autoregressive models that suffer from instability and cumulative errors. In this work, we present Causal Motion Diffusion Models (CMDM), a unified framework for autoregressive motion generation based on a causal diffusion transformer that operates in a semantically aligned latent space. CMDM builds upon a Motion-Language-Aligned Causal VAE (MAC-VAE), which encodes motion sequences into temporally causal latent representations. On top of this latent representation, an autoregressive diffusion transformer is trained using causal diffusion forcing to perform temporally ordered denoising across motion frames. To achieve fast inference, we introduce a frame-wise sampling schedule with causal uncertainty, where each subsequent frame is predicted from partially denoised previous frames. The resulting framework supports high-quality text-to-motion generation, streaming synthesis, and long-horizon motion generation at interactive rates. Experiments on HumanML3D and SnapMoGen demonstrate that CMDM outperforms existing diffusion and autoregressive models in both semantic fidelity and temporal smoothness, while substantially reducing inference latency.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: NovaPlan uses a VLM planner and video generation to guide robot execution for long-horizon manipulation, leveraging keypoints and hand poses extracted from generated videos to control robot actions in a closed-loop, zero-shot manner, demonstrating strong performance in complex tasks.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Causal Motion Diffusion Models (CMDM), a novel framework for autoregressive motion generation using a causal diffusion transformer in a semantically aligned latent space, achieving high-quality text-to-motion, streaming synthesis, and long-horizon motion generation at interactive rates.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: NovaPlan利用视觉语言模型和视频生成来指导机器人执行长时程操作，通过从生成的视频中提取关键点和手部姿势来控制机器人动作，实现闭环和零样本学习。该系统在复杂任务中表现出色。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了因果运动扩散模型（CMDM），这是一种新颖的自回归运动生成框架，它在语义对齐的潜在空间中使用因果扩散transformer，实现了高质量的文本到运动、流式合成和交互速率下的长时程运动生成。</p>
             
 
             
@@ -522,24 +522,24 @@
                 <div class="rating-item">
                     <span class="rating-label">Novelty:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                     <span class="text-xs text-gray-500 ml-1">(9/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
+                    <span class="rating-label">Clarity:</span>
+                    
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                </div>
+                
+                
+                <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
             </div>
@@ -564,29 +564,29 @@
                     
                 
                     
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="fas fa-star"></i>
                     
                 
                     
                         <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2602.20119v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2602.22594v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Jiahui Fu, Junyu Nan, Lingfeng Sun, Hongyu Li, Jianing Qian, Jennifer L. Barry, Kris Kitani, George Konidaris</p>
+            <p class="paper-authors">Authors: Qing Yu, Akihisa Watanabe, Kent Fujiwara</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2026-02-27 03:32:31 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2026-02-27 03:36:29 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>
