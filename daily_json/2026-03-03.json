@@ -1,0 +1,24 @@
+[
+    {
+        "title": "FastLightGen: Fast and Light Video Generation with Fewer Steps and Parameters",
+        "summary": "The recent advent of powerful video generation models, such as Hunyuan, WanX, Veo3, and Kling, has inaugurated a new era in the field. However, the practical deployment of these models is severely impeded by their substantial computational overhead, which stems from enormous parameter counts and the iterative, multi-step sampling process required during inference. Prior research on accelerating generative models has predominantly followed two distinct trajectories: reducing the number of sampling steps (e.g., LCM, DMD, and MagicDistillation) or compressing the model size for more efficient inference (e.g., ICMD). The potential of simultaneously compressing both to create a fast and lightweight model remains an unexplored avenue. In this paper, we propose FastLightGen, an algorithm that transforms large, computationally expensive models into fast, lightweight counterparts. The core idea is to construct an optimal teacher model, one engineered to maximize student performance, within a synergistic framework for distilling both model size and inference steps. Our extensive experiments on HunyuanVideo-ATI2V and WanX-TI2V reveal that a generator using 4-step sampling and 30\\% parameter pruning achieves optimal visual quality under a constrained inference budget. Furthermore, FastLightGen consistently outperforms all competing methods, establishing a new state-of-the-art in efficient video generation.",
+        "url": "http://arxiv.org/abs/2603.01685v1",
+        "published_date": "2026-03-02T10:13:17+00:00",
+        "updated_date": "2026-03-02T10:13:17+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Shao Shitong",
+            "Gu Yufei",
+            "Xie Zeke"
+        ],
+        "tldr": "FastLightGen distills large video generation models into smaller, faster versions by simultaneously reducing model size and sampling steps, achieving state-of-the-art efficiency.",
+        "tldr_zh": "FastLightGen通过同时减少模型大小和采样步骤，将大型视频生成模型提炼成更小、更快的版本，从而实现最先进的效率。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
