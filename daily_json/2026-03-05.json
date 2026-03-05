@@ -1,0 +1,170 @@
+[
+    {
+        "title": "InfinityStory: Unlimited Video Generation with World Consistency and Character-Aware Shot Transitions",
+        "summary": "Generating long-form storytelling videos with consistent visual narratives remains a significant challenge in video synthesis. We present a novel framework, dataset, and a model that address three critical limitations: background consistency across shots, seamless multi-subject shot-to-shot transitions, and scalability to hour-long narratives. Our approach introduces a background-consistent generation pipeline that maintains visual coherence across scenes while preserving character identity and spatial relationships. We further propose a transition-aware video synthesis module that generates smooth shot transitions for complex scenarios involving multiple subjects entering or exiting frames, going beyond the single-subject limitations of prior work. To support this, we contribute with a synthetic dataset of 10,000 multi-subject transition sequences covering underrepresented dynamic scene compositions. On VBench, InfinityStory achieves the highest Background Consistency (88.94), highest Subject Consistency (82.11), and the best overall average rank (2.80), showing improved stability, smoother transitions, and better temporal coherence.",
+        "url": "http://arxiv.org/abs/2603.03646v1",
+        "published_date": "2026-03-04T02:10:32+00:00",
+        "updated_date": "2026-03-04T02:10:32+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Mohamed Elmoghany",
+            "Liangbing Zhao",
+            "Xiaoqian Shen",
+            "Subhojyoti Mukherjee",
+            "Yang Zhou",
+            "Gang Wu",
+            "Viet Dac Lai",
+            "Seunghyun Yoon",
+            "Ryan Rossi",
+            "Abdullah Rashwan",
+            "Puneet Mathur",
+            "Varun Manjunatha",
+            "Daksh Dangi",
+            "Chien Nguyen",
+            "Nedim Lipka",
+            "Trung Bui",
+            "Krishna Kumar Singh",
+            "Ruiyi Zhang",
+            "Xiaolei Huang",
+            "Jaemin Cho",
+            "Yu Wang",
+            "Namyong Park",
+            "Zhengzhong Tu",
+            "Hongjie Chen",
+            "Hoda Eldardiry",
+            "Nesreen Ahmed",
+            "Thien Nguyen",
+            "Dinesh Manocha",
+            "Mohamed Elhoseiny",
+            "Franck Dernoncourt"
+        ],
+        "tldr": "The paper introduces InfinityStory, a novel framework, dataset, and model for generating long-form videos with improved background consistency, seamless multi-subject shot transitions, and scalability, addressing key limitations in video synthesis.",
+        "tldr_zh": "该论文介绍了InfinityStory，一个用于生成长视频的新型框架、数据集和模型，它改进了背景一致性、无缝的多主体镜头过渡以及可扩展性，从而解决了视频合成中的关键限制。",
+        "relevance_score": 10,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "Beyond Pixel Histories: World Models with Persistent 3D State",
+        "summary": "Interactive world models continually generate video by responding to a user's actions, enabling open-ended generation capabilities. However, existing models typically lack a 3D representation of the environment, meaning 3D consistency must be implicitly learned from data, and spatial memory is restricted to limited temporal context windows. This results in an unrealistic user experience and presents significant obstacles to down-stream tasks such as training agents. To address this, we present PERSIST, a new paradigm of world model which simulates the evolution of a latent 3D scene: environment, camera, and renderer. This allows us to synthesize new frames with persistent spatial memory and consistent geometry. Both quantitative metrics and a qualitative user study show substantial improvements in spatial memory, 3D consistency, and long-horizon stability over existing methods, enabling coherent, evolving 3D worlds. We further demonstrate novel capabilities, including synthesising diverse 3D environments from a single image, as well as enabling fine-grained, geometry-aware control over generated experiences by supporting environment editing and specification directly in 3D space. Project page: https://francelico.github.io/persist.github.io",
+        "url": "http://arxiv.org/abs/2603.03482v1",
+        "published_date": "2026-03-03T19:58:31+00:00",
+        "updated_date": "2026-03-03T19:58:31+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.LG"
+        ],
+        "authors": [
+            "Samuel Garcin",
+            "Thomas Walker",
+            "Steven McDonagh",
+            "Tim Pearce",
+            "Hakan Bilen",
+            "Tianyu He",
+            "Kaixin Wang",
+            "Jiang Bian"
+        ],
+        "tldr": "The paper introduces PERSIST, a world model that simulates the evolution of a latent 3D scene for interactive video generation, improving spatial memory, 3D consistency, and long-horizon stability over existing methods.",
+        "tldr_zh": "该论文介绍了一种名为PERSIST的世界模型，它通过模拟潜在的3D场景演化来进行交互式视频生成，相比现有方法，提高了空间记忆、3D一致性和长期稳定性。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "PhyPrompt: RL-based Prompt Refinement for Physically Plausible Text-to-Video Generation",
+        "summary": "State-of-the-art text-to-video (T2V) generators frequently violate physical laws despite high visual quality. We show this stems from insufficient physical constraints in prompts rather than model limitations: manually adding physics details reliably produces physically plausible videos, but requires expertise and does not scale. We present PhyPrompt, a two-stage reinforcement learning framework that automatically refines prompts for physically realistic generation. First, we fine-tune a large language model on a physics-focused Chain-of-Thought dataset to integrate principles like object motion and force interactions while preserving user intent. Second, we apply Group Relative Policy Optimization with a dynamic reward curriculum that initially prioritizes semantic fidelity, then progressively shifts toward physical commonsense. This curriculum achieves synergistic optimization: PhyPrompt-7B reaches 40.8\\% joint success on VideoPhy2 (8.6pp gain), improving physical commonsense by 11pp (55.8\\% to 66.8\\%) while simultaneously increasing semantic adherence by 4.4pp (43.4\\% to 47.8\\%). Remarkably, our curriculum exceeds single-objective training on both metrics, demonstrating compositional prompt discovery beyond conventional multi-objective trade-offs. PhyPrompt outperforms GPT-4o (+3.8\\% joint) and DeepSeek-V3 (+2.2\\%, 100$\\times$ larger) using only 7B parameters. The approach transfers zero-shot across diverse T2V architectures (Lavie, VideoCrafter2, CogVideoX-5B) with up to 16.8\\% improvement, establishing that domain-specialized reinforcement learning with compositional curricula surpasses general-purpose scaling for physics-aware generation.",
+        "url": "http://arxiv.org/abs/2603.03505v1",
+        "published_date": "2026-03-03T20:26:14+00:00",
+        "updated_date": "2026-03-03T20:26:14+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Shang Wu",
+            "Chenwei Xu",
+            "Zhuofan Xia",
+            "Weijian Li",
+            "Lie Lu",
+            "Pranav Maneriker",
+            "Fan Du",
+            "Manling Li",
+            "Han Liu"
+        ],
+        "tldr": "The paper introduces PhyPrompt, a reinforcement learning framework that refines text prompts to generate physically plausible videos, outperforming larger models and generalizing across architectures.",
+        "tldr_zh": "该论文介绍了PhyPrompt，一个使用强化学习框架来优化文本提示以生成符合物理规律的视频的方法。该方法优于更大的模型，并且可以泛化到不同的视频生成架构。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Phys4D: Fine-Grained Physics-Consistent 4D Modeling from Video Diffusion",
+        "summary": "Recent video diffusion models have achieved impressive capabilities as large-scale generative world models. However, these models often struggle with fine-grained physical consistency, exhibiting physically implausible dynamics over time. In this work, we present \\textbf{Phys4D}, a pipeline for learning physics-consistent 4D world representations from video diffusion models. Phys4D adopts \\textbf{a three-stage training paradigm} that progressively lifts appearance-driven video diffusion models into physics-consistent 4D world representations. We first bootstrap robust geometry and motion representations through large-scale pseudo-supervised pretraining, establishing a foundation for 4D scene modeling. We then perform physics-grounded supervised fine-tuning using simulation-generated data, enforcing temporally consistent 4D dynamics. Finally, we apply simulation-grounded reinforcement learning to correct residual physical violations that are difficult to capture through explicit supervision. To evaluate fine-grained physical consistency beyond appearance-based metrics, we introduce a set of \\textbf{4D world consistency evaluation} that probe geometric coherence, motion stability, and long-horizon physical plausibility. Experimental results demonstrate that Phys4D substantially improves fine-grained spatiotemporal and physical consistency compared to appearance-driven baselines, while maintaining strong generative performance. Our project page is available at https://sensational-brioche-7657e7.netlify.app/",
+        "url": "http://arxiv.org/abs/2603.03485v1",
+        "published_date": "2026-03-03T20:01:43+00:00",
+        "updated_date": "2026-03-03T20:01:43+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.RO"
+        ],
+        "authors": [
+            "Haoran Lu",
+            "Shang Wu",
+            "Jianshu Zhang",
+            "Maojiang Su",
+            "Guo Ye",
+            "Chenwei Xu",
+            "Lie Lu",
+            "Pranav Maneriker",
+            "Fan Du",
+            "Manling Li",
+            "Zhaoran Wang",
+            "Han Liu"
+        ],
+        "tldr": "Phys4D introduces a three-stage pipeline to improve the physical consistency of video diffusion models, using pre-training, supervised fine-tuning with simulation data, and reinforcement learning to achieve more plausible 4D dynamics.",
+        "tldr_zh": "Phys4D 提出了一个三阶段流程，通过预训练、使用模拟数据进行有监督微调以及强化学习来提升视频扩散模型在物理上的一致性，从而实现更合理的 4D 动态效果。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "CubeComposer: Spatio-Temporal Autoregressive 4K 360° Video Generation from Perspective Video",
+        "summary": "Generating high-quality 360° panoramic videos from perspective input is one of the crucial applications for virtual reality (VR), whereby high-resolution videos are especially important for immersive experience. Existing methods are constrained by computational limitations of vanilla diffusion models, only supporting $\\leq$ 1K resolution native generation and relying on suboptimal post super-resolution to increase resolution. We introduce CubeComposer, a novel spatio-temporal autoregressive diffusion model that natively generates 4K-resolution 360° videos. By decomposing videos into cubemap representations with six faces, CubeComposer autoregressively synthesizes content in a well-planned spatio-temporal order, reducing memory demands while enabling high-resolution output. Specifically, to address challenges in multi-dimensional autoregression, we propose: (1) a spatio-temporal autoregressive strategy that orchestrates 360° video generation across cube faces and time windows for coherent synthesis; (2) a cube face context management mechanism, equipped with a sparse context attention design to improve efficiency; and (3) continuity-aware techniques, including cube-aware positional encoding, padding, and blending to eliminate boundary seams. Extensive experiments on benchmark datasets demonstrate that CubeComposer outperforms state-of-the-art methods in native resolution and visual quality, supporting practical VR application scenarios. Project page: https://lg-li.github.io/project/cubecomposer",
+        "url": "http://arxiv.org/abs/2603.04291v1",
+        "published_date": "2026-03-04T17:06:56+00:00",
+        "updated_date": "2026-03-04T17:06:56+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Lingen Li",
+            "Guangzhi Wang",
+            "Xiaoyu Li",
+            "Zhaoyang Zhang",
+            "Qi Dou",
+            "Jinwei Gu",
+            "Tianfan Xue",
+            "Ying Shan"
+        ],
+        "tldr": "CubeComposer is a novel spatio-temporal autoregressive diffusion model that natively generates 4K-resolution 360° videos from perspective video, addressing computational limitations of previous methods.",
+        "tldr_zh": "CubeComposer 是一种新型的时空自回归扩散模型，可以直接从透视视频生成 4K 分辨率的 360° 视频，解决了现有方法的计算限制。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]
