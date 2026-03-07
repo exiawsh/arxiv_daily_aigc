@@ -1,0 +1,51 @@
+[
+    {
+        "title": "FaceCam: Portrait Video Camera Control via Scale-Aware Conditioning",
+        "summary": "We introduce FaceCam, a system that generates video under customizable camera trajectories for monocular human portrait video input. Recent camera control approaches based on large video-generation models have shown promising progress but often exhibit geometric distortions and visual artifacts on portrait videos due to scale-ambiguous camera representations or 3D reconstruction errors. To overcome these limitations, we propose a face-tailored scale-aware representation for camera transformations that provides deterministic conditioning without relying on 3D priors. We train a video generation model on both multi-view studio captures and in-the-wild monocular videos, and introduce two camera-control data generation strategies: synthetic camera motion and multi-shot stitching, to exploit stationary training cameras while generalizing to dynamic, continuous camera trajectories at inference time. Experiments on Ava-256 dataset and diverse in-the-wild videos demonstrate that FaceCam achieves superior performance in camera controllability, visual quality, identity and motion preservation.",
+        "url": "http://arxiv.org/abs/2603.05506v1",
+        "published_date": "2026-03-05T18:59:58+00:00",
+        "updated_date": "2026-03-05T18:59:58+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Weijie Lyu",
+            "Ming-Hsuan Yang",
+            "Zhixin Shu"
+        ],
+        "tldr": "FaceCam introduces a scale-aware camera control method for portrait video generation that avoids 3D priors, leading to improved camera controllability, visual quality, and identity preservation compared to existing approaches.",
+        "tldr_zh": "FaceCam提出了一种用于人像视频生成的尺度感知相机控制方法，该方法避免了3D先验，与现有方法相比，在相机可控性、视觉质量和身份保持方面都有所改进。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "RealWonder: Real-Time Physical Action-Conditioned Video Generation",
+        "summary": "Current video generation models cannot simulate physical consequences of 3D actions like forces and robotic manipulations, as they lack structural understanding of how actions affect 3D scenes. We present RealWonder, the first real-time system for action-conditioned video generation from a single image. Our key insight is using physics simulation as an intermediate bridge: instead of directly encoding continuous actions, we translate them through physics simulation into visual representations (optical flow and RGB) that video models can process. RealWonder integrates three components: 3D reconstruction from single images, physics simulation, and a distilled video generator requiring only 4 diffusion steps. Our system achieves 13.2 FPS at 480x832 resolution, enabling interactive exploration of forces, robot actions, and camera controls on rigid objects, deformable bodies, fluids, and granular materials. We envision RealWonder opens new opportunities to apply video models in immersive experiences, AR/VR, and robot learning. Our code and model weights are publicly available in our project website: https://liuwei283.github.io/RealWonder/",
+        "url": "http://arxiv.org/abs/2603.05449v1",
+        "published_date": "2026-03-05T18:22:54+00:00",
+        "updated_date": "2026-03-05T18:22:54+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.GR"
+        ],
+        "authors": [
+            "Wei Liu",
+            "Ziyu Chen",
+            "Zizhang Li",
+            "Yue Wang",
+            "Hong-Xing Yu",
+            "Jiajun Wu"
+        ],
+        "tldr": "RealWonder is a real-time action-conditioned video generation system that uses physics simulation as an intermediate representation to generate videos based on single images, enabling interactive exploration of physical interactions.",
+        "tldr_zh": "RealWonder是一个实时的动作条件视频生成系统，它使用物理仿真作为中间表示，从单张图像生成视频，从而实现对物理交互的交互式探索。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
