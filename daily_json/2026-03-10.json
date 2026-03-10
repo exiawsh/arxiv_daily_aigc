@@ -1,0 +1,162 @@
+[
+    {
+        "title": "HiAR: Efficient Autoregressive Long Video Generation via Hierarchical Denoising",
+        "summary": "Autoregressive (AR) diffusion offers a promising framework for generating videos of theoretically infinite length. However, a major challenge is maintaining temporal continuity while preventing the progressive quality degradation caused by error accumulation. To ensure continuity, existing methods typically condition on highly denoised contexts; yet, this practice propagates prediction errors with high certainty, thereby exacerbating degradation. In this paper, we argue that a highly clean context is unnecessary. Drawing inspiration from bidirectional diffusion models, which denoise frames at a shared noise level while maintaining coherence, we propose that conditioning on context at the same noise level as the current block provides sufficient signal for temporal consistency while effectively mitigating error propagation. Building on this insight, we propose HiAR, a hierarchical denoising framework that reverses the conventional generation order: instead of completing each block sequentially, it performs causal generation across all blocks at every denoising step, so that each block is always conditioned on context at the same noise level. This hierarchy naturally admits pipelined parallel inference, yielding a 1.8 wall-clock speedup in our 4-step setting. We further observe that self-rollout distillation under this paradigm amplifies a low-motion shortcut inherent to the mode-seeking reverse-KL objective. To counteract this, we introduce a forward-KL regulariser in bidirectional-attention mode, which preserves motion diversity for causal inference without interfering with the distillation loss. On VBench (20s generation), HiAR achieves the best overall score and the lowest temporal drift among all compared methods.",
+        "url": "http://arxiv.org/abs/2603.08703v1",
+        "published_date": "2026-03-09T17:58:16+00:00",
+        "updated_date": "2026-03-09T17:58:16+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Kai Zou",
+            "Dian Zheng",
+            "Hongbo Liu",
+            "Tiankai Hang",
+            "Bin Liu",
+            "Nenghai Yu"
+        ],
+        "tldr": "The paper introduces HiAR, a hierarchical denoising framework for efficient autoregressive long video generation, which maintains temporal continuity and mitigates error propagation by conditioning on context at the same noise level. It achieves state-of-the-art performance on VBench with faster inference speed.",
+        "tldr_zh": "该论文介绍了HiAR，一种用于高效自回归长视频生成的分层去噪框架，通过在相同噪声水平下对上下文进行调节，保持时间连续性并减轻误差传播。它在VBench上实现了最先进的性能，并具有更快的推理速度。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "PRISM: Streaming Human Motion Generation with Per-Joint Latent Decomposition",
+        "summary": "Text-to-motion generation has advanced rapidly, yet two challenges persist. First, existing motion autoencoders compress each frame into a single monolithic latent vector, entangling trajectory and per-joint rotations in an unstructured representation that downstream generators struggle to model faithfully. Second, text-to-motion, pose-conditioned generation, and long-horizon sequential synthesis typically require separate models or task-specific mechanisms, with autoregressive approaches suffering from severe error accumulation over extended rollouts.\n  We present PRISM, addressing each challenge with a dedicated contribution. (1) A joint-factorized motion latent space: each body joint occupies its own token, forming a structured 2D grid (time\n  joints) compressed by a causal VAE with forward-kinematics supervision. This simple change to the latent space -- without modifying the generator -- substantially improves generation quality, revealing that latent space design has been an underestimated bottleneck. (2) Noise-free condition injection: each latent token carries its own timestep embedding, allowing conditioning frames to be injected as clean tokens (timestep0) while the remaining tokens are denoised. This unifies text-to-motion and pose-conditioned generation in a single model, and directly enables autoregressive segment chaining for streaming synthesis. Self-forcing training further suppresses drift in long rollouts. With these two components, we train a single motion generation foundation model that seamlessly handles text-to-motion, pose-conditioned generation, autoregressive sequential generation, and narrative motion composition, achieving state-of-the-art on HumanML3D, MotionHub, BABEL, and a 50-scenario user study.",
+        "url": "http://arxiv.org/abs/2603.08590v1",
+        "published_date": "2026-03-09T16:41:15+00:00",
+        "updated_date": "2026-03-09T16:41:15+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Zeyu Ling",
+            "Qing Shuai",
+            "Teng Zhang",
+            "Shiyang Li",
+            "Bo Han",
+            "Changqing Zou"
+        ],
+        "tldr": "PRISM presents a new motion generation model with joint-factorized latent space and noise-free condition injection, enabling state-of-the-art results across various motion generation tasks and long-horizon synthesis.",
+        "tldr_zh": "PRISM 提出了一种新的运动生成模型，具有关节分解的潜在空间和无噪声条件注入，从而在各种运动生成任务和长程合成中实现了最先进的结果。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "SPIRAL: A Closed-Loop Framework for Self-Improving Action World Models via Reflective Planning Agents",
+        "summary": "We introduce SPIRAL, a self-improving planning and iterative reflective action world modeling closed-loop framework that enables controllable long-horizon video generation conditioned on high-level semantic actions. Existing one-shot video generation models operate in open-loop, often resulting in incomplete action execution, weak semantic grounding, and temporal drift. SPIRAL formulates ActWM as a closed-loop think-act-reflect process, where generation proceeds step by step under explicit planning and feedback. A PlanAgent decomposes abstract actions into object-centric sub-actions, while a CriticAgent evaluates intermediate results and guides iterative refinement with long-horizon memory. This closed-loop design naturally supports RL evolving optimization, improving semantic alignment and temporal consistency over extended horizons. We further introduce the ActWM-Dataset and ActWM-Bench for training and evaluation. Experiments across multiple TI2V backbones demonstrate consistent gains on ActWM-Bench and mainstream video generation benchmarks, validating SPIRAL's effectiveness.",
+        "url": "http://arxiv.org/abs/2603.08403v1",
+        "published_date": "2026-03-09T14:00:36+00:00",
+        "updated_date": "2026-03-09T14:00:36+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yu Yang",
+            "Yue Liao",
+            "Jianbiao Mei",
+            "Baisen Wang",
+            "Xuemeng Yang",
+            "Licheng Wen",
+            "Jiangning Zhang",
+            "Xiangtai Li",
+            "Hanlin Chen",
+            "Botian Shi",
+            "Yong Liu",
+            "Shuicheng Yan",
+            "Gim Hee Lee"
+        ],
+        "tldr": "SPIRAL is a closed-loop framework for long-horizon video generation that uses a planning agent and a critic agent for iterative refinement, showing improved semantic alignment and temporal consistency.",
+        "tldr_zh": "SPIRAL是一个闭环框架，用于长时程视频生成，它使用规划代理和评论代理进行迭代改进，从而提高语义对齐和时间一致性。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "StructBiHOI: Structured Articulation Modeling for Long--Horizon Bimanual Hand--Object Interaction Generation",
+        "summary": "Recent progress in 3D hand--object interaction (HOI) generation has primarily focused on single--hand grasp synthesis, while bimanual manipulation remains significantly more challenging. Long--horizon planning instability, fine--grained joint articulation, and complex cross--hand coordination make coherent bimanual generation difficult, especially under multimodal conditions. Existing approaches often struggle to simultaneously ensure temporal consistency, physical plausibility, and semantic alignment over extended sequences. We propose StructBiHOI, a Structured articulation modeling framework for long-horizon Bimanual HOI generation. Our key insight is to structurally disentangle temporal joint planning from frame--level manipulation refinement. Specifically, a jointVAE models long-term joint evolution conditioned on object geometry and task semantics, while a maniVAE refines fine-grained hand poses at the single--frame level. To enable stable and efficient long--sequence generation, we incorporate a state--space--inspired diffusion denoiser based on Mamba, which models long--range dependencies with linear complexity. This hierarchical design facilitates coherent dual-hand coordination and articulated object interaction. Extensive experiments on bimanual manipulation and single-hand grasping benchmarks demonstrate that our method achieves superior long--horizon stability, motion realism, and computational efficiency compared to strong baselines.",
+        "url": "http://arxiv.org/abs/2603.08390v1",
+        "published_date": "2026-03-09T13:47:06+00:00",
+        "updated_date": "2026-03-09T13:47:06+00:00",
+        "categories": [
+            "cs.RO",
+            "cs.CV"
+        ],
+        "authors": [
+            "Zhi Wang",
+            "Liu Liu",
+            "Ruonan Liu",
+            "Dan Guo",
+            "Meng Wang"
+        ],
+        "tldr": "The paper introduces StructBiHOI, a novel framework for generating long-horizon bimanual hand-object interactions by disentangling temporal joint planning from frame-level refinement using a hierarchical VAE and a Mamba-based diffusion denoiser.",
+        "tldr_zh": "该论文介绍了StructBiHOI，一种用于生成长时程双手与物体交互的新框架，通过使用分层VAE和基于Mamba的扩散降噪器，将时间关节规划与帧级细化解耦。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Video2LoRA: Unified Semantic-Controlled Video Generation via Per-Reference-Video LoRA",
+        "summary": "Achieving semantic alignment across diverse video generation conditions remains a significant challenge. Methods that rely on explicit structural guidance often enforce rigid spatial constraints that limit semantic flexibility, whereas models tailored for individual control types lack interoperability and adaptability. These design bottlenecks hinder progress toward flexible and efficient semantic video generation. To address this, we propose Video2LoRA, a scalable and generalizable framework for semantic-controlled video generation that conditions on a reference video. Video2LoRA employs a lightweight hypernetwork to predict personalized LoRA weights for each semantic input, which are combined with auxiliary matrices to form adaptive LoRA modules integrated into a frozen diffusion backbone. This design enables the model to generate videos consistent with the reference semantics while preserving key style and content variations, eliminating the need for any per-condition training. Notably, the final model weights less than 150MB, making it highly efficient for storage and deployment. Video2LoRA achieves coherent, semantically aligned generation across diverse conditions and exhibits strong zero-shot generalization to unseen semantics.",
+        "url": "http://arxiv.org/abs/2603.08210v1",
+        "published_date": "2026-03-09T10:40:03+00:00",
+        "updated_date": "2026-03-09T10:40:03+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Zexi Wu",
+            "Qinghe Wang",
+            "Jing Dai",
+            "Baolu Li",
+            "Yiming Zhang",
+            "Yue Ma",
+            "Xu Jia",
+            "Hongming Xu"
+        ],
+        "tldr": "Video2LoRA is a framework for semantic-controlled video generation using a reference video and lightweight LoRA modules, achieving semantic alignment and zero-shot generalization without per-condition training.",
+        "tldr_zh": "Video2LoRA是一个语义控制视频生成的框架，它使用参考视频和轻量级的LoRA模块，实现了语义对齐和零样本泛化，而无需针对每个条件进行训练。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Controllable Complex Human Motion Video Generation via Text-to-Skeleton Cascades",
+        "summary": "Generating videos of complex human motions such as flips, cartwheels, and martial arts remains challenging for current video diffusion models. Text-only conditioning is temporally ambiguous for fine-grained motion control, while explicit pose-based controls, though effective, require users to provide complete skeleton sequences that are costly to produce for long and dynamic actions.\n  We propose a two-stage cascaded framework that addresses both limitations. First, an autoregressive text-to-skeleton model generates 2D pose sequences from natural language descriptions by predicting each joint conditioned on previously generated poses. This design captures long-range temporal dependencies and inter-joint coordination required for complex motions. Second, a pose-conditioned video diffusion model synthesizes videos from a reference image and the generated skeleton sequence. It employs DINO-ALF (Adaptive Layer Fusion), a multi-level reference encoder that preserves appearance and clothing details under large pose changes and self-occlusions.\n  To address the lack of publicly available datasets for complex human motion video generation, we introduce a Blender-based synthetic dataset containing 2,000 videos with diverse characters performing acrobatic and stunt-like motions. The dataset provides full control over appearance, motion, and environment. It fills an important gap because existing benchmarks significantly under-represent acrobatic motions while web-collected datasets raise copyright and privacy concerns.\n  Experiments on our synthetic dataset and the Motion-X Fitness benchmark show that our text-to-skeleton model outperforms prior methods on FID, R-precision, and motion diversity. Our pose-to-video model also achieves the best results among all compared methods on VBench metrics for temporal consistency, motion smoothness, and subject preservation.",
+        "url": "http://arxiv.org/abs/2603.08028v1",
+        "published_date": "2026-03-09T07:04:29+00:00",
+        "updated_date": "2026-03-09T07:04:29+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.MM"
+        ],
+        "authors": [
+            "Ashkan Taghipour",
+            "Morteza Ghahremani",
+            "Zinuo Li",
+            "Hamid Laga",
+            "Farid Boussaid",
+            "Mohammed Bennamoun"
+        ],
+        "tldr": "This paper introduces a two-stage cascaded framework for generating complex human motion videos from text descriptions, using a text-to-skeleton model followed by a pose-conditioned video diffusion model, and provides a new synthetic dataset for training.",
+        "tldr_zh": "该论文介绍了一个两阶段级联框架，用于从文本描述生成复杂的人体运动视频，使用文本到骨骼模型，然后使用姿势条件视频扩散模型，并提供了一个新的合成数据集用于训练。",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    }
+]

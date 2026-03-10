@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArXiv CS.CV Papers (Image/Video Generation) - February 27, 2026</title>
+    <title>ArXiv CS.CV Papers (Image/Video Generation) - March 09, 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
     <!-- Example using Font Awesome (replace with your preferred icon library if needed) -->
@@ -200,7 +200,7 @@
         <h1>AIGC Daily Papers</h1>
         <p>Daily papers related to Image/Video/Multimodal Generation from cs.CV</p>
         
-            <p>February 27, 2026</p>
+            <p>March 09, 2026</p>
         
         <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div> <!-- Added line graphic -->
     </motion.div>
@@ -215,14 +215,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">ColoDiff: Integrating Dynamic Consistency With Content Awareness for Colonoscopy Video Generation</h2>
+            <h2 class="paper-title">Compression as Adaptation: Implicit Visual Representation with Diffusion Foundation Models</h2>
             
-            <p class="paper-summary">Colonoscopy video generation delivers dynamic, information-rich data critical for diagnosing intestinal diseases, particularly in data-scarce scenarios. High-quality video generation demands temporal consistency and precise control over clinical attributes, but faces challenges from irregular intestinal structures, diverse disease representations, and various imaging modalities. To this end, we propose ColoDiff, a diffusion-based framework that generates dynamic-consistent and content-aware colonoscopy videos, aiming to alleviate data shortage and assist clinical analysis. At the inter-frame level, our TimeStream module decouples temporal dependency from video sequences through a cross-frame tokenization mechanism, enabling intricate dynamic modeling despite irregular intestinal structures. At the intra-frame level, our Content-Aware module incorporates noise-injected embeddings and learnable prototypes to realize precise control over clinical attributes, breaking through the coarse guidance of diffusion models. Additionally, ColoDiff employs a non-Markovian sampling strategy that cuts steps by over 90% for real-time generation. ColoDiff is evaluated across three public datasets and one hospital database, based on both generation metrics and downstream tasks including disease diagnosis, modality discrimination, bowel preparation scoring, and lesion segmentation. Extensive experiments show ColoDiff generates videos with smooth transitions and rich dynamics. ColoDiff presents an effort in controllable colonoscopy video generation, revealing the potential of synthetic videos in complementing authentic representation and mitigating data scarcity in clinical settings.</p>
+            <p class="paper-summary">Modern visual generative models acquire rich visual knowledge through large-scale training, yet existing visual representations (such as pixels, latents, or tokens) remain external to the model and cannot directly exploit this knowledge for compact storage or reuse. In this work, we introduce a new visual representation framework that encodes a signal as a function, which is parametrized by low-rank adaptations attached to a frozen visual generative model. Such implicit representations of visual signals, \textit{e.g.}, an 81-frame video, can further be hashed into a single compact vector, achieving strong perceptual video compression at extremely low bitrates. Beyond basic compression, the functional nature of this representation enables inference-time scaling and control, allowing additional refinement on the compression performance. More broadly, as the implicit representations directly act as a function of the generation process, this suggests a unified framework bridging visual compression and generation.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: ColoDiff is a diffusion-based framework for generating dynamic and content-aware colonoscopy videos, addressing data scarcity in clinical analysis by enabling control over clinical attributes and achieving real-time generation.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper introduces a novel visual representation framework that leverages low-rank adaptations to a frozen diffusion model for compact video compression, enabling scaling and control during inference.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: ColoDiff是一个基于扩散模型的框架，用于生成动态且内容感知的结肠镜视频，通过控制临床属性和实现实时生成来解决临床分析中的数据稀缺问题。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了一种新的视觉表示框架，它利用冻结的扩散模型的低秩适应来进行紧凑的视频压缩，从而在推理过程中实现缩放和控制。</p>
             
 
             
@@ -293,11 +293,11 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2602.23203v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2603.07615v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Junhu Fu, Shuyu Liang, Wutong Li, Chen Ma, Peng Huang, Kehao Wang, Ke Chen, Shengli Lin, Pinghong Zhou, Zeju Li, Yuanyuan Wang, Yi Guo</p>
+            <p class="paper-authors">Authors: Jiajun He, Zongyu Guo, Zhaoyang Jia, Xiaoyi Zhang, Jiahao Li, Xiao Li, Bin Li, José Miguel Hernández-Lobato, Yan Lu</p>
             
         </motion.div>
         
@@ -309,14 +309,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">UCM: Unifying Camera Control and Memory with Time-aware Positional Encoding Warping for World Models</h2>
+            <h2 class="paper-title">How Long Can Unified Multimodal Models Generate Images Reliably? Taming Long-Horizon Interleaved Image Generation via Context Curation</h2>
             
-            <p class="paper-summary">World models based on video generation demonstrate remarkable potential for simulating interactive environments but face persistent difficulties in two key areas: maintaining long-term content consistency when scenes are revisited and enabling precise camera control from user-provided inputs. Existing methods based on explicit 3D reconstruction often compromise flexibility in unbounded scenarios and fine-grained structures. Alternative methods rely directly on previously generated frames without establishing explicit spatial correspondence, thereby constraining controllability and consistency. To address these limitations, we present UCM, a novel framework that unifies long-term memory and precise camera control via a time-aware positional encoding warping mechanism. To reduce computational overhead, we design an efficient dual-stream diffusion transformer for high-fidelity generation. Moreover, we introduce a scalable data curation strategy utilizing point-cloud-based rendering to simulate scene revisiting, facilitating training on over 500K monocular videos. Extensive experiments on real-world and synthetic benchmarks demonstrate that UCM significantly outperforms state-of-the-art methods in long-term scene consistency, while also achieving precise camera controllability in high-fidelity video generation.</p>
+            <p class="paper-summary">Unified multimodal models hold the promise of generating extensive, interleaved narratives, weaving text and imagery into coherent long-form stories. However, current systems suffer from a critical reliability gap: as sequences grow, generation quality rapidly collapses. In this work, we investigate the mechanism behind this failure and argue that it is distinct from standard long-context challenges. We reveal that in generation, accumulated visual history acts as a source of active pollution, a decay governed specifically by the number of image events rather than raw token count. We identify a structural vulnerability where dense visual tokens overwhelm the attention mechanism, creating noise that distorts future synthesis. Guided by these mechanistic insights, we propose UniLongGen, a training-free inference strategy that prioritizes safe conditioning over total recall. Instead of retaining all history, UniLongGen dynamically curates the model's memory, identifying and discarding interfering visual signals based on the model's own internal relevance rankings. Extensive experiments demonstrate that this active forgetting approach is essential for stability: UniLongGen significantly outperforms baselines in long-horizon fidelity and consistency, while simultaneously reducing memory footprint and inference time.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces UCM, a framework unifying long-term memory and precise camera control in world models using time-aware positional encoding warping, achieving superior performance in long-term scene consistency and camera controllability for high-fidelity video generation.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: This paper addresses the problem of collapsing generation quality in long-horizon interleaved text and image generation, proposing a training-free inference strategy called UniLongGen that dynamically curates visual context to improve fidelity and consistency.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了一种名为UCM的框架，它通过时间感知位置编码扭曲统一了世界模型中的长期记忆和精确的相机控制，从而在高保真视频生成中实现了卓越的长期场景一致性和相机可控性。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 本文解决了长时程交错文本和图像生成中生成质量崩溃的问题，提出了一种名为UniLongGen的免训练推理策略，该策略动态地管理视觉上下文，以提高保真度和一致性。</p>
             
 
             
@@ -326,8 +326,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
                 </div>
                 
                 
@@ -387,11 +387,11 @@
             </div>
             
 
-            <a href="http://arxiv.org/abs/2602.22960v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2603.07540v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Tianxing Xu, Zixuan Wang, Guangyuan Wang, Li Hu, Zhongyi Zhang, Peng Zhang, Bang Zhang, Song-Hai Zhang</p>
+            <p class="paper-authors">Authors: Haoyu Chen, Qing Liu, Yuqian Zhou, He Zhang, Zhaowen Wang, Mengwei Ren, Jingjing Ren, Xiang Wang, Zhe Lin, Lei Zhu</p>
             
         </motion.div>
         
@@ -403,14 +403,14 @@
             class="bento-item"
             data-motion-element
         >
-            <h2 class="paper-title">SPATIALALIGN: Aligning Dynamic Spatial Relationships in Video Generation</h2>
+            <h2 class="paper-title">FrameVGGT: Frame Evidence Rolling Memory for streaming VGGT</h2>
             
-            <p class="paper-summary">Most text-to-video (T2V) generators prioritize aesthetic quality, but often ignoring the spatial constraints in the generated videos. In this work, we present SPATIALALIGN, a self-improvement framework that enhances T2V models capabilities to depict Dynamic Spatial Relationships (DSR) specified in text prompts. We present a zeroth-order regularized Direct Preference Optimization (DPO) to fine-tune T2V models towards better alignment with DSR. Specifically, we design DSR-SCORE, a geometry-based metric that quantitatively measures the alignment between generated videos and the specified DSRs in prompts, which is a step forward from prior works that rely on VLM for evaluation. We also conduct a dataset of text-video pairs with diverse DSRs to facilitate the study. Extensive experiments demonstrate that our fine-tuned model significantly out performs the baseline in spatial relationships. The code will be released in Link.</p>
+            <p class="paper-summary">Streaming Visual Geometry Transformers such as StreamVGGT enable strong online 3D perception but suffer from unbounded KV-cache growth, which limits deployment over long streams. We revisit bounded-memory streaming from the perspective of geometric support. In geometry-driven reasoning, memory quality depends not only on how many tokens are retained, but also on whether the retained memory still preserves sufficiently coherent local support. This suggests that token-level retention may become less suitable under fixed budgets, as it can thin the evidence available within each contributing frame and make subsequent fusion more sensitive to weakly aligned history. Motivated by this observation, we propose FrameVGGT, a frame-driven rolling explicit-memory framework that treats each frame's incremental KV contribution as a coherent evidence block. FrameVGGT summarizes each block into a compact prototype and maintains a fixed-capacity mid-term bank of complementary frame blocks under strict budgets, with an optional lightweight anchor tier for rare prolonged degradation. Across long-sequence 3D reconstruction, video depth estimation, and camera pose benchmarks, FrameVGGT achieves favorable accuracy--memory trade-offs under bounded memory, while maintaining more stable geometry over long streams.</p>
             
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces SPATIALALIGN, a self-improvement framework using zeroth-order regularized DPO and a geometry-based metric (DSR-SCORE) to improve text-to-video models' ability to generate videos that accurately depict dynamic spatial relationships specified in text prompts, along with a new dataset for this purpose.</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces FrameVGGT, a frame-driven rolling memory framework for streaming Visual Geometry Transformers, addressing the unbounded memory growth issue in long video streams by maintaining coherent geometric support with a fixed-capacity frame block memory.</p>
             
             
-            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了SPATIALALIGN，一个自提升框架，它使用零阶正则化DPO和一个基于几何的指标（DSR-SCORE）来提高文本到视频模型生成准确描述文本提示中动态空间关系的视频的能力，并为此目的提供了一个新的数据集。</p>
+            <p class="paper-tldr"><strong>TLDR</strong>: 该论文介绍了FrameVGGT，一个帧驱动的滚动内存框架，用于流式视觉几何Transformer，通过维护固定容量的帧块内存中的连贯几何支持，解决了长视频流中无界内存增长的问题。</p>
             
 
             
@@ -420,8 +420,8 @@
                 <div class="rating-item">
                     <span class="rating-label">Relevance:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(3/10)</span>
                 </div>
                 
                 
@@ -436,16 +436,16 @@
                 <div class="rating-item">
                     <span class="rating-label">Clarity:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
                 </div>
                 
                 
                 <div class="rating-item">
                     <span class="rating-label">Potential Impact:</span>
                     
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-xs text-gray-500 ml-1">(6/10)</span>
                 </div>
                 
             </div>
@@ -466,127 +466,33 @@
                     
                 
                     
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     
                 
                     
                         <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-            </div>
-            
-
-            <a href="http://arxiv.org/abs/2602.22745v1" target="_blank" class="paper-link">
-                <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
-            </a>
-            
-            <p class="paper-authors">Authors: Fengming Liu, Tat-Jen Cham, Chuanxia Zheng</p>
-            
-        </motion.div>
-        
-        <motion.div
-            initial="{ opacity: 0, y: 50, scale: 0.9 }"
-            whileInView="{ opacity: 1, y: 0, scale: 1 }"
-            viewport="{ once: true, amount: 0.2 }" /* Trigger when 20% is visible */
-            transition="{ duration: 0.5, delay: 0.15000000000000002, ease: 'easeOut' }"  
-            class="bento-item"
-            data-motion-element
-        >
-            <h2 class="paper-title">Causal Motion Diffusion Models for Autoregressive Motion Generation</h2>
-            
-            <p class="paper-summary">Recent advances in motion diffusion models have substantially improved the realism of human motion synthesis. However, existing approaches either rely on full-sequence diffusion models with bidirectional generation, which limits temporal causality and real-time applicability, or autoregressive models that suffer from instability and cumulative errors. In this work, we present Causal Motion Diffusion Models (CMDM), a unified framework for autoregressive motion generation based on a causal diffusion transformer that operates in a semantically aligned latent space. CMDM builds upon a Motion-Language-Aligned Causal VAE (MAC-VAE), which encodes motion sequences into temporally causal latent representations. On top of this latent representation, an autoregressive diffusion transformer is trained using causal diffusion forcing to perform temporally ordered denoising across motion frames. To achieve fast inference, we introduce a frame-wise sampling schedule with causal uncertainty, where each subsequent frame is predicted from partially denoised previous frames. The resulting framework supports high-quality text-to-motion generation, streaming synthesis, and long-horizon motion generation at interactive rates. Experiments on HumanML3D and SnapMoGen demonstrate that CMDM outperforms existing diffusion and autoregressive models in both semantic fidelity and temporal smoothness, while substantially reducing inference latency.</p>
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: The paper introduces Causal Motion Diffusion Models (CMDM), a novel framework for autoregressive motion generation using a causal diffusion transformer in a semantically aligned latent space, achieving high-quality text-to-motion, streaming synthesis, and long-horizon motion generation at interactive rates.</p>
-            
-            
-            <p class="paper-tldr"><strong>TLDR</strong>: 本文介绍了因果运动扩散模型（CMDM），这是一种新颖的自回归运动生成框架，它在语义对齐的潜在空间中使用因果扩散transformer，实现了高质量的文本到运动、流式合成和交互速率下的长时程运动生成。</p>
-            
-
-            
-            
-            <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
-                
-                <div class="rating-item">
-                    <span class="rating-label">Relevance:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(7/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Novelty:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span class="text-xs text-gray-500 ml-1">(9/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Clarity:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-                
-                <div class="rating-item">
-                    <span class="rating-label">Potential Impact:</span>
-                    
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    <span class="text-xs text-gray-500 ml-1">(8/10)</span>
-                </div>
-                
-            </div>
-            
-            
-
-            
-            <div class="paper-rating">
-                <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
-                
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
-                    
-                        <i class="fas fa-star"></i>
-                    
-                
                     
                         <i class="far fa-star"></i>
                     
                 
-                <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+                <span class="text-xs text-gray-500 ml-1">(5/10)</span>
             </div>
             
 
-            <a href="http://arxiv.org/abs/2602.22594v1" target="_blank" class="paper-link">
+            <a href="http://arxiv.org/abs/2603.07690v1" target="_blank" class="paper-link">
                 <i class="fas fa-file-pdf mr-1"></i> Read Paper (PDF)
             </a>
             
-            <p class="paper-authors">Authors: Qing Yu, Akihisa Watanabe, Kent Fujiwara</p>
+            <p class="paper-authors">Authors: Zhisong Xu, Takeshi Oishi</p>
             
         </motion.div>
         
     </div>
 
     <footer class="footer">
-        Generated on 2026-03-10 03:28:49 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
+        Generated on 2026-03-10 03:31:05 UTC. Powered by <a href="https://github.com/onion-liu" target="_blank">onion-liu</a>.
     </footer>
 
 </body>

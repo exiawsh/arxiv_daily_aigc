@@ -1,0 +1,82 @@
+[
+    {
+        "title": "Compression as Adaptation: Implicit Visual Representation with Diffusion Foundation Models",
+        "summary": "Modern visual generative models acquire rich visual knowledge through large-scale training, yet existing visual representations (such as pixels, latents, or tokens) remain external to the model and cannot directly exploit this knowledge for compact storage or reuse. In this work, we introduce a new visual representation framework that encodes a signal as a function, which is parametrized by low-rank adaptations attached to a frozen visual generative model. Such implicit representations of visual signals, \\textit{e.g.}, an 81-frame video, can further be hashed into a single compact vector, achieving strong perceptual video compression at extremely low bitrates. Beyond basic compression, the functional nature of this representation enables inference-time scaling and control, allowing additional refinement on the compression performance. More broadly, as the implicit representations directly act as a function of the generation process, this suggests a unified framework bridging visual compression and generation.",
+        "url": "http://arxiv.org/abs/2603.07615v1",
+        "published_date": "2026-03-08T12:55:40+00:00",
+        "updated_date": "2026-03-08T12:55:40+00:00",
+        "categories": [
+            "cs.LG",
+            "cs.CV"
+        ],
+        "authors": [
+            "Jiajun He",
+            "Zongyu Guo",
+            "Zhaoyang Jia",
+            "Xiaoyi Zhang",
+            "Jiahao Li",
+            "Xiao Li",
+            "Bin Li",
+            "José Miguel Hernández-Lobato",
+            "Yan Lu"
+        ],
+        "tldr": "This paper introduces a novel visual representation framework that leverages low-rank adaptations to a frozen diffusion model for compact video compression, enabling scaling and control during inference.",
+        "tldr_zh": "该论文介绍了一种新的视觉表示框架，它利用冻结的扩散模型的低秩适应来进行紧凑的视频压缩，从而在推理过程中实现缩放和控制。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "How Long Can Unified Multimodal Models Generate Images Reliably? Taming Long-Horizon Interleaved Image Generation via Context Curation",
+        "summary": "Unified multimodal models hold the promise of generating extensive, interleaved narratives, weaving text and imagery into coherent long-form stories. However, current systems suffer from a critical reliability gap: as sequences grow, generation quality rapidly collapses. In this work, we investigate the mechanism behind this failure and argue that it is distinct from standard long-context challenges. We reveal that in generation, accumulated visual history acts as a source of active pollution, a decay governed specifically by the number of image events rather than raw token count. We identify a structural vulnerability where dense visual tokens overwhelm the attention mechanism, creating noise that distorts future synthesis. Guided by these mechanistic insights, we propose UniLongGen, a training-free inference strategy that prioritizes safe conditioning over total recall. Instead of retaining all history, UniLongGen dynamically curates the model's memory, identifying and discarding interfering visual signals based on the model's own internal relevance rankings. Extensive experiments demonstrate that this active forgetting approach is essential for stability: UniLongGen significantly outperforms baselines in long-horizon fidelity and consistency, while simultaneously reducing memory footprint and inference time.",
+        "url": "http://arxiv.org/abs/2603.07540v1",
+        "published_date": "2026-03-08T09:01:20+00:00",
+        "updated_date": "2026-03-08T09:01:20+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Haoyu Chen",
+            "Qing Liu",
+            "Yuqian Zhou",
+            "He Zhang",
+            "Zhaowen Wang",
+            "Mengwei Ren",
+            "Jingjing Ren",
+            "Xiang Wang",
+            "Zhe Lin",
+            "Lei Zhu"
+        ],
+        "tldr": "This paper addresses the problem of collapsing generation quality in long-horizon interleaved text and image generation, proposing a training-free inference strategy called UniLongGen that dynamically curates visual context to improve fidelity and consistency.",
+        "tldr_zh": "本文解决了长时程交错文本和图像生成中生成质量崩溃的问题，提出了一种名为UniLongGen的免训练推理策略，该策略动态地管理视觉上下文，以提高保真度和一致性。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "FrameVGGT: Frame Evidence Rolling Memory for streaming VGGT",
+        "summary": "Streaming Visual Geometry Transformers such as StreamVGGT enable strong online 3D perception but suffer from unbounded KV-cache growth, which limits deployment over long streams. We revisit bounded-memory streaming from the perspective of geometric support. In geometry-driven reasoning, memory quality depends not only on how many tokens are retained, but also on whether the retained memory still preserves sufficiently coherent local support. This suggests that token-level retention may become less suitable under fixed budgets, as it can thin the evidence available within each contributing frame and make subsequent fusion more sensitive to weakly aligned history. Motivated by this observation, we propose FrameVGGT, a frame-driven rolling explicit-memory framework that treats each frame's incremental KV contribution as a coherent evidence block. FrameVGGT summarizes each block into a compact prototype and maintains a fixed-capacity mid-term bank of complementary frame blocks under strict budgets, with an optional lightweight anchor tier for rare prolonged degradation. Across long-sequence 3D reconstruction, video depth estimation, and camera pose benchmarks, FrameVGGT achieves favorable accuracy--memory trade-offs under bounded memory, while maintaining more stable geometry over long streams.",
+        "url": "http://arxiv.org/abs/2603.07690v1",
+        "published_date": "2026-03-08T15:46:03+00:00",
+        "updated_date": "2026-03-08T15:46:03+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Zhisong Xu",
+            "Takeshi Oishi"
+        ],
+        "tldr": "The paper introduces FrameVGGT, a frame-driven rolling memory framework for streaming Visual Geometry Transformers, addressing the unbounded memory growth issue in long video streams by maintaining coherent geometric support with a fixed-capacity frame block memory.",
+        "tldr_zh": "该论文介绍了FrameVGGT，一个帧驱动的滚动内存框架，用于流式视觉几何Transformer，通过维护固定容量的帧块内存中的连贯几何支持，解决了长视频流中无界内存增长的问题。",
+        "relevance_score": 3,
+        "novelty_claim_score": 7,
+        "clarity_score": 8,
+        "potential_impact_score": 6,
+        "overall_priority_score": 5
+    }
+]
