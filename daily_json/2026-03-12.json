@@ -1,0 +1,54 @@
+[
+    {
+        "title": "World2Act: Latent Action Post-Training via Skill-Compositional World Models",
+        "summary": "World Models (WMs) have emerged as a promising approach for post-training Vision-Language-Action (VLA) policies to improve robustness and generalization under environmental changes. However, most WM-based post-training methods rely on pixel-space supervision, making policies sensitive to pixel-level artifacts and hallucination from imperfect WM rollouts. We introduce World2Act, a post-training framework that aligns VLA actions directly with WM video-dynamics latents using a contrastive matching objective, reducing dependence on pixels. Post-training performance is tied to rollout quality, yet current WMs struggle with arbitrary-length video generation as they are mostly trained on fixed-length clips while robotic execution durations vary widely. To address this, we propose an automatic LLM-based skill-decomposition pipeline that segments high-level instructions into low-level prompts. Our pipeline produces RoboCasa-Skill and LIBERO-Skill, supporting skill-compositional WMs that remain temporally consistent across diverse task horizons. Empirically, applying World2Act to VLAs like GR00T-N1.6 and Cosmos Policy achieves state-of-the-art results on RoboCasa and LIBERO, and improves real-world performance by 6.7%, enhancing embodied agent generalization.",
+        "url": "http://arxiv.org/abs/2603.10422v1",
+        "published_date": "2026-03-11T05:11:44+00:00",
+        "updated_date": "2026-03-11T05:11:44+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "An Dinh Vuong",
+            "Tuan Van Vo",
+            "Abdullah Sohail",
+            "Haoran Ding",
+            "Liang Ma",
+            "Xiaodan Liang",
+            "Anqing Duan",
+            "Ivan Laptev",
+            "Ian Reid"
+        ],
+        "tldr": "World2Act is a post-training framework that aligns Vision-Language-Action policies with world model latents using a contrastive objective and skill-decomposition for long-horizon tasks, improving generalization on robotic manipulation tasks.",
+        "tldr_zh": "World2Act是一个后训练框架，它通过对比目标和技能分解，将视觉-语言-动作策略与世界模型潜在空间对齐，用于长时任务，提高了机器人操作任务的泛化能力。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Motion Forcing: A Decoupled Framework for Robust Video Generation in Motion Dynamics",
+        "summary": "The ultimate goal of video generation is to satisfy a fundamental trilemma: achieving high visual quality, maintaining rigorous physical consistency, and enabling precise controllability. While recent models can maintain this balance in simple, isolated scenarios, we observe that this equilibrium is fragile and often breaks down as scene complexity increases (e.g., involving collisions or dense traffic). To address this, we introduce \\textbf{Motion Forcing}, a framework designed to stabilize this trilemma even in complex generative tasks. Our key insight is to explicitly decouple physical reasoning from visual synthesis via a hierarchical \\textbf{``Point-Shape-Appearance''} paradigm. This approach decomposes generation into verifiable stages: modeling complex dynamics as sparse geometric anchors (\\textbf{Point}), expanding them into dynamic depth maps that explicitly resolve 3D geometry (\\textbf{Shape}), and finally rendering high-fidelity textures (\\textbf{Appearance}). Furthermore, to foster robust physical understanding, we employ a \\textbf{Masked Point Recovery} strategy. By randomly masking input anchors during training and enforcing the reconstruction of complete dynamic depth, the model is compelled to move beyond passive pattern matching and learn latent physical laws (e.g., inertia) to infer missing trajectories. Extensive experiments on autonomous driving benchmarks show that Motion Forcing significantly outperforms state-of-the-art baselines, maintaining trilemma stability across complex scenes. Evaluations on physics and robotics further confirm our framework's generality.",
+        "url": "http://arxiv.org/abs/2603.10408v1",
+        "published_date": "2026-03-11T04:44:46+00:00",
+        "updated_date": "2026-03-11T04:44:46+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Tianshuo Xu",
+            "Zhifei Chen",
+            "Leyi Wu",
+            "Hao Lu",
+            "Ying-cong Chen"
+        ],
+        "tldr": "The paper introduces Motion Forcing, a decoupled framework for robust video generation that maintains visual quality, physical consistency, and controllability in complex scenes by explicitly separating physical reasoning from visual synthesis, outperforming SOTA baselines.",
+        "tldr_zh": "该论文介绍了一种名为Motion Forcing的解耦框架，用于生成鲁棒的视频，通过显式分离物理推理和视觉合成，在复杂场景中保持视觉质量、物理一致性和可控性，优于现有最佳方法。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]
