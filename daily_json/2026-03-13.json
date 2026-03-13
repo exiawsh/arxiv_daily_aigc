@@ -1,0 +1,82 @@
+[
+    {
+        "title": "Controllable Egocentric Video Generation via Occlusion-Aware Sparse 3D Hand Joints",
+        "summary": "Motion-controllable video generation is crucial for egocentric applications in virtual reality and embodied AI. However, existing methods often struggle to achieve 3D-consistent fine-grained hand articulation. By adopting on 2D trajectories or implicit poses, they collapse 3D geometry into spatially ambiguous signals or over rely on human-centric priors. Under severe egocentric occlusions, this causes motion inconsistencies and hallucinated artifacts, as well as preventing cross-embodiment generalization to robotic hands. To address these limitations, we propose a novel framework that generates egocentric videos from a single reference frame, leveraging sparse 3D hand joints as embodiment-agnostic control signals with clear semantic and geometric structures. We introduce an efficient control module that resolves occlusion ambiguities while fully preserving 3D information. Specifically, it extracts occlusion-aware features from the source reference frame by penalizing unreliable visual signals from hidden joints, and employs a 3D-based weighting mechanism to robustly handle dynamically occluded target joints during motion propagation. Concurrently, the module directly injects 3D geometric embeddings into the latent space to strictly enforce structural consistency. To facilitate robust training and evaluation, we develop an automated annotation pipeline that yields over one million high-quality egocentric video clips paired with precise hand trajectories. Additionally, we register humanoid kinematic and camera data to construct a cross-embodiment benchmark. Extensive experiments demonstrate that our approach significantly outperforms state-of-the-art baselines, generating high-fidelity egocentric videos with realistic interactions and exhibiting exceptional cross-embodiment generalization to robotic hands.",
+        "url": "http://arxiv.org/abs/2603.11755v1",
+        "published_date": "2026-03-12T10:02:23+00:00",
+        "updated_date": "2026-03-12T10:02:23+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Chenyangguang Zhang",
+            "Botao Ye",
+            "Boqi Chen",
+            "Alexandros Delitzas",
+            "Fangjinhua Wang",
+            "Marc Pollefeys",
+            "Xi Wang"
+        ]
+    },
+    {
+        "title": "SoulX-LiveAct: Towards Hour-Scale Real-Time Human Animation with Neighbor Forcing and ConvKV Memory",
+        "summary": "Autoregressive (AR) diffusion models offer a promising framework for sequential generation tasks such as video synthesis by combining diffusion modeling with causal inference. Although they support streaming generation, existing AR diffusion methods struggle to scale efficiently. In this paper, we identify two key challenges in hour-scale real-time human animation. First, most forcing strategies propagate sample-level representations with mismatched diffusion states, causing inconsistent learning signals and unstable convergence. Second, historical representations grow unbounded and lack structure, preventing effective reuse of cached states and severely limiting inference efficiency. To address these challenges, we propose Neighbor Forcing, a diffusion-step-consistent AR formulation that propagates temporally adjacent frames as latent neighbors under the same noise condition. This design provides a distribution-aligned and stable learning signal while preserving drifting throughout the AR chain. Building upon this, we introduce a structured ConvKV memory mechanism that compresses the keys and values in causal attention into a fixed-length representation, enabling constant-memory inference and truly infinite video generation without relying on short-term motion-frame memory. Extensive experiments demonstrate that our approach significantly improves training convergence, hour-scale generation quality, and inference efficiency compared to existing AR diffusion methods. Numerically, LiveAct enables hour-scale real-time human animation and supports 20 FPS real-time streaming inference on as few as two NVIDIA H100 or H200 GPUs. Quantitative results demonstrate that our method attains state-of-the-art performance in lip-sync accuracy, human animation quality, and emotional expressiveness, with the lowest inference cost.",
+        "url": "http://arxiv.org/abs/2603.11746v1",
+        "published_date": "2026-03-12T09:49:58+00:00",
+        "updated_date": "2026-03-12T09:49:58+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Dingcheng Zhen",
+            "Xu Zheng",
+            "Ruixin Zhang",
+            "Zhiqi Jiang",
+            "Yichao Yan",
+            "Ming Tao",
+            "Shunshun Yin"
+        ]
+    },
+    {
+        "title": "Risk-Controllable Multi-View Diffusion for Driving Scenario Generation",
+        "summary": "Generating safety-critical driving scenarios is crucial for evaluating and improving autonomous driving systems, but long-tail risky situations are rarely observed in real-world data and difficult to specify through manual scenario design. Existing generative approaches typically treat risk as an after-the-fact label and struggle to maintain geometric consistency in multi-view driving scenes. We present RiskMV-DPO, a general and systematic pipeline for physically-informed, risk-controllable multi-view scenario generation. By integrating target risk levels with physically-grounded risk modeling, we autonomously synthesize diverse and high-stakes dynamic trajectories that serve as explicit geometric anchors for a diffusion-based video generator. To ensure spatial-temporal coherence and geometric fidelity, we introduce a geometry-appearance alignment module and a region-aware direct preference optimization (RA-DPO) strategy with motion-aware masking to focus learning on localized dynamic regions.Experiments on the nuScenes dataset show that RiskMV-DPO can freely generate a wide spectrum of diverse long-tail scenarios while maintaining state-of-the-art visual quality, improving 3D detection mAP from 18.17 to 30.50 and reducing FID to 15.70. Our work shifts the role of world models from passive environment prediction to proactive, risk-controllable synthesis, providing a scalable toolchain for the safety-oriented development of embodied intelligence.",
+        "url": "http://arxiv.org/abs/2603.11534v1",
+        "published_date": "2026-03-12T04:44:12+00:00",
+        "updated_date": "2026-03-12T04:44:12+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Hongyi Lin",
+            "Wenxiu Shi",
+            "Heye Huang",
+            "Dingyi Zhuang",
+            "Song Zhang",
+            "Yang Liu",
+            "Xiaobo Qu",
+            "Jinhua Zhao"
+        ]
+    },
+    {
+        "title": "ShotVerse: Advancing Cinematic Camera Control for Text-Driven Multi-Shot Video Creation",
+        "summary": "Text-driven video generation has democratized film creation, but camera control in cinematic multi-shot scenarios remains a significant block. Implicit textual prompts lack precision, while explicit trajectory conditioning imposes prohibitive manual overhead and often triggers execution failures in current models. To overcome this bottleneck, we propose a data-centric paradigm shift, positing that aligned (Caption, Trajectory, Video) triplets form an inherent joint distribution that can connect automated plotting and precise execution. Guided by this insight, we present ShotVerse, a \"Plan-then-Control\" framework that decouples generation into two collaborative agents: a VLM (Vision-Language Model)-based Planner that leverages spatial priors to obtain cinematic, globally aligned trajectories from text, and a Controller that renders these trajectories into multi-shot video content via a camera adapter. Central to our approach is the construction of a data foundation: we design an automated multi-shot camera calibration pipeline aligns disjoint single-shot trajectories into a unified global coordinate system. This facilitates the curation of ShotVerse-Bench, a high-fidelity cinematic dataset with a three-track evaluation protocol that serves as the bedrock for our framework. Extensive experiments demonstrate that ShotVerse effectively bridges the gap between unreliable textual control and labor-intensive manual plotting, achieving superior cinematic aesthetics and generating multi-shot videos that are both camera-accurate and cross-shot consistent.",
+        "url": "http://arxiv.org/abs/2603.11421v1",
+        "published_date": "2026-03-12T01:27:08+00:00",
+        "updated_date": "2026-03-12T01:27:08+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Songlin Yang",
+            "Zhe Wang",
+            "Xuyi Yang",
+            "Songchun Zhang",
+            "Xianghao Kong",
+            "Taiyi Wu",
+            "Xiaotong Zhao",
+            "Ran Zhang",
+            "Alan Zhao",
+            "Anyi Rao"
+        ]
+    }
+]
