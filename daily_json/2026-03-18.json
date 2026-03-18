@@ -1,0 +1,25 @@
+[
+    {
+        "title": "Diffusion Models for Joint Audio-Video Generation",
+        "summary": "Multimodal generative models have shown remarkable progress in single-modality video and audio synthesis, yet truly joint audio-video generation remains an open challenge. In this paper, I explore four key contributions to advance this field. First, I release two high-quality, paired audio-video datasets. The datasets consisting on 13 hours of video-game clips and 64 hours of concert performances, each segmented into consistent 34-second samples to facilitate reproducible research. Second, I train the MM-Diffusion architecture from scratch on our datasets, demonstrating its ability to produce semantically coherent audio-video pairs and quantitatively evaluating alignment on rapid actions and musical cues. Third, I investigate joint latent diffusion by leveraging pretrained video and audio encoder-decoders, uncovering challenges and inconsistencies in the multimodal decoding stage. Finally, I propose a sequential two-step text-to-audio-video generation pipeline: first generating video, then conditioning on both the video output and the original prompt to synthesize temporally synchronized audio. My experiments show that this modular approach yields high-fidelity generations of audio video generation.",
+        "url": "http://arxiv.org/abs/2603.16093v1",
+        "published_date": "2026-03-17T03:31:37+00:00",
+        "updated_date": "2026-03-17T03:31:37+00:00",
+        "categories": [
+            "cs.SD",
+            "cs.AI",
+            "cs.CV",
+            "cs.MM"
+        ],
+        "authors": [
+            "Alejandro Paredes La Torre"
+        ],
+        "tldr": "This paper introduces Diffusion Models for Joint Audio-Video Generation, presenting new datasets, an MM-Diffusion architecture, investigations into joint latent diffusion, and a sequential text-to-audio-video generation pipeline that demonstrates high-fidelity results.",
+        "tldr_zh": "本文介绍了用于联合音频-视频生成的扩散模型，提出了新的数据集、MM-Diffusion架构、对联合潜在扩散的探索，以及一个顺序文本到音频-视频生成流水线，该流水线展示了高保真度的结果。",
+        "relevance_score": 7,
+        "novelty_claim_score": 7,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 7
+    }
+]
