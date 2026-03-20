@@ -1,0 +1,109 @@
+[
+    {
+        "title": "FASTER: Rethinking Real-Time Flow VLAs",
+        "summary": "Real-time execution is crucial for deploying Vision-Language-Action (VLA) models in the physical world. Existing asynchronous inference methods primarily optimize trajectory smoothness, but neglect the critical latency in reacting to environmental changes. By rethinking the notion of reaction in action chunking policies, this paper presents a systematic analysis of the factors governing reaction time. We show that reaction time follows a uniform distribution determined jointly by the Time to First Action (TTFA) and the execution horizon. Moreover, we reveal that the standard practice of applying a constant schedule in flow-based VLAs can be inefficient and forces the system to complete all sampling steps before any movement can start, forming the bottleneck in reaction latency. To overcome this issue, we propose Fast Action Sampling for ImmediaTE Reaction (FASTER). By introducing a Horizon-Aware Schedule, FASTER adaptively prioritizes near-term actions during flow sampling, compressing the denoising of the immediate reaction by tenfold (e.g., in $π_{0.5}$ and X-VLA) into a single step, while preserving the quality of long-horizon trajectory. Coupled with a streaming client-server pipeline, FASTER substantially reduces the effective reaction latency on real robots, especially when deployed on consumer-grade GPUs. Real-world experiments, including a highly dynamic table tennis task, prove that FASTER unlocks unprecedented real-time responsiveness for generalist policies, enabling rapid generation of accurate and smooth trajectories.",
+        "url": "http://arxiv.org/abs/2603.19199v1",
+        "published_date": "2026-03-19T17:51:37+00:00",
+        "updated_date": "2026-03-19T17:51:37+00:00",
+        "categories": [
+            "cs.RO",
+            "cs.CV"
+        ],
+        "authors": [
+            "Yuxiang Lu",
+            "Zhe Liu",
+            "Xianzhe Fan",
+            "Zhenya Yang",
+            "Jinghua Hou",
+            "Junyi Li",
+            "Kaixin Ding",
+            "Hengshuang Zhao"
+        ],
+        "tldr": "This paper addresses the critical issue of reaction latency in real-time Vision-Language-Action (VLA) models by proposing FASTER, a novel approach that adaptively prioritizes near-term actions during flow sampling. It significantly reduces effective reaction time on real robots, enabling unprecedented real-time responsiveness.",
+        "tldr_zh": "本文解决了实时视觉-语言-动作（VLA）模型中关键的反应延迟问题，提出了FASTER方法，通过自适应地优先对近期的动作进行采样来加速响应。该方法显著降低了真实机器人上的有效反应延迟，实现了前所未有的实时响应能力。",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Training-Free Sparse Attention for Fast Video Generation via Offline Layer-Wise Sparsity Profiling and Online Bidirectional Co-Clustering",
+        "summary": "Diffusion Transformers (DiTs) achieve strong video generation quality but suffer from high inference cost due to dense 3D attention, leading to the development of sparse attention technologies to improve efficiency. However, existing training-free sparse attention methods in video generation still face two unresolved limitations: ignoring layer heterogeneity in attention pruning and ignoring query-key coupling in block partitioning, which hinder a better quality-speedup trade-off. In this work, we uncover a critical insight that the attention sparsity of each layer is its intrinsic property, with minor effects across different inputs. Motivated by this, we propose SVOO, a training-free Sparse attention framework for fast Video generation via Offline layer-wise sparsity profiling and Online bidirectional co-clustering. Specifically, SVOO adopts a two-stage paradigm: (i) offline layer-wise sensitivity profiling to derive intrinsic per-layer pruning levels, and (ii) online block-wise sparse attention via a novel bidirectional co-clustering algorithm. Extensive experiments on seven widely used video generation models demonstrate that SVOO achieves a superior quality-speedup trade-off over state-of-the-art methods, delivering up to $1.93\\times$ speedup while maintaining a PSNR of up to 29 dB on Wan2.1.",
+        "url": "http://arxiv.org/abs/2603.18636v1",
+        "published_date": "2026-03-19T09:00:08+00:00",
+        "updated_date": "2026-03-19T09:00:08+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Jiayi Luo",
+            "Jiayu Chen",
+            "Jiankun Wang",
+            "Cong Wang",
+            "Hanxin Zhu",
+            "Qingyun Sun",
+            "Chen Gao",
+            "Zhibo Chen",
+            "Jianxin Li"
+        ],
+        "tldr": "This paper proposes SVOO, a training-free sparse attention method for faster video generation using Diffusion Transformers. It achieves this by first offline profiling layer-wise attention sparsity and then applying online bidirectional co-clustering for block-wise sparse attention, significantly improving speedup while maintaining generation quality.",
+        "tldr_zh": "本文提出了一种名为SVOO的无训练稀疏注意力方法，用于加速扩散Transformer（DiTs）视频生成。该方法通过离线逐层注意力稀疏度剖析，然后在线进行双向共聚类来生成块状稀疏注意力，从而在保持生成质量的同时显著提高了速度。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "3DreamBooth: High-Fidelity 3D Subject-Driven Video Generation Model",
+        "summary": "Creating dynamic, view-consistent videos of customized subjects is highly sought after for a wide range of emerging applications, including immersive VR/AR, virtual production, and next-generation e-commerce. However, despite rapid progress in subject-driven video generation, existing methods predominantly treat subjects as 2D entities, focusing on transferring identity through single-view visual features or textual prompts. Because real-world subjects are inherently 3D, applying these 2D-centric approaches to 3D object customization reveals a fundamental limitation: they lack the comprehensive spatial priors necessary to reconstruct the 3D geometry. Consequently, when synthesizing novel views, they must rely on generating plausible but arbitrary details for unseen regions, rather than preserving the true 3D identity. Achieving genuine 3D-aware customization remains challenging due to the scarcity of multi-view video datasets. While one might attempt to fine-tune models on limited video sequences, this often leads to temporal overfitting. To resolve these issues, we introduce a novel framework for 3D-aware video customization, comprising 3DreamBooth and 3Dapter. 3DreamBooth decouples spatial geometry from temporal motion through a 1-frame optimization paradigm. By restricting updates to spatial representations, it effectively bakes a robust 3D prior into the model without the need for exhaustive video-based training. To enhance fine-grained textures and accelerate convergence, we incorporate 3Dapter, a visual conditioning module. Following single-view pre-training, 3Dapter undergoes multi-view joint optimization with the main generation branch via an asymmetrical conditioning strategy. This design allows the module to act as a dynamic selective router, querying view-specific geometric hints from a minimal reference set. Project page: https://ko-lani.github.io/3DreamBooth/",
+        "url": "http://arxiv.org/abs/2603.18524v1",
+        "published_date": "2026-03-19T06:14:05+00:00",
+        "updated_date": "2026-03-19T06:14:05+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Hyun-kyu Ko",
+            "Jihyeon Park",
+            "Younghyun Kim",
+            "Dongheok Park",
+            "Eunbyung Park"
+        ],
+        "tldr": "This paper introduces 3DreamBooth, a novel framework for generating high-fidelity 3D-aware videos of custom subjects. It addresses limitations of 2D-centric approaches by decoupling spatial geometry from temporal motion through a 1-frame optimization, baking in 3D priors without extensive video training, and uses 3Dapter for enhanced texturing and faster convergence.",
+        "tldr_zh": "本文提出了一种名为3DreamBooth的新颖框架，用于生成定制主题的高保真3D感知视频。它通过一帧优化的方式将空间几何与时间运动解耦，从而解决了2D中心方法的局限性，在无需大量视频训练的情况下构建了牢固的3D先验，并利用3Dapter增强纹理并加速收敛。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 9,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "PhysVideo: Physically Plausible Video Generation with Cross-View Geometry Guidance",
+        "summary": "Recent progress in video generation has led to substantial improvements in visual fidelity, yet ensuring physically consistent motion remains a fundamental challenge. Intuitively, this limitation can be attributed to the fact that real-world object motion unfolds in three-dimensional space, while video observations provide only partial, view-dependent projections of such dynamics. To address these issues, we propose PhysVideo, a two-stage framework that first generates physics-aware orthogonal foreground videos and then synthesizes full videos with background. In the first stage, Phys4View leverages physics-aware attention to capture the influence of physical attributes on motion dynamics, and enhances spatio-temporal consistency by incorporating geometry-enhanced cross-view attention and temporal attention. In the second stage, VideoSyn uses the generated foreground videos as guidance and learns the interactions between foreground dynamics and background context for controllable video synthesis. To support training, we construct PhysMV, a dataset containing 40K scenes, each consisting of four orthogonal viewpoints, resulting in a total of 160K video sequences. Extensive experiments demonstrate that PhysVideo significantly improves physical realism and spatial-temporal coherence over existing video generation methods. Home page: https://anonymous.4open.science/w/Phys4D/.",
+        "url": "http://arxiv.org/abs/2603.18639v1",
+        "published_date": "2026-03-19T09:03:06+00:00",
+        "updated_date": "2026-03-19T09:03:06+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Cong Wang",
+            "Hanxin Zhu",
+            "Xiao Tang",
+            "Jiayi Luo",
+            "Xin Jin",
+            "Long Chen",
+            "Fei-Yue Wang",
+            "Zhibo Chen"
+        ],
+        "tldr": "PhysVideo is a two-stage framework for physically plausible video generation. It first generates physics-aware foreground videos using cross-view geometry guidance and then synthesizes full videos by incorporating background context. A new dataset, PhysMV, with multi-view orthogonal videos is introduced for training.",
+        "tldr_zh": "PhysVideo是一个用于生成物理上可信视频的两阶段框架。它首先利用跨视图几何引导生成具有物理意识的前景视频，然后通过融入背景信息来合成完整视频。为此，作者构建了一个包含多视图正交视频的新数据集PhysMV用于训练。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 8,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]
