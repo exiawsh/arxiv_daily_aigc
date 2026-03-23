@@ -1,0 +1,114 @@
+[
+    {
+        "title": "X-World: Controllable Ego-Centric Multi-Camera World Models for Scalable End-to-End Driving",
+        "summary": "Scalable and reliable evaluation is increasingly critical in the end-to-end era of autonomous driving, where vision--language--action (VLA) policies directly map raw sensor streams to driving actions. Yet, current evaluation pipelines still rely heavily on real-world road testing, which is costly, biased toward limited scenario coverage, and difficult to reproduce. These challenges motivate a real-world simulator that can generate realistic future observations under proposed actions, while remaining controllable and stable over long horizons. We present X-World, an action-conditioned multi-camera generative world model that simulates future observations directly in video space. Given synchronized multi-view camera history and a future action sequence, X-World generates future multi-camera video streams that follow the commanded actions. To ensure reproducible and editable scene rollouts, X-World further supports optional controls over dynamic traffic agents and static road elements, and retains a text-prompt interface for appearance-level control (e.g., weather and time of day). Beyond world simulation, X-World also enables video style transfer by conditioning on appearance prompts while preserving the underlying action and scene dynamics. At the core of X-World is a multi-view latent video generator designed to explicitly encourage cross-view geometric consistency and temporal coherence under diverse control signals. Experiments show that X-World achieves high-quality multi-view video generation with (i) strong view consistency across cameras, (ii) stable temporal dynamics over long rollouts, and (iii) high controllability with strict action following and faithful adherence to optional scene controls. These properties make X-World a practical foundation for scalable and reproducible evaluation.",
+        "url": "http://arxiv.org/abs/2603.19979v1",
+        "published_date": "2026-03-20T14:23:32+00:00",
+        "updated_date": "2026-03-20T14:23:32+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Chaoda Zheng",
+            "Sean Li",
+            "Jinhao Deng",
+            "Zhennan Wang",
+            "Shijia Chen",
+            "Liqiang Xiao",
+            "Ziheng Chi",
+            "Hongbin Lin",
+            "Kangjie Chen",
+            "Boyang Wang",
+            "Yu Zhang",
+            "Xianming Liu"
+        ],
+        "tldr": "X-World is an action-conditioned, multi-camera generative world model that simulates realistic future driving scenarios. It enables controllable and stable long-horizon rollouts, supports scene editing, and facilitates reproducible evaluation for end-to-end autonomous driving systems.",
+        "tldr_zh": "X-World 是一个条件化动作的多视角生成式世界模型，能够模拟逼真的未来驾驶场景。它支持可控且稳定的长时序回放，允许场景编辑，并为端到端自动驾驶系统提供可复现的评估基础。",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "DynFlowDrive: Flow-Based Dynamic World Modeling for Autonomous Driving",
+        "summary": "Recently, world models have been incorporated into the autonomous driving systems to improve the planning reliability. Existing approaches typically predict future states through appearance generation or deterministic regression, which limits their ability to capture trajectory-conditioned scene evolution and leads to unreliable action planning. To address this, we propose DynFlowDrive, a latent world model that leverages flow-based dynamics to model the transition of world states under different driving actions. By adopting the rectifiedflow formulation, the model learns a velocity field that describes how the scene state changes under different driving actions, enabling progressive prediction of future latent states. Building upon this, we further introduce a stability-aware multi-mode trajectory selection strategy that evaluates candidate trajectories according to the stability of the induced scene transitions. Extensive experiments on the nuScenes and NavSim benchmarks demonstrate consistent improvements across diverse driving frameworks without introducing additional inference overhead. Source code will be abaliable at https://github.com/xiaolul2/DynFlowDrive.",
+        "url": "http://arxiv.org/abs/2603.19675v1",
+        "published_date": "2026-03-20T06:19:31+00:00",
+        "updated_date": "2026-03-20T06:19:31+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.RO"
+        ],
+        "authors": [
+            "Xiaolu Liu",
+            "Yicong Li",
+            "Song Wang",
+            "Junbo Chen",
+            "Angela Yao",
+            "Jianke Zhu"
+        ],
+        "tldr": "DynFlowDrive is a novel flow-based latent world model for autonomous driving that uses a velocity field to predict future scene states and incorporates a stability-aware trajectory selection strategy for more reliable planning, without increasing inference cost.",
+        "tldr_zh": "DynFlowDrive是一个新颖的基于流的自动驾驶潜在世界模型，它使用速度场来预测未来场景状态，并结合了稳定性感知轨迹选择策略，以实现更可靠的规划，同时不增加推理开销。",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "OrbitNVS: Harnessing Video Diffusion Priors for Novel View Synthesis",
+        "summary": "Novel View Synthesis (NVS) aims to generate unseen views of a 3D object given a limited number of known views. Existing methods often struggle to synthesize plausible views for unobserved regions, particularly under single-view input, and still face challenges in maintaining geometry- and appearance-consistency. To address these issues, we propose OrbitNVS, which reformulates NVS as an orbit video generation task. Through tailored model design and training strategies, we adapt a pre-trained video generation model to the NVS task, leveraging its rich visual priors to achieve high-quality view synthesis. Specifically, we incorporate camera adapters into the video model to enable accurate camera control. To enhance two key properties of 3D objects, geometry and appearance, we design a normal map generation branch and use normal map features to guide the synthesis of the target views via attention mechanism, thereby improving geometric consistency. Moreover, we apply a pixel-space supervision to alleviate blurry appearance caused by spatial compression in the latent space. Extensive experiments show that OrbitNVS significantly outperforms previous methods on the GSO and OmniObject3D benchmarks, especially in the challenging single-view setting (\\eg, +2.9 dB and +2.4 dB PSNR).",
+        "url": "http://arxiv.org/abs/2603.19613v1",
+        "published_date": "2026-03-20T03:40:36+00:00",
+        "updated_date": "2026-03-20T03:40:36+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Jinglin Liang",
+            "Zijian Zhou",
+            "Rui Huang",
+            "Shuangping Huang",
+            "Yichen Gong"
+        ],
+        "tldr": "OrbitNVS reformulates Novel View Synthesis as an orbit video generation task, adapting a pre-trained video diffusion model with camera control and a normal map guidance branch to improve geometric and appearance consistency, outperforming prior methods.",
+        "tldr_zh": "OrbitNVS 将新视角合成（NVS）重构为轨道视频生成任务，通过调整预训练的视频扩散模型，并引入相机控制和法线图引导分支，以提高几何和外观一致性，实验结果优于现有方法。",
+        "relevance_score": 8,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "VideoSeek: Long-Horizon Video Agent with Tool-Guided Seeking",
+        "summary": "Video agentic models have advanced challenging video-language tasks. However, most agentic approaches still heavily rely on greedy parsing over densely sampled video frames, resulting in high computational cost. We present VideoSeek, a long-horizon video agent that leverages video logic flow to actively seek answer-critical evidence instead of exhaustively parsing the full video. This insight allows the model to use far fewer frames while maintaining, or even improving, its video understanding capability. VideoSeek operates in a think-act-observe loop with a well-designed toolkit for collecting multi-granular video observations. This design enables query-aware exploration over accumulated observations and supports practical video understanding and reasoning. Experiments on four challenging video understanding and reasoning benchmarks demonstrate that VideoSeek achieves strong accuracy while using far fewer frames than prior video agents and standalone LMMs. Notably, VideoSeek achieves a 10.2 absolute points improvement on LVBench over its base model, GPT-5, while using 93% fewer frames. Further analysis highlights the significance of leveraging video logic flow, strong reasoning capability, and the complementary roles of toolkit design.",
+        "url": "http://arxiv.org/abs/2603.20185v1",
+        "published_date": "2026-03-20T17:58:47+00:00",
+        "updated_date": "2026-03-20T17:58:47+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.CL"
+        ],
+        "authors": [
+            "Jingyang Lin",
+            "Jialian Wu",
+            "Jiang Liu",
+            "Ximeng Sun",
+            "Ze Wang",
+            "Xiaodong Yu",
+            "Jiebo Luo",
+            "Zicheng Liu",
+            "Emad Barsoum"
+        ],
+        "tldr": "VideoSeek is a novel long-horizon video agent that significantly reduces computational cost by intelligently seeking answer-critical evidence using video logic flow, outperforming existing methods in accuracy and frame efficiency.",
+        "tldr_zh": "VideoSeek 是一种新颖的长时域视频代理模型，它通过利用视频逻辑流智能地搜索答案关键证据，显著降低了计算成本，并在准确性和帧效率方面优于现有方法。",
+        "relevance_score": 6,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]
